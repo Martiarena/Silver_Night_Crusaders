@@ -1,0 +1,24 @@
+name		Waterfall_lair
+type		none
+facing		1
+setlayer  	-2
+offscreenkill   9999
+antigravity	100
+
+palette		data/bgs/underground/decoration/waterfall_lair1.gif
+
+
+
+
+anim	idle
+	loop	1
+	offset	52 136
+	delay	7
+	frame	data/bgs/underground/decoration/waterfall_lair1.gif
+	frame	data/bgs/underground/decoration/waterfall_lair2.gif
+	frame	data/bgs/underground/decoration/waterfall_lair3.gif
+	frame	data/bgs/underground/decoration/waterfall_lair4.gif
+	frame	data/bgs/underground/decoration/waterfall_lair5.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,17 @@
+name		PSpear
+type		none
+candamage	enemy obstacle
+lifespan	2
+subject_to_hole	1
+no_adjust_base	0
+animationscript	data/scripts/prscript.c
+
+
+anim idle
+	loop	1
+	delay	6
+	offset  15 8
+	attack  27 2 43 10 15 1
+	frame	data/chars/misc/subweap/spear.png
+	@cmd	groundkill
+	frame	data/chars/misc/subweap/spear.png

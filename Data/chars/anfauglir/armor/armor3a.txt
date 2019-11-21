@@ -1,0 +1,42 @@
+name	        Armor3a
+type	        none
+subject_to_gravity 1
+subject_to_hole	1
+no_adjust_base	0
+lifespan        2
+noquake 	1
+
+palette 	 data/chars/anfauglir/idle1.gif
+
+animationscript data/scripts/fscript.c
+
+
+
+anim	idle
+	delay	7
+	offset	18 15
+	bouncefactor	2
+	drawmethod	256 256 0 0 0 0 0 0 0
+	frame	data/chars/anfauglir/armor/part3a.gif
+	drawmethod	256 256 0 0 0 0 0 0 45
+	@cmd	spawnbind "edie" 0 0 1
+	frame	data/chars/anfauglir/armor/part3a.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/anfauglir/armor/part3b.gif
+	drawmethod	256 256 0 0 0 0 0 0 135
+	frame	data/chars/anfauglir/armor/part3c.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/anfauglir/armor/part3d.gif
+	drawmethod	256 256 0 0 0 0 0 0 225
+	frame	data/chars/anfauglir/armor/part3e.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/anfauglir/armor/part3f.gif
+	drawmethod	256 256 0 0 0 0 0 0 315
+	frame	data/chars/anfauglir/armor/part3g.gif
+	drawmethod	256 256 0 0 0 0 0 0 0
+	frame	data/chars/anfauglir/armor/part3h.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

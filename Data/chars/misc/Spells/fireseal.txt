@@ -1,0 +1,56 @@
+name	        fireseal
+type	        none
+lifespan        2
+antigravity     100
+
+
+
+
+anim	idle
+	delay	1
+	offset	9 33
+	frame	data/chars/misc/spells/circle_fire_element.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/circle_fire_element.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/circle_fire_element.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/circle_fire_element.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/circle_fire_element.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/circle_fire_element.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/circle_fire_element.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/circle_fire_element.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/circle_fire_element.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/circle_fire_element.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/circle_fire_element.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/circle_fire_element.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/circle_fire_element.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/circle_fire_element.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/circle_fire_element.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/circle_fire_element.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/circle_fire_element.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/circle_fire_element.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/circle_fire_element.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/circle_fire_element.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/circle_fire_element.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.56
+		

@@ -1,0 +1,403 @@
+name	    	GiantBat
+health  	200
+nomove   	1 1
+type		enemy
+falldie 	1
+cantgrab 	1
+nopain  	1
+nodrop  	2
+aggression 	6
+nolife          1
+score   	 1000 1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+antigravity     100
+#icon		data/chars/gaibon/icon2.gif
+#lifebarstatus 5 181 1 1 1 0 0 -300 -300
+#lifeposition 297 3 
+#nameposition 203 11
+
+palette          data/chars/gbat/gbat1.gif
+alternatepal     data/chars/gbat/blink.gif
+alternatepal     data/chars/gbat/red.gif
+
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+load    	 BFBall
+load    	 MinionBat
+
+#-------Moves
+
+anim spawn
+	delay	10
+	offset  47 45
+	bbox    24 3 51 42
+	attack  24 3 51 42 10 1
+	frame	data/chars/gbat/gbat1.gif
+        @cmd    dasher 0 -1 0 1
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	attack  0 0 0 0 0
+        @cmd    stop
+	frame	data/chars/gbat/gbat4.gif
+
+anim idle
+	loop	1
+	delay	10
+#        @cmd    clearL
+	offset  47 45
+	bbox    24 3 51 42
+	attack  24 3 51 42 10 1
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	delay	1
+	attack  0 0 0 0 0
+        @cmd    attack0 "ANI_FOLLOW1"
+	frame	data/chars/gbat/gbat4.gif
+
+#Not used!
+anim walk
+	loop	1
+	delay	10
+	offset  47 45
+	bbox    24 3 51 42
+	attack  24 3 51 42 5 1
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	attack  0 0 0 0 0
+	frame	data/chars/gbat/gbat4.gif
+
+anim follow1
+@script
+    void self = getlocalvar("self");
+    int r = rand()%30;
+
+    if( frame == 0){
+      if( r > 0){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      }
+    }
+@end_script
+	delay	1
+	offset  47 45
+	bbox    24 3 51 42
+	attack  24 3 51 42 10 1
+	frame	data/chars/gbat/gbat1.gif
+	delay	10
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+        @cmd    spawner2 "MinionBat" 0 0 0
+	frame	data/chars/gbat/gbat1.gif
+        @cmd    spawner2 "MinionBat" 10 30 0
+	frame	data/chars/gbat/gbat2.gif
+        @cmd    spawner2 "MinionBat" -10 10 0
+	frame	data/chars/gbat/gbat3.gif
+        @cmd    spawner2 "MinionBat" -10 30 0
+	frame	data/chars/gbat/gbat4.gif
+        @cmd    spawner2 "MinionBat" 10 10 0
+	frame	data/chars/gbat/gbat1.gif
+        @cmd    spawner2 "MinionBat" 30 30 0
+	frame	data/chars/gbat/gbat2.gif
+        @cmd    spawner2 "MinionBat" -30 10 0
+	frame	data/chars/gbat/gbat3.gif
+        @cmd    spawner2 "MinionBat" -30 30 0
+	frame	data/chars/gbat/gbat4.gif
+        @cmd    spawner2 "MinionBat" 30 10 0
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+        @cmd    looper 16 11
+	frame	data/chars/gbat/gbat4.gif
+        @cmd    beidle
+	frame	data/chars/gbat/gbat4.gif
+
+anim follow3
+	delay	1
+	offset  47 45
+	bbox    24 3 51 42
+	attack  24 3 51 42 10 1
+	frame	data/chars/gbat/gbat1.gif
+	delay	10
+        @cmd    dasher -1 0 0 0
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+        @cmd    target 1 1 0 0 0 0
+        @cmd    shoot2 "BFBall" 0 25
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+        @cmd    dasher 1 0 0 0
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+        @cmd    target 1 1 0 0 0 0
+        @cmd    shoot2 "BFBall" 0 25
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+        @cmd    dasher -1 0 0 0
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+        @cmd    stop
+        @cmd    beidle
+	frame	data/chars/gbat/gbat4.gif
+
+anim follow2
+@script
+    void self = getlocalvar("self");
+    int r = rand()%30;
+
+    if( frame == 0){
+      if( r > 0){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      }
+    }
+@end_script
+	delay	1
+	offset  47 45
+	bbox    24 3 51 42
+	attack  24 3 51 42 10 1
+	frame	data/chars/gbat/gbat1.gif
+	delay	10
+        @cmd    dasher 1 0 0 0
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+        @cmd    target 1 1 0 0 0 0
+        @cmd    shoot2 "BFBall" 0 25
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+        @cmd    dasher -1 0 0 0
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+        @cmd    target 1 1 0 0 0 0
+        @cmd    shoot2 "BFBall" 0 25
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+        @cmd    dasher 1 0 0 0
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+        @cmd    stop
+        @cmd    beidle
+	frame	data/chars/gbat/gbat4.gif
+
+#Not used!
+anim pain
+	delay	10
+	offset  47 45
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+
+#Not used!
+anim fall
+	delay	10
+	offset  47 45
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+
+anim death
+	delay	5
+	subentity gdie
+	spawnframe 8 0 0 20 0
+	offset  47 45
+        @cmd    stop
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif#
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif#
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif
+	frame	data/chars/gbat/gbat1.gif
+	frame	data/chars/gbat/gbat2.gif
+	frame	data/chars/gbat/gbat3.gif
+	frame	data/chars/gbat/gbat4.gif#
+	delay	20
+	frame	data/chars/gbat/gbat1.gif
+        @cmd    suicide
+	frame	data/chars/gbat/gbat1.gif

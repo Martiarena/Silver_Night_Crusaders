@@ -1,0 +1,55 @@
+name    Big_candle
+type trap
+health   1
+shadow  0
+noatflash 1
+nomove	 	1
+setlayer        -1
+antigravity 100
+nolife 1
+hostile player npc
+candamage  player npc obstacle
+
+load      Falling_candle
+
+
+
+
+anim	death
+	loop	0
+	delay	1
+	offset	30 32
+	subentity	Falling_candle
+	spawnframe	2 0 0 0 0
+	frame	data/bgs/castle_entrance/traps/candle/candle1.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle2.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/bgs/castle_entrance/traps/candle/candle2.gif
+		
+anim	follow1
+	loop	0
+	delay	1
+	offset	30 32
+	subentity	Falling_candle
+	spawnframe	2 0 0 0 0
+	frame	data/bgs/castle_entrance/traps/candle/candle1.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle2.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/bgs/castle_entrance/traps/candle/candle2.gif
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	30 32
+	followcond	1
+	followanim	1
+	hitfx	data/sounds/no-hit.wav
+	noreflect	1
+	platform	-999 -999 -5 -5 5 5 10 10
+	bbox	23 -6 14 16
+	attack20	7 33 45 151 0 0 1 1 0 0
+	frame	data/bgs/castle_entrance/traps/candle/candle1.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle2.gif
+		
+#|edited by openBor Stats v 0.67
+		

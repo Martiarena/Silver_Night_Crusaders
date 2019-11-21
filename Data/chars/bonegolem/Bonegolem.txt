@@ -1,0 +1,105 @@
+name    	 L._de_Huesos
+health  	 100
+speed		 5
+type    	 enemy
+noquake  	 1
+nopain  	 1
+nodrop  	 2
+death   	 1
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+load		 Bone
+
+palette 	 data/chars/bonegolem/bonegolem.gif
+alternatepal	 data/chars/bonegolem/blink.gif
+
+
+
+
+anim	attack1
+	range	50 70
+	rangea	0 60
+	delay	20
+	offset	53 105
+	bbox	72 14 20 52
+	frame	data/chars/bonegolem/attack1.gif
+	delay	10
+	attack	114 46 30 27 15 1 0 0 0 0
+	frame	data/chars/bonegolem/attack2.gif
+	attack	128 55 30 27 15 1 0 0 0 0
+	frame	data/chars/bonegolem/attack3.gif
+	attack	142 64 30 27 15 1 0 0 0 0
+	frame	data/chars/bonegolem/attack4.gif
+	delay	15
+	frame	data/chars/bonegolem/attack4.gif
+	delay	7
+	attack	0 0 0 0 0 0
+	frame	data/chars/bonegolem/attack3.gif
+	frame	data/chars/bonegolem/attack1.gif
+		
+anim	attack2
+	range	20 100
+	rangea	20 190
+	delay	7
+	offset	53 104
+	bbox	70 25 35 40
+	frame	data/chars/bonegolem/idle1.gif
+	delay	100
+	frame	data/chars/bonegolem/guard2.gif
+	delay	8
+	@cmd	tosser2 "Bone" 10 47 0.4 3.2
+	frame	data/chars/bonegolem/guard1.gif
+	@cmd	tosser2 "Bone" 10 47 0.2 2.8
+	frame	data/chars/bonegolem/guard1.gif
+	@cmd	tosser2 "Bone" 10 47 0.9 2.4
+	frame	data/chars/bonegolem/guard1.gif
+	@cmd	tosser2 "Bone" 10 47 0.6 2
+	frame	data/chars/bonegolem/guard1.gif
+	@cmd	tosser2 "Bone" 10 47 0.5 3
+	frame	data/chars/bonegolem/guard1.gif
+	@cmd	tosser2 "Bone" 10 47 1.6 1.8
+	frame	data/chars/bonegolem/guard1.gif
+	@cmd	tosser2 "Bone" 10 47 1 2.6
+	frame	data/chars/bonegolem/guard1.gif
+	@cmd	tosser2 "Bone" 10 47 0.64 2.2
+	frame	data/chars/bonegolem/guard1.gif
+	@cmd	tosser2 "Bone" 10 47 1.2 1.6
+	frame	data/chars/bonegolem/guard1.gif
+	frame	data/chars/bonegolem/guard2.gif
+	delay	100
+	frame	data/chars/bonegolem/idle1.gif
+		
+anim	death
+	delay	5
+	offset	20 53
+	frame	data/chars/misc/empty.gif
+	@cmd	tosserM "BS" 10 45 0 3
+	@cmd	tosserM "BR" 5 32 0.1 2
+	@cmd	tosserM "BA" 6 38 0.4 1.5
+	@cmd	tosserM "BA" -6 38 -0.4 1.5
+	@cmd	tosserM "BL" 5 16 0.3 1
+	@cmd	tosserM "BL" -10 16 -0.3 1
+	frame	data/chars/misc/empty.gif
+	delay	200
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	18
+	offset	53 104
+	bbox	70 25 35 40
+	frame	data/chars/bonegolem/idle1.gif
+	frame	data/chars/bonegolem/idle2.gif
+	frame	data/chars/bonegolem/walk3.gif
+		
+anim	walk
+	loop	1
+	delay	18
+	offset	53 104
+	bbox	70 25 35 40
+	frame	data/chars/bonegolem/walk1.gif
+	frame	data/chars/bonegolem/walk2.gif
+	frame	data/chars/bonegolem/walk3.gif
+		
+#|edited by openBor Stats v 0.56
+		

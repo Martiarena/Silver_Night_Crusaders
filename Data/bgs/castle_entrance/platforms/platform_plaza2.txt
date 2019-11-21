@@ -1,0 +1,21 @@
+name  		Platform_plaza2
+type		none
+facing	  	1
+setlayer	1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/castle_entrance/plaza_palette.gif
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	40 32
+	platform	0 32 -8 -8 81 81 10 32
+	frame	data/bgs/castle_entrance/platforms/platform_plaza2.gif
+		
+#|edited by openBor Stats v 0.67
+		

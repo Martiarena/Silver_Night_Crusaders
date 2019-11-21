@@ -1,0 +1,27 @@
+name	         SahaginSpawner
+health	         10
+type	         None
+antigravity	 100
+animationscript  data/scripts/oscript.c
+load          	 Sahagin
+
+
+anim	idle
+	loop	1
+	delay	20
+	offset	1 1
+	frame	data/chars/misc/empty.gif
+	@cmd	offscreenkill 500 0
+	frame	data/chars/misc/empty.gif
+	@cmd	MspawnR "Sahagin" 260 0 40 0
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	delay	10
+	offset	1 1
+	frame	data/chars/misc/empty.gif
+	@cmd	clearE 0
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

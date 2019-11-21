@@ -1,0 +1,20 @@
+name  		Stairs_sewer3
+type		none
+facing	  	1
+setlayer	1
+antigravity	100
+
+
+palette		data/bgs/castle_entrance/items_sewer.gif
+
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	8 49
+	platform	0 49 -8 -8 24 24 10 49
+	frame	data/bgs/castle_entrance/platforms/stairs_sewer3.gif
+

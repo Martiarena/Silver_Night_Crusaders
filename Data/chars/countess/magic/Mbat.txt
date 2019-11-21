@@ -1,0 +1,97 @@
+name	    	MinionBat
+health  	1
+nomove   	1 1
+type		enemy
+falldie 	1
+cantgrab 	1
+nopain  	1
+lifespan  	5
+nodrop  	2
+aggression 	6
+nolife          1
+setlayer        50
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+antigravity     100
+score   	5 -1
+palette         data/chars/gbat/gbat1.gif
+alternatepal    data/chars/gbat/gbat1.gif
+alternatepal    data/chars/gbat/red.gif
+
+animationscript data/scripts/escript.c
+
+
+anim spawn
+	delay	7
+	offset  15 9
+	bbox    6 2 19 11
+	attack  6 2 19 11 5 1
+	frame	data/chars/gbat/mbat1.gif
+	frame	data/chars/gbat/mbat2.gif
+	frame	data/chars/gbat/mbat3.gif
+	frame	data/chars/gbat/mbat1.gif
+	frame	data/chars/gbat/mbat2.gif
+	frame	data/chars/gbat/mbat3.gif
+	frame	data/chars/gbat/mbat1.gif
+	frame	data/chars/gbat/mbat2.gif
+	frame	data/chars/gbat/mbat3.gif
+	attack  0 0 0 0 0
+        @cmd    stop
+	frame	data/chars/gbat/mbat3.gif
+
+anim idle
+	loop	1
+	delay	7
+	offset  15 9
+	bbox    6 2 19 11
+	attack  6 2 19 11 5 1
+        @cmd    target 0.5 0.5 0 -15 1 1
+        @cmd    dash 0 0
+	frame	data/chars/gbat/mbat1.gif
+        @cmd    target 0.5 0.5 0 -15 1 1
+        @cmd    dash 0 0
+	frame	data/chars/gbat/mbat2.gif
+        @cmd    target 0.5 0.5 0 -15 1 1
+        @cmd    dash 0 0
+	attack  0 0 0 0 0
+	frame	data/chars/gbat/mbat3.gif
+
+#Not used!
+anim walk
+	loop	1
+	delay	7
+	offset  15 9
+	bbox    6 2 19 11
+	attack  6 2 19 11 5 1
+	frame	data/chars/gbat/mbat1.gif
+	frame	data/chars/gbat/mbat2.gif
+	attack  0 0 0 0 0
+	frame	data/chars/gbat/mbat3.gif
+
+#Not used!
+anim pain
+	delay	7
+	offset  15 9
+	frame	data/chars/gbat/mbat1.gif
+	frame	data/chars/gbat/mbat2.gif
+	frame	data/chars/gbat/mbat3.gif
+
+#Not used!
+anim fall
+	delay	7
+	offset  15 9
+	frame	data/chars/gbat/mbat1.gif
+	frame	data/chars/gbat/mbat2.gif
+	frame	data/chars/gbat/mbat3.gif
+
+anim death
+	subentity pdie
+	spawnframe 0 0 0 0 0
+	delay   10
+	offset  15 9
+	frame	data/chars/misc/empty.gif
+        @cmd    clearL
+	frame	data/chars/misc/empty.gif
+        @cmd    suicide
+	frame	data/chars/misc/empty.gif

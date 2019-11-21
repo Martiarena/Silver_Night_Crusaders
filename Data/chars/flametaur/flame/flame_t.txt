@@ -1,0 +1,27 @@
+name	        Flame_t
+type	        none
+nolife          1
+lifespan        1
+antigravity     100
+candamage       player npc
+
+
+
+
+
+
+
+anim	idle
+	delay	7
+	offset	67 98
+	sound	data/sounds/explosion.wav
+	hitfx	data/sounds/burnt.wav
+	burn	100 53 35 45 19 0 0 0 0 0
+	frame	data/chars/flametaur/flame/fire1.gif
+	frame	data/chars/flametaur/flame/fire1b.gif
+	frame	data/chars/flametaur/flame/fire1c.gif
+	burn	0 0 0 0
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

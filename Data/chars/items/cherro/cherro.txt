@@ -1,0 +1,65 @@
+name    	Cherro
+score           5000
+type    	item
+facing          1
+antigravity	30
+candamage  	player
+icon 		data/chars/misc/bgitem.gif
+
+palette		data/chars/items/cherro/cherro_palette.gif
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	70
+	offset	7 20
+	itembox	0 0 15 14
+	frame	data/chars/items/cherro/idle1a.gif
+	delay	2
+	frame	data/chars/items/cherro/idle1c.gif
+	delay	30
+	frame	data/chars/items/cherro/idle1a.gif
+	delay	20
+	frame	data/chars/items/cherro/idle1b.gif
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	7 20
+	sound	data/sounds/secret.wav
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/cherro/frame-1.gif
+	frame	data/chars/items/cherro/frame-2.gif
+	frame	data/chars/items/cherro/frame-3.gif
+	frame	data/chars/items/cherro/frame-4.gif
+	frame	data/chars/items/cherro/frame-5.gif
+	frame	data/chars/items/cherro/frame-6.gif
+	frame	data/chars/items/cherro/frame-7.gif
+	frame	data/chars/items/cherro/frame-8.gif
+	frame	data/chars/items/cherro/frame-9.gif
+	frame	data/chars/items/cherro/frame-10.gif
+	frame	data/chars/items/cherro/frame-11.gif
+	frame	data/chars/items/cherro/frame-12.gif
+	frame	data/chars/items/cherro/frame-13.gif
+	delay	2
+	frame	data/chars/items/cherro/frame-14b.gif
+	delay	3
+	frame	data/chars/items/cherro/frame-14.gif
+	delay	5
+	frame	data/chars/items/cherro/frame-15.gif
+	frame	data/chars/items/cherro/frame-16.gif
+	frame	data/chars/items/cherro/frame-17.gif
+	frame	data/chars/items/cherro/frame-18.gif
+	itembox	0 0 15 14
+	frame	data/chars/items/cherro/idle1a.gif
+	frame	data/chars/items/cherro/idle1a.gif
+	frame	data/chars/items/cherro/idle1a.gif
+	frame	data/chars/items/cherro/idle1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

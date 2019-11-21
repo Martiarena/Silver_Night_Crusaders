@@ -1,0 +1,27 @@
+name	        FireBlast
+type	        none
+nolife          1
+lifespan        1
+setlayer	10
+antigravity     100
+candamage       enemy obstacle
+
+
+anim idle
+	delay	4
+	offset	16 -44
+        hitfx   data/sounds/burnt.wav
+	frame	data/chars/misc/spells/fblast01.png
+	frame	data/chars/misc/spells/fblast02.png
+	burn	2 3 28 26 20 1
+	frame	data/chars/misc/spells/fblast03.png
+	frame	data/chars/misc/spells/fblast04.png
+	frame	data/chars/misc/spells/fblast05.png
+	frame	data/chars/misc/spells/fblast06.png
+	attack	0
+	frame	data/chars/misc/spells/fblast07.png
+	frame	data/chars/misc/spells/fblast08.png
+	frame	data/chars/misc/spells/fblast09.png
+	frame	data/chars/misc/spells/fblast10.png
+	frame	data/chars/misc/spells/fblast11.png
+	frame	data/chars/misc/empty.gif

@@ -1,0 +1,22 @@
+name		PStBall
+nolife		1
+type		none
+candamage	enemy obstacle
+lifespan	2
+bounce		1
+subject_to_hole	1
+no_adjust_base	0
+#animationscript	data/scripts/prscript.c
+
+
+anim idle
+	loop	1 0 1
+	delay	6
+	offset  15 27
+	landframe 2
+	quakeframe 2 1 -8
+	attack  2 2 27 27 30 1
+	frame	data/chars/misc/subweap/steelbal.png
+	frame	data/chars/misc/subweap/steelbal.png
+	attack  0
+	frame	data/chars/misc/subweap/steelbal.png

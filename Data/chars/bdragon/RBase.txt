@@ -1,0 +1,60 @@
+name    	 RBase
+health  	 10
+nomove   	 1 1
+type    	 enemy
+nolife  	 1
+noquake  	 1
+death   	 1
+stealth		 350
+score   	 0 -1
+antigravity  	 100
+hostile  	 none
+candamage  	 player npc
+subject_to_wall	 0
+subject_to_platform	 0
+subject_to_obstacle	 0
+animationscript  data/scripts/cscript.c
+
+
+anim	death
+	offset	1 1
+	delay	200
+	frame	data/chars/misc/empty.gif
+	delay	10
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	fall
+	offset	1 1
+	delay	10
+	@cmd	stop
+	frame	data/chars/misc/empty.gif
+	@cmd	beidle
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	5
+	offset	1 1
+	@cmd	suicidePar
+	frame	data/chars/misc/empty.gif
+	@cmd	suicidePar
+	frame	data/chars/misc/empty.gif
+		
+anim	pain
+	delay	10
+	offset	1 1
+	frame	data/chars/misc/empty.gif
+		
+anim	rise
+	delay	10
+	offset	1 1
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	delay	10
+	offset	1 1
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

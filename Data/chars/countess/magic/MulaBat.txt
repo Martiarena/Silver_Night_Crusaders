@@ -1,0 +1,120 @@
+name	    	MulanaBat
+health  	3
+nomove   	1 1
+type		enemy
+falldie 	1
+lifespan	3
+cantgrab 	1
+nopain  	1
+nodrop  	2
+nolife          1
+setlayer        50
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+antigravity     100
+score   	0 -1
+animationscript data/scripts/escript.c
+alternatepal	data/chars/countess/magic/muladark.png
+
+
+anim spawn
+	delay	7
+	offset  19 12
+	bbox    13 4 14 15
+	attack2  13 4 14 15 19 1
+	frame	data/chars/countess/magic/mulabat1.png
+	attack  0 0 0 0 0
+	frame	data/chars/countess/magic/mulabat2.png
+
+anim idle
+@script
+    void self = getlocalvar("self");
+    int x = getentityproperty(self, "x");
+    int y = getentityproperty(self, "a");
+    int Sx = getentityproperty(self, "xdir");
+    int Sy = getentityproperty(self, "tossv");
+    int XPos = openborvariant("xpos");
+    int Screen = openborvariant("hResolution");
+
+    if(x < XPos+30 && Sx < 0){
+      changeentityproperty(self, "velocity", -Sx, 0, Sy);
+    } else if(x > Screen+XPos-30 && Sx > 0){
+      changeentityproperty(self, "velocity", -Sx, 0, Sy);
+    } else if(y <= 5){
+      changeentityproperty(self, "velocity", 0, 0, 1.5);
+    } else if(y < 20 && Sy < 0){
+      changeentityproperty(self, "velocity", Sx, 0, -Sy);
+    } else if(y > 220 && Sy > 0){
+      changeentityproperty(self, "velocity", Sx, 0, -Sy);
+    }
+
+    if(frame==1){
+      int iR = rand()%20 + 20;
+      int Vx; int Vy;
+
+      if(iR >= 0 && iR < 5){ 
+        Vx = 1.5;
+        Vy = 0;
+      } else if(iR >= 5 && iR < 10){ 
+        Vx = 1.5;
+        Vy = 1.5;
+      } else if(iR >= 10 && iR < 15){
+        Vx = 0;
+        Vy = 1.5;
+      } else if(iR >= 15 && iR < 20){
+        Vx = -1.5;
+        Vy = 1.5;
+      } else if(iR >= 20 && iR < 25){
+        Vx = -1.5;
+        Vy = 0;
+      } else if(iR >= 25 && iR < 30){
+        Vx = -1.5;
+        Vy = -1.5;
+      } else if(iR >= 30 && iR < 35){
+        Vx = 0;
+        Vy = -1.5;
+      } else { 
+        Vx = 1.5;
+        Vy = -1.5;
+      }
+
+      changeentityproperty(self, "velocity", Vx, 0, Vy);
+    }
+@end_script
+	loop	1
+	delay	7
+	offset  19 12
+	bbox    13 4 14 15
+	attack2  13 4 14 15 19 1
+	frame	data/chars/countess/magic/mulabat4.png
+	frame	data/chars/countess/magic/mulabat3.png
+	frame	data/chars/countess/magic/mulabat1.png
+	frame	data/chars/countess/magic/mulabat2.png
+	frame	data/chars/countess/magic/mulabat4.png
+	frame	data/chars/countess/magic/mulabat3.png
+	frame	data/chars/countess/magic/mulabat1.png
+	frame	data/chars/countess/magic/mulabat2.png
+	frame	data/chars/countess/magic/mulabat4.png
+	frame	data/chars/countess/magic/mulabat3.png
+	frame	data/chars/countess/magic/mulabat1.png
+	frame	data/chars/countess/magic/mulabat2.png
+	frame	data/chars/countess/magic/mulabat4.png
+	frame	data/chars/countess/magic/mulabat3.png
+	frame	data/chars/countess/magic/mulabat1.png
+	frame	data/chars/countess/magic/mulabat2.png
+	frame	data/chars/countess/magic/mulabat4.png
+	frame	data/chars/countess/magic/mulabat3.png
+	frame	data/chars/countess/magic/mulabat1.png
+	attack2  0 0 0 0 0
+	frame	data/chars/countess/magic/mulabat2.png
+
+
+anim 	death
+	subentity pdie
+	spawnframe 0 0 0 0 0
+	delay   10
+	offset  15 9
+	frame	data/chars/misc/empty.gif
+        @cmd    suicide
+	frame	data/chars/misc/empty.gif

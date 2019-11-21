@@ -1,0 +1,161 @@
+name      	Chiroptera_
+health  	3
+nomove	 	1 1
+type		enemy
+aimove 		chase
+nolife          1
+aggresion       99
+cantgrab 	1
+nodrop	 	2
+death	 	1
+score   	50 -1
+no_adjust_base	1
+subject_to_obstacle 0
+subject_to_platform 0
+subject_to_hole 0
+subject_to_wall 0
+subject_to_gravity 0
+offscreenkill	400
+hostile         player npc
+candamage 	player npc
+icon 		data/chars/misc/bgmonster.gif
+setlayer	10
+
+palette		data/chars/bat/bat_palette.gif
+
+
+
+
+
+
+
+
+
+
+
+anim	death
+@script
+	void self = getlocalvar("self"); //Get calling entity.
+
+	if(frame==1){
+	  killentity(self);
+	}
+	@end_script	
+	subentity	Blooda
+	spawnframe	0 25 0 28 0
+	delay	8
+	offset	0 28
+	sound	data/sounds/batsqueal.wav
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	loop	1 2 36
+	delay	1
+	offset	25 57
+	frame	data/chars/bat/spawn1.gif
+	move	2
+	delay	2
+	bbox	15 23 20 12
+	attack	13 16 20 19 3 5 0 0 0 0
+	offset	25 57
+	frame	data/chars/bat/walk1.gif
+	offset	25 58
+	frame	data/chars/bat/walk1.gif
+	offset	25 59
+	frame	data/chars/bat/walk1.gif
+	offset	25 60
+	frame	data/chars/bat/walk2.gif
+	offset	25 61
+	frame	data/chars/bat/walk2.gif
+	offset	25 62
+	frame	data/chars/bat/walk2.gif
+	offset	25 63
+	frame	data/chars/bat/walk3.gif
+	offset	25 64
+	frame	data/chars/bat/walk3.gif
+	offset	25 65
+	frame	data/chars/bat/walk3.gif
+	offset	25 66
+	frame	data/chars/bat/walk3.gif
+	offset	25 67
+	frame	data/chars/bat/walk3.gif
+	offset	25 68
+	frame	data/chars/bat/walk3.gif
+	offset	25 69
+	frame	data/chars/bat/walk3.gif
+	offset	25 70
+	frame	data/chars/bat/walk3.gif
+	offset	25 71
+	frame	data/chars/bat/walk3.gif
+	offset	25 72
+	frame	data/chars/bat/walk2.gif
+	offset	25 73
+	frame	data/chars/bat/walk2.gif
+	offset	25 74
+	frame	data/chars/bat/walk2.gif
+	offset	25 73
+	frame	data/chars/bat/walk1.gif
+	offset	25 72
+	frame	data/chars/bat/walk1.gif
+	offset	25 71
+	frame	data/chars/bat/walk1.gif
+	offset	25 70
+	frame	data/chars/bat/walk1.gif
+	offset	25 69
+	frame	data/chars/bat/walk2.gif
+	offset	25 68
+	frame	data/chars/bat/walk2.gif
+	offset	25 67
+	frame	data/chars/bat/walk2.gif
+	offset	25 66
+	frame	data/chars/bat/walk3.gif
+	offset	25 65
+	frame	data/chars/bat/walk3.gif
+	offset	25 64
+	frame	data/chars/bat/walk3.gif
+	offset	25 63
+	frame	data/chars/bat/walk3.gif
+	offset	25 62
+	frame	data/chars/bat/walk3.gif
+	offset	25 61
+	frame	data/chars/bat/walk3.gif
+	offset	25 60
+	frame	data/chars/bat/walk3.gif
+	offset	25 59
+	frame	data/chars/bat/walk2.gif
+	offset	25 58
+	frame	data/chars/bat/walk2.gif
+	offset	25 57
+	attack	0 0 0 0 0 0 0 0 0
+	frame	data/chars/bat/walk1.gif
+		
+anim	idle
+	loop	1
+	delay	24
+	offset	25 57
+	followcond	1
+	followanim	1
+	hitfx	data/sounds/no-hit.wav
+	noreflect	1
+	fastattack	1
+	bbox	15 14 12 27
+	attack20	15 14 130 27 3 5 1 1 0 0
+	frame	data/chars/bat/spawn1.gif
+	delay	1
+	attack20	0
+	frame	data/chars/bat/spawn1.gif
+	delay	24
+	bbox	15 14 12 27
+	frame	data/chars/bat/spawn1.gif
+		
+anim	spawn
+	loop	0
+	delay	2
+	bbox	15 14 12 27
+	attack	15 14 12 27 3 5 0 0 0 0
+	offset	25 57
+	frame	data/chars/bat/spawn1.gif
+		
+#|edited by openBor Stats v 0.67
+		

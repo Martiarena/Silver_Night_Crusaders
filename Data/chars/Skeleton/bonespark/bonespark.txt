@@ -1,0 +1,62 @@
+name	        BoneSpark
+type	        none
+nolife          1
+lifespan        1
+antigravity     100
+candamage       player npc
+hostile		player npc
+
+load 		sparkdie
+
+animationscript  data/scripts/escript.c
+
+
+
+
+
+
+anim	idle
+	delay	1
+	offset	0 25
+	shock	0 10 38 15 19 0 0 0 0 0
+	hitfx	data/sounds/hit_thunder.wav
+	frame	data/chars/skeleton/bonespark/spark1a.gif
+	frame	data/chars/skeleton/bonespark/spark2a.gif
+	frame	data/chars/skeleton/bonespark/spark1b.gif
+	frame	data/chars/skeleton/bonespark/spark2b.gif
+	shock	0 10 75 15 19 0 0 0 0 0
+	frame	data/chars/skeleton/bonespark/spark1c.gif
+	frame	data/chars/skeleton/bonespark/spark2c.gif
+	frame	data/chars/skeleton/bonespark/spark1d.gif
+	frame	data/chars/skeleton/bonespark/spark2d.gif
+	shock	0 10 115 15 19 0 0 0 0 0
+	frame	data/chars/skeleton/bonespark/spark1e.gif
+	frame	data/chars/skeleton/bonespark/spark2e.gif
+	frame	data/chars/skeleton/bonespark/spark1f.gif
+	frame	data/chars/skeleton/bonespark/spark2f.gif
+	shock	0 10 153 15 19 0 0 0 0 0
+	frame	data/chars/skeleton/bonespark/spark1g.gif
+	frame	data/chars/skeleton/bonespark/spark2g.gif
+	frame	data/chars/skeleton/bonespark/spark1h.gif
+	frame	data/chars/skeleton/bonespark/spark2h.gif
+	shock	39 10 114 15 19 0 0 0 0 0
+	frame	data/chars/skeleton/bonespark/spark1i.gif
+	frame	data/chars/skeleton/bonespark/spark2i.gif
+	frame	data/chars/skeleton/bonespark/spark1j.gif
+	frame	data/chars/skeleton/bonespark/spark2j.gif
+	@cmd	spawn01 "sparkdie" 153 11 0
+	shock	78 10 74 15 19 0 0 0 0 0
+	frame	data/chars/skeleton/bonespark/spark1k.gif
+	frame	data/chars/skeleton/bonespark/spark2k.gif
+	frame	data/chars/skeleton/bonespark/spark1l.gif
+	frame	data/chars/skeleton/bonespark/spark2l.gif
+	shock	95 10 34 15 19 0 0 0 0 0
+	frame	data/chars/skeleton/bonespark/spark1m.gif
+	frame	data/chars/skeleton/bonespark/spark2m.gif
+	frame	data/chars/skeleton/bonespark/spark1n.gif
+	frame	data/chars/skeleton/bonespark/spark2n.gif
+	shock	0
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

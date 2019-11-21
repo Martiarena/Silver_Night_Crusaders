@@ -1,0 +1,50 @@
+name		WSpit
+type		none
+nolife		1
+health          1
+lifespan	2
+speed           8
+death   	1
+candamage	player npc
+antigravity	100
+subject_to_wall 1
+subject_to_platform 1
+
+palette         data/chars/sahagin/wspit/palette_wspit1.gif
+
+
+
+anim	death
+	loop	0
+	delay	3
+	offset	15 15
+	frame	data/chars/sahagin/wspit/explo1.gif
+	frame	data/chars/sahagin/wspit/explo2.gif
+	frame	data/chars/sahagin/wspit/explo3.gif
+	frame	data/chars/sahagin/wspit/explo4.gif
+	frame	data/chars/sahagin/wspit/explo5.gif
+	frame	data/chars/sahagin/wspit/explo6.gif
+	frame	data/chars/sahagin/wspit/explo7.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	delay	4
+	offset	5 12
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	4
+	offset	5 12
+	followcond	1
+	followanim	1
+	bbox	7 6 25 10
+	attack7	7 9 25 5 19 0 0 0 0 0
+	frame	data/chars/sahagin/wspit/wspit1.gif
+	frame	data/chars/sahagin/wspit/wspit2.gif
+	frame	data/chars/sahagin/wspit/wspit3.gif
+	frame	data/chars/sahagin/wspit/wspit4.gif
+		
+#|edited by openBor Stats v 0.67
+		

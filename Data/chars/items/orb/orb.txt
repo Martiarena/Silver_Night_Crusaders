@@ -1,0 +1,38 @@
+name    	Orbe
+type            endlevel
+facing          1
+nolife	1
+subject_to_hole 1
+no_adjust_base  0
+subject_to_platform 1
+antigravity	30
+
+palette		data/chars/items/orb/idle1.gif
+
+
+anim	idle
+	loop	1
+	delay	7
+	offset	8 16
+	bbox	0 0 16 16
+	frame	data/chars/items/orb/idle1.gif
+	frame	data/chars/items/orb/idle2.gif
+	frame	data/chars/items/orb/idle3.gif
+	frame	data/chars/items/orb/idle4.gif
+	frame	data/chars/items/orb/idle5.gif
+	frame	data/chars/items/orb/idle6.gif
+		
+anim	walkoff
+	loop	1
+	delay	7
+	offset	8 16
+	bbox	0 0 16 16
+	frame	data/chars/items/orb/idle1.gif
+	frame	data/chars/items/orb/idle2.gif
+	frame	data/chars/items/orb/idle3.gif
+	frame	data/chars/items/orb/idle4.gif
+	frame	data/chars/items/orb/idle5.gif
+	frame	data/chars/items/orb/idle6.gif
+		
+#|edited by openBor Stats v 0.67
+		

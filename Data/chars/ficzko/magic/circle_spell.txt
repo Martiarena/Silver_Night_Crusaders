@@ -1,0 +1,159 @@
+name	        Circle_spell
+type	        none
+health		1
+nolife          1
+death		1
+lifespan        10
+antigravity     100
+hostile		player npc
+candamage       player npc
+animationscript data/scripts/cscript.c
+
+palette		data/chars/ficzko/magic/sphere_palette.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	death
+	delay	4
+	offset	13 14
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	delay	4
+	offset	13 14
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1 21 23
+	delay	7
+	offset	13 14
+	followcond	1
+	followanim	1
+	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	dash 0 0
+	burn	5 6 16 16 19 0 0 0 0 0
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	@cmd	target 0.9 0.9 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	@cmd	target 0.9 0.9 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	@cmd	target 0.9 0.9 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	@cmd	target 0.9 0.9 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	delay	1
+	@cmd	groundkill
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	@cmd	groundkill
+	frame	data/chars/ficzko/magic/spawn3i.gif
+	@cmd	groundkill
+	frame	data/chars/ficzko/magic/spawn3i.gif
+		
+anim	spawn
+	delay	7
+	offset	13 14
+	frame	data/chars/ficzko/magic/spawn3a.gif
+	frame	data/chars/ficzko/magic/spawn3b.gif
+	frame	data/chars/ficzko/magic/spawn3c.gif
+	frame	data/chars/ficzko/magic/spawn3d.gif
+	frame	data/chars/ficzko/magic/spawn3e.gif
+	frame	data/chars/ficzko/magic/spawn3d.gif
+	frame	data/chars/ficzko/magic/spawn3c.gif
+	frame	data/chars/ficzko/magic/spawn3b.gif
+	frame	data/chars/ficzko/magic/spawn3a.gif
+	frame	data/chars/ficzko/magic/spawn3b.gif
+	frame	data/chars/ficzko/magic/spawn3c.gif
+	frame	data/chars/ficzko/magic/spawn3d.gif
+	frame	data/chars/ficzko/magic/spawn3e.gif
+	frame	data/chars/ficzko/magic/spawn3d.gif
+	frame	data/chars/ficzko/magic/spawn3c.gif
+	frame	data/chars/ficzko/magic/spawn3b.gif
+	frame	data/chars/ficzko/magic/spawn3a.gif
+	frame	data/chars/ficzko/magic/spawn3j.gif
+	frame	data/chars/ficzko/magic/spawn3k.gif
+	frame	data/chars/ficzko/magic/spawn3j.gif
+	frame	data/chars/ficzko/magic/spawn3k.gif
+	frame	data/chars/ficzko/magic/spawn3j.gif
+	frame	data/chars/ficzko/magic/spawn3k.gif
+	frame	data/chars/ficzko/magic/spawn3j.gif
+	frame	data/chars/ficzko/magic/spawn3k.gif
+	frame	data/chars/ficzko/magic/spawn3f.gif
+	frame	data/chars/ficzko/magic/spawn3g.gif
+	frame	data/chars/ficzko/magic/spawn3h.gif
+	frame	data/chars/ficzko/magic/spawn3g.gif
+	frame	data/chars/ficzko/magic/spawn3h.gif
+	frame	data/chars/ficzko/magic/spawn3g.gif
+	frame	data/chars/ficzko/magic/spawn3h.gif
+	frame	data/chars/ficzko/magic/spawn3g.gif
+	frame	data/chars/ficzko/magic/spawn3h.gif
+	frame	data/chars/ficzko/magic/spawn3g.gif
+	frame	data/chars/ficzko/magic/spawn3h.gif
+	frame	data/chars/ficzko/magic/spawn3g.gif
+	frame	data/chars/ficzko/magic/spawn3h.gif
+	frame	data/chars/ficzko/magic/spawn3i.gif
+		
+#|edited by openBor Stats v 0.67
+		

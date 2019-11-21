@@ -1,0 +1,55 @@
+name	Waterfall
+speed 	5
+setlayer -2
+type	panel
+
+palette	data/bgs/underground/waterfall/frame-01.gif
+
+anim	idle
+	loop	1
+	offset	0 -8
+	delay	3
+	frame	data/bgs/underground/waterfall/frame-01.gif
+	frame	data/bgs/underground/waterfall/frame-02.gif
+	frame	data/bgs/underground/waterfall/frame-03.gif
+	frame	data/bgs/underground/waterfall/frame-04.gif
+	frame	data/bgs/underground/waterfall/frame-05.gif
+	frame	data/bgs/underground/waterfall/frame-06.gif
+	frame	data/bgs/underground/waterfall/frame-07.gif
+	frame	data/bgs/underground/waterfall/frame-08.gif
+	frame	data/bgs/underground/waterfall/frame-09.gif
+	frame	data/bgs/underground/waterfall/frame-10.gif
+	frame	data/bgs/underground/waterfall/frame-11.gif
+	frame	data/bgs/underground/waterfall/frame-12.gif
+	frame	data/bgs/underground/waterfall/frame-13.gif
+	frame	data/bgs/underground/waterfall/frame-14.gif
+	frame	data/bgs/underground/waterfall/frame-15.gif
+	frame	data/bgs/underground/waterfall/frame-16.gif
+	frame	data/bgs/underground/waterfall/frame-17.gif
+	frame	data/bgs/underground/waterfall/frame-18.gif
+	frame	data/bgs/underground/waterfall/frame-19.gif
+	frame	data/bgs/underground/waterfall/frame-20.gif
+	frame	data/bgs/underground/waterfall/frame-21.gif
+	frame	data/bgs/underground/waterfall/frame-22.gif
+	frame	data/bgs/underground/waterfall/frame-23.gif
+	frame	data/bgs/underground/waterfall/frame-24.gif
+	frame	data/bgs/underground/waterfall/frame-25.gif
+	frame	data/bgs/underground/waterfall/frame-26.gif
+	frame	data/bgs/underground/waterfall/frame-27.gif
+	frame	data/bgs/underground/waterfall/frame-28.gif
+	frame	data/bgs/underground/waterfall/frame-29.gif
+	frame	data/bgs/underground/waterfall/frame-30.gif
+	frame	data/bgs/underground/waterfall/frame-31.gif
+	frame	data/bgs/underground/waterfall/frame-32.gif
+	frame	data/bgs/underground/waterfall/frame-33.gif
+	frame	data/bgs/underground/waterfall/frame-34.gif
+	frame	data/bgs/underground/waterfall/frame-35.gif
+	frame	data/bgs/underground/waterfall/frame-36.gif
+	frame	data/bgs/underground/waterfall/frame-37.gif
+	frame	data/bgs/underground/waterfall/frame-38.gif
+	frame	data/bgs/underground/waterfall/frame-39.gif
+	frame	data/bgs/underground/waterfall/frame-40.gif
+	frame	data/bgs/underground/waterfall/frame-41.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,17 @@
+name  		Entplat1
+type		none
+facing	  	1
+setlayer	1
+antigravity	100
+
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	8 16
+	platform	0 16 -8 -8 24 24 10 16
+	frame	data/bgs/castle_entrance/platforms/platform1.gif
+

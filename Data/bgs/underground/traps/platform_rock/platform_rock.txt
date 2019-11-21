@@ -1,0 +1,66 @@
+name    Platform_rock
+type trap
+health   1
+shadow  0
+noatflash 1
+nomove	 	1
+setlayer        -1
+antigravity 100
+nolife 1
+hostile player npc
+candamage  player npc
+
+palette	 data/bgs/underground/palette_objects.gif
+
+load     Falling_rock
+
+
+
+
+
+
+
+
+
+
+anim	death
+	loop	0
+	delay	24
+	offset	28 14
+	subentity	Falling_rock
+	spawnframe	2 0 0 0 0
+	platform	0 16 -8 -8 65 65 10 16
+	frame	data/bgs/underground/traps/platform_rock/platform_rock_trap.gif
+	delay	1
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	loop	0
+	delay	24
+	offset	28 14
+	subentity	Falling_rock
+	spawnframe	2 0 0 0 0
+	platform	0 16 -8 -8 65 65 10 16
+	frame	data/bgs/underground/traps/platform_rock/platform_rock_trap.gif
+	delay	1
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	28 15
+	followcond	1
+	followanim	1
+	hitfx	data/sounds/no-hit.wav
+	noreflect	1
+	platform	0 16 -8 -8 65 65 10 16
+	attack20	0 -3 57 18 0 0 1 1 0 0
+	frame	data/bgs/underground/traps/platform_rock/platform_rock_trap.gif
+	frame	data/bgs/underground/traps/platform_rock/platform_rock_trap.gif
+		
+#|edited by openBor Stats v 0.67
+		

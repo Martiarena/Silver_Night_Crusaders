@@ -1,0 +1,29 @@
+name	        IceHole
+type	        none
+lifespan        1.5
+setlayer	2
+nolife	1
+subject_to_gravity 0
+animationscript	data/scripts/lescript.c
+
+load	IceBal
+
+anim idle
+	delay	8
+	offset	15 15
+	frame	data/chars/countess/magic/iceball1.gif
+	frame	data/chars/countess/magic/iceball2.gif
+	frame	data/chars/countess/magic/iceball3.gif
+	frame	data/chars/countess/magic/iceball4.gif
+	frame	data/chars/countess/magic/iceball5.gif
+	frame	data/chars/countess/magic/iceball6.gif
+	frame	data/chars/countess/magic/iceball7.gif
+	delay	20
+        @cmd    shooter2 "IceBal" 0 -7 3 0
+	frame	data/chars/countess/magic/iceball5.gif
+	delay	8
+	frame	data/chars/countess/magic/iceball4.gif
+	frame	data/chars/countess/magic/iceball3.gif
+	frame	data/chars/countess/magic/iceball2.gif
+	frame	data/chars/countess/magic/iceball1.gif
+	frame	data/chars/misc/empty.gif

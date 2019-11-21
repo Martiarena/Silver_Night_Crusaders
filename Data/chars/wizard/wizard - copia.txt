@@ -1,0 +1,126 @@
+name     Brujo
+health          42
+nomove  	1 1
+type		enemy
+cantgrab 	1
+nodrop  	2
+death	 	1
+nodieblink 	2
+nopain  	1
+subject_to_gravity 0
+setlayer        10
+offscreenkill	500
+Score           500 -1
+load            Spiral_disapear_b
+load            Necro_blast_1
+load            magicseal
+load            Ice
+load            iceseal
+load     	Icedie
+load		Necrofago
+load  		LightColumn_ghoul
+
+diesound         data/sounds/die4.wav
+
+icon 		data/chars/misc/bgmonster.gif
+
+palette		data/chars/wizard/brujo_palette.gif
+alternatepal	data/chars/wizard/blink.gif
+
+defense normal4 3 0 0 0 0 0 0
+defense attack7 0.5 0 0 0 0 0 0
+defense normal19 1.5 0 0 0 0 0 0
+defense burn 1.5 0 0 0 0 0 0
+
+
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	death
+	subentity	edie
+	spawnframe	0 0 0 50 0
+	delay	5
+	offset	49 104
+	frame	data/chars/wizard/death1a.gif
+	frame	data/chars/wizard/death1b.gif
+	frame	data/chars/wizard/death1c.gif
+	frame	data/chars/wizard/death1d.gif
+	frame	data/chars/wizard/death1e.gif
+	frame	data/chars/wizard/death1f.gif
+	frame	data/chars/wizard/death1g.gif
+	frame	data/chars/wizard/death1h.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	rangea	-60 5
+	range	0 90
+	loop	0
+	delay	10
+	offset	49 104
+	bbox	33 30 25 50
+	attack	33 30 25 50 12 0 0 0 0 0
+	frame	data/chars/wizard/idle1a.gif
+	frame	data/chars/wizard/idle1b.gif
+	@cmd	clearL
+	frame	data/chars/wizard/idle1c.gif
+	frame	data/chars/wizard/idle1a.gif
+	delay	30
+	@cmd	spawn01 "magicseal" 20 40 0
+	@cmd	spawn01 "LightColumn_ghoul" 20 -60 0
+	frame	data/chars/wizard/spell1a.gif
+	delay	10
+	bbox	20 27 15 50
+	attack	20 27 15 50 12 0 0 0 0
+	frame	data/chars/wizard/spell1b.gif
+	@cmd	looper 5 4
+	frame	data/chars/wizard/spell1c.gif
+	frame	data/chars/wizard/spell1d.gif
+	frame	data/chars/wizard/idle1a.gif
+	frame	data/chars/wizard/idle1b.gif
+	@cmd	beidle
+	frame	data/chars/wizard/idle1c.gif
+		
+anim	idle
+	loop	1
+	delay	48
+	offset	49 104
+	bbox	33 30 25 50
+	attack	33 30 25 50 12 0 0 0 0 0
+	frame	data/chars/wizard/idle1a.gif
+	delay	12
+	@cmd	targetT 40 0 -10 1
+	frame	data/chars/wizard/idle1b.gif
+	@cmd	attack1 0 100 -60 5 "ANI_FOLLOW1"
+	frame	data/chars/wizard/idle1c.gif
+	frame	data/chars/wizard/idle1a.gif
+	@cmd	looper 3 10
+	@cmd	spawn01 "magicseal" 20 40 0
+	frame	data/chars/wizard/spell1a.gif
+	delay	14
+	@cmd	spawn01 "Necro_blast_1" 30 40 0
+	frame	data/chars/wizard/spell1b.gif
+	delay	21
+	frame	data/chars/wizard/spell1c.gif
+	delay	48
+	frame	data/chars/wizard/spell1d.gif
+	delay	5
+	attack7	0
+	frame	data/chars/wizard/spell1c.gif
+		
+#|edited by openBor Stats v 0.67
+		

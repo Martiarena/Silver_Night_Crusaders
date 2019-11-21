@@ -1,0 +1,127 @@
+name    	 BoneSnake
+health  	 100
+nomove   	 1 1
+type    	 enemy
+nolife  	 1
+noquake  	 1
+nopain  	 1
+nodrop  	 2
+setlayer  	 100
+death   	 1
+hostile  	 player
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+load	         RibPis7
+
+palette	         data/chars/wdragon/head01.gif
+alternatepal	 data/chars/wdragon/blink.gif
+alternatepal	 data/chars/wdragon/gold.gif
+alternatepal	 data/chars/wdragon/white.gif
+alternatepal	 data/chars/wdragon/red.gif
+
+
+anim spawn
+	delay	1
+	offset	9 27
+	attack	5 6 25 22 5 1
+	frame	data/chars/wdragon/head01.gif
+	bbox	5 6 25 22
+	attack	0
+        @cmd    spawner "RibPis7" 0 0 0
+	frame	data/chars/wdragon/head01.gif
+
+anim idle
+	loop	1
+	delay	1
+	offset	9 27
+        @cmd    clearL
+	bbox	5 6 25 22
+	attack	5 6 25 22 5 1
+	frame	data/chars/wdragon/head01.gif
+	delay	40
+        @cmd    leaper 2 4 1
+	frame	data/chars/wdragon/head01.gif
+	delay	45
+	frame	data/chars/wdragon/head01.gif
+	delay	40
+        @cmd    leaper 2 4 1
+	frame	data/chars/wdragon/head01.gif
+	delay	45
+	frame	data/chars/wdragon/head01.gif
+	delay	40
+        @cmd    leaper 1 4 1
+	frame	data/chars/wdragon/head01.gif
+	delay	44
+	frame	data/chars/wdragon/head01.gif
+	delay	1
+        @cmd    attack0 "ANI_FOLLOW1"
+	frame	data/chars/wdragon/head01.gif
+	delay	40
+        @cmd    leaper 2 4 1
+	frame	data/chars/wdragon/head01.gif
+	delay	44
+	frame	data/chars/wdragon/head01.gif
+	delay	1
+	attack	0
+        @cmd    flip
+	frame	data/chars/wdragon/head01.gif
+
+anim follow1
+	delay	1
+	offset	9 27
+	bbox	5 6 25 22
+	attack	5 6 25 22 5 1
+	frame	data/chars/wdragon/head01.gif
+        @cmd    targetT 100 0 0 1 #Dummy targetting
+	frame	data/chars/wdragon/head01.gif
+	attack	0
+        @cmd    beidle
+	frame	data/chars/wdragon/head01.gif
+
+#Not used!
+anim walk
+	loop	1
+	delay	12
+	offset	9 27
+	bbox	5 6 25 22
+	attack	5 6 25 22 5 1
+	frame	data/chars/wdragon/head01.gif
+	attack	0
+	frame	data/chars/wdragon/head01.gif
+
+
+anim death
+	delay	1
+	offset	9 27
+	bouncefactor	2
+	frame	data/chars/wdragon/head03.gif
+        @cmd    stop
+	frame	data/chars/wdragon/head03.gif
+        @cmd    clearL
+	frame	data/chars/wdragon/head03.gif
+	delay	50
+	frame	data/chars/wdragon/head03.gif
+
+#Not used!
+anim pain
+	delay	5
+	offset	9 27
+	attack	5 6 25 22 5 1
+	frame	data/chars/wdragon/head01.gif
+	attack	0
+	frame	data/chars/wdragon/head01.gif
+
+#Not used!
+anim fall
+	offset	9 27
+	delay	10
+        @cmd    stop
+	frame	data/chars/wdragon/head01.gif
+        @cmd    beidle
+	frame	data/chars/wdragon/head01.gif
+
+#Not used!
+anim rise
+	delay	5
+	offset	9 27
+	frame	data/chars/wdragon/head01.gif

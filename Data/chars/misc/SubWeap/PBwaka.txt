@@ -1,0 +1,39 @@
+name		PBwaka
+type		none
+candamage	enemy obstacle
+#speed		10
+lifespan	3
+subject_to_gravity  0
+subject_to_platform 0
+
+
+anim idle
+@script
+    void self = getlocalvar("self"); //Get calling entity
+    int Dir = getentityproperty(self, "direction");
+    float Fram = (getentityproperty(self, "animpos") + 1)*0.125;
+    float Vx = 0.75+0.25*cos(Fram*360);
+    float Vy = -2*sin(Fram*360);
+    
+    if(Dir==0){
+      Vx = -Vx;
+    }
+
+    changeentityproperty(self, "velocity", Vx , 0, Vy);
+@end_script
+	loop	1
+	delay	5
+	offset  13 -87
+	fastattack 1
+	attack  1 1 23 23 8 1 0 0 0
+	frame	data/chars/misc/subweap/bwaka1.png
+	frame	data/chars/misc/subweap/bwaka2.png
+	frame	data/chars/misc/subweap/bwaka3.png
+	attack  0
+	frame	data/chars/misc/subweap/bwaka4.png
+	attack  1 1 23 23 8 1 0 0 0
+	frame	data/chars/misc/subweap/bwaka5.png
+	frame	data/chars/misc/subweap/bwaka6.png
+	frame	data/chars/misc/subweap/bwaka7.png
+	attack  0
+	frame	data/chars/misc/subweap/bwaka8.png

@@ -1,0 +1,21 @@
+name    	BPetir
+type    	none
+lifespan  	0.6
+antigravity     -300
+candamage       enemy obstacle
+
+
+
+anim	idle
+	loop	1
+	delay	5
+	offset	7 249
+	attack8	2 0 12 250 9 0 0 0 0 0
+	hitfx	data/sounds/jolted.wav
+	frame	data/chars/blitz/petir1.gif
+	frame	data/chars/blitz/petir2.gif
+	frame	data/chars/blitz/petir3.gif
+	frame	data/chars/blitz/petir4.gif
+		
+#|edited by openBor Stats v 0.67
+		

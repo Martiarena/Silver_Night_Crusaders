@@ -1,0 +1,25 @@
+name		Broke_window
+type            none
+shadow		0
+nomove		1
+nolife		1
+setlayer 	0
+offscreenkill   9999
+
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_gravity 0
+
+palette	data/bgs/bathory_keep/decoration/broke_window.gif
+
+
+
+
+anim	idle
+	loop	0
+	offset	57 89
+	delay	7
+	frame	data/bgs/bathory_keep/decoration/broke_window.gif
+		
+#|edited by openBor Stats v 0.67
+		

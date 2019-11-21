@@ -1,0 +1,125 @@
+name	        GPillar
+type	        none
+lifespan        1.5
+setlayer	400
+
+
+
+anim	idle
+	delay	1
+	offset	25 480
+	frame	data/chars/countess/gpillar6.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar6.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar6.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar6.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar5.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar5.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar5.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar5.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar4.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar4.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar4.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar4.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar3.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar3.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar3.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar3.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar2.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar2.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar2.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar2.png
+	frame	data/chars/misc/empty.gif
+	delay	1
+	frame	data/chars/countess/gpillar1.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar1.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar1.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar1.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar1.png
+	frame	data/chars/countess/gpillar0.png
+	frame	data/chars/countess/gpillar1.png
+	frame	data/chars/countess/gpillar0.png
+	frame	data/chars/countess/gpillar1.png
+	frame	data/chars/countess/gpillar0.png
+	frame	data/chars/countess/gpillar1.png
+	frame	data/chars/countess/gpillar0.png
+	frame	data/chars/countess/gpillar1.png
+	frame	data/chars/countess/gpillar0.png
+	frame	data/chars/countess/gpillar1.png
+	frame	data/chars/countess/gpillar0.png
+	frame	data/chars/countess/gpillar1.png
+	frame	data/chars/countess/gpillar0.png
+	frame	data/chars/countess/gpillar1.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar1.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar1.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar1.png
+	frame	data/chars/misc/empty.gif
+	delay	1
+	frame	data/chars/countess/gpillar2.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar2.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar2.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar2.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar3.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar3.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar3.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar3.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar4.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar4.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar4.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar4.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar5.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar5.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar5.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar5.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar6.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar6.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar6.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/gpillar6.png
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

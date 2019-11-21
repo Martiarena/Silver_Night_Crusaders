@@ -1,0 +1,20 @@
+name  		Catacombs_wall1a
+type		none
+facing	  	1
+setlayer	1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/dungeon/decoration/decoration_catacombs.gif
+
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	24 23
+	platform	0 23 -8 -8 56 56 10 9999
+	frame	data/bgs/dungeon/walls/catacombs_wall1a.gif
+

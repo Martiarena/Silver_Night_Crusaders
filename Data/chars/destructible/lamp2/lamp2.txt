@@ -1,0 +1,45 @@
+name	Lampara_libreria
+health	1
+type	obstacle
+shadow  0
+nolife	1
+death 1
+nomove	1
+antigravity	100
+setlayer 1
+subject_to_wall 1
+subject_to_obstacle 0
+
+
+palette 	data/chars/destructible/lamp2/lamp2-pallete.gif
+alternatepal	data/chars/destructible/lamp2/lamp2-pallete_alt.gif
+
+
+
+anim	death
+@script
+	void self = getlocalvar("self"); //Get calling entity.
+
+	if(frame==1){
+	  killentity(self);
+	}
+	@end_script	
+	subentity	explo
+	spawnframe	0 0 0 0 0
+	delay	8
+	offset	50 50
+	sound	data/sounds/breakpot.wav
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	8
+	offset	7 16
+	bbox	0 12 15 17
+	platform	21 69 -10 -10 10 10 10 10
+	frame	data/chars/destructible/lamp2/lamp2a.gif
+	frame	data/chars/destructible/lamp2/lamp2b.gif
+		
+#|edited by openBor Stats v 0.67
+		

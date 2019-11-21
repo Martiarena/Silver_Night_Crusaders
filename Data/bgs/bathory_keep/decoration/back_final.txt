@@ -1,0 +1,17 @@
+name	       	Back_final
+type    	panel
+speed		9
+setlayer	-1
+
+palette 	data/bgs/bathory_keep/decoration/back_final.gif
+
+
+
+anim	idle
+	loop	1
+	delay	5
+	offset	0 0
+	frame	data/bgs/bathory_keep/decoration/back_final.gif
+		
+#|edited by openBor Stats v 0.67
+		

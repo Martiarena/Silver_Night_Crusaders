@@ -1,0 +1,59 @@
+name    Dungeon_falling_spike_chain_trap
+type	trap
+shadow  0
+noatflash 1
+nolife 1
+hostile player npc
+candamage  player enemy npc obstacle
+
+load Dungeon_up_spike_chain_trap
+
+animationscript  data/scripts/escript.c
+
+palette	 data/bgs/dungeon/dungeon_misc.gif
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	3
+	offset	16 197
+	hitfx	data/sounds/slash.wav
+	attack2	0 188 32 9 19 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	sound	data/sounds/rock_break3.wav
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	delay	24
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	delay	1
+	subentity	Dungeon_up_spike_chain_trap
+	spawnframe	4 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+anim	jumpland
+	loop	0
+	delay	7
+	offset	16 197
+	hitfx	data/sounds/slash.wav
+	attack2	0 188 32 9 25 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+		
+anim	walkoff
+	loop	0
+	delay	7
+	offset	16 197
+	hitfx	data/sounds/slash.wav
+	attack2	0 188 32 9 25 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+		
+#|edited by openBor Stats v 0.67
+		

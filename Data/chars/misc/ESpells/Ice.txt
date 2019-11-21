@@ -1,0 +1,36 @@
+name	        Ice
+type	        none
+nolife          1
+lifespan        1
+antigravity     100
+candamage       player npc  shot
+
+palette		data/chars/misc/ESpells/ice_spell_palette.gif
+
+
+anim	idle
+	delay	5
+	offset	13 13
+	hitfx	data/sounds/icebreak.wav
+	attack7	6 6 14 14 12 0 0 0 0 0
+	frame	data/chars/misc/espells/ice1e.gif
+	frame	data/chars/misc/espells/ice1d.gif
+	hitfx	data/sounds/icebreak.wav
+	attack7	2 2 23 23 19 0 0 0 0 0
+	frame	data/chars/misc/espells/ice1c.gif
+	frame	data/chars/misc/espells/ice1b.gif
+	frame	data/chars/misc/espells/ice1c.gif
+	frame	data/chars/misc/espells/ice1b.gif
+	frame	data/chars/misc/espells/ice1c.gif
+	frame	data/chars/misc/espells/ice1b.gif
+	frame	data/chars/misc/espells/ice1c.gif
+	frame	data/chars/misc/espells/ice1b.gif
+	attack7	6 6 14 14 12 0 0 0 0 0
+	hitfx	data/sounds/icebreak.wav
+	frame	data/chars/misc/espells/ice1d.gif
+	attack7	0
+	frame	data/chars/misc/espells/ice1e.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

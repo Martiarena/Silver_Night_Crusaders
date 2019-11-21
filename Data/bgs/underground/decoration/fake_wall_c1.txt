@@ -1,0 +1,47 @@
+name  	Fake_wall_c1
+health	24
+type	obstacle
+nomove	1
+setlayer 1
+shadow  0
+nolife	1
+subject_to_wall 1
+subject_to_obstacle 0
+offscreenkill   9999
+animationscript  data/scripts/escript.c
+
+palette		data/bgs/underground/palette_objects.gif
+
+
+
+
+
+
+
+
+
+anim	fall
+	delay	5
+	offset	43 74
+	sound	data/sounds/rock_break1.wav
+	frame	data/chars/misc/empty.gif
+	@cmd	tosserM "Underground_rock4" 8 34 0 2.5
+	@cmd	tosserM "Underground_rock3" 5 26 0 1.5
+	@cmd	tosserM "Underground_rock2" 8 25 0.3 1.5
+	@cmd	tosserM "Underground_rock1" -3 27 -0.3 1.5
+	@cmd	tosserM "Underground_rock2" 5 12 0.3 1
+	@cmd	tosserM "Underground_rock3" -8 14 -0.3 1
+	sound	data/sounds/rock_break2.wav
+	frame	data/chars/misc/empty.gif
+	delay	200
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	delay	100
+	offset	26 105
+	platform	0 105 -8 -8 61 61 10 999
+	bbox	0 26 53 80
+	frame	data/bgs/underground/decoration/fake_wall.gif
+		
+#|edited by openBor Stats v 0.67
+		

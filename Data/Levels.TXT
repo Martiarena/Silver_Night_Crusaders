@@ -1,0 +1,177 @@
+hiscorebg 1
+completebg 1
+showrushbonus 1
+loadingbg 1 72 200 173 142 184 0
+loadingbg2 1 321 241 1 247 224 0
+showcomplete 999 999 999 999 999 999
+clearbonus 999 999 93 82 210 82 999 999 999 999
+lifebonus 999 999 93 115 210 115 999 999 999 999
+rushbonus 999 999 93 148 210 148 999 999 999 999
+totalscore 999 999 93 192 210 192 999 999 999 999
+pauseoffset 0 1 160 140 3 140 120
+
+e1life	-550 -500
+e1icon	206 217
+e1name	222 224 0
+
+e2life	-550 -500
+e2icon	92 217
+e2name	108 224 0
+
+p1namej 4 2 71 2 40 2 0
+p1life 8 15
+p1lifen 38 19 0
+p1lifex 28 18 4
+p1icon 4 14
+p1score 4 2 70 1 80 2 0
+lbarsize 3 100 1 0 1 -320 -320 -320 -320
+p1mp 17 45
+mpbarsize 2 71 1 1 1 -300 -300 -300 -300
+
+p2namej 160 2 229 2 189 2 0
+p2life 8 133
+p2lifen 38 137 0
+p2lifex 28 136 4
+p2icon 4 132
+p2score 164 2 233 1 243 2 0
+lbarsize 3 100 1 0 1 -300 -300 -300 -300
+p2mp 17 163
+mpbarsize 2 71 1 1 1 -300 -300 -300 -300
+scoreformat 0
+
+
+set	Testing
+lives	3
+credits	3
+cansave	1
+typemp	1
+maxplayers  2
+noshare 0
+nosame	1 0
+continuescore 1
+noslowfx 1
+nomaxrushreset 1
+showrushbonus 1
+p1smenu	29 52 240 320
+p2smenu	29 150 240 320
+rush	1	1.5	_	3	3	_	1	1
+p1rush	-999	-999	-999	-999	-999	-999	-999	-999
+p2rush	-999	-999	-999	-999	-999	-999	-999	-999
+scbonuses 4000 1000 100 1
+
+
+z	216 216
+file	data/levels/dungeon.txt
+file	data/levels/bathory_keep.txt
+next
+file	data/levels/moon_bridge_b.txt
+file	data/levels/gardenb.txt
+file	data/levels/debbug.txt
+z	464 464
+file	data/levels/dungeonc.txt
+z	216 216
+file	data/levels/clock_tower_bridge.txt
+z	464 464
+file	data/levels/dungeonc.txt
+z	216 216
+file	data/levels/debbug.txt
+file	data/levels/castle_entrance.txt
+z	464 464
+file	data/levels/dungeonc.txt
+z	216 216
+file	data/levels/debbug.txt
+z	216 216
+file	data/levels/libraryc.txt
+
+
+set	Modo_Historia
+lives	3
+credits	3
+cansave	2
+typemp	1
+maxplayers  2
+noshare 0
+nosame	1 0
+continuescore 1
+noslowfx 1
+nomaxrushreset 1
+showrushbonus 1
+p1smenu	29 52 240 320
+p2smenu	29 151 240 320
+rush	1	1.5	_	3	3	_	1	1
+p1rush	-999	-999	-999	-999	-999	-999	-999	-999
+p2rush	-999	-999	-999	-999	-999	-999	-999	-999
+scbonuses 4000 1000 100 1
+
+z	216 216
+file	data/levels/town.txt
+file	data/levels/shop.txt
+next
+file	data/levels/castle_entrance.txt
+file	data/levels/castle_entranceb.txt
+file	data/levels/castle_entrancec.txt
+next
+z	216 216
+file	data/levels/undergrounda.txt
+z	198 198
+file	data/levels/undergroundb.txt
+z	216 216
+file	data/levels/undergroundc.txt
+next
+z	216 216
+file	data/levels/gardena.txt
+file	data/levels/gardenb.txt
+next
+z	216 216
+file	data/levels/librarya.txt
+z	464 464
+file	data/levels/libraryb.txt
+z	216 216
+file	data/levels/libraryc.txt
+next
+z	216 216
+file	data/levels/clock_tower_bridge.txt
+file	data/levels/clock_tower_elevator.txt
+file 	data/levels/clock_tower.txt
+next
+file	data/levels/moon_bridge.txt
+file	data/levels/moon_bridge_b.txt
+next
+file	data/levels/dungeon.txt
+z	464 464
+file	data/levels/dungeonc.txt
+next
+end
+
+set	Debbug
+lives	5
+credits	10
+cansave	1
+typemp	1
+
+z	216 216
+file 	data/levels/clock_tower.txt
+file	data/levels/gardena.txt
+file	data/levels/debbug.txt
+file	data/levels/gardena.txt
+file	data/levels/debbug.txt
+file	data/levels/moon_bridge_b.txt
+file 	data/levels/clock_tower.txt
+file	data/levels/debbug.txt
+file 	data/levels/clock_tower.txt
+end 
+
+set	Boss_Stages
+lives	5
+credits	10
+cansave	1
+typemp	1
+
+z	216 216
+file	data/levels/shop.txt
+file	data/levels/castle_entrancec.txt
+file	data/levels/undergroundc.txt
+file	data/levels/gardenb.txt
+file	data/levels/libraryc.txt
+file 	data/levels/clock_tower.txt
+file	data/levels/moon_bridge_b.txt

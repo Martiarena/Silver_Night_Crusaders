@@ -1,0 +1,21 @@
+name  		Sealed_door
+type		none
+facing	  	1
+setlayer -1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/library/decoration/sealed_door_palette.gif
+
+
+
+anim	idle
+	loop	1
+	delay	14
+	offset	7 94
+	platform	0 94 -8 -8 22 22 10 999
+	frame	data/bgs/library/decoration/sealed_door_1.gif
+	frame	data/bgs/library/decoration/sealed_door_2.gif
+	frame	data/bgs/library/decoration/sealed_door_3.gif
+	frame	data/bgs/library/decoration/sealed_door_4.gif
+

@@ -1,0 +1,16 @@
+name	fireruins
+speed 	5
+type	panel
+
+palette	data/bgs/cachtice/decoration/fireruins1.gif
+
+anim	idle
+	loop	1
+	offset	0 0
+	delay	18
+	frame	data/bgs/cachtice/decoration/fireruins1.gif
+	frame	data/bgs/cachtice/decoration/fireruins2.gif
+	frame	data/bgs/cachtice/decoration/fireruins3.gif
+		
+#|edited by openBor Stats v 0.41
+		

@@ -1,0 +1,26 @@
+name	       	Ani_chain_up
+type    	none
+antigravity	100
+offscreenkill   9999
+
+palette 	data/bgs/clock_tower/decoration/ani_chain_1a.gif
+
+
+
+
+anim	idle
+	loop	1
+	delay	1
+	offset	3 124
+	frame	data/bgs/clock_tower/decoration/ani_chain_1i.gif
+	frame	data/bgs/clock_tower/decoration/ani_chain_1h.gif
+	frame	data/bgs/clock_tower/decoration/ani_chain_1g.gif
+	frame	data/bgs/clock_tower/decoration/ani_chain_1f.gif
+	frame	data/bgs/clock_tower/decoration/ani_chain_1e.gif
+	frame	data/bgs/clock_tower/decoration/ani_chain_1d.gif
+	frame	data/bgs/clock_tower/decoration/ani_chain_1c.gif
+	frame	data/bgs/clock_tower/decoration/ani_chain_1b.gif
+	frame	data/bgs/clock_tower/decoration/ani_chain_1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

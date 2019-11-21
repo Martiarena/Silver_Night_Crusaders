@@ -1,0 +1,23 @@
+name	bodyb
+type 	none
+shadow	0
+setlayer    -1
+subject_to_platform 1
+palette	data/chars/misc/bodies/bodies-palette.gif
+
+
+
+anim	idle
+	loop	0
+	offset	23 10
+	delay	1000
+	frame	data/chars/misc/bodies/body2.gif
+		
+anim	spawn
+	loop	0
+	offset	23 10
+	delay	1000
+	frame	data/chars/misc/bodies/body2.gif
+		
+#|edited by openBor Stats v 0.67
+		

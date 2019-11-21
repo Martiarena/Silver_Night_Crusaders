@@ -1,0 +1,25 @@
+name	leosp
+health	0
+type	text
+subtype	noskip
+candamage enemy
+setlayer 240
+
+#Frame offsets must go from 0 0 to 320 0, in order to cover the whole image!
+
+#palette 	data/chars/leon/1.gif
+
+anim idle
+	offset	160 240
+	delay 70
+	frame	data/chars/misc/empty.gif
+	delay 6
+	frame	data/chars/misc/spells/white.gif
+	frame	data/chars/misc/spells/black.gif
+	frame	data/chars/misc/spells/white.gif
+	attack  -20  -11  369  278  40  0  1  0  0  1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+
+

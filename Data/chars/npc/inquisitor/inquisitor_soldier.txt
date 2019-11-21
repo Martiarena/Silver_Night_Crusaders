@@ -1,0 +1,242 @@
+name    	 Soldado_inquisidor
+health           60
+speed            8
+type npc
+subtype follow
+aimove chase
+noquake  	 1
+nodrop  	 2
+nopain 1
+blockodds        1
+aggression 9999
+death   	 1
+nodieblink       3
+min_noatk_chance 0
+max_noatk_chance 0
+turndelay       1
+risetime        0
+defense normal 0.75
+defense normal1 0.75
+defense normal2 0.75
+hostile          enemy
+candamage        enemy obstacle shot
+animationscript	data/scripts/escript.c
+takedamagescript data/scripts/invis.c
+
+load Blooda
+
+palette 	 data/chars/npc/inquisitor/walk1a.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	range	20 66
+	rangea	0 80
+	loop	0
+	delay	4
+	offset	55 112
+	bbox	47 57 12 55
+	frame	data/chars/npc/inquisitor/attack1a.gif
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	attack2	0 75 31 35 9 0 0 0 0 0
+	frame	data/chars/npc/inquisitor/attack1c.gif
+	frame	data/chars/npc/inquisitor/attack1d.gif
+	frame	data/chars/npc/inquisitor/attack1e.gif
+	attack2	15 43 41 12 9 0 0 0 0 0
+	frame	data/chars/npc/inquisitor/attack1f.gif
+	attack2	63 0 10 40 9 0 0 0 0 0
+	sound	data/sounds/throw_big.wav
+	frame	data/chars/npc/inquisitor/attack1g.gif
+	attack2	87 21 33 34 9 0 0 0 0 0
+	frame	data/chars/npc/inquisitor/attack1h.gif
+	delay	1
+	attack2	93 15 47 65 9 0 0 0 0 0
+	frame	data/chars/npc/inquisitor/attack1i.gif
+	frame	data/chars/npc/inquisitor/attack1j.gif
+	frame	data/chars/npc/inquisitor/attack1i.gif
+	frame	data/chars/npc/inquisitor/attack1j.gif
+	frame	data/chars/npc/inquisitor/attack1i.gif
+	frame	data/chars/npc/inquisitor/attack1j.gif
+	frame	data/chars/npc/inquisitor/attack1i.gif
+	frame	data/chars/npc/inquisitor/attack1j.gif
+	delay	8
+	attack2	90 80 40 43 9 0 0 0 0 0
+	frame	data/chars/npc/inquisitor/attack1k.gif
+	attack2	0 0 0 0 0 0 0 0
+	delay	4
+	frame	data/chars/npc/inquisitor/attack1k.gif
+	frame	data/chars/npc/inquisitor/attack1c.gif
+	frame	data/chars/npc/inquisitor/attack1b.gif
+		
+anim	attack2
+	range	-13 35
+	rangea	60 135
+	loop	0
+	delay	2
+	offset	55 112
+	bbox	47 57 12 55
+	frame	data/chars/npc/inquisitor/attack1a.gif
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	attack2	0 75 31 35 9 0 0 0 0 0
+	frame	data/chars/npc/inquisitor/attack1c.gif
+	frame	data/chars/npc/inquisitor/attack1d.gif
+	frame	data/chars/npc/inquisitor/attack1e.gif
+	attack2	15 43 41 12 9 0 0 0 0 0
+	frame	data/chars/npc/inquisitor/attack1f.gif
+	attack2	63 0 10 40 9 0 0 0 0 0
+	sound	data/sounds/throw_big.wav
+	delay	18
+	frame	data/chars/npc/inquisitor/attack1g.gif
+	delay	12
+	attack2	15 43 41 12 9 0 0 0 0 0
+	frame	data/chars/npc/inquisitor/attack1f.gif
+	delay	2
+	attack2	0 75 31 35 9 0 0 0 0 0
+	frame	data/chars/npc/inquisitor/attack1e.gif
+	frame	data/chars/npc/inquisitor/attack1d.gif
+	frame	data/chars/npc/inquisitor/attack1c.gif
+	attack2	0 0 0 0 0 0 0 0
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	frame	data/chars/npc/inquisitor/attack1a.gif
+		
+anim	attack3
+	rangea	0 57
+	range	-12 40
+	loop	0
+	delay	1
+	offset	55 112
+	move	-6
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	move	-5
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	move	-4
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	move	-3
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	move	-2
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	move	-1
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	move	0
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	delay	1
+	frame	data/chars/npc/inquisitor/attack1b.gif
+		
+anim	block
+	loop	0
+	delay	1
+	offset	55 112
+	move	-6
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	move	-5
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	move	-4
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	move	-3
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	move	-2
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	move	-1
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	move	0
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	frame	data/chars/npc/inquisitor/attack1b.gif
+	delay	1
+	frame	data/chars/npc/inquisitor/attack1b.gif
+		
+anim	death
+	loop	0
+	delay	3
+	offset	55 112
+	sound	data/sounds/knightdie.wav
+	subentity	Blooda
+	spawnframe	0 38 0 33 0
+	frame	data/chars/npc/inquisitor/death1a.gif
+	frame	data/chars/npc/inquisitor/death1b.gif
+	frame	data/chars/npc/inquisitor/death1c.gif
+	frame	data/chars/npc/inquisitor/death1d.gif
+	frame	data/chars/npc/inquisitor/death1e.gif
+	frame	data/chars/npc/inquisitor/death1f.gif
+	frame	data/chars/npc/inquisitor/death1g.gif
+	frame	data/chars/npc/inquisitor/death1h.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	0
+	delay	7
+	offset	55 112
+	bbox	47 52 16 59
+	frame	data/chars/npc/inquisitor/walk1a.gif
+		
+anim	land
+	loop	0
+	delay	7
+	offset	55 112
+	bbox	47 52 16 59
+	frame	data/chars/npc/inquisitor/walk1a.gif
+		
+anim	jumpattack
+	loop	0
+	delay	7
+	offset	55 112
+	bbox	47 52 16 59
+	frame	data/chars/npc/inquisitor/jumpattack1a.gif
+	frame	data/chars/npc/inquisitor/jumpattack1b.gif
+	frame	data/chars/npc/inquisitor/jumpattack1c.gif
+	attack2	80 87 35 36 9 0 0 0 0 0
+	frame	data/chars/npc/inquisitor/jumpattack1d.gif
+		
+anim	spawn
+	loop	0
+	delay	7
+	offset	55 112
+	bbox	47 52 16 59
+	frame	data/chars/npc/inquisitor/walk1a.gif
+		
+anim	walk
+	loop	1
+	delay	17
+	offset	55 112
+	bbox	47 52 16 59
+	frame	data/chars/npc/inquisitor/walk1a.gif
+	frame	data/chars/npc/inquisitor/walk1b.gif
+	frame	data/chars/npc/inquisitor/walk1c.gif
+	frame	data/chars/npc/inquisitor/walk1b.gif
+		
+#|edited by openBor Stats v 0.67
+		

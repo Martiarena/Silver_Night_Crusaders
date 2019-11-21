@@ -1,0 +1,54 @@
+name     Brebaje_M.
+mp		40
+type    	item
+facing          1
+antigravity	30
+candamage  	player
+palette 	data/chars/items/brebaje/palette.gif
+icon 		data/chars/misc/bgitem.gif
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	70
+	offset	10 18
+	itembox	0 0 16 13
+	frame	data/chars/items/brebaje/idle1.gif
+	delay	2
+	frame	data/chars/items/brebaje/idle2.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	10 18
+	itembox	0 0 16 13
+	frame	data/chars/items/brebaje/idle2.gif
+	frame	data/chars/items/brebaje/idle1.gif
+	frame	data/chars/items/brebaje/idle2.gif
+	frame	data/chars/items/brebaje/idle1.gif
+	frame	data/chars/items/brebaje/idle2.gif
+	frame	data/chars/items/brebaje/idle1.gif
+	frame	data/chars/items/brebaje/idle2.gif
+	frame	data/chars/items/brebaje/idle1.gif
+	frame	data/chars/items/brebaje/idle2.gif
+	frame	data/chars/items/brebaje/idle1.gif
+	frame	data/chars/items/brebaje/idle2.gif
+	frame	data/chars/items/brebaje/idle1.gif
+	frame	data/chars/items/brebaje/idle2.gif
+	frame	data/chars/items/brebaje/idle1.gif
+	frame	data/chars/items/brebaje/idle2.gif
+	frame	data/chars/items/brebaje/idle1.gif
+	frame	data/chars/items/brebaje/idle2.gif
+	frame	data/chars/items/brebaje/idle1.gif
+	frame	data/chars/items/brebaje/idle2.gif
+	frame	data/chars/items/brebaje/idle1.gif
+	frame	data/chars/items/brebaje/idle2.gif
+	frame	data/chars/items/brebaje/idle1.gif
+	frame	data/chars/items/brebaje/idle2.gif
+	frame	data/chars/items/brebaje/idle1.gif
+		
+#|edited by openBor Stats v 0.67
+		

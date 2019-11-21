@@ -1,0 +1,28 @@
+name		 Spotlight2
+type		 none
+hostile		 player
+setlayer	 5000
+subject_to_gravity 0
+alpha		 3
+
+
+anim idle
+@script
+    void self = getlocalvar("self");
+    void Player = getplayerproperty(1, "entity");
+
+    if(Player!=NULL()){
+      float Tx = getentityproperty(Player,"x");
+      float Tz = getentityproperty(Player,"z");
+      float Ty = getentityproperty(Player,"a");
+
+      changeentityproperty(self, "position", Tx, Tz, Ty+20); //Teleport!
+    } else {
+      changeentityproperty(self, "position", 160, 220, 600); //Teleport!
+    }
+@end_script
+	 loop	1
+	 delay	10
+	 offset	350 260
+	 frame	data/chars/misc/spotlit3.png
+	 frame	data/chars/misc/spotlit3.png

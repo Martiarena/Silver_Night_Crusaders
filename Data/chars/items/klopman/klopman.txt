@@ -1,0 +1,244 @@
+name    	D._Klopman
+score           5000
+type    	item
+facing          1
+antigravity	30
+candamage  	player
+icon 		data/chars/misc/bgitem.gif
+
+palette		data/chars/items/klopman/klopman_palette.gif
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	1
+	offset	8 15
+	itembox	0 0 15 14
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	delay	2
+	frame	data/chars/items/klopman/idle1c.gif
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	8 15
+	itembox	0 0 15 14
+	sound	data/sounds/secret.wav
+	frame	data/chars/misc/empty.gif
+	delay	1
+	frame	data/chars/items/klopman/frame-01a.gif
+	frame	data/chars/items/klopman/frame-01b.gif
+	frame	data/chars/items/klopman/frame-01c.gif
+	frame	data/chars/items/klopman/frame-01a.gif
+	frame	data/chars/items/klopman/frame-01b.gif
+	frame	data/chars/items/klopman/frame-02c.gif
+	frame	data/chars/items/klopman/frame-02a.gif
+	frame	data/chars/items/klopman/frame-02b.gif
+	frame	data/chars/items/klopman/frame-02c.gif
+	frame	data/chars/items/klopman/frame-02a.gif
+	frame	data/chars/items/klopman/frame-03b.gif
+	frame	data/chars/items/klopman/frame-03c.gif
+	frame	data/chars/items/klopman/frame-03a.gif
+	frame	data/chars/items/klopman/frame-03b.gif
+	frame	data/chars/items/klopman/frame-03c.gif
+	frame	data/chars/items/klopman/frame-04a.gif
+	frame	data/chars/items/klopman/frame-04b.gif
+	frame	data/chars/items/klopman/frame-04c.gif
+	frame	data/chars/items/klopman/frame-04a.gif
+	frame	data/chars/items/klopman/frame-04b.gif
+	frame	data/chars/items/klopman/frame-05c.gif
+	frame	data/chars/items/klopman/frame-05a.gif
+	frame	data/chars/items/klopman/frame-05b.gif
+	frame	data/chars/items/klopman/frame-05c.gif
+	frame	data/chars/items/klopman/frame-05a.gif
+	frame	data/chars/items/klopman/frame-06b.gif
+	frame	data/chars/items/klopman/frame-06c.gif
+	frame	data/chars/items/klopman/frame-06a.gif
+	frame	data/chars/items/klopman/frame-06b.gif
+	frame	data/chars/items/klopman/frame-06c.gif
+	frame	data/chars/items/klopman/frame-07a.gif
+	frame	data/chars/items/klopman/frame-07b.gif
+	frame	data/chars/items/klopman/frame-07c.gif
+	frame	data/chars/items/klopman/frame-07a.gif
+	frame	data/chars/items/klopman/frame-07b.gif
+	frame	data/chars/items/klopman/frame-08c.gif
+	frame	data/chars/items/klopman/frame-08a.gif
+	frame	data/chars/items/klopman/frame-08b.gif
+	frame	data/chars/items/klopman/frame-08c.gif
+	frame	data/chars/items/klopman/frame-08a.gif
+	frame	data/chars/items/klopman/frame-09b.gif
+	frame	data/chars/items/klopman/frame-09c.gif
+	frame	data/chars/items/klopman/frame-09a.gif
+	frame	data/chars/items/klopman/frame-09b.gif
+	frame	data/chars/items/klopman/frame-09c.gif
+	frame	data/chars/items/klopman/frame-10a.gif
+	frame	data/chars/items/klopman/frame-10b.gif
+	frame	data/chars/items/klopman/frame-10c.gif
+	frame	data/chars/items/klopman/frame-10a.gif
+	frame	data/chars/items/klopman/frame-10b.gif
+	frame	data/chars/items/klopman/frame-11c.gif
+	frame	data/chars/items/klopman/frame-11a.gif
+	frame	data/chars/items/klopman/frame-11b.gif
+	frame	data/chars/items/klopman/frame-11c.gif
+	frame	data/chars/items/klopman/frame-11a.gif
+	frame	data/chars/items/klopman/frame-12b.gif
+	frame	data/chars/items/klopman/frame-12c.gif
+	frame	data/chars/items/klopman/frame-12a.gif
+	frame	data/chars/items/klopman/frame-12b.gif
+	frame	data/chars/items/klopman/frame-12c.gif
+	frame	data/chars/items/klopman/frame-13a.gif
+	frame	data/chars/items/klopman/frame-13b.gif
+	frame	data/chars/items/klopman/frame-13c.gif
+	frame	data/chars/items/klopman/frame-13a.gif
+	frame	data/chars/items/klopman/frame-13b.gif
+	delay	2
+	frame	data/chars/items/klopman/frame-alt1.gif
+	delay	1
+	frame	data/chars/items/klopman/frame-14b.gif
+	frame	data/chars/items/klopman/frame-14c.gif
+	frame	data/chars/items/klopman/frame-14a.gif
+	frame	data/chars/items/klopman/frame-15b.gif
+	frame	data/chars/items/klopman/frame-15c.gif
+	frame	data/chars/items/klopman/frame-15a.gif
+	frame	data/chars/items/klopman/frame-15b.gif
+	frame	data/chars/items/klopman/frame-15c.gif
+	itembox	0 0 15 14
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	frame	data/chars/items/klopman/idle1a.gif
+	frame	data/chars/items/klopman/idle1.gif
+	frame	data/chars/items/klopman/idle1b.gif
+	delay	2
+	frame	data/chars/items/klopman/idle1c.gif
+		
+#|edited by openBor Stats v 0.67
+		

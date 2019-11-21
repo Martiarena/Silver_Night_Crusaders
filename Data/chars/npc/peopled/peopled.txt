@@ -1,0 +1,32 @@
+name	peopled
+health	10
+type 	none
+shadow	0
+speed 24
+palette	data/chars/npc/people-palette.gif
+
+
+anim	idle
+	loop	0
+	offset	56 68
+	delay	1000
+	frame	data/chars/npc/peopled/walk1d.gif
+		
+anim	spawn
+	loop	0
+	offset	56 68
+	delay	1000
+	frame	data/chars/npc/peopled/walk1d.gif
+		
+anim	walk
+	loop	1
+	delay	10
+	offset	56 68
+	frame	data/chars/npc/peopled/walk1d.gif
+	frame	data/chars/npc/peopled/walk2d.gif
+	frame	data/chars/npc/peopled/walk3d.gif
+	frame	data/chars/npc/peopled/walk4d.gif
+	frame	data/chars/npc/peopled/walk5d.gif
+		
+#|edited by openBor Stats v 0.56
+		

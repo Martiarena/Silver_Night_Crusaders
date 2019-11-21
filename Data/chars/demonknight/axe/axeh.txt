@@ -1,0 +1,66 @@
+name		axeh
+health          3
+type            none
+candamage 	player npc
+noquake		1
+death		1
+speed  15
+lifespan	10
+nolife 1
+remove		0
+subject_to_platform 0
+animationscript data/scripts/prscript.c
+palette 	data/chars/demonknight/demonknight_palette.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	death
+	loop	0
+	delay	1
+	offset	15 15
+	spawnframe	0 0 0 0 0
+	subentity	pdie
+	frame	data/chars/demonknight/axe/axe1.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+@script
+void self = getlocalvar("self"); //Get calling entity
+int Vx = getentityproperty(self, "speed");
+
+if(frame==3){
+changeentityproperty(self, "speed", Vx-0.250);
+}
+	@end_script	
+	loop	1
+	delay	6
+	offset	15 15
+	bbox	0 0 29 30
+	hitfx	data/sounds/slash.wav
+	attack2	0 0 29 30 19 0 0 0 0 0
+	frame	data/chars/demonknight/axe/axe1.gif
+	frame	data/chars/demonknight/axe/axe2.gif
+	frame	data/chars/demonknight/axe/axe3.gif
+	attack2	0
+	frame	data/chars/demonknight/axe/axe4.gif
+		
+#|edited by openBor Stats v 0.67
+		

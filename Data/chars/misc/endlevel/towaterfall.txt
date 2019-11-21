@@ -1,0 +1,22 @@
+name    	ToWaterfall
+type            endlevel
+facing          1
+nolife	1
+subject_to_hole 0
+no_adjust_base  1
+subject_to_platform 1
+
+palette		data/chars/misc/endlevel/arrow-rightdown-a.gif
+
+
+
+anim	idle
+	loop	1
+	delay	7
+	offset	5 40
+	bbox	0 0 30 45
+	frame	data/chars/misc/endlevel/arrow-rightdown-a.gif
+	frame	data/chars/misc/endlevel/arrow-rightdown-b.gif
+		
+#|edited by openBor Stats v 0.67
+		

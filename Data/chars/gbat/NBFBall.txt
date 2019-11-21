@@ -1,0 +1,40 @@
+name	        NBFBall
+type	        none
+lifespan        1
+antigravity     100
+candamage       enemy
+
+
+anim idle
+	delay	5
+	offset	6 6
+	followanim	1
+	followcond	1
+	burn	3 3 6 6 5 1
+        hitfx   data/sounds/burnt.wav
+	frame	data/chars/gbat/bfball1.gif
+	frame	data/chars/gbat/bfball2.gif
+	frame	data/chars/gbat/bfball3.gif
+	burn	1 1 10 10 5 1
+	frame	data/chars/gbat/bfball4.gif
+	frame	data/chars/gbat/bfball5.gif
+	frame	data/chars/gbat/bfball4.gif
+	frame	data/chars/gbat/bfball5.gif
+	frame	data/chars/gbat/bfball4.gif
+	frame	data/chars/gbat/bfball5.gif
+	frame	data/chars/gbat/bfball4.gif
+	frame	data/chars/gbat/bfball5.gif
+	frame	data/chars/gbat/bfball4.gif
+	frame	data/chars/gbat/bfball5.gif
+	frame	data/chars/gbat/bfball4.gif
+	frame	data/chars/gbat/bfball5.gif
+	frame	data/chars/gbat/bfball4.gif
+	frame	data/chars/gbat/bfball5.gif
+	attack	0
+	frame	data/chars/gbat/bfball6.gif
+	frame	data/chars/misc/empty.gif
+
+anim follow1
+	delay	100
+	offset	6 6
+	frame	data/chars/misc/empty.gif

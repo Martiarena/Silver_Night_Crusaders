@@ -1,0 +1,195 @@
+name    	 Flamataura
+health           30
+mprate           1
+speed            8
+type    	 enemy
+noquake  	 1
+nopain           1
+nodrop  	 2
+death   	 1
+nodieblink       3
+offscreenkill 	500
+score 300 -1
+subject_to_gravity 1
+hostile  player npc
+candamage player npc
+
+
+defense normal7 1.5 0 0 0 0 0 0
+defense normal19 0.5 0 0 0 0 0 0
+defense burn 0.5 0 0 0 0 0 0
+
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+
+load		flame_t
+load            Blooda
+load		fireseal
+load            fb01_e
+icon 		data/chars/misc/bgmonster.gif
+
+palette 	data/chars/flametaur/flametaur_palette.gif
+
+alternatepal	 data/chars/flametaur/blink.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	range	25 56
+	rangea	0 80
+	delay	7
+	offset	67 98
+	bbox	58 39 14 40
+	hitfx	data/sounds/burnt.wav
+	burn	42 25 39 68 12 0 0 0 0 0
+	subentity	Flame_t
+	spawnframe	5 0 0 0 0
+	frame	data/chars/flametaur/attack1a.gif
+	frame	data/chars/flametaur/attack1b.gif
+	frame	data/chars/flametaur/attack1c.gif
+	frame	data/chars/flametaur/attack1d.gif
+	frame	data/chars/flametaur/attack1e.gif
+	delay	14
+	frame	data/chars/flametaur/attack1f.gif
+		
+anim	death
+	delay	27
+	offset	67 98
+	subentity	Blooda
+	spawnframe	0 10 0 50 0
+	frame	data/chars/flametaur/death1a.gif
+	delay	14
+	offset	67 94
+	frame	data/chars/flametaur/death1b.gif
+	frame	data/chars/flametaur/death1c.gif
+	frame	data/chars/flametaur/death1d.gif
+	delay	7
+	frame	data/chars/flametaur/death1e.gif
+	frame	data/chars/flametaur/death1f.gif
+	frame	data/chars/flametaur/death1e.gif
+	frame	data/chars/flametaur/death1f.gif
+	frame	data/chars/flametaur/death1e.gif
+	frame	data/chars/flametaur/death1f.gif
+	frame	data/chars/flametaur/death1e.gif
+	frame	data/chars/flametaur/death1f.gif
+	frame	data/chars/flametaur/death1g.gif
+	frame	data/chars/flametaur/death1h.gif
+	frame	data/chars/flametaur/death1i.gif
+	delay	1
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	freespecial
+	range	25 200
+	rangea	0 78
+	delay	7
+	offset	67 98
+	bbox	58 39 14 40
+	hitfx	data/sounds/burnt.wav
+	burn	42 25 39 68 12 0 0 0 0 0
+	subentity	fireseal
+	spawnframe	2 16 0 29 0
+	frame	data/chars/flametaur/attack1a.gif
+	frame	data/chars/flametaur/attack1b.gif
+	frame	data/chars/flametaur/attack1c.gif
+	frame	data/chars/flametaur/attack1d.gif
+	custknife	fb01_e
+	throwframe	4 29
+	frame	data/chars/flametaur/attack1e.gif
+	delay	14
+	frame	data/chars/flametaur/attack1f.gif
+		
+anim	freespecial2
+	range	25 200
+	rangea	0 78
+	loop	0
+	delay	1
+	offset	67 98
+	bbox	50 40 30 45
+	hitfx	data/sounds/burnt.wav
+	burn	45 25 36 70 12 0 0 0 0 0
+	frame	data/chars/flametaur/idle1.gif
+		
+anim	idle
+	loop	1
+	delay	20
+	offset	67 98
+	bbox	50 40 30 45
+	hitfx	data/sounds/burnt.wav
+	burn	45 25 36 70 12 0 0 0 0 0
+	frame	data/chars/flametaur/idle1.gif
+	frame	data/chars/flametaur/idle2.gif
+	frame	data/chars/flametaur/idle3.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0
+	frame	data/chars/flametaur/idle1.gif
+		
+anim	jumpattack
+	loop	0
+	delay	24
+	offset	67 98
+	bbox	50 40 30 45
+	hitfx	data/sounds/burnt.wav
+	burn	45 25 36 70 12 0 0 0 0 0
+	frame	data/chars/flametaur/walk1.gif
+	delay	12
+	frame	data/chars/flametaur/walk2.gif
+	frame	data/chars/flametaur/walk3.gif
+	delay	23
+	frame	data/chars/flametaur/walk4.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0
+	frame	data/chars/flametaur/walk4.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	67 98
+	bbox	50 40 30 45
+	hitfx	data/sounds/burnt.wav
+	burn	16 -290 100 116 12 0 0 0 0 0
+	frame	data/chars/flametaur/idle1.gif
+		
+anim	walk
+	loop	1
+	delay	12
+	offset	67 98
+	bbox	50 40 30 45
+	hitfx	data/sounds/burnt.wav
+	burn	45 25 36 70 12 0 0 0 0 0
+	frame	data/chars/flametaur/walk1.gif
+	frame	data/chars/flametaur/walk2.gif
+	frame	data/chars/flametaur/walk3.gif
+	delay	11
+	frame	data/chars/flametaur/walk4.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0
+	frame	data/chars/flametaur/walk4.gif
+		
+#|edited by openBor Stats v 0.67
+		

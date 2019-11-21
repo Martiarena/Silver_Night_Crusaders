@@ -1,0 +1,50 @@
+name		PBomrade
+type		none
+candamage	enemy obstacle
+
+lifespan	5
+subject_to_gravity  0
+subject_to_platform 0
+
+
+
+
+
+
+anim	idle
+@script
+    void self = getlocalvar("self"); //Get calling entity
+    int Dir = getentityproperty(self, "direction");
+    int Vx = getentityproperty(self, "xdir");
+    int Vy = getentityproperty(self, "tossv");
+    int Rev;
+
+    if(Dir==0){
+      Rev = 1;
+    } else {
+      Rev = -1;
+    }
+
+    if(frame==3 || frame==7){
+      changeentityproperty(self, "velocity", Vx+Rev, 0, Vy-0.65);
+    }
+	@end_script	
+	loop	1
+	delay	6
+	offset	15 15
+	attack2	3 4 20 20 9 0 0 0 0
+	frame	data/chars/items/boomerang/bumerad1.gif
+	frame	data/chars/items/boomerang/bumerad2.gif
+	frame	data/chars/items/boomerang/bumerad3.gif
+	frame	data/chars/items/boomerang/bumerad4.gif
+	frame	data/chars/items/boomerang/bumerad5.gif
+	frame	data/chars/items/boomerang/bumerad6.gif
+	frame	data/chars/items/boomerang/bumerad7.gif
+	delay	5
+	frame	data/chars/items/boomerang/bumerad8.gif
+	delay	1
+	attack2	0
+	frame	data/chars/items/boomerang/bumerad8.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,76 @@
+name	       		Gear_trap_walking
+health                  1
+type            enemy
+subject_to_gravity	1
+subject_to_hole		1
+subject_to_platform 1
+no_adjust_base		0
+subject_to_wall 1
+nomove 1 0
+nopain		1
+nolife		1
+cantgrab 	1
+nodrop	 	2
+death	 	1
+nodieblink  1
+aggression 99
+min_noatk_chance 0
+max_noatk_chance 0
+offscreenkill	100
+
+hostile         player npc
+candamage       player npc
+
+
+palette 		data/bgs/clock_tower/traps/gear_trap_palette.gif
+
+
+
+
+
+
+
+anim	attack1
+	loop	1
+	delay	10
+	offset	15 32
+	range	-320 640
+	bbox	0 0 30 32
+	attack	0 0 30 32 25 0 1 1 0 0
+	jumpframe	0 0 0.15 0
+	frame	data/bgs/clock_tower/traps/gears_trap1a.gif
+	frame	data/bgs/clock_tower/traps/gears_trap1b.gif
+	frame	data/bgs/clock_tower/traps/gears_trap1c.gif
+	frame	data/bgs/clock_tower/traps/gears_trap1d.gif
+	frame	data/bgs/clock_tower/traps/gears_trap1e.gif
+	frame	data/bgs/clock_tower/traps/gears_trap1f.gif
+	frame	data/bgs/clock_tower/traps/gears_trap1g.gif
+	frame	data/bgs/clock_tower/traps/gears_trap1h.gif
+	delay	9
+	frame	data/bgs/clock_tower/traps/gears_trap1i.gif
+	delay	1
+	attack	0 0 0 0 0 0
+	frame	data/bgs/clock_tower/traps/gears_trap1i.gif
+		
+anim	death
+	loop	0
+	delay	100
+	offset	15 32
+	frame	data/bgs/clock_tower/traps/gears_trap1d.gif
+		
+anim	idle
+	loop	0
+	delay	1
+	offset	15 32
+	frame	data/bgs/clock_tower/traps/gears_trap1a.gif
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	15 34
+	frame	data/bgs/clock_tower/traps/gears_trap1a.gif
+	offset	15 32
+	frame	data/bgs/clock_tower/traps/gears_trap1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

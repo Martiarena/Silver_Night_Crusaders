@@ -1,0 +1,227 @@
+name	    	M._Maligna
+health          100
+nomove   	1 1
+type		enemy
+falldie 	1
+death   	1
+nodieblink	2
+cantgrab 	1
+nopain  	1
+nodrop  	2
+setlayer        150
+score   	2800 1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+antigravity     100
+defense normal 0.75 0 0 0 0 0 0
+defense normal2 0.75 0 0 0 0 0 0
+defense normal7 0.75 0 0 0 0 0 0
+defense schock 0.75 0 0 0 0 0 0
+diesound  	data/sounds/ghostdie.wav
+
+palette          data/chars/meanlook/meanlook_palette.gif
+alternatepal     data/chars/meanlook/blink.gif
+
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+
+icon		data/chars/misc/bgmonster.gif
+
+load      Windspell
+load		MagicSeal
+
+
+
+anim	death
+	delay	7
+	offset	59 75
+	subentity	gdie
+	@cmd	stop
+	sound	data/sounds/flame-dies.wav
+	spawnframe	0 0 0 0 0
+	frame	data/chars/meanlook/death1a.gif
+	frame	data/chars/meanlook/death1b.gif
+	frame	data/chars/meanlook/death1c.gif
+	delay	10
+	frame	data/chars/meanlook/death1d.gif
+	frame	data/chars/meanlook/death1d.gif
+	frame	data/chars/meanlook/death1d.gif
+	frame	data/chars/meanlook/death1d.gif
+	frame	data/chars/meanlook/death1d.gif
+	@cmd	dasher 0 -0.1 0 1
+	frame	data/chars/meanlook/death1d.gif
+	frame	data/chars/meanlook/death1d.gif
+	frame	data/chars/meanlook/death1d.gif
+	frame	data/chars/meanlook/death1d.gif
+	frame	data/chars/meanlook/death1d.gif
+	frame	data/chars/meanlook/death1d.gif
+	frame	data/chars/meanlook/death1d.gif
+	frame	data/chars/meanlook/death1d.gif
+	frame	data/chars/meanlook/death1d.gif
+	frame	data/chars/meanlook/death1d.gif
+	frame	data/chars/meanlook/death1d.gif
+	frame	data/chars/meanlook/death1d.gif
+	frame	data/chars/meanlook/death1d.gif
+	frame	data/chars/meanlook/death1d.gif
+	frame	data/chars/meanlook/death1d.gif
+	delay	7
+	@cmd	stop
+	frame	data/chars/meanlook/death1e.gif
+	frame	data/chars/meanlook/death1f.gif
+	frame	data/chars/meanlook/death1g.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+@script
+    void self = getlocalvar("self");
+    int r = rand()%30;
+
+    if( frame == 0){
+      if( r > 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      }
+    }
+	@end_script	
+	delay	12
+	offset	59 75
+	bbox	45 59 34 34
+	attack	45 59 34 34 12 0 0 0 0 0
+	frame	data/chars/meanlook/idle1a.gif
+	@cmd	spawn01 "MagicSeal" 28 5 0
+	frame	data/chars/meanlook/idle1b.gif
+	frame	data/chars/meanlook/idle1c.gif
+	@cmd	target 1.5 1.5 10 0 0 1
+	@cmd	shoot2 "Windspell" 28 5
+	frame	data/chars/meanlook/idle1a.gif
+	frame	data/chars/meanlook/idle1b.gif
+	frame	data/chars/meanlook/idle1c.gif
+	frame	data/chars/meanlook/idle1a.gif
+	@cmd	spawn01 "MagicSeal" 28 5 0
+	frame	data/chars/meanlook/idle1b.gif
+	frame	data/chars/meanlook/idle1c.gif
+	@cmd	target 1.5 1.5 10 0 0 1
+	@cmd	shoot2 "Windspell" 28 5
+	frame	data/chars/meanlook/idle1a.gif
+	frame	data/chars/meanlook/idle1b.gif
+	frame	data/chars/meanlook/idle1c.gif
+	@cmd	beidle
+	frame	data/chars/meanlook/idle1a.gif
+		
+anim	follow2
+	delay	12
+	offset	59 75
+	bbox	45 59 34 34
+	attack	45 59 34 34 12 0 0 0 0 0
+	frame	data/chars/meanlook/idle1a.gif
+	@cmd	spawn01 "MagicSeal" 28 5 0
+	frame	data/chars/meanlook/idle1b.gif
+	frame	data/chars/meanlook/idle1c.gif
+	@cmd	target 1.5 1.5 10 0 0 1
+	@cmd	shoot2 "Windspell" 28 5
+	frame	data/chars/meanlook/idle1a.gif
+	frame	data/chars/meanlook/idle1b.gif
+	frame	data/chars/meanlook/idle1c.gif
+	frame	data/chars/meanlook/idle1a.gif
+	frame	data/chars/meanlook/idle1b.gif
+	frame	data/chars/meanlook/idle1c.gif
+	@cmd	beidle
+	frame	data/chars/meanlook/idle1a.gif
+		
+anim	idle
+@script
+    void self = getlocalvar("self");
+    int x = getentityproperty(self, "x");
+    int y = getentityproperty(self, "a");
+    int Sx = getentityproperty(self, "xdir");
+    int Sy = getentityproperty(self, "tossv");
+    int XPos = openborvariant("xpos");
+    int Screen = openborvariant("hResolution");
+    int r = rand()%30;
+
+    if(x < XPos+30 && Sx < 0){
+      changeentityproperty(self, "velocity", -Sx, 0, Sy);
+    } else if(x > Screen+XPos-30 && Sx > 0){
+      changeentityproperty(self, "velocity", -Sx, 0, Sy);
+    } else if(y <= 5){
+      changeentityproperty(self, "velocity", 0, 0, 1.5);
+    } else if(y < 20 && Sy < 0){
+      changeentityproperty(self, "velocity", Sx, 0, -Sy);
+    } else if(y > 180 && Sy > 0){
+      changeentityproperty(self, "velocity", Sx, 0, -Sy);
+    }
+
+    if(frame==1){
+      int Vx; int Vy;
+      int iR = rand()%180;
+
+      Vx = 1.5*cos(iR);
+      Vy = 1.5*sin(iR);
+
+      changeentityproperty(self, "velocity", Vx, 0, Vy);
+    }
+    if(frame == 16 && r > 0){
+    	     performattack(self, openborconstant("ANI_FOLLOW1"));
+    }
+	@end_script	
+	loop	1
+	delay	12
+	offset	59 75
+	bbox	45 59 34 34
+	attack	45 59 34 34 12 0 0 0 0 0
+	frame	data/chars/meanlook/idle1a.gif
+	frame	data/chars/meanlook/idle1b.gif
+	frame	data/chars/meanlook/idle1c.gif
+	frame	data/chars/meanlook/idle1a.gif
+	frame	data/chars/meanlook/idle1b.gif
+	frame	data/chars/meanlook/idle1c.gif
+	frame	data/chars/meanlook/idle1a.gif
+	frame	data/chars/meanlook/idle1b.gif
+	frame	data/chars/meanlook/idle1c.gif
+	frame	data/chars/meanlook/idle1a.gif
+	frame	data/chars/meanlook/idle1b.gif
+	frame	data/chars/meanlook/idle1c.gif
+	frame	data/chars/meanlook/idle1a.gif
+	frame	data/chars/meanlook/idle1b.gif
+	frame	data/chars/meanlook/idle1c.gif
+	@cmd	stop
+	@cmd	target 1 1 10 0 0 1
+	frame	data/chars/meanlook/idle1a.gif
+	frame	data/chars/meanlook/idle1b.gif
+	attack	0 0 0 0 0
+	frame	data/chars/meanlook/idle1c.gif
+		
+anim	spawn
+	delay	12
+	offset	59 75
+	bbox	45 59 34 34
+	attack	45 59 34 34 12 0 0 0 0 0
+	frame	data/chars/meanlook/idle1a.gif
+	@cmd	dasher 0 -1 0 1
+	frame	data/chars/meanlook/idle1b.gif
+	frame	data/chars/meanlook/idle1c.gif
+	frame	data/chars/meanlook/idle1a.gif
+	frame	data/chars/meanlook/idle1b.gif
+	frame	data/chars/meanlook/idle1c.gif
+	frame	data/chars/meanlook/idle1a.gif
+	frame	data/chars/meanlook/idle1b.gif
+	frame	data/chars/meanlook/idle1c.gif
+	frame	data/chars/meanlook/idle1a.gif
+	frame	data/chars/meanlook/idle1b.gif
+	frame	data/chars/meanlook/idle1c.gif
+	frame	data/chars/meanlook/idle1a.gif
+	frame	data/chars/meanlook/idle1b.gif
+	frame	data/chars/meanlook/idle1c.gif
+	delay	12
+	@cmd	stop
+	frame	data/chars/meanlook/idle1c.gif
+	frame	data/chars/meanlook/idle1a.gif
+	frame	data/chars/meanlook/idle1b.gif
+	frame	data/chars/meanlook/idle1c.gif
+	frame	data/chars/meanlook/idle1a.gif
+	attack	0 0 0 0 0
+	frame	data/chars/meanlook/idle1b.gif
+		
+#|edited by openBor Stats v 0.67
+		

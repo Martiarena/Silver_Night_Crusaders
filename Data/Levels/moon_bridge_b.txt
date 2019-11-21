@@ -1,0 +1,73 @@
+music		data/music/castlewalls.ogg 305613
+bossmusic	data/music/boss.ogg 367353
+
+panel	        data/bgs/moon_bridge/bridge_castle_b.gif
+
+fglayer		data/bgs/moon_bridge/castle_walls_0.gif -11000 0.1 0.1 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/moon_bridge/castle_walls_1.gif -12000 0.3 0.3 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/moon_bridge/back_bridge.gif -13000 0.8 0.8 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/moon_bridge/sky_night_2.gif -14000 0.9 0.9 0 0 0 0 -1 1 1 0 0 0 0 0 1
+order           a
+settime	        0
+notime		1
+spawn1          81 0 240
+spawn2          40 0 240
+direction	both
+type		0 0 0
+cameratype 1
+noslow 1
+
+spawn  Moon
+coords  360  10
+at  0
+
+spawn  Brazier1
+coords  320  216
+item	C._sagrada
+map 1
+at  0
+
+spawn  Brazier1
+coords  180  216
+item  ___10
+at  0
+
+spawn  Brazier1
+coords  340  216
+item  ___20
+at  120
+
+spawn  Brazier1
+coords  340  216  0
+item  ___50
+at  280
+
+spawn  Brazier1
+coords  340  216  0
+item  ___100
+at  440
+
+Blockade  482
+at  482
+
+spawn boss_lifebar
+coords  0 0 0
+flip 1
+at  562
+
+spawn	Boss6Spawner
+coords  0 0 0
+2pspawn 1
+at  562
+
+spawn  Ficzko
+coords  340  216 120
+boss 1
+health	50
+alias	B._Maligno
+at  562
+
+spawn  Barril
+coords  340  216
+item	Pollo_frito
+at  590

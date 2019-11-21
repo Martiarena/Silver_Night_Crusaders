@@ -1,0 +1,27 @@
+name	Chain_top_
+type     endlevel
+shadow		0
+nomove	1 1
+nolife	1
+nodieblink 3
+death   	 1
+
+palette	data/bgs/underground/palette_statue.gif
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	offset	40 233
+	delay	14
+	bbox	-160 0 320 240
+	frame	data/bgs/underground/decoration/chain_top1.gif
+		
+#|edited by openBor Stats v 0.67
+		

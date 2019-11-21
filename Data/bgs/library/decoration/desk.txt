@@ -1,0 +1,20 @@
+name  		Desk
+type            none
+facing	  	1
+setlayer        99
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/library/palette_object.gif
+
+
+
+
+anim	idle
+	loop	0
+	delay	14
+	offset	17 27
+	frame	data/bgs/library/decoration/desk.gif
+		
+#|edited by openBor Stats v 0.67
+		

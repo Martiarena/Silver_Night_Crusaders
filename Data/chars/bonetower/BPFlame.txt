@@ -1,0 +1,24 @@
+name	        BPFlame
+type	        none
+nolife          1
+lifespan        1
+antigravity     100
+candamage       player npc
+
+
+anim idle
+	delay	8
+	offset	19 24
+	burn	22 14 30 22 15 1
+        hitfx   data/sounds/burnt.wav
+	frame	data/chars/bonetower/bpfl1.gif
+	burn	23 4 52 32 18 1
+	frame	data/chars/bonetower/bpfl2.gif
+	frame	data/chars/bonetower/bpfl3.gif
+	frame	data/chars/bonetower/bpfl4.gif
+	frame	data/chars/bonetower/bpfl2.gif
+	frame	data/chars/bonetower/bpfl3.gif
+	frame	data/chars/bonetower/bpfl4.gif
+	burn	0
+	frame	data/chars/bonetower/bpfl5.gif
+	frame	data/chars/misc/empty.gif

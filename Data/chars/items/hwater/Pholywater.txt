@@ -1,0 +1,113 @@
+name Pholywater
+type none
+health 1
+candamage enemy obstacle none
+jumpheight 2
+speed      6
+remove 1
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	3
+	offset	14 32
+	attack5	1 1 23 36 19 0 1 0 0 0
+	move	2
+	sound	data/chars/items/hwater/hwater.wav
+	frame	data/chars/items/hwater/wblast01.png
+	sound	data/chars/items/hwater/burnt.wav
+	frame	data/chars/items/hwater/blank.png
+	frame	data/chars/items/hwater/wblast02.png
+	frame	data/chars/items/hwater/blank.png
+	frame	data/chars/items/hwater/wblast03.png
+	attack5	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/items/hwater/blank.png
+	attack5	1 1 23 36 19 0 1 0 0 0
+	frame	data/chars/items/hwater/wblast04.png
+	frame	data/chars/items/hwater/blank.png
+	frame	data/chars/items/hwater/wblast05.png
+	frame	data/chars/items/hwater/blank.png
+	frame	data/chars/items/hwater/wblast06.png
+	attack5	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/items/hwater/blank.png
+	move	1
+	attack5	1 1 23 36 19 0 1 0 0 0
+	frame	data/chars/items/hwater/wblast01.png
+	frame	data/chars/items/hwater/blank.png
+	frame	data/chars/items/hwater/wblast02.png
+	frame	data/chars/items/hwater/blank.png
+	frame	data/chars/items/hwater/wblast03.png
+	attack5	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/items/hwater/blank.png
+	attack5	1 1 23 36 19 0 1 0 0 0
+	frame	data/chars/items/hwater/wblast04.png
+	frame	data/chars/items/hwater/blank.png
+	frame	data/chars/items/hwater/wblast05.png
+	frame	data/chars/items/hwater/blank.png
+	frame	data/chars/items/hwater/wblast06.png
+	attack5	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/items/hwater/blank.png
+	attack5	1 1 23 36 19 0 1 0 0 0
+	frame	data/chars/items/hwater/wblast07.png
+	frame	data/chars/items/hwater/blank.png
+	frame	data/chars/items/hwater/wblast08.png
+	frame	data/chars/items/hwater/blank.png
+	frame	data/chars/items/hwater/wblast09.png
+	attack5	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/items/hwater/blank.png
+	frame	data/chars/items/hwater/wblast10.png
+	frame	data/chars/items/hwater/blank.png
+	frame	data/chars/items/hwater/wblast11.png
+	frame	data/chars/items/hwater/blank.png
+		
+anim	attack2
+	loop	0
+	delay	3
+	offset	14 32
+	attack5	1 1 23 36 19 0 1 0 0 0
+	move	0
+	sound	data/chars/items/hwater/hwater.wav
+	frame	data/chars/items/hwater/wblast01.png
+	sound	data/chars/items/hwater/burnt.wav
+	frame	data/chars/items/hwater/blank.png
+	frame	data/chars/items/hwater/wblast02.png
+	frame	data/chars/items/hwater/blank.png
+	frame	data/chars/items/hwater/wblast03.png
+	attack5	0 0 0 0
+	frame	data/chars/items/hwater/blank.png
+	attack5	1 1 23 36 19 0 1 0 0 0
+	frame	data/chars/items/hwater/wblast04.png
+	frame	data/chars/items/hwater/blank.png
+	frame	data/chars/items/hwater/wblast05.png
+	frame	data/chars/items/hwater/blank.png
+	frame	data/chars/items/hwater/wblast06.png
+	attack5	0 0 0 0
+	frame	data/chars/items/hwater/blank.png
+	attack5	1 1 23 36 19 0 1 0 0 0
+	frame	data/chars/items/hwater/wblast07.png
+	frame	data/chars/items/hwater/blank.png
+	frame	data/chars/items/hwater/wblast08.png
+	frame	data/chars/items/hwater/blank.png
+	frame	data/chars/items/hwater/wblast09.png
+	attack5	0 0 0 0
+	frame	data/chars/items/hwater/blank.png
+	frame	data/chars/items/hwater/wblast10.png
+	frame	data/chars/items/hwater/blank.png
+	frame	data/chars/items/hwater/wblast11.png
+	frame	data/chars/items/hwater/blank.png
+		
+anim	idle
+	loop	1
+	delay	12
+	offset	4 14
+	frame	data/chars/items/hwater/hwater01.png
+	frame	data/chars/items/hwater/hwater02.png
+	frame	data/chars/items/hwater/hwater03.png
+	frame	data/chars/items/hwater/hwater04.png
+		
+#|edited by openBor Stats v 0.67
+		

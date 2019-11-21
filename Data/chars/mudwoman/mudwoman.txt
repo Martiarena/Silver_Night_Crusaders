@@ -1,0 +1,118 @@
+name	    	Loda
+health          20
+speedf		0.2
+type		enemy
+death		1
+cantgrab 	1
+nopain          1
+nodrop	 	2
+nodieblink 	2
+aggression	20
+offscreenkill	500
+subject_to_platform 1
+score	 	200 -1
+hostile         player npc
+candamage 	player npc
+
+defense normal4 2 0 0 0 0 0 0
+defense normal5 2 0 0 0 0 0 0
+defense normal7 1.25 0 0 0 0 0 0
+defense schock 0.75 0 0 0 0 0 0
+
+takedamagescript data/scripts/blink.c
+
+palette		data/chars/mudwoman/idle1a.gif
+alternatepal 	data/chars/mudwoman/blink.gif
+
+icon		data/chars/misc/bgmonster.gif
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	14
+	range	0 50
+	offset	17 56
+	bbox	10 0 15 55
+	attack	10 0 15 55 6 0 1 0 0 0
+	frame	data/chars/mudwoman/idle1d.gif
+	delay	4
+	attack	0 0 0 0 0
+	frame	data/chars/mudwoman/attack1a.gif
+	frame	data/chars/mudwoman/attack1b.gif
+	frame	data/chars/mudwoman/attack1c.gif
+	frame	data/chars/mudwoman/attack1d.gif
+	frame	data/chars/mudwoman/attack1e.gif
+	frame	data/chars/mudwoman/attack1f.gif
+	delay	50
+	hitfx	data/sounds/slash.wav
+	attack2	10 10 76 12 9 0 1 0 0 0
+	frame	data/chars/mudwoman/attack1g.gif
+	delay	4
+	frame	data/chars/mudwoman/attack1f.gif
+	frame	data/chars/mudwoman/attack1e.gif
+	frame	data/chars/mudwoman/attack1d.gif
+	frame	data/chars/mudwoman/attack1c.gif
+	frame	data/chars/mudwoman/attack1b.gif
+	attack2	0 0 0 0 0
+	frame	data/chars/mudwoman/attack1a.gif
+		
+anim	death
+	subentity	edie
+	spawnframe	0 0 -30 0 0
+	delay	6
+	offset	17 56
+	frame	data/chars/mudwoman/spawn5.gif
+	frame	data/chars/mudwoman/spawn4.gif
+	frame	data/chars/mudwoman/spawn3.gif
+	frame	data/chars/mudwoman/spawn2.gif
+	frame	data/chars/mudwoman/spawn1.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	20
+	offset	17 56
+	bbox	10 0 15 55
+	attack	10 0 15 55 6 0 1 0 0 0
+	frame	data/chars/mudwoman/idle1a.gif
+	frame	data/chars/mudwoman/idle1b.gif
+	frame	data/chars/mudwoman/idle1c.gif
+	delay	19
+	frame	data/chars/mudwoman/idle1d.gif
+	delay	1
+	attack	0 0 0 0 0
+	frame	data/chars/mudwoman/idle1d.gif
+		
+anim	spawn
+	delay	12
+	offset	17 56
+	frame	data/chars/mudwoman/spawn1.gif
+	frame	data/chars/mudwoman/spawn2.gif
+	frame	data/chars/mudwoman/spawn3.gif
+	frame	data/chars/mudwoman/spawn4.gif
+	frame	data/chars/mudwoman/spawn5.gif
+	frame	data/chars/mudwoman/spawn6.gif
+	frame	data/chars/mudwoman/spawn7.gif
+		
+anim	walk
+	loop	1
+	delay	20
+	offset	17 56
+	bbox	10 0 15 55
+	attack	10 0 15 55 6 0 1 0 0 0
+	frame	data/chars/mudwoman/idle1a.gif
+	frame	data/chars/mudwoman/idle1b.gif
+	frame	data/chars/mudwoman/idle1c.gif
+	delay	19
+	frame	data/chars/mudwoman/idle1d.gif
+	delay	1
+	attack	0 0 0 0 0
+	frame	data/chars/mudwoman/idle1d.gif
+		
+#|edited by openBor Stats v 0.67
+		

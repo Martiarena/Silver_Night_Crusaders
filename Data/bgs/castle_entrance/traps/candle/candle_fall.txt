@@ -1,0 +1,79 @@
+name    Falling_candle
+type	trap
+shadow  0
+noatflash 1
+nolife 1
+setlayer        -1
+hostile player npc
+candamage  player enemy npc obstacle
+
+load Candle_f1
+load Candle_f2
+
+animationscript  data/scripts/escript.c
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	1
+	offset	30 32
+	frame	data/bgs/castle_entrance/traps/candle/candle_d1.gif
+	delay	6
+	@cmd	tosserM "candle_f1" -24 11 -0.7 0.4
+	@cmd	tosserM "Candle_f2" 20 14 0.7 0.4
+	sound	data/sounds/big_candle_break.wav
+	frame	data/bgs/castle_entrance/traps/candle/candle_d1.gif
+	delay	7
+	frame	data/bgs/castle_entrance/traps/candle/candle_d2.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_d1.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_d2.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_d1.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_d2.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_d1.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_d2.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_d1.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_d2.gif
+	delay	6
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_d1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_d2.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_d1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_d2.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_d1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_d2.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_d1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_d2.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+anim	jumpland
+	loop	0
+	delay	7
+	offset	30 32
+	frame	data/bgs/castle_entrance/traps/candle/candle_d1.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_d2.gif
+		
+anim	walkoff
+	delay	7
+	offset	30 32
+	attack	0 22 60 10 19 0 1 1 0 0
+	frame	data/bgs/castle_entrance/traps/candle/candle1.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle2.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle1.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle2.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle1.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle2.gif
+		
+#|edited by openBor Stats v 0.67
+		

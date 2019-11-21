@@ -1,0 +1,136 @@
+name    	 Esqueleto
+health           9
+speed            6
+type    	 enemy
+noquake  	 1
+nopain           1
+nodrop  	 2
+death            1
+offscreenkill   500
+score 200 -1
+subject_to_gravity 1
+hostile  player npc
+candamage player npc
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+
+defense normal3 2 0 0 0 0 0 0
+
+weapons          Skelet_headless Esqueleto
+load		 Bone
+icon 		data/chars/misc/bgmonster.gif
+
+palette 	data/chars/skeleton/skeleton.gif
+alternatepal	 data/chars/skeleton/blink.gif
+alternatepal	 data/chars/skeleton/skeleton_golden.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	range	25 100
+	rangea	-180 180
+	delay	1
+	offset	43 74
+	bbox	39 39 14 37
+	attack	40 25 20 50 6 0 0 0 0 0
+	frame	data/chars/skeleton/walk1.gif
+	delay	8
+	@cmd	targetB 120 16 -20 1
+	frame	data/chars/skeleton/throw1.gif
+	frame	data/chars/skeleton/throw2.gif
+	delay	14
+	@cmd	toss2 "Bone" 16 42 3
+	frame	data/chars/skeleton/throw2.gif
+		
+anim	death
+	delay	5
+	offset	43 74
+	sound	data/sounds/skeletondie.wav
+	frame	data/chars/misc/empty.gif
+	@cmd	tosserM "BS" 8 34 0 2.5
+	@cmd	tosserM "BR" 5 26 0 1.5
+	@cmd	tosserM "BA" 8 25 0.3 1.5
+	@cmd	tosserM "BA" -3 27 -0.3 1.5
+	@cmd	tosserM "BL" 5 12 0.3 1
+	@cmd	tosserM "BL" -8 14 -0.3 1
+	frame	data/chars/misc/empty.gif
+	delay	200
+	frame	data/chars/misc/empty.gif
+		
+anim	freespecial
+	range	25 100
+	rangea	-180 180
+	delay	7
+	offset	43 74
+	bbox	39 39 14 37
+	weaponframe	10 1
+	attack	40 25 20 50 6 0 0 0 0 0
+	frame	data/chars/skeleton/special1a.gif
+	frame	data/chars/skeleton/special1b.gif
+	frame	data/chars/skeleton/special1a.gif
+	frame	data/chars/skeleton/special1b.gif
+	frame	data/chars/skeleton/special1a.gif
+	frame	data/chars/skeleton/special1b.gif
+	delay	8
+	frame	data/chars/skeleton/throw1a.gif
+	@cmd	targetB 120 16 -20 1
+	frame	data/chars/skeleton/throw1a.gif
+	@cmd	toss2 "Bone1" 16 42 3
+	frame	data/chars/skeleton/throw2a.gif
+	delay	13
+	frame	data/chars/skeleton/throw2a.gif
+	delay	1
+	frame	data/chars/skeleton/throw2a.gif
+		
+anim	idle
+	loop	1
+	delay	20
+	offset	43 74
+	bbox	40 25 20 50
+	attack	40 25 20 50 6 0 0 0 0 0
+	frame	data/chars/skeleton/walk1.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0
+	frame	data/chars/skeleton/walk1.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	43 74
+	frame	data/chars/skeleton/walk3.gif
+		
+anim	walk
+	loop	1
+	delay	12
+	offset	43 74
+	bbox	40 25 20 50
+	attack	40 25 20 50 6 0 0 0 0 0
+	frame	data/chars/skeleton/walk1.gif
+	frame	data/chars/skeleton/walk2.gif
+	frame	data/chars/skeleton/walk3.gif
+	delay	11
+	frame	data/chars/skeleton/walk4.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0
+	frame	data/chars/skeleton/walk4.gif
+		
+#|edited by openBor Stats v 0.67
+		

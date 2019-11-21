@@ -1,0 +1,157 @@
+name	Fake_Evaine
+health          3
+speed           0
+type    	enemy
+noquake  	1
+lifespan 8
+nolife	1
+nopain  	1
+nodrop  	2
+death   	1
+nodieblink	2
+hostile         player npc
+candamage 	player npc
+offscreenkill 	500
+score 100 -1
+nomove 	1 0
+cantgrab 	1
+nodrop 	2
+falldie 	1
+aggression      99
+min_noatk_chance 0
+max_noatk_chance 0
+load	Scythe
+
+diesound         data/sounds/die3.wav
+
+icon		data/chars/misc/bgmonster.gif
+
+palette          data/chars/evaine/evaine_palette.gif
+alternatepal     data/chars/evaine/blink.gif
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack
+	loop	0
+	range	8 35
+	offset	48 55
+	bbox	26 0 30 55
+	delay	1
+	followcond	2
+	followanim	1
+	frame	data/chars/evaine/idle1a.gif
+	@cmd	spawn01 "Scythe" 0 0 0
+	frame	data/chars/evaine/idle1a.gif
+	delay	1000
+	hitfx	data/sounds/no-hit.wav
+	attack20	55 0 35 55 0 0 1 1 0 0
+	frame	data/chars/evaine/idle1a.gif
+	frame	data/chars/evaine/idle1a.gif
+		
+anim	death
+	loop	0
+	offset	48 55
+	delay	14
+	frame	data/chars/evaine/death1a.gif
+	frame	data/chars/evaine/death1b.gif
+	frame	data/chars/evaine/death1c.gif
+	frame	data/chars/evaine/death1d.gif
+	delay	3
+	frame	data/chars/evaine/death1e.gif
+	frame	data/chars/evaine/death1h.gif
+	frame	data/chars/evaine/death1i.gif
+	delay	14
+	frame	data/chars/evaine/death1j.gif
+	delay	3
+	frame	data/chars/evaine/death1k.gif
+	frame	data/chars/evaine/death1l.gif
+	frame	data/chars/evaine/death1m.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	loop	0
+	offset	48 55
+	delay	200
+	frame	data/chars/evaine/idle1a.gif
+	delay	14
+	frame	data/chars/evaine/death1a.gif
+	frame	data/chars/evaine/death1b.gif
+	frame	data/chars/evaine/death1c.gif
+	frame	data/chars/evaine/death1d.gif
+	delay	3
+	frame	data/chars/evaine/death1e.gif
+	frame	data/chars/evaine/death1h.gif
+	frame	data/chars/evaine/death1i.gif
+	delay	14
+	frame	data/chars/evaine/death1j.gif
+	delay	3
+	frame	data/chars/evaine/death1k.gif
+	frame	data/chars/evaine/death1l.gif
+	frame	data/chars/evaine/death1m.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	offset	48 77
+	bbox	26 22 30 55
+	delay	7
+	frame	data/chars/evaine/idle2a.gif
+	frame	data/chars/evaine/idle2b.gif
+	frame	data/chars/evaine/idle2c.gif
+	frame	data/chars/evaine/idle2d.gif
+	frame	data/chars/evaine/idle2e.gif
+	frame	data/chars/evaine/idle2f.gif
+	frame	data/chars/evaine/idle2g.gif
+	frame	data/chars/evaine/idle2h.gif
+	frame	data/chars/evaine/idle2i.gif
+	frame	data/chars/evaine/idle2j.gif
+		
+anim	spawn
+	loop	0
+	offset	48 55
+	delay	150
+	frame	data/chars/evaine/spawn1a.gif
+	offset	48 77
+	delay	14
+	frame	data/chars/evaine/spawn2a.gif
+	frame	data/chars/evaine/spawn2b.gif
+	frame	data/chars/evaine/spawn2c.gif
+	frame	data/chars/evaine/spawn2d.gif
+		
+#|edited by openBor Stats v 0.67
+		

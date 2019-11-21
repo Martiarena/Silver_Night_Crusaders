@@ -1,0 +1,17 @@
+name  		Platform_grass1
+type		none
+facing	  	1
+setlayer	-1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/garden/palette_object.gif
+
+
+
+anim	idle
+	delay	100
+	offset	85 48
+	platform	0 48 -8 -8 178 178 10 48
+	frame	data/bgs/garden/platforms/platform_grass1.gif
+

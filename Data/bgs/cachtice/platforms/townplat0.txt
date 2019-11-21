@@ -1,0 +1,20 @@
+name  		Townplat0
+type		none
+facing	  	1
+setlayer	1
+antigravity	100
+offscreenkill   9999
+
+
+
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	15 6
+	platform	0 7 8 8 23 23 10 7
+	frame	data/bgs/cachtice/platforms/townplat5.gif
+

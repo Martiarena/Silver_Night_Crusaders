@@ -1,0 +1,92 @@
+name		NOwl
+health          9
+nomove 1
+death		1
+type		npc
+hostile		enemy
+candamage	enemy obstacle
+subject_to_gravity 0
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+
+palette         data/chars/owl/owl_palette.gif
+
+animationscript data/scripts/nscript.c
+
+
+
+
+anim	attack1
+	delay	10
+	offset	25 35
+	frame	data/chars/owl/owl5.gif
+	attack2	12 30 28 13 6 0 1 0 0 0
+	@cmd	targetdash 3 3 0 -10 0
+	frame	data/chars/owl/owl7.gif
+	frame	data/chars/owl/owl8.gif
+	frame	data/chars/owl/owl6.gif
+	frame	data/chars/owl/owl5.gif
+	frame	data/chars/owl/owl7.gif
+	frame	data/chars/owl/owl8.gif
+	frame	data/chars/owl/owl6.gif
+	frame	data/chars/owl/owl5.gif
+	frame	data/chars/owl/owl7.gif
+	attack2	0
+	@cmd	dasher 0 0 0 0
+	frame	data/chars/owl/owl1.gif
+	@cmd	suicidePar
+	@cmd	dirparent
+	@cmd	targetPardash 3 3 30 -55 1
+	frame	data/chars/owl/owl3.gif
+	frame	data/chars/owl/owl4.gif
+	@cmd	suicidePar
+	@cmd	dirparent
+	@cmd	targetPardash 3 3 30 -55 1
+	frame	data/chars/owl/owl2.gif
+	frame	data/chars/owl/owl1.gif
+	@cmd	suicidePar
+	@cmd	dirparent
+	@cmd	targetPardash 3 3 30 -55 1
+	frame	data/chars/owl/owl3.gif
+	frame	data/chars/owl/owl4.gif
+	@cmd	suicidePar
+	@cmd	dirparent
+	@cmd	targetPardash 3 3 30 -55 1
+	frame	data/chars/owl/owl2.gif
+	@cmd	beidle
+	frame	data/chars/owl/owl1.gif
+		
+anim	death
+	delay	5
+	offset	25 35
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	15
+	offset	25 35
+	frame	data/chars/owl/owl1.gif
+	@cmd	suicidePar
+	@cmd	dirparent
+	@cmd	targetPardash 1 1 30 -55 1
+	delay	20
+	frame	data/chars/owl/owl3.gif
+	delay	15
+	frame	data/chars/owl/owl4.gif
+	@cmd	suicidePar
+	@cmd	dirparent
+	@cmd	targetPardash 1 1 30 -55 1
+	delay	20
+	frame	data/chars/owl/owl2.gif
+		
+anim	spawn
+	delay	5
+	offset	25 35
+	frame	data/chars/misc/empty.gif
+	@cmd	mapchange 1
+	@cmd	dirparent
+	frame	data/chars/owl/owl1.gif
+		
+#|edited by openBor Stats v 0.67
+		

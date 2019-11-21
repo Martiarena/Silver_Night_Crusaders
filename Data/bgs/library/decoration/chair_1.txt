@@ -1,0 +1,20 @@
+name	Silla_1
+type	none
+facing	  	1
+setlayer        -1
+antigravity	100
+offscreenkill   9999
+
+
+palette data/bgs/library/decoration/chair_1.gif
+
+
+
+anim	idle
+	loop	0
+	delay	100
+	offset	48 55
+	frame	data/bgs/library/decoration/chair_1.gif
+		
+#|edited by openBor Stats v 0.67
+		

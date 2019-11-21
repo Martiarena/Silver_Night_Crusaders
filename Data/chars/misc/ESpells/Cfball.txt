@@ -1,0 +1,35 @@
+name		Cfball
+nolife		1
+lifespan  	2
+type		none
+candamage	player npc
+antigravity	100
+animationscript data/scripts/prscript.c
+
+
+
+anim	follow1
+	delay	4
+	offset	190 120
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	hitflash	fbflash
+	delay	4
+	followcond	1
+	followanim	1
+	offset	190 120
+	hitfx	data/sounds/burnt.wav
+	burn	185 110 38 19 19 1 1 0 0 0
+	frame	data/chars/misc/espells/cerfb01.gif
+	@cmd	groundkill
+	frame	data/chars/misc/espells/cerfb02.gif
+	@cmd	groundkill
+	frame	data/chars/misc/espells/cerfb03.gif
+	@cmd	groundkill
+	frame	data/chars/misc/espells/cerfb04.gif
+		
+#|edited by openBor Stats v 0.67
+		

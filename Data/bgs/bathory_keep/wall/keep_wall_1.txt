@@ -1,0 +1,17 @@
+name  		Keep_wall_1
+type		none
+facing	  	1
+setlayer 	-1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/bathory_keep/wall/wall1a.gif
+
+
+
+anim	idle
+	delay	100
+	offset	8 88
+	platform	0 88 -8 -8 24 24 10 9999
+	frame	data/bgs/bathory_keep/wall/wall1a.gif
+

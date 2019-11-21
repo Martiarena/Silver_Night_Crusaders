@@ -1,0 +1,27 @@
+panel	        data/bgs/town/shop_scene.gif
+
+order           a
+settime	        0
+notime		1
+nopause		1
+nolife 1
+type 2
+
+updatedscript	data/levels/scenes/intro/intro.c
+
+
+spawn  Esqueleto_npc
+alias	Esqueleto
+coords  225  216
+at  0
+
+spawn  Esqueleto_npc
+alias	Esqueleto
+coords  240  216  0
+health  1
+at  0
+
+spawn	stop
+coords	1 1
+at	0
+

@@ -1,0 +1,276 @@
+name	    	Sahagin
+health  9
+speed		6
+type		enemy
+nopain		1
+cantgrab 	1
+nodrop	 	2
+death	 	1
+sleep           50
+score           100 -1
+aggression	-25
+offscreenkill	150
+aimove	 	chase
+animationscript	data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+hostile         player npc
+candamage 	player npc
+load    	WSPit
+icon 		data/chars/misc/bgmonster.gif
+
+defense normal3 2 0 0 0 0 0 0
+defense normal6 2 0 0 0 0 0 0
+defense schock 2 0 0 0 0 0 0
+
+palette 	 data/chars/sahagin/sahagin.gif
+alternatepal	 data/chars/sahagin/sahagin_blink.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	rangea	0 40
+	delay	1
+	offset	35 59
+	landframe	25
+	bbox	30 19 23 40
+	attack	30 19 23 40 6 0 0 0 0 0
+	range	70 300
+	frame	data/chars/sahagin/idle1.gif
+	delay	12
+	offset	35 64
+	frame	data/chars/sahagin/attack1.gif
+	delay	8
+	custknife	WSPit
+	throwframe	3 30
+	frame	data/chars/sahagin/attack2.gif
+	delay	12
+	frame	data/chars/sahagin/attack2.gif
+	delay	30
+	offset	35 59
+	frame	data/chars/sahagin/idle1.gif
+	delay	7
+	bbox	22 17 20 40
+	@cmd	leaper 0 4 0
+	@cmd	platform 0
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	@cmd	move 0 0 0
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	delay	1
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	attack2
+	rangea	0 40
+	delay	1
+	offset	35 59
+	landframe	29
+	bbox	30 19 23 40
+	attack	30 19 23 40 6 0 0 0 0 0
+	range	25 80
+	frame	data/chars/sahagin/idle1.gif
+	delay	12
+	offset	35 64
+	frame	data/chars/sahagin/attack1.gif
+	delay	7
+	frame	data/chars/sahagin/attack2.gif
+	frame	data/chars/sahagin/attack3.gif
+	frame	data/chars/sahagin/attack4.gif
+	attack	30 22 107 20 9 0 0 0 0 0
+	frame	data/chars/sahagin/attack5.gif
+	attack	30 19 23 40 6 0 0 0 0 0
+	frame	data/chars/sahagin/attack3.gif
+	frame	data/chars/sahagin/attack2.gif
+	delay	12
+	offset	35 59
+	frame	data/chars/sahagin/idle1.gif
+	delay	7
+	bbox	22 17 20 40
+	attack	0 0 0 0 0
+	@cmd	leaper 0 4 0
+	@cmd	platform 0
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	@cmd	move 0 0 0
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	delay	1
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	attack3
+	rangea	0 40
+	delay	1
+	offset	35 59
+	landframe	29
+	bbox	30 19 23 40
+	attack	30 19 23 40 6 0 0 0 0 0
+	range	5 30
+	frame	data/chars/sahagin/idle1.gif
+	delay	12
+	offset	35 64
+	frame	data/chars/sahagin/attack1.gif
+	delay	7
+	attack	30 19 33 40 9 0 0 0 0 0
+	frame	data/chars/sahagin/attack2.gif
+	delay	1
+	offset	35 59
+	attack	30 19 23 40 6 0 0 0 0 0
+	frame	data/chars/sahagin/idle1.gif
+	delay	1
+	frame	data/chars/sahagin/idle1.gif
+	delay	7
+	bbox	22 17 20 40
+	@cmd	leaper 0 4 0
+	@cmd	platform 0
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	@cmd	move 0 0 0
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	delay	1
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	death
+	delay	4
+	offset	30 53
+	subentity	Blooda
+	spawnframe	0 42 0 21 0
+	jumpframe	0 3.5 -1 0
+	sound	data/sounds/diem.wav
+	frame	data/chars/sahagin/death.gif
+	frame	data/chars/sahagin/death1.gif
+	frame	data/chars/sahagin/death2.gif
+	frame	data/chars/sahagin/death3.gif
+	frame	data/chars/sahagin/death4.gif
+	frame	data/chars/sahagin/death5.gif
+	frame	data/chars/sahagin/death6.gif
+	frame	data/chars/sahagin/death7.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	14
+	offset	35 59
+	bbox	30 19 22 40
+	attack	30 19 23 40 6 0 0 0 0 0
+	frame	data/chars/sahagin/idle1.gif
+	frame	data/chars/sahagin/idle2.gif
+	frame	data/chars/sahagin/idle3.gif
+		
+anim	sleep
+	loop	1
+	delay	20
+	offset	35 59
+	bbox	30 19 22 40
+	attack	30 19 23 40 6 0 0 0 0 0
+	frame	data/chars/sahagin/sleep1.gif
+	frame	data/chars/sahagin/sleep2.gif
+		
+anim	spawn
+	delay	7
+	offset	35 59
+	landframe	20
+	jumpframe	0 6 0 0
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	@cmd	move 0 0 0
+	bbox	20 13 21 40
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	frame	data/chars/sahagin/jump1.gif
+	delay	10
+	bbox	30 19 22 40
+	frame	data/chars/sahagin/idle1.gif
+		
+anim	walk
+	loop	1
+	delay	12
+	offset	35 59
+	bbox	30 19 22 40
+	attack	30 19 23 40 6 0 0 0 0 0
+	frame	data/chars/sahagin/walk1.gif
+	frame	data/chars/sahagin/walk2.gif
+	frame	data/chars/sahagin/walk3.gif
+	frame	data/chars/sahagin/walk4.gif
+		
+#|edited by openBor Stats v 0.67
+		

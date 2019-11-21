@@ -1,0 +1,306 @@
+music		data/music/castlewalls.ogg 305613
+
+panel	        data/bgs/castle_entrance/castle_sewer.gif
+
+order           a
+settime	        0
+notime		1
+spawn1          140 0 240
+spawn2          80 0 240
+direction	both
+type		0 0 0
+cameratype 1
+Hole  1904  240  -147  -147  199  199  25
+Hole  150  240  50  50  502  502  25
+
+
+spawn  Hidden_3
+coords  36  216  0
+at  0
+
+spawn  Wall_sewer6
+coords  16  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Wall_sewer5
+coords  87  216 96
+alias	Thick
+flip 1
+at  0
+
+spawn  Platform_sewer1
+coords  261  216  46
+alias	Thick
+flip  1
+at  0
+
+spawn  Water_sewer
+coords  426  249  0
+at  0
+
+spawn  Platform_sewer3
+coords  490  216  46
+alias	Thick
+flip  1
+at  0
+
+spawn  Stairs_sewer1
+coords  913  216
+alias	Thick
+flip  1
+at  0
+
+spawn  Stairs_sewer2
+coords  929  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Stairs_sewer3
+coords  945  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Stairs_sewer4
+coords  961  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Wall_sewer2
+coords  1241  216  0
+alias	Thick
+at  0
+
+spawn  Wall_sewer3
+coords  1466  216  64
+alias	Thick
+at  0
+
+spawn  Platform_sewer7
+coords  1530  216  62
+flip  1
+at  0
+
+spawn  Platform_sewer4
+coords  1857  216  48
+flip  1
+alias	Thick
+at  0
+
+spawn  Water_sewer1
+coords  1877  249
+at  0
+
+spawn  Platform_sewer6
+coords  2040  216  30
+alias	Thick
+flip  1
+at  0
+
+spawn  Wall_sewer5
+coords  2214  216 96
+alias	Thick
+at  0
+
+spawn  Wall_sewer6
+coords  2287  216 0
+alias	Thick
+at  0
+
+spawn  Esqueleto
+coords  370  216  65
+at  0
+
+spawn  Wall_sewer1
+coords  1001  216  0
+alias	Thick
+at  0
+
+spawn  Candle1
+coords  170  216  65
+item  ___20
+at  0
+
+spawn  Candle1
+coords  261  216  111
+item  ___20
+at  0
+
+
+spawn  BatSpawner
+coords  360  216
+at  50
+
+spawn  SahaginSpawner
+coords  640  216
+at  50
+
+spawn  Candle1
+coords  340  216  111
+item  ___50
+at  64
+
+spawn  Candle1
+coords  340  216  111
+item  ___50
+at  157
+
+spawn  Esqueleto
+coords  360  216  65
+at  200
+
+spawn  Candle1
+coords  340  216  111
+item  ___20
+at  255
+
+spawn  Candle1
+coords  340  216  65
+item  ___50
+at  340
+
+spawn  Esqueleto
+coords  360  216  0
+at  400
+
+spawn  Candle1
+coords  340  216  65
+item  ___10
+at  447
+
+spawn  Candle1
+coords  340  216  65
+item  ___10
+at  548
+
+spawn  Candle1
+coords  340  216  105
+item  ___20
+at  590
+
+spawn  Esqueleto
+coords  350  216  66
+at  640
+
+spawn  Candle1
+coords  340  216  140
+item  ___10
+at  653
+
+spawn  Chiroptera_
+coords  360  216  149
+at  735
+
+spawn  Esqueleto
+coords  360  216  113
+at  780
+
+spawn  Candle1
+coords  340  216  170
+item  Gema_azul
+at  805
+
+spawn  Esqueleto
+coords  360  216  113
+at  820
+
+spawn  Chiroptera_
+coords  360  216  149
+at  830
+
+spawn  Esqueleto
+coords  360  216  113
+at  900
+
+spawn  Candle1
+coords  340  216  170
+item  ___10
+at  900
+
+spawn  Candle1
+coords  340  216  170
+item  ___20
+at  1000
+
+spawn  Candle1
+coords  340  216  170
+item  P._Invisible
+at  1090
+
+spawn  Sewer_wall2
+coords  340  216
+alias	Thick
+item  Pollo_frito
+at  1126
+
+spawn  Candle1
+coords  340  216  145
+item  ___20
+at  1179
+
+spawn  Chiroptera_
+coords  360  216  149
+at  1210
+
+spawn  C._Demonio
+coords  360  216
+at  1300
+
+spawn  Candle1
+coords  340  216  65
+item  ___20
+at  1303
+
+spawn  BatSpawner
+coords  360  216
+at  1400
+
+spawn  Candle1
+coords  340  216  65
+item  ___50
+at  1403
+
+spawn  Candle1
+coords  340  216  111
+item  ___20
+at  1477
+
+spawn  Esqueleto
+coords  350  216  66
+at  1500
+
+spawn  SahaginSpawner
+coords  640  216
+at  1520
+
+spawn  Candle1
+coords  340  216  111
+item  ___50
+at  1571
+
+spawn  Candle1
+coords  340  216  101
+item  ___50
+at  1700
+
+spawn  Esqueleto
+coords  350  216  50
+at  1700
+
+spawn  Chiroptera_
+coords  360  216  53
+at  1790
+
+spawn  Candle1
+coords  340  216  65
+item  ___100
+at  1795
+
+spawn  ToEntrance
+coords  340  216  0
+flip 1
+at  1870

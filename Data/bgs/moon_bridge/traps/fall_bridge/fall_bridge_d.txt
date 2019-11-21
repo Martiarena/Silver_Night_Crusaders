@@ -1,0 +1,63 @@
+name  		Fall_bridge_d
+type		trap
+facing	  	1
+setlayer	1
+antigravity	100
+offscreenkill   9999
+nolife 1
+candamage      player npc
+
+load      Falldown_bridge
+
+palette 	data/bgs/moon_bridge/traps/fall_bridge/trap_bridge_4a.gif
+
+
+
+
+
+
+anim	death
+	loop	0
+	delay	1
+	offset	48 32
+	subentity	Falldown_bridge
+	spawnframe	2 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	loop	0
+	delay	18
+	offset	48 32
+	sound	data/sounds/no-hit.wav
+	subentity	Falldown_bridge
+	spawnframe	4 0 0 0 0
+	platform	0 39 -8 -8 104 104 10 32
+	frame	data/bgs/moon_bridge/traps/fall_bridge/trap_bridge_4a.gif
+	platform	0 39 -8 -8 104 104 10 32
+	frame	data/bgs/moon_bridge/traps/fall_bridge/trap_bridge_4b.gif
+	platform	0 39 -8 -8 104 104 10 32
+	frame	data/bgs/moon_bridge/traps/fall_bridge/trap_bridge_4c.gif
+	platform	0 39 -8 -8 104 104 10 32
+	frame	data/bgs/moon_bridge/traps/fall_bridge/trap_bridge_4d.gif
+	delay	1
+	sound	data/sounds/rock_break2.wav
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	delay	100
+	offset	48 32
+	followcond	1
+	followanim	1
+	hitfx	data/sounds/no-hit.wav
+	noreflect	1
+	attack20	13 -10 20 50 0 0 1 1 0 0
+	platform	0 39 -8 -8 104 104 10 32
+	frame	data/bgs/moon_bridge/traps/fall_bridge/trap_bridge_4a.gif
+		
+#|edited by openBor Stats v 0.67
+		

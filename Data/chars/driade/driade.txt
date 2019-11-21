@@ -1,0 +1,466 @@
+name	Driade
+health          100
+speed           0
+type    	enemy
+noquake  	1
+nopain  	1
+nodrop  	2
+death   	1
+nodieblink	2
+hostile        	npc player
+candamage       npc player
+offscreenkill 	500
+score 1000 -1
+nomove 	1 0
+cantgrab 	1
+nodrop 	2
+falldie 	1
+score	 	3000 -1
+defense normal 0.75 0 0 0 0 0 0
+defense normal2 0.75 0 0 0 0 0 0
+defense normal7 0.75 0 0 0 0 0 0
+defense schock 0.75 0 0 0 0 0 0
+
+diesound         data/sounds/die3.wav
+
+icon		data/chars/misc/bgmonster.gif
+load            DRose
+load            DHiedra
+
+palette          data/chars/driade/driade_palette.gif
+alternatepal     data/chars/driade/blink_palette.gif
+animationscript  data/scripts/EScript.c
+takedamagescript data/scripts/blink.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack
+	range	0 100
+	loop	0
+	offset	72 107
+	bbox	58 28 36 42
+	attack	55 30 30 75 19 0 1 0 0 0
+	delay	7
+	frame	data/chars/driade/attack2a.gif
+	frame	data/chars/driade/attack2b.gif
+	frame	data/chars/driade/attack2c.gif
+	frame	data/chars/driade/attack2d.gif
+	frame	data/chars/driade/attack2a.gif
+	frame	data/chars/driade/attack2b.gif
+	frame	data/chars/driade/attack2c.gif
+	frame	data/chars/driade/attack2d.gif
+	frame	data/chars/driade/attack2e.gif
+	frame	data/chars/driade/attack2f.gif
+	frame	data/chars/driade/attack2g.gif
+	frame	data/chars/driade/attack2h.gif
+	frame	data/chars/driade/attack2i.gif
+	frame	data/chars/driade/attack2j.gif
+	frame	data/chars/driade/attack2k.gif
+	frame	data/chars/driade/attack2l.gif
+	frame	data/chars/driade/attack2ll.gif
+	frame	data/chars/driade/attack2m.gif
+	frame	data/chars/driade/attack2n.gif
+	delay	7
+	@cmd	spawnM "DHiedra" 40 0 0
+	@cmd	spawnM "DHiedra" -40 0 0
+	@cmd	spawnM "DHiedra" 70 0 0
+	@cmd	spawnM "DHiedra" -70 0 0
+	@cmd	spawnM "DHiedra" -100 0 0
+	@cmd	spawnM "DHiedra" -130 0 0
+	@cmd	spawnM "DHiedra" 130 0 0
+	frame	data/chars/driade/attack2o.gif
+	delay	7
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2n.gif
+	frame	data/chars/driade/attack2m.gif
+	frame	data/chars/driade/attack2ll.gif
+		
+anim	attack2
+	range	0 100
+	loop	0
+	offset	72 107
+	bbox	58 28 36 42
+	attack	55 30 30 75 19 0 1 0 0 0
+	delay	7
+	frame	data/chars/driade/attack2a.gif
+	frame	data/chars/driade/attack2b.gif
+	frame	data/chars/driade/attack2c.gif
+	frame	data/chars/driade/attack2d.gif
+	frame	data/chars/driade/attack2a.gif
+	frame	data/chars/driade/attack2b.gif
+	frame	data/chars/driade/attack2c.gif
+	frame	data/chars/driade/attack2d.gif
+	frame	data/chars/driade/attack2e.gif
+	frame	data/chars/driade/attack2f.gif
+	frame	data/chars/driade/attack2g.gif
+	frame	data/chars/driade/attack2h.gif
+	frame	data/chars/driade/attack2i.gif
+	frame	data/chars/driade/attack2j.gif
+	frame	data/chars/driade/attack2k.gif
+	frame	data/chars/driade/attack2l.gif
+	frame	data/chars/driade/attack2ll.gif
+	frame	data/chars/driade/attack2m.gif
+	frame	data/chars/driade/attack2n.gif
+	delay	7
+	@cmd	spawnM "DHiedra" 30 0 0
+	@cmd	spawnM "DHiedra" -30 0 0
+	@cmd	spawnM "DHiedra" 60 0 0
+	@cmd	spawnM "DHiedra" 90 0 0
+	@cmd	spawnM "DHiedra" -90 0 0
+	@cmd	spawnM "DHiedra" -120 0 0
+	@cmd	spawnM "DHiedra" 120 0 0
+	frame	data/chars/driade/attack2o.gif
+	delay	7
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2n.gif
+	frame	data/chars/driade/attack2m.gif
+	frame	data/chars/driade/attack2ll.gif
+		
+anim	attack3
+	range	0 100
+	loop	0
+	offset	72 107
+	bbox	58 28 36 42
+	attack	55 30 30 75 19 0 1 0 0 0
+	delay	7
+	frame	data/chars/driade/attack2a.gif
+	frame	data/chars/driade/attack2b.gif
+	frame	data/chars/driade/attack2c.gif
+	frame	data/chars/driade/attack2d.gif
+	frame	data/chars/driade/attack2a.gif
+	frame	data/chars/driade/attack2b.gif
+	frame	data/chars/driade/attack2c.gif
+	frame	data/chars/driade/attack2d.gif
+	frame	data/chars/driade/attack2e.gif
+	frame	data/chars/driade/attack2f.gif
+	frame	data/chars/driade/attack2g.gif
+	frame	data/chars/driade/attack2h.gif
+	frame	data/chars/driade/attack2i.gif
+	frame	data/chars/driade/attack2j.gif
+	frame	data/chars/driade/attack2k.gif
+	frame	data/chars/driade/attack2l.gif
+	frame	data/chars/driade/attack2ll.gif
+	frame	data/chars/driade/attack2m.gif
+	frame	data/chars/driade/attack2n.gif
+	delay	7
+	@cmd	spawnM "DHiedra" 40 0 0
+	@cmd	spawnM "DHiedra" -40 0 0
+	@cmd	spawnM "DHiedra" 70 0 0
+	@cmd	spawnM "DHiedra" -70 0 0
+	@cmd	spawnM "DHiedra" -100 0 0
+	@cmd	spawnM "DHiedra" -130 0 0
+	@cmd	spawnM "DHiedra" 130 0 0
+	frame	data/chars/driade/attack2o.gif
+	delay	7
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2n.gif
+	frame	data/chars/driade/attack2m.gif
+	frame	data/chars/driade/attack2ll.gif
+		
+anim	attack4
+	range	0 100
+	loop	0
+	offset	72 107
+	bbox	58 28 36 42
+	attack	55 30 30 75 19 0 1 0 0 0
+	delay	7
+	frame	data/chars/driade/attack2a.gif
+	frame	data/chars/driade/attack2b.gif
+	frame	data/chars/driade/attack2c.gif
+	frame	data/chars/driade/attack2d.gif
+	frame	data/chars/driade/attack2a.gif
+	frame	data/chars/driade/attack2b.gif
+	frame	data/chars/driade/attack2c.gif
+	frame	data/chars/driade/attack2d.gif
+	frame	data/chars/driade/attack2e.gif
+	frame	data/chars/driade/attack2f.gif
+	frame	data/chars/driade/attack2g.gif
+	frame	data/chars/driade/attack2h.gif
+	frame	data/chars/driade/attack2i.gif
+	frame	data/chars/driade/attack2j.gif
+	frame	data/chars/driade/attack2k.gif
+	frame	data/chars/driade/attack2l.gif
+	frame	data/chars/driade/attack2ll.gif
+	frame	data/chars/driade/attack2m.gif
+	frame	data/chars/driade/attack2n.gif
+	delay	7
+	@cmd	spawnM "DHiedra" -30 0 0
+	@cmd	spawnM "DHiedra" 60 0 0
+	@cmd	spawnM "DHiedra" -60 0 0
+	@cmd	spawnM "DHiedra" -90 0 0
+	@cmd	spawnM "DHiedra" 90 0 0
+	@cmd	spawnM "DHiedra" -120 0 0
+	@cmd	spawnM "DHiedra" 120 0 0
+	frame	data/chars/driade/attack2o.gif
+	delay	7
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2o.gif
+	frame	data/chars/driade/attack2p.gif
+	frame	data/chars/driade/attack2q.gif
+	frame	data/chars/driade/attack2r.gif
+	frame	data/chars/driade/attack2n.gif
+	frame	data/chars/driade/attack2m.gif
+	frame	data/chars/driade/attack2ll.gif
+		
+anim	death
+	loop	0
+	offset	72 107
+	delay	70
+	sound	data/sounds/flame-dies.wav
+	subentity	kdie
+	spawnframe	0 0 0 0 0
+	frame	data/chars/driade/death1.gif
+	delay	7
+	frame	data/chars/driade/death2.gif
+	frame	data/chars/driade/death3.gif
+	frame	data/chars/driade/death4.gif
+	frame	data/chars/driade/death5.gif
+	frame	data/chars/driade/death6.gif
+	frame	data/chars/driade/death7.gif
+	delay	70
+	frame	data/chars/driade/death8.gif
+	delay	7
+	frame	data/chars/driade/death9.gif
+	frame	data/chars/driade/death10.gif
+	frame	data/chars/driade/death11.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	freespecial
+	rangea	0 100
+	range	23 250
+	loop	0
+	offset	72 107
+	bbox	58 28 36 42
+	attack	55 30 30 75 19 0 1 0 0 0
+	delay	7
+	frame	data/chars/driade/attack1a.gif
+	frame	data/chars/driade/attack1b.gif
+	frame	data/chars/driade/attack1c.gif
+	frame	data/chars/driade/attack1d.gif
+	frame	data/chars/driade/attack1e.gif
+	frame	data/chars/driade/attack1f.gif
+	frame	data/chars/driade/attack1g.gif
+	frame	data/chars/driade/attack1h.gif
+	@cmd	target 2 2 0 0 0 0
+	@cmd	shoot2 "DRose" 10 70
+	sound	data/sounds/throw_medium.wav
+	frame	data/chars/driade/attack1i.gif
+	frame	data/chars/driade/attack1j.gif
+	frame	data/chars/driade/attack1k.gif
+	frame	data/chars/driade/attack1l.gif
+	frame	data/chars/driade/attack1m.gif
+	frame	data/chars/driade/attack1n.gif
+		
+anim	idle
+	loop	1
+	offset	72 107
+	bbox	58 28 36 42
+	attack2	55 30 30 75 19 0 1 0 0 0
+	delay	7
+	frame	data/chars/driade/idle1a.gif
+	frame	data/chars/driade/idle1b.gif
+	frame	data/chars/driade/idle1c.gif
+	frame	data/chars/driade/idle1d.gif
+	frame	data/chars/driade/idle2a.gif
+	frame	data/chars/driade/idle2b.gif
+	frame	data/chars/driade/idle2c.gif
+	delay	6
+	frame	data/chars/driade/idle2d.gif
+	delay	1
+	attack2	0 0 0 0
+	frame	data/chars/driade/idle2d.gif
+		
+anim	spawn
+	loop	0
+	delay	21
+	offset	21 21
+	frame	data/chars/une/idle1a.gif
+	delay	7
+	frame	data/chars/une/attack1a.gif
+	frame	data/chars/une/attack1b.gif
+	frame	data/chars/une/attack1c.gif
+	frame	data/chars/une/idle2a.gif
+	frame	data/chars/une/idle2b.gif
+	frame	data/chars/une/idle2c.gif
+	frame	data/chars/une/idle2d.gif
+	frame	data/chars/une/idle2a.gif
+	frame	data/chars/une/idle2b.gif
+	frame	data/chars/une/idle2c.gif
+	frame	data/chars/une/idle2d.gif
+	frame	data/chars/une/idle2a.gif
+	frame	data/chars/une/idle2b.gif
+	frame	data/chars/une/idle2c.gif
+	frame	data/chars/une/idle2d.gif
+	delay	1
+	offset	72 107
+	frame	data/chars/driade/spawn1.gif
+	attack2	51 86 41 21 12 0 0 0 0 0
+	frame	data/chars/driade/spawn2.gif
+	frame	data/chars/driade/spawn3.gif
+	frame	data/chars/driade/spawn4.gif
+	frame	data/chars/driade/spawn5.gif
+	frame	data/chars/driade/spawn6.gif
+	frame	data/chars/driade/spawn7.gif
+	frame	data/chars/driade/spawn8.gif
+	frame	data/chars/driade/spawn9.gif
+	frame	data/chars/driade/spawn10.gif
+	frame	data/chars/driade/spawn11.gif
+	frame	data/chars/driade/spawn12.gif
+	frame	data/chars/driade/spawn13.gif
+	frame	data/chars/driade/spawn14.gif
+	frame	data/chars/driade/spawn15.gif
+	frame	data/chars/driade/spawn16.gif
+	frame	data/chars/driade/spawn17.gif
+	frame	data/chars/driade/spawn18.gif
+	frame	data/chars/driade/spawn19.gif
+	frame	data/chars/driade/spawn20.gif
+	frame	data/chars/driade/spawn21.gif
+	frame	data/chars/driade/spawn22.gif
+	frame	data/chars/driade/spawn23.gif
+	frame	data/chars/driade/spawn24.gif
+	frame	data/chars/driade/spawn25.gif
+	delay	7
+	frame	data/chars/driade/spawn26.gif
+	frame	data/chars/driade/spawn27.gif
+	frame	data/chars/driade/spawn28.gif
+	frame	data/chars/driade/spawn29.gif
+	frame	data/chars/driade/spawn30.gif
+	frame	data/chars/driade/spawn31.gif
+	frame	data/chars/driade/spawn32.gif
+	frame	data/chars/driade/spawn33.gif
+	frame	data/chars/driade/spawn34.gif
+	frame	data/chars/driade/spawn35.gif
+	frame	data/chars/driade/spawn36.gif
+	frame	data/chars/driade/spawn37.gif
+	frame	data/chars/driade/spawn38.gif
+	attack2	0 0 0 0
+	frame	data/chars/driade/spawn39.gif
+		
+#|edited by openBor Stats v 0.67
+		

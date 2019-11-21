@@ -1,0 +1,55 @@
+name		PGrenade
+nolife		1
+type		none
+candamage	enemy obstacle
+bounce		1
+subject_to_hole	1
+no_adjust_base	0
+noquake		1
+animationscript	data/scripts/prscript.c
+
+
+anim idle
+	loop	1 1 5
+	delay	10
+	offset  12 13
+	landframe 6
+        followanim 1
+        followcond 1
+	bouncefactor 2
+	attack  7 7 11 10 0
+	frame	data/chars/misc/subweap/grenade1.png
+	frame	data/chars/misc/subweap/grenade2.png
+	frame	data/chars/misc/subweap/grenade3.png
+	frame	data/chars/misc/subweap/grenade4.png
+	frame	data/chars/misc/subweap/grenade1.png
+	frame	data/chars/misc/subweap/grenade2.png
+	delay	100
+	attack  0
+	frame	data/chars/misc/subweap/grenade1.png
+	delay	10
+	sound	data/sounds/xplos.wav
+	@cmd	spawn01 "FireBlast" 0 60 0
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FireBlast" -32 60 0
+	@cmd	spawn01 "FireBlast" 32 60 0
+	@cmd	spawn01 "FireBlast" 0 92 0
+	@cmd	spawn01 "FireBlast" 0 24 0
+	@cmd	spawn01 "FireBlast" 22.6 82.6 0
+	@cmd	spawn01 "FireBlast" -22.6 82.6 0
+	@cmd	spawn01 "FireBlast" 22.6 37.4 0
+	@cmd	spawn01 "FireBlast" -22.6 37.4 0
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+
+anim follow1
+	delay	1
+	offset	12 13
+	frame	data/chars/misc/empty.gif
+	delay	10
+	sound	data/sounds/xplos.wav
+	@cmd	spawn01 "FireBlast" 0 60 0
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif

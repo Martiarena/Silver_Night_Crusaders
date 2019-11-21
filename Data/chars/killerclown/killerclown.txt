@@ -1,0 +1,181 @@
+name    	 P._Asesino
+health           30
+speed            4
+type    	 enemy
+noquake  	 1
+nopain           1
+nodrop  	 2
+death            1
+offscreenkill   1000
+score		300 -1
+subject_to_gravity 1
+hostile  player npc
+candamage player npc
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+load		Card_clown
+load            Clowndie
+
+icon 		data/chars/misc/bgmonster.gif
+
+palette 	data/chars/killerclown/killerclown_palette.gif
+alternatepal	 data/chars/killerclown/blink.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	range	20 180
+	rangea	0 180
+	delay	7
+	offset	54 77
+	bbox	35 20 25 50
+	attack	35 20 25 50 9 0 0 0 0 0
+	frame	data/chars/killerclown/attack1a.gif
+	frame	data/chars/killerclown/attack1b.gif
+	frame	data/chars/killerclown/attack1c.gif
+	frame	data/chars/killerclown/attack1d.gif
+	frame	data/chars/killerclown/attack1e.gif
+	frame	data/chars/killerclown/attack1f.gif
+	frame	data/chars/killerclown/attack1g.gif
+	frame	data/chars/killerclown/attack1h.gif
+	frame	data/chars/killerclown/attack1i.gif
+	frame	data/chars/killerclown/attack1j.gif
+	frame	data/chars/killerclown/attack1k.gif
+	frame	data/chars/killerclown/attack1l.gif
+	frame	data/chars/killerclown/attack1m.gif
+	frame	data/chars/killerclown/attack1n.gif
+	frame	data/chars/killerclown/attack1o.gif
+	bbox	55 25 25 50
+	attack	55 25 25 50 9 0 0 0 0 0
+	frame	data/chars/killerclown/attack1p.gif
+	delay	14
+	@cmd	target 2 2 0 0 0 0
+	@cmd	shoot2 "Card_clown" 40 30
+	frame	data/chars/killerclown/attack1p.gif
+	frame	data/chars/killerclown/attack1p.gif
+		
+anim	death
+	delay	5
+	offset	43 74
+	frame	data/chars/misc/empty.gif
+	subentity	Clowndie
+	spawnframe	0 0 0 38 0
+	@cmd	tosserM "Confeti_1" 8 34 0 2
+	@cmd	tosserM "Confeti_2" 5 26 0.2 2.5
+	@cmd	tosserM "Card_debris" 8 25 0.4 2.5
+	@cmd	tosserM "Confeti_3" -3 27 -0.2 2.5
+	@cmd	tosserM "Card_debris" 5 12 -0.4 2
+	@cmd	tosserM "Confeti_4" -8 14 -0.6 2
+	frame	data/chars/misc/empty.gif
+	delay	200
+	frame	data/chars/misc/empty.gif
+	delay	1
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+
+anim	idle
+	loop	1
+	delay	7
+	offset	54 77
+	bbox	35 20 25 50
+	attack	35 20 25 50 9 0 0 0 0 0
+	frame	data/chars/killerclown/idle1a.gif
+	frame	data/chars/killerclown/idle1b.gif
+	frame	data/chars/killerclown/idle1c.gif
+	frame	data/chars/killerclown/idle1d.gif
+	frame	data/chars/killerclown/idle1e.gif
+	frame	data/chars/killerclown/idle1f.gif
+	frame	data/chars/killerclown/idle1g.gif
+	frame	data/chars/killerclown/idle1h.gif
+	frame	data/chars/killerclown/idle1i.gif
+	frame	data/chars/killerclown/idle1j.gif
+	frame	data/chars/killerclown/idle1k.gif
+	frame	data/chars/killerclown/idle1l.gif
+	frame	data/chars/killerclown/idle1m.gif
+	frame	data/chars/killerclown/idle1n.gif
+	frame	data/chars/killerclown/idle1o.gif
+	frame	data/chars/killerclown/idle1p.gif
+	frame	data/chars/killerclown/idle1q.gif
+	frame	data/chars/killerclown/idle1r.gif
+	frame	data/chars/killerclown/idle1s.gif
+	frame	data/chars/killerclown/idle1t.gif
+	frame	data/chars/killerclown/idle1u.gif
+	frame	data/chars/killerclown/idle1v.gif
+	frame	data/chars/killerclown/idle1w.gif
+	frame	data/chars/killerclown/idle1x.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0
+	frame	data/chars/killerclown/idle1x.gif
+		
+anim	spawn
+	loop	0
+	delay	7
+	offset	54 77
+	bbox	42 20 25 50
+	attack	42 20 25 50 9 0 0 0 0 0
+	frame	data/chars/killerclown/spawn1a.gif
+	bbox	35 20 25 50
+	attack	35 20 25 50 9 0 0 0 0 0
+	frame	data/chars/killerclown/spawn1b.gif
+	frame	data/chars/killerclown/spawn1c.gif
+		
+anim	walk
+	loop	1
+	delay	7
+	offset	54 77
+	bbox	35 20 25 50
+	attack	35 20 25 50 9 0 0 0 0 0
+	frame	data/chars/killerclown/idle1a.gif
+	frame	data/chars/killerclown/idle1b.gif
+	frame	data/chars/killerclown/idle1c.gif
+	frame	data/chars/killerclown/idle1d.gif
+	frame	data/chars/killerclown/idle1e.gif
+	frame	data/chars/killerclown/idle1f.gif
+	frame	data/chars/killerclown/idle1g.gif
+	frame	data/chars/killerclown/idle1h.gif
+	frame	data/chars/killerclown/idle1i.gif
+	frame	data/chars/killerclown/idle1j.gif
+	frame	data/chars/killerclown/idle1k.gif
+	frame	data/chars/killerclown/idle1l.gif
+	frame	data/chars/killerclown/idle1m.gif
+	frame	data/chars/killerclown/idle1n.gif
+	frame	data/chars/killerclown/idle1o.gif
+	frame	data/chars/killerclown/idle1p.gif
+	frame	data/chars/killerclown/idle1q.gif
+	frame	data/chars/killerclown/idle1r.gif
+	frame	data/chars/killerclown/idle1s.gif
+	frame	data/chars/killerclown/idle1t.gif
+	frame	data/chars/killerclown/idle1u.gif
+	frame	data/chars/killerclown/idle1v.gif
+	frame	data/chars/killerclown/idle1w.gif
+	frame	data/chars/killerclown/idle1x.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0
+	frame	data/chars/killerclown/idle1x.gif
+		
+#|edited by openBor Stats v 0.67
+		

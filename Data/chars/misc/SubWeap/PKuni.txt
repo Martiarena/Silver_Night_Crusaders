@@ -1,0 +1,25 @@
+name		PKuni
+type		none
+candamage	enemy obstacle
+speed		10
+lifespan	10
+remove		0
+subject_to_platform 0
+
+
+anim idle
+@script
+    void self = getlocalvar("self"); //Get calling entity
+    int Vx = getentityproperty(self, "speed");
+    
+    if(frame==1){
+      changeentityproperty(self, "speed", Vx+1);
+    }
+@end_script
+	loop	1
+	delay	12
+	offset  2 5
+	attack  2 2 33 7 15 1 0 0 0
+	frame	data/chars/misc/subweap/kuni.png
+#	attack  0
+	frame	data/chars/misc/subweap/kuni.png

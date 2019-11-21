@@ -1,0 +1,22 @@
+name  		Wall_castle2
+type		none
+facing	  	1
+setlayer	1
+antigravity	100
+offscreenkill   9999
+
+
+
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	28 87
+	platform	0 87 -8 -8 64 64 10 999
+	frame	data/bgs/castle_entrance/walls/wall_castle2.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,98 @@
+name	    	Zombi
+health          6
+speed		5
+nomove	 	1
+type		enemy
+nopain		1
+cantgrab 	1
+nodrop	 	2
+death	 	1
+nodieblink 	2
+aggression	20
+offscreenkill	100
+subject_to_platform 0
+hostile         player npc
+candamage 	player npc
+score   100 -1
+
+defense normal3 2 0 0 0 0 0 0
+defense normal4 2 0 0 0 0 0 0
+defense normal5 2 0 0 0 0 0 0
+defense normal6 2 0 0 0 0 0 0
+defense normal19 2 0 0 0 0 0 0
+defense burn 2 0 0 0 0 0 0
+
+icon 		data/chars/misc/bgmonster.gif
+takedamagescript data/scripts/blink.c
+
+palette		data/chars/zombie/zombi.gif
+
+
+
+
+
+
+
+
+
+anim	attack1
+	range	0 400
+	loop	1
+	delay	12
+	jumpframe	0 0 0.5 0
+	offset	40 66
+	bbox	28 15 25 45
+	attack	28 15 25 45 6 0 0 0 0 0
+	frame	data/chars/zombie/walk1.gif
+	frame	data/chars/zombie/walk2.gif
+	delay	11
+	frame	data/chars/zombie/walk3.gif
+	delay	1
+	attack	0
+	frame	data/chars/zombie/walk3.gif
+		
+anim	death
+	delay	12
+	offset	40 66
+	subentity	edie
+	spawnframe	0 0 0 30 0
+	frame	data/chars/zombie/pain.gif
+	delay	3
+	frame	data/chars/zombie/death1.gif
+	frame	data/chars/zombie/death2.gif
+	frame	data/chars/zombie/death3.gif
+	frame	data/chars/zombie/death4.gif
+	frame	data/chars/zombie/death5.gif
+	frame	data/chars/zombie/death6.gif
+	frame	data/chars/zombie/death7.gif
+	delay	32
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	12
+	offset	40 66
+	bbox	28 15 25 45
+	attack	28 15 25 45 6 0 0 0 0 0
+	frame	data/chars/zombie/walk2.gif
+	frame	data/chars/zombie/walk1.gif
+	delay	11
+	frame	data/chars/zombie/walk3.gif
+	delay	1
+	attack	0
+	frame	data/chars/zombie/walk3.gif
+	frame	data/chars/zombie/walk1.gif
+		
+anim	spawn
+	delay	15
+	offset	40 66
+	frame	data/chars/zombie/spawn1.gif
+	frame	data/chars/zombie/spawn2.gif
+	frame	data/chars/zombie/spawn3.gif
+	frame	data/chars/zombie/spawn4.gif
+	frame	data/chars/zombie/spawn5.gif
+	frame	data/chars/zombie/spawn6.gif
+		
+#|edited by openBor Stats v 0.67
+		

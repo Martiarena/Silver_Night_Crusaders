@@ -1,0 +1,234 @@
+name    	 C._Demonio
+health           36
+speed            8
+type    	 enemy
+noquake  	 1
+nopain  	 1
+nodrop  	 2
+death   	 1
+nodieblink       3
+offscreenkill  500
+score 400 -1
+hostile  player npc
+candamage player npc
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+load  axeh
+icon 		data/chars/misc/bgmonster.gif
+
+defense normal3 0.5 0 0 0 0 0 0
+defense normal6 2 0 0 0 0 0 0
+
+palette 	data/chars/demonknight/demonknight_palette.gif
+
+alternatepal	 data/chars/demonknight/blink.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	range	45 100
+	rangea	-180 180
+	delay	1
+	offset	36 103
+	bbox	14 30 41 70
+	attack	14 30 41 70 9 0 0 0 0 0
+	frame	data/chars/demonknight/walk1.gif
+	delay	32
+	@cmd	targetB 120 16 -20 1
+	frame	data/chars/demonknight/attack1a.gif
+	delay	7
+	@cmd	toss2 "axev" 16 52 4
+	frame	data/chars/demonknight/attack2a.gif
+	frame	data/chars/demonknight/attack2b.gif
+	delay	56
+	frame	data/chars/demonknight/attack2c.gif
+		
+anim	attack2
+	range	5 32
+	rangea	0 0
+	delay	1
+	offset	36 103
+	bbox	14 30 41 70
+	attack	14 30 41 70 9 0 0 0 0 0
+	frame	data/chars/demonknight/walk1.gif
+	delay	24
+	frame	data/chars/demonknight/attack1a.gif
+	delay	7
+	frame	data/chars/demonknight/attack1b.gif
+	frame	data/chars/demonknight/attack1c.gif
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/demonknight/attack1c.gif
+	hitfx	data/sounds/slash.wav
+	attack2	14 30 59 70 12 0 0 0 0 0
+	frame	data/chars/demonknight/attack1d.gif
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1d.gif
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1d.gif
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1d.gif
+	delay	28
+	attack2	0 0 0 0 0 0 0
+	frame	data/chars/demonknight/attack1e.gif
+		
+anim	attack3
+	range	30 95
+	rangea	0 0
+	delay	1
+	offset	36 103
+	bbox	14 30 41 70
+	attack	14 30 41 70 12 0 0 0 0 0
+	frame	data/chars/demonknight/walk1.gif
+	delay	64
+	frame	data/chars/demonknight/attack1a.gif
+	delay	1
+	move	3
+	attack	14 30 41 70 9 0 0 0 0 0
+	frame	data/chars/demonknight/attack1b.gif
+	frame	data/chars/demonknight/attack1b.gif
+	frame	data/chars/demonknight/attack1b.gif
+	frame	data/chars/demonknight/attack1b.gif
+	frame	data/chars/demonknight/attack1c.gif
+	frame	data/chars/demonknight/attack1c.gif
+	frame	data/chars/demonknight/attack1c.gif
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/demonknight/attack1c.gif
+	delay	1
+	hitfx	data/sounds/slash.wav
+	attack2	14 30 59 70 19 11 0 0 0 0
+	dropv	3 2 0
+	frame	data/chars/demonknight/attack1d.gif
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1d.gif
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1d.gif
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1d.gif
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1d.gif
+	frame	data/chars/demonknight/attack1e.gif
+	move	2
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1e.gif
+	move	1
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1e.gif
+	delay	28
+	move	0
+	attack2	0 0 0 0 0 0 0
+	frame	data/chars/demonknight/attack1e.gif
+		
+anim	attack4
+	range	100 150
+	rangea	0 75
+	delay	1
+	offset	36 103
+	bbox	14 30 41 70
+	attack	14 30 41 70 9 0 0 0 0 0
+	frame	data/chars/demonknight/walk1.gif
+	delay	24
+	frame	data/chars/demonknight/attack1a.gif
+	delay	7
+	custknife	axeh
+	throwframe	2 52
+	frame	data/chars/demonknight/attack2a.gif
+	frame	data/chars/demonknight/attack2b.gif
+	delay	32
+	frame	data/chars/demonknight/attack2c.gif
+		
+anim	death
+	delay	5
+	offset	36 103
+	sound	data/sounds/dknightdie.wav
+	frame	data/chars/demonknight/walk1.gif
+	sound	data/sounds/flame-dies.wav
+	subentity	kdie
+	spawnframe	1 0 0 0 0
+	frame	data/chars/demonknight/death1a.gif
+	frame	data/chars/demonknight/death1b.gif
+	frame	data/chars/demonknight/death1c.gif
+	@cmd	tosserM "axed" -8 14 -0.3 1
+	frame	data/chars/demonknight/death1d.gif
+	delay	80
+	frame	data/chars/demonknight/death1d.gif
+	delay	3
+	frame	data/chars/demonknight/death1e.gif
+	frame	data/chars/demonknight/death1f.gif
+	frame	data/chars/demonknight/death1g.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	20
+	offset	36 103
+	bbox	14 30 41 70
+	attack	14 30 41 70 9 0 0 0 0 0
+	frame	data/chars/demonknight/walk1.gif
+	delay	1
+	attack3	0 0 0 0 0 0 0 0
+	frame	data/chars/demonknight/walk1.gif
+		
+anim	spawn
+	loop	0
+	delay	7
+	offset	36 103
+	bbox	14 30 41 70
+	attack	14 30 41 70 9 0 0 0 0 0
+	frame	data/chars/demonknight/walk1.gif
+		
+anim	walk
+	loop	1
+	delay	12
+	offset	36 103
+	bbox	14 30 41 70
+	attack	14 30 41 70 9 0 0 0 0 0
+	frame	data/chars/demonknight/walk1.gif
+	frame	data/chars/demonknight/walk2.gif
+	frame	data/chars/demonknight/walk3.gif
+	delay	11
+	frame	data/chars/demonknight/walk4.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0
+	frame	data/chars/demonknight/walk4.gif
+		
+#|edited by openBor Stats v 0.67
+		

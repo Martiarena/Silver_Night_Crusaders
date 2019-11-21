@@ -1,0 +1,13 @@
+name	        Gelap
+type	        panel
+speed		10
+facing   	1
+alpha		2
+setlayer   	100
+subject_to_gravity 0
+
+
+anim idle
+	delay	10
+	offset	160 120
+        frame   data/chars/misc/gelap.png

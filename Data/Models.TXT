@@ -1,0 +1,901 @@
+nodropen	1
+versusdamage	0
+colourselect 	1
+spdirection	1 1
+maxattacks	30
+maxattacktypes	30
+maxfreespecials 50
+maxfollows	15
+lifescore	50000
+credscore 	100000
+nomaxrushreset	2
+
+
+
+
+
+# Required objects. These must always be loaded.
+load	Flash		data/chars/misc/flash/flash.txt
+load	Hflame		data/chars/misc/hits/flame.txt
+load	Hshock		data/chars/misc/hits/shock.txt
+load	Blooda		data/chars/misc/blood/blooda.txt
+load	Bloode		data/chars/misc/blood/bloode.txt
+load	PRose		data/chars/driade/prose.txt
+
+# Players
+load	Sheeba		data/chars/sheeba/sheeba.txt
+load	Sheeba_Volaticus	data/chars/sheeba/magic/sheeba_volaticus.txt
+load	Ethan		data/chars/ethan/ethan.txt
+load	Ethan_fire	data/chars/ethan/ethan_spell.txt
+load	Fran		data/chars/fran/fran.txt
+load	Soul_Bat	data/chars/fran/soul_bat.txt
+load	Teobaldo	data/chars/teobaldo/teobaldo.txt
+know	Teo_rock1	data/chars/teobaldo/teo_rock1.txt
+know	Teo_rock2	data/chars/teobaldo/teo_rock2.txt
+know	Teo_rock3	data/chars/teobaldo/teo_rock3.txt
+
+know	Blitz		data/chars/blitz/blitz.txt
+
+# Familiars
+load	NOwl    	data/chars/owl/NOwl.txt
+
+# Enemies
+know	Chiroptera	data/chars/bat/bat.txt
+know	Chiroptera_	data/chars/bat/bat_.txt
+know	Fantasma 	data/chars/ghost/ghost.txt
+know	Anfauglir	data/chars/anfauglir/anfauglir.txt
+know	J._Anfauglir	data/chars/anfauglir/anfauglir_rider.txt
+know	Armor1a		data/chars/anfauglir/armor/armor1a.txt
+know	Armor2a		data/chars/anfauglir/armor/armor2a.txt
+know	Armor3a		data/chars/anfauglir/armor/armor3a.txt
+know	Armor4a		data/chars/anfauglir/armor/armor4a.txt
+know	Armor5a		data/chars/anfauglir/armor/armor5a.txt
+know	Armor6a		data/chars/anfauglir/armor/armor6a.txt
+know	Armor7a		data/chars/anfauglir/armor/armor7a.txt
+know	Esqueleto	data/chars/skeleton/skelet.txt
+know	Esqueleto_	data/chars/skeleton/skelet_spawn.txt
+know	Esqueleto_c	data/chars/skeleton/skelet_c.txt
+know	Bone		data/chars/skeleton/bone.txt
+know	Bone_c		data/chars/skeleton/bone_c.txt
+load	Skelet_headless	data/chars/skeleton/skelet_headless.txt
+know	Bone1		data/chars/skeleton/bone1.txt
+know	Bone1_c		data/chars/skeleton/bone1_c.txt
+know	Zombi		data/chars/zombie/zombie.txt
+know	D._Negro	data/chars/bdragon/bdragon.txt
+know	RBase		data/chars/bdragon/rbase.txt
+know	Rib		data/chars/bdragon/rib.txt
+know	C._Demonio	data/chars/demonknight/demonknight.txt
+load	axev		data/chars/demonknight/axe/axev.txt
+know	axeh		data/chars/demonknight/axe/axeh.txt
+load	axed		data/chars/demonknight/axe/axed.txt
+know	Sahagin		data/chars/sahagin/sahagin.txt
+know	WSpit		data/chars/sahagin/wspit/wspit.txt
+know	Flamataura	data/chars/flametaur/flametaur.txt
+know	Flamataura_	data/chars/flametaur/flametaur_.txt
+know	Flame_t		data/chars/flametaur/flame/flame_t.txt
+know	Gargola		data/chars/gargoyle/gargoyle.txt
+know	Gargola_rock	data/chars/gargoyle/gargoyle_rock.txt
+know	Gargola_c	data/chars/gargoyle/gargoyle_c.txt
+know	H._espinosa	data/chars/une/une.txt
+know	Driade		data/chars/driade/driade.txt
+know	DHiedra		data/chars/driade/hiedra.txt
+know	DRose		data/chars/driade/rose.txt
+know	Segador		data/chars/reaper/reaper.txt
+know	Loda		data/chars/mudwoman/mudwoman.txt
+know	Cuervo		data/chars/crow/crow.txt
+know	Golem		data/chars/golem/golem.txt
+know	R._de_Venus	data/chars/rvenus/rvenus.txt
+know	Spore		data/chars/rvenus/spore.txt
+know	Ninfa		data/chars/ninfa/ninfa.txt
+know	Tomo_Magico	data/chars/magicbook/magibook.txt
+know	Nigromante	data/chars/necromancer/necromancer.txt
+know	Nigromante_	data/chars/necromancer/necromancer_.txt
+know	Arana		data/chars/spider/spider.txt
+know	T._de_huesos	data/chars/bonetower/bonet.txt
+know	T._de_huesos_	data/chars/bonetower/boneth.txt
+know	bpflame		data/chars/bonetower/bpflame.txt
+know	P._Asesino	data/chars/killerclown/killerclown.txt
+load	Confeti_1	data/chars/killerclown/confeti1.txt
+load	Confeti_2	data/chars/killerclown/confeti2.txt
+load	Confeti_3	data/chars/killerclown/confeti3.txt
+load	Confeti_4	data/chars/killerclown/confeti4.txt
+load	Card_debris	data/chars/killerclown/card_debris.txt
+know	Card_clown	data/chars/killerclown/card/card_clown.txt
+load	Card_hit	data/chars/killerclown/card/card_hit.txt
+know	Ente_Helado	data/chars/iceshade/iceshade.txt
+know	Charmandra	data/chars/charmandra/charmandra.txt
+know	Charmandra_	data/chars/charmandra/charmandra_.txt
+know	M._Maligna	data/chars/meanlook/meanlook.txt
+know	G._demonio	data/chars/demonguardian/demonguardian.txt
+load	Slashg		data/chars/demonguardian/slash/slashg.txt
+know	Brujo		data/chars/wizard/wizard.txt
+load	LightColumn_ghoul	data/chars/misc/espells/lightcolumn_ghoul.txt
+#know	L._de_Huesos 	data/chars/bonegolem/bonegolem.txt
+know	E._Electrico	data/chars/skeleton/skelet_electric.txt
+load	BoneSpark	data/chars/skeleton/bonespark/bonespark.txt
+load	Sparkdie	data/chars/skeleton/bonespark/sparkdie.txt
+know	E._Carmesi	data/chars/skeleton/crimson_skelet.txt
+know	Mimic		data/chars/mimic/mimic.txt
+know	Ectoplasma	data/chars/ghost/ectoplasma.txt
+know	E._Laser	data/chars/skeleton/skelet_beam.txt
+know	Cazadora	data/chars/cazadora/cazadora.txt
+
+# Bosses
+know	La_criatura	data/chars/creature/creature.txt
+know	La_criatura_	data/chars/creature/creature_.txt
+know	CThunder	data/chars/creature/tech/thunder.txt
+know	CMissile	data/chars/creature/tech/missile.txt
+know	Shockwave	data/chars/creature/wave/wave.txt
+load	Fire_wolf	data/chars/werewolf/firewolf/fire_wolf.txt
+load	Shockwave1	data/chars/werewolf/firewolf/wave1.txt
+know	Gevaudan	data/chars/werewolf/werewolf.txt
+know	Cloth1a		data/chars/werewolf/cloth1a.txt
+know	Cloth1b		data/chars/werewolf/cloth1b.txt
+know	Cloth1c		data/chars/werewolf/cloth1c.txt
+know	Cerbero		data/chars/cerberus/cerberus.txt
+know	Firewave_c	data/chars/cerberus/firewave_c.txt
+know	R._Polilla  	data/chars/queenmoth/queenmoth.txt
+know	Polilla		data/chars/queenmoth/caterpillar/moth.txt
+know	Polilla_	data/chars/queenmoth/caterpillar/moth_.txt
+know	Caterpillar	data/chars/queenmoth/caterpillar/caterpillar.txt
+know	Fake_Evaine	data/chars/evaine/fake_evaine.txt
+know	Scythe		data/chars/evaine/scythe/scythe.txt
+know	Sucubo		data/chars/succubus/succubus.txt
+know	Inquisidor	data/chars/teobaldo/teobaldo_boss.txt
+know	axeteo		data/chars/teobaldo/axeteo.txt
+know	Teo_rock1e	data/chars/teobaldo/teo_rock1e.txt
+know	Teo_rock2e	data/chars/teobaldo/teo_rock2e.txt
+know	Teo_rock3e	data/chars/teobaldo/teo_rock3e.txt
+know	Ficzko		data/chars/ficzko/ficzko.txt
+know	Evileye		data/chars/ficzko/magic/evileye.txt
+know	Circle_spell	data/chars/ficzko/magic/circle_spell.txt
+know	Circle_spell_2	data/chars/ficzko/magic/circle_spell_2.txt
+know	Circle_spell_3	data/chars/ficzko/magic/circle_spell_3.txt
+know	Legion_izq	data/chars/legion/legion_izq.txt
+know	Legion_izqdown	data/chars/legion/legion_izqdown.txt
+know	Legion_izqup	data/chars/legion/legion_izqup.txt
+know	Legion_down	data/chars/legion/legion_down.txt
+know	Legion_up	data/chars/legion/legion_up.txt
+know	Legion_center	data/chars/legion/legion_center.txt
+know	Legion_core	data/chars/legion/legion_core.txt
+know	Legion_corpse	data/chars/legion/corpse/corpse.txt
+know	Legion_Mini	data/chars/legion/minilegions/minilegion.txt
+know	Legion_corpse_acid	data/chars/legion/corpse/corpse_acid.txt
+know	Legion_acid_explo	data/chars/legion/corpse/acid_explo.txt
+know	Legion_Mini_acid	data/chars/legion/minilegions/minilegion_acid.txt
+know	Spawn_Minilegion	data/chars/legion/minilegions/spawn_minilegion.txt
+know	Legion_fall_corpse	data/chars/legion/corpse/fall_corpse.txt
+know	Legion_fall_corpse_2	data/chars/legion/corpse/fall_corpse_2.txt
+know	Legion_fall_corpse_3	data/chars/legion/corpse/fall_corpse_3.txt
+know	Legion_part_corpse_1	data/chars/legion/debris/part_corpse1.txt
+know	Legion_part_corpse_2	data/chars/legion/debris/part_corpse2.txt
+know	Legion_part_corpse_3	data/chars/legion/debris/part_corpse3.txt
+know	Legion_part_1		data/chars/legion/debris/part_legion_1.txt
+know	Legion_part_2		data/chars/legion/debris/part_legion_2.txt
+know	Legion_part_3		data/chars/legion/debris/part_legion_3.txt
+know	Legion_part_4		data/chars/legion/debris/part_legion_4.txt
+know	Legion_part_5		data/chars/legion/debris/part_legion_5.txt
+know	Legion_part_6		data/chars/legion/debris/part_legion_6.txt
+know	ShadeFire		data/chars/legion/magic/ShadFire.txt
+know	ShFireS			data/chars/legion/magic/ShFireS.txt
+know	Legion_bomb		data/chars/legion/minilegions/legion_bomb.txt
+know	legion_die	data/chars/legion/ldie/legion_die.txt
+know	fire_legion_blast	data/chars/legion/magic/fire_legion_blast.txt
+know	fire_legion1a	data/chars/legion/magic/fire_legion1a.txt
+know	fire_legion1b	data/chars/legion/magic/fire_legion1b.txt
+know	Bathory		data/chars/countess/countess.txt
+know	Copa		data/chars/countess/copa/copa.txt
+know	Copa_debris1a	data/chars/countess/copa/copa_debris1a.txt
+know	Copa_debris1b	data/chars/countess/copa/copa_debris1b.txt
+know	Copa_debris1c	data/chars/countess/copa/copa_debris1c.txt
+know	Copa_debris1d	data/chars/countess/copa/copa_debris1d.txt
+know	GPillar		data/chars/countess/GPillar.txt
+know	IceHole		data/chars/countess/magic/IceHole.txt
+know	IceBal		data/chars/countess/magic/IceBal.txt
+know	Electball	data/chars/countess/magic/electball.txt
+know	Spellexplo	data/chars/countess/magic/spellexplo.txt
+know	Electricball	data/chars/countess/magic/electricball.txt
+know	Electricball_spawn_right	data/chars/countess/magic/electricball_spawn_right.txt
+know	Electricball_spawn_left		data/chars/countess/magic/electricball_spawn_left.txt
+know	Spawn_MulaBat	data/chars/countess/magic/spawn_mulabat.txt
+know	MulanaBat	data/chars/countess/magic/MulaBat.txt
+
+# Enemy Spawner
+know	ZombSpawner	data/chars/misc/spawners/zombspwn.txt
+know	BatSpawner	data/chars/misc/spawners/batspwn.txt
+know	SahaginSpawner	data/chars/misc/spawners/sahaspwn.txt
+know	Muddy		data/chars/misc/spawners/muddy.txt
+know	GhostSpawner	data/chars/misc/spawners/ghostspwn.txt
+know	EctoSpawner	data/chars/misc/spawners/ectospwn.txt
+know	Boss0Spawner	data/chars/misc/spawners/Boss0Spwn.txt
+know	Boss1Spawner	data/chars/misc/spawners/Boss1Spwn.txt
+know	Boss2Spawner	data/chars/misc/spawners/Boss2Spwn.txt
+know	Boss3Spawner	data/chars/misc/spawners/Boss3Spwn.txt
+know	Boss4Spawner	data/chars/misc/spawners/Boss4Spwn.txt
+know	Boss5Spawner	data/chars/misc/spawners/Boss5Spwn.txt
+know	Boss6Spawner	data/chars/misc/spawners/Boss6Spwn.txt
+know	Boss7Spawner	data/chars/misc/spawners/Boss7Spwn.txt
+know	Boss8Spawner	data/chars/misc/spawners/Boss8Spwn.txt
+know	Boss9Spawner	data/chars/misc/spawners/Boss9Spwn.txt
+
+# Magic and Skills
+load	Fb01		data/chars/misc/spells/Fb01.txt
+load	Fb01_e		data/chars/misc/espells/Fb01_e.txt
+load	Fb02		data/chars/misc/spells/Fb02.txt
+load	FireBlast	data/chars/misc/spells/FireBlas.txt
+load	Fire_sh		data/chars/sheeba/magic/fire_sh.txt
+load	Icecross	data/chars/misc/spells/icecross.txt
+know	Icecross_e	data/chars/misc/spells/icecross_e.txt
+load	Ice_sh		data/chars/misc/espells/ice_sh.txt
+load	Ice_sh1		data/chars/misc/espells/ice_sh1.txt
+know	Ice_sh_e	data/chars/misc/espells/ice_sh_e.txt
+know	Ice_sh1_e	data/chars/misc/espells/ice_sh1_e.txt
+#load	Thunder_sh1	data/chars/misc/espells/thunder_sh1.txt (Chispas)
+load	iceseal		data/chars/misc/spells/iceseal.txt
+know	Drain_Life	data/chars/misc/espells/drain_life.txt
+load	Thunder_sh	data/chars/sheeba/magic/thunder_sh.txt
+load	MagicSeal	data/chars/misc/spells/MagiSeal.txt
+load	fireseal	data/chars/misc/spells/fireseal.txt
+load	lightningseal	data/chars/misc/spells/lightningseal.txt
+load	forb_fireseal	data/chars/misc/spells/forbfireseal.txt
+know	BFBall  	data/chars/queenmoth/caterpillar/bfball.txt
+know	MBFBall		data/chars/magicbook/spells/mbfball.txt
+load	BPetir		data/chars/blitz/bpetir.txt
+load	Quetzal		data/chars/sheeba/magic/quetzal.txt
+know	RoseSpell	data/chars/succubus/spells/rosespell.txt
+know	RoseSpell1	data/chars/succubus/spells/rosespell1.txt
+know	EHeart_MP	data/chars/succubus/spells/eheart_mp.txt
+#load	StoneC		data/chars/misc/spells/StoneC.txt
+#load	Stone1		data/chars/misc/spells/Stone1.txt
+#load	Stone2		data/chars/misc/spells/Stone2.txt
+#load	Stone3		data/chars/misc/spells/Stone3.txt
+#load	Stone4		data/chars/misc/spells/Stone4.txt
+know	Fire		data/chars/misc/espells/fire.txt
+load	rain		data/chars/misc/rain.txt
+load	Leosp		data/chars/leon/leosp.txt
+#load	Sheebasp	data/chars/sheeba/sheebasp.txt
+know	Clown_bomb	data/chars/ficzko/magic/clown_bomb.txt
+know	Shockwave2	data/chars/ficzko/magic/wave2.txt
+load	BPetir		data/chars/blitz/bpetir.txt
+load	Dirk		data/chars/kreiger/dirk.txt
+#load	MShot   	data/chars/maria/mshot.txt
+#load	MShotD   	data/chars/maria/mshotD.txt
+load	Windspell	data/chars/misc/ESpells/windspell/wind.txt
+load	GrBlast		data/chars/misc/espells/grblast.txt
+load	GrBlasto	data/chars/misc/espells/grblasto.txt
+#know	GrAxe		data/chars/armor/graxe.txt
+know	CFBall		data/chars/misc/espells/cfball.txt
+know	Meteo		data/chars/misc/espells/meteo.txt
+know	ShadeIce	data/chars/misc/espells/shadice.txt
+know	ShIceS		data/chars/misc/espells/shiceS.txt
+know	Ice		data/chars/misc/espells/ice.txt
+know	SpiritHeart	data/chars/succubus/spells/spiritheart.txt
+know	EnchantSpell	data/chars/succubus/spells/enchantspell.txt
+know	HeartSpell	data/chars/succubus/spells/heartspell.txt
+know	Heart_n		data/chars/ninfa/spells/heart_n.txt
+know	Heartm		data/chars/ninfa/spells/heartm.txt
+know	Necro_blast	data/chars/necromancer/spell/necro_blast.txt
+know	Spiral_disapear	data/chars/necromancer/spell/spiral_disapear.txt
+know	Spiral_disapear_b	data/chars/wizard/spell/spiral_disapear_b.txt
+know	Necro_blast_1		data/chars/wizard/spell/necro_blast_1.txt
+
+#know	GPillar  	data/chars/graham/gpillar.txt
+#know	DemonBall  	data/chars/graham/demonbal.txt
+#know	DemonHole  	data/chars/graham/demhole.txt
+
+# Items
+know	Pollo_frito		data/chars/items/chicken/pollo.txt
+know	P._Podrido		data/chars/items/chicken/pollo_podrido.txt
+know	P._Invisible		data/chars/items/potion/potion.txt
+know	Gema_azul		data/chars/items/blue_gem/blue_gem.txt
+know	Gema_roja		data/chars/items/red_gem/red_gem.txt
+know	Agua_Santa		data/chars/items/holybomb/holybomb.txt
+know	C._Arcoiris		data/chars/items/1up/1up.txt
+know	___10			data/chars/items/coin/coin.txt
+know	___20			data/chars/items/coin/coin_20.txt
+know	___50			data/chars/items/coin/coin_50.txt
+know	___100			data/chars/items/coin/coin_100.txt
+know	___250			data/chars/items/money/money250.txt
+know	___400			data/chars/items/money/money400.txt
+know	___700			data/chars/items/money/money700.txt
+know	D._Klopman		data/chars/items/klopman/klopman.txt
+know	Dr._Negishi		data/chars/items/drnegishi/drnegishi.txt
+know	Espada_Leg.		data/chars/items/legendarysword/legendarysword.txt
+know	Cherro			data/chars/items/cherro/cherro.txt
+know	Orbe_intro		data/chars/items/orb/orb_intro.txt
+know	Orbe			data/chars/items/orb/orb.txt
+
+
+# Subweapons
+load	PKnife   	data/chars/items/knife/PKnife.txt
+load	Cuchillo	data/chars/items/knife/wknife.txt
+load	PAxe		data/chars/items/axe/PAxe.txt
+load	Hacha		data/chars/items/axe/WAxe.txt
+load	PCross		data/chars/items/cross/PCross.txt
+load	C._Sagrada	data/chars/items/cross/wcross.txt
+load	A._Bendita	data/chars/items/hwater/Wholywater.txt
+load	Pholywater	data/chars/items/hwater/pholywater.txt
+load	Bomba		data/chars/items/bomb/Wbomb.txt
+load	PBomb		data/chars/items/bomb/Pbomb.txt
+load	Biblia		data/chars/items/biblia/Wbible.txt
+load	PBible		data/chars/items/biblia/Pbible.txt
+load	Sparkles	data/chars/items/biblia/sparkles.txt
+load	Bumeran		data/chars/items/boomerang/WBoomerang.txt
+load	PBomrade	data/chars/items/boomerang/PBomrade.txt
+
+# Obstacles
+know	Barril		data/chars/destructible/barrel/barrel.txt
+know	Lampara		data/chars/destructible/lamp/lamp.txt
+know	Farol		data/chars/destructible/farol/farol.txt
+know	Jar1		data/chars/destructible/jar1/jar1.txt
+know	Jar2		data/chars/destructible/jar2/jar2.txt
+know	Bulb		data/chars/destructible/bulb/bulb.txt
+know	Lampara_libreria	data/chars/destructible/lamp2/lamp2.txt
+know	Brazier1	data/chars/destructible/brazier1/brazier1.txt
+know	Brazier2	data/chars/destructible/brazier2/brazier2.txt
+know	Candle1		data/chars/destructible/candle1/candle1.txt
+know	Candle2		data/chars/destructible/candle2/candle2.txt
+
+#know	Tomb		data/chars/priest/tomb.txt
+#know	Tomb2		data/chars/priest/tomb2.txt
+
+# NPC
+know 	peoplea		data/chars/npc/peoplea/peoplea.txt
+know 	peopleb		data/chars/npc/peopleb/peopleb.txt
+know 	peoplec		data/chars/npc/peoplec/peoplec.txt
+know 	peopled		data/chars/npc/peopled/peopled.txt
+know 	peoplee		data/chars/npc/peoplee/peoplee.txt
+know 	peoplef		data/chars/npc/peoplef/peoplef.txt
+know 	peopleg		data/chars/npc/peopleg/peopleg.txt
+know 	peopleh		data/chars/npc/peopleh/peopleh.txt
+know 	peoplei		data/chars/npc/peoplei/peoplei.txt
+know	knight		data/chars/npc/knight/knight.txt
+know	guard		data/chars/npc/guard/guard.txt
+know	Soldado_inquisidor	data/chars/npc/inquisitor/inquisitor_soldier.txt
+
+
+# Decoration
+know 	bodya		data/chars/misc/bodies/bodya.txt
+know 	bodyb		data/chars/misc/bodies/bodyb.txt
+know 	bodyc		data/chars/misc/bodies/bodyc.txt
+know 	bodyd		data/chars/misc/bodies/bodyd.txt
+know 	bodye		data/chars/misc/bodies/bodye.txt
+know 	bodyf		data/chars/misc/bodies/bodyf.txt
+know 	bodyg		data/chars/misc/bodies/bodyg.txt
+know 	bodyh		data/chars/misc/bodies/bodyh.txt
+know	Esqueleto_npc	data/chars/skeleton/skelet_npc.txt
+
+#Stages Platforms & Decoration
+
+#Stage 0 - Prologue
+know	Townfloor	data/bgs/cachtice/platforms/townfloor.txt
+know	townplat0	data/bgs/cachtice/platforms/townplat0.txt
+know	townplat1	data/bgs/cachtice/platforms/townplat1.txt
+know	townplat2	data/bgs/cachtice/platforms/townplat2.txt
+know	Hidden_1	data/bgs/cachtice/platforms/hidden_1.txt
+know	townplat3	data/bgs/cachtice/platforms/townplat3.txt
+know	townplat4	data/bgs/cachtice/platforms/townplat4.txt
+know	townplat5	data/bgs/cachtice/platforms/townplat5.txt
+know	townplat6	data/bgs/cachtice/platforms/townplat6.txt
+know	townwall0	data/bgs/cachtice/platforms/townwall0.txt
+know	townwall1	data/bgs/cachtice/platforms/townwall1.txt
+know	townwall2	data/bgs/cachtice/platforms/townwall2.txt
+know	townwall3	data/bgs/cachtice/platforms/townwall3.txt
+know	townwall4	data/bgs/cachtice/platforms/townwall4.txt
+know	townwall5	data/bgs/cachtice/platforms/townwall5.txt
+know	Shopplat0	data/bgs/cachtice/platforms/shopplat0.txt
+know	Shopplat1	data/bgs/cachtice/platforms/shopplat1.txt
+know	Shopplat2	data/bgs/cachtice/platforms/shopplat2.txt
+know	Sp1Wall		data/bgs/cachtice/walls/shopwall1.txt
+know	Sp2Wall		data/bgs/cachtice/walls/shopwall2.txt
+know	Townfloor_b	data/bgs/cachtice/decoration/townfloor_b.txt
+know	fireruins	data/bgs/cachtice/decoration/fireruins.txt
+know	cityruins	data/bgs/cachtice/decoration/cityruins.txt
+know	fire0		data/bgs/cachtice/decoration/fire0.txt
+know	fire1		data/bgs/cachtice/decoration/fire1.txt
+know	fire2		data/bgs/cachtice/decoration/fire2.txt
+know	fire3		data/bgs/cachtice/decoration/fire3.txt
+know	fire4		data/bgs/cachtice/decoration/fire4.txt
+know	fire5		data/bgs/cachtice/decoration/fire5.txt
+know	fire6		data/bgs/cachtice/decoration/fire6.txt
+know	fire_floor	data/bgs/cachtice/decoration/fire_floor.txt
+know	pole		data/bgs/cachtice/decoration/pole.txt
+know	Roof		data/bgs/cachtice/decoration/roof.txt
+
+#Stage 1 - Castle Walls
+know	Castle_entrance	data/bgs/castle_entrance/decoration/castle_entrance.txt
+know	Hidden_2	data/bgs/castle_entrance/decoration/hidden_2.txt
+know	Castle_water1	data/bgs/castle_entrance/decoration/castle_water1.txt
+know	Castle_door1	data/bgs/castle_entrance/decoration/castledoor1.txt
+know	Back_castle	data/bgs/castle_entrance/decoration/back_castle.txt
+know	Moon		data/bgs/castle_entrance/decoration/moon.txt
+know	Water_sewer	data/bgs/castle_entrance/decoration/water_sewer.txt
+know	Water_sewer1	data/bgs/castle_entrance/decoration/water_sewer1.txt
+know	Sewer_wall1	data/bgs/castle_entrance/decoration/sewer_wall1.txt
+know	Sewer_wall2	data/bgs/castle_entrance/decoration/sewer_wall2.txt
+know	Castle_door0	data/bgs/castle_entrance/platforms/castledoor0.txt
+know	Entplat1	data/bgs/castle_entrance/platforms/entrance_plat1.txt
+know	Entplat2	data/bgs/castle_entrance/platforms/entrance_plat2.txt
+know	Entplat3	data/bgs/castle_entrance/platforms/entrance_plat3.txt
+know	Entplat4	data/bgs/castle_entrance/platforms/entrance_plat4.txt
+know	Hidden_3	data/bgs/castle_entrance/decoration/hidden_3.txt
+know	Platform_plaza1	data/bgs/castle_entrance/platforms/platform_plaza1.txt
+know	Platform_plaza2	data/bgs/castle_entrance/platforms/platform_plaza2.txt
+know	Platform_plaza3	data/bgs/castle_entrance/platforms/platform_plaza3.txt
+know	Platform_sewer1	data/bgs/castle_entrance/platforms/platform_sewer1.txt
+know	Platform_sewer3	data/bgs/castle_entrance/platforms/platform_sewer3.txt
+know	Platform_sewer4	data/bgs/castle_entrance/platforms/platform_sewer4.txt
+know	Platform_sewer6	data/bgs/castle_entrance/platforms/platform_sewer6.txt
+know	Platform_sewer7	data/bgs/castle_entrance/platforms/platform_sewer7.txt
+know	Wall_sewer1	data/bgs/castle_entrance/platforms/wall_sewer1.txt
+know	Wall_sewer2	data/bgs/castle_entrance/platforms/wall_sewer2.txt
+know	Wall_sewer3	data/bgs/castle_entrance/platforms/wall_sewer3.txt
+know	Stairs_sewer1	data/bgs/castle_entrance/platforms/stairs_sewer1.txt
+know	Stairs_sewer2	data/bgs/castle_entrance/platforms/stairs_sewer2.txt
+know	Stairs_sewer3	data/bgs/castle_entrance/platforms/stairs_sewer3.txt
+know	Stairs_sewer4	data/bgs/castle_entrance/platforms/stairs_sewer4.txt
+know	White_wall2	data/bgs/castle_entrance/platforms/white_wall2.txt
+know	White_wall1	data/bgs/castle_entrance/walls/white_wall1.txt
+know	Wall_castle1	data/bgs/castle_entrance/walls/wall_castle1.txt
+know	Wall_castle2	data/bgs/castle_entrance/walls/wall_castle2.txt
+know	Wall_castle3	data/bgs/castle_entrance/walls/wall_castle3.txt
+know	Wall_castle4	data/bgs/castle_entrance/walls/wall_castle4.txt
+know	Wall_castle5	data/bgs/castle_entrance/walls/wall_castle5.txt
+know	Wall_plaza1	data/bgs/castle_entrance/walls/wall_plaza1.txt
+know	Wall_plaza2	data/bgs/castle_entrance/walls/wall_plaza2.txt
+know	Wall_plaza3	data/bgs/castle_entrance/walls/wall_plaza3.txt
+know	White_wall2	data/bgs/castle_entrance/walls/white_wall2.txt
+know	Wall_sewer5	data/bgs/castle_entrance/walls/wall_sewer5.txt
+know	Wall_sewer6	data/bgs/castle_entrance/walls/wall_sewer6.txt
+know	Falling_candle	data/bgs/castle_entrance/traps/candle/candle_fall.txt
+know	Candle_f1	data/bgs/castle_entrance/traps/candle/candle_f1.txt
+know	Candle_f2	data/bgs/castle_entrance/traps/candle/candle_f2.txt
+know	Big_candle	data/bgs/castle_entrance/traps/candle/candle.txt
+
+#Stage 2 - Underground Cave
+know	Waterfall		data/bgs/underground/waterfall/waterfall.txt
+know	Hidden_4		data/bgs/underground/platforms/hidden_4.txt
+know	Back_cave_ani		data/bgs/underground/background/back_cave_ani.txt
+know	Balsa			data/bgs/underground/platforms/balsa.txt
+know	Balsa1			data/bgs/underground/platforms/balsa1.txt
+know	Platform_bridge1	data/bgs/underground/platforms/platform_bridge1.txt
+know	Platform_bridge2	data/bgs/underground/platforms/platform_bridge2.txt
+know	Platform_bridge3	data/bgs/underground/platforms/platform_bridge3.txt
+know	Platform_bridge4	data/bgs/underground/platforms/platform_bridge4.txt
+know	Platform_bridge5	data/bgs/underground/platforms/platform_bridge5.txt
+know	Platform_bridge6	data/bgs/underground/platforms/platform_bridge6.txt
+know	Platform_bridge7	data/bgs/underground/platforms/platform_bridge7.txt
+know	Platform_bridge8	data/bgs/underground/platforms/platform_bridge8.txt
+know	Platform_bridge9	data/bgs/underground/platforms/platform_bridge9.txt
+know	Platform_bridge10	data/bgs/underground/platforms/platform_bridge10.txt
+know	Platform_bridge11	data/bgs/underground/platforms/platform_bridge11.txt
+know	Platform_bridge12	data/bgs/underground/platforms/platform_bridge12.txt
+know	Platform_dock1		data/bgs/underground/platforms/platform_dock1.txt
+know	Platform_rock		data/bgs/underground/traps/platform_rock/platform_rock.txt
+know	Falling_rock		data/bgs/underground/traps/platform_rock/platform_rock_fall.txt
+know	Rock_rock_platform	data/bgs/underground/traps/platform_rock/platform_rock_rock.txt
+know	Platform_rock1		data/bgs/underground/platforms/platform_rock1.txt
+know	Platform_rock2		data/bgs/underground/platforms/platform_rock2.txt
+know	Platform_rock3		data/bgs/underground/platforms/platform_rock3.txt
+know	Platform_rock4		data/bgs/underground/platforms/platform_rock4.txt
+know	Platform_rock5		data/bgs/underground/platforms/platform_rock5.txt
+know	Platform_rock6		data/bgs/underground/platforms/platform_rock6.txt
+know	Platform_rock8		data/bgs/underground/platforms/platform_rock8.txt
+know	Platform_rock9		data/bgs/underground/platforms/platform_rock9.txt
+know	Platform_rock10		data/bgs/underground/platforms/platform_rock10.txt
+know	Platform_rock11		data/bgs/underground/platforms/platform_rock11.txt
+know	Platform_rock12		data/bgs/underground/platforms/platform_rock12.txt
+know	Platform_rock13		data/bgs/underground/platforms/platform_rock13.txt
+know	Platform_rock14		data/bgs/underground/platforms/platform_rock14.txt
+know	Platform_rock15		data/bgs/underground/platforms/platform_rock15.txt
+know	Platform_rock17		data/bgs/underground/platforms/platform_rock17.txt
+know	Platform_rock18		data/bgs/underground/platforms/platform_rock18.txt
+know	Platform_rock19		data/bgs/underground/platforms/platform_rock19.txt
+know	Platform_rock20		data/bgs/underground/platforms/platform_rock20.txt
+know	Platform_rock21		data/bgs/underground/platforms/platform_rock21.txt
+know	Platform_rock22		data/bgs/underground/platforms/platform_rock22.txt
+know	Platform_rock23		data/bgs/underground/platforms/platform_rock23.txt
+know	Platform_rock24		data/bgs/underground/platforms/platform_rock24.txt
+know	Platform_rock25		data/bgs/underground/platforms/platform_rock25.txt
+know	Platform_roof1		data/bgs/underground/platforms/platform_roof1.txt
+know	Waterfall1a		data/bgs/underground/decoration/waterfall1.txt
+know	Waterfall_f1		data/bgs/underground/decoration/waterfall_f1.txt
+know	Waterfall_f2		data/bgs/underground/decoration/waterfall_f2.txt
+know	Waterfall_f3		data/bgs/underground/decoration/waterfall_f3.txt
+know	Dock_c			data/bgs/underground/decoration/dock_c.txt
+know	Moho			data/bgs/underground/decoration/moho.txt
+know	Fake_wall_c1		data/bgs/underground/decoration/fake_wall_c1.txt
+know	Fake_stalactite_1	data/bgs/underground/decoration/fake_stalactite_1.txt
+know	Fake_platform_2		data/bgs/underground/decoration/fake_platform_2.txt
+know	Roof_cave		data/bgs/underground/walls/roof_cave.txt
+know	Wall_cave1		data/bgs/underground/walls/wall_cave1.txt
+know	Wall_cave2		data/bgs/underground/walls/wall_cave2.txt
+know	Falling_stalactite	data/bgs/underground/traps/stalactite/stalactite_fall.txt
+know	Stalactite		data/bgs/underground/traps/stalactite/stalactite.txt
+know	Rock_stalactite		data/bgs/underground/traps/stalactite/stalactite_rock.txt
+know	Spike_trap		data/bgs/underground/traps/spike_trap.txt
+know	Cell			data/bgs/underground/decoration/cell.txt
+know	Water_lair		data/bgs/underground/decoration/water_lair.txt
+know	Waterfall_lair		data/bgs/underground/decoration/waterfall_lair.txt
+know	Cerberus_statue		data/bgs/underground/decoration/cerberus_statue.txt
+know	Chain_top		data/bgs/underground/decoration/chain_top.txt
+know	Chain_top_		data/bgs/underground/decoration/chain_top_.txt
+
+#Stage 3 - Castle's Garden
+know	Torch_garden		data/bgs/garden/decoration/torch_garden.txt
+know	Platform_bridge13	data/bgs/garden/platforms/platform_bridge13.txt
+know	Platform_bridge14	data/bgs/garden/platforms/platform_bridge14.txt
+know	Platform_bridge15	data/bgs/garden/platforms/platform_bridge15.txt
+know	Platform_bridge16	data/bgs/garden/platforms/platform_bridge16.txt
+know	Platform_bridge17	data/bgs/garden/platforms/platform_bridge17.txt
+know	Platform_bridge18	data/bgs/garden/platforms/platform_bridge18.txt
+know	Platform_bridge19	data/bgs/garden/platforms/platform_bridge19.txt
+know	Platform_bridge20	data/bgs/garden/platforms/platform_bridge20.txt
+know	Platform_bridge21	data/bgs/garden/platforms/platform_bridge21.txt
+know	Platform_grass1		data/bgs/garden/platforms/platform_grass1.txt
+know	Platform_grass2		data/bgs/garden/platforms/platform_grass2.txt
+know	Platform_grass3		data/bgs/garden/platforms/platform_grass3.txt
+know	Platform_plaza0		data/bgs/garden/platforms/platform_plaza0.txt
+know	Platform_mud		data/bgs/garden/platforms/platform_mud.txt
+know	Wall_garden1		data/bgs/garden/platforms/wall_garden1.txt
+know	Wall_garden2		data/bgs/garden/platforms/wall_garden2.txt
+know	Wall_garden3		data/bgs/garden/platforms/wall_garden3.txt
+know	Wall_garden4		data/bgs/garden/platforms/wall_garden4.txt
+know	Wall_garden5		data/bgs/garden/platforms/wall_garden5.txt
+know	Wall_garden6		data/bgs/garden/platforms/wall_garden6.txt
+know	Front_bridge1		data/bgs/garden/decoration/front_bridge1.txt
+know	Front_bridge2		data/bgs/garden/decoration/front_bridge2.txt
+know	Front_bridge3		data/bgs/garden/decoration/front_bridge3.txt
+know	Front_bridge4		data/bgs/garden/decoration/front_bridge4.txt
+know	Front_bridge5		data/bgs/garden/decoration/front_bridge5.txt
+know	Platform_plaza4		data/bgs/garden/platforms/platform_plaza4.txt
+know	Platform_wall_des1	data/bgs/garden/platforms/platform_wall_des1.txt
+know	Garden_water1		data/bgs/garden/decoration/garden_water1.txt
+know	Garden_water2		data/bgs/garden/decoration/garden_water2.txt
+know	Garden_water3		data/bgs/garden/decoration/garden_water3.txt
+know	Hidden_5		data/bgs/garden/platforms/hidden_5.txt
+
+#Stage 4 - Library
+know	Roof_church_1		data/bgs/library/walls/roof_church_1.txt
+know	Wall_church_1		data/bgs/library/walls/wall_church_1.txt
+know	Wall_church_2		data/bgs/library/walls/wall_church_2.txt
+know	Wall_church_3		data/bgs/library/walls/wall_church_3.txt
+know	Platform_church_1	data/bgs/library/platforms/platform_church_1.txt
+know	Platform_church_2	data/bgs/library/platforms/platform_church_2.txt
+know	Platform_library_old_1	data/bgs/library/platforms/platform_library_old_1.txt
+know	Platform_library_old_2	data/bgs/library/platforms/platform_library_old_2.txt
+know	Platform_library_old_3	data/bgs/library/platforms/platform_library_old_3.txt
+know	Sealed_door		data/bgs/library/decoration/sealed_door.txt
+know	Desk			data/bgs/library/decoration/desk.txt
+know	Chair			data/bgs/library/decoration/chair.txt
+know	Platform_library_1	data/bgs/library/platforms/platform_library_1.txt
+know	Floor_library_9		data/bgs/library/platforms/floor_library_9.txt
+know	Floor_library_8		data/bgs/library/platforms/floor_library_8.txt
+know	Floor_library_7		data/bgs/library/platforms/floor_library_7.txt
+know	Floor_library_6		data/bgs/library/platforms/floor_library_6.txt
+know	Floor_library_5		data/bgs/library/platforms/floor_library_5.txt
+know	Floor_library_4		data/bgs/library/platforms/floor_library_4.txt
+know	Floor_library_3		data/bgs/library/platforms/floor_library_3.txt
+know	Floor_library_2		data/bgs/library/platforms/floor_library_2.txt
+know	Floor_library_1		data/bgs/library/platforms/floor_library_1.txt
+know	Roof_library_1		data/bgs/library/walls/roof_library_1.txt
+know	Roof_library_2		data/bgs/library/walls/roof_library_2.txt
+know	Roof_library_3		data/bgs/library/walls/roof_library_3.txt
+know	Roof_library_4		data/bgs/library/walls/roof_library_4.txt
+know	Roof_library_5		data/bgs/library/walls/roof_library_5.txt
+know	Roof_library_6		data/bgs/library/walls/roof_library_6.txt
+know	Roof_library_7		data/bgs/library/walls/roof_library_7.txt
+know	Roof_library_8		data/bgs/library/walls/roof_library_8.txt
+know	Roof_library_9		data/bgs/library/walls/roof_library_9.txt
+know	Roof_library_10		data/bgs/library/walls/roof_library_10.txt
+know	Roof_library_11		data/bgs/library/walls/roof_library_11.txt
+know	Roof_library_12		data/bgs/library/walls/roof_library_12.txt
+know	Roof_library_13		data/bgs/library/walls/roof_library_13.txt
+know	Roof_library_14		data/bgs/library/walls/roof_library_14.txt
+know	Roof_library_15		data/bgs/library/walls/roof_library_15.txt
+know	Roof_library_16		data/bgs/library/walls/roof_library_16.txt
+know	Roof_library_17		data/bgs/library/walls/roof_library_17.txt
+know	Roof_library_old_1	data/bgs/library/walls/roof_library_old_1.txt
+know	Roof_library_old_2	data/bgs/library/walls/roof_library_old_2.txt
+know	Roof_library_old_3	data/bgs/library/walls/roof_library_old_3.txt
+know	Roof_library_old_4	data/bgs/library/walls/roof_library_old_4.txt
+know	Roof_library_old_5	data/bgs/library/walls/roof_library_old_5.txt
+know	Roof_library_old_6	data/bgs/library/walls/roof_library_old_6.txt
+know	Roof_library_old_7	data/bgs/library/walls/roof_library_old_7.txt
+know	Roof_library_old_8	data/bgs/library/walls/roof_library_old_8.txt
+know	Roof_library_old_9	data/bgs/library/walls/roof_library_old_9.txt
+know	Roof_library_old_10	data/bgs/library/walls/roof_library_old_10.txt
+know	Wall_library_old_1	data/bgs/library/walls/wall_library_old_1.txt
+know	Wall_library_old_2	data/bgs/library/walls/wall_library_old_2.txt
+know	Wall_library_old_3	data/bgs/library/walls/wall_library_old_3.txt
+know	Wall_library_old_4	data/bgs/library/walls/wall_library_old_4.txt
+know	Wall_library_old_5	data/bgs/library/walls/wall_library_old_5.txt
+know	Wall_library_old_6	data/bgs/library/walls/wall_library_old_6.txt
+know	Wall_library_old_7	data/bgs/library/decoration/wall_library_old_7.txt
+know	Wall_library_old_8	data/bgs/library/walls/wall_library_old_8.txt
+know	Bridge_library_1	data/bgs/library/platforms/bridge_library_1.txt
+know	Spike_trapB		data/bgs/library/traps/spike_trapb.txt
+know	Spike_trapC		data/bgs/library/traps/spike_trapc.txt
+know	Silla_1			data/bgs/library/decoration/chair_1.txt
+know	Hidden_6		data/bgs/library/platforms/hidden_6.txt
+know	Hidden_7		data/bgs/library/walls/hidden_7.txt
+
+#Stage 5 - Clock Tower
+know	Ani_gear_window		data/bgs/clock_tower/decoration/ani_gear_window.txt
+know	Ani_gear_deco		data/bgs/clock_tower/decoration/ani_gear_deco.txt
+know	Ani_gear_deco2		data/bgs/clock_tower/decoration/ani_gear_deco2.txt
+know	Ani_gear_deco3		data/bgs/clock_tower/decoration/ani_gear_deco3.txt
+know	Ani_big_gear		data/bgs/clock_tower/decoration/ani_big_gear.txt
+know	Ani_gears_background	data/bgs/clock_tower/decoration/ani_gears_background.txt
+know	Ani_chain_up		data/bgs/clock_tower/decoration/ani_chain_up.txt
+know	Ani_chain_down		data/bgs/clock_tower/decoration/ani_chain_down.txt
+know	Gear_trap_1a		data/bgs/clock_tower/traps/gear_trap_1a.txt
+know	Gear_trap_1b		data/bgs/clock_tower/traps/gear_trap_1b.txt
+know	Gear_trap_fall		data/bgs/clock_tower/traps/gear_trap_fall.txt
+know	Gear_trap_fallb		data/bgs/clock_tower/traps/gear_trap_fallb.txt
+know	Gear_trap_walking	data/bgs/clock_tower/traps/gear_trap_walk.txt
+know	Gear_trap_walking_b	data/bgs/clock_tower/traps/gear_trap_walkb.txt
+know	Spike_trapd		data/bgs/clock_tower/traps/spike_trapd.txt
+know	Torch			data/chars/destructible/torch/torch.txt
+know	Clocktower_platform1	data/bgs/clock_tower/platforms/clocktower_platform1.txt
+know	Clocktower_platform2	data/bgs/clock_tower/platforms/clocktower_platform2.txt
+know	Clocktower_platform3	data/bgs/clock_tower/platforms/clocktower_platform3.txt
+know	Clocktower_platform4	data/bgs/clock_tower/platforms/clocktower_platform4.txt
+know	Clocktower_platform5	data/bgs/clock_tower/platforms/clocktower_platform5.txt
+know	Clocktower_platform6	data/bgs/clock_tower/platforms/clocktower_platform6.txt
+know	Clocktower_platform7	data/bgs/clock_tower/platforms/clocktower_platform7.txt
+know	Clocktower_platform8	data/bgs/clock_tower/platforms/clocktower_platform8.txt
+know	Clocktower_platform9	data/bgs/clock_tower/platforms/clocktower_platform9.txt
+know	Clocktower_wall1	data/bgs/clock_tower/walls/clocktower_wall1.txt
+know	Clocktower_wall2	data/bgs/clock_tower/walls/clocktower_wall2.txt
+know	Clocktower_wall3	data/bgs/clock_tower/walls/clocktower_wall3.txt
+know	Clocktower_wall4	data/bgs/clock_tower/walls/clocktower_wall4.txt
+know	Clocktower_wall4b	data/bgs/clock_tower/walls/clocktower_wall4b.txt
+know	Clocktower_wall5	data/bgs/clock_tower/walls/clocktower_wall5.txt
+know	Clocktower_wall6	data/bgs/clock_tower/walls/clocktower_wall6.txt
+know	Clocktower_wall7	data/bgs/clock_tower/walls/clocktower_wall7.txt
+know	Clocktower_front1	data/bgs/clock_tower/decoration/clocktower_front1.txt
+know	Pike_trap		data/bgs/clock_tower/traps/pike_trap.txt
+know	Clock			data/bgs/clock_tower/decoration/clock.txt
+
+
+#Stage 6 - Moon Bridge
+know	banister_1		data/bgs/moon_bridge/decoration/banister_1.txt
+know	banister_2		data/bgs/moon_bridge/decoration/banister_2.txt
+know	banister_3		data/bgs/moon_bridge/decoration/banister_3.txt
+know	banister_4		data/bgs/moon_bridge/decoration/banister_4.txt
+know	banister_5		data/bgs/moon_bridge/decoration/banister_5.txt
+know	banister_6		data/bgs/moon_bridge/decoration/banister_6.txt
+know	front_wall_bridge	data/bgs/moon_bridge/decoration/front_wall_bridge.txt
+know	Bridge_castle_entrance	data/bgs/moon_bridge/decoration/bridge_castle_entrance.txt
+know	Bridge_platform_1	data/bgs/moon_bridge/platforms/bridge_platform_1.txt
+know	Bridge_platform_2	data/bgs/moon_bridge/platforms/bridge_platform_2.txt
+know	Bridge_platform_4	data/bgs/moon_bridge/platforms/bridge_platform_4.txt
+know	Bridge_platform_5	data/bgs/moon_bridge/platforms/bridge_platform_5.txt
+know	Bridge_platform_8	data/bgs/moon_bridge/platforms/bridge_platform_8.txt
+know	Bridge_platform_9	data/bgs/moon_bridge/platforms/bridge_platform_9.txt
+know	Bridge_platform_10	data/bgs/moon_bridge/platforms/bridge_platform_10.txt
+know	Bridge_platform_11	data/bgs/moon_bridge/platforms/bridge_platform_11.txt
+know	Bridge_platform_12	data/bgs/moon_bridge/platforms/bridge_platform_12.txt
+know	Bridge_platform_13	data/bgs/moon_bridge/platforms/bridge_platform_13.txt
+know	Bridge_platform_15	data/bgs/moon_bridge/platforms/bridge_platform_15.txt
+know	Bridge_platform_16	data/bgs/moon_bridge/platforms/bridge_platform_16.txt
+know	Bridge_platform_18	data/bgs/moon_bridge/platforms/bridge_platform_18.txt
+know	Bridge_platform_19	data/bgs/moon_bridge/platforms/bridge_platform_19.txt
+know	Bridge_platform_20	data/bgs/moon_bridge/platforms/bridge_platform_20.txt
+know	Bridge_platform_21	data/bgs/moon_bridge/platforms/bridge_platform_21.txt
+know	Bridge_platform_22	data/bgs/moon_bridge/platforms/bridge_platform_22.txt
+know	Bridge_platform_23	data/bgs/moon_bridge/platforms/bridge_platform_23.txt
+know	Bridge_platform_24	data/bgs/moon_bridge/platforms/bridge_platform_24.txt
+know	Bridge_platform_25	data/bgs/moon_bridge/platforms/bridge_platform_25.txt
+know	Bridge_platform_26	data/bgs/moon_bridge/platforms/bridge_platform_26.txt
+know	Bridge_platform_27	data/bgs/moon_bridge/platforms/bridge_platform_27.txt
+know	Bridge_platform_break	data/bgs/moon_bridge/platforms/bridge_platform_break.txt
+know	Fall_bridge		data/bgs/moon_bridge/traps/fall_bridge/fall_bridge.txt
+know	Fall_bridge_b		data/bgs/moon_bridge/traps/fall_bridge/fall_bridge_b.txt
+know	Fall_bridge_c		data/bgs/moon_bridge/traps/fall_bridge/fall_bridge_c.txt
+know	Fall_bridge_d		data/bgs/moon_bridge/traps/fall_bridge/fall_bridge_d.txt
+know	Falldown_bridge		data/bgs/moon_bridge/traps/fall_bridge/falldown_bridge.txt
+know	Hidden_8		data/bgs/moon_bridge/platforms/hidden_8.txt
+
+#Stage 7 - Dungeons
+know	dead		data/bgs/dungeon/decoration/dead.txt	
+know	skull_dungeon	data/bgs/dungeon/decoration/skull_dungeon.txt
+know	sword_dungeon	data/bgs/dungeon/decoration/sword_dungeon.txt
+know	window_dungeon_1	data/bgs/dungeon/decoration/window_dungeon1.txt
+know	Dungeon_spike_trap1	data/bgs/dungeon/traps/dungeon_spike_trap1.txt
+know	Dungeon_spike_trap2	data/bgs/dungeon/traps/dungeon_spike_trap2.txt
+know	Dungeon_spike_trap3	data/bgs/dungeon/traps/dungeon_spike_trap3.txt
+know	Dungeon_spike_trap4	data/bgs/dungeon/traps/dungeon_spike_trap4.txt
+know	Dungeon_spikewheel	data/bgs/dungeon/traps/dungeon_spikewheel.txt
+know	Dungeon_platform_trap	data/bgs/dungeon/traps/dungeon_platform_trap.txt
+know	Prisoner_1	data/bgs/dungeon/decoration/prisoner_1.txt
+know	Prisoner_2	data/bgs/dungeon/decoration/prisoner_2.txt
+know	Prisoner_3	data/bgs/dungeon/decoration/prisoner_3.txt
+know	dungeon_wall1	data/bgs/dungeon/walls/dungeon_wall1.txt
+know	dungeon_wall1a	data/bgs/dungeon/walls/dungeon_wall1a.txt
+know	dungeon_wall1b	data/bgs/dungeon/walls/dungeon_wall1b.txt
+know	dungeon_wall1c	data/bgs/dungeon/walls/dungeon_wall1c.txt
+know	dungeon_wall1d	data/bgs/dungeon/walls/dungeon_wall1d.txt
+know	dungeon_wall1e	data/bgs/dungeon/walls/dungeon_wall1e.txt
+know	dungeon_wall1f	data/bgs/dungeon/walls/dungeon_wall1f.txt
+know	dungeon_wall1g	data/bgs/dungeon/walls/dungeon_wall1g.txt
+know	dungeon_wall1h	data/bgs/dungeon/walls/dungeon_wall1h.txt
+know	dungeon_wall1i	data/bgs/dungeon/walls/dungeon_wall1i.txt
+know	dungeon_wall1j	data/bgs/dungeon/walls/dungeon_wall1j.txt
+know	dungeon_wall1k	data/bgs/dungeon/walls/dungeon_wall1k.txt
+know	dungeon_wall1l	data/bgs/dungeon/walls/dungeon_wall1l.txt
+know	dungeon_wall1o	data/bgs/dungeon/walls/dungeon_wall1o.txt
+know	dungeon_platform1a	data/bgs/dungeon/platforms/dungeon_platform1a.txt
+know	dungeon_platform1b	data/bgs/dungeon/platforms/dungeon_platform1b.txt
+know	dungeon_platform1c	data/bgs/dungeon/platforms/dungeon_platform1c.txt
+know	Dungeon_spike_chain_trap	data/bgs/dungeon/traps/dungeon_spike_chain_trap.txt
+know	Dungeon_falling_spike_chain_trap	data/bgs/dungeon/traps/dungeon_falling_spike_chain_trap.txt
+know	Dungeon_up_spike_chain_trap	data/bgs/dungeon/traps/dungeon_up_spike_chain_trap.txt
+know	Skull_catacombs		data/bgs/dungeon/decoration/skull_catacombs.txt
+know	Stairs_1	data/bgs/dungeon/decoration/stairs_1.txt
+know	Catacombs_wall1a	data/bgs/dungeon/walls/catacombs_wall1a.txt
+know	Catacombs_wall1b	data/bgs/dungeon/walls/catacombs_wall1b.txt
+know	Catacombs_wall1c	data/bgs/dungeon/walls/catacombs_wall1c.txt
+
+
+#Stage 8
+
+#Epilogo
+know	Back_throne	data/bgs/bathory_keep/decoration/back_throne.txt
+know	Keep_roof_1	data/bgs/bathory_keep/decoration/keep_roof_1.txt
+know	Keep_wall_1	data/bgs/bathory_keep/wall/keep_wall_1.txt
+know	Throne		data/bgs/bathory_keep/decoration/throne.txt
+know	Dark_artifact	data/bgs/bathory_keep/decoration/dark_artifact.txt
+know	Back_final	data/bgs/bathory_keep/decoration/back_final.txt
+know	Keep_castle_shade	data/bgs/bathory_keep/decoration/keep_castle_shade.txt
+know	Keep_root		data/bgs/bathory_keep/decoration/keep_root.txt
+know	Broke_window		data/bgs/bathory_keep/decoration/broke_window.txt
+
+# Death animations
+load	Sdie		data/chars/misc/die/sdie.txt
+load	Bdie		data/chars/misc/die/bdie.txt
+load	Clowndie	data/chars/misc/die/clowndie/clowndie.txt
+load	Gdie		data/chars/misc/die/gdie.txt
+load	Pdie		data/chars/misc/die/pdie.txt
+load	Edie		data/chars/misc/die/edie.txt
+load	wdie		data/chars/misc/die/wdie.txt
+load	kdie		data/chars/misc/die/kdie/kdie.txt
+know	Firedeathbig	data/chars/misc/die/firedeathbig.txt
+load	Explo		data/chars/misc/die/explo.txt
+load	Icedie		data/chars/misc/die/icedie/icedie.txt
+
+# Misc
+know	boss_lifebar	data/chars/misc/boss_lifebar.txt
+know	ToShop		data/chars/misc/endlevel/toshop.txt
+know	ToSewer		data/chars/misc/endlevel/tosewer.txt
+know	ToEntrance	data/chars/misc/endlevel/toentrance.txt
+know	ToWaterfall	data/chars/misc/endlevel/towaterfall.txt
+know	ToLibraryOld	data/chars/misc/endlevel/tolibraryold.txt
+know	Nextlevel	data/chars/misc/endlevel/nextlevel.txt
+
+# Debris
+load	Iceshard	data/chars/misc/die/icedie/iceshard.txt
+load	BR      	data/chars/skeleton/BR.txt
+load	BA      	data/chars/skeleton/BA.txt
+load	BS      	data/chars/skeleton/BS.txt
+load	BL      	data/chars/skeleton/BL.txt
+load	BR_c      	data/chars/skeleton/BR_c.txt
+load	BA_c      	data/chars/skeleton/BA_c.txt
+load	BS_c      	data/chars/skeleton/BS_c.txt
+load	BL_c      	data/chars/skeleton/BL_c.txt
+load	Rock1      	data/chars/misc/rocks/rock1.txt
+load	Rock2      	data/chars/misc/rocks/rock2.txt
+load	Rock3      	data/chars/misc/rocks/rock3.txt
+load	Rock1B		data/chars/misc/rocks/rock1b.txt
+load	Rock2B		data/chars/misc/rocks/rock2b.txt
+load	Rock3B		data/chars/misc/rocks/rock3b.txt
+load	btw_rock1	data/chars/misc/rocks/btw_rock1.txt
+load	btw_rock2	data/chars/misc/rocks/btw_rock2.txt
+load	btw_rock3	data/chars/misc/rocks/btw_rock3.txt
+load	btw_rock4	data/chars/misc/rocks/btw_rock4.txt
+load	btw_rock5	data/chars/misc/rocks/btw_rock5.txt
+load	Sewer_rock1	data/chars/misc/rocks/sewer_rock1.txt
+load	Sewer_rock2	data/chars/misc/rocks/sewer_rock2.txt
+load	Sewer_rock3	data/chars/misc/rocks/sewer_rock3.txt
+load	Sewer_rock4	data/chars/misc/rocks/sewer_rock4.txt
+load	White_rock1	data/chars/misc/rocks/white_rock1.txt
+load	White_rock2	data/chars/misc/rocks/white_rock2.txt
+load	White_rock3	data/chars/misc/rocks/white_rock3.txt
+load	Underground_rock1	data/chars/misc/rocks/sewer_rock1a.txt
+load	Underground_rock2	data/chars/misc/rocks/sewer_rock2a.txt
+load	Underground_rock3	data/chars/misc/rocks/sewer_rock3a.txt
+load	Underground_rock4	data/chars/misc/rocks/sewer_rock4a.txt
+know	Underground_rockwall1	data/chars/misc/rocks/underground_rockwall1.txt
+know	Underground_rockwall2	data/chars/misc/rocks/underground_rockwall2.txt
+know	Underground_rockwall3	data/chars/misc/rocks/underground_rockwall3.txt
+know	Underground_rockwall4	data/chars/misc/rocks/underground_rockwall4.txt
+know	Underground_rockwall5	data/chars/misc/rocks/underground_rockwall5.txt
+know	Cell_death		data/chars/misc/rocks/underground_cell.txt
+know	Wood1		data/bgs/cachtice/decoration/wood1.txt
+know	Wood2		data/bgs/cachtice/decoration/wood2.txt
+know	Wood3		data/bgs/cachtice/decoration/wood3.txt
+know	Wood4		data/bgs/cachtice/decoration/wood4.txt
+know	Wood5		data/bgs/cachtice/decoration/wood5.txt
+know	Wood6		data/bgs/cachtice/decoration/wood6.txt
+know	Wood7		data/bgs/cachtice/decoration/wood7.txt
+know	Door1		data/bgs/cachtice/decoration/door1.txt
+know	Wood8		data/bgs/cachtice/decoration/wood8.txt
+know	Wood9		data/bgs/cachtice/decoration/wood9.txt
+know	Wood10		data/bgs/cachtice/decoration/wood10.txt
+know	Wood11		data/bgs/cachtice/decoration/wood11.txt
+know	Wood12		data/bgs/cachtice/decoration/wood12.txt
+know	Wood13		data/bgs/cachtice/decoration/wood13.txt
+
+# Text
+know	Prologue_I	data/sprites/stagetext/prologue_i.txt
+know	Prologue	data/sprites/stagetext/prologue.txt
+know	Stage1		data/sprites/stagetext/stage1.txt
+know	Stage2		data/sprites/stagetext/stage2.txt
+know	Stage3		data/sprites/stagetext/stage3.txt
+know	Stage4		data/sprites/stagetext/stage4.txt
+know	Stage5		data/sprites/stagetext/stage5.txt
+know	Stage6		data/sprites/stagetext/stage6.txt
+# know	Stage7		data/sprites/stagetext/stage7.txt
+# know	Stage8		data/sprites/stagetext/stage8.txt
+# know	Ending		data/sprites/stagetext/ending.txt
+
+# Effects
+know	1spawn		data/chars/misc/1spawn.txt
+know	2spawn		data/chars/misc/2spawn.txt
+know	Cameraoffset  	data/chars/misc/camoff.txt
+know	delay		data/chars/misc/delay.txt
+know	Empty   	data/chars/misc/empty.txt
+know	Spotlight1	data/chars/misc/spotlit1.txt
+know	Spotlight2	data/chars/misc/spotlit2.txt
+know	Gelap   	data/chars/misc/gelap.txt
+
+#--------------------------------------------------
+
+# other stuff
+
+# Dust
+load     dust		data/chars/misc/dust/dust.txt
+load     dustb		data/chars/misc/dust/dustb.txt
+know	dust_legion	data/chars/legion/debris/smoke.txt
+
+# Players must also be loaded.
+
+know	BloodSkel 	data/chars/blodskel/blodskel.txt
+
+#know	Specter 	data/chars/specter/specter.txt
+#know	Hantu   	data/chars/specter/hantu.txt
+
+#know	bonep		data/chars/bonep/bonep.txt
+#know	Bonehead	data/chars/bonep/boneh.txt
+#know	Partisan	data/chars/ghosta/partisan.txt
+#know	Priest		data/chars/priest/priest.txt
+#know	Simon_Wraith	data/chars/skeleton/simonwr.txt
+#know	Skeleton_Knight	data/chars/skelknit/skelknit.txt
+#know	WereSkeleton	data/chars/wereskel/wereskel.txt
+
+# Subbosses
+
+#know	GiantBat	data/chars/gbat/gbat.txt
+#know	ArchSnake	data/chars/wdragon/archsnake.txt
+#know	Ghoulo		data/chars/zombie/ghoulo.txt
+#know	Ghoulleg	data/chars/zombie/ghoulleg.txt
+
+# Bosses
+#know	Grakul		data/chars/armor/grakul.txt
+#know	DarkMage	data/chars/necrom/darkmage.txt
+
+# White Dragon family
+#know	GDragon		data/chars/wdragon/gdragon.txt
+know	BoneSnake	data/chars/wdragon/bonesnak.txt
+know	Rib2		data/chars/wdragon/rib2.txt
+know	RibPis1		data/chars/wdragon/ribpis1.txt
+know	RibPis2		data/chars/wdragon/ribpis2.txt
+know	RibPis3		data/chars/wdragon/ribpis3.txt
+know	RibPis4		data/chars/wdragon/ribpis4.txt
+know	RibPis5		data/chars/wdragon/ribpis5.txt
+know	RibPis6		data/chars/wdragon/ribpis6.txt
+know	RibPis7		data/chars/wdragon/ribpis7.txt
+
+
+

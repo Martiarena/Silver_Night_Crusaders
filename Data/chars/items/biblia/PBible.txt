@@ -1,0 +1,130 @@
+name		PBible
+type		none
+candamage	enemy obstacle shot
+lifespan	8
+facing		1
+subject_to_obstacle 0
+subject_to_wall 0
+subject_to_gravity 0
+subject_to_platform 0
+animationscript data/scripts/prscript.c
+
+palette         data/chars/items/weapons.gif
+
+
+
+
+
+
+
+
+
+anim	follow1
+	loop	1
+	delay	5
+	offset	10 -180
+	attack6	0 4 23 17 6 0 0 0 0 0
+	frame	data/chars/items/biblia/bible1a.gif
+	@cmd	revolver 0 0.25 1
+	@cmd	spawn01 "Sparkles" 5 -180 1
+	frame	data/chars/items/biblia/bible1b.gif
+	frame	data/chars/items/biblia/bible1c.gif
+	frame	data/chars/items/biblia/bible1d.gif
+	@cmd	revolver 0 0.25 1
+	frame	data/chars/items/biblia/bible1e.gif
+	frame	data/chars/items/biblia/bible1f.gif
+	frame	data/chars/items/biblia/bible1g.gif
+	@cmd	revolver 0 0.25 1
+	@cmd	spawn01 "Sparkles" 5 -180 1
+	frame	data/chars/items/biblia/bible1h.gif
+	frame	data/chars/items/biblia/bible1a.gif
+	frame	data/chars/items/biblia/bible1a.gif
+	@cmd	revolver 0 0.25 1
+	frame	data/chars/items/biblia/bible1b.gif
+	frame	data/chars/items/biblia/bible1c.gif
+	@cmd	spawn01 "Sparkles" 5 -180 1
+	frame	data/chars/items/biblia/bible1d.gif
+	@cmd	revolver 0 0.25 1
+	frame	data/chars/items/biblia/bible1e.gif
+	frame	data/chars/items/biblia/bible1f.gif
+	frame	data/chars/items/biblia/bible1g.gif
+	@cmd	revolver 0 0.25 1
+	frame	data/chars/items/biblia/bible1h.gif
+	attack6	0
+	frame	data/chars/items/biblia/bible1a.gif
+		
+anim	follow2
+	loop	1
+	delay	5
+	offset	10 -180
+	attack6	0 4 23 17 6 0 0 0 0 0
+	frame	data/chars/items/biblia/bible1a.gif
+	@cmd	revolver 0 0.25 0
+	frame	data/chars/items/biblia/bible1b.gif
+	frame	data/chars/items/biblia/bible1c.gif
+	@cmd	spawn01 "Sparkles" 5 -180 1
+	frame	data/chars/items/biblia/bible1d.gif
+	@cmd	revolver 0 0.25 0
+	frame	data/chars/items/biblia/bible1e.gif
+	frame	data/chars/items/biblia/bible1f.gif
+	frame	data/chars/items/biblia/bible1g.gif
+	@cmd	revolver 0 0.25 0
+	frame	data/chars/items/biblia/bible1h.gif
+	frame	data/chars/items/biblia/bible1a.gif
+	frame	data/chars/items/biblia/bible1a.gif
+	@cmd	revolver 0 0.25 0
+	@cmd	spawn01 "Sparkles" 5 -180 1
+	frame	data/chars/items/biblia/bible1b.gif
+	frame	data/chars/items/biblia/bible1c.gif
+	frame	data/chars/items/biblia/bible1d.gif
+	@cmd	revolver 0 0.25 0
+	frame	data/chars/items/biblia/bible1e.gif
+	frame	data/chars/items/biblia/bible1f.gif
+	frame	data/chars/items/biblia/bible1g.gif
+	@cmd	revolver 0 0.25 0
+	@cmd	spawn01 "Sparkles" 5 -180 1
+	frame	data/chars/items/biblia/bible1h.gif
+	attack6	0
+	frame	data/chars/items/biblia/bible1a.gif
+		
+anim	idle
+	loop	1
+	delay	5
+	offset	10 -180
+	attack6	0 4 23 17 6 0 0 0 0 0
+	frame	data/chars/items/biblia/bible1a.gif
+	@cmd	revolver 0 0.25 1
+	frame	data/chars/items/biblia/bible1b.gif
+	@cmd	spawn01 "Sparkles" 5 -180 1
+	frame	data/chars/items/biblia/bible1c.gif
+	frame	data/chars/items/biblia/bible1d.gif
+	@cmd	revolver 0 0.25 1
+	frame	data/chars/items/biblia/bible1e.gif
+	frame	data/chars/items/biblia/bible1f.gif
+	frame	data/chars/items/biblia/bible1g.gif
+	@cmd	revolver 0 0.25 1
+	frame	data/chars/items/biblia/bible1h.gif
+	attack6	0
+	@cmd	spawn01 "Sparkles" 5 -180 1
+	frame	data/chars/items/biblia/bible1a.gif
+		
+anim	spawn
+@script
+    void self = getlocalvar("self");
+    float Vx = getentityproperty(self,"xdir");
+
+    if(frame == 1){
+      if(Vx >= 0){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } else {
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      }
+    }
+	@end_script	
+	delay	3
+	offset	10 -180
+	frame	data/chars/items/biblia/bible1a.gif
+	frame	data/chars/items/biblia/bible1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

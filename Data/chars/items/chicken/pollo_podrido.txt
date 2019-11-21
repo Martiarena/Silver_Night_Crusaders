@@ -1,0 +1,145 @@
+name    	P._Podrido
+health		-50
+type    	item
+facing          1
+antigravity	30
+candamage  	player
+icon 		data/chars/misc/bgitem.gif
+
+animationscript	data/scripts/escript.c
+
+palette		data/chars/items/chicken/idle3.gif
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	70
+	offset	11 24
+	itembox	0 0 22 24
+	frame	data/chars/items/chicken/idle3.gif
+	delay	2
+	frame	data/chars/items/chicken/idle4.gif
+	delay	70
+	frame	data/chars/items/chicken/idle3.gif
+	delay	2
+	frame	data/chars/items/chicken/idle4.gif
+	delay	70
+	frame	data/chars/items/chicken/idle3.gif
+	delay	2
+	frame	data/chars/items/chicken/idle4.gif
+	delay	70
+	frame	data/chars/items/chicken/idle3.gif
+	delay	2
+	frame	data/chars/items/chicken/idle4.gif
+	delay	70
+	frame	data/chars/items/chicken/idle3.gif
+	delay	2
+	frame	data/chars/items/chicken/idle4.gif
+	delay	70
+	frame	data/chars/items/chicken/idle3.gif
+	delay	2
+	frame	data/chars/items/chicken/idle4.gif
+	delay	70
+	frame	data/chars/items/chicken/idle3.gif
+	delay	2
+	frame	data/chars/items/chicken/idle4.gif
+	delay	70
+	frame	data/chars/items/chicken/idle3.gif
+	delay	2
+	frame	data/chars/items/chicken/idle4.gif
+	delay	70
+	frame	data/chars/items/chicken/idle3.gif
+	delay	2
+	frame	data/chars/items/chicken/idle4.gif
+	delay	70
+	frame	data/chars/items/chicken/idle3.gif
+	delay	2
+	frame	data/chars/items/chicken/idle4.gif
+	delay	70
+	frame	data/chars/items/chicken/idle3.gif
+	delay	2
+	frame	data/chars/items/chicken/idle4.gif
+	delay	70
+	frame	data/chars/items/chicken/idle3.gif
+	delay	2
+	frame	data/chars/items/chicken/idle4.gif
+	delay	70
+	frame	data/chars/items/chicken/idle3.gif
+	delay	2
+	frame	data/chars/items/chicken/idle4.gif
+	delay	6
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/chicken/idle4.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/chicken/idle4.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/chicken/idle3.gif
+	delay	10
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	11 24
+	itembox	0 0 22 24
+	frame	data/chars/items/chicken/idle4.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/items/chicken/idle4.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/items/chicken/idle4.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/items/chicken/idle4.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/items/chicken/idle4.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/items/chicken/idle4.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/items/chicken/idle4.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/items/chicken/idle4.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/items/chicken/idle4.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/items/chicken/idle4.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/items/chicken/idle4.gif
+	frame	data/chars/items/chicken/idle3.gif
+	frame	data/chars/items/chicken/idle4.gif
+	frame	data/chars/items/chicken/idle3.gif
+		
+#|edited by openBor Stats v 0.56
+		

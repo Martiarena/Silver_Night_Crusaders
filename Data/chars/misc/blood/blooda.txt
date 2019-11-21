@@ -1,0 +1,57 @@
+name	Blooda
+type	none
+shadow	0
+
+palette	data/chars/misc/blood/blood_palette.gif
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	2
+	offset	34 36
+	frame	data/chars/misc/blood/blooda1.gif
+	frame	data/chars/misc/blood/blooda2.gif
+	frame	data/chars/misc/blood/blooda3.gif
+	frame	data/chars/misc/blood/blooda4.gif
+	frame	data/chars/misc/blood/blooda5.gif
+	frame	data/chars/misc/blood/blooda6.gif
+	frame	data/chars/misc/blood/blooda7.gif
+	frame	data/chars/misc/blood/blooda8.gif
+	frame	data/chars/misc/blood/blooda9.gif
+	frame	data/chars/misc/blood/blooda10.gif
+	frame	data/chars/misc/blood/blooda11.gif
+	frame	data/chars/misc/blood/blooda12.gif
+	frame	data/chars/misc/blood/blooda13.gif
+	frame	data/chars/misc/blood/blooda14.gif
+	frame	data/chars/misc/blood/blooda15.gif
+	frame	data/chars/misc/blood/blooda16.gif
+	frame	data/chars/misc/blood/blooda17.gif
+	frame	data/chars/misc/blood/blooda18.gif
+	frame	data/chars/misc/blood/blooda19.gif
+	frame	data/chars/misc/blood/blooda20.gif
+	frame	data/chars/misc/blood/blooda21.gif
+	frame	data/chars/misc/blood/blooda22.gif
+	frame	data/chars/misc/blood/blooda23.gif
+	frame	data/chars/misc/blood/blooda24.gif
+	frame	data/chars/misc/blood/blooda25.gif
+	frame	data/chars/misc/blood/blooda26.gif
+	frame	data/chars/misc/blood/blooda27.gif
+	frame	data/chars/misc/blood/blooda28.gif
+	frame	data/chars/misc/blood/blooda29.gif
+	frame	data/chars/misc/blood/blooda30.gif
+	frame	data/chars/misc/blood/blooda31.gif
+	frame	data/chars/misc/blood/blooda32.gif
+	frame	data/chars/misc/blood/blooda33.gif
+	frame	data/chars/misc/blood/blooda34.gif
+	frame	data/chars/misc/blood/blooda35.gif
+	frame	data/chars/misc/blood/blooda36.gif
+	frame	data/chars/misc/blood/blooda37.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,41 @@
+name		GrBlasto
+lifespan  	2
+facing 		2
+type		none
+candamage	player npc
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	7
+	offset	27 68
+	hitfx	data/sounds/burnt.wav
+	burn	18 50 32 18 12 0 1 0 0 0
+	frame	data/chars/misc/espells/GrBlaze1.png
+	frame	data/chars/misc/espells/GrBlaze2.png
+	frame	data/chars/misc/espells/GrBlaze3.png
+	burn	18 28 32 40 12 0 1 0 0
+	frame	data/chars/misc/espells/GrBlaze4.png
+	frame	data/chars/misc/espells/GrBlaze5.png
+	burn	18 51 32 18 12 0 1 0 0
+	frame	data/chars/misc/espells/GrBlaze6.png
+	frame	data/chars/misc/espells/GrBlaze7.png
+	frame	data/chars/misc/espells/GrBlaze1.png
+	burn	18 50 32 18 12 0 1 0 0 0
+	frame	data/chars/misc/espells/GrBlaze1.png
+	frame	data/chars/misc/espells/GrBlaze2.png
+	frame	data/chars/misc/espells/GrBlaze3.png
+	burn	18 28 32 40 12 0 1 0 0
+	frame	data/chars/misc/espells/GrBlaze4.png
+	frame	data/chars/misc/espells/GrBlaze5.png
+	burn	18 51 32 18 12 0 1 0 0
+	frame	data/chars/misc/espells/GrBlaze6.png
+	frame	data/chars/misc/espells/GrBlaze7.png
+	burn	0 0 0 0
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

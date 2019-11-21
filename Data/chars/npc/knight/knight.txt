@@ -1,0 +1,153 @@
+name    	 Knight
+health           15
+speed            10
+type npc
+subtype follow
+noquake  	 1
+nodrop  	 2
+jumpheight       2
+aggression 9999
+death   	 1
+nodieblink       3
+min_noatk_chance 0
+max_noatk_chance 0
+hostile          enemy
+candamage        enemy obstacle
+animationscript	data/scripts/escript.c
+load Blooda
+
+palette 	 data/chars/npc/knight/knight.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	range	15 45
+	rangea	-20 80
+	loop	0
+	delay	7
+	offset	35 76
+	bbox	30 24 10 50
+	sound	data/sounds/throw_big.wav
+	frame	data/chars/npc/knight/attack1a.gif
+	frame	data/chars/npc/knight/attack1b.gif
+	frame	data/chars/npc/knight/attack1c.gif
+	frame	data/chars/npc/knight/attack1d.gif
+	delay	3
+	offset	35 82
+	bbox	30 39 10 38
+	attack	40 0 50 82 3 0 0 0 0 0
+	frame	data/chars/npc/knight/attack1e.gif
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/npc/knight/attack1f.gif
+	delay	7
+	frame	data/chars/npc/knight/attack1f.gif
+		
+anim	death
+	loop	0
+	delay	7
+	offset	35 81
+	frame	data/chars/npc/knight/land.gif
+	delay	5
+	sound	data/sounds/knightdie.wav
+	subentity	Blooda
+	spawnframe	0 38 0 33 0
+	frame	data/chars/npc/knight/death1.gif
+	delay	25
+	frame	data/chars/npc/knight/death1.gif
+	delay	3
+	frame	data/chars/npc/knight/death7.gif
+	frame	data/chars/npc/knight/death8.gif
+	frame	data/chars/npc/knight/death9.gif
+	frame	data/chars/npc/knight/death10.gif
+	delay	7
+	frame	data/chars/npc/knight/death11.gif
+	frame	data/chars/npc/knight/death12.gif
+	frame	data/chars/npc/knight/death13.gif
+	frame	data/chars/npc/knight/death14.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	fall
+	loop	0
+	delay	7
+	offset	35 76
+	frame	data/chars/npc/knight/fall1.gif
+	@cmd	platform 1
+	frame	data/chars/npc/knight/fall2.gif
+		
+anim	fall2
+	loop	0
+	delay	7
+	offset	35 76
+	subentity	Blooda
+	spawnframe	0 20 0 30 0
+	frame	data/chars/npc/knight/fall1.gif
+	@cmd	platform 1
+	frame	data/chars/npc/knight/fall2.gif
+		
+anim	idle
+	loop	1
+	delay	20
+	offset	35 76
+	bbox	30 24 10 50
+	frame	data/chars/npc/knight/idle.gif
+		
+anim	land
+	loop	0
+	delay	9
+	offset	35 81
+	frame	data/chars/npc/knight/land.gif
+		
+anim	pain
+	loop	0
+	delay	9
+	offset	35 76
+	jumpframe	0 1.5 -1
+	frame	data/chars/npc/knight/walk4.gif
+	frame	data/chars/npc/knight/land.gif
+		
+anim	pain2
+	loop	0
+	delay	9
+	offset	35 76
+	jumpframe	0 1.5 -1
+	subentity	Blooda
+	spawnframe	0 20 0 30 0
+	frame	data/chars/npc/knight/walk4.gif
+	frame	data/chars/npc/knight/land.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	35 76
+	frame	data/chars/npc/knight/idle.gif
+		
+anim	walk
+	loop	1
+	delay	10
+	offset	35 76
+	bbox	30 24 10 50
+	frame	data/chars/npc/knight/walk1.gif
+	frame	data/chars/npc/knight/walk2.gif
+	frame	data/chars/npc/knight/walk3.gif
+	frame	data/chars/npc/knight/walk4.gif
+	frame	data/chars/npc/knight/walk2.gif
+	frame	data/chars/npc/knight/walk3.gif
+		
+#|edited by openBor Stats v 0.67
+		

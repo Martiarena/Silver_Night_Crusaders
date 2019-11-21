@@ -1,0 +1,201 @@
+name		Icecross
+type		none
+candamage	enemy obstacle shot
+nolife		1
+speedf	0.1
+remove  0
+offscreenkill	50
+
+diesound	data/sounds/icebreak.wav
+
+palette		data/chars/misc/spells/icecross_palette.gif
+
+
+
+
+anim	idle
+	delay	1
+	offset	79 77
+	move	1
+	hitfx	data/sounds/burnt.wav
+	attack	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1a.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1a.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	move	2
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1a.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1a.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	move	3
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1a.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1a.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	move	4
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1a.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1a.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	move	4
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1a.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1a.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	move	4
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1a.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1a.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	move	4
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1a.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	delay	3
+	attack7	70 50 20 60 9 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	delay	3
+	attack7	70 50 20 60 6 0 0 0 0 0
+	frame	data/chars/misc/spells/idle1b.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	delay	3
+	offset	79 77
+	frame	data/chars/misc/spells/spawn1a.gif
+	frame	data/chars/misc/spells/spawn1b.gif
+	frame	data/chars/misc/spells/spawn1c.gif
+	frame	data/chars/misc/spells/spawn1d.gif
+		
+#|edited by openBor Stats v 0.67
+		

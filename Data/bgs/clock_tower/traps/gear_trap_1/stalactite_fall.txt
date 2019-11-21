@@ -1,0 +1,58 @@
+name    Falling_stalactite
+type	trap
+shadow  0
+noatflash 1
+nolife 1
+setlayer        -1
+hostile player npc
+candamage  player enemy npc obstacle
+
+load Rock_stalactite
+
+animationscript  data/scripts/escript.c
+
+palette	 data/bgs/underground/palette_objects.gif
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	3
+	offset	9 64
+	frame	data/bgs/underground/traps/stalactite/death.gif
+	sound	data/sounds/rock_break3.wav
+	frame	data/chars/misc/empty.gif
+	delay	6
+	@cmd	tosserM "Rock_stalactite" -24 11 -0.7 0.4
+	@cmd	tosserM "Rock_stalactite" 20 14 0.7 0.4
+	@cmd	tosserM "Rock_stalactite" 8 34 0 2.5
+	@cmd	tosserM "Rock_stalactite" -3 27 -0.3 1.5
+	@cmd	tosserM "Rock_stalactite" 5 12 0.3 1
+	@cmd	tosserM "Rock_stalactite" -8 14 -0.3 1
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+anim	jumpland
+	loop	0
+	delay	7
+	offset	9 64
+	frame	data/bgs/underground/traps/stalactite/fall.gif
+		
+anim	walkoff
+	delay	7
+	offset	9 64
+	attack	3 22 14 42 19 0 1 1 0 0
+	frame	data/bgs/underground/traps/stalactite/idle.gif
+	frame	data/bgs/underground/traps/stalactite/fall.gif
+	frame	data/bgs/underground/traps/stalactite/fall.gif
+	frame	data/bgs/underground/traps/stalactite/fall.gif
+	frame	data/bgs/underground/traps/stalactite/fall.gif
+	frame	data/bgs/underground/traps/stalactite/fall.gif
+		
+#|edited by openBor Stats v 0.67
+		

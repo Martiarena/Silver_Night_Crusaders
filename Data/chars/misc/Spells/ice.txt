@@ -1,0 +1,20 @@
+name		Ice
+type		none
+candamage	enemy obstacle
+speed  10
+alpha		1
+offscreenkill	50
+
+diesound	data/sounds/icebreak.wav
+
+anim	idle
+	loop	1
+	delay	10
+	offset	138 116
+	freeze	139 110 48 14 15 20 0 0 0 0
+	frame	data/chars/misc/spells/ice.gif
+	freeze	0
+	frame	data/chars/misc/spells/ice.gif
+		
+#|edited by openBor Stats v 0.67
+		

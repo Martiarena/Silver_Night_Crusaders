@@ -1,0 +1,23 @@
+name	       	Stairs_1
+type    	none
+antigravity     100
+shadow		0
+nomove	1
+setlayer 99
+nolife	1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_gravity 0
+
+palette		data/bgs/dungeon/decoration/decoration_catacombs.gif
+
+
+
+anim	idle
+	loop	1
+	delay	5
+	offset	31 30
+	frame	data/bgs/dungeon/decoration/stairs_1.gif
+		
+#|edited by openBor Stats v 0.67
+		

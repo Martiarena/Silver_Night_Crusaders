@@ -1,0 +1,76 @@
+music		data/music/underground_reservoir.ogg 945945
+
+background	data/bgs/underground/waterfall.gif
+panel	        data/bgs/underground/waterfall.gif
+
+order           a
+settime	        0
+notime		1
+spawn1          159 -365 240
+spawn2          158 -365 240
+direction	both
+type		0 0 0
+cameratype 1
+Hole  0  240  0  0  109 109 45
+Hole  211  240  0  0  160  160  45
+
+
+
+spawn  Balsa
+coords  160  211  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Back_cave_ani
+coords  0  0  0
+flip  1
+at  0
+
+spawn  waterfall
+coords  0  0  0
+flip  1
+at  0
+
+group	2  2
+at	0
+
+spawn  Gargola_c
+alias  Gargola
+coords  350 216 130
+at  0
+
+spawn  Gargola_c
+alias  Gargola
+coords  -30 216 200
+at  0
+
+spawn  Gargola_c
+alias  Gargola
+coords  360 216 160
+at  0
+
+spawn  Gargola_c
+alias  Gargola
+coords  -30 216 190
+at  0
+
+spawn  Gargola_c
+alias  Gargola
+coords  360 216 150
+at  0
+
+spawn  Gargola_c
+alias  Gargola
+coords  -30 216 170
+at  0
+
+spawn  Gargola_c
+alias  Gargola
+coords  360 216 140
+at  0
+
+spawn  Gargola_c
+alias  Gargola
+coords  -30 216 180
+at  0

@@ -1,0 +1,15 @@
+# No flash
+
+name	Noflash
+type	none
+shadow	0
+
+palette data/chars/misc/flash/flash01.gif #1
+
+anim idle
+	loop	0
+	delay	3
+	offset	29 24
+	frame	data/chars/misc/empty.gif
+
+

@@ -1,0 +1,34 @@
+name	       	Wood9
+type	        none
+subject_to_gravity 1
+subject_to_hole	1
+no_adjust_base	0
+lifespan        3
+noquake 	1
+
+palette 	data/bgs/cachtice/decoration/puerta_palette.gif
+
+
+
+anim	idle
+	loop	0
+	delay	50
+	offset	10 24
+	bouncefactor	2
+	frame	data/bgs/cachtice/decoration/wood9.gif
+	delay	6
+	frame	data/bgs/cachtice/decoration/wood9.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/cachtice/decoration/wood9.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/cachtice/decoration/wood9.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/cachtice/decoration/wood9.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/cachtice/decoration/wood9.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/cachtice/decoration/wood9.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

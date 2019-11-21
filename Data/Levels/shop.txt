@@ -1,0 +1,133 @@
+music		data/music/boss.ogg 367353
+
+panel	        data/bgs/cachtice/shop.gif
+
+order           a
+settime	        0
+notime		1
+spawn1          83 0 240
+spawn2          40 0 240
+direction	both
+type		0 0 0
+cameratype 1
+noslow 1
+
+spawn  cityruins
+coords  0  0
+flip  1
+at  0
+
+spawn boss_lifebar
+coords  0 0 0
+flip 1
+at  0
+
+spawn  Roof
+coords  208  216  190
+flip  1
+at  0
+
+spawn  Sp1Wall
+coords  448  216  -32
+alias	thick
+flip  1
+at  0
+
+spawn  Sp2Wall
+coords  16  216  90
+alias	thick
+flip  1
+at  0
+
+spawn  Shopplat0
+coords  55  216  95
+flip  1
+at  0
+
+spawn  Shopplat1
+coords  368  216  95
+flip  1
+at  0
+
+spawn  Shopplat2
+coords  285  216  131
+flip  1
+at  0
+
+spawn  Shopplat2
+coords  166  216  131
+flip  1
+at  0
+
+spawn  Bulb
+coords  88  216  165
+item  ___20
+at  0
+
+spawn  Bulb
+coords  179  216  165
+item  ___50
+at  0
+
+spawn  Bulb
+coords  278  216  165
+item  ___50
+at  0
+
+spawn  Bulb
+coords  361  216  165
+item  Bumeran
+map 1
+at  0
+
+spawn  Barril
+coords  410  216  104
+item  Pollo_frito
+at  0
+
+spawn  Jar1
+coords  375  216  104
+flip  1
+item  ___250
+at  0
+
+spawn  Jar2
+coords  337  216  104
+item  ___400
+at  0
+
+spawn  Knight
+aggression 3
+coords  185  216
+at  0
+
+spawn  Knight
+aggression 3
+coords  265  216
+at  0
+
+spawn  Knight
+coords  10  216
+at  0
+
+spawn  Esqueleto_npc
+alias	Esqueleto
+coords  225  216
+health  1
+at  0
+
+spawn  Esqueleto_npc
+alias	Esqueleto
+coords  240  216  0
+health  1
+at  0
+
+spawn  La_criatura
+coords  219  216  320
+boss 1
+at  0
+
+spawn	Boss0Spawner
+coords  0 0 0
+2pspawn 1
+at  0

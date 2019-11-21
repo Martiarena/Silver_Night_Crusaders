@@ -1,0 +1,98 @@
+name PBomb
+type none
+health 1
+candamage enemy obstacle none
+jumpheight 2
+speed      6
+remove 1
+
+palette 	data/chars/items/weapons.gif
+
+
+
+
+
+
+
+
+anim	attack1
+	delay	2
+	offset	49 50
+	attack4	38 38 21 22 25 0 1 0 0 0
+	sound	data/sounds/xplos.wav
+	frame	data/chars/items/bomb/explo1a.gif
+	frame	data/chars/misc/empty.gif
+	attack4	28 32 42 34 25 0 1 0 0 0
+	frame	data/chars/items/bomb/explo1b.gif
+	frame	data/chars/misc/empty.gif
+	attack4	17 18 64 62 25 0 1 0 0 0
+	frame	data/chars/items/bomb/explo1c.gif
+	frame	data/chars/misc/empty.gif
+	attack4	14 13 70 73 25 0 1 0 0 0
+	frame	data/chars/items/bomb/explo1d.gif
+	frame	data/chars/misc/empty.gif
+	attack4	38 38 21 22 25 0 1 0 0 0
+	frame	data/chars/items/bomb/explo1e.gif
+	frame	data/chars/misc/empty.gif
+	attack4	38 38 21 22 25 0 1 0 0 0
+	frame	data/chars/items/bomb/explo1f.gif
+	frame	data/chars/misc/empty.gif
+	attack4	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/items/bomb/explo1g.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/bomb/explo1h.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/bomb/explo1i.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/bomb/explo1j.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	attack2
+	delay	2
+	offset	49 50
+	attack4	38 38 21 22 25 0 1 0 0 0
+	sound	data/sounds/xplos.wav
+	frame	data/chars/items/bomb/explo1a.gif
+	frame	data/chars/misc/empty.gif
+	attack4	28 32 42 34 25 0 1 0 0 0
+	frame	data/chars/items/bomb/explo1b.gif
+	frame	data/chars/misc/empty.gif
+	attack4	17 18 64 62 25 0 1 0 0 0
+	frame	data/chars/items/bomb/explo1c.gif
+	frame	data/chars/misc/empty.gif
+	attack4	14 13 70 73 25 0 1 0 0 0
+	frame	data/chars/items/bomb/explo1d.gif
+	frame	data/chars/misc/empty.gif
+	attack4	38 38 21 22 25 0 1 0 0 0
+	frame	data/chars/items/bomb/explo1e.gif
+	frame	data/chars/misc/empty.gif
+	attack4	38 38 21 22 25 0 1 0 0 0
+	frame	data/chars/items/bomb/explo1f.gif
+	frame	data/chars/misc/empty.gif
+	attack4	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/items/bomb/explo1g.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/bomb/explo1h.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/bomb/explo1i.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/bomb/explo1j.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	4
+	offset	17 18
+	bbox	11 11 12 13
+	attack	11 11 12 13 12 0 0 0 0 0
+	frame	data/chars/items/bomb/bomb1a.gif
+	frame	data/chars/items/bomb/bomb1b.gif
+	frame	data/chars/items/bomb/bomb1c.gif
+	frame	data/chars/items/bomb/bomb1d.gif
+	frame	data/chars/items/bomb/bomb1e.gif
+	frame	data/chars/items/bomb/bomb1f.gif
+	frame	data/chars/items/bomb/bomb1g.gif
+	frame	data/chars/items/bomb/bomb1h.gif
+		
+#|edited by openBor Stats v 0.67
+		

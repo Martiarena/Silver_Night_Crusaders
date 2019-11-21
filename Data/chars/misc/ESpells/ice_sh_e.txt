@@ -1,0 +1,68 @@
+name	ice_sh_e
+type none
+speed	10
+offscreenkill 50
+nolife          1
+health          1
+remove          0
+death 		1
+candamage player npc shot
+
+load	ice_sh1_e
+animationscript  data/scripts/escript.c
+
+palette	data/chars/misc/espells/ice_spell_palette.gif
+
+
+
+
+
+
+
+
+anim	death
+	loop	0
+	delay	4
+	offset	23 6
+	@cmd	tosserM "ice_sh1_e" 8 34 0 2.5
+	@cmd	tosserM "ice_sh1_e" 5 26 0 1.5
+	@cmd	tosserM "ice_sh1_e" 8 25 0.3 1.5
+	@cmd	tosserM "ice_sh1_e" -3 27 -0.3 1.5
+	@cmd	tosserM "ice_sh1_e" 5 12 0.3 1
+	@cmd	tosserM "ice_sh1_e" -8 14 -0.3 1
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	loop	0
+	delay	4
+	offset	23 6
+	@cmd	tosserM "ice_sh1_e" 8 34 0 2.5
+	@cmd	tosserM "ice_sh1_e" 5 26 0 1.5
+	@cmd	tosserM "ice_sh1_e" 8 25 0.3 1.5
+	@cmd	tosserM "ice_sh1_e" -3 27 -0.3 1.5
+	@cmd	tosserM "ice_sh1_e" 5 12 0.3 1
+	@cmd	tosserM "ice_sh1_e" -8 14 -0.3 1
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	23 6
+	followanim	1
+	followcond	1
+	hitfx	data/sounds/icebreak.wav
+	bbox	2 2 20 10
+	attack7	2 2 44 10 12 0 0 0 0 0
+	frame	data/chars/misc/espells/ice1a.gif
+	delay	1
+	attack7	0 0 0 0 0 0
+	frame	data/chars/misc/espells/ice1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

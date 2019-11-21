@@ -1,0 +1,31 @@
+# Hit flash
+
+name	Wiflash
+type	none
+shadow	0
+setlayer 1000
+
+palette data/chars/wiza/wiza.gif #1
+
+anim idle
+	loop	0
+	delay	4
+	offset	60 75
+	frame	data/chars/wiza/prh01.gif
+	frame	data/chars/wiza/prh02.gif
+	frame	data/chars/wiza/prh03.gif
+	frame	data/chars/wiza/prh04.gif
+	frame	data/chars/wiza/prh05.gif
+	frame	data/chars/wiza/prh06.gif
+	frame	data/chars/wiza/prh07.gif
+	frame	data/chars/wiza/prh08.gif
+	frame	data/chars/wiza/prh09.gif
+	frame	data/chars/wiza/prh10.gif
+	frame	data/chars/wiza/prh11.gif
+	frame	data/chars/wiza/prh12.gif
+	frame	data/chars/wiza/prh13.gif
+	frame	data/chars/wiza/prh14.gif
+	frame	data/chars/wiza/prh15.gif
+	frame	data/chars/wiza/prh16.gif
+
+

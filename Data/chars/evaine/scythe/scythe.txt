@@ -1,0 +1,101 @@
+name	Scythe
+health          3
+speed           0
+type    	enemy
+noquake  	1
+nolife		1
+nopain  	1
+nodrop  	2
+death   	1
+nodieblink	2
+hostile         player npc
+candamage 	player npc
+offscreenkill 	500
+nomove 	1 0
+cantgrab 	1
+nodrop 	2
+falldie 	1
+
+palette          data/chars/evaine/scythe/scythe_palette.gif
+
+animationscript  data/scripts/escript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	death
+	loop	0
+	offset	57 110
+	delay	1
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	offset	57 110
+	delay	3
+	frame	data/chars/evaine/scythe/attack1a.gif
+	frame	data/chars/evaine/scythe/attack1b.gif
+	frame	data/chars/evaine/scythe/attack1c.gif
+	delay	14
+	frame	data/chars/evaine/scythe/attack1d.gif
+	delay	7
+	frame	data/chars/evaine/scythe/attack1e.gif
+	hitfx	data/sounds/slash.wav
+	attack2	35 8 70 102 25 0 1 0 0 0
+	frame	data/chars/evaine/scythe/attack1f.gif
+	frame	data/chars/evaine/scythe/attack1g.gif
+	frame	data/chars/evaine/scythe/attack1h.gif
+	delay	14
+	attack2	0 0 0 0 0 0 0
+	frame	data/chars/evaine/scythe/attack1i.gif
+	delay	3
+	frame	data/chars/evaine/scythe/attack1j.gif
+	frame	data/chars/evaine/scythe/attack1k.gif
+	frame	data/chars/evaine/scythe/attack1l.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	loop	0
+	offset	57 110
+	delay	1
+	frame	data/chars/evaine/scythe/attack1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

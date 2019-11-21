@@ -1,0 +1,103 @@
+name  Fantasma
+health		12
+nomove  	1
+type		enemy
+cantgrab 	1
+nodrop		2
+death		1
+alpha		1
+Score           100 -1
+hostile         player npc
+candamage       player npc
+antigravity     100
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+
+defense normal3 2 0 0 0 0 0 0
+defense normal6 2 0 0 0 0 0 0
+
+diesound  	data/sounds/ghostdie.wav
+icon 		data/chars/misc/bgmonster.gif
+
+palette		data/chars/ghost/ghost.gif
+
+animationscript data/scripts/cscript.c
+
+
+
+
+
+
+
+
+
+anim	death
+	delay	7
+	offset	35 45
+	subentity	pdie
+	spawnframe	0 0 0 0 0
+	frame	data/chars/ghost/death1.gif
+	frame	data/chars/ghost/death2.gif
+	frame	data/chars/ghost/death3.gif
+	frame	data/chars/ghost/death4.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	delay	5
+	offset	35 45
+	frame	data/chars/ghost/idle1.gif
+	@cmd	dasher -2 0 0 1
+	frame	data/chars/ghost/idle2.gif
+	frame	data/chars/ghost/idle3.gif
+	frame	data/chars/ghost/idle1.gif
+	frame	data/chars/ghost/idle2.gif
+	@cmd	dasher 0 0 0 1
+	@cmd	beidle
+	frame	data/chars/ghost/idle3.gif
+		
+anim	idle
+	loop	1
+	delay	9
+	offset	35 45
+	bbox	15 20 35 20
+	followcond	1
+	followani	1
+	attack6	15 20 35 20 6 0 1 1 0 0
+	frame	data/chars/ghost/idle1.gif
+	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/ghost/idle2.gif
+	frame	data/chars/ghost/idle3.gif
+	frame	data/chars/ghost/idle1.gif
+	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/ghost/idle2.gif
+	attack6	0
+	frame	data/chars/ghost/idle3.gif
+		
+anim	pain
+	delay	5
+	offset	35 45
+	frame	data/chars/ghost/idle1.gif
+	@cmd	dasher -3 0 0 1
+	frame	data/chars/ghost/idle2.gif
+	frame	data/chars/ghost/idle3.gif
+	frame	data/chars/ghost/idle1.gif
+	frame	data/chars/ghost/idle2.gif
+	@cmd	dasher 0 0 0 1
+	@cmd	beidle
+	frame	data/chars/ghost/idle3.gif
+		
+anim	spawn
+	delay	9
+	offset	35 45
+	frame	data/chars/ghost/spawn1.gif
+	frame	data/chars/ghost/spawn2.gif
+	frame	data/chars/ghost/spawn3.gif
+	frame	data/chars/ghost/spawn4.gif
+	frame	data/chars/ghost/idle1.gif
+		
+#|edited by openBor Stats v 0.67
+		

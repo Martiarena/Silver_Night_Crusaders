@@ -1,0 +1,861 @@
+music		data/music/castlebridge.ogg 756315
+
+panel	        data/bgs/moon_bridge/bridge_castle.gif
+
+fglayer		data/bgs/moon_bridge/back_forest_1.gif -11000 0.5 0.5 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/moon_bridge/back_forest_2.gif -12000 0.6 0.6 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/moon_bridge/back_bridge.gif -13000 0.8 0.8 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/moon_bridge/sky_night_2.gif -14000 0.9 0.9 0 0 0 0 -1 1 1 0 0 0 0 0 1
+order           a
+settime	        0
+notime		1
+spawn1          81 0 240
+spawn2          40 0 240
+direction	both
+type		0 0 0
+cameratype 1
+
+Wall  0  217  0  0  38  28  10  999
+Hole  377  248  0  0  60  60  35
+Hole  532  248  0  0  60  60  35
+Hole  696  248  0  0  70  70  35
+Hole  1125  248  0  0  115  115  35
+Hole  1280  248  0  0  88  88  35
+Hole  1470  248  0  0  110  110  35
+Hole  2580  248  0  0  120  120  35
+Hole  2740  248  0  0  92  92  35
+Hole  2863  248  0  0  95  95  35
+Hole  2997  248  0  0  175  175  35
+Hole  3208  248  0  0  92  92  35
+Hole  3336  248  0  0  92  92  35
+Hole  3463  248  0  0  96  96  35
+Hole  3592  248  0  0  146  146  35
+Hole  3770  248  0  0  110  110  35
+Hole  4485  248  0  0  94  94  35
+Hole  4610  248  0  0  94  94  35
+Hole  4740  248  0  0  162  162  35
+Hole  4932  248  0  0  94  94  35
+Hole  5060  248  0  0  94  94  35
+Hole  5188  248  0  0  94  94  35
+Hole  5316  248  0  0  94  94  35
+Hole  5444  248  0  0  94  94  35
+Hole  5572  248  0  0  94  94  35
+Hole  5700  248  0  0  94  94  35
+Hole  5828  248  0  0  172  172  35
+Hole  6035  248  0  0  94  94  35
+Hole  6163  248  0  0  94  94  35
+Hole  6290  248  0  0  97  97  35
+Hole  6418  248  0  0  203  203  35
+Hole  6652  248  0  0  303  303  35
+Hole  6987  248  0  0  212  212  35
+
+spawn  Moon
+coords  460  10
+at  0
+
+spawn  Banister_5
+coords  17  216  0
+flip  1
+at  0
+
+spawn  Banister_2
+coords  148  216  0
+flip  1
+at  0
+
+spawn  Bridge_platform_2
+coords  483  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Banister_1
+coords  439  216  19
+flip  1
+at  0
+
+spawn  Banister_4
+coords  874  216  12
+flip  1
+at  0
+
+spawn  Bridge_platform_1
+coords  912  216  152
+flip  1
+at  0
+
+spawn  Hidden_8
+coords  912  216  152
+flip  1
+at  0
+
+spawn  Bridge_platform_4
+coords  947  216
+alias	Thick
+flip  1
+at  0
+
+spawn  Banister_2
+coords  954  216  12
+flip  1
+at  0
+
+spawn  Bridge_platform_5
+coords  1246  216
+alias	Thick
+flip  1
+at  0
+
+spawn  Banister_1
+coords  1411  216  1
+flip  1
+at  0
+
+spawn  Banister_2
+coords  1594  216  1
+flip  1
+at  0
+
+spawn  Bridge_platform_1
+coords  1725  216  73
+flip  1
+at  0
+
+spawn  Banister_2
+coords  1826  216
+flip  1
+at  0
+
+spawn  Banister_6
+coords  2133  216  0
+flip  1
+at  0
+
+spawn  Banister_1
+coords  2302  216
+flip  1
+at  0
+
+spawn  Banister_2
+coords  2395  216  0
+flip  1
+at  0
+
+spawn  Bridge_platform_27
+coords  2422  216  111
+flip  1
+at  0
+
+spawn  Bridge_platform_8
+coords  2704  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Banister_1
+coords  2897  216  39
+flip  1
+at  0
+
+spawn  Bridge_platform_9
+coords  2916  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Bridge_platform_10
+coords  3174  216  30
+alias	Thick
+flip  1
+at  0
+
+spawn  Banister_1
+coords  3178  216  78
+flip  1
+at  0
+
+spawn  Bridge_platform_11
+coords  3366  216  30
+alias	Thick
+flip  1
+at  0
+
+spawn  Banister_3
+coords  3385  216  78
+flip  1
+at  0
+
+spawn  Bridge_platform_12
+coords  3558  216  30
+alias	Thick
+flip  1
+at  0
+
+spawn  Bridge_platform_13
+coords  3738  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Banister_6
+coords  3903  216  0
+flip  1
+at  0
+
+spawn  Banister_1
+coords  4027  216  0
+flip  1
+at  0
+
+spawn  Front_wall_bridge
+coords  4119  248  0
+flip  1
+at  0
+
+spawn  Banister_2
+coords  4204  216  0
+flip  1
+at  0
+
+spawn  Banister_6
+coords  4635  216  79
+flip  1
+at  0
+
+spawn  Bridge_platform_15
+coords  4642  216  31
+alias	Thick
+flip  1
+at  0
+
+spawn  Banister_6
+coords  4884  216  49
+flip  1
+at  0
+
+spawn  Bridge_platform_16
+coords  5027  216  1
+alias	Thick
+flip  1
+at  0
+
+spawn  Banister_1
+coords  5064  216  49
+flip  1
+at  0
+
+spawn  Banister_3
+coords  5279  216  49
+flip  1
+at  0
+
+spawn  Banister_2
+coords  5427  216  49
+flip  1
+at  0
+
+spawn  Bridge_platform_18
+coords  5539  216  1
+alias	Thick
+flip  1
+at  0
+
+spawn  Banister_6
+coords  5684  216  49
+flip  1
+at  0
+
+spawn  Bridge_platform_19
+coords  6001  216  39
+alias	Thick
+flip  1
+at  0
+
+spawn  Banister_4
+coords  6005  216  87
+flip  1
+at  0
+
+spawn  Banister_3
+coords  6085  216  87
+flip  1
+at  0
+
+spawn  Bridge_platform_20
+coords  6129  216  39
+alias	Thick
+flip  1
+at  0
+
+spawn  Bridge_platform_21
+coords  6257  216  39
+alias	Thick
+flip  1
+at  0
+
+spawn  Banister_4
+coords  6339  216  87
+flip  1
+at  0
+
+spawn  Bridge_platform_22
+coords  6385  216  39
+alias	Thick
+flip  1
+at  0
+
+spawn  Bridge_platform_1
+coords  6635  216  117
+alias	Thick
+flip  1
+at  0
+
+spawn  Bridge_platform_23
+coords  6647  216  70
+alias	Thick
+flip  1
+at  0
+
+spawn  Bridge_platform_26
+coords  6755  216  118
+alias	Thick
+at  0
+
+spawn  Bridge_platform_24
+coords  6968  216  37
+alias	Thick
+flip  1
+at  0
+
+spawn  Bridge_platform_1
+coords  6970  216  84
+alias	Thick
+flip  1
+at  0
+
+spawn  Bridge_platform_1
+coords  7230  216  32
+alias	Thick
+flip  1
+at  0
+
+spawn  Bridge_platform_1
+coords  7390  216  32
+alias	Thick
+flip  1
+at  0
+
+spawn  Bridge_platform_25
+coords  7493  216  1
+alias	Thick
+flip  1
+at  0
+
+spawn  Bridge_platform_1
+coords  7518  216  32
+alias	Thick
+flip  1
+at  0
+
+spawn  Bridge_platform_1
+coords  7646  216  32
+alias	Thick
+flip  1
+at  0
+
+spawn  Bridge_platform_1
+coords  7774  216
+alias	Thick
+flip  1
+at  0
+
+spawn  Bridge_castle_entrance
+coords 8091  249  0
+flip  1
+at  0
+
+spawn	Stage6
+coords  160 240  0
+flip    1
+at      0
+
+spawn  Brazier1
+coords  215  216  0
+item  ___10
+at  0
+
+spawn  Brazier1
+coords  340  216  0
+item	Bumeran
+map	1
+at  5
+
+spawn  BatSpawner
+coords  0  70
+at  50
+
+spawn  Gargola_rock
+coords  360  216  21
+item Gargola
+at  129
+
+spawn  Brazier1
+coords  340  216  0
+item  ___10
+at  323
+
+spawn  Gargola_rock
+coords  360  216  14
+item Gargola
+at  468
+
+spawn  Cuervo
+coords  340  216  171
+at  550
+
+spawn  Brazier1
+coords  340  216  14
+item  ___10
+at  558
+
+spawn  Cuervo
+coords  340  216  43
+at  640
+
+spawn  T._de_huesos
+coords  340  216  43
+at  640
+
+spawn  T._de_huesos
+coords  340  216  13
+at  640
+
+spawn  Brazier1
+coords  340  216  14
+item  ___20
+at  687
+
+spawn  Ente_Helado
+coords  340  216  100
+at  1080
+
+spawn  Brazier1
+coords  340  216
+item  ___10
+at  1094
+
+spawn  T._de_huesos
+coords  340  216  32
+at  1330
+
+spawn  T._de_huesos
+coords  340  216
+at  1330
+
+spawn  Chiroptera_
+coords  360  216  30
+at  1360
+
+spawn  Brazier1
+coords  341  216  0
+item  Gema_azul
+at  1434
+
+Blockade  1590
+at  1590
+
+spawn  Brazier1
+coords  340  216
+item  ___20
+at  1690
+
+Blockade  1930
+at  1880
+Wait
+at  1930
+
+spawn	M._maligna
+coords	160 216 300
+at	1930
+
+spawn  Brazier1
+coords  340  216
+item	Bomba
+map	1
+at  1947
+
+spawn  BatSpawner
+coords  0  70
+at  1950
+
+spawn  Bridge_platform_break
+coords  340  216  111
+item	Pollo_frito
+flip 1
+at  2050
+
+spawn  Ente_Helado
+coords  340  216  50
+at  2180
+
+spawn  Brazier1
+coords  340  216
+item  Gema_roja
+at  2203
+
+spawn  Gargola_rock
+coords  340  216  41
+item Gargola
+at  2374
+
+Blockade  2390
+at  2390
+
+spawn  Fall_bridge
+coords  340  216  7
+alias	Thick
+at  2444
+
+spawn  Brazier1
+coords  339  216  40
+item  ___10
+at  2573
+
+spawn  Gargola_rock
+coords  340  216  41
+item Gargola
+at  2644
+
+spawn  Brazier1
+coords  340  216  78
+item  ___10
+at  2850
+
+spawn  Fall_bridge
+coords  360  216  46
+alias	Thick
+at  2894
+
+spawn  Gargola_rock
+coords  340  216  80
+item Gargola
+at  2976
+
+spawn  Cuervo
+coords  340  216  108
+at  3060
+
+spawn  Brazier1
+coords  340  216  78
+item  ___10
+at  3105
+
+spawn  Fall_bridge_b
+coords  360  216  46
+alias	Thick
+at  3150
+
+spawn  Brazier1
+coords  340  216  78
+item  ___10
+at  3234
+
+spawn  Ente_Helado
+coords  340  216  100
+at  3375
+
+spawn  Gargola_rock
+coords  340  216  49
+item Gargola
+at  3417
+
+Blockade  3420
+at  3420
+
+spawn  Brazier1
+coords  340  216
+item  ___10
+at  3605
+
+spawn  Brazier1
+coords  340  216
+item  ___10
+at  3740
+
+spawn  Cuervo
+coords  340  221  88
+at  3747
+
+spawn  Brazier1
+coords  340  216
+item  ___10
+at  3855
+
+spawn  P._Asesino
+coords  340  216
+at  3920
+
+spawn  BatSpawner
+coords  0  70
+at  4000
+
+Blockade  4090
+at  4090
+
+spawn  Brazier1
+coords  340  216
+item  ___10
+at  4100
+
+spawn  P._Asesino
+coords  340  216  82
+at  4350
+
+spawn  Brazier1
+coords  340  216  80
+item  ___10
+at  4380
+
+spawn  Brazier1
+coords  340  216  50
+item  ___10
+at  4575
+
+spawn  P._Asesino
+coords  380  216  50
+at  4620
+
+spawn  Ente_Helado
+coords  340  216  110
+at  4620
+
+spawn  Brazier1
+coords  340  216  50
+item  ___10
+at  4703
+
+spawn  Brazier1
+coords  340  216  50
+item  Hacha
+map 1
+at  4830
+
+spawn  Fall_bridge
+coords  360  216  17
+alias	Thick
+at  4875
+
+spawn  Brazier1
+coords  340  216  50
+item  ___10
+at  4960
+
+Blockade  5080
+at  5030
+wait
+at	5080
+
+spawn	M._maligna
+coords	160 216 320
+at	5080
+
+spawn  Brazier1
+coords  340  216  50
+item  ___10
+at  5088
+
+spawn  P._Asesino
+coords  340  216  50
+at  5090
+
+spawn  Brazier1
+coords  340  216  50
+item  ___10
+at  5215
+
+spawn  T._de_huesos
+coords  340  216  50
+at  5300
+
+spawn  T._de_huesos
+coords  340  216  80
+at  5300
+
+spawn  T._de_huesos
+coords  340  216  110
+at  5300
+
+spawn  Brazier1
+coords  340  216  50
+item  ___10
+at  5340
+
+spawn  P._Asesino
+coords  380  216  50
+at  5380
+
+spawn  Brazier1
+coords  340  216  50
+item  ___10
+at  5470
+
+spawn  Brazier1
+coords  340  216  87
+item  ___10
+at  5677
+
+Blockade  5700
+at  5700
+
+spawn  Fall_bridge_d
+coords  360  216  55
+alias	Thick
+at  5721
+
+spawn  Gargola_rock
+coords  340  216  89
+at  5793
+
+spawn  Brazier1
+coords  340  216  87
+item  ___10
+at  5804
+
+spawn  Fall_bridge_b
+coords  360  216  55
+alias	Thick
+at  5850
+
+spawn  Brazier1
+coords  340  216  87
+item  ___10
+at  5932
+
+spawn  Gargola_rock
+coords  340  216  89
+item Gargola
+at  5949
+
+spawn  Fall_bridge_c
+coords  360  216  55
+alias	Thick
+at  5977
+
+spawn  Brazier1
+coords  340  216  87
+item  ___10
+at  6061
+
+spawn  Brazier1
+coords  340  216  134
+item  ___10
+at  6295
+
+spawn  P._Asesino
+coords  340  216  118
+at  6350
+
+Blockade  6540
+at  6540
+
+spawn  Ente_Helado
+coords  340  216  150
+at  6550
+
+spawn	Brazier1
+coords  340  216  101
+item  P._Invisible
+at	6630
+
+spawn  Cuervo
+coords  340  216  86
+at  6700
+
+spawn  T._de_huesos_
+coords  340  216  138
+at  6890
+
+spawn  T._de_huesos_
+coords  340  216  108
+at  6890
+
+spawn  T._de_huesos
+coords  340  216  78
+at  6890
+
+spawn  T._de_huesos
+coords  340  216  49
+at  6890
+
+spawn  Brazier1
+coords  340  216  35
+item  ___100
+at  6970
+
+spawn  T._de_huesos_
+coords  340  216  108
+at  7050
+
+spawn  T._de_huesos
+coords  340  216  78
+at  7050
+
+spawn  T._de_huesos_
+coords  340  216  49
+at  7050
+
+spawn  Brazier1
+coords  340  216  35
+item  ___10
+at  7116
+
+spawn  T._de_huesos_
+coords  340  216  78
+at  7175
+
+spawn  T._de_huesos
+coords  340  216  49
+at  7175
+
+Blockade  7200
+at  7200
+
+spawn  Brazier1
+coords  340  216  35
+item  ___10
+at  7242
+
+spawn  T._de_huesos
+coords  340  216  49
+at  7305
+
+spawn  Brazier1
+coords  340  216  35
+item  ___10
+at  7370
+
+spawn  Brazier1
+coords  340  216
+item  ___10
+at  7500
+
+spawn  Ente_Helado
+coords  340  216  100
+at  7500
+
+spawn  Ente_Helado
+coords  360  216  50
+at  7530
+
+spawn  P._Asesino
+coords  -100  216  34
+at  7800
+
+spawn  P._Asesino
+coords  340  216
+at  7800
+
+spawn  ToShop
+coords  360  216
+flip  1
+at  7830

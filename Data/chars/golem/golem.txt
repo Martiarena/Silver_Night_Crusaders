@@ -1,0 +1,174 @@
+name	Golem
+health          100
+speed           0
+type    	enemy
+noquake  	1
+nopain  	1
+nodrop  	2
+death   	1
+nodieblink	2
+hostile         player npc
+candamage 	player npc
+offscreenkill 	500
+score 1000 -1
+nomove 	1 0
+cantgrab 	1
+nodrop 	2
+falldie 	1
+score	 	1000 -1
+
+defense normal4 2 0 0 0 0 0 0
+defense normal7 2 0 0 0 0 0 0
+
+diesound  data/sounds/chest.wav
+
+icon		data/chars/misc/bgmonster.gif
+load            DRose
+load            DHiedra
+
+palette          data/chars/golem/golem_palette.gif
+alternatepal     data/chars/golem/blink_palette.gif
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack
+	range	0 118
+	loop	0
+	offset	60 104
+	bbox	44 30 30 75
+	attack	44 30 30 75 19 0 1 0 0 0
+	delay	48
+	frame	data/chars/golem/attack1a.gif
+	delay	14
+	frame	data/chars/golem/attack1b.gif
+	frame	data/chars/golem/attack1c.gif
+	delay	13
+	frame	data/chars/golem/attack1d.gif
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/golem/attack1d.gif
+	delay	7
+	bbox	50 61 52 43
+	attack	73 43 65 62 19 11 1 0 0 0
+	sound	data/sounds/rock_break2.wav
+	frame	data/chars/golem/attack1e.gif
+	@cmd	tosserM "Rock1B" 63 34 0 3
+	@cmd	tosserM "Rock2B" 60 26 0 2
+	@cmd	tosserM "Rock3B" 63 25 0.8 2
+	@cmd	tosserM "Rock1B" 52 27 -0.8 2
+	@cmd	tosserM "Rock1B" 60 12 0.8 1.5
+	@cmd	tosserM "Rock1B" 48 14 -0.8 1.5
+	burn	73 43 65 62 50 11 1 0 0 0
+	frame	data/chars/golem/attack1f.gif
+	burn	74 40 75 65 25 11 1 0 0 0
+	frame	data/chars/golem/attack1g.gif
+	burn	105 7 35 98 50 11 1 0 0 0
+	frame	data/chars/golem/attack1j.gif
+	delay	6
+	burn	73 55 105 50 25 11 1 0 0 0
+	frame	data/chars/golem/attack1l.gif
+	delay	1
+	burn	0 0 0 0
+	frame	data/chars/golem/attack1l.gif
+	attack	50 61 79 43 19 11 1 0 0 0
+	frame	data/chars/golem/attack1m.gif
+	delay	1
+	burn	0 0 0 0
+	frame	data/chars/golem/attack1n.gif
+	delay	42
+	attack	50 61 52 44 19 0 1 0 0 0
+	frame	data/chars/golem/attack1n.gif
+	delay	14
+	bbox	44 30 30 75
+	attack	44 30 30 75 19 0 1 0 0 0
+	frame	data/chars/golem/attack1a.gif
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/golem/attack1a.gif
+		
+anim	death
+	loop	0
+	offset	60 104
+	delay	14
+	frame	data/chars/golem/death1a.gif
+	frame	data/chars/golem/death1b.gif
+	frame	data/chars/golem/death1c.gif
+	frame	data/chars/golem/death1d.gif
+	frame	data/chars/golem/death1e.gif
+	frame	data/chars/golem/death1f.gif
+	delay	6
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/golem/death1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/golem/death1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/golem/death1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/golem/death1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/golem/death1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/golem/death1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/golem/death1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/golem/death1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/golem/death1f.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	offset	60 104
+	bbox	44 30 30 75
+	attack	44 30 30 75 19 0 1 0 0 0
+	delay	14
+	frame	data/chars/golem/idle1.gif
+	frame	data/chars/golem/idle1b.gif
+	delay	13
+	frame	data/chars/golem/idle1c.gif
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/golem/idle1c.gif
+		
+anim	spawn
+	loop	0
+	offset	60 104
+	bbox	44 30 30 75
+	attack	44 30 30 75 19 0 1 0 0 0
+	delay	1
+	frame	data/chars/golem/idle1.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,38 @@
+name		ECross
+type		none
+candamage	player npc shot
+speed  15
+lifespan	10
+remove		0
+subject_to_platform 0
+
+palette		data/chars/skeleton/Skeleton_hunter_palette.gif
+
+
+
+
+anim	idle
+@script
+    void self = getlocalvar("self"); //Get calling entity
+    int Vx = getentityproperty(self, "speed");
+
+    if(frame==3){
+      changeentityproperty(self, "speed", Vx-0.125);
+
+    }
+	@end_script	
+	loop	1
+	delay	3
+	offset	13 13
+	attack	2 2 22 22 19 0 0 0 0 0
+	frame	data/chars/skeleton/skullcross/cross1a.gif
+	frame	data/chars/skeleton/skullcross/cross1b.gif
+	frame	data/chars/skeleton/skullcross/cross1c.gif
+	delay	2
+	frame	data/chars/skeleton/skullcross/cross1d.gif
+	attack	0
+	delay	1
+	frame	data/chars/skeleton/skullcross/cross1d.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,240 @@
+name	    	Arana
+health          3
+nomove   	1 1
+type		enemy
+falldie 	1
+cantgrab 	1
+nopain  	1
+nodrop  	2
+score   	300 1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+antigravity     100
+offscreenkill  160
+hostile         player npc
+candamage 	player npc
+
+
+icon 		data/chars/misc/bgmonster.gif
+
+palette          data/chars/spider/spider_palette.gif
+alternatepal     data/chars/spider/spider_blink_palette.gif
+
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+load    	 BFBall
+load             edie
+
+
+
+
+
+
+
+
+anim	death
+	delay	7
+	offset	13 263
+	subentity	edie
+	spawnframe	0 6 0 20 0
+	@cmd	stop
+	frame	data/chars/spider/death1a.gif
+	frame	data/chars/spider/death1b.gif
+	frame	data/chars/spider/death1c.gif
+	delay	14
+	frame	data/chars/spider/death1d.gif
+	delay	7
+	frame	data/chars/spider/death1e.gif
+	frame	data/chars/spider/death1f.gif
+	frame	data/chars/spider/death1g.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	fall
+	delay	14
+	offset	13 263
+	frame	data/chars/spider/idle1a.gif
+	delay	13
+	frame	data/chars/spider/idle1b.gif
+	delay	1
+	frame	data/chars/spider/idle1b.gif
+		
+anim	follow1
+@script
+       void self = getlocalvar("self");
+       int r = rand()%30;
+
+    if( frame == 0){
+      if( r > 0){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      }
+    }
+	@end_script	
+	delay	1
+	offset	13 263
+	bbox	6 238 15 22
+	attack	6 238 15 22 9 0 0 0 0 0
+	frame	data/chars/spider/idle1a.gif
+	delay	14
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	@cmd	beidle
+	frame	data/chars/spider/idle1b.gif
+		
+anim	follow2
+@script
+    void self = getlocalvar("self");
+    int r = rand()%30;
+
+    if( frame == 0){
+      if( r > 0){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      }
+    }
+	@end_script	
+	delay	1
+	offset	13 263
+	bbox	6 238 15 22
+	attack	6 238 15 22 9 0 0 0 0 0
+	frame	data/chars/spider/idle1a.gif
+	delay	14
+	@cmd	dasher 0 1 0 0
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	@cmd	dasher 0 -1 0 0
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	@cmd	dasher 0 1 0 0
+	@cmd	target 1 1 0 0 0 0
+	@cmd	shoot2 "BFBall" 0 25
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	@cmd	dasher 0 -1 0 0
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	@cmd	stop
+	@cmd	beidle
+	frame	data/chars/spider/idle1b.gif
+		
+anim	follow3
+	delay	1
+	offset	13 263
+	bbox	6 238 15 22
+	attack	6 238 15 22 9 0 0 0 0 0
+	frame	data/chars/spider/idle1a.gif
+	delay	14
+	@cmd	dasher 0 -1 0 0
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	@cmd	target 1 1 0 0 0 0
+	@cmd	shoot2 "BFBall" 0 25
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	@cmd	dasher 0 1 0 0
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	@cmd	dasher 0 -1 0 0
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	@cmd	dasher 0 1 0 0
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	@cmd	stop
+	@cmd	beidle
+	frame	data/chars/spider/idle1b.gif
+		
+anim	idle
+	loop	1
+	delay	14
+	offset	13 263
+	bbox	6 238 15 22
+	attack	6 238 15 22 9 0 0 0 0 0
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle1a.gif
+	delay	13
+	frame	data/chars/spider/idle1b.gif
+	delay	1
+	attack	0 0 0 0 0
+	@cmd	attack0 "ANI_FOLLOW1"
+	frame	data/chars/spider/idle1b.gif
+		
+anim	pain
+	delay	14
+	offset	13 263
+	frame	data/chars/spider/idle1a.gif
+	delay	13
+	frame	data/chars/spider/idle1b.gif
+	delay	1
+	frame	data/chars/spider/idle1b.gif
+		
+anim	spawn
+	delay	14
+	offset	13 263
+	frame	data/chars/spider/idle1a.gif
+	delay	13
+	frame	data/chars/spider/idle1b.gif
+	delay	1
+	frame	data/chars/spider/idle1b.gif
+		
+anim	walk
+	loop	1
+	delay	14
+	offset	13 263
+	frame	data/chars/spider/idle1a.gif
+	delay	13
+	frame	data/chars/spider/idle1b.gif
+	delay	1
+	frame	data/chars/spider/idle1b.gif
+		
+#|edited by openBor Stats v 0.67
+		

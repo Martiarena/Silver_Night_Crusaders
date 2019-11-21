@@ -1,0 +1,198 @@
+name    	T._de_huesos_
+health  	27
+nomove  	1 1
+score   300 -1
+type		enemy
+cantgrab 	1
+nodrop  	2
+falldie 	1
+nodieblink 	2
+nopain  	1
+nodrop  	2
+setlayer        10
+offscreenkill	500
+diesound        data/sounds/chest.wav
+icon		data/chars/misc/bgmonster.gif
+load     	fb01_e
+load    	bpflame
+
+defense normal4 2 0 0 0 0 0 0
+
+palette         data/chars/bonetower/bonetower_palette.gif
+alternatepal    data/chars/bonetower/bonetower_blink.gif
+
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+
+
+
+
+
+
+
+
+anim	death
+	loop	0
+	subentity	sdie
+	spawnframe	0 0 0 0 0
+	delay	7
+	offset	20 31
+	frame	data/chars/bonetower/death1a.gif
+	frame	data/chars/bonetower/death1b.gif
+	frame	data/chars/bonetower/death1c.gif
+	frame	data/chars/bonetower/death1d.gif
+	frame	data/chars/bonetower/death1e.gif
+	frame	data/chars/bonetower/death1f.gif
+	frame	data/chars/bonetower/death1g.gif
+	frame	data/chars/bonetower/death1h.gif
+	frame	data/chars/bonetower/death1i.gif
+	frame	data/chars/bonetower/death1j.gif
+	frame	data/chars/bonetower/death1k.gif
+	frame	data/chars/bonetower/death1l.gif
+	frame	data/chars/bonetower/death1m.gif
+	frame	data/chars/bonetower/death1n.gif
+	frame	data/chars/bonetower/death1o.gif
+	frame	data/chars/bonetower/death1p.gif
+	frame	data/chars/bonetower/death1q.gif
+	frame	data/chars/bonetower/death1r.gif
+	frame	data/chars/bonetower/death1s.gif
+	frame	data/chars/bonetower/death1t.gif
+	frame	data/chars/bonetower/death1u.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	delay	1
+	offset	20 31
+	bbox	14 6 25 20
+	attack	8 6 33 25 3 0 1 0 0 0
+	platform	10 31 -8 0 32 25 10 28
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	delay	5
+	frame	data/chars/bonetower/attack1a.gif
+	delay	10
+	frame	data/chars/bonetower/attack1b.gif
+	frame	data/chars/bonetower/attack1c.gif
+	delay	50
+	@cmd	shooter2 "bpflame" 11 12 0 0
+	frame	data/chars/bonetower/attack1d.gif
+	delay	15
+	frame	data/chars/bonetower/turn1.gif
+	@cmd	flip
+	attack	0 0 0 0
+	frame	data/chars/bonetower/turn2.gif
+	@cmd	beidle
+	frame	data/chars/bonetower/turn2.gif
+		
+anim	idle
+	loop	1
+	delay	175
+	offset	20 31
+	bbox	14 6 25 20
+	attack	8 6 33 25 3 0 1 0 0 0
+	platform	10 31 -8 0 32 25 10 28
+	frame	data/chars/bonetower/idle.gif
+	delay	25
+	@cmd	attack1 0 65 0 30 "ANI_FOLLOW1"
+	frame	data/chars/bonetower/idle.gif
+	delay	1
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idleb.gif
+	delay	5
+	frame	data/chars/bonetower/attack1a.gif
+	delay	10
+	frame	data/chars/bonetower/attack1b.gif
+	frame	data/chars/bonetower/attack1c.gif
+	delay	50
+	@cmd	shoot "fb01_e" 10 10 0
+	frame	data/chars/bonetower/attack1d.gif
+	delay	15
+	attack	0 0 0 0
+	frame	data/chars/bonetower/turn1.gif
+	@cmd	flip
+	frame	data/chars/bonetower/turn2.gif
+		
+anim	pain
+	delay	2
+	offset	20 31
+	bbox	14 6 25 20
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/pain.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/pain.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/pain.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/idle.gif
+	frame	data/chars/bonetower/pain.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	20 31
+	bbox	14 6 25 20
+	attack	8 6 33 25 3 0 1 0 0 0
+	platform	10 31 -8 0 32 25 10 28
+	frame	data/chars/bonetower/idle.gif
+		
+#|edited by openBor Stats v 0.67
+		

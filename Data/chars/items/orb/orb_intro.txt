@@ -1,0 +1,64 @@
+name    	Orbe_intro
+type    	item
+facing          1
+nolife	1
+antigravity	100
+candamage  	player
+animationscript	data/scripts/escript.c
+palette		data/chars/items/orb/idle1.gif
+load Orbe
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	1
+	offset	8 16
+	bbox	0 0 16 16
+	subentity	Orbe
+	spawnframe	1 0 0 0 0
+	frame	data/chars/items/orb/idle1.gif
+	@cmd	suicide
+	frame	data/chars/items/orb/idle1.gif
+		
+anim	spawn
+	loop	0
+	delay	7
+	offset	8 16
+	frame	data/chars/items/orb/spawn1.gif
+	frame	data/chars/items/orb/spawn2.gif
+	frame	data/chars/items/orb/spawn3.gif
+	frame	data/chars/items/orb/spawn4.gif
+	frame	data/chars/items/orb/spawn5.gif
+	frame	data/chars/items/orb/spawn6.gif
+	frame	data/chars/items/orb/spawn7.gif
+	frame	data/chars/items/orb/spawn8.gif
+	frame	data/chars/items/orb/spawn9.gif
+	frame	data/chars/items/orb/spawn10.gif
+	frame	data/chars/items/orb/spawn11.gif
+	frame	data/chars/items/orb/spawn12.gif
+	frame	data/chars/items/orb/spawn13.gif
+	frame	data/chars/items/orb/spawn14.gif
+	frame	data/chars/items/orb/spawn15.gif
+	frame	data/chars/items/orb/spawn16.gif
+	frame	data/chars/items/orb/spawn17.gif
+	frame	data/chars/items/orb/spawn18.gif
+	frame	data/chars/items/orb/spawn19.gif
+	frame	data/chars/items/orb/spawn20.gif
+	frame	data/chars/items/orb/spawn21.gif
+	frame	data/chars/items/orb/spawn22.gif
+	frame	data/chars/items/orb/spawn23.gif
+	frame	data/chars/items/orb/spawn24.gif
+	frame	data/chars/items/orb/spawn25.gif
+	frame	data/chars/items/orb/spawn26.gif
+	frame	data/chars/items/orb/spawn27.gif
+	frame	data/chars/items/orb/spawn28.gif
+	frame	data/chars/items/orb/spawn29.gif
+	frame	data/chars/items/orb/spawn30.gif
+		
+#|edited by openBor Stats v 0.67
+		

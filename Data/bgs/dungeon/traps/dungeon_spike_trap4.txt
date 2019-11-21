@@ -1,0 +1,44 @@
+name    Dungeon_spike_trap4
+type trap
+shadow  0
+nolife 1
+nomove 1 1
+setlayer 0
+offscreenkill   9999
+
+hostile player npc obstacle
+candamage player npc obstacle
+
+palette		data/bgs/dungeon/dungeon_misc.gif
+
+
+
+
+
+
+
+
+anim	attack
+	loop	1
+	delay	7
+	offset	128 17
+	hitfx	data/sounds/slash.wav
+	attack2	0 5 256 12 19 1 1 1 0 0
+	frame	data/bgs/dungeon/traps/spikes4.gif
+	delay	1
+	attack2	0 0 0 0
+	frame	data/bgs/dungeon/traps/spikes4.gif
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	128 17
+	hitfx	data/sounds/slash.wav
+	attack2	0 5 256 12 19 1 1 1 0 0
+	frame	data/bgs/dungeon/traps/spikes4.gif
+	delay	1
+	attack2	0 0 0 0
+	frame	data/bgs/dungeon/traps/spikes4.gif
+		
+#|edited by openBor Stats v 0.67
+		

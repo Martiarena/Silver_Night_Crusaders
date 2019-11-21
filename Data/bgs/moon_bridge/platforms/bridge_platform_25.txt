@@ -1,0 +1,22 @@
+name  		Bridge_platform_25
+type		none
+facing	  	1
+setlayer -1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/moon_bridge/bridge_palette.gif
+
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	296 48
+	platform	0 48 -8 -8 553 553 10 32
+	frame	data/bgs/moon_bridge/platforms/bridge_platform_25.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,16 @@
+name    	Heartm
+type    	none
+lifespan  	1
+antigravity     80
+
+palette		data/chars/ninfa/ninfa_palette.gif
+
+anim	idle
+	delay	7
+	offset	8 8
+	frame	data/chars/ninfa/spells/heartm1b.gif
+	frame	data/chars/ninfa/spells/heartm1b.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,63 @@
+name	Heart_n
+type	none
+candamage player npc
+speed 6
+offscreenkill	50
+remove          1
+load		Heartm
+animationscript data/scripts/cscript.c
+
+palette		data/chars/ninfa/ninfa_palette.gif
+
+
+
+anim	death
+	loop	0
+	delay	4
+	offset	134 118
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	4 4
+	noreflect	1
+	hitfx	data/sounds/no-hit.wav
+	DOT	1 30 3 2 5
+	attack20	0 0 7 7 0 0 0 0 0 0
+	frame	data/chars/ninfa/spells/heartm1a.gif
+	@cmd	spawn01 "Heartm" 2 -5 0
+	frame	data/chars/ninfa/spells/heartm1a.gif
+	offset	4 6
+	frame	data/chars/ninfa/spells/heartm1a.gif
+	@cmd	spawn01 "Heartm" 2 -5 0
+	frame	data/chars/ninfa/spells/heartm1a.gif
+	offset	4 4
+	frame	data/chars/ninfa/spells/heartm1a.gif
+	@cmd	spawn01 "Heartm" 2 -5 0
+	frame	data/chars/ninfa/spells/heartm1a.gif
+	offset	4 2
+	frame	data/chars/ninfa/spells/heartm1a.gif
+	@cmd	spawn01 "Heartm" 2 -5 0
+	frame	data/chars/ninfa/spells/heartm1a.gif
+	offset	4 4
+	frame	data/chars/ninfa/spells/heartm1a.gif
+	@cmd	spawn01 "Heartm" 2 -5 0
+	frame	data/chars/ninfa/spells/heartm1a.gif
+	offset	4 6
+	frame	data/chars/ninfa/spells/heartm1a.gif
+	@cmd	spawn01 "Heartm" 2 -5 0
+	frame	data/chars/ninfa/spells/heartm1a.gif
+	offset	4 4
+	frame	data/chars/ninfa/spells/heartm1a.gif
+	@cmd	spawn01 "Heartm" 2 -5 0
+	frame	data/chars/ninfa/spells/heartm1a.gif
+	offset	4 6
+	delay	6
+	frame	data/chars/ninfa/spells/heartm1a.gif
+	delay	1
+	attack20	0
+	frame	data/chars/ninfa/spells/heartm1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

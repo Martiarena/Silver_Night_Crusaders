@@ -1,0 +1,18 @@
+name  		Platform_bridge10
+type		none
+facing	  	1
+setlayer	-1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/underground/palette_object.gif
+
+
+anim	idle
+	delay	100
+	offset	13 16
+	platform	0 16 -8 -8 40 40 10 16
+	frame	data/bgs/underground/platforms/platform_bridge10.gif
+		
+#|edited by openBor Stats v 0.67
+		

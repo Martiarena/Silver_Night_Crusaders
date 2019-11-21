@@ -1,0 +1,115 @@
+name	axe1
+health	1
+nolife  1
+type	npc
+subtype project
+hostile enemy obstacle
+candamage enemy obstacle
+speed   8
+noquake 1
+falldie 1
+subtype flydie
+remove 0
+shadow 0
+weaploss 2
+
+palette data/chars/misc/weap/weap.gif#1
+
+anim idle
+	loop	0
+	offset     160 130
+	bbox    0 0 0 0
+	attack    165 83 36 36 25
+	delay	2
+	sound   data/chars/misc/weap/axe1.wav
+	frame	data/chars/misc/weap/weap201.gif
+	frame	data/chars/misc/weap/weap202.gif
+	frame	data/chars/misc/weap/weap203.gif
+	frame	data/chars/misc/weap/weap204.gif
+	frame	data/chars/misc/weap/weap205.gif
+	frame	data/chars/misc/weap/weap206.gif
+	frame	data/chars/misc/weap/weap207.gif
+	frame	data/chars/misc/weap/weap208.gif
+
+	sound   data/chars/misc/weap/axe1.wav
+	frame	data/chars/misc/weap/weap201.gif
+	frame	data/chars/misc/weap/weap202.gif
+	frame	data/chars/misc/weap/weap203.gif
+	frame	data/chars/misc/weap/weap204.gif
+	frame	data/chars/misc/weap/weap205.gif
+	frame	data/chars/misc/weap/weap206.gif
+	frame	data/chars/misc/weap/weap207.gif
+	frame	data/chars/misc/weap/weap208.gif
+
+	sound   data/chars/misc/weap/axe1.wav
+	frame	data/chars/misc/weap/weap201.gif
+	frame	data/chars/misc/weap/weap202.gif
+	frame	data/chars/misc/weap/weap203.gif
+	frame	data/chars/misc/weap/weap204.gif
+	frame	data/chars/misc/weap/weap205.gif
+	frame	data/chars/misc/weap/weap206.gif
+	frame	data/chars/misc/weap/weap207.gif
+	frame	data/chars/misc/weap/weap208.gif
+
+	sound   data/chars/misc/weap/axe1.wav
+	frame	data/chars/misc/weap/weap201.gif
+	frame	data/chars/misc/weap/weap202.gif
+	frame	data/chars/misc/weap/weap203.gif
+	frame	data/chars/misc/weap/weap204.gif
+	frame	data/chars/misc/weap/weap205.gif
+	frame	data/chars/misc/weap/weap206.gif
+	frame	data/chars/misc/weap/weap207.gif
+	frame	data/chars/misc/weap/weap208.gif
+
+	sound   data/chars/misc/weap/axe1.wav
+	frame	data/chars/misc/weap/weap201.gif
+	frame	data/chars/misc/weap/weap202.gif
+	frame	data/chars/misc/weap/weap203.gif
+	frame	data/chars/misc/weap/weap204.gif
+	frame	data/chars/misc/weap/weap205.gif
+	frame	data/chars/misc/weap/weap206.gif
+	frame	data/chars/misc/weap/weap207.gif
+	frame	data/chars/misc/weap/weap208.gif
+
+	delay	2
+	sound   data/chars/misc/weap/axe1.wav
+	frame	data/chars/misc/weap/weap201.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/weap/weap203.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/weap/weap205.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/weap/weap207.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/weap/weap201.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/weap/weap203.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/weap/weap205.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/weap/weap207.gif
+	attack    0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	6
+	offset	160 74
+	frame	data/chars/misc/empty.gif
+
+anim attack2
+	loop	0
+	delay	6
+	offset	160 74
+	frame	data/chars/misc/empty.gif
+
+anim attack3
+	loop	0
+	delay	6
+	offset	160 74
+	frame	data/chars/misc/empty.gif
+
+

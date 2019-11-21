@@ -1,0 +1,262 @@
+name    	Ninfa
+health          19
+mp              10
+speed           8
+type    	enemy
+noquake  	1
+nopain          1
+nodrop  	2
+death   	1
+nodieblink      3
+offscreenkill 	500
+score 		300 -1
+subject_to_gravity 1
+hostile  player npc
+candamage player npc
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+
+load		heart_n
+load            Blooda
+load		magicseal
+
+
+diesound         data/sounds/die3.wav
+icon 		data/chars/misc/bgmonster.gif
+
+palette 	data/chars/ninfa/ninfa_palette.gif
+alternatepal	data/chars/ninfa/ninfa_blink_palette.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	range	0 100
+	rangea	0 0
+	delay	1
+	offset	62 53
+	bbox	47 5 13 46
+	attack	47 5 13 46 12 0 0 0 0 0
+	move	-1
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1b.gif
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1b.gif
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1b.gif
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1b.gif
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1b.gif
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1b.gif
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1b.gif
+	delay	7
+	move	0
+	frame	data/chars/ninfa/attack1c.gif
+	frame	data/chars/ninfa/attack1d.gif
+	attack	0 0 0 0 0
+	frame	data/chars/ninfa/attack1e.gif
+	move	3
+	delay	1
+	attack2	55 5 60 26 19 0 0 0 0 0
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	attack2	0 0 0 0
+	frame	data/chars/ninfa/attack1g.gif
+	move	2
+	attack	47 5 13 46 12 0 0 0 0 0
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1g.gif
+	move	1
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1a.gif
+	delay	7
+	move	0
+	attack	0 0 0 0
+	frame	data/chars/ninfa/attack1a.gif
+		
+anim	backwalk
+	loop	1
+	delay	36
+	offset	59 53
+	bbox	48 5 13 46
+	attack	48 5 13 46 12 0 0 0 0 0
+	frame	data/chars/ninfa/backwalk1a.gif
+	offset	59 55
+	frame	data/chars/ninfa/backwalk1a.gif
+	offset	59 53
+	frame	data/chars/ninfa/backwalk1a.gif
+	delay	11
+	offset	59 55
+	frame	data/chars/ninfa/backwalk1a.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0
+	frame	data/chars/ninfa/backwalk1a.gif
+		
+anim	death
+	loop	0
+	delay	30
+	offset	59 53
+	subentity	Blooda
+	spawnframe	0 10 0 50 0
+	frame	data/chars/ninfa/death1a.gif
+	delay	14
+	frame	data/chars/ninfa/death1b.gif
+	frame	data/chars/ninfa/death1c.gif
+	delay	6
+	frame	data/chars/ninfa/death1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/ninfa/death1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/ninfa/death1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/ninfa/death1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/ninfa/death1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/ninfa/death1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/ninfa/death1c.gif
+	delay	1
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	freespecial
+	delay	14
+	offset	59 52
+	range	25 200
+	rangea	0 0
+	bbox	52 5 13 46
+	mpcost	5
+	mponly	1
+	attack	52 5 13 46 12 0 0 0 0 0
+	custknife	heart_n
+	throwframe	3 44
+	frame	data/chars/ninfa/spell1a.gif
+	frame	data/chars/ninfa/spell1b.gif
+	delay	36
+	frame	data/chars/ninfa/spell1c.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0
+	frame	data/chars/ninfa/spell1c.gif
+		
+anim	idle
+	loop	1
+	delay	20
+	offset	59 52
+	bbox	52 5 13 46
+	attack	52 5 13 46 12 0 0 0 0 0
+	frame	data/chars/ninfa/idle1a.gif
+	frame	data/chars/ninfa/idle1b.gif
+	frame	data/chars/ninfa/idle1c.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0
+	frame	data/chars/ninfa/idle1c.gif
+		
+anim	jumpattack
+	loop	0
+	delay	60
+	offset	59 53
+	bbox	67 5 13 46
+	attack	67 5 13 46 12 0 0 0 0 0
+	frame	data/chars/ninfa/walk1a.gif
+	delay	10
+	offset	49 53
+	bbox	47 5 13 46
+	attack	47 5 13 46 12 0 0 0 0 0
+	frame	data/chars/ninfa/backwalk1a.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0
+	frame	data/chars/ninfa/backwalk1a.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	59 51
+	bbox	52 5 13 46
+	attack	52 5 13 46 12 0 0 0 0 0
+	frame	data/chars/ninfa/idle1a.gif
+		
+anim	walk
+	loop	1
+	delay	36
+	offset	59 53
+	bbox	67 5 13 46
+	attack	67 5 13 46 12 0 0 0 0 0
+	frame	data/chars/ninfa/walk1a.gif
+	offset	59 55
+	frame	data/chars/ninfa/walk1a.gif
+	offset	59 53
+	frame	data/chars/ninfa/walk1a.gif
+	delay	35
+	offset	59 55
+	frame	data/chars/ninfa/walk1a.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0
+	frame	data/chars/ninfa/walk1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

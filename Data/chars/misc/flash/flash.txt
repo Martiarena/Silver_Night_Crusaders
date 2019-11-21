@@ -1,0 +1,19 @@
+# Hit flash
+
+name	Flash
+type	none
+shadow	0
+setlayer 1000
+
+palette data/chars/misc/flash/flash01.gif #1
+
+anim idle
+	loop	0
+	delay	3
+	offset	29 24
+	frame	data/chars/misc/flash/FLASH01.gif
+	frame	data/chars/misc/flash/FLASH02.gif
+	frame	data/chars/misc/flash/FLASH03.gif
+	frame	data/chars/misc/flash/FLASH04.gif
+
+

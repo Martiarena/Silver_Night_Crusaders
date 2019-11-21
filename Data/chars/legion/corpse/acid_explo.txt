@@ -1,0 +1,40 @@
+name	Legion_acid_explo
+type	none
+shadow	0
+alpha   1
+antigravity 100
+nolife  1
+candamage   player npc
+
+animationscript  data/scripts/escript.c
+
+palette	data/chars/legion/corpse/acid_palette.gif
+
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	3
+	offset	84 104
+	attack	40 35 90 65 19 0 0 0 0 0
+	frame	data/chars/legion/corpse/acid1a.gif
+	frame	data/chars/legion/corpse/acid1b.gif
+	attack	30 25 110 80 19 0 0 0 0 0
+	frame	data/chars/legion/corpse/acid1c.gif
+	frame	data/chars/legion/corpse/acid1d.gif
+	attack	20 25 130 80 19 0 0 0 0 0
+	frame	data/chars/legion/corpse/acid1e.gif
+	frame	data/chars/legion/corpse/acid1f.gif
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/legion/corpse/acid1g.gif
+	frame	data/chars/legion/corpse/acid1h.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,83 @@
+name    	Legion_part_corpse_1
+type    	none
+nomove		1
+nolife          1
+death		1
+antigravity	50
+offscreenkill	100
+setlayer        200
+noquake 	1
+lifespan	5
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+subject_to_gravity 1
+subject_to_hole	1
+no_adjust_base	0
+animationscript data/scripts/prscript.c
+
+palette 	 data/chars/legion/debris/part_corpse1a.gif
+alternatepal	 data/chars/legion/debris/part_corpse1a.gif
+
+
+
+
+
+
+
+
+
+anim	death
+	delay	7
+	offset	20 20
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	20 20
+	platform	1 1 -1 -1 1 1 1 1
+	@cmd	groundkill
+	frame	data/chars/legion/debris/part_corpse1a.gif
+	@cmd	groundkill
+	frame	data/chars/legion/debris/part_corpse1b.gif
+	@cmd	groundkill
+	frame	data/chars/legion/debris/part_corpse1c.gif
+	@cmd	groundkill
+	frame	data/chars/legion/debris/part_corpse1d.gif
+	@cmd	groundkill
+	frame	data/chars/legion/debris/part_corpse1e.gif
+	@cmd	groundkill
+	frame	data/chars/legion/debris/part_corpse1f.gif
+	@cmd	groundkill
+	frame	data/chars/legion/debris/part_corpse1g.gif
+	@cmd	groundkill
+	frame	data/chars/legion/debris/part_corpse1h.gif
+	@cmd	groundkill
+	frame	data/chars/legion/debris/part_corpse1i.gif
+	@cmd	groundkill
+	frame	data/chars/legion/debris/part_corpse1j.gif
+	@cmd	groundkill
+	frame	data/chars/legion/debris/part_corpse1k.gif
+	@cmd	groundkill
+	frame	data/chars/legion/debris/part_corpse1l.gif
+	@cmd	groundkill
+	frame	data/chars/legion/debris/part_corpse1m.gif
+	@cmd	groundkill
+	frame	data/chars/legion/debris/part_corpse1n.gif
+	@cmd	groundkill
+	frame	data/chars/legion/debris/part_corpse1o.gif
+	@cmd	groundkill
+	frame	data/chars/legion/debris/part_corpse1p.gif
+	@cmd	groundkill
+	frame	data/chars/legion/debris/part_corpse1q.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	20 20
+	platform	1 1 -1 -1 1 1 1 1
+	frame	data/chars/legion/debris/part_corpse1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

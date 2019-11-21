@@ -1,0 +1,17 @@
+name    	HeartSpell
+type    	none
+lifespan  	1
+antigravity     80
+
+palette		data/chars/succubus/succubo_palette.gif
+
+anim	idle
+	delay	7
+	offset	8 8
+	frame	data/chars/succubus/spells/spell1a.gif
+	frame	data/chars/succubus/spells/spell1b.gif
+	frame	data/chars/succubus/spells/spell1c.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

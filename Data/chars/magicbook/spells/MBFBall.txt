@@ -1,0 +1,36 @@
+name	        MBFBall
+type	        none
+nolife          1
+lifespan        1
+antigravity     100
+candamage       player npc
+
+anim	idle
+	delay	5
+	offset	6 6
+	burn	3 3 6 6 9 0 0 0 0 0
+	hitfx	data/sounds/burnt.wav
+	frame	data/chars/magicbook/spells/bfball1.gif
+	frame	data/chars/magicbook/spells/bfball2.gif
+	frame	data/chars/magicbook/spells/bfball3.gif
+	burn	1 1 10 10 9 0 0 0 0 0
+	frame	data/chars/magicbook/spells/bfball4.gif
+	frame	data/chars/magicbook/spells/bfball5.gif
+	frame	data/chars/magicbook/spells/bfball4.gif
+	frame	data/chars/magicbook/spells/bfball5.gif
+	frame	data/chars/magicbook/spells/bfball4.gif
+	frame	data/chars/magicbook/spells/bfball5.gif
+	frame	data/chars/magicbook/spells/bfball4.gif
+	frame	data/chars/magicbook/spells/bfball5.gif
+	frame	data/chars/magicbook/spells/bfball4.gif
+	frame	data/chars/magicbook/spells/bfball5.gif
+	frame	data/chars/magicbook/spells/bfball4.gif
+	frame	data/chars/magicbook/spells/bfball5.gif
+	frame	data/chars/magicbook/spells/bfball4.gif
+	frame	data/chars/magicbook/spells/bfball5.gif
+	burn	0
+	frame	data/chars/magicbook/spells/bfball6.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,51 @@
+name    Falling_rock
+type	trap
+shadow  0
+noatflash 1
+nolife 1
+hostile player npc
+candamage  player enemy npc obstacle
+
+load Rock_rock_platform
+
+animationscript  data/scripts/escript.c
+
+palette	 data/bgs/underground/palette_objects.gif
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	3
+	offset	28 15
+	frame	data/bgs/underground/traps/platform_rock/platform_rock_trap.gif
+	sound	data/sounds/rock_break3.wav
+	frame	data/chars/misc/empty.gif
+	delay	6
+	@cmd	tosserM "Rock_rock_platform" -24 11 -0.7 0.4
+	@cmd	tosserM "Rock_rock_platform" 20 14 0.7 0.4
+	@cmd	tosserM "Rock_rock_platform" 8 34 0 2.5
+	@cmd	tosserM "Rock_rock_platform" -3 27 -0.3 1.5
+	@cmd	tosserM "Rock_rock_platform" 5 12 0.3 1
+	@cmd	tosserM "Rock_rock_platform" -8 14 -0.3 1
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+anim	jumpland
+	loop	0
+	delay	7
+	offset	28 15
+	frame	data/bgs/underground/traps/platform_rock/platform_rock_trap.gif
+		
+anim	walkoff
+	delay	7
+	offset	28 15
+	frame	data/bgs/underground/traps/platform_rock/platform_rock_trap.gif
+		
+#|edited by openBor Stats v 0.67
+		

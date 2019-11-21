@@ -1,0 +1,16 @@
+name  		Platform_bridge16
+type		none
+facing	  	1
+setlayer 999
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/garden/palette_object.gif
+
+
+anim	idle
+	delay	100
+	offset	27 64
+	platform	0 64 -8 -8 63 63 10 64
+	frame	data/bgs/garden/platforms/platform_bridge4.gif
+

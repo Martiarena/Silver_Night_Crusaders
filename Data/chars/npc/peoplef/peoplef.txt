@@ -1,0 +1,37 @@
+name	peoplef
+health	10
+type 	none
+shadow	0
+speed	14
+palette	data/chars/npc/people-palette.gif
+
+
+anim	idle
+	loop	0
+	offset	16 44
+	delay	1000
+	frame	data/chars/npc/peoplef/walk1f.gif
+		
+anim	spawn
+	loop	0
+	offset	16 44
+	delay	1000
+	frame	data/chars/npc/peoplef/walk1f.gif
+		
+anim	walk
+	loop	1
+	delay	7
+	offset	16 44
+	frame	data/chars/npc/peoplef/walk1f.gif
+	frame	data/chars/npc/peoplef/walk2f.gif
+	frame	data/chars/npc/peoplef/walk3f.gif
+	frame	data/chars/npc/peoplef/walk4f.gif
+	frame	data/chars/npc/peoplef/walk5f.gif
+	frame	data/chars/npc/peoplef/walk6f.gif
+	frame	data/chars/npc/peoplef/walk7f.gif
+	frame	data/chars/npc/peoplef/walk8f.gif
+	frame	data/chars/npc/peoplef/walk9f.gif
+	frame	data/chars/npc/peoplef/walk10f.gif
+		
+#|edited by openBor Stats v 0.56
+		

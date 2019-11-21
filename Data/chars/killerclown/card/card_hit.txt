@@ -1,0 +1,85 @@
+name	Card_hit
+type none
+nomove 1 1
+antigravity 100
+lifespan 2
+
+palette	data/chars/killerclown/card/card-blade1a.gif
+
+
+
+
+anim	death
+	loop	0
+	delay	1
+	offset	50 29
+	frame	data/chars/killerclown/card/card-blade1a.gif
+	frame	data/chars/killerclown/card/card-blade1a.gif
+	frame	data/chars/killerclown/card/card-blade1a.gif
+	frame	data/chars/killerclown/card/card-blade1e.gif
+	frame	data/chars/killerclown/card/card-blade1e.gif
+	frame	data/chars/killerclown/card/card-blade1e.gif
+	frame	data/chars/killerclown/card/card-blade1i.gif
+	frame	data/chars/killerclown/card/card-blade1i.gif
+	frame	data/chars/killerclown/card/card-blade1i.gif
+	frame	data/chars/killerclown/card/card-blade1m.gif
+	frame	data/chars/killerclown/card/card-blade1m.gif
+	frame	data/chars/killerclown/card/card-blade1m.gif
+	frame	data/chars/killerclown/card/card-blade1q.gif
+	frame	data/chars/killerclown/card/card-blade1q.gif
+	frame	data/chars/killerclown/card/card-blade1q.gif
+	frame	data/chars/killerclown/card/card-blade1u.gif
+	frame	data/chars/killerclown/card/card-blade1v.gif
+	frame	data/chars/killerclown/card/card-blade1w.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	fall
+	loop	0
+	delay	1
+	offset	50 29
+	frame	data/chars/killerclown/card/card-blade1a.gif
+	frame	data/chars/killerclown/card/card-blade1a.gif
+	frame	data/chars/killerclown/card/card-blade1a.gif
+	frame	data/chars/killerclown/card/card-blade1e.gif
+	frame	data/chars/killerclown/card/card-blade1e.gif
+	frame	data/chars/killerclown/card/card-blade1e.gif
+	frame	data/chars/killerclown/card/card-blade1i.gif
+	frame	data/chars/killerclown/card/card-blade1i.gif
+	frame	data/chars/killerclown/card/card-blade1i.gif
+	frame	data/chars/killerclown/card/card-blade1m.gif
+	frame	data/chars/killerclown/card/card-blade1m.gif
+	frame	data/chars/killerclown/card/card-blade1m.gif
+	frame	data/chars/killerclown/card/card-blade1q.gif
+	frame	data/chars/killerclown/card/card-blade1q.gif
+	frame	data/chars/killerclown/card/card-blade1q.gif
+	frame	data/chars/killerclown/card/card-blade1u.gif
+	frame	data/chars/killerclown/card/card-blade1v.gif
+	frame	data/chars/killerclown/card/card-blade1w.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	0
+	delay	1
+	offset	50 29
+	frame	data/chars/killerclown/card/card-blade1a.gif
+	frame	data/chars/killerclown/card/card-blade1a.gif
+	frame	data/chars/killerclown/card/card-blade1a.gif
+	frame	data/chars/killerclown/card/card-blade1e.gif
+	frame	data/chars/killerclown/card/card-blade1e.gif
+	frame	data/chars/killerclown/card/card-blade1e.gif
+	frame	data/chars/killerclown/card/card-blade1i.gif
+	frame	data/chars/killerclown/card/card-blade1i.gif
+	frame	data/chars/killerclown/card/card-blade1i.gif
+	frame	data/chars/killerclown/card/card-blade1m.gif
+	frame	data/chars/killerclown/card/card-blade1m.gif
+	frame	data/chars/killerclown/card/card-blade1m.gif
+	frame	data/chars/killerclown/card/card-blade1q.gif
+	frame	data/chars/killerclown/card/card-blade1q.gif
+	frame	data/chars/killerclown/card/card-blade1q.gif
+	frame	data/chars/killerclown/card/card-blade1u.gif
+	frame	data/chars/killerclown/card/card-blade1v.gif
+	frame	data/chars/killerclown/card/card-blade1w.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

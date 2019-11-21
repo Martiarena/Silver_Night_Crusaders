@@ -1,0 +1,29 @@
+name	dust
+type none
+#alpha 6
+nomove 1 1
+antigravity 100
+anim idle
+
+	delay	4
+	offset	19 16
+	bbox	0 
+	frame	data/chars/misc/DUST/dust1.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/DUST/dust2.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/DUST/dust3.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/DUST/dust4.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/DUST/dust5.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/DUST/dust6.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/DUST/dust7.gif
+	frame	data/chars/misc/empty.gif

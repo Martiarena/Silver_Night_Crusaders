@@ -1,0 +1,58 @@
+name    Stalactite
+type trap
+health   1
+shadow  0
+setlayer        -1
+noatflash 1
+nomove	 	1
+antigravity 100
+nolife 1
+hostile player npc
+candamage  player npc
+
+palette	 data/bgs/underground/palette_objects.gif
+
+load     Falling_stalactite
+
+
+
+
+
+anim	death
+	loop	0
+	delay	1
+	offset	9 64
+	subentity	Falling_stalactite
+	spawnframe	2 0 0 0 0
+	frame	data/bgs/underground/traps/stalactite/idle.gif
+	frame	data/bgs/underground/traps/stalactite/idle.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/bgs/underground/traps/stalactite/idle.gif
+		
+anim	follow1
+	loop	0
+	delay	1
+	offset	9 64
+	subentity	Falling_stalactite
+	spawnframe	2 0 0 0 0
+	frame	data/bgs/underground/traps/stalactite/idle.gif
+	frame	data/bgs/underground/traps/stalactite/idle.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/bgs/underground/traps/stalactite/idle.gif
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	9 64
+	followcond	1
+	followanim	1
+	hitfx	data/sounds/no-hit.wav
+	noreflect	1
+	platform	-999 -999 -5 -5 5 5 10 10
+	bbox	0 12 20 50
+	attack20	0 62 20 151 0 1 1 1 0 0
+	frame	data/bgs/underground/traps/stalactite/idle.gif
+	frame	data/bgs/underground/traps/stalactite/idle.gif
+		
+#|edited by openBor Stats v 0.67
+		

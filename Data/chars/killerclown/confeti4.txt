@@ -1,0 +1,24 @@
+name	        Confeti_4
+type	        none
+subject_to_gravity 1
+subject_to_hole	1
+no_adjust_base	0
+lifespan        2
+antigravity     50
+noquake 	1
+animationscript data/scripts/prscript.c
+
+palette 	 data/chars/killerclown/killerclown_palette.gif
+
+
+
+anim	idle
+	loop	1
+	delay	1
+	offset	2 4
+	frame	data/chars/killerclown/con1d.gif
+	@cmd	groundkill
+	frame	data/chars/killerclown/con1d.gif
+		
+#|edited by openBor Stats v 0.67
+		

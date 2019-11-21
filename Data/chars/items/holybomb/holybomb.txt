@@ -1,0 +1,55 @@
+name    	Agua_Santa
+type    	item
+facing          1
+antigravity	30
+candamage  	player
+icon 		data/chars/misc/bgitem.gif
+smartbomb 	100 0 0 0
+palette		data/chars/items/holybomb/purifier_palette.gif
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	70
+	offset	9 22
+	itembox	0 0 15 14
+	frame	data/chars/items/holybomb/idle1.gif
+	delay	2
+	frame	data/chars/items/holybomb/idle1a.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	9 22
+	itembox	0 0 15 14
+	frame	data/chars/items/holybomb/idle1.gif
+	frame	data/chars/items/holybomb/idle1a.gif
+	frame	data/chars/items/holybomb/idle1.gif
+	frame	data/chars/items/holybomb/idle1a.gif
+	frame	data/chars/items/holybomb/idle1.gif
+	frame	data/chars/items/holybomb/idle1a.gif
+	frame	data/chars/items/holybomb/idle1.gif
+	frame	data/chars/items/holybomb/idle1a.gif
+	frame	data/chars/items/holybomb/idle1.gif
+	frame	data/chars/items/holybomb/idle1a.gif
+	frame	data/chars/items/holybomb/idle1.gif
+	frame	data/chars/items/holybomb/idle1a.gif
+	frame	data/chars/items/holybomb/idle1.gif
+	frame	data/chars/items/holybomb/idle1a.gif
+	frame	data/chars/items/holybomb/idle1.gif
+	frame	data/chars/items/holybomb/idle1a.gif
+	frame	data/chars/items/holybomb/idle1.gif
+	frame	data/chars/items/holybomb/idle1a.gif
+	frame	data/chars/items/holybomb/idle1.gif
+	frame	data/chars/items/holybomb/idle1a.gif
+	frame	data/chars/items/holybomb/idle1.gif
+	frame	data/chars/items/holybomb/idle1a.gif
+	frame	data/chars/items/holybomb/idle1.gif
+	frame	data/chars/items/holybomb/idle1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,47 @@
+bossmusic	data/music/boss.ogg 367353
+#music		data/music/castlewalls.ogg
+
+panel	        data/bgs/debbug/alcoba.gif
+
+
+musicfade	200
+order           a
+settime	        0
+notime		1
+spawn1          80 0 240
+spawn2          40 0 240
+direction	both
+type		0 0 0
+cameratype 1
+noslow 1
+
+#spawn Soldado_Inquisidor
+#coords  50  216  0
+#at  0
+
+spawn Esqueleto_
+coords  150  216  0
+at  0
+
+spawn  Esqueleto_
+coords  180  216  0
+at  0
+
+spawn  Esqueleto_
+coords  210  216  0
+at  0
+
+spawn  Cuchillo
+coords  250  216  0
+at  0
+
+
+spawn  Bathory
+coords  320  216  0
+at  0
+
+spawn  Esqueleto_
+coords  240  216  0
+flip 1
+at  320
+

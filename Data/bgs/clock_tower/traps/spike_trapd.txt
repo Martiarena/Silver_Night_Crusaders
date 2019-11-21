@@ -1,0 +1,41 @@
+name    Spike_trapd
+type trap
+shadow  0
+nolife 1
+nomove 1 1
+setlayer 0
+offscreenkill   9999
+
+hostile enemy player npc obstacle
+candamage enemy player npc obstacle
+
+palette		data/bgs/clock_tower/traps/traps_palette.gif
+
+
+
+
+
+
+anim	attack
+	loop	1
+	delay	7
+	offset	47 16
+	attack2	0 0 94 16 19 11 1 1 0 0
+	frame	data/bgs/clock_tower/traps/spikes1b.gif
+	delay	1
+	attack2	0 0 0 0
+	frame	data/bgs/clock_tower/traps/spikes1b.gif
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	47 16
+	hitfx	data/sounds/slash.wav
+	attack2	0 0 94 16 19 11 1 1 0 0
+	frame	data/bgs/clock_tower/traps/spikes1b.gif
+	delay	1
+	attack2	0 0 0 0
+	frame	data/bgs/clock_tower/traps/spikes1b.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,54 @@
+name	Stage3
+type	text
+subtype	noskip
+setlayer 10000
+
+
+palette data/sprites/stagetext/stage-text_palette.gif
+
+
+anim	idle
+	loop	0
+	delay	3
+	offset	160 240
+	frame	data/chars/misc/empty.gif
+	frame	data/sprites/stagetext/stage-ani2.gif
+	frame	data/sprites/stagetext/stage-ani3.gif
+	delay	9
+	frame	data/sprites/stagetext/stage-ani4.gif
+	frame	data/sprites/stagetext/stage-ani5.gif
+	delay	3
+	frame	data/sprites/stagetext/stage-ani6.gif
+	delay	9
+	frame	data/sprites/stagetext/stage-ani7.gif
+	delay	1
+	frame	data/sprites/stagetext/stage-3a.gif
+	frame	data/sprites/stagetext/stage-3b.gif
+	frame	data/sprites/stagetext/stage-3c.gif
+	frame	data/sprites/stagetext/stage-3d.gif
+	delay	9
+	frame	data/sprites/stagetext/stage-3d.gif
+	delay	1
+	frame	data/sprites/stagetext/stage-3e.gif
+	frame	data/sprites/stagetext/stage-3f.gif
+	frame	data/sprites/stagetext/stage-3g.gif
+	delay	250
+	frame	data/sprites/stagetext/stage-3h.gif
+	delay	1
+	frame	data/sprites/stagetext/stage-3i.gif
+	frame	data/sprites/stagetext/stage-3j.gif
+	frame	data/sprites/stagetext/stage-3k.gif
+	delay	9
+	frame	data/sprites/stagetext/stage-ani7.gif
+	delay	3
+	frame	data/sprites/stagetext/stage-ani6.gif
+	delay	9
+	frame	data/sprites/stagetext/stage-ani5.gif
+	frame	data/sprites/stagetext/stage-ani4.gif
+	delay	3
+	frame	data/sprites/stagetext/stage-ani3.gif
+	frame	data/sprites/stagetext/stage-ani2.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.41
+		

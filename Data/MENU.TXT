@@ -1,0 +1,22 @@
+renamekey moveup Arriba
+renamekey movedown Abajo
+renamekey moveright Derecha
+renamekey moveleft Izquierda
+renamekey attack Atacar
+renamekey attack2 Sub-Arma
+renamekey attack3 Extra
+renamekey attack4 Conjuro
+renamekey jump Saltar
+renamekey special Esquivar
+renamekey start Pausa
+renamekey screenshot Pantallazo
+
+
+
+fontmonospace 0 0 0 0 0 0 0 0
+
+
+
+
+
+

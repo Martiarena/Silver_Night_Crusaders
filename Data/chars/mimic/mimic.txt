@@ -1,0 +1,124 @@
+name    	Mimic
+health          7
+nomove  	1 1
+type		enemy
+facing          1
+cantgrab 	1
+nodrop  	2
+falldie 	1
+nodieblink 	2
+nopain  	1
+nodrop  	2
+min_noatk_chance 0
+max_noatk_chance 0
+aggression 9999
+offscreenkill	500
+score	 	400 -1
+hostile         player npc
+candamage 	player npc
+icon		data/chars/misc/bgmonster.gif
+
+palette          data/chars/mimic/mimic_palette.gif
+alternatepal     data/chars/mimic/blink_palette.gif
+alternatepal     data/chars/mimic/mimic_palette_1.gif
+alternatepal     data/chars/mimic/mimic_palette_2.gif
+
+load             edie
+
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack
+	rangea	0 14
+	range	-10 22
+	loop	0
+	delay	3
+	offset	13 31
+	@script
+	void self = getlocalvar("self");
+ 	if(frame == 9){
+	 changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+	}
+	@end_script	
+	bbox	8 20 11 11
+	frame	data/chars/mimic/attack1a.gif
+	frame	data/chars/mimic/attack1b.gif
+	frame	data/chars/mimic/attack1c.gif
+	attack	5 7 18 24 19 0 0 0 0 0
+	frame	data/chars/mimic/attack1d.gif
+	frame	data/chars/mimic/attack1e.gif
+	frame	data/chars/mimic/attack1f.gif
+	frame	data/chars/mimic/attack1g.gif
+	frame	data/chars/mimic/attack1h.gif
+	frame	data/chars/mimic/attack1i.gif
+	attack	0 0 0 0
+	delay	1
+	frame	data/chars/mimic/attack1i.gif
+		
+anim	death
+	loop	0
+	delay	7
+	offset	13 31
+	subentity	edie
+	spawnframe	0 0 0 30 0
+	frame	data/chars/mimic/death1a.gif
+	frame	data/chars/mimic/death1b.gif
+	frame	data/chars/mimic/death1c.gif
+	frame	data/chars/mimic/death1d.gif
+	frame	data/chars/mimic/death1e.gif
+	frame	data/chars/mimic/death1f.gif
+	frame	data/chars/mimic/death1g.gif
+	frame	data/chars/mimic/death1h.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow
+	loop	1
+	delay	7
+	offset	13 31
+	bbox	5 1 18 30
+	attack	5 1 18 30 19 0 0 0 0 0
+	frame	data/chars/mimic/idle2a.gif
+	frame	data/chars/mimic/idle2b.gif
+	frame	data/chars/mimic/idle2c.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/mimic/idle2c.gif
+		
+anim	idle
+	loop	0
+	delay	1
+	offset	13 31
+	bbox	8 20 11 11
+	frame	data/chars/mimic/idle1a.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	13 31
+	bbox	8 20 11 11
+	frame	data/chars/mimic/idle1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,20 @@
+name	dirk
+health	1
+speed	22
+type	none
+shadow	0
+
+anim idle
+	loop	1
+	delay	2
+	offset	9 7
+	attack	1 1 16 15 9 1 0 0 0 0
+	sound	data/chars/kreiger/dirk.wav
+	frame	data/chars/kreiger/dirk1.gif
+	frame	data/chars/kreiger/dirk2.gif
+	frame	data/chars/kreiger/dirk3.gif
+	frame	data/chars/kreiger/dirk4.gif
+	frame	data/chars/kreiger/dirk5.gif
+	frame	data/chars/kreiger/dirk6.gif
+	frame	data/chars/kreiger/dirk7.gif
+	frame	data/chars/kreiger/dirk8.gif

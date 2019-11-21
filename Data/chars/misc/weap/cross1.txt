@@ -1,0 +1,246 @@
+name	cross1
+health	1
+nolife  1
+type	npc
+subtype project
+hostile enemy obstacle
+candamage enemy obstacle
+speed	0
+nomove 1 1
+noquake 1
+falldie 1
+subtype flydie
+shadow	0
+remove 0
+antigravity 100
+weaploss 2
+
+palette data/chars/misc/weap/weap.gif#1
+
+anim idle
+	fastattack 1
+	loop	0
+	offset     160 63
+	bbox    	0 0 0 0
+
+	delay	1
+
+	move 1
+	attack  173 91 20 20 3
+	sound   data/chars/misc/weap/cross1.wav
+	frame	data/chars/misc/weap/weap301.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap305.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap306.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap307.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	attack  0 0 0 0 0
+	frame	data/chars/misc/weap/weap304.gif
+
+	move 2
+	attack  173 91 20 20 3
+	frame	data/chars/misc/weap/weap308.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap309.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap310.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap311.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	attack  0 0 0 0 0
+	frame	data/chars/misc/weap/weap304.gif
+
+	move 3
+	attack  173 91 20 20 3
+	frame	data/chars/misc/weap/weap312.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap313.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap314.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap314.gif
+	frame	data/chars/misc/weap/weap311.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	attack  0 0 0 0 0
+	frame	data/chars/misc/weap/weap304.gif
+
+	move 2
+	attack  173 91 20 20 3
+	frame	data/chars/misc/weap/weap313.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap312.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap311.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap310.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	attack  0 0 0 0 0
+	frame	data/chars/misc/weap/weap304.gif
+
+	move 1
+	attack  173 91 20 20 3
+	frame	data/chars/misc/weap/weap309.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap308.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap307.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap306.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	attack  0 0 0 0 0
+	frame	data/chars/misc/weap/weap304.gif
+
+	move 0
+	attack  173 91 20 20 3
+	frame	data/chars/misc/weap/weap305.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap301.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap301.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap301.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	attack  0 0 0 0 0
+	frame	data/chars/misc/weap/weap304.gif
+
+	move -1
+	attack  173 91 20 20 3
+	frame	data/chars/misc/weap/weap301.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap315.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap316.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap317.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	attack  0 0 0 0 0
+	frame	data/chars/misc/weap/weap304.gif
+
+	move -2
+	attack  173 91 20 20 3
+	frame	data/chars/misc/weap/weap318.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap319.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap320.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap321.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	attack  0 0 0 0 0
+	frame	data/chars/misc/weap/weap304.gif
+
+	move -3
+	attack  173 91 20 20 3
+	frame	data/chars/misc/weap/weap322.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap323.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap324.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/weap/weap304.gif
+	frame	data/chars/misc/weap/weap324.gif
+	frame	data/chars/misc/weap/weap302.gif
+	frame	data/chars/misc/weap/weap303.gif
+	attack  0 0 0 0 0
+	frame	data/chars/misc/weap/weap304.gif
+
+	move -3
+	attack  173 91 20 20 3
+	frame	data/chars/misc/weap/weap322.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/weap/weap323.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/weap/weap324.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/weap/weap303.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/weap/weap324.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/weap/weap303.gif
+	attack  0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+anim fall
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+
+

@@ -1,0 +1,139 @@
+name 		Tomo_Magico
+health          13
+nomove  	1
+type		enemy
+cantgrab 	1
+nodrop		2
+death		1
+nolife		1
+Score           300 -1
+hostile         player npc
+candamage       player npc
+antigravity     100
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+load            MBFBall
+load            edie
+
+defense normal3 2 0 0 0 0 0 0
+defense normal4 2 0 0 0 0 0 0
+defense normal6 3 0 0 0 0 0 0
+defense normal19 2 0 0 0 0 0 0
+defense burn 2 0 0 0 0 0 0
+
+icon 		data/chars/misc/bgmonster.gif
+
+palette		data/chars/magicbook/magic_book_palette.gif
+
+animationscript data/scripts/cscript.c
+
+
+
+
+
+
+
+
+
+
+
+anim	death
+	delay	7
+	offset	25 23
+	subentity	edie
+	spawnframe	0 10 0 10 0
+	frame	data/chars/magicbook/death1a.gif
+	frame	data/chars/magicbook/death1b.gif
+	frame	data/chars/magicbook/death1c.gif
+	frame	data/chars/magicbook/death1d.gif
+	frame	data/chars/magicbook/death1f.gif
+	frame	data/chars/magicbook/death1g.gif
+	frame	data/chars/magicbook/death1h.gif
+	frame	data/chars/magicbook/death1i.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	loop	0
+	delay	18
+	offset	25 23
+	bbox	15 10 25 30
+	attack	15 10 25 30 6 0 1 1 0 0
+	frame	data/chars/magicbook/idle1a.gif
+	@cmd	target 0.6 0.6 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/magicbook/idle1b.gif
+	frame	data/chars/magicbook/spell1c.gif
+	frame	data/chars/magicbook/spell1b.gif
+	frame	data/chars/magicbook/spell1a.gif
+	frame	data/chars/magicbook/spell1b.gif
+	@cmd	target 1 1 0 0 0 0
+	@cmd	shoot2 "MBFBall" 0 25
+	frame	data/chars/magicbook/spell1c.gif
+	frame	data/chars/magicbook/idle1b.gif
+	delay	17
+	@cmd	target 0.6 0.6 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/magicbook/idle1a.gif
+	delay	1
+	attack	0
+	@cmd	anichange "ANI_IDLE"
+	frame	data/chars/magicbook/idle1a.gif
+		
+anim	idle
+@script
+    void self = getlocalvar("self");
+    int r = rand()%15;
+
+    if( frame == 0){
+      if( r > 0){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      }
+    }
+	@end_script	
+	loop	1
+	delay	18
+	offset	25 23
+	bbox	15 10 25 30
+	attack	15 10 25 30 6 0 1 1 0 0
+	frame	data/chars/magicbook/idle1a.gif
+	@cmd	target 0.6 0.6 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/magicbook/idle1b.gif
+	frame	data/chars/magicbook/idle1c.gif
+	frame	data/chars/magicbook/idle1b.gif
+	frame	data/chars/magicbook/idle1a.gif
+	frame	data/chars/magicbook/idle1b.gif
+	frame	data/chars/magicbook/idle1c.gif
+	frame	data/chars/magicbook/idle1b.gif
+	delay	17
+	@cmd	target 0.6 0.6 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/magicbook/idle1a.gif
+	delay	1
+	attack	0
+	frame	data/chars/magicbook/idle1a.gif
+		
+anim	pain
+	delay	5
+	offset	25 23
+	frame	data/chars/magicbook/idle1a.gif
+	@cmd	dasher -5 0 0 1
+	frame	data/chars/magicbook/spawn1b.gif
+	frame	data/chars/magicbook/spawn1a.gif
+	frame	data/chars/magicbook/spawn1a.gif
+	frame	data/chars/magicbook/spawn1b.gif
+	@cmd	dasher 0 0 0 1
+	@cmd	beidle
+	frame	data/chars/magicbook/idle1a.gif
+		
+anim	spawn
+	delay	14
+	offset	25 23
+	frame	data/chars/magicbook/spawn1a.gif
+	frame	data/chars/magicbook/spawn1b.gif
+	frame	data/chars/magicbook/idle1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,28 @@
+name	dustb
+type none
+#alpha 6
+nomove 1 1
+antigravity 100
+anim idle
+	delay	4
+	offset	39 33
+	bbox	0 
+	frame	data/chars/misc/DUST/dustb1.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/DUST/dustb2.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/DUST/dustb3.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/DUST/dustb4.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/DUST/dustb5.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/DUST/dustb6.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/DUST/dustb7.gif
+	frame	data/chars/misc/empty.gif

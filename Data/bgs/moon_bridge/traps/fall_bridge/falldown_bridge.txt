@@ -1,0 +1,53 @@
+name    Falldown_bridge
+type	trap
+shadow  0
+noatflash 1
+nolife 1
+setlayer        1
+hostile player npc
+
+animationscript data/scripts/prscript.c
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	1
+	offset	36 32
+	@cmd	groundkill
+	frame	data/bgs/moon_bridge/traps/fall_bridge/bridge_down.gif
+	@cmd	groundkill
+	frame	data/bgs/moon_bridge/traps/fall_bridge/bridge_down.gif
+	@cmd	groundkill
+	frame	data/bgs/moon_bridge/traps/fall_bridge/bridge_down.gif
+	@cmd	groundkill
+	frame	data/bgs/moon_bridge/traps/fall_bridge/bridge_down.gif
+		
+anim	jumpland
+	loop	0
+	delay	7
+	offset	36 32
+	@cmd	groundkill
+	frame	data/chars/misc/empty.gif
+	@cmd	groundkill
+	frame	data/chars/misc/empty.gif
+		
+anim	walkoff
+	delay	1
+	offset	36 32
+	@cmd	groundkill
+	frame	data/bgs/moon_bridge/traps/fall_bridge/bridge_down.gif
+	@cmd	groundkill
+	frame	data/bgs/moon_bridge/traps/fall_bridge/bridge_down.gif
+	@cmd	groundkill
+	frame	data/bgs/moon_bridge/traps/fall_bridge/bridge_down.gif
+	@cmd	groundkill
+	frame	data/bgs/moon_bridge/traps/fall_bridge/bridge_down.gif
+		
+#|edited by openBor Stats v 0.67
+		

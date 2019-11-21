@@ -1,0 +1,78 @@
+name    	 Simon_Wraith
+health  	 32
+speed		 5
+type    	 enemy
+noquake  	 1
+nopain  	 1
+nodrop  	 2
+death   	 1
+aggression	 -25
+offscreenkill	 100
+animationscript  data/scripts/lescript.c
+takedamagescript data/scripts/blink.c
+
+palette 	 data/chars/skeleton/siwr01.png
+alternatepal	 data/chars/skeleton/siwrbl.png
+
+
+anim idle
+	loop	1
+	delay	20
+	offset	50 60
+	bbox	45 20 17 40
+	attack	45 20 17 40 5 1
+	frame	data/chars/skeleton/siwr01.png
+	attack	0
+	frame	data/chars/skeleton/siwr01.png
+
+anim walk
+	loop	1
+	delay	12
+	offset	50 60
+	bbox	45 20 17 40
+	attack	45 20 17 40 5 1
+	frame	data/chars/skeleton/siwr01.png
+	frame	data/chars/skeleton/siwr02.png
+	frame	data/chars/skeleton/siwr03.png
+	frame	data/chars/skeleton/siwr04.png
+	frame	data/chars/skeleton/siwr05.png
+	attack	0
+	frame	data/chars/skeleton/siwr06.png
+
+anim attack1
+	range	0 105
+	rangea	-20 80
+	delay	30
+	offset	50 60
+	bbox	45 20 17 40
+	attack	45 20 17 40 5 1
+	frame	data/chars/skeleton/siwr04.png
+	delay	8
+	frame	data/chars/skeleton/siwr07.png
+	frame	data/chars/skeleton/siwr08.png
+	frame	data/chars/skeleton/siwr09.png
+	delay	6
+	frame	data/chars/skeleton/siwr10.png
+	attack	66 28 81 6 15 1
+	frame	data/chars/skeleton/siwr11.png
+	delay	16
+	frame	data/chars/skeleton/siwr12.png
+	delay	8
+	attack	45 20 17 40 5 1
+	frame	data/chars/skeleton/siwr13.png
+	frame	data/chars/skeleton/siwr14.png
+
+
+anim death
+	delay	5
+	offset	50 60
+	frame	data/chars/misc/empty.gif
+        @cmd    tosserM "BS" 8 34 0 2.5
+        @cmd    tosserM "BR" 5 26 0 1.5
+        @cmd    tosserM "BA" 8 25 0.3 1.5
+        @cmd    tosserM "BA" -3 27 -0.3 1.5
+        @cmd    tosserM "BL" 5 12 0.3 1
+        @cmd    tosserM "BL" -8 14 -0.3 1
+	frame	data/chars/misc/empty.gif
+	delay	200
+	frame	data/chars/misc/empty.gif

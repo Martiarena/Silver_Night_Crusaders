@@ -1,0 +1,6 @@
+#	music		[path] [loop]		# BOR file to play
+#	animation	[path] [x] [y]		# GIF animation to play
+#	silence					# Stop music
+
+animation	data/scenes/stagesintros/castlemap_stage1a.gif 0 0
+animation	data/scenes/stagesintros/castlemap_stage1b.gif 0 0

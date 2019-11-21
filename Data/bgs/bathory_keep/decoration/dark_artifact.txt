@@ -1,0 +1,30 @@
+name	       	Dark_artifact
+type            none
+shadow		0
+nomove	1
+nolife	1
+setlayer -20
+offscreenkill   9999
+
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_gravity 0
+
+palette	data/bgs/bathory_keep/decoration/artifact1a.gif
+
+anim	idle
+	loop	1
+	offset	28 56
+	delay	14
+	frame	data/bgs/bathory_keep/decoration/artifact1a.gif
+	frame	data/bgs/bathory_keep/decoration/artifact2a.gif
+	frame	data/bgs/bathory_keep/decoration/artifact2b.gif
+	delay	28
+	frame	data/bgs/bathory_keep/decoration/artifact2c.gif
+	delay	14
+	frame	data/bgs/bathory_keep/decoration/artifact2b.gif
+	frame	data/bgs/bathory_keep/decoration/artifact2a.gif
+	frame	data/bgs/bathory_keep/decoration/artifact1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

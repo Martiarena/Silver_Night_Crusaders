@@ -1,0 +1,56 @@
+name	       		Teo_rock2e
+type          enemy
+health  1
+nomove		1
+nolife          1
+nopain 1
+bounce 0
+subject_to_gravity	1
+subject_to_hole		1
+no_adjust_base		0
+candamage	player npc shot
+lifespan         3
+noquake 		1
+animationscript data/scripts/prscript.c
+
+palette 		data/chars/misc/rocks/white_rock_palete.gif
+
+load	pdie
+
+
+
+anim	death
+	delay	10
+	offset	2 2
+	spawnframe	0 0 0 0 0
+	subentity	pdie
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	attack	0 0 14 14 12 0 1 0 0 0
+	loop	0
+	delay	50
+	offset	7 13
+	bouncefactor	2
+	frame	data/chars/misc/rocks/white_rock2.gif
+	delay	6
+	bbox	0 0 0 0
+	attack	0 0 0 0 0 0
+	frame	data/chars/misc/rocks/white_rock2.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/rocks/white_rock2.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/rocks/white_rock2.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/rocks/white_rock2.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/rocks/white_rock2.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/rocks/white_rock2.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

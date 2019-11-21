@@ -1,0 +1,77 @@
+name	        Shockwave
+type	        none
+nolife          1
+remove 1
+lifespan        5
+hostile		player
+candamage       player npc shot
+palette		data/chars/creature/wave/wave1.gif
+
+
+
+anim	idle
+	loop	0
+	delay	1
+	offset	94 130
+	attack	30 115 126 15 19 11 0 0 0 0
+	frame	data/chars/creature/wave/wave1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/creature/wave/wave1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/creature/wave/wave1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/creature/wave/wave1.gif
+	attack	16 113 156 17 19 11 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/creature/wave/wave2.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/creature/wave/wave2.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/creature/wave/wave2.gif
+	frame	data/chars/misc/empty.gif
+	attack	6 98 176 32 19 11 0 0 0 0
+	frame	data/chars/creature/wave/wave3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/creature/wave/wave3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/creature/wave/wave3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/creature/wave/wave3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/creature/wave/wave3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/creature/wave/wave3.gif
+	attack	17 100 154 30 19 11 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/creature/wave/wave4.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/creature/wave/wave4.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/creature/wave/wave4.gif
+	frame	data/chars/misc/empty.gif
+	attack	50 115 87 15 19 11 0 0 0 0
+	frame	data/chars/creature/wave/wave5.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/creature/wave/wave5.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/creature/wave/wave5.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/creature/wave/wave5.gif
+	attack	64 121 60 9 19 11 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/creature/wave/wave6.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/creature/wave/wave6.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/creature/wave/wave6.gif
+	frame	data/chars/misc/empty.gif
+	attack	0 0 0 0
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	delay	1
+	offset	94 130
+	frame	data/chars/creature/wave/wave1.gif
+		
+#|edited by openBor Stats v 0.67
+		

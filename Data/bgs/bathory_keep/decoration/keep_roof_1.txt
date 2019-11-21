@@ -1,0 +1,20 @@
+name  		Keep_roof_1
+type		panel
+facing	  	1
+speed		10
+setlayer 	-20
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/bathory_keep/decoration/roof.gif
+
+
+
+
+anim	idle
+	delay	100
+	offset	217 24
+	frame	data/bgs/bathory_keep/decoration/roof.gif
+		
+#|edited by openBor Stats v 0.67
+		

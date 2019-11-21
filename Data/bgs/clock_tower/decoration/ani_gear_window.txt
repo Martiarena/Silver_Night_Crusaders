@@ -1,0 +1,26 @@
+name	       	Ani_gear_window
+type    	none
+antigravity     100
+shadow		0
+setlayer	-1
+nomove	1
+nolife	1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_gravity 0
+offscreenkill   9999
+
+palette 	data/bgs/clock_tower/decoration/gear_window_palette.gif
+
+
+
+anim	idle
+	loop	1
+	delay	10
+	offset	23 18
+	frame	data/bgs/clock_tower/decoration/gear_window1a.gif
+	frame	data/bgs/clock_tower/decoration/gear_window1b.gif
+	frame	data/bgs/clock_tower/decoration/gear_window1c.gif
+		
+#|edited by openBor Stats v 0.67
+		

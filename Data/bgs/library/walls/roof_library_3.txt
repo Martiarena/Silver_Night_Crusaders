@@ -1,0 +1,17 @@
+name  		Roof_library_3
+type		none
+facing	  	1
+setlayer 	-1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/library/palette_object.gif
+
+
+
+anim	idle
+	delay	100
+	offset	32 69
+	platform	0 69 -8 -8 72 72 10 9999
+	frame	data/bgs/library/walls/roof_library_3.gif
+

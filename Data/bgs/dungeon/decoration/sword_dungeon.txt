@@ -1,0 +1,20 @@
+name  		Sword_dungeon
+type            none
+facing	  	1
+setlayer        99
+offscreenkill   9999
+subject_to_platform 1
+
+palette  	data/bgs/dungeon/dungeon_misc.gif
+
+
+
+
+anim	idle
+	loop	0
+	delay	14
+	offset	8 17
+	frame	data/bgs/dungeon/decoration/sword_dungeon.gif
+		
+#|edited by openBor Stats v 0.67
+		

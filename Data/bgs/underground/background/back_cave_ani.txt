@@ -1,0 +1,63 @@
+name	Back_cave_ani
+speed 	5
+setlayer -10
+type	panel
+
+palette	data/bgs/underground/background/frame-01.gif
+
+anim	idle
+	loop	1
+	offset	0 -8
+	delay	200
+	frame	data/bgs/underground/background/frame-01.gif
+	frame	data/bgs/underground/background/frame-02.gif
+	frame	data/bgs/underground/background/frame-03.gif
+	frame	data/bgs/underground/background/frame-04.gif
+	frame	data/bgs/underground/background/frame-05.gif
+	frame	data/bgs/underground/background/frame-06.gif
+	frame	data/bgs/underground/background/frame-07.gif
+	frame	data/bgs/underground/background/frame-08.gif
+	frame	data/bgs/underground/background/frame-09.gif
+	frame	data/bgs/underground/background/frame-10.gif
+	frame	data/bgs/underground/background/frame-11.gif
+	frame	data/bgs/underground/background/frame-12.gif
+	frame	data/bgs/underground/background/frame-13.gif
+	frame	data/bgs/underground/background/frame-14.gif
+	frame	data/bgs/underground/background/frame-15.gif
+	frame	data/bgs/underground/background/frame-16.gif
+	frame	data/bgs/underground/background/frame-17.gif
+	frame	data/bgs/underground/background/frame-18.gif
+	frame	data/bgs/underground/background/frame-19.gif
+	frame	data/bgs/underground/background/frame-20.gif
+	frame	data/bgs/underground/background/frame-21.gif
+	frame	data/bgs/underground/background/frame-22.gif
+	frame	data/bgs/underground/background/frame-23.gif
+	frame	data/bgs/underground/background/frame-24.gif
+	frame	data/bgs/underground/background/frame-25.gif
+	frame	data/bgs/underground/background/frame-26.gif
+	frame	data/bgs/underground/background/frame-27.gif
+	frame	data/bgs/underground/background/frame-28.gif
+	frame	data/bgs/underground/background/frame-29.gif
+	frame	data/bgs/underground/background/frame-30.gif
+	frame	data/bgs/underground/background/frame-31.gif
+	frame	data/bgs/underground/background/frame-32.gif
+	frame	data/bgs/underground/background/frame-33.gif
+	frame	data/bgs/underground/background/frame-34.gif
+	frame	data/bgs/underground/background/frame-35.gif
+	frame	data/bgs/underground/background/frame-36.gif
+	frame	data/bgs/underground/background/frame-37.gif
+	frame	data/bgs/underground/background/frame-38.gif
+	frame	data/bgs/underground/background/frame-39.gif
+	frame	data/bgs/underground/background/frame-40.gif
+	frame	data/bgs/underground/background/frame-41.gif
+	frame	data/bgs/underground/background/frame-42.gif
+	frame	data/bgs/underground/background/frame-43.gif
+	frame	data/bgs/underground/background/frame-44.gif
+	frame	data/bgs/underground/background/frame-45.gif
+	frame	data/bgs/underground/background/frame-46.gif
+	frame	data/bgs/underground/background/frame-47.gif
+	frame	data/bgs/underground/background/frame-48.gif
+	frame	data/bgs/underground/background/frame-49.gif
+
+#|edited by openBor Stats v 0.41
+		

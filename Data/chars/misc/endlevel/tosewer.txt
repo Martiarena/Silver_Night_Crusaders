@@ -1,0 +1,25 @@
+name    	ToSewer
+type            endlevel
+facing          1
+nolife	1
+subject_to_hole 1
+no_adjust_base  0
+subject_to_platform 1
+antigravity	100
+offscreenkill   9999
+
+palette		data/chars/misc/endlevel/arrow-rightdown-a.gif
+
+
+
+
+anim	idle
+	loop	1
+	delay	7
+	offset	6 30
+	bbox	15 0 4 30
+	frame	data/chars/misc/endlevel/arrow-rightdown-a.gif
+	frame	data/chars/misc/endlevel/arrow-rightdown-b.gif
+		
+#|edited by openBor Stats v 0.67
+		

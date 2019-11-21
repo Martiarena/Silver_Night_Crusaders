@@ -1,0 +1,55 @@
+name	Sparkdie
+type none
+nomove 1 1
+antigravity 100
+lifespan 1
+setlayer 100
+candamage       player npc
+hostile		player npc
+
+animationscript  data/scripts/escript.c
+
+anim	death
+	loop	0
+	delay	3
+	offset	19 19
+	bbox	0 0 0 0
+	shock	5 5 28 28 19 0 1 0 0 0
+	frame	data/chars/skeleton/bonespark/spark3a.gif
+	frame	data/chars/skeleton/bonespark/spark3b.gif
+	frame	data/chars/skeleton/bonespark/spark3c.gif
+	shock	0 0 0 0 0
+	frame	data/chars/skeleton/bonespark/spark3d.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	fall
+	loop	0
+	delay	3
+	offset	19 19
+	bbox	0 0 0 0
+	shock	5 5 28 28 19 0 1 0 0 0
+	frame	data/chars/skeleton/bonespark/spark3a.gif
+	frame	data/chars/skeleton/bonespark/spark3b.gif
+	frame	data/chars/skeleton/bonespark/spark3c.gif
+	shock	0 0 0 0 0
+	frame	data/chars/skeleton/bonespark/spark3d.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	0
+	delay	3
+	offset	19 19
+	bbox	0 0 0 0
+	shock	5 5 28 28 19 0 1 0 0 0
+	frame	data/chars/skeleton/bonespark/spark3a.gif
+	frame	data/chars/skeleton/bonespark/spark3b.gif
+	frame	data/chars/skeleton/bonespark/spark3c.gif
+	shock	0 0 0 0 0
+	frame	data/chars/skeleton/bonespark/spark3d.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

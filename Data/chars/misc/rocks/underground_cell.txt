@@ -1,0 +1,42 @@
+name	        Cell_death
+type	        none
+subject_to_gravity 1
+subject_to_hole	1
+no_adjust_base	0
+lifespan        3
+noquake 	1
+candamage       player npc
+
+palette 	data/chars/misc/rocks/door_debris.gif
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	50
+	offset	33 66
+	bouncefactor	0
+	attack	12 12 45 45 12 11 0 0 0 0
+	frame	data/chars/misc/rocks/door_debris.gif
+	delay	20
+	offset	40 24
+	attack	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/rocks/door_debrisf.gif
+	delay	6
+	frame	data/chars/misc/rocks/door_debrisf.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/rocks/door_debrisf.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/rocks/door_debrisf.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/rocks/door_debrisf.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/rocks/door_debrisf.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/rocks/door_debrisf.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

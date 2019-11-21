@@ -1,0 +1,141 @@
+name		Cuervo
+health          3
+nomove  	1
+type		enemy
+cantgrab 	1
+nodrop		2
+death		1
+offscreenkill	500
+antigravity     100
+score		200 -1
+candamage	player npc
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+animationscript data/scripts/escript.c
+icon 		data/chars/misc/bgmonster.gif
+
+palette          data/chars/crow/crow_palette.gif
+
+
+
+
+anim	death
+	delay	5
+	offset	15 29
+	subentity	Blooda
+	spawnframe	0 15 0 29 0
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	loop	0
+	delay	10
+	offset	15 29
+	bbox	8 17 15 13
+	attack	8 17 15 13 3 0 1 0 0 0
+	sound	data/sounds/crowcry.wav
+	frame	data/chars/crow/fly1.gif
+	@cmd	dasher -2 2 0 1
+	frame	data/chars/crow/fly2.gif
+	frame	data/chars/crow/fly3.gif
+	frame	data/chars/crow/fly4.gif
+	@cmd	target 1.5 1.5 0 -20 1 1
+	frame	data/chars/crow/fly1.gif
+	@cmd	dasher 0 0 0 0
+	frame	data/chars/crow/fly2.gif
+	frame	data/chars/crow/fly3.gif
+	frame	data/chars/crow/fly4.gif
+	frame	data/chars/crow/fly1.gif
+	frame	data/chars/crow/fly2.gif
+	frame	data/chars/crow/fly3.gif
+	frame	data/chars/crow/fly4.gif
+	frame	data/chars/crow/fly1.gif
+	frame	data/chars/crow/fly2.gif
+	frame	data/chars/crow/fly3.gif
+	frame	data/chars/crow/fly4.gif
+	frame	data/chars/crow/fly1.gif
+	frame	data/chars/crow/fly2.gif
+	frame	data/chars/crow/fly3.gif
+	frame	data/chars/crow/fly4.gif
+	@cmd	target 2 2 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/crow/fly1.gif
+	frame	data/chars/crow/fly2.gif
+	frame	data/chars/crow/fly3.gif
+	frame	data/chars/crow/fly4.gif
+	frame	data/chars/crow/fly1.gif
+	frame	data/chars/crow/fly2.gif
+	frame	data/chars/crow/fly3.gif
+	frame	data/chars/crow/fly4.gif
+	frame	data/chars/crow/fly1.gif
+	frame	data/chars/crow/fly2.gif
+	frame	data/chars/crow/fly3.gif
+	frame	data/chars/crow/fly4.gif
+	frame	data/chars/crow/fly1.gif
+	frame	data/chars/crow/fly2.gif
+	frame	data/chars/crow/fly3.gif
+	attack	0
+	frame	data/chars/crow/fly4.gif
+		
+anim	idle
+	loop	1
+	delay	25
+	offset	15 29
+	attack	8 17 15 13 3 0 1 0 0 0
+	bbox	8 17 15 13
+	frame	data/chars/crow/idle1.gif
+	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
+	frame	data/chars/crow/idle1.gif
+	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
+	frame	data/chars/crow/idle1.gif
+	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
+	frame	data/chars/crow/idle1.gif
+	delay	10
+	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
+	frame	data/chars/crow/idle2.gif
+	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
+	frame	data/chars/crow/idle3.gif
+	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
+	frame	data/chars/crow/idle2.gif
+	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
+	frame	data/chars/crow/idle3.gif
+	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
+	frame	data/chars/crow/idle2.gif
+	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
+	frame	data/chars/crow/idle3.gif
+	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
+	frame	data/chars/crow/idle2.gif
+		
+anim	spawn
+	loop	1
+	delay	25
+	offset	15 29
+	bbox	8 17 15 13
+	attack	8 17 15 13 3 0 1 0 0 0
+	frame	data/chars/crow/idle1.gif
+	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
+	frame	data/chars/crow/idle1.gif
+	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
+	frame	data/chars/crow/idle1.gif
+	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
+	frame	data/chars/crow/idle1.gif
+	delay	10
+	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
+	frame	data/chars/crow/idle2.gif
+	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
+	frame	data/chars/crow/idle3.gif
+	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
+	frame	data/chars/crow/idle2.gif
+	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
+	frame	data/chars/crow/idle3.gif
+	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
+	frame	data/chars/crow/idle2.gif
+	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
+	frame	data/chars/crow/idle3.gif
+	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
+	frame	data/chars/crow/idle2.gif
+		
+#|edited by openBor Stats v 0.67
+		

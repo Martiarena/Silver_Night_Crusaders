@@ -1,0 +1,15 @@
+name	knife1
+health	1
+type	npc
+candamage enemy obstacle
+speed	25
+
+
+anim idle
+	loop	1
+	delay	6
+	offset     160 74
+	attack  165 113 17 29 9
+	hitflash Flash
+	frame	data/chars/misc/weap/weap101.gif
+	

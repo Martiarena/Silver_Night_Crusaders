@@ -1,0 +1,233 @@
+name    	Cazadora
+health  	60
+nomove  	1
+type		enemy
+cantgrab 	1
+nodrop  	2
+death	 	1
+nodieblink 	2
+nopain  	1
+antigravity	100
+score		700 -1
+subject_to_platform 0
+setlayer        10
+offscreenkill	100
+
+icon		data/chars/misc/bgmonster.gif
+
+palette		data/chars/cazadora/partis01.png
+alternatepal	data/chars/cazadora/parblink.png
+
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+
+
+
+
+
+
+
+anim	death
+	delay	1
+	offset	60 112
+	frame	data/chars/cazadora/partisD.png
+	delay	40
+	@cmd	degravity 0.5
+	@cmd	leaper -1 1 1
+	frame	data/chars/cazadora/partisD.png
+	delay	3
+	frame	data/chars/cazadora/partisDa.png
+	frame	data/chars/cazadora/partisDb.png
+	frame	data/chars/cazadora/partisDc.png
+	frame	data/chars/cazadora/partisDd.png
+	frame	data/chars/cazadora/partisDe.png
+	frame	data/chars/cazadora/partisDf.png
+	frame	data/chars/cazadora/partisDg.png
+	delay	10
+	frame	data/chars/cazadora/partisDh.png
+	frame	data/chars/cazadora/partisDi.png
+	frame	data/chars/cazadora/partisDj.png
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	delay	5
+	offset	60 112
+	bbox	17 14 87 92
+	hitfx	data/sounds/slash.wav
+	attack2	17 14 87 92 19 1 1 0 0 0
+	frame	data/chars/cazadora/partis05.png
+	frame	data/chars/cazadora/partis06.png
+	frame	data/chars/cazadora/partis07.png
+	frame	data/chars/cazadora/partis08.png
+	frame	data/chars/cazadora/partis09.png
+	@cmd	target 4 4 0 0 1 1
+	frame	data/chars/cazadora/partis10.png
+	frame	data/chars/cazadora/partis11.png
+	frame	data/chars/cazadora/partis12.png
+	frame	data/chars/cazadora/partis05.png
+	loop	0
+	bbox	7 56 106 12
+	attack2	7 56 106 12 19 1 1 0 0 0
+	frame	data/chars/cazadora/partis07.png
+	delay	20
+	frame	data/chars/cazadora/partis07.png
+	delay	40
+	@cmd	dash 0 0
+	bbox	7 56 106 12
+	attack2	7 56 106 12 25 1 1 0 0 0
+	frame	data/chars/cazadora/partis07.png
+	delay	20
+	@cmd	dasher 0 0 0 0
+	bbox	7 56 106 12
+	attack2	7 56 106 12 19 1 1 0 0 0
+	frame	data/chars/cazadora/partis07.png
+	delay	40
+	@cmd	returner 40
+	frame	data/chars/cazadora/partis07.png
+	delay	10
+	attack2	0
+	@cmd	dasher 0 0 0 0
+	frame	data/chars/cazadora/partis07.png
+	@cmd	beidle
+	frame	data/chars/cazadora/partis05.png
+		
+anim	follow2
+	delay	5
+	offset	60 112
+	bbox	17 14 87 92
+	hitfx	data/sounds/slash.wav
+	attack2	17 14 87 92 19 1 1 0 0
+	frame	data/chars/cazadora/partis05.png
+	frame	data/chars/cazadora/partis06.png
+	frame	data/chars/cazadora/partis07.png
+	frame	data/chars/cazadora/partis08.png
+	frame	data/chars/cazadora/partis09.png
+	@cmd	target 4 4 0 0 1 1
+	frame	data/chars/cazadora/partis10.png
+	frame	data/chars/cazadora/partis11.png
+	frame	data/chars/cazadora/partis12.png
+	frame	data/chars/cazadora/partis05.png
+	@cmd	looper 1 4
+	bbox	54 9 14 104
+	attack2	54 9 14 104 19 1 1 0 0
+	frame	data/chars/cazadora/partis05.png
+	delay	20
+	frame	data/chars/cazadora/partis05.png
+	delay	40
+	@cmd	dash 0 0
+	bbox	54 9 14 104
+	attack2	54 9 14 104 25 1 1 0 0
+	frame	data/chars/cazadora/partis05.png
+	delay	20
+	@cmd	dasher 0 0 0 0
+	bbox	54 9 14 104
+	attack2	54 9 14 104 19 1 1 0 0
+	frame	data/chars/cazadora/partis05.png
+	delay	40
+	@cmd	returner 40
+	frame	data/chars/cazadora/partis05.png
+	delay	10
+	attack2	0
+	@cmd	dasher 0 0 0 0
+	frame	data/chars/cazadora/partis05.png
+	@cmd	beidle
+	frame	data/chars/cazadora/partis05.png
+		
+anim	follow3
+	delay	5
+	offset	60 112
+	bbox	17 14 87 92
+	attack	17 14 87 92 19 1 1 0 0
+	frame	data/chars/cazadora/partis05.png
+	frame	data/chars/cazadora/partis06.png
+	frame	data/chars/cazadora/partis07.png
+	frame	data/chars/cazadora/partis08.png
+	frame	data/chars/cazadora/partis09.png
+	@cmd	target 4 4 0 0 1 1
+	frame	data/chars/cazadora/partis10.png
+	frame	data/chars/cazadora/partis11.png
+	frame	data/chars/cazadora/partis12.png
+	frame	data/chars/cazadora/partis05.png
+	@cmd	looper 1 4
+	bbox	52 7 9 107
+	attack	52 7 9 107 19 1 1 0 0
+	frame	data/chars/cazadora/partis09.png
+	delay	20
+	frame	data/chars/cazadora/partis09.png
+	delay	40
+	@cmd	dash 0 0
+	bbox	52 7 9 107
+	attack	52 7 9 107 19 1 1 0 0
+	frame	data/chars/cazadora/partis09.png
+	delay	20
+	@cmd	dasher 0 0 0 0
+	bbox	52 7 9 107
+	attack	52 7 9 107 19 1 1 0 0
+	frame	data/chars/cazadora/partis09.png
+	delay	40
+	@cmd	returner 40
+	frame	data/chars/cazadora/partis09.png
+	delay	10
+	attack	0
+	@cmd	dasher 0 0 0 0
+	frame	data/chars/cazadora/partis09.png
+	@cmd	beidle
+	frame	data/chars/cazadora/partis05.png
+		
+anim	follow4
+	delay	10
+	offset	60 112
+	frame	data/chars/cazadora/partis01.png
+	frame	data/chars/cazadora/partis02.png
+	frame	data/chars/cazadora/partis03.png
+	frame	data/chars/cazadora/partis04.png
+	@cmd	getxy
+	@cmd	beidle
+	frame	data/chars/cazadora/partis05.png
+		
+anim	idle
+	loop	1
+	delay	15
+	offset	60 112
+	bbox	54 9 14 104
+	attack	54 9 14 104 19 1 1 0 0 0
+	frame	data/chars/cazadora/partis05.png
+	offset	60 122
+	@cmd	targetT 40 0 -10 1
+	@cmd	attack1 -50 50 50 180 "ANI_FOLLOW2"
+	@cmd	attack1 -50 50 -180 -50 "ANI_FOLLOW3"
+	@cmd	attack1 0 140 -80 80 "ANI_FOLLOW1"
+	frame	data/chars/cazadora/partis05.png
+	offset	60 112
+	frame	data/chars/cazadora/partis05.png
+	offset	60 102
+	@cmd	targetT 40 0 -10 1
+	@cmd	attack1 -60 60 50 180 "ANI_FOLLOW2"
+	@cmd	attack1 -50 50 -180 -50 "ANI_FOLLOW3"
+	@cmd	attack1 0 140 -80 80 "ANI_FOLLOW1"
+	frame	data/chars/cazadora/partis05.png
+	offset	60 112
+	frame	data/chars/cazadora/partis05.png
+	offset	60 122
+	@cmd	targetT 40 0 -10 1
+	@cmd	attack1 -50 50 50 180 "ANI_FOLLOW2"
+	@cmd	attack1 -50 50 -180 -50 "ANI_FOLLOW3"
+	@cmd	attack1 0 140 -80 80 "ANI_FOLLOW1"
+	frame	data/chars/cazadora/partis05.png
+	offset	60 112
+	frame	data/chars/cazadora/partis05.png
+	attack	0
+	offset	60 102
+	frame	data/chars/cazadora/partis05.png
+		
+anim	spawn
+	loop	1
+	delay	10
+	offset	60 112
+	frame	data/chars/cazadora/partis01.png
+	@cmd	attack1 0 130 -180 180 "ANI_FOLLOW4"
+	frame	data/chars/cazadora/partis01.png
+		
+#|edited by openBor Stats v 0.67
+		

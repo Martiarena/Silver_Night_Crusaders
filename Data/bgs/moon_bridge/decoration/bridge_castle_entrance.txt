@@ -1,0 +1,24 @@
+name	       	Bridge_castle_entrance
+type    	none
+antigravity     100
+shadow		0
+nomove	1
+setlayer 99
+offscreenkill   9999
+nolife	1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_gravity 0
+
+palette		data/bgs/moon_bridge/front_panel_palette_2.gif
+
+
+
+anim	idle
+	loop	1
+	delay	7
+	offset	148 248
+	frame	data/bgs/moon_bridge/decoration/bridge_castle_entrance.gif
+		
+#|edited by openBor Stats v 0.67
+		

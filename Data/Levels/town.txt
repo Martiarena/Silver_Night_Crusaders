@@ -1,0 +1,458 @@
+music		data/music/monsterkiller.ogg 471870
+
+panel	        data/bgs/cachtice/town.gif
+
+order           a
+settime	        0
+notime		1
+spawn1          80 0 240
+spawn2          40 0 240
+direction	both
+type		0 0 0
+cameratype 1
+
+spawn	Prologue
+coords  160 240  0
+flip    1
+at      0
+
+spawn  fireruins
+coords  0  0  0
+flip  1
+at  0
+
+spawn  Pole
+coords  639  216  0
+at  0
+
+spawn  fire0
+coords  700  216  0
+flip  1
+at  0
+
+spawn  Townplat1
+coords  822  216  168
+flip  1
+at  0
+
+spawn  fire1
+coords  1040  163  0
+flip  1
+at  0
+
+spawn  fire2
+coords  1288  163
+flip  1
+at  0
+
+spawn  fire_floor
+coords  1405  216  205
+at  0
+
+spawn  Townfloor
+coords  1477  216
+alias	Thick
+flip 1
+at  0
+
+spawn  fire3
+coords  1531  163
+flip  1
+at  0
+
+spawn  Townplat2
+coords  1643  216  151
+flip  1
+at  0
+
+spawn  fire4
+coords  1867  216
+flip  1
+at  0
+
+spawn  Hidden_1
+coords  2037  216  169
+flip  1
+at  0
+
+spawn  Townplat3
+coords  2037  216  169
+flip  1
+at  0
+
+spawn  Townplat4
+coords  2869  216  97
+flip  1
+at  0
+
+spawn  Townwall1
+coords  3057  216  95
+alias	Thick
+flip  1
+at  0
+
+spawn  Townplat5
+coords  3088  216  41
+flip  1
+at  0
+
+spawn  Townplat0
+coords  3088  216  105
+flip  1
+at  0
+
+spawn  Townplat0
+coords  3088  216  168
+flip  1
+at  0
+
+spawn  Townwall2
+coords  3145  216  95
+alias	Thick
+flip  1
+at  0
+
+spawn  Townwall3
+coords  3199  216  63
+alias	Thick
+flip  1
+at  0
+
+spawn  Townwall0
+coords  3265  216  53
+flip  1
+at  0
+
+spawn  fire6
+coords  1410  154  0
+flip  1
+at  0
+
+spawn  fire5
+coords  3288  66
+flip  1
+at  0
+
+spawn  Townwall4
+coords  3314  216  95
+alias	Thick
+flip  1
+at  0
+
+spawn  Townwall5
+coords  3470 216  63
+alias	Thick
+flip  1
+at  0
+
+spawn  Townplat6
+coords  3504  216  48
+flip  1
+at  0
+
+spawn  Townplat6
+coords  3504  216  120
+flip  1
+at  0
+
+
+spawn  peoplei
+coords  350  216
+at  150
+
+spawn  peoplec
+coords  340  216
+at  190
+
+spawn  peoplea
+coords  340  216
+at  210
+
+spawn  peopleb
+coords  350  216
+at  230
+
+spawn  peopled
+coords  400  216  0
+at  270
+
+spawn  Lampara
+coords  360  216  92
+item	___10
+at  311
+
+spawn  bodyb
+coords  400  216
+at  350
+
+spawn  Knight
+coords  360  215  0
+health 6
+at  380
+
+spawn	Esqueleto
+coords	420 216  0
+at	380
+
+spawn  Barril
+coords  360  216  175
+item	___400
+at  380
+
+spawn  Barril
+coords  360  216  175
+item	C._Arcoiris
+at  420
+
+spawn  bodya
+coords  400  216
+flip  1
+at  500
+
+spawn  Esqueleto
+coords  -25  216  0
+at  500
+
+spawn	Esqueleto
+coords	400 216  0
+at	500
+
+spawn  Lampara
+coords  360  216  92
+map 1
+item	Cuchillo
+at  582
+
+spawn  Barril
+coords  360  216  0
+item ___250
+at  635
+
+spawn  Lampara
+coords  360  216  146
+item	Gema_azul
+at  684
+
+spawn  bodyd
+coords  400  216  54
+at  700
+
+spawn  Esqueleto
+coords  400  216  54
+at  700
+
+spawn  bodye
+coords  400  216  54
+at  820
+
+spawn  Lampara
+coords  360  216  146
+item	___10
+at  931
+
+spawn  bodyf
+coords  400  216  54
+at  1000
+
+Blockade  945
+at  1025
+
+spawn  Door1
+coords  360  216  62
+flip 1
+at  1050
+
+spawn  Esqueleto
+coords  -50  216  54
+at  1100
+
+spawn  bodyg
+coords  400  216  54
+at  1200
+
+spawn  Esqueleto
+coords  370  216  160
+at  1200
+
+spawn	Flamataura
+coords 100 216 62
+at 1300
+
+spawn  Esqueleto
+coords  360  216  54
+at  1300
+
+spawn  Barril
+coords  360  216  158
+item  ___250
+at  1320
+
+spawn  Barril
+coords  360  216  158
+item  Fantasma
+at  1360
+
+spawn Townfloor_b
+coords 360  216  0
+alias	Thick
+flip  1
+item Pollo_frito
+at  1441
+
+spawn  Lampara
+coords  360  216  146
+item	___20
+at  1443
+
+spawn  bodyh
+coords  400  216
+at  1450
+
+spawn  cityruins
+coords  0  0  0
+flip  1
+at  1500
+
+spawn  Lampara
+coords  360  216  92
+item	___10
+at  1527
+
+spawn  Esqueleto
+coords  400  216
+at  1550
+
+spawn  Barril
+coords  360  216  174
+item  ___400
+at  1740
+
+Blockade  1785
+at  1785
+
+spawn  Lampara
+coords  360  216  92
+item	Gema_azul
+at  1804
+
+spawn  Lampara
+coords  360  216  92
+item	___20
+at  1949
+
+spawn  batspawner
+coords  400  216  55
+at  2100
+
+spawn  Lampara
+coords  360  216  92
+item	___10
+at  2168
+
+spawn  peoplei
+coords  390  216
+at  2170
+
+spawn  peoplee
+coords  370  216
+at  2170
+
+spawn  peoplef
+coords  400  216
+at  2170
+
+spawn  Knight
+coords  400  216  0
+at  2170
+
+Blockade  2170
+at  2170
+
+spawn  Esqueleto
+coords  -50  216
+at  2200
+
+spawn  Anfauglir
+coords  450  216
+at  2200
+
+spawn  Esqueleto
+coords  550  216  0
+at  2205
+
+spawn  Lampara
+coords  360  216  92
+map 1
+item	Hacha
+at  2352
+
+spawn  Chiroptera_
+coords  360  216  54
+at  2420
+
+spawn  Chiroptera_
+coords  360  216  54
+at  2440
+
+spawn  Barril
+coords  360  216  104
+item ___250
+at  2440
+
+spawn  Barril
+coords  360  216  104
+item  Pollo_frito
+at  2480
+
+spawn  Esqueleto
+coords  450  216  105
+at  2500
+
+spawn  Lampara
+coords  360  216  92
+item	___10
+at  2656
+
+Blockade  2740
+at  2740
+
+spawn  Chiroptera_
+coords  360  216  50
+at  2780
+
+spawn  Barril
+coords  360  216  127
+item  ___250
+at  2875
+
+spawn  Anfauglir
+coords  400  216
+at  2900
+
+spawn  Barril
+coords  360  216  127
+item  Gema_roja
+at  2915
+
+spawn  Esqueleto
+coords  450  216  128
+at  3000
+
+spawn  Esqueleto
+coords  -150  216
+at  3000
+
+spawn  Barril
+coords  360  216
+item  Fantasma
+at  3080
+
+spawn  Lampara
+coords  359  216  92
+item	___50
+at  3233
+
+spawn	ToShop
+coords  340  216  0
+flip 1
+at  3360

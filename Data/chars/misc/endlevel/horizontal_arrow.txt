@@ -1,0 +1,21 @@
+name    	Horizontal_arrow
+type            endlevel
+facing          1
+nolife	1
+offscreenkill    99999
+
+palette		data/chars/misc/endlevel/arrow-right-a.gif
+
+
+
+
+anim	idle
+	loop	1
+	delay	7
+	offset	6 75
+	bbox	0 0 12 240
+	frame	data/chars/misc/endlevel/arrow-right-a.gif
+	frame	data/chars/misc/endlevel/arrow-right-b.gif
+		
+#|edited by openBor Stats v 0.67
+		

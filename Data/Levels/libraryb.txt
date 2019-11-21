@@ -1,0 +1,218 @@
+music		data/music/misticlibrary.ogg 379260
+
+background	data/bgs/library/back_library2.gif
+panel	        data/bgs/library/library_old.gif
+
+order           a
+settime	        0
+notime		1
+spawn1          80 0 240
+spawn2          60 0 240
+direction	leftright
+type		0 0 0
+cameratype 1
+
+spawn  Wall_library_old_5
+coords  303  464
+alias	Thick
+flip 1
+at  0
+
+spawn  Wall_library_old_6
+coords  201  464  247
+alias	Thick
+flip 1
+at  0
+
+spawn  Wall_library_old_4
+coords  186  464  319
+alias	Thick
+flip 1
+at  0
+
+spawn  Roof_library_old_4
+coords  63  464  392
+alias	Thick
+flip 1
+at  0
+
+spawn  Roof_library_old_10
+coords  56  464  191
+alias	Thick
+flip 1
+at  0
+
+spawn  Roof_library_old_7
+coords -176  464  90
+alias	Thick
+flip 1
+at  0
+
+spawn  Roof_library_old_6
+coords  -225  464  338
+alias	Thick
+flip 1
+at  0
+
+spawn  Roof_library_17
+coords  -255  464  90
+alias	Thick
+flip 1
+at  0
+
+spawn  Roof_library_13
+coords  -279  464  338
+alias	Thick
+flip 1
+at  0
+
+spawn  Platform_library_old_1
+coords  -383  464  59
+flip 1
+at  0
+
+spawn  Platform_library_old_1
+coords  -383  464  144
+flip 1
+at  0
+
+spawn  Bridge_library_1
+coords  -383  464  216
+flip 1
+at  0
+
+spawn  Roof_library_12
+coords  -384  464  401
+alias	Thick
+flip 1
+at  0
+
+spawn  Roof_library_11
+coords  -488  464  338
+alias	Thick
+flip 1
+at  0
+
+spawn  Roof_library_16
+coords  -522  464  0
+alias	Thick
+flip 1
+at  0
+
+spawn  Roof_library_old_8
+coords  -543  464  339
+alias	Thick
+flip 1
+at  0
+
+spawn  Platform_library_old_3
+coords  -617  464  75
+flip 1
+at  0
+
+spawn  Platform_library_old_3
+coords  -617  464  160
+flip 1
+at  0
+
+spawn  Wall_library_old_8
+coords  -705  464  144
+alias	Thick
+flip 1
+at  0
+
+spawn  Hidden_7
+coords  -705  464  144
+flip 1
+at  0
+
+spawn  Roof_library_old_3
+coords  -796  464  392
+alias	Thick
+flip 1
+at  0
+
+spawn  Wall_library_old_3
+coords  -881  464 144
+alias	Thick
+flip 1
+at  0
+
+spawn  Roof_library_old_9
+coords  -992  464  0
+alias	Thick
+flip 1
+at  0
+
+spawn  Lampara_libreria
+coords  0  464  155
+item  ___20
+flip 1
+at  0
+
+spawn  Wall_library_old_7
+coords  86  464  247
+item	Pollo_frito
+alias	Thick
+flip	1
+at  0
+
+spawn  Lampara_libreria
+coords  191  464  155
+item  ___10
+flip 1
+at  0
+
+spawn  Jar1
+coords  -2  464  248
+item  C._Arcoiris
+at  0
+
+spawn  Jar1
+coords  -29  464  248
+item  ___400
+at  0
+
+spawn  Ninfa
+coords  -40  464 0
+at  0
+
+spawn  Jar2
+coords  -40  464  248
+item  ___250
+at  25
+
+spawn  Lampara_libreria
+coords  -38  464  356
+item  ___20
+flip 1
+at  27
+
+spawn  Jar2
+coords  -40  464  248
+item  ___700
+at  50
+
+spawn  Tomo_Magico
+coords  470  464  120
+at  480
+
+spawn  Ninfa
+coords  -40  464  250
+at  480
+
+spawn  Lampara_libreria
+coords  -39  464  356
+item  ___20
+flip 1
+at  657
+
+spawn  Lampara_libreria
+coords  -38  464  108
+item  Gema_azul
+flip 1
+at  658
+
+spawn  ToLibraryOld
+coords  -65  464  0
+at  780

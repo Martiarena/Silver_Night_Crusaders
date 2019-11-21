@@ -1,0 +1,204 @@
+bossmusic	data/music/boss.ogg 367353
+#music		data/music/castlewalls.ogg
+
+
+fglayer		data/bgs/dungeon/dungeon_catacombs_back_1.gif -10000 0.15 0.2 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/dungeon/dungeon_catacombs_back_2.gif -11000 0.18 0.25 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/dungeon/dungeon_catacombs_back_3.gif -12000 0.21 0.3 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/dungeon/dungeon_catacombs_back_4.gif -13000 0.24 0.35 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/dungeon/dungeon_catacombs_back_5.gif -14000 0.28 0.4 0 0 0 0 -1 1 1 0 0 0 0 0 1
+
+
+#panel	        data/bgs/debbug/recorder_gif.gif
+#panel	        data/bgs/dungeon/dungeon_debbug.gif
+panel	        data/bgs/dungeon/dungeon_catacombs_1.gif
+
+musicfade	200
+order           a
+settime	        0
+notime		1
+spawn1          80 0 240
+spawn2          40 0 240
+direction	both
+type		0 0 0
+cameratype 1
+noslow 1
+
+spawn  Catacombs_wall1b
+coords  8  464  0
+at  0
+
+spawn  Catacombs_wall1a
+coords  312  464  89
+at  0
+
+spawn  dungeon_platform1c
+coords  392  464  85
+at  0
+
+spawn  dungeon_platform1c
+coords  392  464  170
+at  0
+
+spawn  dungeon_platform1c
+coords  392  464  264
+at  0
+
+spawn  skull_catacombs
+coords  603  464  0
+at  0
+
+spawn  dungeon_platform1c
+coords  808  464  75
+at  0
+
+spawn  dungeon_platform1c
+coords  808  464  155
+at  0
+
+spawn  dungeon_platform1c
+coords  808  464  265
+at  0
+
+spawn  Catacombs_wall1c
+coords  862  464  89
+at  0
+
+spawn  Stairs_1
+coords  60  464  0
+at  0
+
+spawn  Barril
+coords  70  464  0
+item  Pollo_frito
+at  0
+
+spawn  Barril
+coords  120  464  0
+item  ___700
+at  0
+
+spawn  Candle1
+coords  89  464  75
+item  Gema_roja
+at  0
+
+spawn  Candle1
+coords  217  464  75
+item  Bomba
+map 1
+at  0
+
+spawn  Candle1
+coords  360  464  55
+item  ___50
+at  31
+
+spawn  Candle1
+coords  360  464  140
+item  ___100
+at  31
+
+spawn  Candle1
+coords  360  464  230
+item  Gema_azul
+at  31
+
+spawn  Candle1
+coords  360  464  325
+item  Hacha
+map 1
+at  31
+
+Blockade  345
+at  145
+
+spawn boss_lifebar
+coords  0 244 0
+flip 1
+at  145
+
+spawn dust_legion
+coords 458 496 0
+flip 1
+at  145
+
+spawn  Legion_core
+coords  460  464  0
+alias Legion
+boss 1
+at  145
+
+spawn  Legion_izqup
+coords  450  464  0
+alias Legion
+at  145
+
+spawn  Legion_izqup
+coords  465  464  0
+flip 1
+alias Legion
+at  145
+
+spawn  Legion_up
+coords  450  464  0
+alias Legion
+at  145
+
+spawn  Legion_izqdown
+coords  450  464  0
+alias Legion
+at  145
+
+spawn  Legion_izqdown
+coords  465  464  0
+flip  1
+alias Legion
+at  145
+
+spawn  Legion_izq
+coords  450  464  0
+alias Legion
+at  145
+
+spawn  Legion_izq
+coords  465  464  0
+flip  1
+alias Legion
+at  145
+
+spawn  Legion_down
+coords  450  464  0
+alias Legion
+at  145
+
+spawn  Legion_center
+coords  448  464  0
+alias Legion
+at  145
+
+spawn	Boss7Spawner
+coords  0 0 0
+2pspawn 1
+at  145
+
+spawn  Candle1
+coords  360  464  55
+item  Gema_roja
+at  450
+
+spawn  Candle1
+coords  360  464  140
+item  Bumeran
+map 1
+at  450
+
+spawn  Barril
+coords  360  464  175
+item  P._Invisible
+at  450
+
+spawn  Barril
+coords  360  464  285
+item  Pollo_frito
+at  450

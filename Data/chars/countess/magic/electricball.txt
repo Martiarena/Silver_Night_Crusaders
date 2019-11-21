@@ -1,0 +1,32 @@
+name		Electricball
+lifespan  	3
+facing 1
+nolife	1
+type		none
+candamage	player npc
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	7
+	offset	16 122
+	hitfx	data/sounds/jolted.wav
+	shock	5 0 22 122 25 0 1 0 0 0
+	frame	data/chars/countess/magic/electricball1m.gif
+	frame	data/chars/countess/magic/electricball1n.gif
+	frame	data/chars/countess/magic/electricball1o.gif
+	frame	data/chars/countess/magic/electricball1p.gif
+	frame	data/chars/countess/magic/electricball1q.gif
+	frame	data/chars/countess/magic/electricball1r.gif
+	frame	data/chars/countess/magic/electricball1s.gif
+	shock	0 0 0 0
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,38 @@
+name    Hidden_5
+type		none
+facing	  	1
+nolife	1
+setlayer	-1
+antigravity	100
+offscreenkill   9999
+load		Dr._Negishi
+
+animationscript  data/scripts/escript.c
+
+palette		data/bgs/garden/palette_object2.gif
+
+
+
+
+anim	follow1
+	delay	10
+	offset	48 33
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn02 "Dr._Negishi" 260 144 0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	delay	100
+	offset	48 33
+	noreflect	1
+	followcond	1
+	followanim	1
+	hitfx	data/sounds/no-hit.wav
+	attack20	85 -20 5 20 0 0 1 1 0 0
+	frame	data/bgs/garden/platforms/platform_wall6.gif
+		
+#|edited by openBor Stats v 0.67
+		

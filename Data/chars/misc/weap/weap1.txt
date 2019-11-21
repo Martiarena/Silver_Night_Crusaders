@@ -1,0 +1,50 @@
+name	weap1
+weapnum 1
+health   0
+type     item
+counter  999
+subtype  weapon
+shootnum 		5
+typeshot      	1
+weaploss		2
+#reload 5
+nolife   1
+
+palette data/chars/misc/weap/weap.gif #1
+
+anim spawn
+	jumpframe 1 2.5 0 0
+	loop	0
+	offset     160 141
+	bbox	0 0 0 0
+	delay   45
+	frame	data/chars/misc/empty.gif
+	bbox	153 132 12 10
+	delay   45
+	frame	data/chars/misc/weap/w101.gif 
+	delay   4
+	frame	data/chars/misc/weap/w102.gif 
+	frame	data/chars/misc/weap/w103.gif 
+	frame	data/chars/misc/weap/w104.gif 
+	frame	data/chars/misc/weap/w105.gif 
+	frame	data/chars/misc/weap/w106.gif 
+	frame	data/chars/misc/weap/w107.gif 
+	frame	data/chars/misc/weap/w108.gif 
+
+anim idle
+	loop	1
+	offset     160 141
+	bbox	153 132 12 10
+	delay   45
+	frame	data/chars/misc/weap/w101.gif 
+	delay   4
+	frame	data/chars/misc/weap/w102.gif 
+	frame	data/chars/misc/weap/w103.gif 
+	frame	data/chars/misc/weap/w104.gif 
+	frame	data/chars/misc/weap/w105.gif 
+	frame	data/chars/misc/weap/w106.gif 
+	frame	data/chars/misc/weap/w107.gif 
+	frame	data/chars/misc/weap/w108.gif 
+
+
+

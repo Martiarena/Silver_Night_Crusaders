@@ -1,0 +1,37 @@
+name	        Shockwave2
+type	        none
+nolife          1
+remove 1
+lifespan        1
+hostile		player
+candamage       player npc shot
+palette		data/chars/werewolf/firewolf/explo_palette.gif
+
+
+
+animationscript data/scripts/escript.c
+
+
+
+
+anim	idle
+	loop	0
+	delay	7
+	offset	37 178
+	burn	15 130 44 48 25 11 0 0 0 0
+	frame	data/chars/werewolf/firewolf/explosion1.gif
+	burn	14 5 44 173 25 11 0 0 0 0
+	frame	data/chars/werewolf/firewolf/explosion2.gif
+	burn	20 75 35 103 25 11 0 0 0 0
+	frame	data/chars/werewolf/firewolf/explosion3.gif
+	burn	25 85 23 93 19 11 0 0 0 0
+	frame	data/chars/werewolf/firewolf/explosion4.gif
+	burn	25 105 23 73 12 11 0 0 0 0
+	frame	data/chars/werewolf/firewolf/explosion5.gif
+	burn	0 0 0 0
+	frame	data/chars/werewolf/firewolf/explosion6.gif
+	frame	data/chars/misc/empty.gif
+
+		
+#|edited by openBor Stats v 0.67
+		

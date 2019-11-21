@@ -1,0 +1,55 @@
+name    	Pollo_frito
+health		50
+type    	item
+facing          1
+antigravity	30
+candamage  	player
+icon 		data/chars/misc/bgitem.gif
+
+palette		data/chars/items/chicken/idle1.gif
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	70
+	offset	11 24
+	itembox	0 0 22 24
+	frame	data/chars/items/chicken/idle1.gif
+	delay	2
+	frame	data/chars/items/chicken/idle2.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	11 24
+	itembox	0 0 22 24
+	frame	data/chars/items/chicken/idle2.gif
+	frame	data/chars/items/chicken/idle1.gif
+	frame	data/chars/items/chicken/idle2.gif
+	frame	data/chars/items/chicken/idle1.gif
+	frame	data/chars/items/chicken/idle2.gif
+	frame	data/chars/items/chicken/idle1.gif
+	frame	data/chars/items/chicken/idle2.gif
+	frame	data/chars/items/chicken/idle1.gif
+	frame	data/chars/items/chicken/idle2.gif
+	frame	data/chars/items/chicken/idle1.gif
+	frame	data/chars/items/chicken/idle2.gif
+	frame	data/chars/items/chicken/idle1.gif
+	frame	data/chars/items/chicken/idle2.gif
+	frame	data/chars/items/chicken/idle1.gif
+	frame	data/chars/items/chicken/idle2.gif
+	frame	data/chars/items/chicken/idle1.gif
+	frame	data/chars/items/chicken/idle2.gif
+	frame	data/chars/items/chicken/idle1.gif
+	frame	data/chars/items/chicken/idle2.gif
+	frame	data/chars/items/chicken/idle1.gif
+	frame	data/chars/items/chicken/idle2.gif
+	frame	data/chars/items/chicken/idle1.gif
+	frame	data/chars/items/chicken/idle2.gif
+	frame	data/chars/items/chicken/idle1.gif
+		
+#|edited by openBor Stats v 0.56
+		

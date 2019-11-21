@@ -1,0 +1,41 @@
+name    	Hflame
+type    	none
+shadow  	0
+lifespan  	1
+nomove  	1
+nolife          1
+antigravity     100
+
+palette         data/chars/misc/hits/flame1.gif
+
+
+
+anim	idle
+	loop	0
+	delay	2
+	offset	18 15
+	frame	data/chars/misc/hits/flame1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hits/flame2.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hits/flame3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hits/flame4.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hits/flame5.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hits/flame6.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hits/flame7.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hits/flame8.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hits/flame9.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hits/flame10.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hits/flame11.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

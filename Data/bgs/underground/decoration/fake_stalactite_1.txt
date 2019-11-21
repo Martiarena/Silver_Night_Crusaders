@@ -1,0 +1,57 @@
+name  	Fake_stalactite_1
+health	18
+type	obstacle
+nomove	1
+setlayer 1
+shadow  0
+nolife	1
+antigravity     100
+subject_to_wall 1
+subject_to_obstacle 0
+offscreenkill   9999
+animationscript  data/scripts/escript.c
+
+palette		data/bgs/underground/palette_objects.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	death
+	loop	0
+	delay	3
+	offset	9 64
+	frame	data/bgs/underground/traps/stalactite/death.gif
+	sound	data/sounds/rock_break3.wav
+	frame	data/chars/misc/empty.gif
+	delay	6
+	@cmd	tosserM "Underground_rock3" 5 26 0 1.5
+	@cmd	tosserM "Underground_rock2" 8 25 0.3 1.5
+	@cmd	tosserM "Underground_rock1" -3 27 -0.3 1.5
+	@cmd	tosserM "Underground_rock3" -8 14 -0.3 1
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	delay	100
+	offset	9 64
+	bbox	0 20 30 57
+	platform	21 69 -10 -10 10 10 10 10
+	frame	data/bgs/underground/traps/stalactite/idle.gif
+		
+#|edited by openBor Stats v 0.67
+		

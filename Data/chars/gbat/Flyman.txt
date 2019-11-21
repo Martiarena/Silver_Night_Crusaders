@@ -1,0 +1,249 @@
+name	    	Flyman
+health  	200
+nomove   	1 1
+type		enemy
+falldie 	1
+cantgrab 	1
+nopain  	1
+nodrop  	2
+aggression 	6
+nolife          1
+score   	1000 1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+antigravity     100
+
+palette          data/chars/gbat/flyman3.png
+alternatepal     data/chars/gbat/flyblink.png
+
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+load    	 BFBall
+
+
+anim spawn
+	delay	5
+	offset  30 55
+	frame	data/chars/gbat/flyman1.png
+	delay	100
+        @cmd    dasher 0 -1 0 1
+	frame	data/chars/gbat/flyman1.png
+	delay	6
+        @cmd    stop
+	bbox    20 23 28 20
+	attack  20 23 28 20 10 1
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman7.png #
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman7.png #
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman6.png
+	attack  0 0 0 0 0
+	frame	data/chars/gbat/flyman7.png #
+
+anim idle
+@script
+    void self = getlocalvar("self");
+    int x = getentityproperty(self, "x");
+    int y = getentityproperty(self, "a");
+    int Sx = getentityproperty(self, "xdir");
+    int Sy = getentityproperty(self, "tossv");
+    int XPos = openborvariant("xpos");
+    int Screen = openborvariant("hResolution");
+    int r = rand()%30;
+
+    if(x < XPos+30 && Sx < 0){
+      changeentityproperty(self, "velocity", -Sx, 0, Sy);
+    } else if(x > Screen+XPos-30 && Sx > 0){
+      changeentityproperty(self, "velocity", -Sx, 0, Sy);
+    } else if(y <= 5){
+      changeentityproperty(self, "velocity", 0, 0, 1.5);
+    } else if(y < 20 && Sy < 0){
+      changeentityproperty(self, "velocity", Sx, 0, -Sy);
+    } else if(y > 180 && Sy > 0){
+      changeentityproperty(self, "velocity", Sx, 0, -Sy);
+    }
+
+    if(frame==1){
+      int Vx; int Vy;
+      int iR = rand()%180;
+
+      Vx = 1.5*cos(iR);
+      Vy = 1.5*sin(iR);
+
+      changeentityproperty(self, "velocity", Vx, 0, Vy);
+    }
+
+    if(frame == 33 && r > 0){
+      performattack(self, openborconstant("ANI_FOLLOW1"));
+    }
+@end_script
+	loop	1
+	delay	6
+	offset  30 55
+	bbox    20 23 28 20
+	attack  20 23 28 20 10 1
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman4.png
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman4.png #
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman4.png
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman4.png #
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman4.png
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman4.png #
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman4.png
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman4.png #
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman4.png
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman4.png #
+        @cmd    stop
+        @cmd    target 1 1 10 0 0 1
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman7.png
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman6.png
+	attack  0 0 0 0 0
+	frame	data/chars/gbat/flyman7.png #
+
+anim follow1
+	delay	6
+	offset  30 55
+	bbox    20 23 28 20
+	attack  20 23 28 20 10 1
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman7.png
+        @cmd    target 1.5 1.5 10 0 0 1
+        @cmd    shoot2 "BFBall" 10 25
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman7.png #
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman7.png
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman7.png #
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman7.png
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman7.png #
+        @cmd    beidle
+	frame	data/chars/gbat/flyman2.png
+
+
+anim death
+	delay	5
+	offset  30 55
+	subentity gdie
+        @cmd    stop
+	spawnframe 8 0 0 20 0
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman7.png
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman4.png
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman4.png
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman7.png #
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman7.png
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman4.png
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman4.png
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman7.png #
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman7.png
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman4.png
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman4.png
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman7.png #
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman7.png
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman4.png
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman4.png
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman7.png #
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman7.png
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman4.png
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman4.png
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman7.png #
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman7.png
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman4.png
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman4.png
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman7.png #
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman7.png
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman3.png
+	frame	data/chars/gbat/flyman4.png
+	frame	data/chars/gbat/flyman5.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman4.png
+	frame	data/chars/gbat/flyman2.png
+	frame	data/chars/gbat/flyman6.png
+	frame	data/chars/gbat/flyman7.png #
+        @cmd    suicide
+	frame	data/chars/gbat/flyman4.png #

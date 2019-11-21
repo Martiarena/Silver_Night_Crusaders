@@ -1,0 +1,385 @@
+name    	La_criatura_
+health          100
+mp              1
+speed           7
+type    	enemy
+noquake  	1
+nopain  	1
+nodrop  	2
+death   	1
+nodieblink	2
+hostile         player npc
+candamage 	player npc
+offscreenkill 	500
+score 5000 -1
+diesound     data/sounds/diem1.wav
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+defense normal 0.75 0 0 0 0 0 0
+defense normal2 0.75 0 0 0 0 0 0
+defense normal7 0.75 0 0 0 0 0 0
+defense normal8 0.5 0 0 0 0 0 0
+defense normal19 0.75 0 0 0 0 0 0
+defense normal20 0.75 0 0 0 0 0 0
+defense burn 0.75 0 0 0 0 0 0
+defense schock 0.75 0 0 0 0 0 0
+
+load          	CThunder
+load            CMissile
+load            Shockwave
+icon		data/chars/misc/bgmonster.gif
+
+palette 	data/chars/creature/creature.gif
+
+alternatepal	 data/chars/creature/blink.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	range	25 65
+	rangea	0 105
+	delay	7
+	offset	35 130
+	bbox	15 40 40 90
+	attack	15 40 40 90 19 0 0 0 0 0
+	frame	data/chars/creature/attack1.gif
+	frame	data/chars/creature/attack2.gif
+	delay	1
+	move	1
+	frame	data/chars/creature/attack3.gif
+	frame	data/chars/creature/attack3.gif
+	frame	data/chars/creature/attack3.gif
+	frame	data/chars/creature/attack3.gif
+	frame	data/chars/creature/attack3.gif
+	frame	data/chars/creature/attack3.gif
+	frame	data/chars/creature/attack3.gif
+	frame	data/chars/creature/attack4.gif
+	frame	data/chars/creature/attack4.gif
+	frame	data/chars/creature/attack4.gif
+	frame	data/chars/creature/attack4.gif
+	frame	data/chars/creature/attack4.gif
+	frame	data/chars/creature/attack4.gif
+	frame	data/chars/creature/attack4.gif
+	attack	45 55 45 48 19 0 0 0 0 0
+	sound	data/sounds/throw_big_0.wav
+	frame	data/chars/creature/attack5.gif
+	frame	data/chars/creature/attack5.gif
+	frame	data/chars/creature/attack5.gif
+	frame	data/chars/creature/attack5.gif
+	frame	data/chars/creature/attack5.gif
+	frame	data/chars/creature/attack5.gif
+	frame	data/chars/creature/attack5.gif
+	frame	data/chars/creature/attack6.gif
+	frame	data/chars/creature/attack6.gif
+	frame	data/chars/creature/attack6.gif
+	frame	data/chars/creature/attack6.gif
+	frame	data/chars/creature/attack6.gif
+	frame	data/chars/creature/attack6.gif
+	move	0
+	frame	data/chars/creature/attack6.gif
+	delay	7
+	attack	15 25 40 105 19 0 0 0 0 0
+	frame	data/chars/creature/attack4.gif
+	frame	data/chars/creature/attack3.gif
+	delay	1
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/creature/attack3.gif
+		
+anim	death
+	delay	7
+	offset	35 130
+	subentity	kdie
+	spawnframe	1 0 0 0 0
+	sound	data/sounds/flame-dies.wav
+	frame	data/chars/creature/death1.gif
+	frame	data/chars/creature/death2.gif
+	delay	28
+	frame	data/chars/creature/death3.gif
+	delay	4
+	frame	data/chars/creature/death4.gif
+	frame	data/chars/creature/death5.gif
+	frame	data/chars/creature/death6.gif
+	delay	7
+	frame	data/chars/creature/death7.gif
+	frame	data/chars/creature/death8.gif
+	frame	data/chars/creature/death9.gif
+	frame	data/chars/creature/death10.gif
+	delay	100
+	frame	data/chars/creature/death11.gif
+	delay	7
+	frame	data/chars/creature/death12.gif
+	frame	data/chars/creature/death13.gif
+	frame	data/chars/creature/death14.gif
+	delay	50
+	frame	data/chars/misc/empty.gif
+		
+anim	freespecial
+	range	100 160
+	rangea	0 100
+	delay	6
+	offset	35 130
+	bbox	15 40 40 90
+	attack	15 40 40 90 19 0 0 0 0 0
+	energycost	1
+	mponly	1
+	frame	data/chars/creature/misile1.gif
+	frame	data/chars/creature/misile2.gif
+	sound	data/sounds/open_arm.wav
+	frame	data/chars/creature/misile3.gif
+	frame	data/chars/creature/misile4.gif
+	delay	14
+	frame	data/chars/creature/misile5.gif
+	delay	5
+	frame	data/chars/creature/misile6.gif
+	frame	data/chars/creature/misile7.gif
+	frame	data/chars/creature/misile8.gif
+	delay	1
+	custknife	CMissile
+	throwframe	9 80
+	sound	data/sounds/explosion.wav
+	frame	data/chars/creature/misile9.gif
+	sound	data/sounds/missile_shoot.wav
+	frame	data/chars/creature/misile5.gif
+	frame	data/chars/creature/misile9.gif
+	frame	data/chars/creature/misile5.gif
+	frame	data/chars/creature/misile9.gif
+	frame	data/chars/creature/misile5.gif
+	frame	data/chars/creature/misile9.gif
+	frame	data/chars/creature/misile5.gif
+	frame	data/chars/creature/misile9.gif
+	frame	data/chars/creature/misile5.gif
+	frame	data/chars/creature/misile10.gif
+	frame	data/chars/creature/misile5.gif
+	frame	data/chars/creature/misile10.gif
+	frame	data/chars/creature/misile5.gif
+	frame	data/chars/creature/misile10.gif
+	frame	data/chars/creature/misile5.gif
+	frame	data/chars/creature/misile10.gif
+	frame	data/chars/creature/misile5.gif
+	delay	14
+	frame	data/chars/creature/misile5.gif
+	delay	4
+	frame	data/chars/creature/misile4.gif
+	frame	data/chars/creature/misile3.gif
+	frame	data/chars/creature/misile2.gif
+	frame	data/chars/creature/misile1.gif
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/creature/misile1.gif
+		
+anim	freespecial2
+	delay	7
+	offset	35 130
+	bbox	15 25 40 105
+	shock	15 25 40 105 19 0 0 0 0 0
+	frame	data/chars/creature/special1.gif
+	frame	data/chars/creature/special2.gif
+	sound	data/sounds/sparks1.wav
+	frame	data/chars/creature/special3.gif
+	delay	3
+	frame	data/chars/creature/special4.gif
+	frame	data/chars/creature/special5.gif
+	frame	data/chars/creature/special5a.gif
+	sound	data/sounds/sparks2.wav
+	frame	data/chars/creature/special6.gif
+	frame	data/chars/creature/special6a.gif
+	frame	data/chars/creature/special7.gif
+	frame	data/chars/creature/special7a.gif
+	frame	data/chars/creature/special8.gif
+	frame	data/chars/creature/special8a.gif
+	frame	data/chars/creature/special9.gif
+	frame	data/chars/creature/special9a.gif
+	frame	data/chars/creature/special10.gif
+	frame	data/chars/creature/special10a.gif
+	frame	data/chars/creature/special11.gif
+	frame	data/chars/creature/special11a.gif
+	frame	data/chars/creature/special12.gif
+	frame	data/chars/creature/special12a.gif
+	frame	data/chars/creature/special13.gif
+	frame	data/chars/creature/special13a.gif
+	@cmd	target 2 2 0 75 0 0
+	@cmd	shoot2 "CThunder" 22 95
+	frame	data/chars/creature/special14.gif
+	frame	data/chars/creature/special14a.gif
+	frame	data/chars/creature/special15.gif
+	frame	data/chars/creature/special15a.gif
+	frame	data/chars/creature/special16.gif
+	frame	data/chars/creature/special16a.gif
+	frame	data/chars/creature/special17.gif
+	frame	data/chars/creature/special17a.gif
+	frame	data/chars/creature/special18.gif
+	frame	data/chars/creature/special18a.gif
+	frame	data/chars/creature/special19.gif
+	frame	data/chars/creature/special19a.gif
+	delay	7
+	frame	data/chars/creature/special2.gif
+	frame	data/chars/creature/special1.gif
+	delay	1
+	shock	0 0 0 0 0 0 0
+	frame	data/chars/creature/special1.gif
+		
+anim	idle
+@script
+void self = getlocalvar("self");
+    int x = getentityproperty(self, "x");
+    int y = getentityproperty(self, "a");
+    int Sx = getentityproperty(self, "xdir");
+    int Sy = getentityproperty(self, "tossv");
+    int XPos = openborvariant("xpos");
+    int Screen = openborvariant("hResolution");
+	@end_script	
+	loop	1
+	delay	20
+	offset	35 130
+	bbox	15 40 40 90
+	attack	15 40 40 90 19 0 0 0 0 0
+	frame	data/chars/creature/idle.gif
+	delay	1
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/creature/idle.gif
+		
+anim	jumpattack
+	loop	0
+	delay	10
+	offset	35 130
+	bbox	20 50 40 75
+	attack	20 50 40 75 19 0 0 0 0 0
+	frame	data/chars/creature/jump1.gif
+	delay	20
+	offset	35 130
+	bbox	20 20 40 105
+	attack	20 20 40 105 19 0 0 0 0 0
+	sound	data/sounds/jump_big.wav
+	frame	data/chars/creature/jump2.gif
+		
+anim	jumpland
+	loop	0
+	offset	35 130
+	delay	1
+	bbox	20 50 35 75
+	attack	20 50 35 75 19 0 0 0 0 0
+	sound	data/sounds/landed_big.wav
+	frame	data/chars/creature/jump3.gif
+	delay	1
+	subentity	Shockwave
+	spawnframe	2 0 0 0 0
+	sound	data/sounds/land_big_damage.wav
+	frame	data/chars/creature/jump3.gif
+	delay	9
+	frame	data/chars/creature/jump3.gif
+	delay	20
+	frame	data/chars/creature/jump1.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	35 130
+	bbox	20 20 40 105
+	frame	data/chars/creature/jump2.gif
+		
+anim	turn
+	loop	0
+	delay	10
+	offset	35 130
+	bbox	15 40 40 90
+	attack	15 40 40 90 19 0 0 0 0 0
+	frame	data/chars/creature/turn1.gif
+	frame	data/chars/creature/turn2.gif
+	delay	1
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/creature/turn3.gif
+		
+anim	walk
+	loop	1
+	delay	12
+	offset	35 130
+	bbox	15 40 40 90
+	attack	15 40 40 90 19 0 0 0 0 0
+	frame	data/chars/creature/walk2.gif
+	frame	data/chars/creature/walk1.gif
+	frame	data/chars/creature/walk3.gif
+	delay	11
+	frame	data/chars/creature/walk1.gif
+	delay	1
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/creature/walk1.gif
+		
+anim	walkoff
+	loop	0
+	landframe	2
+	delay	1000
+	offset	35 130
+	bbox	20 20 40 105
+	attack	20 20 40 105 19 0 0 0 0 0
+	sound	data/sounds/jump_big.wav
+	frame	data/chars/creature/jump2.gif
+	delay	1
+	bbox	20 50 35 75
+	attack	20 50 35 75 19 0 0 0 0 0
+	sound	data/sounds/landed_big.wav
+	frame	data/chars/creature/jump3.gif
+	delay	1
+	subentity	Shockwave
+	spawnframe	2 0 0 0 0
+	sound	data/sounds/land_big_damage.wav
+	frame	data/chars/creature/jump3.gif
+	delay	9
+	frame	data/chars/creature/jump3.gif
+	delay	20
+	frame	data/chars/creature/jump1.gif
+		
+#|edited by openBor Stats v 0.67
+		

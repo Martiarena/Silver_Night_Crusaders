@@ -1,0 +1,655 @@
+name		 Leon_Belmont
+type		 player
+health		 100
+mp		 100
+mprate		 5
+speed		 10
+running		 20 3 2 1 1
+cantgrab	 1
+jumpmove	 2
+jumpheight	 3
+noquake		 1
+bounce		 0
+death		 1
+nodieblink	 2
+icon		 data/chars/leon/icon.gif
+antigravity	 20
+makeinv		 3 0
+gfxshadow	 1
+subject_to_wall  1
+subject_to_platform 1
+
+
+animationscript	 data/scripts/player.c
+keyscript	 data/chars/leon/leonkey.c
+takedamagescript data/scripts/invis.c
+
+atchain		 1 2 3 1 2 3
+
+com	a2	freespecial2
+com	a3	freespecial3
+com	a4	freespecial4
+
+
+
+
+anim	attack1
+	cancel	0 17 1 a2 freespecial2
+	cancel	0 17 1 a3 freespecial3
+	cancel	0 17 1 a4 freespecial4
+	delay	5
+	offset	161 141
+	bbox	155 100 13 40
+	frame	data/chars/leon/68.gif
+	sound	data/sounds/whip.wav
+	frame	data/chars/leon/69.gif
+	frame	data/chars/leon/70.gif
+	delay	3
+	attack1	132 90 91 24 8
+	frame	data/chars/leon/71.gif
+	attack1	159 103 67 16 8
+	frame	data/chars/leon/72.gif
+	attack1	159 102 95 18 8
+	frame	data/chars/leon/73.gif
+	frame	data/chars/leon/74.gif
+	delay	2
+	frame	data/chars/leon/75.gif
+	frame	data/chars/leon/75a.gif
+	frame	data/chars/leon/76.gif
+	frame	data/chars/leon/77.gif
+	frame	data/chars/leon/75.gif
+	frame	data/chars/leon/75a.gif
+	frame	data/chars/leon/76.gif
+	frame	data/chars/leon/77.gif
+	frame	data/chars/leon/78.gif
+	frame	data/chars/leon/79.gif
+	attack	0
+	delay	1
+	bbox	153 98 15 43
+	frame	data/chars/leon/1.gif
+		
+anim	attack2
+	cancel	0 17 1 a2 freespecial2
+	cancel	0 17 1 a3 freespecial3
+	cancel	0 17 1 a4 freespecial4
+	delay	5
+	offset	161 141
+	bbox	155 100 13 40
+	sound	data/chars/leon/at1.wav
+	frame	data/chars/leon/68.gif
+	sound	data/sounds/whip.wav
+	frame	data/chars/leon/69.gif
+	frame	data/chars/leon/70.gif
+	delay	3
+	attack1	132 90 91 24 8
+	frame	data/chars/leon/71.gif
+	attack1	159 103 67 16 8
+	frame	data/chars/leon/72.gif
+	attack1	159 102 95 18 8
+	frame	data/chars/leon/73.gif
+	frame	data/chars/leon/74.gif
+	delay	2
+	frame	data/chars/leon/75.gif
+	frame	data/chars/leon/75a.gif
+	frame	data/chars/leon/76.gif
+	frame	data/chars/leon/77.gif
+	frame	data/chars/leon/75.gif
+	frame	data/chars/leon/75a.gif
+	frame	data/chars/leon/76.gif
+	frame	data/chars/leon/77.gif
+	frame	data/chars/leon/78.gif
+	frame	data/chars/leon/79.gif
+	attack	0
+	delay	1
+	bbox	153 98 15 43
+	frame	data/chars/leon/1.gif
+		
+anim	attack3
+	cancel	0 17 1 a2 freespecial2
+	cancel	0 17 1 a3 freespecial3
+	cancel	0 17 1 a4 freespecial4
+	delay	5
+	offset	161 141
+	bbox	155 100 13 40
+	sound	data/chars/leon/at2.wav
+	frame	data/chars/leon/68.gif
+	sound	data/sounds/whip.wav
+	frame	data/chars/leon/69.gif
+	frame	data/chars/leon/70.gif
+	delay	3
+	attack1	132 90 91 24 8
+	frame	data/chars/leon/71.gif
+	attack1	159 103 67 16 8
+	frame	data/chars/leon/72.gif
+	attack1	159 102 95 18 8
+	frame	data/chars/leon/73.gif
+	frame	data/chars/leon/74.gif
+	delay	2
+	frame	data/chars/leon/75.gif
+	frame	data/chars/leon/75a.gif
+	frame	data/chars/leon/76.gif
+	frame	data/chars/leon/77.gif
+	frame	data/chars/leon/75.gif
+	frame	data/chars/leon/75a.gif
+	frame	data/chars/leon/76.gif
+	frame	data/chars/leon/77.gif
+	frame	data/chars/leon/78.gif
+	frame	data/chars/leon/79.gif
+	attack	0
+	delay	1
+	bbox	153 98 15 43
+	frame	data/chars/leon/1.gif
+		
+anim	death
+	delay	6
+	offset	161 141
+	sound	data/chars/leon/dead.wav
+	frame	data/chars/leon/44.gif
+	frame	data/chars/leon/45.gif
+	frame	data/chars/leon/46.gif
+	frame	data/chars/leon/47.gif
+	frame	data/chars/leon/48.gif
+	frame	data/chars/leon/49.gif
+	frame	data/chars/leon/50.gif
+	frame	data/chars/leon/51.gif
+	frame	data/chars/leon/52.gif
+	frame	data/chars/leon/53.gif
+	frame	data/chars/leon/54.gif
+	frame	data/chars/leon/55.gif
+	frame	data/chars/leon/56.gif
+	frame	data/chars/leon/57.gif
+	frame	data/chars/leon/58.gif
+	frame	data/chars/leon/59.gif
+	delay	100
+	frame	data/chars/leon/60.gif
+		
+anim	duck
+	delay	8
+	offset	161 141
+	bbox	150 110 21 31
+	cancel	0 1 0 A4 freespecial6
+	frame	data/chars/leon/crouch1.png
+	frame	data/chars/leon/crouch2.png
+		
+anim	duckattack
+	delay	5
+	offset	161 141
+	bbox	150 110 21 31
+	frame	data/chars/leon/crat1.png
+	frame	data/chars/leon/crat2.png
+	frame	data/chars/leon/crat3.png
+	delay	3
+	sound	data/sounds/whip.wav
+	attack	177 118 71 10 8 0 1 0 0 0
+	frame	data/chars/leon/crat4.png
+	frame	data/chars/leon/crat5.png
+	delay	2
+	frame	data/chars/leon/crat6.png
+	frame	data/chars/leon/crat7.png
+	frame	data/chars/leon/crat8.png
+	frame	data/chars/leon/crat9.png
+	frame	data/chars/leon/crat7.png
+	frame	data/chars/leon/crat8.png
+	frame	data/chars/leon/crat9.png
+	frame	data/chars/leon/crat10.png
+	delay	3
+	frame	data/chars/leon/crat11.png
+	frame	data/chars/leon/crat12.png
+	attack	0
+	frame	data/chars/leon/crouch2.png
+		
+anim	fall
+	delay	30
+	offset	161 141
+	sound	data/chars/leon/fall.wav
+	frame	data/chars/leon/42.gif
+	@cmd	platform 1
+	frame	data/chars/leon/43.gif
+		
+anim	follow1
+	cancel	0 9 0 a3 freespecial3
+	cancel	0 9 0 a4 freespecial4
+	cancel	0 9 0 a2 freespecial2
+	delay	7
+	jumpframe	0 3 -1 0
+	offset	161 141
+	bbox	154 101 12 33
+	frame	data/chars/leon/18.gif
+	frame	data/chars/leon/19.gif
+	frame	data/chars/leon/20.gif
+	frame	data/chars/leon/21.gif
+	frame	data/chars/leon/22.gif
+	delay	6
+	frame	data/chars/leon/23.gif
+	frame	data/chars/leon/24.gif
+	frame	data/chars/leon/25.gif
+	frame	data/chars/leon/26.gif
+	frame	data/chars/leon/27.gif
+		
+anim	follow2
+	delay	10
+	offset	161 141
+	followanim	1
+	followcond	1
+	jumpframe	1 -4 3 0
+	bbox	152 97 29 24
+	sound	data/chars/leon/at3.wav
+	frame	data/chars/leon/dive1.png
+	delay	100
+	attack	162 120 17 23 8
+	frame	data/chars/leon/dive1.png
+		
+anim	follow3
+	delay	10
+	offset	161 141
+	followanim	1
+	followcond	1
+	jumpframe	1 -5 0 0
+	bbox	154 97 29 24
+	sound	data/chars/leon/at3.wav
+	frame	data/chars/leon/dive2.png
+	delay	100
+	attack	154 116 13 29 8
+	frame	data/chars/leon/dive2.png
+		
+anim	follow4
+	cancel	0 4 0 a3 freespecial3
+	cancel	0 4 0 a4 freespecial4
+	cancel	0 4 0 a2 freespecial2
+	delay	6
+	offset	161 141
+	bbox	154 101 12 33
+	frame	data/chars/leon/23.gif
+	frame	data/chars/leon/24.gif
+	@cmd	platform 1
+	frame	data/chars/leon/25.gif
+	frame	data/chars/leon/26.gif
+	frame	data/chars/leon/27.gif
+		
+anim	freespecial
+	cancel	0 18 0 a3 freespecial3
+	cancel	0 18 0 a4 freespecial4
+	cancel	0 18 0 a2 freespecial2
+	offset	161 141
+	bbox	149 106 21 22
+	delay	3
+	sound	data/sounds/jump.wav
+	frame	data/chars/leon/28.gif
+	frame	data/chars/leon/29.gif
+	frame	data/chars/leon/30.gif
+	frame	data/chars/leon/31.gif
+	frame	data/chars/leon/32.gif
+	frame	data/chars/leon/33.gif
+	frame	data/chars/leon/34.gif
+	frame	data/chars/leon/35.gif
+	frame	data/chars/leon/36.gif
+	frame	data/chars/leon/37.gif
+	frame	data/chars/leon/38.gif
+	frame	data/chars/leon/39.gif
+	frame	data/chars/leon/40.gif
+	frame	data/chars/leon/41.gif
+	bbox	154 101 12 33
+	delay	6
+	frame	data/chars/leon/23.gif
+	frame	data/chars/leon/24.gif
+	frame	data/chars/leon/25.gif
+	frame	data/chars/leon/26.gif
+	frame	data/chars/leon/27.gif
+		
+anim	freespecial2
+	cancel	0 39 1 a freespecial5
+	cancel	0 39 1 a3 freespecial3
+	cancel	0 26 1 a4 freespecial4
+	delay	3
+	offset	160 141
+	bbox	0 0 0 0
+	move	10
+	frame	data/chars/leon/sp102.gif
+	@cmd	platform 1
+	@cmd	limiter 25
+	attack1	129 97 55 45 15 0 0 0 20
+	dropv	3 1 0
+	sound	data/chars/leon/ric_sp2.wav
+	frame	data/chars/leon/sp103.gif
+	@cmd	mpcost 25
+	frame	data/chars/leon/sp102.gif
+	frame	data/chars/leon/sp104.gif
+	move	9
+	frame	data/chars/leon/sp102.gif
+	frame	data/chars/leon/sp105.gif
+	frame	data/chars/leon/sp102.gif
+	frame	data/chars/leon/sp106.gif
+	move	8
+	frame	data/chars/leon/sp102.gif
+	frame	data/chars/leon/sp103.gif
+	frame	data/chars/leon/sp102.gif
+	frame	data/chars/leon/sp104.gif
+	move	5
+	frame	data/chars/leon/sp102.gif
+	frame	data/chars/leon/sp105.gif
+	frame	data/chars/leon/sp102.gif
+	frame	data/chars/leon/sp106.gif
+	move	4
+	frame	data/chars/leon/sp102.gif
+	frame	data/chars/leon/sp103.gif
+	frame	data/chars/leon/sp102.gif
+	frame	data/chars/leon/sp104.gif
+	move	3
+	attack1	0 0 0 0 0
+	frame	data/chars/leon/sp101.gif
+	frame	data/chars/leon/sp101.gif
+	frame	data/chars/leon/sp101.gif
+	frame	data/chars/leon/sp101.gif
+	move	2
+	bbox	137 109 23 30
+	frame	data/chars/leon/dash03.gif
+	frame	data/chars/leon/dash04.gif
+	frame	data/chars/leon/dash03.gif
+	frame	data/chars/leon/dash04.gif
+	move	1
+	frame	data/chars/leon/dash04.gif
+	frame	data/chars/leon/dash04.gif
+	frame	data/chars/leon/dash04.gif
+	frame	data/chars/leon/dash04.gif
+		
+anim	freespecial3
+	delay	4
+	offset	160 141
+	bbox	0 0 0 0
+	jumpframe	3 3.5 0.1
+	sound	data/chars/leon/at2.wav
+	frame	data/chars/leon/sp201.gif
+	@cmd	platform 1
+	@cmd	limiter 15
+	attack1	160 106 21 36 15 0 0 0 20
+	frame	data/chars/leon/sp202.gif
+	delay	3
+	frame	data/chars/leon/sp203.gif
+	delay	1
+	attack1	0 0 0 0 0
+	@cmd	mpcost 15
+	frame	data/chars/leon/sp203.gif
+	delay	4
+	attack1	160 78 21 64 15
+	frame	data/chars/leon/sp204.gif
+	frame	data/chars/leon/sp205.gif
+	frame	data/chars/leon/sp204.gif
+	frame	data/chars/leon/sp205.gif
+	frame	data/chars/leon/sp204.gif
+	frame	data/chars/leon/sp205.gif
+	frame	data/chars/leon/sp204.gif
+	frame	data/chars/leon/sp205.gif
+	frame	data/chars/leon/sp204.gif
+	frame	data/chars/leon/sp205.gif
+	frame	data/chars/leon/sp204.gif
+	frame	data/chars/leon/sp205.gif
+	frame	data/chars/leon/sp204.gif
+	frame	data/chars/leon/sp205.gif
+	frame	data/chars/leon/sp204.gif
+	frame	data/chars/leon/sp205.gif
+	attack	0
+	bbox	154 101 12 33
+	delay	6
+	frame	data/chars/leon/23.gif
+	frame	data/chars/leon/24.gif
+	frame	data/chars/leon/25.gif
+	frame	data/chars/leon/26.gif
+	frame	data/chars/leon/27.gif
+		
+anim	freespecial4
+	delay	5
+	bbox	155 100 13 40
+	offset	161 141
+	sound	data/chars/leon/at3.wav
+	frame	data/chars/leon/61.gif
+	@cmd	platform 1
+	@cmd	limiterSub
+	@cmd	limiter 20
+	frame	data/chars/leon/62.gif
+	frame	data/chars/leon/63.gif
+	frame	data/chars/leon/64.gif
+	@cmd	mpcost 20
+	@cmd	SubWeapon 23 35
+	frame	data/chars/leon/65.gif
+	frame	data/chars/leon/66.gif
+	frame	data/chars/leon/67.gif
+	delay	40
+	frame	data/chars/leon/67a.gif
+		
+anim	freespecial5
+	cancel	0 17 1 a2 freespecial2
+	cancel	0 17 1 a3 freespecial3
+	cancel	0 17 1 a4 freespecial4
+	delay	5
+	offset	161 141
+	bbox	155 100 13 40
+	sound	data/chars/leon/at3.wav
+	frame	data/chars/leon/68.gif
+	sound	data/sounds/whip.wav
+	frame	data/chars/leon/69.gif
+	frame	data/chars/leon/70.gif
+	delay	3
+	attack1	132 90 91 24 8
+	frame	data/chars/leon/71.gif
+	attack1	159 103 67 16 8
+	frame	data/chars/leon/72.gif
+	attack1	159 102 95 18 8
+	frame	data/chars/leon/73.gif
+	frame	data/chars/leon/74.gif
+	delay	2
+	frame	data/chars/leon/75.gif
+	frame	data/chars/leon/75a.gif
+	frame	data/chars/leon/76.gif
+	frame	data/chars/leon/77.gif
+	frame	data/chars/leon/75.gif
+	frame	data/chars/leon/75a.gif
+	frame	data/chars/leon/76.gif
+	frame	data/chars/leon/77.gif
+	frame	data/chars/leon/78.gif
+	frame	data/chars/leon/79.gif
+	attack	0
+	delay	1
+	bbox	153 98 15 43
+	frame	data/chars/leon/1.gif
+		
+anim	freespecial6
+	delay	6
+	offset	161 141
+	bbox	150 110 21 31
+	frame	data/chars/leon/crsub1.png
+	@cmd	limiterSub
+	@cmd	limiter 20
+	frame	data/chars/leon/crsub2.png
+	@cmd	mpcost 20
+	@cmd	SubWeapon 17 22
+	frame	data/chars/leon/crsub3.png
+	frame	data/chars/leon/crsub4.png
+	frame	data/chars/leon/crsub5.png
+	delay	8
+	frame	data/chars/leon/crouch2.png
+		
+anim	idle
+	offset	161 141
+	bbox	153 98 15 43
+	frame	data/chars/leon/1.gif
+		
+anim	jump
+	cancel	0 9 0 a3 freespecial3
+	cancel	0 9 0 a4 freespecial4
+	cancel	0 9 0 a2 freespecial2
+	delay	7
+	offset	161 141
+	bbox	154 101 12 33
+	frame	data/chars/leon/18.gif
+	@cmd	platform 1
+	frame	data/chars/leon/19.gif
+	frame	data/chars/leon/20.gif
+	frame	data/chars/leon/21.gif
+	frame	data/chars/leon/22.gif
+	delay	6
+	frame	data/chars/leon/23.gif
+	frame	data/chars/leon/24.gif
+	frame	data/chars/leon/25.gif
+	frame	data/chars/leon/26.gif
+	frame	data/chars/leon/27.gif
+		
+anim	jumpattack
+	cancel	0 21 1 a3 freespecial3
+	cancel	0 21 1 a4 freespecial4
+	cancel	0 21 1 a2 freespecial2
+	delay	5
+	offset	161 141
+	bbox	155 100 13 40
+	sound	data/chars/leon/at4.wav
+	frame	data/chars/leon/68.gif
+	sound	data/sounds/whip.wav
+	frame	data/chars/leon/69.gif
+	frame	data/chars/leon/70.gif
+	delay	3
+	attack1	132 90 91 24 8
+	frame	data/chars/leon/71.gif
+	attack1	159 103 67 16 8
+	frame	data/chars/leon/72.gif
+	attack1	159 102 95 18 8
+	frame	data/chars/leon/73.gif
+	frame	data/chars/leon/74.gif
+	delay	2
+	frame	data/chars/leon/75.gif
+	frame	data/chars/leon/75a.gif
+	frame	data/chars/leon/76.gif
+	frame	data/chars/leon/77.gif
+	frame	data/chars/leon/75.gif
+	frame	data/chars/leon/75a.gif
+	frame	data/chars/leon/76.gif
+	frame	data/chars/leon/77.gif
+	frame	data/chars/leon/78.gif
+	frame	data/chars/leon/79.gif
+	attack	0
+	bbox	154 101 12 33
+	delay	6
+	frame	data/chars/leon/23.gif
+	frame	data/chars/leon/24.gif
+	frame	data/chars/leon/25.gif
+	frame	data/chars/leon/26.gif
+	frame	data/chars/leon/27.gif
+		
+anim	pain
+	jumpframe	0 1.5 -1
+	offset	161 141
+	delay	30
+	sound	data/chars/leon/pain.wav
+	frame	data/chars/leon/42.gif
+		
+anim	rise
+	delay	1
+	offset	161 141
+	frame	data/chars/leon/1.gif
+		
+anim	run
+	loop	1
+	subentity	dust
+	spawnframe	0 0 0 0 0
+	delay	6
+	offset	161 141
+	bbox	154 101 11 38
+	frame	data/chars/leon/10.gif
+	frame	data/chars/leon/11.gif
+	frame	data/chars/leon/12.gif
+	frame	data/chars/leon/13.gif
+	frame	data/chars/leon/14.gif
+	frame	data/chars/leon/15.gif
+	frame	data/chars/leon/16.gif
+	frame	data/chars/leon/17.gif
+		
+anim	slide
+@script
+    void self = getlocalvar("self");
+    int x = getentityproperty(self, "x");
+    int y = getentityproperty(self, "a");
+    int z = getentityproperty(self, "z");
+    int b = getentityproperty(self, "base");
+    void Plat = checkplatformbelow(x, z, y+2);
+
+    int iPIndex = getentityproperty(self,"playerindex");
+    void iLeft = playerkeys(iPIndex, 0, "moveleft");
+    void iRight = playerkeys(iPIndex, 0, "moveright");
+
+    if(getentityproperty(Plat,"name")!="Thick"){
+      if(y > 0 && frame == 0 && !iLeft && !iRight){
+        changeentityproperty(self, "Subject_to_Platform", 0);
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+        changeentityproperty(self, "aiflag", "jumping", 1);
+        changeentityproperty(self, "takeaction", "common_jump");
+      }
+    }
+
+    if(y > b && frame > 0){
+      changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+      changeentityproperty(self, "aiflag", "jumping", 1);
+      changeentityproperty(self, "takeaction", "common_jump");
+    }
+	@end_script	
+	delay	1
+	offset	161 141
+	bbox	150 110 21 31
+	frame	data/chars/leon/crouch2.png
+	delay	8
+	frame	data/chars/leon/slide4.png
+	delay	10
+	@cmd	dasher 2 0 0 1
+	bbox	150 118 21 23
+	attack	168 128 32 14 16 1 1 0 0 0
+	frame	data/chars/leon/slide2.png
+	delay	20
+	frame	data/chars/leon/slide3.png
+	delay	10
+	frame	data/chars/leon/slide2.png
+	delay	8
+	attack	0
+	@cmd	dasher 0 0 0 1
+	bbox	150 110 21 31
+	frame	data/chars/leon/slide1.png
+		
+anim	special
+	energycost	99
+	mponly	1
+	jumpframe	6 4 0
+	delay	7
+	offset	161 141
+	sound	data/chars/leon/special.wav
+	frame	data/chars/leon/80.gif
+	frame	data/chars/leon/81.gif
+	frame	data/chars/leon/82.gif
+	frame	data/chars/leon/83.gif
+	frame	data/chars/leon/84.gif
+	delay	260
+	frame	data/chars/leon/85.gif
+	delay	15
+	sound	data/chars/leon/at5.wav
+	frame	data/chars/leon/86.gif
+	frame	data/chars/leon/87.gif
+	@cmd	spawner3 "LeoSp" 160 0 0
+	frame	data/chars/leon/88.gif
+	delay	6
+	frame	data/chars/leon/23.gif
+	frame	data/chars/leon/24.gif
+	frame	data/chars/leon/25.gif
+	frame	data/chars/leon/26.gif
+	frame	data/chars/leon/27.gif
+		
+anim	walk
+	loop	1
+	delay	9
+	offset	161 141
+	bbox	154 99 12 41
+	frame	data/chars/leon/2.gif
+	frame	data/chars/leon/3.gif
+	frame	data/chars/leon/4.gif
+	frame	data/chars/leon/5.gif
+	frame	data/chars/leon/6.gif
+	frame	data/chars/leon/7.gif
+	frame	data/chars/leon/8.gif
+	frame	data/chars/leon/9.gif
+		
+#|edited by openBor Stats v 0.56
+		

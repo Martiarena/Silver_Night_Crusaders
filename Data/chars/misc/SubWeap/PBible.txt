@@ -1,0 +1,86 @@
+name		PBible
+type		none
+candamage	enemy obstacle
+lifespan	6
+facing		1
+subject_to_obstacle 0
+subject_to_wall 0
+subject_to_gravity 0
+subject_to_platform 0
+animationscript data/scripts/prscript.c
+
+
+anim spawn
+@script
+    void self = getlocalvar("self");
+    float Vx = getentityproperty(self,"xdir");
+
+    if(frame == 1){
+      if(Vx >= 0){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } else {
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      }
+    }
+@end_script
+	delay	3
+	offset  10 -180
+	frame	data/chars/misc/subweap/bible.png
+	frame	data/chars/misc/subweap/bible.png
+
+anim idle
+	loop	1
+	delay	5
+	offset  10 -180
+	attack  0 0 20 24 10 1
+	frame	data/chars/misc/subweap/bible.png
+        @cmd    revolver 0 0.3 1
+	frame	data/chars/misc/subweap/bible.png
+	frame	data/chars/misc/subweap/bible.png
+	frame	data/chars/misc/subweap/bible.png
+        @cmd    revolver 0 0.3 1
+	frame	data/chars/misc/subweap/bible.png
+	frame	data/chars/misc/subweap/bible.png
+	frame	data/chars/misc/subweap/bible.png
+        @cmd    revolver 0 0.3 1
+	frame	data/chars/misc/subweap/bible.png
+	attack  0
+	frame	data/chars/misc/subweap/bible.png
+
+anim follow1
+	loop	1
+	delay	5
+	offset  10 -180
+	attack  0 0 20 24 10 1
+	frame	data/chars/misc/subweap/bible.png
+        @cmd    revolver 0 0.3 1
+	frame	data/chars/misc/subweap/bible.png
+	frame	data/chars/misc/subweap/bible.png
+	frame	data/chars/misc/subweap/bible.png
+        @cmd    revolver 0 0.3 1
+	frame	data/chars/misc/subweap/bible.png
+	frame	data/chars/misc/subweap/bible.png
+	frame	data/chars/misc/subweap/bible.png
+        @cmd    revolver 0 0.3 1
+	frame	data/chars/misc/subweap/bible.png
+	attack  0
+	frame	data/chars/misc/subweap/bible.png
+
+anim follow2
+	loop	1
+	delay	5
+	offset  10 -180
+	attack  0 0 20 24 10 1
+	frame	data/chars/misc/subweap/bible.png
+        @cmd    revolver 0 0.3 0
+	frame	data/chars/misc/subweap/bible.png
+	frame	data/chars/misc/subweap/bible.png
+	frame	data/chars/misc/subweap/bible.png
+        @cmd    revolver 0 0.3 0
+	frame	data/chars/misc/subweap/bible.png
+	frame	data/chars/misc/subweap/bible.png
+	frame	data/chars/misc/subweap/bible.png
+        @cmd    revolver 0 0.3 0
+	frame	data/chars/misc/subweap/bible.png
+	attack  0
+	frame	data/chars/misc/subweap/bible.png

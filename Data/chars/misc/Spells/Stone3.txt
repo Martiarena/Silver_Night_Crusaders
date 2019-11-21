@@ -1,0 +1,64 @@
+name    	Stone3
+health		1
+nomove		1
+nodrop		2
+death		1
+stealth		300
+defense		all 0 4000
+type    	npc
+candamage	enemy obstacle
+subject_to_wall 0
+subject_to_gravity 0
+subject_to_obstacle 0
+subject_to_platform 0
+animationscript data/scripts/cscript.c
+
+
+anim idle
+	loop	1
+	delay	1
+	offset	12 -18
+	attack	0
+	frame	data/chars/misc/spells/stone3.png
+	delay	6
+	bbox	2 0 21 22
+	attack	2 0 21 22 5 1
+        @cmd    targetPardashT 12 20 -10
+	frame	data/chars/misc/spells/stone3.png
+        @cmd    targetPardashT 12 30 -20
+	frame	data/chars/misc/spells/stone3.png
+        @cmd    targetPardashT 12 40 -30
+	frame	data/chars/misc/spells/stone3.png
+        @cmd    targetPardashT 12 40 -50
+	frame	data/chars/misc/spells/stone3.png
+        @cmd    targetPardashT 12 40 -70
+	frame	data/chars/misc/spells/stone3.png
+        @cmd    targetPardashT 12 30 -80
+	frame	data/chars/misc/spells/stone3.png
+        @cmd    targetPardashT 12 20 -90
+	frame	data/chars/misc/spells/stone3.png
+	attack	0
+        @cmd    targetPardashT 12 0 -90
+	frame	data/chars/misc/spells/stone3.png
+	attack	2 0 21 22 5 1
+        @cmd    targetPardashT 12 -20 -90
+	frame	data/chars/misc/spells/stone3.png
+        @cmd    targetPardashT 12 -30 -70
+	frame	data/chars/misc/spells/stone3.png
+        @cmd    targetPardashT 12 -40 -50
+	frame	data/chars/misc/spells/stone3.png
+        @cmd    targetPardashT 12 -40 -40
+	frame	data/chars/misc/spells/stone3.png
+        @cmd    targetPardashT 12 -40 -30
+	frame	data/chars/misc/spells/stone3.png
+        @cmd    targetPardashT 12 -30 -20
+	frame	data/chars/misc/spells/stone3.png
+        @cmd    targetPardashT 12 -20 -10
+	frame	data/chars/misc/spells/stone3.png
+        @cmd    targetPardashT 12 0 -10
+	frame	data/chars/misc/spells/stone3.png
+
+anim	death
+	delay	10
+	offset	12 12
+	frame	data/chars/misc/empty.gif

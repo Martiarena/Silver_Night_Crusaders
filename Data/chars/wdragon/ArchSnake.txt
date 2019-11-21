@@ -1,0 +1,170 @@
+name    	 ArchSnake
+health  	 200
+nomove   	 1 1
+type    	 enemy
+nolife  	 1
+noquake  	 1
+nopain  	 1
+nodrop  	 2
+subject_to_hole	 0
+subject_to_platform 0
+setlayer  	 100
+death   	 1
+hostile  	 player
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+load	         RibPis7
+
+palette	         data/chars/wdragon/head1.png
+alternatepal	 data/chars/wdragon/blink.png
+alternatepal	 data/chars/wdragon/gold.png
+alternatepal	 data/chars/wdragon/white.png
+
+
+anim spawn
+	delay	1
+	offset	20 26
+	frame	data/chars/wdragon/head1.png
+        @cmd    spawner "RibPis7" 0 0 0
+	frame	data/chars/wdragon/head1.png
+	delay	50
+        @cmd    leaper 4 5 1
+	frame	data/chars/wdragon/head1.png
+	delay	55
+	frame	data/chars/wdragon/head1.png
+
+anim idle
+@script
+    void self = getlocalvar("self");
+    int x = getentityproperty(self, "x");
+    int Sx = getentityproperty(self, "xdir");
+    int XPos = openborvariant("xpos");
+    int Screen = openborvariant("hResolution");
+
+    if(x < XPos+10 && Sx < 0){
+      changeentityproperty(self, "velocity", -Sx);
+      changeentityproperty(self, "direction", 1);
+    } else if(x > Screen+XPos-10 && Sx > 0){
+      changeentityproperty(self, "velocity", -Sx);
+      changeentityproperty(self, "direction", 0);
+    }
+@end_script
+	loop	1
+	delay	1
+	offset	20 26
+	bbox	16 6 24 19
+	attack	16 6 24 19 10 1
+	frame	data/chars/wdragon/head1.png
+	delay	40
+        @cmd    leaper 2 4 1
+	frame	data/chars/wdragon/head1.png
+	delay	45
+	frame	data/chars/wdragon/head1.png
+	delay	40
+        @cmd    leaper 2 4 1
+	frame	data/chars/wdragon/head1.png
+	delay	45
+	frame	data/chars/wdragon/head1.png
+	delay	40
+        @cmd    leaper 2 4 1
+	frame	data/chars/wdragon/head1.png
+	delay	45
+	frame	data/chars/wdragon/head1.png
+	delay	40
+        @cmd    leaper 1 4 1
+	frame	data/chars/wdragon/head1.png
+	delay	44
+	frame	data/chars/wdragon/head1.png
+	delay	1
+        @cmd    attack0 "ANI_FOLLOW1"
+	frame	data/chars/wdragon/head1.png
+	attack	0
+        @cmd    flip
+	frame	data/chars/wdragon/head1.png
+
+anim follow1
+@script
+    if(frame == 0){
+      void self = getlocalvar("self");
+      int r = rand()%30;
+
+      if(r > 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      } else if(r < -10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      }
+    }
+@end_script
+	delay	1
+	offset	20 26
+	bbox	16 6 24 19
+	attack	16 6 24 19 10 1
+	frame	data/chars/wdragon/head1.png
+        @cmd    targetT 100 0 0 1 #Dummy targetting
+	frame	data/chars/wdragon/head1.png
+        @cmd    clearL
+	frame	data/chars/wdragon/head1.png
+	attack	0
+        @cmd    beidle
+	frame	data/chars/wdragon/head1.png
+
+anim follow2
+	delay	1
+	offset	20 26
+	bbox	16 6 24 19
+	attack	16 6 24 19 10 1
+	frame	data/chars/wdragon/head1.png
+	delay	55
+        @cmd    targetT 100 0 0 1
+        @cmd    leap 5
+	frame	data/chars/wdragon/head1.png
+        @cmd    clearL
+	attack	16 6 24 19 20 1
+	frame	data/chars/wdragon/head2.png
+        @cmd    targetT 100 0 0 1
+        @cmd    leap 5
+	attack	16 6 24 19 10 1
+	frame	data/chars/wdragon/head1.png
+        @cmd    clearL
+	attack	16 6 24 19 20 1
+	frame	data/chars/wdragon/head2.png
+	delay	1
+	attack	0
+        @cmd    beidle
+	frame	data/chars/wdragon/head1.png
+
+anim follow3
+	delay	1
+	offset	20 26
+	bbox	16 6 24 19
+	attack	16 6 24 19 10 1
+	frame	data/chars/wdragon/head1.png
+        @cmd    targetT 100 0 0 1 #Dummy targetting
+	frame	data/chars/wdragon/head1.png
+	delay	42
+        @cmd    leaper 2 2 1
+	attack	16 6 24 19 20 1
+	frame	data/chars/wdragon/head2.png
+        @cmd    leaper 2 2 1
+	frame	data/chars/wdragon/head2.png
+        @cmd    leaper 2 2 1
+	frame	data/chars/wdragon/head2.png
+	delay	1
+	attack	0
+        @cmd    clearL
+	frame	data/chars/wdragon/head1.png
+        @cmd    beidle
+	frame	data/chars/wdragon/head1.png
+
+
+anim death
+	delay	1
+	offset	20 26
+	bouncefactor 2
+	frame	data/chars/wdragon/head2.png
+        @cmd    stop
+	frame	data/chars/wdragon/head2.png
+        @cmd    clearL
+	frame	data/chars/wdragon/head2.png
+	delay	50
+	frame	data/chars/wdragon/head2.png

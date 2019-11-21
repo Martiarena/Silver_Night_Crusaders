@@ -1,0 +1,31 @@
+name	       	Ani_gear_deco3
+type    	none
+antigravity     100
+shadow		0
+nomove	1
+nolife	1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_gravity 0
+offscreenkill   9999
+
+palette 	data/bgs/clock_tower/decoration/gears_deco3a.gif
+
+
+
+anim	idle
+	loop	1
+	delay	10
+	offset	84 40
+	frame	data/bgs/clock_tower/decoration/gears_deco3a.gif
+	frame	data/bgs/clock_tower/decoration/gears_deco3b.gif
+	frame	data/bgs/clock_tower/decoration/gears_deco3c.gif
+	frame	data/bgs/clock_tower/decoration/gears_deco3d.gif
+	frame	data/bgs/clock_tower/decoration/gears_deco3e.gif
+	frame	data/bgs/clock_tower/decoration/gears_deco3f.gif
+	frame	data/bgs/clock_tower/decoration/gears_deco3g.gif
+	frame	data/bgs/clock_tower/decoration/gears_deco3h.gif
+	frame	data/bgs/clock_tower/decoration/gears_deco3i.gif
+		
+#|edited by openBor Stats v 0.67
+		

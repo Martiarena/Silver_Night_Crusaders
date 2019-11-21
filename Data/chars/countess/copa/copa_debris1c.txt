@@ -1,0 +1,23 @@
+name	        Copa_debris1c
+type	        none
+subject_to_gravity 1
+subject_to_hole	1
+no_adjust_base	0
+lifespan        2
+antigravity     50
+noquake 	1
+animationscript data/scripts/prscript.c
+
+palette 	data/chars/countess/copa/copa1a.gif
+
+
+anim	idle
+	loop	1
+	delay	1
+	offset	2 2
+	frame	data/chars/countess/copa/copa1_debris1c.gif
+	@cmd	groundkill
+	frame	data/chars/countess/copa/copa1_debris1c.gif
+		
+#|edited by openBor Stats v 0.67
+		

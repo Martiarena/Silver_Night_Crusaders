@@ -1,0 +1,55 @@
+name	        fire_legion1b
+type	        none
+nolife          1
+remove 1
+lifespan        5
+facing 	2
+hostile		player
+candamage       player npc shot
+palette		data/chars/werewolf/firewolf/explo_palette.gif
+animationscript  data/scripts/escript.c
+load	btw_rock1
+load	btw_rock2
+load	btw_rock3
+load	btw_rock4
+load	btw_rock5
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	7
+	move	-37
+	offset	37 178
+	sound	data/sounds/explosion.wav
+	burn	15 130 44 48 25 11 0 0 0 0
+	@cmd	tosserM "btw_rock1" 8 34 0 2.5
+	@cmd	tosserM "btw_rock2" 5 26 0 1.5
+	@cmd	tosserM "btw_rock3" 8 25 0.3 1.5
+	@cmd	tosserM "btw_rock4" -3 27 -0.3 1.5
+	@cmd	tosserM "btw_rock5" 5 12 0.3 1
+	@cmd	tosserM "btw_rock3" -8 14 -0.3 1
+	frame	data/chars/werewolf/firewolf/explosion1.gif
+	move	0
+	burn	14 5 44 173 25 11 0 0 0 0
+	frame	data/chars/werewolf/firewolf/explosion2.gif
+	burn	20 75 35 103 25 11 0 0 0 0
+	frame	data/chars/werewolf/firewolf/explosion3.gif
+	burn	25 85 23 93 19 11 0 0 0 0
+	frame	data/chars/werewolf/firewolf/explosion4.gif
+	burn	25 105 23 73 12 11 0 0 0 0
+	frame	data/chars/werewolf/firewolf/explosion5.gif
+	burn	0 0 0 0
+	frame	data/chars/werewolf/firewolf/explosion6.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	delay	1
+	offset	37 178
+	burn	15 130 44 48 25 11 0 0 0 0
+	frame	data/chars/werewolf/firewolf/explosion1.gif
+		
+#|edited by openBor Stats v 0.67
+		

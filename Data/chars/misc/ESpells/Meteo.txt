@@ -1,0 +1,44 @@
+name		Meteo
+nolife		1
+lifespan  	3
+type		none
+candamage	player npc
+antigravity	100
+animationscript data/scripts/prscript.c
+
+
+anim idle
+	loop	1 4 6
+	delay	6
+	offset  30 31
+        hitfx   data/sounds/burnt.wav
+	attack  24 23 24 24 15 1 1 0 0
+	frame	data/chars/misc/espells/Meteo1.png
+	frame	data/chars/misc/espells/Meteo2.png
+	frame	data/chars/misc/espells/Meteo3.png
+	frame	data/chars/misc/espells/Meteo4.png
+	frame	data/chars/misc/espells/Meteo5.png
+	@cmd	groundchange "ANI_FOLLOW1"
+	frame	data/chars/misc/espells/Meteo5.png
+	@cmd	groundchange "ANI_FOLLOW1"
+	frame	data/chars/misc/espells/Meteo5.png
+
+anim follow
+	loop	1 1 8
+	delay	1
+	offset  27 68
+        hitfx   data/sounds/burnt.wav
+	attack  18 50 32 18 15 1 1 0 0
+	frame	data/chars/misc/espells/GrBlaze1.png
+	delay	6
+	@cmd	dasher 1 0 0 1
+	frame	data/chars/misc/espells/GrBlaze1.png
+	frame	data/chars/misc/espells/GrBlaze2.png
+	frame	data/chars/misc/espells/GrBlaze3.png
+	attack  18 28 32 40 15 1 1 0 0
+	frame	data/chars/misc/espells/GrBlaze4.png
+	frame	data/chars/misc/espells/GrBlaze5.png
+	attack  18 51 32 18 15 1 1 0 0
+	frame	data/chars/misc/espells/GrBlaze6.png
+	frame	data/chars/misc/espells/GrBlaze7.png
+	frame	data/chars/misc/espells/GrBlaze1.png

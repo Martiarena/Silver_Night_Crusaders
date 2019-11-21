@@ -1,0 +1,49 @@
+name	Bloode
+type	none
+shadow	0
+
+palette	data/chars/misc/blood/eblood1.gif
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	2
+	offset	85 95
+	frame	data/chars/misc/blood/eblood1.gif
+	frame	data/chars/misc/blood/eblood2.gif
+	frame	data/chars/misc/blood/eblood3.gif
+	frame	data/chars/misc/blood/eblood4.gif
+	frame	data/chars/misc/blood/eblood5.gif
+	frame	data/chars/misc/blood/eblood6.gif
+	frame	data/chars/misc/blood/eblood7.gif
+	frame	data/chars/misc/blood/eblood8.gif
+	frame	data/chars/misc/blood/eblood9.gif
+	frame	data/chars/misc/blood/eblood10.gif
+	frame	data/chars/misc/blood/eblood11.gif
+	frame	data/chars/misc/blood/eblood12.gif
+	frame	data/chars/misc/blood/eblood13.gif
+	frame	data/chars/misc/blood/eblood14.gif
+	frame	data/chars/misc/blood/eblood15.gif
+	frame	data/chars/misc/blood/eblood16.gif
+	frame	data/chars/misc/blood/eblood17.gif
+	frame	data/chars/misc/blood/eblood18.gif
+	frame	data/chars/misc/blood/eblood19.gif
+	frame	data/chars/misc/blood/eblood20.gif
+	frame	data/chars/misc/blood/eblood21.gif
+	frame	data/chars/misc/blood/eblood22.gif
+	frame	data/chars/misc/blood/eblood23.gif
+	frame	data/chars/misc/blood/eblood24.gif
+	frame	data/chars/misc/blood/eblood25.gif
+	frame	data/chars/misc/blood/eblood26.gif
+	frame	data/chars/misc/blood/eblood27.gif
+	frame	data/chars/misc/blood/eblood28.gif
+	frame	data/chars/misc/blood/eblood29.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,41 @@
+name    	Hshock
+type    	none
+shadow  	0
+lifespan  	1
+nomove  	1
+nolife          1
+antigravity     100
+
+palette         data/chars/misc/hits/sparks1.gif
+
+
+
+anim	idle
+	loop	0
+	delay	2
+	offset	22 18
+	frame	data/chars/misc/hits/sparks1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hits/sparks2.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hits/sparks3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hits/sparks4.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hits/sparks5.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hits/sparks6.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hits/sparks7.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hits/sparks8.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hits/sparks9.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hits/sparks10.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hits/sparks11.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

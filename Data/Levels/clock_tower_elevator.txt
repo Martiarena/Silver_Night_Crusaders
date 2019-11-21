@@ -1,0 +1,64 @@
+music		data/music/underground_reservoir.ogg 945945
+
+background	data/bgs/clock_tower/back-elevator.gif
+
+panel	        data/bgs/clock_tower/clock_tower_elevator.gif
+
+order           a
+settime	        0
+notime		1
+spawn1          159 -365 240
+spawn2          158 -365 240
+direction	up
+type		0 0 0
+cameratype 1
+
+Hole  -10  240  0  0  40 40 45
+Hole  211  240  85  85  160  160  45
+
+spawn	Ani_chain_up
+coords	20 216 100
+flip 1
+at 0
+
+spawn	Ani_chain_down
+coords	305 216 100
+flip 1
+at 0
+
+spawn Brazier1
+coords  49  216  0
+item ___100
+flip 1
+at  0
+
+spawn Brazier1
+coords  273  216  0
+item ___100
+flip 1
+at  0
+
+spawn  BatSpawner
+coords  -10  216  120
+at  0
+
+spawn  C._Demonio
+coords  65  216  248
+flip 1
+at  0
+
+spawn  C._Demonio
+coords  250  216  248
+at  0
+
+group	2 2
+at	0
+
+spawn  Nigromante_
+coords  65  216
+flip 1
+at  0
+
+spawn  Nigromante_
+coords  260  216
+at  0

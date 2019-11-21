@@ -1,0 +1,30 @@
+name	         ZombSpawner
+health	         1
+type	         None
+antigravity	 100
+offscreenkill    1700
+animationscript  data/scripts/oscript.c
+load	         Zombi
+
+
+
+
+anim	idle
+	loop	1
+	delay	10
+	offset	1 1
+	frame	data/chars/misc/empty.gif
+	@cmd	offscreenkill 1700 0
+	frame	data/chars/misc/empty.gif
+	@cmd	MspawnR "Zombi" 320 0 40 0
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	delay	10
+	offset	1 1
+	frame	data/chars/misc/empty.gif
+	@cmd	clearE 0
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

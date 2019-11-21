@@ -1,0 +1,191 @@
+name	legion_die
+type none
+nomove 1 1
+antigravity 100
+lifespan 5
+setlayer 100
+
+
+
+anim	death
+	loop	0
+	delay	4
+	offset	60 69
+	frame	data/chars/legion/ldie/deathcoreflame1a.gif
+	frame	data/chars/legion/ldie/deathcoreflame1b.gif
+	frame	data/chars/legion/ldie/deathcoreflame1c.gif
+	frame	data/chars/legion/ldie/deathcoreflame1d.gif
+	frame	data/chars/legion/ldie/deathcoreflame1e.gif
+	frame	data/chars/legion/ldie/deathcoreflame1f.gif
+	frame	data/chars/legion/ldie/deathcoreflame1g.gif
+	frame	data/chars/legion/ldie/deathcoreflame1h.gif
+	frame	data/chars/legion/ldie/deathcoreflame1i.gif
+	frame	data/chars/legion/ldie/deathcoreflame2a.gif
+	frame	data/chars/legion/ldie/deathcoreflame2b.gif
+	frame	data/chars/legion/ldie/deathcoreflame2c.gif
+	frame	data/chars/legion/ldie/deathcoreflame2d.gif
+	frame	data/chars/legion/ldie/deathcoreflame2e.gif
+	frame	data/chars/legion/ldie/deathcoreflame2f.gif
+	frame	data/chars/legion/ldie/deathcoreflame2g.gif
+	frame	data/chars/legion/ldie/deathcoreflame2h.gif
+	frame	data/chars/legion/ldie/deathcoreflame2i.gif
+	frame	data/chars/legion/ldie/deathcoreflame2j.gif
+	frame	data/chars/legion/ldie/deathcoreflame2k.gif
+	frame	data/chars/legion/ldie/deathcoreflame2l.gif
+	frame	data/chars/legion/ldie/deathcoreflame2m.gif
+	frame	data/chars/legion/ldie/deathcoreflame2n.gif
+	frame	data/chars/legion/ldie/deathcoreflame2o.gif
+	frame	data/chars/legion/ldie/deathcoreflame2p.gif
+	frame	data/chars/legion/ldie/deathcoreflame2q.gif
+	frame	data/chars/legion/ldie/deathcoreflame2r.gif
+	frame	data/chars/legion/ldie/deathcoreflame2a.gif
+	frame	data/chars/legion/ldie/deathcoreflame2b.gif
+	frame	data/chars/legion/ldie/deathcoreflame2c.gif
+	frame	data/chars/legion/ldie/deathcoreflame2d.gif
+	frame	data/chars/legion/ldie/deathcoreflame2e.gif
+	frame	data/chars/legion/ldie/deathcoreflame2f.gif
+	frame	data/chars/legion/ldie/deathcoreflame2g.gif
+	frame	data/chars/legion/ldie/deathcoreflame2h.gif
+	frame	data/chars/legion/ldie/deathcoreflame2i.gif
+	frame	data/chars/legion/ldie/deathcoreflame2j.gif
+	frame	data/chars/legion/ldie/deathcoreflame2k.gif
+	frame	data/chars/legion/ldie/deathcoreflame2l.gif
+	frame	data/chars/legion/ldie/deathcoreflame2m.gif
+	frame	data/chars/legion/ldie/deathcoreflame2n.gif
+	frame	data/chars/legion/ldie/deathcoreflame2o.gif
+	frame	data/chars/legion/ldie/deathcoreflame2p.gif
+	frame	data/chars/legion/ldie/deathcoreflame2q.gif
+	frame	data/chars/legion/ldie/deathcoreflame2r.gif
+	frame	data/chars/legion/ldie/deathcoreflame3a.gif
+	frame	data/chars/legion/ldie/deathcoreflame3b.gif
+	frame	data/chars/legion/ldie/deathcoreflame3c.gif
+	frame	data/chars/legion/ldie/deathcoreflame3d.gif
+	frame	data/chars/legion/ldie/deathcoreflame3e.gif
+	frame	data/chars/legion/ldie/deathcoreflame3f.gif
+	frame	data/chars/legion/ldie/deathcoreflame3g.gif
+	frame	data/chars/legion/ldie/deathcoreflame3h.gif
+	frame	data/chars/legion/ldie/deathcoreflame3i.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	fall
+	loop	0
+	delay	4
+	offset	59 139
+	frame	data/chars/legion/ldie/deathcoreflame1a.gif
+	frame	data/chars/legion/ldie/deathcoreflame1b.gif
+	frame	data/chars/legion/ldie/deathcoreflame1c.gif
+	frame	data/chars/legion/ldie/deathcoreflame1d.gif
+	frame	data/chars/legion/ldie/deathcoreflame1e.gif
+	frame	data/chars/legion/ldie/deathcoreflame1f.gif
+	frame	data/chars/legion/ldie/deathcoreflame1g.gif
+	frame	data/chars/legion/ldie/deathcoreflame1h.gif
+	frame	data/chars/legion/ldie/deathcoreflame1i.gif
+	frame	data/chars/legion/ldie/deathcoreflame2a.gif
+	frame	data/chars/legion/ldie/deathcoreflame2b.gif
+	frame	data/chars/legion/ldie/deathcoreflame2c.gif
+	frame	data/chars/legion/ldie/deathcoreflame2d.gif
+	frame	data/chars/legion/ldie/deathcoreflame2e.gif
+	frame	data/chars/legion/ldie/deathcoreflame2f.gif
+	frame	data/chars/legion/ldie/deathcoreflame2g.gif
+	frame	data/chars/legion/ldie/deathcoreflame2h.gif
+	frame	data/chars/legion/ldie/deathcoreflame2i.gif
+	frame	data/chars/legion/ldie/deathcoreflame2j.gif
+	frame	data/chars/legion/ldie/deathcoreflame2k.gif
+	frame	data/chars/legion/ldie/deathcoreflame2l.gif
+	frame	data/chars/legion/ldie/deathcoreflame2m.gif
+	frame	data/chars/legion/ldie/deathcoreflame2n.gif
+	frame	data/chars/legion/ldie/deathcoreflame2o.gif
+	frame	data/chars/legion/ldie/deathcoreflame2p.gif
+	frame	data/chars/legion/ldie/deathcoreflame2q.gif
+	frame	data/chars/legion/ldie/deathcoreflame2r.gif
+	frame	data/chars/legion/ldie/deathcoreflame2a.gif
+	frame	data/chars/legion/ldie/deathcoreflame2b.gif
+	frame	data/chars/legion/ldie/deathcoreflame2c.gif
+	frame	data/chars/legion/ldie/deathcoreflame2d.gif
+	frame	data/chars/legion/ldie/deathcoreflame2e.gif
+	frame	data/chars/legion/ldie/deathcoreflame2f.gif
+	frame	data/chars/legion/ldie/deathcoreflame2g.gif
+	frame	data/chars/legion/ldie/deathcoreflame2h.gif
+	frame	data/chars/legion/ldie/deathcoreflame2i.gif
+	frame	data/chars/legion/ldie/deathcoreflame2j.gif
+	frame	data/chars/legion/ldie/deathcoreflame2k.gif
+	frame	data/chars/legion/ldie/deathcoreflame2l.gif
+	frame	data/chars/legion/ldie/deathcoreflame2m.gif
+	frame	data/chars/legion/ldie/deathcoreflame2n.gif
+	frame	data/chars/legion/ldie/deathcoreflame2o.gif
+	frame	data/chars/legion/ldie/deathcoreflame2p.gif
+	frame	data/chars/legion/ldie/deathcoreflame2q.gif
+	frame	data/chars/legion/ldie/deathcoreflame2r.gif
+	frame	data/chars/legion/ldie/deathcoreflame3a.gif
+	frame	data/chars/legion/ldie/deathcoreflame3b.gif
+	frame	data/chars/legion/ldie/deathcoreflame3c.gif
+	frame	data/chars/legion/ldie/deathcoreflame3d.gif
+	frame	data/chars/legion/ldie/deathcoreflame3e.gif
+	frame	data/chars/legion/ldie/deathcoreflame3f.gif
+	frame	data/chars/legion/ldie/deathcoreflame3g.gif
+	frame	data/chars/legion/ldie/deathcoreflame3h.gif
+	frame	data/chars/legion/ldie/deathcoreflame3i.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	0
+	delay	4
+	offset	59 139
+	frame	data/chars/legion/ldie/deathcoreflame1a.gif
+	frame	data/chars/legion/ldie/deathcoreflame1b.gif
+	frame	data/chars/legion/ldie/deathcoreflame1c.gif
+	frame	data/chars/legion/ldie/deathcoreflame1d.gif
+	frame	data/chars/legion/ldie/deathcoreflame1e.gif
+	frame	data/chars/legion/ldie/deathcoreflame1f.gif
+	frame	data/chars/legion/ldie/deathcoreflame1g.gif
+	frame	data/chars/legion/ldie/deathcoreflame1h.gif
+	frame	data/chars/legion/ldie/deathcoreflame1i.gif
+	frame	data/chars/legion/ldie/deathcoreflame2a.gif
+	frame	data/chars/legion/ldie/deathcoreflame2b.gif
+	frame	data/chars/legion/ldie/deathcoreflame2c.gif
+	frame	data/chars/legion/ldie/deathcoreflame2d.gif
+	frame	data/chars/legion/ldie/deathcoreflame2e.gif
+	frame	data/chars/legion/ldie/deathcoreflame2f.gif
+	frame	data/chars/legion/ldie/deathcoreflame2g.gif
+	frame	data/chars/legion/ldie/deathcoreflame2h.gif
+	frame	data/chars/legion/ldie/deathcoreflame2i.gif
+	frame	data/chars/legion/ldie/deathcoreflame2j.gif
+	frame	data/chars/legion/ldie/deathcoreflame2k.gif
+	frame	data/chars/legion/ldie/deathcoreflame2l.gif
+	frame	data/chars/legion/ldie/deathcoreflame2m.gif
+	frame	data/chars/legion/ldie/deathcoreflame2n.gif
+	frame	data/chars/legion/ldie/deathcoreflame2o.gif
+	frame	data/chars/legion/ldie/deathcoreflame2p.gif
+	frame	data/chars/legion/ldie/deathcoreflame2q.gif
+	frame	data/chars/legion/ldie/deathcoreflame2r.gif
+	frame	data/chars/legion/ldie/deathcoreflame2a.gif
+	frame	data/chars/legion/ldie/deathcoreflame2b.gif
+	frame	data/chars/legion/ldie/deathcoreflame2c.gif
+	frame	data/chars/legion/ldie/deathcoreflame2d.gif
+	frame	data/chars/legion/ldie/deathcoreflame2e.gif
+	frame	data/chars/legion/ldie/deathcoreflame2f.gif
+	frame	data/chars/legion/ldie/deathcoreflame2g.gif
+	frame	data/chars/legion/ldie/deathcoreflame2h.gif
+	frame	data/chars/legion/ldie/deathcoreflame2i.gif
+	frame	data/chars/legion/ldie/deathcoreflame2j.gif
+	frame	data/chars/legion/ldie/deathcoreflame2k.gif
+	frame	data/chars/legion/ldie/deathcoreflame2l.gif
+	frame	data/chars/legion/ldie/deathcoreflame2m.gif
+	frame	data/chars/legion/ldie/deathcoreflame2n.gif
+	frame	data/chars/legion/ldie/deathcoreflame2o.gif
+	frame	data/chars/legion/ldie/deathcoreflame2p.gif
+	frame	data/chars/legion/ldie/deathcoreflame2q.gif
+	frame	data/chars/legion/ldie/deathcoreflame2r.gif
+	frame	data/chars/legion/ldie/deathcoreflame3a.gif
+	frame	data/chars/legion/ldie/deathcoreflame3b.gif
+	frame	data/chars/legion/ldie/deathcoreflame3c.gif
+	frame	data/chars/legion/ldie/deathcoreflame3d.gif
+	frame	data/chars/legion/ldie/deathcoreflame3e.gif
+	frame	data/chars/legion/ldie/deathcoreflame3f.gif
+	frame	data/chars/legion/ldie/deathcoreflame3g.gif
+	frame	data/chars/legion/ldie/deathcoreflame3h.gif
+	frame	data/chars/legion/ldie/deathcoreflame3i.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

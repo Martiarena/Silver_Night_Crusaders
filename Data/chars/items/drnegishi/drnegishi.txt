@@ -1,0 +1,68 @@
+name    	Dr._Negishi
+score           5000
+type    	item
+facing          1
+antigravity	30
+candamage  	player
+icon 		data/chars/misc/bgitem.gif
+
+palette		data/chars/items/items_palette2.gif
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	70
+	offset	8 26
+	itembox	0 0 15 14
+	frame	data/chars/items/drnegishi/idle1.gif
+	delay	2
+	frame	data/chars/items/drnegishi/idle1a.gif
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	8 26
+	sound	data/sounds/secret.wav
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/drnegishi/frame-01.gif
+	frame	data/chars/items/drnegishi/frame-02.gif
+	frame	data/chars/items/drnegishi/frame-03.gif
+	frame	data/chars/items/drnegishi/frame-04.gif
+	frame	data/chars/items/drnegishi/frame-05.gif
+	frame	data/chars/items/drnegishi/frame-06.gif
+	frame	data/chars/items/drnegishi/frame-07.gif
+	frame	data/chars/items/drnegishi/frame-08.gif
+	frame	data/chars/items/drnegishi/frame-09.gif
+	frame	data/chars/items/drnegishi/frame-10.gif
+	frame	data/chars/items/drnegishi/frame-11.gif
+	frame	data/chars/items/drnegishi/frame-12.gif
+	frame	data/chars/items/drnegishi/frame-13.gif
+	delay	2
+	frame	data/chars/items/drnegishi/frame-14b.gif
+	delay	3
+	frame	data/chars/items/drnegishi/frame-14.gif
+	delay	5
+	frame	data/chars/items/drnegishi/frame-15.gif
+	frame	data/chars/items/drnegishi/frame-16.gif
+	frame	data/chars/items/drnegishi/frame-17.gif
+	frame	data/chars/items/drnegishi/frame-18.gif
+	frame	data/chars/items/drnegishi/frame-19.gif
+	frame	data/chars/items/drnegishi/frame-20.gif
+	frame	data/chars/items/drnegishi/frame-21.gif
+	frame	data/chars/items/drnegishi/frame-22.gif
+	frame	data/chars/items/drnegishi/frame-23.gif
+	frame	data/chars/items/drnegishi/frame-24.gif
+	frame	data/chars/items/drnegishi/frame-25.gif
+	itembox	0 0 15 14
+	frame	data/chars/items/drnegishi/idle1.gif
+	frame	data/chars/items/drnegishi/idle1.gif
+	frame	data/chars/items/drnegishi/idle1.gif
+	frame	data/chars/items/drnegishi/idle1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

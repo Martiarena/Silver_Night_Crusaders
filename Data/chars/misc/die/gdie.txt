@@ -1,0 +1,108 @@
+name	gdie
+type none
+nomove 1 1
+antigravity 100
+lifespan 5
+setlayer 1000
+
+palette	data/chars/misc/die/gdie01.gif
+
+anim	death
+	loop	0
+	delay	4
+	offset	46 46
+	bbox	0 0 0 0
+	frame	data/chars/misc/empty.gif
+		
+anim	fall
+	loop	0
+	delay	4
+	offset	46 46
+	bbox	0 0 0 0
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	0
+	delay	3
+	offset	46 46
+	bbox	0 0 0 0
+	frame	data/chars/misc/die/gdie01.gif
+	frame	data/chars/misc/die/gdie02.gif
+	frame	data/chars/misc/die/gdie03.gif
+	frame	data/chars/misc/die/gdie04.gif
+	frame	data/chars/misc/die/gdie05.gif
+	frame	data/chars/misc/die/gdie06.gif
+	frame	data/chars/misc/die/gdie07.gif
+	frame	data/chars/misc/die/gdie08.gif
+	frame	data/chars/misc/die/gdie09.gif
+	frame	data/chars/misc/die/gdie10.gif
+	frame	data/chars/misc/die/gdie11.gif
+	frame	data/chars/misc/die/gdie12.gif
+	frame	data/chars/misc/die/gdie13.gif
+	frame	data/chars/misc/die/gdie14.gif
+	frame	data/chars/misc/die/gdie15.gif
+	frame	data/chars/misc/die/gdie16.gif
+	frame	data/chars/misc/die/gdie17.gif
+	frame	data/chars/misc/die/gdie18.gif
+	frame	data/chars/misc/die/gdie19.gif
+	frame	data/chars/misc/die/gdie20.gif
+	frame	data/chars/misc/die/gdie21.gif
+	frame	data/chars/misc/die/gdie22.gif
+	frame	data/chars/misc/die/gdie23.gif
+	frame	data/chars/misc/die/gdie24.gif
+	frame	data/chars/misc/die/gdie25.gif
+	frame	data/chars/misc/die/gdie26.gif
+	frame	data/chars/misc/die/gdie27.gif
+	frame	data/chars/misc/die/gdie28.gif
+	frame	data/chars/misc/die/gdie29.gif
+	frame	data/chars/misc/die/gdie30.gif
+	frame	data/chars/misc/die/gdie31.gif
+	frame	data/chars/misc/die/gdie32.gif
+	frame	data/chars/misc/die/gdie33.gif
+	frame	data/chars/misc/die/gdie34.gif
+	frame	data/chars/misc/die/gdie35.gif
+	frame	data/chars/misc/die/gdie36.gif
+	frame	data/chars/misc/die/gdie37.gif
+	frame	data/chars/misc/die/gdie38.gif
+	frame	data/chars/misc/die/gdie01.gif
+	frame	data/chars/misc/die/gdie02.gif
+	frame	data/chars/misc/die/gdie03.gif
+	frame	data/chars/misc/die/gdie04.gif
+	frame	data/chars/misc/die/gdie05.gif
+	frame	data/chars/misc/die/gdie06.gif
+	frame	data/chars/misc/die/gdie07.gif
+	frame	data/chars/misc/die/gdie08.gif
+	frame	data/chars/misc/die/gdie09.gif
+	frame	data/chars/misc/die/gdie10.gif
+	frame	data/chars/misc/die/gdie11.gif
+	frame	data/chars/misc/die/gdie12.gif
+	frame	data/chars/misc/die/gdie13.gif
+	frame	data/chars/misc/die/gdie14.gif
+	frame	data/chars/misc/die/gdie15.gif
+	frame	data/chars/misc/die/gdie16.gif
+	frame	data/chars/misc/die/gdie17.gif
+	frame	data/chars/misc/die/gdie18.gif
+	frame	data/chars/misc/die/gdie19.gif
+	frame	data/chars/misc/die/gdie20.gif
+	frame	data/chars/misc/die/gdie21.gif
+	frame	data/chars/misc/die/gdie22.gif
+	frame	data/chars/misc/die/gdie23.gif
+	frame	data/chars/misc/die/gdie24.gif
+	frame	data/chars/misc/die/gdie25.gif
+	frame	data/chars/misc/die/gdie26.gif
+	frame	data/chars/misc/die/gdie27.gif
+	frame	data/chars/misc/die/gdie28.gif
+	frame	data/chars/misc/die/gdie29.gif
+	frame	data/chars/misc/die/gdie30.gif
+	frame	data/chars/misc/die/gdie31.gif
+	frame	data/chars/misc/die/gdie32.gif
+	frame	data/chars/misc/die/gdie33.gif
+	frame	data/chars/misc/die/gdie34.gif
+	frame	data/chars/misc/die/gdie35.gif
+	frame	data/chars/misc/die/gdie36.gif
+	frame	data/chars/misc/die/gdie37.gif
+	frame	data/chars/misc/die/gdie38.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

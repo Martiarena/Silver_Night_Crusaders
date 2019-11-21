@@ -1,0 +1,168 @@
+name	Rain
+health 10
+type npc
+#speed 0
+#gfxshadow 1
+nomove 1
+#hostile	player
+noquake 1
+candamage enemy
+subject_to_screen 1
+setlayer 240
+
+palette data/chars/misc/Rain1.gif
+
+anim spawn
+	delay 1
+	offset	2000 244
+	frame	data/chars/misc/Rain10.gif
+
+anim idle
+	fastattack 1
+	delay	6
+	offset	2000 244
+		attack1  0  0  4007  1260  1  0  0  0  0  1000
+	frame	data/chars/misc/Rain1.gif
+	attack 0
+	frame	data/chars/misc/Rain2.gif
+		attack1  0  0  4007  1260  1  0  0  0  0  1000
+	frame	data/chars/misc/Rain3.gif
+	attack 0
+	frame	data/chars/misc/Rain4.gif
+		attack1  0  0  4007  1260  1  0  0  0  0  1000
+	frame	data/chars/misc/Rain5.gif
+	attack 0
+	frame	data/chars/misc/Rain6.gif
+		attack1  0  0  4007  1260  1  0  0  0  0  1000
+	frame	data/chars/misc/Rain7.gif
+	attack 0
+	frame	data/chars/misc/Rain8.gif
+		attack1  0  0  4007  1260  2  0  0  0  0  1000
+	frame	data/chars/misc/Rain9.gif
+#
+	attack 0
+	frame	data/chars/misc/Rain1.gif
+		attack1  0  0  4007  1260  1  0  0  0  0  1000
+	frame	data/chars/misc/Rain2.gif
+	attack 0
+	frame	data/chars/misc/Rain3.gif
+		attack1  0  0  4007  1260  1  0  0  0  0  1000
+	frame	data/chars/misc/Rain4.gif
+	attack 0
+	frame	data/chars/misc/Rain5.gif
+		attack1  0  0  4007  1260  1  0  0  0  0  1000
+	frame	data/chars/misc/Rain6.gif
+	attack 0
+	frame	data/chars/misc/Rain7.gif
+		attack1  0  0  4007  1260  2  0  0  0  0  1000
+	frame	data/chars/misc/Rain8.gif
+	attack 0
+	frame	data/chars/misc/Rain9.gif
+#
+		attack1  0  0  4007  1260  1  0  0  0  0  1000
+	frame	data/chars/misc/Rain1.gif
+	attack 0
+	frame	data/chars/misc/Rain2.gif
+		attack1  0  0  4007  1260  1  0  0  0  0  1000
+	frame	data/chars/misc/Rain3.gif
+	attack 0
+	frame	data/chars/misc/Rain4.gif
+		attack1  0  0  4007  1260  1  0  0  0  0  1000
+	frame	data/chars/misc/Rain5.gif
+	attack 0
+	frame	data/chars/misc/Rain6.gif
+		attack1  0  0  4007  1260  1  0  0  0  0  1000
+	frame	data/chars/misc/Rain7.gif
+	attack 0
+	frame	data/chars/misc/Rain8.gif
+		attack1  0  0  4007  1260  2  0  0  0  0  1000
+	frame	data/chars/misc/Rain9.gif
+#
+	attack 0
+	frame	data/chars/misc/Rain1.gif
+		attack1  0  0  4007  1260  1  0  0  0  0  1000
+	frame	data/chars/misc/Rain2.gif
+	attack 0
+	frame	data/chars/misc/Rain3.gif
+		attack1  0  0  4007  1260  1  0  0  0  0  1000
+	frame	data/chars/misc/Rain4.gif
+	attack 0
+	frame	data/chars/misc/Rain5.gif
+		attack1  0  0  4007  1260  1  0  0  0  0  1000
+	frame	data/chars/misc/Rain6.gif
+	attack 0
+	frame	data/chars/misc/Rain7.gif
+		attack1  0  0  4007  1260  2  0  0  0  0  1000
+	frame	data/chars/misc/Rain8.gif
+	attack 0
+	frame	data/chars/misc/Rain9.gif
+#
+		attack1  0  0  4007  1260  1  0  0  0  0  1000
+	frame	data/chars/misc/Rain1.gif
+	attack 0
+	frame	data/chars/misc/Rain2.gif
+		attack1  0  0  4007  1260  1  0  0  0  0  1000
+	frame	data/chars/misc/Rain3.gif
+	attack 0
+	frame	data/chars/misc/Rain4.gif
+		attack1  0  0  4007  1260  1  0  0  0  0  1000
+	frame	data/chars/misc/Rain5.gif
+	attack 0
+	frame	data/chars/misc/Rain6.gif
+		attack1  0  0  4007  1260  1  0  0  0  0  1000
+	frame	data/chars/misc/Rain7.gif
+	attack 0
+	frame	data/chars/misc/Rain8.gif
+		attack1  0  0  4007  1260  2  0  0  0  0  1000
+	frame	data/chars/misc/Rain9.gif
+#
+	attack 0
+	frame	data/chars/misc/Rain1.gif
+		attack1  0  0  4007  1260  1  0  0  0  0  1000
+	frame	data/chars/misc/Rain2.gif
+	attack 0
+	frame	data/chars/misc/Rain3.gif
+		attack1  0  0  4007  1260  1  0  0  0  0  1000
+	frame	data/chars/misc/Rain4.gif
+	attack 0
+	frame	data/chars/misc/Rain5.gif
+		attack1  0  0  4007  1260  1  0  0  0  0  1000
+	frame	data/chars/misc/Rain6.gif
+	attack 0
+	frame	data/chars/misc/Rain7.gif
+		attack1  0  0  4007  1260  2  0  0  0  0  1000
+	frame	data/chars/misc/Rain8.gif
+	attack 0
+	frame	data/chars/misc/Rain9.gif
+
+#kill self <3
+	offset -2000 -2000
+	movea -100
+	delay 1
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+	frame	data/chars/misc/Rain9.gif
+

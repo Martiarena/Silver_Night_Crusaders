@@ -1,0 +1,564 @@
+name      	Sheeba_Volaticus
+type   none
+health		 100
+mp		 100
+mprate           2
+speed		 12
+cantgrab	 1
+noquake		 1
+weaploss         1
+bounce		 0
+death		 1
+nodieblink	 2
+antigravity      20
+icon		 data/chars/sheeba/icon.gif
+makeinv		 3 0
+gfxshadow        0
+subject_to_wall  0
+subject_to_platform 0
+subject_to_gravity 0
+knockdowncount 10
+weapons         Sheeba
+palette		data/chars/sheeba/paletta_1.gif
+alternatepal	data/chars/sheeba/paletta_2.gif
+alternatepal	data/chars/sheeba/paletta_3.gif
+alternatepal	data/chars/sheeba/paletta_4.gif
+alternatepal	data/chars/sheeba/paletta_5.gif
+alternatepal	data/chars/sheeba/paletta_6.gif
+alternatepal	data/chars/sheeba/paletta_7.gif
+alternatepal	data/chars/sheeba/paletta_8.gif
+
+defense normal 1.5
+defense normal1 1.5
+defense normal2 1.5
+defense normal10 0.75
+defense normal17 1.5
+defense normal20 0 1 999 0 0 0 0
+defense burn 0.75
+defense shock 0.75
+
+animationscript	 data/scripts/player.c
+keyscript	 data/chars/sheeba/sheebaflykey.c
+ondeathscript	 data/scripts/dead.c
+takedamagescript data/scripts/invis.c
+
+atchain		 1
+
+com	a2	freespecial4
+com	a3	freespecial2
+com	a4	freespecial3
+com     a       freespecial12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	attack2
+		
+anim	bpain
+	loop	0
+	delay	9
+	offset	80 124
+	jumpframe	0 1.5 -1
+	bbox	70 75 20 45
+	sound	data/sounds/sheeba_pain.wav
+	frame	data/chars/sheeba/painf1.gif
+	frame	data/chars/sheeba/painf2.gif
+	frame	data/chars/sheeba/painf1.gif
+		
+anim	burn
+	delay	5
+	offset	80 124
+	sound	data/sounds/sheeba_pain.wav
+	@cmd	spawnbind "Hflame" -10 35 1
+	frame	data/chars/sheeba/fallf1.gif
+	frame	data/chars/sheeba/fallf2.gif
+	delay	10
+	frame	data/chars/sheeba/fallf3.gif
+	frame	data/chars/sheeba/fallf4.gif
+	frame	data/chars/sheeba/fallf5.gif
+	frame	data/chars/sheeba/fallf6.gif
+	frame	data/chars/sheeba/fallf7.gif
+	@cmd	platform 1
+	delay	15
+	frame	data/chars/sheeba/fallf8.gif
+	frame	data/chars/sheeba/fallf9.gif
+		
+anim	death
+	delay	7
+	offset	80 124
+	jumpframe	0 3 -1
+	frame	data/chars/sheeba/death1.gif
+	frame	data/chars/sheeba/death2.gif
+	frame	data/chars/sheeba/death3.gif
+	frame	data/chars/sheeba/death4.gif
+	frame	data/chars/sheeba/death5.gif
+	frame	data/chars/sheeba/death6.gif
+	frame	data/chars/sheeba/death7.gif
+	frame	data/chars/sheeba/death8.gif
+	frame	data/chars/sheeba/death9.gif
+	frame	data/chars/sheeba/death10.gif
+	frame	data/chars/sheeba/death11.gif
+	delay	100
+	frame	data/chars/misc/empty.gif
+		
+anim	duck
+		
+anim	duckattack
+		
+anim	fall
+	delay	5
+	offset	80 124
+	sound	data/sounds/sheeba_pain.wav
+	frame	data/chars/sheeba/fall1.gif
+	frame	data/chars/sheeba/fall2.gif
+	delay	10
+	frame	data/chars/sheeba/fall3.gif
+	frame	data/chars/sheeba/fall4.gif
+	frame	data/chars/sheeba/fall5.gif
+	frame	data/chars/sheeba/fall6.gif
+	frame	data/chars/sheeba/fall7.gif
+	@cmd	platform 1
+	delay	15
+	frame	data/chars/sheeba/fall8.gif
+	frame	data/chars/sheeba/fall9.gif
+		
+anim	fall17
+	delay	5
+	offset	80 124
+	@cmd	spawnbind "blooda" 0 42 1
+	sound	data/sounds/sheeba_pain.wav
+	frame	data/chars/sheeba/fall1.gif
+	frame	data/chars/sheeba/fall2.gif
+	delay	10
+	frame	data/chars/sheeba/fall3.gif
+	frame	data/chars/sheeba/fall4.gif
+	frame	data/chars/sheeba/fall5.gif
+	frame	data/chars/sheeba/fall6.gif
+	frame	data/chars/sheeba/fall7.gif
+	@cmd	platform 1
+	delay	15
+	frame	data/chars/sheeba/fall8.gif
+	frame	data/chars/sheeba/fall9.gif
+		
+anim	fall2
+	delay	5
+	offset	80 124
+	@cmd	spawnbind "blooda" 0 42 1
+	sound	data/sounds/sheeba_pain.wav
+	frame	data/chars/sheeba/fall1.gif
+	frame	data/chars/sheeba/fall2.gif
+	delay	10
+	frame	data/chars/sheeba/fall3.gif
+	frame	data/chars/sheeba/fall4.gif
+	frame	data/chars/sheeba/fall5.gif
+	frame	data/chars/sheeba/fall6.gif
+	frame	data/chars/sheeba/fall7.gif
+	@cmd	platform 1
+	delay	15
+	frame	data/chars/sheeba/fall8.gif
+	frame	data/chars/sheeba/fall9.gif
+		
+anim	fall7
+	delay	5
+	offset	80 124
+	sound	data/sounds/sheeba_pain.wav
+	frame	data/chars/sheeba/falli1.gif
+	frame	data/chars/sheeba/falli2.gif
+	delay	10
+	frame	data/chars/sheeba/falli3.gif
+	frame	data/chars/sheeba/falli4.gif
+	frame	data/chars/sheeba/falli5.gif
+	frame	data/chars/sheeba/falli6.gif
+	frame	data/chars/sheeba/falli7.gif
+	@cmd	platform 1
+	delay	15
+	frame	data/chars/sheeba/falli8.gif
+	frame	data/chars/sheeba/falli9.gif
+		
+anim	follow1
+		
+anim	follow2
+		
+anim	follow3
+		
+anim	follow4
+		
+anim	follow5
+	loop	0
+	delay	7
+	offset	80 124
+	frame	data/chars/sheeba/magic/spawn2d.gif
+	frame	data/chars/sheeba/magic/spawn2c.gif
+	frame	data/chars/sheeba/magic/spawn2b.gif
+	frame	data/chars/sheeba/magic/spawn2a.gif
+	delay	1
+	frame	data/chars/sheeba/magic/spawn2a.gif
+	weaponframe	5 1
+	frame	data/chars/sheeba/magic/spawn2a.gif
+		
+anim	freespecial10
+		
+anim	freespecial12
+@script
+    void self = getlocalvar("self");
+    int MP = getentityproperty(self,"mp");
+
+    if(frame <=3){
+      if(MP < 1){
+        changeentityproperty(self, "velocity", 0, 0, 0); // this is not necessary in IDLE
+        performattack(self, openborconstant("ANI_FOLLOW5"));
+      } else {
+        changeentityproperty(self, "mp", MP-1);
+      }
+    }
+	@end_script	
+	loop	0
+	delay	7
+	offset	80 124
+	bbox	75 72 20 40
+	sound	data/sounds/sheeba_attack1.wav
+	@cmd	keyfly 1
+	frame	data/chars/sheeba/magic/attack2a.gif
+	@cmd	keyfly 1
+	frame	data/chars/sheeba/magic/attack2b.gif
+	@cmd	keyfly 1
+	frame	data/chars/sheeba/magic/attack2c.gif
+	delay	1
+	@cmd	keyfly 1
+	sound	data/sounds/throw_medium.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack	100 15 75 120 12 0 0 0 0 0
+	frame	data/chars/sheeba/magic/attack2d.gif
+	frame	data/chars/sheeba/magic/attack2e.gif
+	frame	data/chars/sheeba/magic/attack2d.gif
+	attack	125 80 40 60 12 0 0 0 0 0
+	frame	data/chars/sheeba/magic/attack2e.gif
+	frame	data/chars/sheeba/magic/attack2d.gif
+	frame	data/chars/sheeba/magic/attack2e.gif
+	frame	data/chars/sheeba/magic/attack2d.gif
+	frame	data/chars/sheeba/magic/attack2e.gif
+	frame	data/chars/sheeba/magic/attack2d.gif
+	attack	125 40 39 105 9 0 0 0 0 0
+	frame	data/chars/sheeba/magic/attack2e.gif
+	frame	data/chars/sheeba/magic/attack2f.gif
+	attack	125 94 39 50 9 0 0 0 0 0
+	frame	data/chars/sheeba/magic/attack2g.gif
+	frame	data/chars/sheeba/magic/attack2f.gif
+	frame	data/chars/sheeba/magic/attack2g.gif
+	frame	data/chars/sheeba/magic/attack2f.gif
+	frame	data/chars/sheeba/magic/attack2g.gif
+	frame	data/chars/sheeba/magic/attack2f.gif
+	frame	data/chars/sheeba/magic/attack2g.gif
+	frame	data/chars/sheeba/magic/attack2f.gif
+	frame	data/chars/sheeba/magic/attack2g.gif
+	delay	20
+	frame	data/chars/sheeba/magic/attack2e.gif
+	attack	0
+	delay	6
+	bbox	79 69 20 45
+	frame	data/chars/sheeba/magic/attack2h.gif
+	frame	data/chars/sheeba/magic/attack2i.gif
+	@cmd	beidle
+	frame	data/chars/sheeba/magic/attack2i.gif
+		
+anim	freespecial13
+		
+anim	freespecial14
+		
+anim	freespecial15
+		
+anim	freespecial16
+		
+anim	freespecial17
+		
+anim	freespecial2
+		
+anim	freespecial20
+		
+anim	freespecial21
+		
+anim	freespecial3
+	delay	1
+	offset	80 124
+	bbox	70 70 20 50
+	@cmd	limiter 9
+	frame	data/chars/sheeba/magic/spell2a.gif
+	delay	7
+	@cmd	keyint "ANI_FREESPECIAL5" 0 "U" 0
+	@cmd	keyint "ANI_FREESPECIAL8" 0 "F" 0
+	frame	data/chars/sheeba/magic/spell2a.gif
+	@cmd	mpcost 10
+	@cmd	spawn01 "fireseal" 16 29 0
+	@cmd	Triafire 16 29
+	sound	data/sounds/sheeba_attack3.wav
+	frame	data/chars/sheeba/magic/spell2b.gif
+	frame	data/chars/sheeba/magic/spell2c.gif
+	frame	data/chars/sheeba/magic/spell2d.gif
+	frame	data/chars/sheeba/magic/spell2e.gif
+	@cmd	beidle
+	frame	data/chars/sheeba/magic/spell2e.gif
+		
+anim	freespecial4
+	delay	1
+	offset	80 124
+	bbox	70 70 20 50
+	@cmd	limiter 9
+	frame	data/chars/sheeba/magic/spell2a.gif
+	@cmd	platform 1
+	delay	7
+	@cmd	limiterSub
+	frame	data/chars/sheeba/magic/spell2a.gif
+	@cmd	mpcost 10
+	@cmd	SubWeapon 23 35
+	frame	data/chars/sheeba/magic/spell2b.gif
+	frame	data/chars/sheeba/magic/spell2c.gif
+	frame	data/chars/sheeba/magic/spell2d.gif
+	frame	data/chars/sheeba/magic/spell2e.gif
+	@cmd	beidle
+	frame	data/chars/sheeba/magic/spell2e.gif
+		
+anim	freespecial5
+	loop	0
+	delay	7
+	offset	80 124
+	frame	data/chars/sheeba/magic/spawn2d.gif
+	frame	data/chars/sheeba/magic/spawn2c.gif
+	frame	data/chars/sheeba/magic/spawn2b.gif
+	frame	data/chars/sheeba/magic/spawn2a.gif
+	delay	1
+	frame	data/chars/sheeba/magic/spawn2a.gif
+	weaponframe	5 1
+	frame	data/chars/sheeba/magic/spawn2a.gif
+		
+anim	freespecial6
+		
+anim	freespecial7
+		
+anim	freespecial8
+	delay	1
+	offset	80 124
+	bbox	70 70 20 50
+	@cmd	limiter 9
+	frame	data/chars/sheeba/magic/spell2a.gif
+	delay	7
+	frame	data/chars/sheeba/magic/spell2a.gif
+	@cmd	mpcost 10
+	@cmd	spawn01 "lightningseal" 16 29 0
+	@cmd	shoot "Thunder_sh" 16 29 0
+	sound	data/sounds/sheeba_attack3.wav
+	frame	data/chars/sheeba/magic/spell2b.gif
+	frame	data/chars/sheeba/magic/spell2c.gif
+	frame	data/chars/sheeba/magic/spell2d.gif
+	frame	data/chars/sheeba/magic/spell2e.gif
+	@cmd	beidle
+	frame	data/chars/sheeba/magic/spell2e.gif
+		
+anim	idle
+@script
+    void self = getlocalvar("self");
+    int MP = getentityproperty(self,"mp");
+
+    if(frame >= 1){
+      if(MP < 1){
+        changeentityproperty(self, "velocity", 0, 0, 0); // this is not necessary in IDLE
+        performattack(self, openborconstant("ANI_FOLLOW5"));
+      } else {
+        changeentityproperty(self, "mp", MP-1);
+      }
+    }
+	@end_script	
+	loop	1
+	delay	7
+	offset	80 124
+	bbox	80 65 15 45
+	cancel	0 8 0 a2 freespecial4
+	cancel	0 8 0 a3 freespecial2
+	cancel	0 8 0 a4 freespecial3
+	cancel	0 8 0 a freespecial24
+	@cmd	keyfly 1
+	frame	data/chars/sheeba/magic/idle2a.gif
+	@cmd	keyfly 1
+	frame	data/chars/sheeba/magic/idle2b.gif
+	delay	4
+	@cmd	keyfly 1
+	frame	data/chars/sheeba/magic/idle2c.gif
+	@cmd	keyfly 1
+	frame	data/chars/sheeba/magic/idle2d.gif
+	delay	10
+	@cmd	keyfly 1
+	frame	data/chars/sheeba/magic/idle2e.gif
+	@cmd	keyfly 1
+	frame	data/chars/sheeba/magic/idle2f.gif
+	delay	4
+	@cmd	keyfly 1
+	frame	data/chars/sheeba/magic/idle2c.gif
+	@cmd	keyfly 1
+	frame	data/chars/sheeba/magic/idle2d.gif
+		
+anim	jump
+		
+anim	jumpattack
+		
+anim	jumpattack3
+		
+anim	jumpland
+		
+anim	jumpspecial
+		
+anim	fall8
+	delay	5
+	offset	80 124
+	@cmd	spawnbind "prose" 4 32 1
+	@cmd	spawnbind "blooda" 0 42 1
+	sound	data/sounds/sheeba_pain.wav
+	frame	data/chars/sheeba/fall1.gif
+	frame	data/chars/sheeba/fall2.gif
+	delay	10
+	frame	data/chars/sheeba/fall3.gif
+	frame	data/chars/sheeba/fall4.gif
+	frame	data/chars/sheeba/fall5.gif
+	frame	data/chars/sheeba/fall6.gif
+	frame	data/chars/sheeba/fall7.gif
+	@cmd	platform 1
+	delay	15
+	frame	data/chars/sheeba/fall8.gif
+	frame	data/chars/sheeba/fall9.gif
+		
+anim	pain
+	loop	0
+	delay	9
+	offset	80 124
+	jumpframe	0 1.5 -1
+	bbox	70 75 20 45
+	sound	data/sounds/sheeba_pain.wav
+	frame	data/chars/sheeba/pain1.gif
+	frame	data/chars/sheeba/pain2.gif
+	frame	data/chars/sheeba/pain1.gif
+		
+anim	pain17
+	loop	0
+	delay	9
+	offset	80 124
+	@cmd	spawnbind "blooda" 0 42 1
+	jumpframe	0 1.5 -1
+	bbox	70 75 20 45
+	sound	data/sounds/sheeba_pain.wav
+	frame	data/chars/sheeba/pain1.gif
+	frame	data/chars/sheeba/pain2.gif
+	frame	data/chars/sheeba/pain1.gif
+		
+anim	pain2
+	loop	0
+	delay	9
+	offset	80 124
+	@cmd	spawnbind "blooda" 0 42 1
+	jumpframe	0 1.5 -1
+	bbox	70 75 20 45
+	sound	data/sounds/sheeba_pain.wav
+	frame	data/chars/sheeba/pain1.gif
+	frame	data/chars/sheeba/pain2.gif
+	frame	data/chars/sheeba/pain1.gif
+		
+anim	pain7
+	loop	0
+	delay	9
+	offset	80 124
+	jumpframe	0 1.5 -1
+	bbox	70 75 20 45
+	sound	data/sounds/sheeba_pain.wav
+	frame	data/chars/sheeba/paini1.gif
+	frame	data/chars/sheeba/paini2.gif
+	frame	data/chars/sheeba/paini1.gif
+		
+anim	rise
+		
+anim	select
+		
+anim	shock
+	delay	5
+	offset	55 63
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/fallt1.gif
+	frame	data/chars/fran/fallt2.gif
+	frame	data/chars/fran/fallt3.gif
+	frame	data/chars/fran/fallt4.gif
+	@cmd	platform 1
+	frame	data/chars/fran/fallt3.gif
+	frame	data/chars/fran/fallt4.gif
+		
+anim	slide
+		
+anim	spain
+	loop	0
+	delay	9
+	offset	80 124
+	jumpframe	0 1.5 -1
+	bbox	70 75 20 45
+	sound	data/sounds/sheeba_pain.wav
+	frame	data/chars/sheeba/paint1.gif
+	frame	data/chars/sheeba/paint2.gif
+	frame	data/chars/sheeba/paint1.gif
+		
+anim	special
+		
+anim	waiting
+		
+anim	walk
+		
+#|edited by openBor Stats v 0.67
+		

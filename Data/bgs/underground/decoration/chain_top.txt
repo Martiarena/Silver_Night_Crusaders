@@ -1,0 +1,197 @@
+name	Chain_top
+type     enemy
+health          1
+antigravity     100
+shadow		0
+nomove	1 1
+setlayer -1
+nolife	1
+nodieblink 3
+death   	 1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_gravity 0
+load	Chain_top_
+
+animationscript  data/scripts/escript.c
+
+palette	data/bgs/underground/palette_statue.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	death
+	delay	371
+	offset	40 189
+	frame	data/bgs/underground/decoration/chain_top.gif
+	delay	7
+	platform	5 97 -8 -8 72 72 10 35
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 188
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 187
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 186
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 185
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 184
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 183
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 182
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 181
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 180
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 179
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 178
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 177
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 176
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 175
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 174
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 173
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 172
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 171
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 170
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 169
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 168
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 167
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 166
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 165
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 164
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 163
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 162
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 161
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 160
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 159
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 158
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 157
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 156
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 155
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 154
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 153
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 152
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 151
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 150
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 149
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 148
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 147
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 146
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 145
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 144
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 143
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 142
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 141
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 140
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 139
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 138
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 137
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 136
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 135
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 134
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 133
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 132
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 131
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 130
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 129
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 128
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 127
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 126
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 125
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 124
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 123
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 122
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 121
+	frame	data/bgs/underground/decoration/chain_top.gif
+	offset	40 120
+	frame	data/bgs/underground/decoration/chain_top.gif
+	delay	200
+	frame	data/bgs/underground/decoration/chain_top.gif
+	delay	1
+	@cmd	spawn01 "Chain_top_" 0 0 0
+	frame	data/bgs/underground/decoration/chain_top.gif
+	@cmd	suicide
+	frame	data/bgs/underground/decoration/chain_top.gif
+		
+anim	idle
+	loop	0
+	offset	40 189
+	delay	14
+	frame	data/bgs/underground/decoration/chain_top.gif
+		
+#|edited by openBor Stats v 0.67
+		

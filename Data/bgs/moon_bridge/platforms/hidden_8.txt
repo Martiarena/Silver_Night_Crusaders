@@ -1,0 +1,40 @@
+name  		Hidden_8
+health		1
+type  none
+facing	  	1
+setlayer	-2
+nolife	1
+nomove          1 0
+antigravity	100
+offscreenkill   9999
+candamage	player
+load  		Cherro
+
+animationscript  data/scripts/escript.c
+palette		data/bgs/moon_bridge/front_panel_palette_2.gif
+
+
+
+anim	follow1
+	delay	10
+	offset	120 7
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn02 "Cherro" 200 171 0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	100
+	offset	32 17
+	noreflect	1
+	followcond	1
+	followanim	1
+	hitfx	data/sounds/no-hit.wav
+	attack20	5 -50 6 10 0 0 1 1 0 0
+	frame	data/bgs/moon_bridge/platforms/bridge_platform_1.gif
+		
+#|edited by openBor Stats v 0.67
+		

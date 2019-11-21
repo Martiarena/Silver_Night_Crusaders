@@ -1,0 +1,100 @@
+name 		Legion_Mini
+health          3
+nomove  	1
+type		enemy
+cantgrab 	1
+nodrop		2
+death		1
+nolife		1
+Score           0 -1
+hostile         player npc
+candamage       player npc
+antigravity     100
+offscreenkill   70
+setlayer	200
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+load            edie
+
+defense normal3 2 0 0 0 0 0 0
+defense normal4 2 0 0 0 0 0 0
+defense normal6 3 0 0 0 0 0 0
+defense normal19 2 0 0 0 0 0 0
+defense burn 2 0 0 0 0 0 0
+
+palette		data/chars/legion/minilegions/mini_legion_palette.gif
+
+animationscript data/scripts/cscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	death
+	delay	7
+	offset	20 20
+	subentity	edie
+	spawnframe	0 0 0 0 0
+	frame	data/chars/legion/minilegions/death1a.gif
+	frame	data/chars/legion/minilegions/death1b.gif
+	frame	data/chars/legion/minilegions/death1c.gif
+	frame	data/chars/legion/minilegions/death1d.gif
+	frame	data/chars/legion/minilegions/death1f.gif
+	frame	data/chars/legion/minilegions/death1g.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	14
+	offset	20 20
+	bbox	7 10 25 25
+	attack	7 10 25 25 6 0 1 0 0 0
+	frame	data/chars/legion/minilegions/idle1a.gif
+	@cmd	target 0.6 0.6 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/legion/minilegions/idle1b.gif
+	frame	data/chars/legion/minilegions/idle1a.gif
+	frame	data/chars/legion/minilegions/idle1b.gif
+	frame	data/chars/legion/minilegions/idle1a.gif
+	frame	data/chars/legion/minilegions/idle1b.gif
+	frame	data/chars/legion/minilegions/idle1a.gif
+	frame	data/chars/legion/minilegions/idle1b.gif
+	delay	13
+	@cmd	target 0.6 0.6 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/legion/minilegions/idle1a.gif
+	delay	1
+	attack	0
+	frame	data/chars/legion/minilegions/idle1a.gif
+		
+anim	pain
+	delay	5
+	offset	20 20
+	frame	data/chars/legion/minilegions/idle1a.gif
+	@cmd	dasher -3 0 0 1
+	frame	data/chars/legion/minilegions/idle1b.gif
+	frame	data/chars/legion/minilegions/idle1b.gif
+	frame	data/chars/legion/minilegions/idle1b.gif
+	frame	data/chars/legion/minilegions/idle1b.gif
+	@cmd	dasher 0 0 0 1
+	@cmd	beidle
+	frame	data/chars/legion/minilegions/idle1b.gif
+		
+anim	spawn
+	delay	1
+	offset	20 20
+	frame	data/chars/legion/minilegions/idle1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

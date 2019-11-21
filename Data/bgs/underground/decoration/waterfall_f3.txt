@@ -1,0 +1,34 @@
+name	Waterfall_f3
+type		none
+facing		1
+setlayer  999
+alpha		1
+offscreenkill   9999
+antigravity	100
+
+palette	data/bgs/underground/decoration/waterfall_f3a.gif
+
+
+
+anim	idle
+	loop	1
+	offset	22 240
+	delay	7
+	frame	data/bgs/underground/decoration/waterfall_f3a.gif
+	frame	data/bgs/underground/decoration/waterfall_f3b.gif
+	frame	data/bgs/underground/decoration/waterfall_f3c.gif
+	frame	data/bgs/underground/decoration/waterfall_f3d.gif
+	frame	data/bgs/underground/decoration/waterfall_f3e.gif
+	frame	data/bgs/underground/decoration/waterfall_f3f.gif
+	frame	data/bgs/underground/decoration/waterfall_f3g.gif
+	frame	data/bgs/underground/decoration/waterfall_f3h.gif
+	frame	data/bgs/underground/decoration/waterfall_f3i.gif
+	frame	data/bgs/underground/decoration/waterfall_f3j.gif
+	frame	data/bgs/underground/decoration/waterfall_f3k.gif
+	frame	data/bgs/underground/decoration/waterfall_f3l.gif
+	frame	data/bgs/underground/decoration/waterfall_f3m.gif
+	frame	data/bgs/underground/decoration/waterfall_f3n.gif
+	frame	data/bgs/underground/decoration/waterfall_f3o.gif
+		
+#|edited by openBor Stats v 0.67
+		

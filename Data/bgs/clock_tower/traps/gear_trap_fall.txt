@@ -1,0 +1,58 @@
+name    Gear_trap_fall
+type	trap
+shadow  0
+noatflash 1
+nolife 1
+hostile player npc
+candamage  player npc obstacle
+
+load	Gear_trap_walking
+
+animationscript  data/scripts/escript.c
+
+palette	 data/bgs/clock_tower/traps/gear_trap_palette.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	1
+	offset	15 32
+	frame	data/bgs/clock_tower/traps/gears_trap1a.gif
+	sound	data/sounds/rock_break3.wav
+	subentity	Gear_trap_walking
+	spawnframe	1 0 0 0 0
+	frame	data/bgs/clock_tower/traps/gears_trap1a.gif
+	delay	1
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+anim	jumpland
+	loop	0
+	delay	1
+	offset	15 32
+	frame	data/bgs/clock_tower/traps/gears_trap1a.gif
+		
+anim	walkoff
+	loop	0
+	delay	1
+	offset	15 32
+	attack	0 0 30 32 25 0 1 1 0 0
+	frame	data/bgs/clock_tower/traps/gears_trap1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

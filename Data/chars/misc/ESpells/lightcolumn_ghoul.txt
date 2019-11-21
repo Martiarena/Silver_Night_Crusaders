@@ -1,0 +1,272 @@
+name		LightColumn_ghoul
+nolife		1
+lifespan  	2
+type		none
+candamage	player npc
+antigravity	100
+load  Esqueleto
+load  E._electrico
+load  E._Laser
+animationscript  data/scripts/escript.c
+
+palette		data/chars/misc/espells/lightcolumn1_palette.gif
+
+
+
+anim	follow
+	loop	0
+	delay	1
+	offset	16 248
+	frame	data/chars/misc/espells/lightcolumn1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1f.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "E._Electrico" 0 0 0
+	frame	data/chars/misc/espells/lightcolumn1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1a.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow2
+	loop	0
+	delay	1
+	offset	16 248
+	frame	data/chars/misc/espells/lightcolumn1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1f.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "E._Laser" 0 0 0
+	frame	data/chars/misc/espells/lightcolumn1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1a.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	0
+	delay	1
+	offset	16 248
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	16 248
+@script
+    void self = getlocalvar("self");
+    int r = rand()%30;
+
+    if( frame == 0){
+      if( r > 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } else if( r < -10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      }
+    }
+	@end_script	
+	frame	data/chars/misc/espells/lightcolumn1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1f.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "Esqueleto" 10 0 0
+	frame	data/chars/misc/espells/lightcolumn1f.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "Esqueleto" -10 0 0
+	frame	data/chars/misc/espells/lightcolumn1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1a.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

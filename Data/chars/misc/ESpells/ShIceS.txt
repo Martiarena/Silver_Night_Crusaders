@@ -1,0 +1,19 @@
+name    	ShIceS
+type    	none
+lifespan  	1
+antigravity     100
+animationscript  data/scripts/escript.c
+
+palette		data/chars/misc/ESpells/ice_spell_palette.gif
+
+
+anim idle
+	delay	6
+	offset	9 10
+	frame	data/chars/misc/espells/shice5.gif
+	frame	data/chars/misc/espells/shice4.gif
+	frame	data/chars/misc/espells/shice3.gif
+	frame	data/chars/misc/espells/shice2.gif
+	frame	data/chars/misc/espells/shice1.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif

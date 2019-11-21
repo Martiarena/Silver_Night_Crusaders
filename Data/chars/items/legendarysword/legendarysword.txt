@@ -1,0 +1,68 @@
+name    	Espada_Leg.
+score           5000
+type    	item
+facing          1
+antigravity	30
+candamage  	player
+icon 		data/chars/misc/bgitem.gif
+
+palette		data/chars/items/legendarysword/legendary_sword_palette.gif
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	70
+	offset	8 26
+	itembox	0 0 15 14
+	frame	data/chars/items/legendarysword/idle1a.gif
+	delay	2
+	frame	data/chars/items/legendarysword/idle1b.gif
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	8 26
+	sound	data/sounds/secret.wav
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/legendarysword/frame-01.gif
+	frame	data/chars/items/legendarysword/frame-02.gif
+	frame	data/chars/items/legendarysword/frame-03.gif
+	frame	data/chars/items/legendarysword/frame-04.gif
+	frame	data/chars/items/legendarysword/frame-05.gif
+	frame	data/chars/items/legendarysword/frame-06.gif
+	frame	data/chars/items/legendarysword/frame-07.gif
+	frame	data/chars/items/legendarysword/frame-08.gif
+	frame	data/chars/items/legendarysword/frame-09.gif
+	frame	data/chars/items/legendarysword/frame-10.gif
+	frame	data/chars/items/legendarysword/frame-11.gif
+	frame	data/chars/items/legendarysword/frame-12.gif
+	frame	data/chars/items/legendarysword/frame-13.gif
+	delay	2
+	frame	data/chars/items/legendarysword/frame-14b.gif
+	delay	3
+	frame	data/chars/items/legendarysword/frame-14.gif
+	delay	5
+	frame	data/chars/items/legendarysword/frame-15.gif
+	frame	data/chars/items/legendarysword/frame-16.gif
+	frame	data/chars/items/legendarysword/frame-17.gif
+	frame	data/chars/items/legendarysword/frame-18.gif
+	frame	data/chars/items/legendarysword/frame-19.gif
+	frame	data/chars/items/legendarysword/frame-20.gif
+	frame	data/chars/items/legendarysword/frame-21.gif
+	frame	data/chars/items/legendarysword/frame-22.gif
+	frame	data/chars/items/legendarysword/frame-23.gif
+	frame	data/chars/items/legendarysword/frame-24.gif
+	frame	data/chars/items/legendarysword/frame-25.gif
+	frame	data/chars/items/legendarysword/frame-26.gif
+	itembox	0 0 15 14
+	frame	data/chars/items/legendarysword/idle1a.gif
+	frame	data/chars/items/legendarysword/idle1a.gif
+	frame	data/chars/items/legendarysword/idle1b.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,123 @@
+name    	H._espinosa
+health  	3
+nomove  	1 1
+type		enemy
+cantgrab 	1
+nodrop  	2
+falldie 	1
+nodieblink 	2
+nopain  	1
+nodrop  	2
+min_noatk_chance 0
+max_noatk_chance 0
+aggression 9999
+offscreenkill	500
+score	 	200 -1
+hostile         player npc
+candamage 	player npc
+icon		data/chars/misc/bgmonster.gif
+
+palette          data/chars/driade/driade_palette.gif
+alternatepal     data/chars/driade/blink_palette.gif
+
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack
+	rangea	0 11
+	range	-24 47
+	loop	0
+	delay	7
+	offset	21 21
+	@script
+	void self = getlocalvar("self");
+ 	if(frame == 4){
+	 changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+	}
+	@end_script	
+	frame	data/chars/une/attack1a.gif
+	frame	data/chars/une/attack1b.gif
+	frame	data/chars/une/attack1c.gif
+	delay	1
+	hitfx	data/sounds/slash.wav
+	attack2	0 0 41 21 6 0 0 0 0 0
+	frame	data/chars/une/idle2a.gif
+	attack2	0 0 0 0
+	frame	data/chars/une/attack1c.gif
+	frame	data/chars/une/attack1b.gif
+	frame	data/chars/une/attack1a.gif
+		
+anim	death
+	loop	0
+	delay	7
+	offset	21 21
+	bbox	0 0 0 0
+	frame	data/chars/une/death1.gif
+	frame	data/chars/une/death5.gif
+	delay	14
+	frame	data/chars/une/death1.gif
+	frame	data/chars/une/death2.gif
+	frame	data/chars/une/death3.gif
+	frame	data/chars/une/death4.gif
+	delay	49
+	frame	data/chars/une/death5.gif
+	delay	7
+	frame	data/chars/une/death6.gif
+	frame	data/chars/une/death7.gif
+	frame	data/chars/une/death8.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow
+	loop	1
+	delay	7
+	offset	21 21
+	bbox	0 0 41 21
+	attack2	0 0 41 21 6 0 0 0 0 0
+	frame	data/chars/une/idle2b.gif
+	frame	data/chars/une/idle2c.gif
+	frame	data/chars/une/idle2d.gif
+	delay	6
+	frame	data/chars/une/idle2a.gif
+	delay	1
+	attack2	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/une/idle2a.gif
+		
+anim	idle
+	loop	1
+	delay	1
+	offset	21 21
+	bbox	19 22 3 2
+	frame	data/chars/une/idle1a.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	21 21
+	bbox	19 22 3 2
+	frame	data/chars/une/idle1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

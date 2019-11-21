@@ -1,0 +1,21 @@
+name	bgwater
+speed 	10
+type	panel
+setlayer 300
+
+palette	data/chars/misc/bgwater.gif
+
+
+
+
+		
+anim	idle
+	loop	0
+	offset	0 0
+	delay	100
+	frame	data/chars/misc/bgwater.gif
+	delay	2
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

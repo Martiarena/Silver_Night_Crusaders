@@ -1,0 +1,156 @@
+name	Fire_sh
+type	none
+candamage enemy obstacle shot
+speed	10
+lifespan 1
+remove 1
+nolife		1
+subject_to_hole	1
+no_adjust_base	0
+subject_to_gravity 0
+
+animationscript	data/scripts/prscript.c
+
+palette	data/chars/sheeba/magic/magic_palette.gif
+
+anim	death
+	loop	0
+	delay	4
+	offset	15 14
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	delay	4
+	offset	15 14
+	frame	data/chars/misc/empty.gif
+		
+anim	follow2
+	loop	0
+	delay	4
+	followanim	1
+	followcond	1
+	offset	15 14
+	hitfx	data/sounds/burnt.wav
+	burn	0 2 30 24 12 0 0 0 0 0
+	frame	data/chars/sheeba/magic/fire3a.gif
+	frame	data/chars/sheeba/magic/fire3b.gif
+	frame	data/chars/sheeba/magic/fire3c.gif
+	frame	data/chars/sheeba/magic/fire3d.gif
+	frame	data/chars/sheeba/magic/fire3e.gif
+	frame	data/chars/sheeba/magic/fire3a.gif
+	frame	data/chars/sheeba/magic/fire3b.gif
+	frame	data/chars/sheeba/magic/fire3c.gif
+	frame	data/chars/sheeba/magic/fire3d.gif
+	frame	data/chars/sheeba/magic/fire3e.gif
+	frame	data/chars/sheeba/magic/fire3a.gif
+	frame	data/chars/sheeba/magic/fire3b.gif
+	frame	data/chars/sheeba/magic/fire3c.gif
+	frame	data/chars/sheeba/magic/fire3d.gif
+	frame	data/chars/sheeba/magic/fire3e.gif
+	burn	0
+	frame	data/chars/sheeba/magic/fire3f.gif
+	frame	data/chars/sheeba/magic/fire3g.gif
+	frame	data/chars/sheeba/magic/fire3h.gif
+	frame	data/chars/sheeba/magic/fire3i.gif
+	frame	data/chars/sheeba/magic/fire3j.gif
+	frame	data/chars/sheeba/magic/fire3k.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	follow3
+	loop	0
+	delay	4
+	offset	15 14
+	frame	data/chars/misc/empty.gif
+		
+anim	follow4
+	loop	0
+	delay	4
+	offset	15 14
+	frame	data/chars/misc/empty.gif
+		
+anim	follow5
+	loop	0
+	delay	4
+	followanim	1
+	followcond	1
+	offset	15 14
+	hitfx	data/sounds/burnt.wav
+	burn	0 2 30 24 12 0 0 0 0 0
+	frame	data/chars/sheeba/magic/fire2a.gif
+	@cmd	groundkill
+	frame	data/chars/sheeba/magic/fire2b.gif
+	@cmd	groundkill
+	frame	data/chars/sheeba/magic/fire2c.gif
+	@cmd	groundkill
+	frame	data/chars/sheeba/magic/fire2d.gif
+	@cmd	groundkill
+	frame	data/chars/sheeba/magic/fire2e.gif
+	@cmd	groundkill
+	frame	data/chars/sheeba/magic/fire2a.gif
+	@cmd	groundkill
+	frame	data/chars/sheeba/magic/fire2b.gif
+	@cmd	groundkill
+	frame	data/chars/sheeba/magic/fire2c.gif
+	@cmd	groundkill
+	frame	data/chars/sheeba/magic/fire2d.gif
+	@cmd	groundkill
+	frame	data/chars/sheeba/magic/fire2e.gif
+	@cmd	groundkill
+	frame	data/chars/sheeba/magic/fire2a.gif
+	@cmd	groundkill
+	frame	data/chars/sheeba/magic/fire2b.gif
+	@cmd	groundkill
+	frame	data/chars/sheeba/magic/fire2c.gif
+	@cmd	groundkill
+	frame	data/chars/sheeba/magic/fire2d.gif
+	@cmd	groundkill
+	frame	data/chars/sheeba/magic/fire2e.gif
+	burn	0
+	frame	data/chars/sheeba/magic/fire2f.gif
+	@cmd	groundkill
+	frame	data/chars/sheeba/magic/fire2g.gif
+	@cmd	groundkill
+	frame	data/chars/sheeba/magic/fire2h.gif
+	@cmd	groundkill
+	frame	data/chars/sheeba/magic/fire2i.gif
+	@cmd	groundkill
+	frame	data/chars/sheeba/magic/fire2j.gif
+	@cmd	groundkill
+	frame	data/chars/sheeba/magic/fire2k.gif
+	@cmd	groundkill
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	0
+	delay	4
+	followanim	1
+	followcond	1
+	offset	15 14
+	hitfx	data/sounds/burnt.wav
+	burn	0 2 30 24 12 0 0 0 0 0
+	frame	data/chars/sheeba/magic/fire1a.gif
+	frame	data/chars/sheeba/magic/fire1b.gif
+	frame	data/chars/sheeba/magic/fire1c.gif
+	frame	data/chars/sheeba/magic/fire1d.gif
+	frame	data/chars/sheeba/magic/fire1e.gif
+	frame	data/chars/sheeba/magic/fire1a.gif
+	frame	data/chars/sheeba/magic/fire1b.gif
+	frame	data/chars/sheeba/magic/fire1c.gif
+	frame	data/chars/sheeba/magic/fire1d.gif
+	frame	data/chars/sheeba/magic/fire1e.gif
+	frame	data/chars/sheeba/magic/fire1a.gif
+	frame	data/chars/sheeba/magic/fire1b.gif
+	frame	data/chars/sheeba/magic/fire1c.gif
+	frame	data/chars/sheeba/magic/fire1d.gif
+	frame	data/chars/sheeba/magic/fire1e.gif
+	burn	0
+	frame	data/chars/sheeba/magic/fire1f.gif
+	frame	data/chars/sheeba/magic/fire1g.gif
+	frame	data/chars/sheeba/magic/fire1h.gif
+	frame	data/chars/sheeba/magic/fire1i.gif
+	frame	data/chars/sheeba/magic/fire1j.gif
+	frame	data/chars/sheeba/magic/fire1k.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.56
+		

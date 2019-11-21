@@ -1,0 +1,57 @@
+name	Drain_Life
+type	none
+candamage enemy obstacle shot
+speed	0
+offscreenkill 50
+remove 0
+lifespan 2
+
+palette	data/chars/sheeba/magic/soul_drain_palette.gif
+
+
+
+
+
+
+
+
+
+anim	death
+	loop	0
+	delay	3
+	offset	55 33
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	0
+	delay	1
+	offset	21 28
+	frame	data/chars/sheeba/magic/soul_drain_1a.gif
+	frame	data/chars/sheeba/magic/soul_drain_1b.gif
+	frame	data/chars/sheeba/magic/soul_drain_1c.gif
+	move	0
+	steal	11 11 32 42 6 0 0 0 0 0
+	frame	data/chars/sheeba/magic/soul_drain_1d.gif
+	frame	data/chars/sheeba/magic/soul_drain_1d.gif
+	frame	data/chars/sheeba/magic/soul_drain_1d.gif
+	frame	data/chars/sheeba/magic/soul_drain_1e.gif
+	frame	data/chars/sheeba/magic/soul_drain_1e.gif
+	frame	data/chars/sheeba/magic/soul_drain_1e.gif
+	frame	data/chars/sheeba/magic/soul_drain_1f.gif
+	frame	data/chars/sheeba/magic/soul_drain_1f.gif
+	frame	data/chars/sheeba/magic/soul_drain_1f.gif
+	move	0
+	frame	data/chars/sheeba/magic/soul_drain_1g.gif
+	frame	data/chars/sheeba/magic/soul_drain_1g.gif
+	frame	data/chars/sheeba/magic/soul_drain_1g.gif
+	frame	data/chars/sheeba/magic/soul_drain_1h.gif
+	delay	7
+	frame	data/chars/sheeba/magic/soul_drain_1h.gif
+	frame	data/chars/sheeba/magic/soul_drain_1i.gif
+	steal	0 0 0 0 0 0
+	frame	data/chars/sheeba/magic/soul_drain_1j.gif
+	frame	data/chars/sheeba/magic/soul_drain_1k.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

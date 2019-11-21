@@ -1,0 +1,613 @@
+music		data/music/misticlibrary.ogg 379260
+
+background	data/bgs/library/back_library1.gif
+panel	        data/bgs/library/library.gif
+
+order           a
+settime	        0
+notime		1
+spawn1          100 0 240
+spawn2          60 0 240
+direction	leftright
+type		0 0 0
+cameratype 1
+
+spawn	Stage4
+coords  160 240  0
+flip    1
+at      0
+
+spawn  Roof_library_2
+coords  295  216  90
+alias	Thick
+flip 1
+at  0
+
+spawn  Floor_library_1
+coords  -761  216  0
+alias	Thick
+flip 1
+at  0
+
+spawn  Roof_library_1
+coords  -858  216  191
+alias	Thick
+flip 1
+at  0
+
+spawn  Desk
+coords  -917  216  32
+flip 1
+at  0
+
+spawn  Chair
+coords  -957  216  32
+flip 1
+at  0
+
+spawn  Desk
+coords  -1042  216  32
+alias	Thick
+flip 1
+at  0
+
+spawn Chair
+coords  -1092  216  32
+alias	Thick
+flip 1
+at  0
+
+spawn  Desk
+coords  -1167  216  32
+alias	Thick
+flip 1
+at  0
+
+spawn Chair
+coords  -1207  216  32
+alias	Thick
+flip 1
+at  0
+
+spawn  Floor_library_2
+coords  -1193 216  0
+alias	Thick
+flip 1
+at  0
+
+spawn  Desk
+coords  -1292  216  32
+alias	Thick
+flip 1
+at  0
+
+spawn Chair
+coords  -1332  216  32
+alias	Thick
+flip 1
+at  0
+
+spawn  Desk
+coords  -1416  216  32
+alias	Thick
+flip 1
+at  0
+
+spawn Chair
+coords  -1456  216  32
+alias	Thick
+flip 1
+at  0
+
+spawn  Roof_library_3
+coords  -1569  216  122
+alias	Thick
+flip 1
+at  0
+
+spawn  Floor_library_9
+coords  -2009  216  0
+alias	Thick
+flip 1
+at  0
+
+spawn  Roof_library_4
+coords  -2010  216  122
+alias	Thick
+flip 1
+at  0
+
+spawn  Floor_library_3
+coords  -2061  216  16
+alias	Thick
+flip 1
+at  0
+
+spawn  Roof_library_9
+coords  -2061  216  122
+alias	Thick
+flip 1
+at  0
+
+spawn  Floor_library_4
+coords  -2077  216  0
+alias	Thick
+flip 1
+at  0
+
+spawn  Floor_library_6
+coords  -2322  216  0
+alias	Thick
+flip 1
+at  0
+
+spawn  Roof_library_10
+coords  -2339  216  122
+alias	Thick
+flip 1
+at  0
+
+spawn  Floor_library_5
+coords  -2339  216  16
+alias	Thick
+flip 1
+at  0
+
+spawn  Floor_library_7
+coords  -2390  216  0
+alias	Thick
+flip 1
+at  0
+
+spawn  Roof_library_6
+coords  -2391  216  122
+alias	Thick
+flip 1
+at  0
+
+spawn  Floor_library_8
+coords  -2438  216  0
+alias	Thick
+flip 1
+at  0
+
+spawn  Platform_library_1
+coords  -2950  216  131
+flip 1
+at  0
+
+spawn  Hidden_6
+coords  -2950  216  131
+flip 1
+at  0
+
+spawn  Roof_library_5
+coords  -3143  216  191
+alias	Thick
+flip 1
+at  0
+
+spawn  Desk
+coords  -3167  216  0
+flip 1
+at  0
+
+spawn  Chair
+coords  -3207  216  0
+flip 1
+at  0
+
+spawn  Desk
+coords  -3292  216  0
+flip 1
+at  0
+
+spawn  Chair
+coords  -3332  216  0
+flip 1
+at  0
+
+spawn  Desk
+coords  -3417  216  0
+flip 1
+at  0
+
+spawn  Chair
+coords  -3457  216  0
+flip 1
+at  0
+
+spawn  Roof_library_7
+coords  -3479  216  159
+alias	Thick
+flip 1
+at  0
+
+spawn  Desk
+coords  -3542  216  0
+flip 1
+at  0
+
+spawn  Chair
+coords  -3582  216  0
+flip 1
+at  0
+
+spawn  Desk
+coords  -3667  216  0
+flip 1
+at  0
+
+spawn  Chair
+coords  -3707  216  0
+flip 1
+at  0
+
+spawn  Desk
+coords  -3792  216  0
+alias	Thick
+flip 1
+at  0
+
+spawn  Chair
+coords  -3832  216  0
+flip 1
+at  0
+
+spawn  Roof_library_8
+coords  -3887  216  90
+alias	Thick
+flip 1
+at  0
+
+spawn  Roof_library_15
+coords  -3969  216  91
+alias	Thick
+flip 1
+at  0
+
+spawn  Roof_library_14
+coords  -4223  216  91
+alias	Thick
+flip 1
+at  0
+
+spawn  Roof_library_old_2
+coords  -4302  216  91
+alias	Thick
+flip 1
+at  0
+
+spawn  Spike_trapB
+coords  -4865  216  175
+flip 1
+at  0
+
+spawn  Roof_library_old_1
+coords  -4766  216  191
+alias	Thick
+flip 1
+at  0
+
+spawn  Platform_library_old_1
+coords  -4767  216  90
+flip 1
+at  0
+
+spawn  Platform_library_old_1
+coords  -4913  216  37
+flip 1
+at  0
+
+spawn  Spike_trapC
+coords  -4948  216  0
+flip 1
+at  0
+
+spawn  Platform_library_old_1
+coords  -5085  216  45
+flip 1
+at  0
+
+spawn  Wall_library_old_1
+coords  -5270  216  104
+alias	Thick
+flip 1
+at  0
+
+spawn  Wall_library_old_2
+coords  -5360  216  0
+alias	Thick
+flip 1
+at  0
+
+spawn  Lampara_libreria
+coords  128  216  155
+item  ___10
+flip 1
+at  0
+
+spawn  Lampara_libreria
+coords  -64  216  155
+item  ___20
+flip 1
+at  0
+
+spawn  C._Demonio
+coords  -500  216
+at  190
+
+spawn  Ninfa
+coords  -40  216
+at  190
+
+spawn  Lampara_libreria
+coords  -38  216  155
+item  Biblia
+flip 1
+map 1
+at  216
+
+spawn  Lampara_libreria
+coords  -38  216  155
+item  ___20
+flip 1
+at  407
+
+spawn  Tomo_Magico
+coords  -40  216  90
+at  450
+
+spawn  Lampara_libreria
+coords  -38  216  155
+item  ___20
+flip 1
+at  598
+
+spawn  Ninfa
+coords  -50  216
+at  650
+
+spawn  Tomo_Magico
+coords  -40  216  45
+at  650
+
+spawn  Tomo_Magico
+coords  -40  216  105
+at  650
+
+spawn  Lampara_libreria
+coords  -38  216  155
+item  ___20
+flip 1
+at  789
+
+spawn  Lampara_libreria
+coords  -38  216  155
+item  ___10
+flip 1
+at  980
+
+spawn  Ninfa
+coords  -90  216  35
+at  1000
+
+spawn  Lampara_libreria
+coords  -38  216  155
+item  P._Invisible
+flip 1
+at  1171
+
+spawn  Ninfa
+coords  -40  216  35
+at  1200
+
+spawn  Lampara_libreria
+coords  -38  216  155
+item  Gema_azul
+flip 1
+at  1362
+
+spawn  C._Demonio
+coords  -40  216  35
+at  1500
+
+spawn  Lampara_libreria
+coords  -38  216  155
+item  ___10
+flip 1
+at  1610
+
+Blockade  1950
+at  1865
+
+spawn  Nigromante
+coords  -20  216  0
+item  ___250
+flip 1
+at  1865
+
+spawn  Lampara_libreria
+coords  -38  216  155
+item  ___20
+flip 1
+at  1897
+
+Wait
+at  1950
+
+spawn  Arana
+coords  -40  216
+at  2100
+
+spawn  Jar2
+coords  -40  216
+item Pollo_frito
+at  2130
+
+spawn  Jar2
+coords  -40  216
+item  Fantasma
+at  2160
+
+spawn  Jar2
+coords  -40  216
+item  ___250
+at  2190
+
+spawn  Arana
+coords  -40  216
+at  2220
+
+spawn  C._Demonio
+coords  -40  216  35
+at  2350
+
+Blockade  2354
+at  2354
+
+spawn  Lampara_libreria
+coords  -38  216  155
+item  ___10
+flip 1
+at  2416
+
+spawn  Lampara_libreria
+coords  -38  216  155
+item  ___10
+flip 1
+at  2607
+
+Blockade  2686
+at  2686
+
+spawn  Tomo_Magico
+coords  -40  216  100
+at  2686
+
+Blockade  2686
+at  2686
+
+spawn  Tomo_Magico
+coords  -40  216  20
+at  2686
+
+spawn  Lampara_libreria
+coords  -38  216  155
+item  ___10
+flip 1
+at  2798
+
+spawn  GhostSpawner
+coords  -40  216
+at  2950
+
+spawn  Tomo_Magico
+coords  340  216  100
+at  3000
+
+spawn  Tomo_Magico
+coords  340  216  40
+at  3000
+
+spawn  Lampara_libreria
+coords  -38  216  155
+item	Agua_Santa
+flip 1
+at  3016
+
+spawn  Ninfa
+coords  -40  216
+at  3170
+
+spawn  Lampara_libreria
+coords -38  216  123
+item	C._Sagrada
+map 1
+flip 1
+at  3208
+
+spawn  Lampara_libreria
+coords -38  216  123
+item  ___10
+flip 1
+at  3399
+
+spawn  Ninfa
+coords  -40  216
+at  3420
+
+spawn  Lampara_libreria
+coords  -38  216  123
+item  ___20
+flip 1
+at  3590
+
+spawn  Ninfa
+coords  -40  216
+at  3670
+
+spawn  Lampara_libreria
+coords  -38  216  123
+item  Bumeran
+map 1
+flip 1
+at  3776
+
+spawn  Arana
+coords  -40  216
+at  4000
+
+spawn  Arana
+coords  -40  216
+at  4050
+
+spawn  Arana
+coords  -40  216
+at  4100
+
+Blockade  4238
+at  4238
+
+spawn  C._Demonio
+coords  -40  216
+at  4317
+
+spawn  Jar1
+coords  -40  216
+item	Pollo_frito
+at  4350
+
+spawn  Jar1
+coords  -40  216
+item  ___250
+at  4380
+
+spawn  Lampara_libreria
+coords  -38  216  155
+item ___10
+flip 1
+at  4429
+
+spawn  Tomo_Magico
+coords  -40  216  100
+at  4500
+
+spawn  Tomo_Magico
+coords  -40  216  85
+at  4580
+
+Blockade  4589
+at  4589
+
+spawn  Tomo_Magico
+coords  -50  212  130
+at  4750
+
+spawn  Tomo_Magico
+coords  -50  212  80
+at  4750
+
+spawn  ToLibraryOld
+coords  -40  216  0
+at  5200

@@ -1,0 +1,41 @@
+bossmusic	data/music/boss.ogg 367353
+#music		data/music/castlewalls.ogg
+
+panel	        data/bgs/bathory_keep/alcoba.gif
+
+
+musicfade	200
+order           a
+settime	        0
+notime		1
+spawn1          80 0 240
+spawn2          40 0 240
+direction	both
+type		0 0 0
+cameratype 1
+noslow 1
+
+spawn  Keep_roof_1
+coords  986  216  192
+flip  1
+at  0
+
+spawn  Artifact
+coords  1090  216
+at  0
+
+spawn  Throne
+coords  1133  216
+at  0
+
+spawn  Back_throne
+coords  360  0
+flip 1
+at  360
+
+spawn  Bathory
+coords  360  216  0
+at  700
+
+Blockade  770
+at  700

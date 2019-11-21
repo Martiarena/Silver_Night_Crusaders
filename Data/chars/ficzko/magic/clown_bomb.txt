@@ -1,0 +1,76 @@
+name	        Clown_bomb
+type	        none
+nolife          1
+speed 		16
+jumpheight 	1
+death   	1
+remove 		0
+offscreenkill	9999
+candamage       player npc
+antigravity	20
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+
+animationscript data/scripts/escript.c
+
+palette   	data/chars/ficzko/magic/bomb1a.gif
+
+
+
+
+
+
+
+
+
+anim	follow
+	loop	0
+	delay	1
+	offset	17 18
+	sound	data/sounds/explosion.wav
+	@cmd    shooter2 "GrBlasto" 0 0 -1 0
+	@cmd    shooter2 "GrBlast" 0 0 1 0
+	frame	data/chars/misc/empty.gif
+	@cmd    shooter2 "Shockwave1" 0 0 0 0
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1 16 24
+	delay	4
+	offset	17 18
+	frame	data/chars/items/bomb/bomb1a.gif
+	frame	data/chars/items/bomb/bomb1b.gif
+	frame	data/chars/items/bomb/bomb1c.gif
+	frame	data/chars/items/bomb/bomb1d.gif
+	frame	data/chars/items/bomb/bomb1e.gif
+	frame	data/chars/items/bomb/bomb1f.gif
+	frame	data/chars/items/bomb/bomb1g.gif
+	frame	data/chars/items/bomb/bomb1h.gif
+	frame	data/chars/items/bomb/bomb1a.gif
+	frame	data/chars/items/bomb/bomb1b.gif
+	frame	data/chars/items/bomb/bomb1c.gif
+	frame	data/chars/items/bomb/bomb1d.gif
+	frame	data/chars/items/bomb/bomb1e.gif
+	frame	data/chars/items/bomb/bomb1f.gif
+	frame	data/chars/items/bomb/bomb1g.gif
+	frame	data/chars/items/bomb/bomb1h.gif
+	@cmd	groundchange "ANI_FOLLOW1"
+	frame	data/chars/items/bomb/bomb1a.gif
+	@cmd	groundchange "ANI_FOLLOW1"
+	frame	data/chars/items/bomb/bomb1b.gif
+	@cmd	groundchange "ANI_FOLLOW1"
+	frame	data/chars/items/bomb/bomb1c.gif
+	@cmd	groundchange "ANI_FOLLOW1"
+	frame	data/chars/items/bomb/bomb1d.gif
+	@cmd	groundchange "ANI_FOLLOW1"
+	frame	data/chars/items/bomb/bomb1e.gif
+	@cmd	groundchange "ANI_FOLLOW1"
+	frame	data/chars/items/bomb/bomb1f.gif
+	@cmd	groundchange "ANI_FOLLOW1"
+	frame	data/chars/items/bomb/bomb1g.gif
+	@cmd	groundchange "ANI_FOLLOW1"
+	frame	data/chars/items/bomb/bomb1h.gif
+		
+#|edited by openBor Stats v 0.67
+		

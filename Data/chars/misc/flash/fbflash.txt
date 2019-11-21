@@ -1,0 +1,20 @@
+# Hit flash
+
+name	Fbflash
+type	none
+shadow	0
+setlayer 1000
+
+palette data/chars/alucard/alucard.gif #1
+
+anim idle
+	loop	0
+	delay   2
+	offset     160 110
+	frame	data/chars/alucard/fb06.gif
+	frame	data/chars/alucard/fb07.gif
+	frame	data/chars/alucard/fb08.gif
+	frame	data/chars/alucard/fb09.gif
+	frame	data/chars/alucard/fb10.gif
+
+

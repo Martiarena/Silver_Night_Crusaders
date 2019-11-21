@@ -1,0 +1,74 @@
+name	Icedie
+type none
+nomove 1 1
+antigravity 100
+lifespan 2
+setlayer 100
+animationscript  data/scripts/escript.c
+
+
+anim	death
+	loop	0
+	delay	4
+	offset	13 24
+	frame	data/chars/misc/die/icedie/icedie1.gif
+	frame	data/chars/misc/die/icedie/icedie2.gif
+	frame	data/chars/misc/die/icedie/icedie3.gif
+	frame	data/chars/misc/die/icedie/icedie4.gif
+	delay	48
+	frame	data/chars/misc/die/icedie/icedie5.gif
+	delay	1
+	@cmd	tosserM "Iceshard" 0 5 0.3 1
+	@cmd	tosserM "Iceshard" 26 -13 0.6 1.7
+	@cmd	tosserM "Iceshard" -13 32 -0.2 1.2
+	@cmd	tosserM "Iceshard" 13 26 0 1.5
+	frame	data/chars/misc/die/icedie/icedie2.gif
+	frame	data/chars/misc/die/icedie/icedie2.gif
+	delay	7
+	frame	data/chars/misc/die/icedie/icedie1.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	fall
+	loop	0
+	delay	4
+	offset	13 24
+	frame	data/chars/misc/die/icedie/icedie1.gif
+	frame	data/chars/misc/die/icedie/icedie2.gif
+	frame	data/chars/misc/die/icedie/icedie3.gif
+	frame	data/chars/misc/die/icedie/icedie4.gif
+	delay	48
+	frame	data/chars/misc/die/icedie/icedie5.gif
+	delay	1
+	@cmd	tosserM "Iceshard" 0 13 0.2 1.5
+	@cmd	tosserM "Iceshard" 0 13 0.4 1.5
+	@cmd	tosserM "Iceshard" -13 8 -0.2 1.5
+	@cmd	tosserM "Iceshard" 13 8 -0.4 1.5
+	frame	data/chars/misc/die/icedie/icedie2.gif
+	frame	data/chars/misc/die/icedie/icedie2.gif
+	delay	7
+	frame	data/chars/misc/die/icedie/icedie1.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	0
+	delay	4
+	offset	13 24
+	frame	data/chars/misc/die/icedie/icedie1.gif
+	frame	data/chars/misc/die/icedie/icedie2.gif
+	frame	data/chars/misc/die/icedie/icedie3.gif
+	frame	data/chars/misc/die/icedie/icedie4.gif
+	delay	48
+	frame	data/chars/misc/die/icedie/icedie5.gif
+	delay	1
+	@cmd	tosserM "Iceshard" 0 13 0.2 1.5
+	@cmd	tosserM "Iceshard" 0 13 0.4 1.5
+	@cmd	tosserM "Iceshard" -13 8 -0.2 1.5
+	@cmd	tosserM "Iceshard" 13 8 -0.4 1.5
+	frame	data/chars/misc/die/icedie/icedie2.gif
+	frame	data/chars/misc/die/icedie/icedie2.gif
+	delay	7
+	frame	data/chars/misc/die/icedie/icedie1.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,35 @@
+name	       	Clock
+type    	none
+antigravity     100
+shadow		0
+setlayer	-1
+nomove	1
+nolife	1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_gravity 0
+offscreenkill   9999
+
+palette 	data/bgs/clock_tower/decoration/clock_palette.gif
+
+
+
+anim	idle
+	loop	0
+	delay	6000
+	offset	97 97
+	frame	data/bgs/clock_tower/decoration/clock1a.gif
+	frame	data/bgs/clock_tower/decoration/clock1b.gif
+	frame	data/bgs/clock_tower/decoration/clock1c.gif
+	frame	data/bgs/clock_tower/decoration/clock1d.gif
+	frame	data/bgs/clock_tower/decoration/clock1e.gif
+	frame	data/bgs/clock_tower/decoration/clock1f.gif
+	frame	data/bgs/clock_tower/decoration/clock1g.gif
+	frame	data/bgs/clock_tower/decoration/clock1h.gif
+	frame	data/bgs/clock_tower/decoration/clock1i.gif
+	frame	data/bgs/clock_tower/decoration/clock1j.gif
+	frame	data/bgs/clock_tower/decoration/clock1k.gif
+	frame	data/bgs/clock_tower/decoration/clock1l.gif
+	frame	data/bgs/clock_tower/decoration/clock1m.gif
+	frame	data/bgs/clock_tower/decoration/clock1n.gif
+	frame	data/bgs/clock_tower/decoration/clock1o.gif

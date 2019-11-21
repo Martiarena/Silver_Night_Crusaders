@@ -1,0 +1,24 @@
+name  		Prisoner_2
+type            none
+facing	  	1
+setlayer        -1
+antigravity	100
+offscreenkill   9999
+
+palette  	data/bgs/dungeon/dungeon_prisoner.gif
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	14
+	offset	11 32
+	frame	data/bgs/dungeon/decoration/prisoner2a.gif
+	frame	data/bgs/dungeon/decoration/prisoner2b.gif
+	frame	data/bgs/dungeon/decoration/prisoner2c.gif
+	frame	data/bgs/dungeon/decoration/prisoner2d.gif
+		
+#|edited by openBor Stats v 0.67
+		

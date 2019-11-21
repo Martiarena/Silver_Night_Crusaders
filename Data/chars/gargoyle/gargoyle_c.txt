@@ -1,0 +1,174 @@
+name		Gargola_c
+health          18
+nomove  	1
+setlayer        -1
+type		enemy
+cantgrab 	1
+nodrop		2
+death		1
+antigravity     100
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+offscreenkill       500
+score		200 -1
+hostile         player
+candamage 	player npc
+
+defense normal4 3 0 0 0 0 0 0
+defense normal6 2 0 0 0 0 0 0
+defense normal19 0.5 0 0 0 0 0 0
+defense burn 0.5 0 0 0 0 0 0
+
+icon 		data/chars/misc/bggargola.gif
+
+palette         data/chars/gargoyle/gargoyle_palette.gif
+alternatepal    data/chars/gargoyle/gargoyle_blink.gif
+
+animationscript data/scripts/cscript.c
+takedamagescript data/scripts/blink.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	death
+	delay	7
+	offset	30 87
+	frame	data/chars/gargoyle/death.gif
+	frame	data/chars/gargoyle/death1.gif
+	frame	data/chars/gargoyle/death2.gif
+	frame	data/chars/gargoyle/death3.gif
+	frame	data/chars/gargoyle/death4.gif
+	sound	data/sounds/rock_break3.wav
+	@cmd	tosserM "white_rock3" 8 34 0 2.5
+	@cmd	tosserM "white_rock1" 5 26 0 1.5
+	@cmd	tosserM "white_rock3" 8 25 0.3 1.5
+	@cmd	tosserM "white_rock1" -3 27 -0.3 1.5
+	@cmd	tosserM "white_rock3" 5 12 0.3 1
+	@cmd	tosserM "white_rock1" -8 14 -0.3 1
+	frame	data/chars/misc/empty.gif
+	delay	42
+	frame	data/chars/misc/empty.gif
+	delay	7
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	loop	1
+	delay	10
+	offset	30 87
+	bbox	13 33 28 46
+	attack	13 33 28 46 9 0 1 1 0 0
+	frame	data/chars/gargoyle/idle3.gif
+	@cmd	target 2 2 120 -60 1 1
+	@cmd	dash 0 0
+	frame	data/chars/gargoyle/idle2.gif
+	frame	data/chars/gargoyle/idle1.gif
+	frame	data/chars/gargoyle/idle2.gif
+	frame	data/chars/gargoyle/idle3.gif
+	frame	data/chars/gargoyle/idle2.gif
+	attack	0
+	frame	data/chars/gargoyle/idle1.gif
+	@cmd	target 2 2 120 -60 1 1
+	@cmd	dash 0 0
+	attack	13 33 28 46 9 0 1 1 0 0
+	frame	data/chars/gargoyle/idle2.gif
+	frame	data/chars/gargoyle/idle3.gif
+	frame	data/chars/gargoyle/idle2.gif
+	@cmd	target 2 2 120 -60 1 1
+	@cmd	dash 0 0
+	frame	data/chars/gargoyle/idle1.gif
+	frame	data/chars/gargoyle/idle2.gif
+	frame	data/chars/gargoyle/idle3.gif
+	@cmd	target 2 2 120 -60 1 1
+	@cmd	dash 0 0
+	frame	data/chars/gargoyle/idle2.gif
+	attack	0
+	frame	data/chars/gargoyle/idle1.gif
+	attack	13 33 28 46 9 0 1 1 0 0
+	frame	data/chars/gargoyle/idle2.gif
+	@cmd	target 2 2 120 -60 1 1
+	@cmd	dash 0 0
+	frame	data/chars/gargoyle/idle3.gif
+	frame	data/chars/gargoyle/idle2.gif
+	frame	data/chars/gargoyle/idle1.gif
+	@cmd	target 2 2 120 -60 1 1
+	@cmd	dash 0 0
+	frame	data/chars/gargoyle/idle2.gif
+	frame	data/chars/gargoyle/idle3.gif
+	attack	0
+	frame	data/chars/gargoyle/idle2.gif
+	@cmd	target 2 2 120 -60 1 1
+	@cmd	dash 0 0
+	attack	13 33 28 46 9 0 1 1 0 0
+	frame	data/chars/gargoyle/idle1.gif
+	frame	data/chars/gargoyle/idle2.gif
+	frame	data/chars/gargoyle/idle3.gif
+	@cmd	target 2 2 120 -60 1 1
+	@cmd	dash 0 0
+	frame	data/chars/gargoyle/idle2.gif
+	frame	data/chars/gargoyle/idle1.gif
+	frame	data/chars/gargoyle/idle2.gif
+	@cmd	target 2 2 120 -60 1 1
+	@cmd	dash 0 0
+	frame	data/chars/gargoyle/idle3.gif
+	attack	0
+	frame	data/chars/gargoyle/idle2.gif
+	bbox	8 40 42 23
+	attack	8 40 42 23 9 0 0 0 0 0
+	@cmd	dasher 0 0 0 1
+	frame	data/chars/gargoyle/attack1a.gif
+	frame	data/chars/gargoyle/attack1b.gif
+	attack	8 40 53 23 9 0 0 0 0 0
+	frame	data/chars/gargoyle/attack1c.gif
+	frame	data/chars/gargoyle/attack1d.gif
+	frame	data/chars/gargoyle/attack1e.gif
+	@cmd	target 3 3 0 0 1 1
+	@cmd	dash 0 0
+	frame	data/chars/gargoyle/attack1a.gif
+	frame	data/chars/gargoyle/attack1b.gif
+	frame	data/chars/gargoyle/attack1c.gif
+	frame	data/chars/gargoyle/attack1d.gif
+	attack	0
+	frame	data/chars/gargoyle/attack1e.gif
+		
+anim	idle
+	loop	1
+	delay	10
+	offset	30 87
+	frame	data/chars/gargoyle/idle1.gif
+	frame	data/chars/gargoyle/idle2.gif
+	frame	data/chars/gargoyle/idle3.gif
+	@cmd	attack0 "ANI_FOLLOW1"
+	frame	data/chars/gargoyle/idle2.gif
+		
+anim	pain
+	loop	0
+	delay	10
+	offset	30 87
+	frame	data/chars/gargoyle/idle1.gif
+	@cmd	dasher -3 0 0 1
+	frame	data/chars/gargoyle/idle2.gif
+	frame	data/chars/gargoyle/idle3.gif
+	@cmd	beidle
+	frame	data/chars/gargoyle/idle2.gif
+		
+anim	spawn
+	loop	0
+	delay	7
+	offset	30 87
+	frame	data/chars/gargoyle/idle1.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,62 @@
+name 		Spawn_Minilegion
+nomove  	1
+type		none
+cantgrab 	1
+nodrop		2
+death		1
+nolife		1
+antigravity     100
+offscreenkill   70
+setlayer	100
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+load            Legion_Mini_acid
+load            Legion_Mini
+
+palette		data/chars/legion/minilegions/mini_legion_palette.gif
+
+animationscript data/scripts/cscript.c
+
+
+anim	spawn
+@script
+    void self = getlocalvar("self");
+    int r = rand()%15;
+
+    if( frame == 0){
+      if( r > 0){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      }
+    }
+	@end_script
+	loop 0
+	delay	7
+	offset	20 20
+	frame	data/chars/legion/minilegions/spawn1a.gif
+	frame	data/chars/legion/minilegions/spawn1b.gif
+	frame	data/chars/legion/minilegions/spawn1c.gif
+	delay	14
+	@cmd	spawn01 "Legion_Mini" 0 0 0
+	frame	data/chars/legion/minilegions/spawn1c.gif
+	delay	7
+	frame	data/chars/legion/minilegions/spawn1a.gif
+	frame	data/chars/legion/minilegions/spawn1b.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	loop 0
+	delay	7
+	offset	20 20
+	frame	data/chars/legion/minilegions/spawn1a.gif
+	frame	data/chars/legion/minilegions/spawn1b.gif
+	frame	data/chars/legion/minilegions/spawn1c.gif
+	delay	14
+	@cmd	spawn01 "Legion_Mini_acid" 0 0 0
+	frame	data/chars/legion/minilegions/spawn1c.gif
+	delay	7
+	frame	data/chars/legion/minilegions/spawn1a.gif
+	frame	data/chars/legion/minilegions/spawn1b.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif		

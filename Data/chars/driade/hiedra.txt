@@ -1,0 +1,105 @@
+name	        DHiedra
+type	        none
+nolife          1
+death   	1
+candamage       player npc shot
+subject_to_wall 1
+subject_to_platform 1
+
+animationscript	data/scripts/lescript.c
+
+palette         data/chars/driade/driade_palette.gif
+
+
+
+
+
+
+
+anim	death
+	loop	0
+	delay	7
+	offset	20 96
+	frame	data/chars/driade/deathh9.gif
+	frame	data/chars/driade/deathh8.gif
+	frame	data/chars/driade/deathh7.gif
+	frame	data/chars/driade/deathh6.gif
+	frame	data/chars/driade/deathh5.gif
+	frame	data/chars/driade/deathh4.gif
+	frame	data/chars/driade/deathh3.gif
+	frame	data/chars/driade/deathh2.gif
+	frame	data/chars/driade/deathh1.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	0
+	delay	7
+	offset	20 96
+	hitfx	data/sounds/slash.wav
+	attack2	14 0 11 96 19 0 0 0 0 0
+	frame	data/chars/driade/hiedra1.gif
+	frame	data/chars/driade/hiedra2.gif
+	frame	data/chars/driade/hiedra3.gif
+	frame	data/chars/driade/hiedra4.gif
+	frame	data/chars/driade/hiedra1.gif
+	frame	data/chars/driade/hiedra2.gif
+	frame	data/chars/driade/hiedra3.gif
+	frame	data/chars/driade/hiedra4.gif
+	frame	data/chars/driade/hiedra1.gif
+	frame	data/chars/driade/hiedra2.gif
+	frame	data/chars/driade/hiedra3.gif
+	frame	data/chars/driade/hiedra4.gif
+	frame	data/chars/driade/hiedra1.gif
+	frame	data/chars/driade/hiedra2.gif
+	frame	data/chars/driade/hiedra3.gif
+	frame	data/chars/driade/hiedra4.gif
+	frame	data/chars/driade/hiedra1.gif
+	frame	data/chars/driade/hiedra2.gif
+	frame	data/chars/driade/hiedra3.gif
+	frame	data/chars/driade/hiedra4.gif
+	attack2	0 0 0 0 0 0 0
+	frame	data/chars/driade/deathh9.gif
+	frame	data/chars/driade/deathh8.gif
+	frame	data/chars/driade/deathh7.gif
+	frame	data/chars/driade/deathh6.gif
+	frame	data/chars/driade/deathh5.gif
+	frame	data/chars/driade/deathh4.gif
+	frame	data/chars/driade/deathh3.gif
+	frame	data/chars/driade/deathh2.gif
+	frame	data/chars/driade/deathh1.gif
+	offset	21 21
+	frame	data/chars/une/attack1c.gif
+	frame	data/chars/une/attack1b.gif
+	frame	data/chars/une/attack1a.gif
+	frame	data/chars/une/idle1a.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	loop	0
+	delay	7
+	offset	21 21
+	frame	data/chars/une/idle1a.gif
+	frame	data/chars/une/attack1a.gif
+	frame	data/chars/une/attack1b.gif
+	frame	data/chars/une/attack1c.gif
+	frame	data/chars/une/idle2a.gif
+	frame	data/chars/une/idle2b.gif
+	frame	data/chars/une/idle2c.gif
+	frame	data/chars/une/idle2d.gif
+	frame	data/chars/une/idle2a.gif
+	frame	data/chars/une/idle2b.gif
+	frame	data/chars/une/idle2c.gif
+	frame	data/chars/une/idle2d.gif
+	delay	3
+	offset	20 96
+	frame	data/chars/driade/deathh1.gif
+	frame	data/chars/driade/spawnh2.gif
+	frame	data/chars/driade/spawnh3.gif
+	frame	data/chars/driade/spawnh4.gif
+	frame	data/chars/driade/spawnh5.gif
+	frame	data/chars/driade/hiedra3.gif
+		
+#|edited by openBor Stats v 0.67
+		

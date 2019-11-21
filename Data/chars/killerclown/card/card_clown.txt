@@ -1,0 +1,36 @@
+name	        Card_clown
+type	        none
+nolife          1
+offscreenkill   100
+antigravity     100
+candamage       player npc
+
+palette		data/chars/killerclown/card/cardattack1a.gif
+
+
+
+
+anim	follow1
+	loop	0
+	delay	1
+	offset	11 2
+	spawnframe	0 20 0 0 0
+	custentity	Card_hit
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	5
+	offset	11 2
+	followanim	1
+	followcond	1
+	attack10	0 0 20 5 19 0 0 0 0 0
+	hitfx	data/sounds/slash.wav
+	frame	data/chars/killerclown/card/cardattack1a.gif
+	frame	data/chars/killerclown/card/cardattack1b.gif
+	delay	1
+	attack10	0
+	frame	data/chars/killerclown/card/cardattack1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

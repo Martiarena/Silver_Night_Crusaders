@@ -1,0 +1,148 @@
+name	    	Charmandra_
+health		26
+speed		6
+type		enemy
+nopain		1
+cantgrab 	1
+bounce 		0
+nodrop	 	2
+death   	2
+sleep           50
+score           300 -1
+offscreenkill	500
+aimove	 	chase
+hostile  player
+candamage player npc
+defense burn 0 0 0 0 0 0 0
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+
+defense normal7 1.25 0 0 0 0 0 0
+defense normal19 0.5 0 0 0 0 0 0
+defense burn 0.5 0 0 0 0 0 0
+
+load            Blooda
+load		fireseal
+load            fb01_e
+icon 		data/chars/misc/bgmonster.gif
+
+palette 	 data/chars/charmandra/charmandra_palette.gif
+alternatepal 	 data/chars/charmandra/blink.gif
+
+
+
+
+
+anim	attack1
+	rangea	0 40
+	delay	1
+	offset	57 68
+	hitfx	data/sounds/burnt.wav
+	burn	44 22 28 40 12 0 0 0 0 0
+	bbox	48 27 22 40
+	range	70 300
+	frame	data/chars/charmandra/idle1.gif
+	delay	12
+	offset	57 68
+	frame	data/chars/charmandra/special1a.gif
+	frame	data/chars/charmandra/special1b.gif
+	delay	8
+	custknife	fb01_e
+	throwframe	4 32
+	frame	data/chars/charmandra/special1c.gif
+	delay	12
+	frame	data/chars/charmandra/special1d.gif
+	delay	30
+	frame	data/chars/charmandra/special1e.gif
+		
+anim	death
+	loop	0
+	delay	70
+	offset	57 68
+	frame	data/chars/charmandra/death1.gif
+	delay	7
+	frame	data/chars/charmandra/death2.gif
+	frame	data/chars/charmandra/death3.gif
+	frame	data/chars/charmandra/death4.gif
+	frame	data/chars/charmandra/death5.gif
+	frame	data/chars/charmandra/death6.gif
+	frame	data/chars/charmandra/death7.gif
+	frame	data/chars/charmandra/death8.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	fall
+	loop	0
+	delay	7
+	offset	57 68
+	subentity	Blooda
+	spawnframe	0 42 0 21 0
+	frame	data/chars/charmandra/pain.gif
+		
+anim	idle
+	loop	1
+	delay	14
+	offset	57 68
+	hitfx	data/sounds/burnt.wav
+	burn	44 22 28 40 12 0 0 0 0 0
+	bbox	48 27 22 40
+	frame	data/chars/charmandra/idle1.gif
+	frame	data/chars/charmandra/idle2.gif
+	frame	data/chars/charmandra/idle3.gif
+	delay	1
+	burn	0 0 0 0 0 0 0
+	frame	data/chars/charmandra/idle3.gif
+		
+anim	sleep
+	loop	0
+	delay	12
+	offset	57 68
+	hitfx	data/sounds/burnt.wav
+	burn	43 18 30 45 12 0 0 0 0 0
+	bbox	47 20 22 48
+	frame	data/chars/charmandra/sleep1.gif
+	frame	data/chars/charmandra/sleep2.gif
+	frame	data/chars/charmandra/sleep3.gif
+	frame	data/chars/charmandra/sleep4.gif
+	frame	data/chars/charmandra/sleep5.gif
+	frame	data/chars/charmandra/sleep6.gif
+	frame	data/chars/charmandra/sleep7.gif
+	delay	1
+	burn	0 0 0 0 0 0 0
+	frame	data/chars/charmandra/sleep7.gif
+		
+anim	spawn
+	loop	0
+	delay	12
+	offset	57 68
+	hitfx	data/sounds/burnt.wav
+	burn	43 18 30 45 12 0 0 0 0 0
+	bbox	47 20 22 48
+	frame	data/chars/charmandra/sleep1.gif
+	frame	data/chars/charmandra/sleep2.gif
+	frame	data/chars/charmandra/sleep3.gif
+	frame	data/chars/charmandra/sleep4.gif
+	frame	data/chars/charmandra/sleep5.gif
+	frame	data/chars/charmandra/sleep6.gif
+	frame	data/chars/charmandra/sleep7.gif
+	delay	1
+	burn	0 0 0 0 0 0 0
+	frame	data/chars/charmandra/sleep7.gif
+		
+anim	walk
+	loop	1
+	delay	12
+	offset	57 68
+	hitfx	data/sounds/burnt.wav
+	burn	44 22 28 40 12 0 0 0 0 0
+	bbox	48 27 22 40
+	frame	data/chars/charmandra/walk1.gif
+	frame	data/chars/charmandra/walk2.gif
+	frame	data/chars/charmandra/walk3.gif
+	frame	data/chars/charmandra/walk2.gif
+	delay	1
+	burn	0 0 0 0 0 0
+	frame	data/chars/charmandra/walk2.gif
+		
+#|edited by openBor Stats v 0.67
+		

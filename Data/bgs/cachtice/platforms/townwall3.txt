@@ -1,0 +1,21 @@
+name  		Townwall3
+type		none
+facing	  	1
+setlayer	1
+antigravity	100
+offscreenkill   9999
+
+
+
+
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	14 112
+	platform	0 112 -8 -8 27 27 10 112
+	frame	data/bgs/cachtice/platforms/townwall3.gif
+

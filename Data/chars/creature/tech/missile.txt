@@ -1,0 +1,59 @@
+name	        CMissile
+type	        none
+nolife          1
+health          1
+lifespan        1
+antigravity     1
+death   	1
+candamage       player npc
+subject_to_wall 1
+subject_to_platform 1
+
+palette         data/chars/creature/tech/palette_misil.gif
+
+
+
+
+
+
+anim	death
+	loop	0
+	delay	3
+	offset	20 19
+	sound	data/sounds/explosion.wav
+	frame	data/chars/creature/tech/explo1.gif
+	frame	data/chars/creature/tech/explo2.gif
+	frame	data/chars/creature/tech/explo3.gif
+	frame	data/chars/creature/tech/explo4.gif
+	frame	data/chars/creature/tech/explo5.gif
+	frame	data/chars/creature/tech/explo6.gif
+	frame	data/chars/creature/tech/explo7.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	1
+	offset	15 15
+	burn	5 9 20 12 25 11 0 0 0 0
+	bbox	10 13 12 5
+	hitfx	data/sounds/burnt.wav
+	movea	-1
+	frame	data/chars/creature/tech/missile1.gif
+	frame	data/chars/creature/tech/missile1.gif
+	frame	data/chars/creature/tech/missile1.gif
+	frame	data/chars/creature/tech/missile1.gif
+	frame	data/chars/creature/tech/missile1.gif
+	frame	data/chars/creature/tech/missile2.gif
+	frame	data/chars/creature/tech/missile2.gif
+	frame	data/chars/creature/tech/missile2.gif
+	frame	data/chars/creature/tech/missile2.gif
+	frame	data/chars/creature/tech/missile2.gif
+	frame	data/chars/creature/tech/missile3.gif
+	frame	data/chars/creature/tech/missile3.gif
+	frame	data/chars/creature/tech/missile3.gif
+	frame	data/chars/creature/tech/missile3.gif
+	burn	0
+	frame	data/chars/creature/tech/missile3.gif
+		
+#|edited by openBor Stats v 0.67
+		

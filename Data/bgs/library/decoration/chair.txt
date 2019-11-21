@@ -1,0 +1,19 @@
+name  		Chair
+type            none
+facing	  	1
+setlayer        99
+antigravity	100
+offscreenkill   9999
+
+palette  	data/bgs/library/decoration/chair.gif
+
+
+
+anim	idle
+	loop	0
+	delay	14
+	offset	15 37
+	frame	data/bgs/library/decoration/chair.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,15 @@
+name  		Shopplat0
+type		none
+facing	  	1
+setlayer	1
+antigravity	100
+nohithead 1
+
+
+anim	idle
+	delay	100
+	offset	23 9
+	nohithead	1
+	platform	8 9 0 0 47 47 10 9
+	frame	data/bgs/cachtice/platforms/shopplat0.gif
+

@@ -1,0 +1,65 @@
+name	         Boss0Spawner
+health	         10
+type	         enemy
+antigravity	 100
+animationscript  data/scripts/oscript.c
+load	         Esqueleto_
+load	         Fantasma
+
+anim 	spawn
+	delay	200
+	offset	1 1
+        frame   data/chars/misc/empty.gif
+	@cmd	clearE 0
+        frame   data/chars/misc/empty.gif
+
+anim 	death
+	delay	1
+	offset	1 1
+        frame   data/chars/misc/empty.gif
+	@cmd	suicide
+        frame   data/chars/misc/empty.gif
+
+anim	idle
+	loop	1
+	delay	100
+	offset	1 1
+	@script
+	    void self = getlocalvar("self");
+	    int r = rand()%30;
+
+	    if( frame == 0){
+	      if( r > 10){
+	        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+	      } else {
+		changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+	      }
+	    }
+	@end_script
+        frame   data/chars/misc/empty.gif
+	@cmd	offscreenkill 500 0
+        frame   data/chars/misc/empty.gif
+        @cmd	MspawnR "Esqueleto_" 260 0 60 0
+        frame   data/chars/misc/empty.gif
+
+anim 	follow2
+	loop	0
+	delay	10
+	offset	1 1
+	@cmd	offscreenkill 500 0
+        frame   data/chars/misc/empty.gif
+	@cmd	MspawnR "Fantasma" 260 100 70 25
+        frame   data/chars/misc/empty.gif
+	@cmd	beidle
+        frame   data/chars/misc/empty.gif
+
+anim 	follow3
+	loop	0
+	delay	10
+	offset	1 1
+	@cmd	offscreenkill 500 0
+        frame   data/chars/misc/empty.gif
+        @cmd	MspawnR "Esqueleto_" 240 0 50 0
+        frame   data/chars/misc/empty.gif
+	@cmd	beidle
+        frame   data/chars/misc/empty.gif

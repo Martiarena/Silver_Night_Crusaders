@@ -1,0 +1,70 @@
+name	        Necro_blast
+type	        none
+nolife          1
+lifespan        1
+antigravity     100
+candamage       player npc  shot
+animationscript data/scripts/prscript.c
+
+
+anim	idle
+	delay	5
+	offset	12 12
+	attack	3 3 19 19 12 0 0 0 0 0
+	frame	data/chars/necromancer/spell/spell1a.gif
+	frame	data/chars/necromancer/spell/spell1b.gif
+	frame	data/chars/necromancer/spell/spell1c.gif
+	frame	data/chars/necromancer/spell/spell1b.gif
+	frame	data/chars/necromancer/spell/spell1d.gif
+	frame	data/chars/necromancer/spell/spell1c.gif
+	frame	data/chars/necromancer/spell/spell1b.gif
+	frame	data/chars/necromancer/spell/spell1d.gif
+	frame	data/chars/necromancer/spell/spell1c.gif
+	frame	data/chars/necromancer/spell/spell1b.gif
+	frame	data/chars/necromancer/spell/spell1d.gif
+	frame	data/chars/necromancer/spell/spell1c.gif
+	frame	data/chars/necromancer/spell/spell1b.gif
+	frame	data/chars/necromancer/spell/spell1d.gif
+	frame	data/chars/necromancer/spell/spell1c.gif
+	frame	data/chars/necromancer/spell/spell1b.gif
+	frame	data/chars/necromancer/spell/spell1d.gif
+	frame	data/chars/necromancer/spell/spell1c.gif
+	frame	data/chars/necromancer/spell/spell1b.gif
+	frame	data/chars/necromancer/spell/spell1d.gif
+	delay	1
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/necromancer/spell/spell1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/necromancer/spell/spell1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/necromancer/spell/spell1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/necromancer/spell/spell1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/necromancer/spell/spell1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/necromancer/spell/spell1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/necromancer/spell/spell1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/necromancer/spell/spell1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/necromancer/spell/spell1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/necromancer/spell/spell1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/necromancer/spell/spell1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/necromancer/spell/spell1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/necromancer/spell/spell1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/necromancer/spell/spell1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/necromancer/spell/spell1d.gif
+	attack	0
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,51 @@
+name  		White_wall2
+health	24
+type	obstacle
+nomove	1
+setlayer 1
+shadow  0
+nolife	1
+antigravity     100
+subject_to_wall 1
+subject_to_obstacle 0
+subject_to_gravity  0
+animationscript  data/scripts/escript.c
+
+palette		data/bgs/castle_entrance/bloques_entrada.gif
+
+
+
+
+
+
+
+
+
+
+
+
+anim	fall
+	delay	5
+	offset	43 74
+	sound	data/sounds/rock_break1.wav
+	frame	data/chars/misc/empty.gif
+	@cmd	tosserM "btw_rock1" 8 34 0 2.5
+	@cmd	tosserM "btw_rock2" 5 26 0 1.5
+	@cmd	tosserM "btw_rock3" 8 25 0.3 1.5
+	@cmd	tosserM "btw_rock4" -3 27 -0.3 1.5
+	@cmd	tosserM "btw_rock5" 5 12 0.3 1
+	@cmd	tosserM "btw_rock1" -8 14 -0.3 1
+	sound	data/sounds/rock_break2.wav
+	frame	data/chars/misc/empty.gif
+	delay	200
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	delay	100
+	offset	16 16
+	platform	0 16 -8 -8 40 40 10 16
+	bbox	0 5 32 8
+	frame	data/bgs/castle_entrance/platforms/white_wall2.gif
+		
+#|edited by openBor Stats v 0.67
+		

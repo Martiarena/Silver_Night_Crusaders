@@ -1,0 +1,406 @@
+music		data/music/castlewalls.ogg 305613
+
+panel	        data/bgs/castle_entrance/castle_entrance.gif
+
+fglayer		data/bgs/castle_entrance/castle_wall.gif -10000 0.3 0.3 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/castle_entrance/castle_trees.gif -11000 0.5 0.5 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/castle_entrance/castle_wall_1.gif -12000 0.6 0.6 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/castle_entrance/castle_towers.gif -13000 0.8 0.8 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/castle_entrance/castle_sky.gif -14000 0.9 0.9 0 0 0 0 -1 1 1 0 0 0 0 0 1
+order           a
+settime	        0
+notime		1
+spawn1          80 0 240
+spawn2          40 0 240
+direction	both
+type		0 0 0
+cameratype 1
+
+
+spawn	Stage1
+coords  160 240  0
+flip    1
+at      0
+
+spawn	Hidden_2
+coords  246  216  0
+flip  1
+at  0
+
+spawn  Castle_entrance
+coords  246  216  0
+flip  1
+at  0
+
+spawn  Castle_water1
+coords  1953  248  0
+at  0
+
+spawn  Wall_castle1
+coords  2065 216 122
+alias	Thick
+flip  1
+at  0
+
+spawn  Wall_castle2
+coords  2470 216 129
+alias	Thick
+flip  1
+at  0
+
+spawn  Wall_castle4
+coords  4751 216 96
+alias	Thick
+flip  1
+at  0
+
+spawn  Wall_castle5
+coords  4943 216 0
+alias	Thick
+flip  1
+at  0
+
+spawn  Esqueleto
+coords  360  216  0
+at  0
+
+spawn  Farol
+coords  313  216  95
+map 1
+item	Cuchillo
+at  0
+
+spawn  Farol
+coords  360  216  95
+item	___10
+at  156
+
+spawn	Esqueleto
+coords	-15 216  0
+at	230
+
+spawn  BatSpawner
+coords  0  70
+at  320
+
+spawn  Farol
+coords  360  216  95
+item	___10
+at  341
+
+spawn  Farol
+coords  360  216  95
+item	___10
+at  526
+
+spawn  Farol
+coords  360  216  95
+item	___20
+at  711
+
+spawn  Esqueleto
+coords  360  216  0
+at  730
+
+spawn  Farol
+coords  360  216  95
+item	___10
+at  896
+
+spawn  Farol
+coords  360  216  95
+item	___20
+at  1081
+
+spawn  Esqueleto
+coords  360  216
+at  1160
+
+spawn  Farol
+coords  360  216  92
+item	___20
+at  1266
+
+spawn  C._demonio
+coords  360  216  0
+at  1460
+
+spawn  Esqueleto
+coords  -15  216
+at  1460
+
+spawn  Castle_door0
+coords  340  216
+alias	Thick
+flip  1
+at  1618
+
+spawn  Anfauglir
+coords  380  216
+at  2030
+
+Blockade  2030
+at  2030
+
+spawn  batspawner
+coords  400  216  55
+at  2100
+
+spawn  Castle_door1
+coords  260  216  0
+flip  1
+at  2219
+
+spawn  ZombSpawner
+coords  0  216
+at  2300
+
+spawn  Candle1
+coords  360  216  65
+item  ___10
+at  2282
+
+spawn Big_candle
+coords  360  216  152
+flip  1
+at  2331
+
+spawn  Candle1
+coords  360  216  65
+item  ___10
+at  2378
+
+Blockade  2448
+at  2448
+
+spawn  Back_castle
+coords  0 0 0
+flip 1
+at  2448
+
+spawn  Zombi
+coords  110 216 0
+at  2530
+
+spawn  Zombi
+coords  270 216 0
+at  2530
+
+spawn  Entplat1
+coords  1334  216  133
+flip  1
+at  2500
+
+spawn  Entplat3
+coords  1227  216  73
+flip  1
+at  2500
+
+spawn  Entplat3
+coords  398  216  64
+flip  1
+at  2500
+
+spawn  Entplat4
+coords  780  216  85
+flip  1
+at  2500
+
+spawn  Entplat2
+coords  398  216  130
+flip  1
+at  2500
+
+spawn  Entplat3
+coords  1460  216  133
+flip  1
+at  2500
+
+spawn  Chiroptera_
+coords  350 216 90
+at  2545
+
+spawn  Candle1
+coords  338  216  100
+item  ___10
+at  2560
+
+spawn  Anfauglir
+coords  380  216
+at  2680
+
+spawn  Candle1
+coords  340  216  65
+item  ___10
+at  2783
+
+spawn Big_candle
+coords  360  216  152
+flip  1
+at  2811
+
+spawn  Candle1
+coords  340  216  65
+item	Agua_Santa
+at  2878
+
+spawn  Zombi
+coords  200 216 0
+at  2930
+
+spawn  Chiroptera_
+coords  350 216 42
+at  2910
+
+spawn  Chiroptera_
+coords  350 216 42
+at  2930
+
+spawn  Anfauglir
+coords  -65  216  0
+at  3000
+
+spawn  Anfauglir
+coords  380  216
+at  3000
+
+spawn  Candle1
+coords  340  216  65
+item  ___10
+at  3007
+
+spawn  Zombi
+coords  -10 216 0
+at  3070
+
+spawn  Zombi
+coords  280 216 0
+at  3070
+
+spawn Big_candle
+coords  360  216  152
+flip  1
+at  3175
+
+spawn  Anfauglir
+coords  380  216  0
+at  3340
+
+spawn  Zombi
+coords  90 216 0
+at  3370
+
+spawn  White_wall2
+coords  360  216  73
+flip  1
+alias	Thick
+item  Pollo_frito
+at  3408
+
+spawn  Candle1
+coords  340  216  65
+item  ___10
+at  3455
+
+spawn Big_candle
+coords  360  216  152
+flip  1
+at  3514
+
+spawn  Candle1
+coords  340  216  165
+item  Bumeran
+map 1
+at  3618
+
+spawn  Chiroptera_
+coords  350 216 148
+at  3630
+
+spawn  Candle1
+coords  340  216  65
+item  ___20
+at  3646
+
+spawn  Anfauglir
+coords  380  216  0
+at  3680
+
+spawn  Candle1
+coords  340  216  65
+item  Gema_azul
+at  3711
+
+spawn  Zombi
+coords  70 216 0
+at  3750
+
+spawn  Candle1
+coords  340  216  65
+item  ___10
+at  3838
+
+spawn Big_candle
+coords  360  216  152
+flip  1
+at  3866
+
+spawn  Zombi
+coords  200 216 0
+at  3980
+
+spawn  Candle1
+coords  340  216  65
+item  Gema_azul
+at  3934
+
+spawn  Zombi
+coords  240 216 0
+at  4050
+
+Blockade  4235
+at  4180
+
+spawn  Zombi
+coords  200 216 0
+at  4180
+
+spawn  White_wall1
+coords  360  216  0
+flip  1
+at  4210
+
+spawn  D._Negro
+coords  304  216  90
+at  4235
+
+spawn  Zombi
+coords  260 216 0
+at  4235
+
+spawn  Zombi
+coords  20 216 0
+at  4235
+
+wait
+at	4235
+
+spawn  Barril
+coords  360  216
+item  ___250
+at  4310
+
+spawn  Barril
+coords  360  216
+item  Gema_roja
+at  4355
+
+spawn  Barril
+coords  360  216
+item  Pollo_frito
+at  4400
+
+spawn  ToSewer
+coords  340  216 0
+flip 1
+at  4518

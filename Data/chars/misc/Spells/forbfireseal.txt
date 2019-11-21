@@ -1,0 +1,75 @@
+name	        forb_fireseal
+type	        none
+lifespan        2
+antigravity     100
+
+palette		data/chars/misc/spells/forb_magiccircle.gif
+
+
+anim	idle
+	delay	1
+	offset	7 49
+	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
+	frame	data/chars/misc/empty.gif
+
+anim	spawn
+	delay	1
+	offset	7 49
+	frame	data/chars/misc/spells/forb_magiccircle_fire1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/spells/forb_magiccircle_fire1b.gif
+		
+#|edited by openBor Stats v 0.56
+		

@@ -1,0 +1,35 @@
+name	peoplee
+health	10
+type 	none
+shadow	0
+speed	13
+palette	data/chars/npc/people-palette.gif
+
+
+anim	idle
+	loop	0
+	offset	12 36
+	delay	1000
+	frame	data/chars/npc/peoplee/walk1e.gif
+		
+anim	spawn
+	loop	0
+	offset	12 36
+	delay	1000
+	frame	data/chars/npc/peoplee/walk1e.gif
+		
+anim	walk
+	loop	1
+	delay	7
+	offset	12 36
+	frame	data/chars/npc/peoplee/walk1e.gif
+	frame	data/chars/npc/peoplee/walk2e.gif
+	frame	data/chars/npc/peoplee/walk3e.gif
+	frame	data/chars/npc/peoplee/walk4e.gif
+	frame	data/chars/npc/peoplee/walk5e.gif
+	frame	data/chars/npc/peoplee/walk6e.gif
+	frame	data/chars/npc/peoplee/walk7e.gif
+	frame	data/chars/npc/peoplee/walk8e.gif
+		
+#|edited by openBor Stats v 0.56
+		

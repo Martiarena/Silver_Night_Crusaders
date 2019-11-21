@@ -1,0 +1,145 @@
+music		data/music/misticlibrary.ogg 379260
+bossmusic	data/music/boss.ogg 367353
+background	data/bgs/library/church_back.gif
+panel	        data/bgs/library/church.gif
+
+order           a
+settime	        0
+notime		1
+spawn1          80 113 240
+spawn2          40 113 240
+direction	leftright
+type		0 0 0
+cameratype 1
+noslow 1
+
+spawn  Wall_church_3
+coords  311  216  0
+alias	Thick
+flip 1
+at  0
+
+spawn  Roof_church_1
+coords  153  216  185
+alias	Thick
+flip 1
+at  0
+
+spawn  Wall_church_2
+coords  -2  216  89
+alias	Thick
+flip 1
+at  0
+
+spawn  Platform_church_2
+coords  -34  216  120
+flip 1
+at  0
+
+spawn  Platform_church_1
+coords  -68  216  72
+flip 1
+at  0
+
+spawn  Platform_library_old_2
+coords  -158  216  66
+flip 1
+at  0
+
+spawn  Platform_library_old_2
+coords  -296  216  66
+flip 1
+at  0
+
+spawn  Platform_church_2
+coords  -386  216  64
+flip 1
+at  0
+
+spawn  Silla_1
+coords  -350  216
+flip 1
+at  0
+
+spawn  Platform_church_1
+coords  -420  216  120
+flip 1
+at  0
+
+spawn  Wall_church_1
+coords  -452  216  90
+alias	Thick
+flip 1
+at  0
+
+spawn  Sealed_door
+coords  -452  216  0
+alias	Thick
+flip 1
+at  0
+
+spawn  Candle1
+coords  42  216  95
+item	___20
+at  0
+
+spawn  Candle1
+coords  155  216  95
+item	Bomba
+map 1
+at  0
+
+spawn  Candle1
+coords  274  216  95
+item	Gema_azul
+at  0
+
+spawn  Candle1
+coords  -29  216  168
+item	___20
+at  20
+
+spawn  Candle1
+coords  -323  216  168
+item	___20
+at  79
+
+spawn  Jar2
+coords  -40  216  82
+item	Gema_roja
+at  119
+
+spawn  Jar2
+coords  -115  216  82
+item	Pollo_frito
+at  179
+
+Blockade  324
+at  324
+
+spawn  Fake_evaine
+coords  -25  216
+flip 1
+at  324
+
+group	1  1
+at	324
+
+spawn boss_lifebar
+coords  0 0 0
+flip 1
+at  324
+
+group	2  2
+at	324
+
+spawn	Boss4Spawner
+coords  0 0 0
+2pspawn 1
+at  324
+
+spawn  Sucubo
+coords  60  216
+boss 1
+flip 1
+at  324

@@ -1,0 +1,21 @@
+name	       	Ani_gears_background
+type    	panel
+speed		10
+offscreenkill   9999
+setlayer         -10
+
+palette 	data/bgs/clock_tower/decoration/ani_gears_back1a.gif
+
+
+
+
+anim	idle
+	loop	1
+	delay	10
+	offset	160 248
+	frame	data/bgs/clock_tower/decoration/ani_gears_back1a.gif
+	frame	data/bgs/clock_tower/decoration/ani_gears_back1b.gif
+	frame	data/bgs/clock_tower/decoration/ani_gears_back1c.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,30 @@
+name	        Spiral_disapear
+type	        none
+lifespan        4
+setlayer        1
+antigravity     100
+
+animationscript  data/scripts/escript.c
+
+
+
+anim	idle
+	delay	7
+	offset	40 102
+	frame	data/chars/necromancer/spell/transform1a.gif
+	frame	data/chars/necromancer/spell/transform1b.gif
+	frame	data/chars/necromancer/spell/transform1c.gif
+	frame	data/chars/necromancer/spell/transform1d.gif
+	frame	data/chars/necromancer/spell/transform1e.gif
+	frame	data/chars/necromancer/spell/transform1f.gif
+	frame	data/chars/necromancer/spell/transform1g.gif
+	frame	data/chars/necromancer/spell/transform1h.gif
+	frame	data/chars/necromancer/spell/transform1i.gif
+	frame	data/chars/necromancer/spell/transform1j.gif
+	frame	data/chars/necromancer/spell/transform1k.gif
+	frame	data/chars/necromancer/spell/transform1l.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

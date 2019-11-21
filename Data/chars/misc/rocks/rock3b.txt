@@ -1,0 +1,51 @@
+name	        Rock3B
+health          1
+type         enemy
+lifespan  	5
+nomove		1
+nolife          1
+nopain 1
+death		1
+noquake         1
+subject_to_gravity 1
+subject_to_hole	1
+no_adjust_base	0
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+score 10
+candamage           player npc
+hostile		none
+animationscript data/scripts/prscript.c
+
+palette 	 data/chars/misc/rocks/rocka_palette.gif
+
+
+
+
+
+
+
+
+
+anim	death
+	delay	10
+	offset	9 9
+	spawnframe	0 0 0 0 0
+	subentity	pdie
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	1
+	offset	7 16
+	bouncefactor	3
+	bbox	1 1 12 13
+	attack	1 1 12 13 6 0 0 0 0 0
+	frame	data/chars/misc/rocks/rock3a.gif
+	@cmd	groundkill
+	frame	data/chars/misc/rocks/rock3a.gif
+		
+#|edited by openBor Stats v 0.67
+		

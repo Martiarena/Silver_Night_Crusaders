@@ -1,0 +1,22 @@
+name  		Dungeon_wall1j
+type		none
+facing	  	1
+setlayer	1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/dungeon/dungeon_walls_palette.gif
+
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	55 106
+	platform	0 106 -8 -8 119 119 10 106
+	frame	data/bgs/dungeon/walls/dungeon_wall1j.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,44 @@
+name    	WGrenade
+type    	none
+facing          1
+nolife  	1
+antigravity	50
+lifespan   	15
+subject_to_hole 1
+no_adjust_base  0
+subject_to_platform 1
+candamage  	player
+offscreenkill	100
+
+
+anim spawn
+	delay	20
+	offset	12 23
+	frame	data/chars/misc/subweap/wgrenade.png
+
+anim idle
+	loop	1
+	delay	8
+        followanim 1
+        followcond 1
+	offset	12 23
+        hitfx   data/sounds/take.wav
+	attack2	3 -4 20 28 0 0 1 1
+	noreflect	1
+	frame	data/chars/misc/subweap/wgrenade.png
+	frame	data/chars/misc/subweap/wgrenade.png
+
+anim follow1
+@script
+    void self = getlocalvar("self");
+    void player = getentityproperty(self, "opponent");
+    int iPI = getentityproperty(player,"playerindex");
+
+    setglobalvar(iPI+"0", 11);
+
+    killentity(self); //Suicide!
+@end_script
+	delay	500
+	offset	12 23
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif

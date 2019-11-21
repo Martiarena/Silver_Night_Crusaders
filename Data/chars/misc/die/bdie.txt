@@ -1,0 +1,97 @@
+name	bdie
+type none
+#alpha 6
+nomove 1 1
+antigravity 100
+lifespan 1
+
+anim idle
+	loop	0
+	delay	3
+	offset	46 46
+	bbox    	0 0 0 0
+	frame	data/chars/misc/die/bdie01.gif
+	frame	data/chars/misc/die/bdie02.gif
+	frame	data/chars/misc/die/bdie03.gif
+	frame	data/chars/misc/die/bdie04.gif
+	frame	data/chars/misc/die/bdie05.gif
+	frame	data/chars/misc/die/bdie06.gif
+	frame	data/chars/misc/die/bdie07.gif
+	frame	data/chars/misc/die/bdie08.gif
+	frame	data/chars/misc/die/bdie09.gif
+	frame	data/chars/misc/die/bdie10.gif
+	frame	data/chars/misc/die/bdie11.gif
+	frame	data/chars/misc/die/bdie12.gif
+	frame	data/chars/misc/die/bdie13.gif
+	frame	data/chars/misc/die/bdie14.gif
+	frame	data/chars/misc/die/bdie15.gif
+	frame	data/chars/misc/die/bdie16.gif
+	frame	data/chars/misc/die/bdie17.gif
+	frame	data/chars/misc/die/bdie18.gif
+	frame	data/chars/misc/die/bdie19.gif
+	frame	data/chars/misc/die/bdie20.gif
+	frame	data/chars/misc/die/bdie21.gif
+	frame	data/chars/misc/die/bdie22.gif
+	frame	data/chars/misc/empty.gif
+
+	
+anim fall
+	loop	0
+	delay	4
+	offset	46 46
+	bbox    	0 0 0 0
+	frame	data/chars/misc/die/bdie01.gif
+	frame	data/chars/misc/die/bdie02.gif
+	frame	data/chars/misc/die/bdie03.gif
+	frame	data/chars/misc/die/bdie04.gif
+	frame	data/chars/misc/die/bdie05.gif
+	frame	data/chars/misc/die/bdie06.gif
+	frame	data/chars/misc/die/bdie07.gif
+	frame	data/chars/misc/die/bdie08.gif
+	frame	data/chars/misc/die/bdie09.gif
+	frame	data/chars/misc/die/bdie10.gif
+	frame	data/chars/misc/die/bdie11.gif
+	frame	data/chars/misc/die/bdie12.gif
+	frame	data/chars/misc/die/bdie13.gif
+	frame	data/chars/misc/die/bdie14.gif
+	frame	data/chars/misc/die/bdie15.gif
+	frame	data/chars/misc/die/bdie16.gif
+	frame	data/chars/misc/die/bdie17.gif
+	frame	data/chars/misc/die/bdie18.gif
+	frame	data/chars/misc/die/bdie19.gif
+	frame	data/chars/misc/die/bdie20.gif
+	frame	data/chars/misc/die/bdie21.gif
+	frame	data/chars/misc/die/bdie22.gif
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	delay	4
+	offset	46 46
+	bbox    	0 0 0 0
+	frame	data/chars/misc/die/bdie01.gif
+	frame	data/chars/misc/die/bdie02.gif
+	frame	data/chars/misc/die/bdie03.gif
+	frame	data/chars/misc/die/bdie04.gif
+	frame	data/chars/misc/die/bdie05.gif
+	frame	data/chars/misc/die/bdie06.gif
+	frame	data/chars/misc/die/bdie07.gif
+	frame	data/chars/misc/die/bdie08.gif
+	frame	data/chars/misc/die/bdie09.gif
+	frame	data/chars/misc/die/bdie10.gif
+	frame	data/chars/misc/die/bdie11.gif
+	frame	data/chars/misc/die/bdie12.gif
+	frame	data/chars/misc/die/bdie13.gif
+	frame	data/chars/misc/die/bdie14.gif
+	frame	data/chars/misc/die/bdie15.gif
+	frame	data/chars/misc/die/bdie16.gif
+	frame	data/chars/misc/die/bdie17.gif
+	frame	data/chars/misc/die/bdie18.gif
+	frame	data/chars/misc/die/bdie19.gif
+	frame	data/chars/misc/die/bdie20.gif
+	frame	data/chars/misc/die/bdie21.gif
+	frame	data/chars/misc/die/bdie22.gif
+	frame	data/chars/misc/empty.gif
+
+
+

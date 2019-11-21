@@ -1,0 +1,48 @@
+name	peoplei
+health	10
+type 	none
+shadow	0
+speed	16
+palette	data/chars/npc/people-palette.gif
+
+
+
+anim	idle
+	loop	0
+	offset	11 14
+	delay	1000
+	frame	data/chars/npc/peoplei/walk1i.gif
+		
+anim	spawn
+	loop	0
+	offset	11 14
+	delay	1000
+	frame	data/chars/npc/peoplei/walk1i.gif
+		
+anim	walk
+	loop	1
+	delay	7
+	offset	11 14
+	frame	data/chars/npc/peoplei/walk1i.gif
+	frame	data/chars/npc/peoplei/walk2i.gif
+	frame	data/chars/npc/peoplei/walk3i.gif
+	frame	data/chars/npc/peoplei/walk4i.gif
+	frame	data/chars/npc/peoplei/walk5i.gif
+	frame	data/chars/npc/peoplei/walk6i.gif
+	frame	data/chars/npc/peoplei/walk7i.gif
+	frame	data/chars/npc/peoplei/walk8i.gif
+	frame	data/chars/npc/peoplei/walk9i.gif
+	frame	data/chars/npc/peoplei/walk10i.gif
+	frame	data/chars/npc/peoplei/walk11i.gif
+	frame	data/chars/npc/peoplei/walk12i.gif
+	frame	data/chars/npc/peoplei/walk13i.gif
+	frame	data/chars/npc/peoplei/walk14i.gif
+	frame	data/chars/npc/peoplei/walk15i.gif
+	frame	data/chars/npc/peoplei/walk16i.gif
+	frame	data/chars/npc/peoplei/walk17i.gif
+	frame	data/chars/npc/peoplei/walk18i.gif
+	frame	data/chars/npc/peoplei/walk19i.gif
+	frame	data/chars/npc/peoplei/walk20i.gif
+		
+#|edited by openBor Stats v 0.56
+		

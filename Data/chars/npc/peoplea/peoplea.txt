@@ -1,0 +1,34 @@
+name	peoplea
+health	10
+type 	none
+shadow	0
+speed	12
+palette	data/chars/npc/people-palette.gif
+
+
+anim	idle
+	loop	0
+	offset	13 44
+	delay	1000
+	frame	data/chars/npc/peoplea/walk1a.gif
+		
+anim	spawn
+	loop	0
+	offset	13 44
+	delay	1000
+	frame	data/chars/npc/peoplea/walk1a.gif
+		
+anim	walk
+	loop	1
+	delay	7
+	offset	13 44
+	frame	data/chars/npc/peoplea/walk1a.gif
+	frame	data/chars/npc/peoplea/walk2a.gif
+	frame	data/chars/npc/peoplea/walk3a.gif
+	frame	data/chars/npc/peoplea/walk4a.gif
+	frame	data/chars/npc/peoplea/walk5a.gif
+	frame	data/chars/npc/peoplea/walk6a.gif
+	frame	data/chars/npc/peoplea/walk7a.gif
+		
+#|edited by openBor Stats v 0.56
+		

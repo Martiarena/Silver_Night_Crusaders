@@ -1,0 +1,39 @@
+name	       	Hidden_2
+type    	none
+antigravity     100
+shadow		0
+nomove	1
+nolife	1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_gravity 0
+load            Dr._Negishi
+
+animationscript  data/scripts/escript.c
+
+palette		data/bgs/castle_entrance/decoration/entrance.gif
+
+
+anim	follow1
+	delay	10
+	offset	120 7
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn02 "Dr._Negishi" 100 0 0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	5
+	offset	28 152
+	noreflect	1
+	followcond	1
+	followanim	1
+	hitfx	data/sounds/no-hit.wav
+	attack20	18 -40 10 10 0 0 1 1 0 0
+	frame	data/bgs/castle_entrance/decoration/entrance.gif
+		
+#|edited by openBor Stats v 0.67
+		

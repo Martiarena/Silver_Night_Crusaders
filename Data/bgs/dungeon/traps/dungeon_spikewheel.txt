@@ -1,0 +1,40 @@
+name    Dungeon_spikewheel
+type trap
+shadow  0
+antigravity 100
+nolife 1
+nomove 1 1
+setlayer 0
+offscreenkill   9999
+
+hostile player npc obstacle
+candamage player npc obstacle
+
+palette		data/bgs/dungeon/dungeon_misc.gif
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	18
+	offset	27 128
+	hitfx	data/sounds/slash.wav
+	attack2	22 2 24 125 25 0 1 1 0 0
+	frame	data/bgs/dungeon/traps/spiral1b.gif
+	attack2	22 3 23 120 25 0 1 1 0 0
+	frame	data/bgs/dungeon/traps/spiral1c.gif
+	attack2	22 14 24 100 25 0 1 1 0 0
+	frame	data/bgs/dungeon/traps/spiral1b.gif
+	delay	13
+	attack2	22 3 23 120 25 0 1 1 0 0
+	frame	data/bgs/dungeon/traps/spiral1c.gif
+	delay	1
+	attack2	0 0 0 0
+	frame	data/bgs/dungeon/traps/spiral1c.gif
+		
+#|edited by openBor Stats v 0.67
+		

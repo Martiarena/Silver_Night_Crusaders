@@ -1,0 +1,34 @@
+name	        Fire
+type	        none
+nolife          1
+lifespan        1
+antigravity     100
+candamage       player npc
+
+animationscript  data/scripts/escript.c
+
+anim	idle
+	delay	5
+	offset	9 21
+	burn	3 18 13 9 12 0 0 0 0 0
+	hitfx	data/sounds/burnt.wav
+	frame	data/chars/misc/espells/fire01.gif
+	frame	data/chars/misc/espells/fire02.gif
+	burn	2 8 16 20 19 0 0 0 0 0
+	frame	data/chars/misc/espells/fire03.gif
+	frame	data/chars/misc/espells/fire04.gif
+	frame	data/chars/misc/espells/fire03.gif
+	frame	data/chars/misc/espells/fire04.gif
+	frame	data/chars/misc/espells/fire03.gif
+	frame	data/chars/misc/espells/fire04.gif
+	frame	data/chars/misc/espells/fire03.gif
+	frame	data/chars/misc/espells/fire04.gif
+	burn	3 8 14 15 12 0 0 0 0 0
+	frame	data/chars/misc/espells/fire05.gif
+	burn	0
+	frame	data/chars/misc/espells/fire06.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

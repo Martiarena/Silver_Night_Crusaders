@@ -1,0 +1,169 @@
+music		data/music/castlewalls.ogg 305613
+bossmusic	data/music/boss.ogg 367353
+panel	        data/bgs/castle_entrance/castle_plaza.gif
+
+fglayer		data/bgs/castle_entrance/castle_wall.gif -10000 0.3 0.3 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/castle_entrance/castle_trees.gif -11000 0.5 0.5 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/castle_entrance/castle_wall_1.gif -12000 0.6 0.6 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/castle_entrance/castle_towers.gif -13000 0.8 0.8 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/castle_entrance/castle_sky_night.gif -14000 0.9 0.9 0 0 0 0 -1 1 1 0 0 0 0 0 1
+
+musicfade	200
+order           a
+settime	        0
+notime		1
+spawn1          80 0 240
+spawn2          40 0 240
+direction	both
+type		0 0 0
+cameratype 1
+noslow 1
+
+spawn  Moon
+coords  300  10
+at  0
+
+spawn  Wall_plaza1
+coords  7  216
+alias	Thick
+flip  1
+at  0
+
+spawn  Wall_plaza3
+coords  234  216  73
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_plaza1
+coords  53  216  142
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_plaza2
+coords  167  216  142
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_plaza3
+coords  452  216  74
+flip  1
+at  0
+
+spawn  Platform_plaza3
+coords  795  216  74
+flip  1
+at  0
+
+spawn  Platform_plaza3
+coords  538  216  90
+flip  1
+at  0
+
+spawn  Platform_plaza3
+coords  712  216  90
+flip  1
+at  0
+
+spawn  Wall_plaza2
+coords  927  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Jar1
+coords  35  216  174
+item  ___400
+at  0
+
+spawn  Barril
+coords  40  216
+item  Pollo_frito
+at  0
+
+spawn  Candle1
+coords  50  216  65
+item  ___10
+at  0
+
+spawn  Jar2
+coords  60  216  174
+item  C._Arcoiris
+at  0
+
+spawn  Jar2
+coords  150  216  174
+item  Gema_roja
+at  0
+
+spawn  Candle1
+coords  175  216  65
+item  Gema_azul
+at  0
+
+spawn  Barril
+coords  185  216  174
+item  ___700
+at  0
+
+spawn  Farol
+coords  320  216  95
+item  ___20
+at  0
+
+spawn  Farol
+coords  340  216  95
+item	Hacha
+map 1
+at  64
+
+spawn  Farol
+coords  340  216  95
+item	___10
+at  153
+
+spawn  Farol
+coords  340  216  95
+item	___10
+at  236
+
+Blockade  320
+at  320
+
+spawn  Farol
+coords  340  216  95
+item	___10
+at  327
+
+spawn  Farol
+coords  421  216  95
+item	___10
+at  327
+
+spawn  Farol
+coords  533  216  95
+item  ___10
+at  327
+
+spawn  Barril
+coords  530  216 0
+item  Pollo_frito
+at  357
+
+spawn  Gevaudan
+coords  340  216
+boss 1
+at  360
+
+spawn boss_lifebar
+coords  0 0 0
+flip 1
+at  360
+
+spawn	Boss1Spawner
+coords  0 0 0
+2pspawn 1
+at	360
+

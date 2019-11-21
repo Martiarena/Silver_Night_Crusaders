@@ -1,0 +1,36 @@
+name  		Balsa
+type		none
+facing	  	1
+setlayer	1
+antigravity	100
+offscreenkill   9999
+
+palette	data/bgs/underground/platforms/balsa1a.gif
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	1
+	offset	48 13
+	platform	0 13 -8 -8 104 104 10 13
+	frame	data/bgs/underground/platforms/balsa1a.gif
+	frame	data/bgs/underground/platforms/balsa1b.gif
+	frame	data/bgs/underground/platforms/balsa1c.gif
+	frame	data/bgs/underground/platforms/balsa1a.gif
+	frame	data/bgs/underground/platforms/balsa1b.gif
+	frame	data/bgs/underground/platforms/balsa1c.gif
+	frame	data/bgs/underground/platforms/balsa1a.gif
+	frame	data/bgs/underground/platforms/balsa1b.gif
+	frame	data/bgs/underground/platforms/balsa1c.gif
+	frame	data/bgs/underground/platforms/balsa1a.gif
+	frame	data/bgs/underground/platforms/balsa1b.gif
+	frame	data/bgs/underground/platforms/balsa1c.gif
+	frame	data/bgs/underground/platforms/balsa1a.gif
+	frame	data/bgs/underground/platforms/balsa1b.gif
+	frame	data/bgs/underground/platforms/balsa1c.gif
+		
+#|edited by openBor Stats v 0.67
+		

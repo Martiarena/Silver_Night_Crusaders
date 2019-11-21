@@ -1,0 +1,49 @@
+name	       		Candle_f2
+type	       		none
+subject_to_gravity	1
+subject_to_hole		1
+no_adjust_base		0
+noquake 		1
+
+palette 		data/bgs/castle_entrance/traps/candle/candle1.gif
+
+
+
+
+anim	idle
+	loop	1
+	delay	7
+	offset	3 8
+	bouncefactor	2
+	burn	0 0 6 8 3 0 0 0 0 0
+	frame	data/bgs/castle_entrance/traps/candle/candle_f2.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_f2a.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_f2.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_f2a.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_f2.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_f2a.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_f2.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_f2a.gif
+	delay	6
+	burn	0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_f2.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_f2a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_f2.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_f2a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_f2.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_f2a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_f2.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/castle_entrance/traps/candle/candle_f2a.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

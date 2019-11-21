@@ -1,0 +1,31 @@
+name		PMAxe
+nolife		1
+type		none
+candamage	enemy obstacle
+lifespan	4
+bounce		1
+noquake		1
+subject_to_platform 1
+subject_to_hole	1
+no_adjust_base	0
+
+
+anim idle
+	loop	1
+	delay	10
+	offset  8 16
+	followanim 1
+	followcond 1
+	bouncefactor 1
+	attack  1 1 15 16 20 1
+	frame	data/chars/misc/subweap/MAxe1.png
+	frame	data/chars/misc/subweap/MAxe2.png
+	frame	data/chars/misc/subweap/MAxe3.png
+	frame	data/chars/misc/subweap/MAxe4.png
+	frame	data/chars/misc/subweap/MAxe5.png
+	frame	data/chars/misc/subweap/MAxe6.png #
+
+anim follow1
+	delay	6
+	offset  13 11
+	frame	data/chars/misc/empty.gif

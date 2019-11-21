@@ -1,0 +1,51 @@
+name  		Clocktower_wall4b
+health	24
+type	obstacle
+nomove	1
+setlayer 1
+shadow  0
+nolife	1
+subject_to_wall 1
+subject_to_obstacle 0
+animationscript  data/scripts/escript.c
+
+palette		data/bgs/clock_tower/clock_palette_elements.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	fall
+	delay	5
+	offset	47 47
+	sound	data/sounds/rock_break1.wav
+	frame	data/chars/misc/empty.gif
+	@cmd	tosserM "sewer_rock1" 8 34 0 2.5
+	@cmd	tosserM "sewer_rock2" 5 26 0 1.5
+	@cmd	tosserM "sewer_rock3" 8 25 0.3 1.5
+	@cmd	tosserM "sewer_rock4" -3 27 -0.3 1.5
+	@cmd	tosserM "sewer_rock2" 5 12 0.3 1
+	@cmd	tosserM "sewer_rock1" -8 14 -0.3 1
+	sound	data/sounds/rock_break2.wav
+	frame	data/chars/misc/empty.gif
+	delay	200
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	delay	100
+	offset	32 47
+	platform	32 65 -8 -8 41 41 10 113
+	bbox	31 0 31 47
+	frame	data/bgs/clock_tower/walls/clocktower_wall4b.gif
+		
+#|edited by openBor Stats v 0.67
+		

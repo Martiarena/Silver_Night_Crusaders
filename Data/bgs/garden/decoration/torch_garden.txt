@@ -1,0 +1,27 @@
+name	Torch_garden
+type            none
+antigravity     100
+shadow		0
+nomove	1
+nolife	1
+setlayer -1
+offscreenkill   9999
+
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_gravity 0
+
+palette	data/bgs/garden/decoration/torch1a.gif
+
+
+anim	idle
+	loop	1
+	offset	12 24
+	delay	7
+	frame	data/bgs/garden/decoration/torch1a.gif
+	frame	data/bgs/garden/decoration/torch1b.gif
+	frame	data/bgs/garden/decoration/torch1c.gif
+	frame	data/bgs/garden/decoration/torch1d.gif
+		
+#|edited by openBor Stats v 0.67
+		

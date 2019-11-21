@@ -1,0 +1,22 @@
+name  		Clocktower_platform2
+type		none
+facing	  	1
+setlayer	-1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/clock_tower/clock_palette_elements.gif
+
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	15 9
+	platform	0 9 -8 -8 39 39 10 9
+	frame	data/bgs/clock_tower/platforms/clocktower_platform2a.gif
+		
+#|edited by openBor Stats v 0.67
+		

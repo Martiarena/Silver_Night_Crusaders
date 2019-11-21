@@ -1,0 +1,123 @@
+name	holy1
+health	1
+type	npc
+hostile enemy obstacle
+candamage enemy obstacle
+speed	0
+remove 0
+noquake 1
+falldie 1
+jumpheight 2
+jumpspeed  3
+
+
+anim	attack1
+	offset	189 142
+	delay	6
+	sound	data/chars/misc/weap/holy1.wav
+	frame	data/chars/misc/weap/weap401.gif
+	sound	data/chars/misc/weap/cross1.wav
+	attack	183 116 17 26 5
+	frame	data/chars/misc/weap/weap402.gif
+	frame	data/chars/misc/weap/weap403.gif
+	frame	data/chars/misc/weap/weap404.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/misc/weap/weap405.gif
+	attack	183 116 27 26 5
+	frame	data/chars/misc/weap/weap406.gif
+	frame	data/chars/misc/weap/weap407.gif
+	frame	data/chars/misc/weap/weap408.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/misc/weap/weap409.gif
+	sound	data/chars/misc/weap/cross1.wav
+	attack	183 116 37 26 5
+	frame	data/chars/misc/weap/weap410.gif
+	frame	data/chars/misc/weap/weap411.gif
+	frame	data/chars/misc/weap/weap412.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/misc/weap/weap413.gif
+	attack	193 116 37 26 5
+	frame	data/chars/misc/weap/weap414.gif
+	frame	data/chars/misc/weap/weap415.gif
+	frame	data/chars/misc/weap/weap416.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/misc/weap/weap417.gif
+	sound	data/chars/misc/weap/cross1.wav
+	attack	203 116 37 26 5
+	frame	data/chars/misc/weap/weap418.gif
+	frame	data/chars/misc/weap/weap419.gif
+	frame	data/chars/misc/weap/weap420.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/misc/weap/weap421.gif
+	attack	213 116 37 26 5
+	frame	data/chars/misc/weap/weap422.gif
+	frame	data/chars/misc/weap/weap423.gif
+	frame	data/chars/misc/weap/weap424.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/misc/weap/weap425.gif
+#	sound	data/chars/misc/weap/cross1.wav
+	attack	223 116 27 26 5
+	frame	data/chars/misc/weap/weap426.gif
+	frame	data/chars/misc/weap/weap427.gif
+	frame	data/chars/misc/weap/weap428.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/misc/weap/weap429.gif
+	attack	233 116 17 26 5 1
+	frame	data/chars/misc/weap/weap430.gif
+	frame	data/chars/misc/weap/weap431.gif
+	frame	data/chars/misc/weap/weap432.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/misc/weap/weap433.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	attack2
+	offset	189 142
+	loop	0
+	delay	6
+	sound	data/chars/misc/weap/holy1.wav
+	frame	data/chars/misc/weap/weap401.gif
+	sound	data/chars/misc/weap/cross1.wav
+	attack	176 116 27 26 5 1 0 0 0 0
+	frame	data/chars/misc/weap/weap402.gif
+	frame	data/chars/misc/weap/weap403.gif
+	frame	data/chars/misc/weap/weap404.gif
+	frame	data/chars/misc/weap/weap405.gif
+	offset	239 142
+	frame	data/chars/misc/weap/weap426.gif
+	offset	240 142
+	sound	data/chars/misc/weap/cross1.wav
+	frame	data/chars/misc/weap/weap427.gif
+	frame	data/chars/misc/weap/weap428.gif
+	frame	data/chars/misc/weap/weap429.gif
+	frame	data/chars/misc/weap/weap430.gif
+	frame	data/chars/misc/weap/weap431.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/weap/weap432.gif
+	frame	data/chars/misc/weap/weap433.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	death
+	loop	0
+	delay	2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	fall
+	loop	0
+	delay	2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	0
+	delay	500
+	offset	189 142
+	bbox	182 131 14 11
+	frame	data/chars/misc/weap/weap401.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -1,0 +1,26 @@
+name    	Diagonal_arrow
+type            endlevel
+facing          1
+nolife	1
+subject_to_hole 1
+no_adjust_base  0
+subject_to_platform 1
+antigravity	100
+
+palette		data/chars/misc/endlevel/arrow-rightup-a.gif
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	7
+	offset	6 75
+	bbox	0 0 12 240
+	attack	0 0 12 240 0 0 0 0
+	frame	data/chars/misc/endlevel/arrow-rightup-a.gif
+	frame	data/chars/misc/endlevel/arrow-rightup-b.gif
+		
+#|edited by openBor Stats v 0.67
+		

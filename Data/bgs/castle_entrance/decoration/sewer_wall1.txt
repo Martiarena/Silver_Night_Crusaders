@@ -1,0 +1,46 @@
+name  		Sewer_wall1
+health	24
+type	obstacle
+nomove	1
+setlayer 1
+shadow  0
+nolife	1
+subject_to_wall 1
+subject_to_obstacle 0
+animationscript  data/scripts/escript.c
+
+palette		data/bgs/castle_entrance/bloques_entrada.gif
+
+
+
+
+
+
+
+
+
+anim	fall
+	delay	5
+	offset	43 74
+	sound	data/sounds/rock_break1.wav
+	frame	data/chars/misc/empty.gif
+	@cmd	tosserM "sewer_rock1" 8 34 0 2.5
+	@cmd	tosserM "sewer_rock7" 5 26 0 1.5
+	@cmd	tosserM "sewer_rock3" 8 25 0.3 1.5
+	@cmd	tosserM "sewer_rock6" -3 27 -0.3 1.5
+	@cmd	tosserM "sewer_rock5" 5 12 0.3 1
+	@cmd	tosserM "sewer_rock8" -8 14 -0.3 1
+	sound	data/sounds/rock_break2.wav
+	frame	data/chars/misc/empty.gif
+	delay	200
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	delay	100
+	offset	24 97
+	platform	0 97 0 0 49 49 10 300
+	bbox	24 0 25 75
+	frame	data/bgs/castle_entrance/decoration/sewer_wall1.gif
+		
+#|edited by openBor Stats v 0.67
+		

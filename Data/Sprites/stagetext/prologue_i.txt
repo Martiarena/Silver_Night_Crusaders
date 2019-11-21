@@ -1,0 +1,25 @@
+name	Prologue_I
+type	none
+antigravity 100
+setlayer 10000
+load Prologue
+
+
+palette data/sprites/stagetext/stage-ani7.gif
+
+
+anim	idle
+	loop	0
+	delay	3
+	offset	160 240
+	subentity Prologue
+	spawnframe 3 160 240 0 1
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ArrowR.png
+	frame	data/chars/misc/ArrowR.png
+	frame	data/chars/misc/ArrowR.png
+	
+	
+		
+#|edited by openBor Stats v 0.41
+		

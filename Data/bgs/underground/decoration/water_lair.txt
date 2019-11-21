@@ -1,0 +1,26 @@
+name		Water_lair
+type		none
+facing		1
+setlayer  	-2
+offscreenkill   9999
+antigravity	100
+
+palette		data/bgs/underground/decoration/water_lair1.gif
+
+
+
+
+
+anim	idle
+	loop	1
+	offset	32 -14
+	delay	7
+	frame	data/bgs/underground/decoration/water_lair1.gif
+	frame	data/bgs/underground/decoration/water_lair2.gif
+	frame	data/bgs/underground/decoration/water_lair3.gif
+	frame	data/bgs/underground/decoration/water_lair4.gif
+	frame	data/bgs/underground/decoration/water_lair5.gif
+	frame	data/bgs/underground/decoration/water_lair6.gif
+		
+#|edited by openBor Stats v 0.67
+		

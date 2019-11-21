@@ -1,0 +1,303 @@
+name	    	Nigromante_
+health  	80
+nomove   	1 1
+type		enemy
+death	 	1
+cantgrab 	1
+nodieblink	2
+nopain  	1
+nodrop  	2
+setlayer        -1
+score   	500 -1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+antigravity         100
+
+palette          data/chars/necromancer/necromancer_palette.gif
+alternatepal     data/chars/necromancer/necromancer_blink_palette.gif
+
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+
+
+diesound         data/sounds/die4.wav
+icon		data/chars/misc/bgmonster.gif
+
+load    	Fantasma
+load		Esqueleto
+load		Zombi
+load		Necro_blast
+load    	Spiral_disapear
+load            MagicSeal
+load 		edie
+
+
+
+
+
+
+anim	death
+	delay	1
+	offset	45 102
+	move	-1
+	frame	data/chars/necromancer/death1a.gif
+	frame	data/chars/necromancer/death1a.gif
+	frame	data/chars/necromancer/death1a.gif
+	frame	data/chars/necromancer/death1a.gif
+	frame	data/chars/necromancer/death1a.gif
+	frame	data/chars/necromancer/death1a.gif
+	frame	data/chars/necromancer/death1a.gif
+	frame	data/chars/necromancer/death1a.gif
+	frame	data/chars/necromancer/death1a.gif
+	frame	data/chars/necromancer/death1a.gif
+	frame	data/chars/necromancer/death1a.gif
+	frame	data/chars/necromancer/death1a.gif
+	frame	data/chars/necromancer/death1a.gif
+	frame	data/chars/necromancer/death1a.gif
+	move	0
+	frame	data/chars/necromancer/death1a.gif
+	delay	14
+	subentity	edie
+	spawnframe	16 0 0 50 0
+	frame	data/chars/necromancer/death1a.gif
+	frame	data/chars/necromancer/death1b.gif
+	frame	data/chars/necromancer/death1c.gif
+	frame	data/chars/necromancer/death1d.gif
+	frame	data/chars/necromancer/death1e.gif
+	frame	data/chars/necromancer/death1f.gif
+	frame	data/chars/necromancer/death1g.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+@script
+    void self = getlocalvar("self");
+    int r = rand()%30;
+
+    if( frame == 0){
+      if( r > 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      } else if( r < -10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      }
+    }
+	@end_script	
+	delay	1
+	offset	40 102
+	bbox	33 52 26 52
+	attack	33 52 26 52 9 0 0 0 0 0
+	frame	data/chars/necromancer/idle.gif
+	delay	70
+	frame	data/chars/necromancer/idle.gif
+	delay	10
+	@cmd	spawn01 "MagicSeal" 20 25 0
+	frame	data/chars/necromancer/spell1b.gif
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	frame	data/chars/necromancer/spell1a.gif
+	@cmd	spawn01 "Fantasma" 25 30 0
+	frame	data/chars/necromancer/spell1b.gif
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	@cmd	spawn01 "Fantasma" -25 30 0
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	frame	data/chars/necromancer/spell1a.gif
+	@cmd	spawn01 "Fantasma" 0 55 0
+	frame	data/chars/necromancer/spell1b.gif
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	@cmd	spawn01 "Fantasma" 0 -20 0
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	delay	30
+	frame	data/chars/necromancer/idle.gif
+	delay	10
+	frame	data/chars/necromancer/idle.gif
+	subentity	Spiral_disapear
+	spawnframe	26 0 0 0 0
+	bbox	0
+	attack	0
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	delay	400
+	frame	data/chars/misc/empty.gif
+	attack	0
+	@cmd	anichange "ANI_FOLLOW4"
+	frame	data/chars/misc/empty.gif
+		
+anim	follow2
+	delay	1
+	offset	40 102
+	bbox	33 52 26 52
+	attack	33 52 26 52 9 0 0 0 0 0
+	frame	data/chars/necromancer/idle.gif
+	delay	70
+	frame	data/chars/necromancer/idle.gif
+	delay	10
+	@cmd	spawn01 "MagicSeal" 20 25 0
+	frame	data/chars/necromancer/spell1b.gif
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	frame	data/chars/necromancer/spell1a.gif
+	@cmd	target 1 1 0 0 0 0
+	@cmd	shoot2 "Necro_blast" 0 25
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	delay	30
+	frame	data/chars/necromancer/idle.gif
+	delay	10
+	frame	data/chars/necromancer/idle.gif
+	subentity	Spiral_disapear
+	spawnframe	11 0 0 0 0
+	bbox	0
+	attack	0
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	delay	50
+	frame	data/chars/misc/empty.gif
+	@cmd	anichange "ANI_FOLLOW4"
+	frame	data/chars/misc/empty.gif
+		
+anim	follow3
+	delay	1
+	offset	40 102
+	bbox	33 52 26 52
+	attack	33 52 26 52 9 0 0 0 0 0
+	frame	data/chars/necromancer/idle.gif
+	delay	70
+	frame	data/chars/necromancer/idle.gif
+	delay	10
+	@cmd	spawn01 "MagicSeal" 20 25 0
+	frame	data/chars/necromancer/spell1b.gif
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	frame	data/chars/necromancer/spell1a.gif
+	@cmd	spawn01 "Fantasma" 25 30 0
+	frame	data/chars/necromancer/spell1b.gif
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	@cmd	spawn01 "Fantasma" -25 30 0
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	frame	data/chars/necromancer/spell1a.gif
+	@cmd	spawn01 "Fantasma" 0 55 0
+	frame	data/chars/necromancer/spell1b.gif
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	@cmd	spawn01 "Fantasma" 0 -20 0
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	delay	30
+	frame	data/chars/necromancer/idle.gif
+	delay	10
+	frame	data/chars/necromancer/idle.gif
+	subentity	Spiral_disapear
+	spawnframe	26 0 0 0 0
+	bbox	0
+	attack	0
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	frame	data/chars/necromancer/spell1a.gif
+	frame	data/chars/necromancer/spell1b.gif
+	delay	300
+	frame	data/chars/misc/empty.gif
+	@cmd	anichange "ANI_FOLLOW4"
+	frame	data/chars/misc/empty.gif
+		
+anim	follow4
+@script
+    void self = getlocalvar("self");
+    int r = rand()%30;
+
+    if( frame == 0){
+      if( r > 0){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW5"));
+      }
+    }
+	@end_script	
+	delay	1
+	offset	40 102
+	frame	data/chars/misc/empty.gif
+	delay	10
+	frame	data/chars/misc/empty.gif
+	delay	10
+	subentity	Spiral_disapear
+	spawnframe	3 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	delay	40
+	frame	data/chars/necromancer/idle.gif
+	delay	10
+	bbox	33 52 26 52
+	attack	33 52 26 52 9 0 0 0 0 0
+	frame	data/chars/necromancer/idle.gif
+	@cmd	anichange "ANI_FOLLOW1"
+	frame	data/chars/necromancer/idle.gif
+		
+anim	follow5
+	delay	1
+	offset	40 102
+	frame	data/chars/misc/empty.gif
+	delay	10
+	@cmd	move 200 0 0
+	@cmd	flip
+	frame	data/chars/misc/empty.gif
+	subentity	Spiral_disapear
+	spawnframe	3 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	delay	40
+	frame	data/chars/necromancer/idle.gif
+	delay	10
+	bbox	33 52 26 52
+	attack	33 52 26 52 9 0 0 0 0 0
+	frame	data/chars/necromancer/idle.gif
+	@cmd	anichange "ANI_FOLLOW1"
+	frame	data/chars/necromancer/idle.gif
+		
+anim	idle
+	loop	1
+	delay	14
+	offset	40 102
+	bbox	33 52 26 52
+	attack	33 52 26 52 9 0 0 0 0 0
+	frame	data/chars/necromancer/idle.gif
+	@cmd	attack0 "ANI_FOLLOW1"
+	frame	data/chars/necromancer/idle.gif
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/necromancer/idle.gif
+		
+anim	spawn
+	loop	0
+	delay	80
+	offset	40 102
+	bbox	0 0 0 0
+	subentity	Spiral_disapear
+	spawnframe	1 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	bbox	33 52 26 52
+	attack	33 52 26 52 9 0 0 0 0 0
+	frame	data/chars/necromancer/idle.gif
+	delay	1
+	attack	0
+	frame	data/chars/necromancer/idle.gif
+		
+#|edited by openBor Stats v 0.67
+		

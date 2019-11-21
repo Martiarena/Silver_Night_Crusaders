@@ -1,0 +1,67 @@
+name		NBigBat
+health		1
+nomove  	1
+type		npc
+death		1
+hostile		enemy
+subject_to_gravity 0
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+
+palette         data/chars/gbat/bigbat1.png
+alternatepal    data/chars/gbat/familiar.png
+
+animationscript data/scripts/nscript.c
+
+
+anim	spawn
+	delay	5
+	offset	21 64
+	frame	data/chars/misc/empty.gif
+	@cmd	mapchange 1
+	@cmd	dirparent
+	frame	data/chars/gbat/bigbat1.png
+
+anim	idle
+	loop	1
+	delay	10
+	offset	21 64
+	frame	data/chars/gbat/bigbat1.png
+	@cmd	suicidePar
+	@cmd	dirparent
+        @cmd    targetPardash 1.2 1.2 30 -55 1
+	frame	data/chars/gbat/bigbat3.png
+#	@cmd	suicidePar
+	frame	data/chars/gbat/bigbat2.png
+	@cmd	suicidePar
+	@cmd	dirparent
+        @cmd    targetPardash 1.2 1.2 30 -55 1
+	frame	data/chars/gbat/bigbat1.png
+#	@cmd	suicidePar
+	frame	data/chars/gbat/bigbat3.png
+	@cmd	suicidePar
+	@cmd	dirparent
+        @cmd    targetPardash 1.2 1.2 30 -55 1
+	frame	data/chars/gbat/bigbat2.png
+
+
+anim attack1
+	delay	10
+	offset	21 64
+	frame	data/chars/gbat/bigbat1.png
+	@cmd	dirparent
+        @cmd    targetPardash 1.2 1.2 30 -55 1
+	frame	data/chars/gbat/bigbat3.png
+        @cmd    target 1 1 5 0 0 0
+        @cmd    shoot "NBFBall" 5 0
+	frame	data/chars/gbat/bigbat2.png
+	@cmd	dirparent
+        @cmd    targetPardash 1.2 1.2 30 -55 1
+	frame	data/chars/gbat/bigbat1.png
+	frame	data/chars/gbat/bigbat3.png
+	@cmd	dirparent
+        @cmd    targetPardash 1.2 1.2 30 -55 1
+	frame	data/chars/gbat/bigbat2.png
+	@cmd	beidle
+	frame	data/chars/gbat/bigbat1.png

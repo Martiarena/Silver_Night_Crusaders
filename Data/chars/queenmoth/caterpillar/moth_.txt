@@ -1,0 +1,112 @@
+name	    	Polilla_
+health  	3
+nomove   	1 0
+type		enemy
+falldie 	1
+cantgrab 	1
+nopain  	1
+lifespan  	5
+nodrop  	2
+aggression 	6
+alpha 		1
+nolife          1
+setlayer        50
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+antigravity     100
+score   	20 -1
+hostile         player npc
+candamage 	player npc
+palette         data/chars/queenmoth/spawn1.gif
+
+defense normal4 3 0 0 0 0 0 0
+defense normal11 4 0 0 0 0 0 0
+defense burn 3 0 0 0 0 0 0
+
+animationscript data/scripts/escript.c
+
+
+
+
+anim	death
+	subentity	pdie
+	spawnframe	0 0 0 0 0
+	delay	10
+	offset	2 2
+	frame	data/chars/misc/empty.gif
+	@cmd	clearL
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	fall
+	delay	7
+	offset	13 13
+	frame	data/chars/queenmoth/caterpillar/moth1a.gif
+	frame	data/chars/queenmoth/caterpillar/moth1b.gif
+	frame	data/chars/queenmoth/caterpillar/moth1a.gif
+		
+anim	follow1
+	subentity	pdie
+	spawnframe	0 0 0 0 0
+	delay	10
+	offset	2 2
+	frame	data/chars/misc/empty.gif
+	@cmd	clearL
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	13 13
+	attack2	3 7 20 16 19 0 0 0 0 0
+	@cmd	target 0.5 0.5 0 -15 1 1
+	@cmd	dash 0 0
+	frame	data/chars/queenmoth/caterpillar/moth1a.gif
+	@cmd	target 0.5 0.5 0 -15 1 1
+	@cmd	dash 0 0
+	frame	data/chars/queenmoth/caterpillar/moth1b.gif
+	@cmd	target 0.5 0.5 0 -15 1 1
+	@cmd	dash 0 0
+	attack2	0 0 0 0 0
+	frame	data/chars/queenmoth/caterpillar/moth1a.gif
+		
+anim	pain
+	delay	7
+	offset	13 13
+	frame	data/chars/queenmoth/caterpillar/moth1a.gif
+	frame	data/chars/queenmoth/caterpillar/moth1b.gif
+	frame	data/chars/queenmoth/caterpillar/moth1a.gif
+		
+anim	spawn
+	delay	7
+	offset	13 13
+	attack2	3 7 20 16 19 0 0 0 0 0
+	frame	data/chars/queenmoth/caterpillar/moth1a.gif
+	frame	data/chars/queenmoth/caterpillar/moth1b.gif
+	frame	data/chars/queenmoth/caterpillar/moth1a.gif
+	frame	data/chars/queenmoth/caterpillar/moth1b.gif
+	frame	data/chars/queenmoth/caterpillar/moth1a.gif
+	frame	data/chars/queenmoth/caterpillar/moth1b.gif
+	frame	data/chars/queenmoth/caterpillar/moth1a.gif
+	frame	data/chars/queenmoth/caterpillar/moth1b.gif
+	frame	data/chars/queenmoth/caterpillar/moth1a.gif
+	attack2	0 0 0 0 0
+	@cmd	stop
+	frame	data/chars/queenmoth/caterpillar/moth1b.gif
+		
+anim	walk
+	loop	1
+	delay	7
+	offset	13 13
+	attack2	3 7 20 16 19 0 0 0 0 0
+	frame	data/chars/queenmoth/caterpillar/moth1a.gif
+	frame	data/chars/queenmoth/caterpillar/moth1b.gif
+	attack2	0 0 0 0 0
+	frame	data/chars/queenmoth/caterpillar/moth1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

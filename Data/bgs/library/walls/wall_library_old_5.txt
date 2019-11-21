@@ -1,0 +1,19 @@
+name  		Wall_library_old_5
+type		none
+facing	  	1
+setlayer 	-1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/library/palette_object.gif
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	16 191
+	platform	0 191 -8 -8 41 41 10 191
+	frame	data/bgs/library/walls/wall_library_old_5.gif
+

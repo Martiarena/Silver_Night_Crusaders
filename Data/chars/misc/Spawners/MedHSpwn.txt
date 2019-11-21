@@ -1,0 +1,21 @@
+name	         MedHeadSpawner
+type	         None
+shadow	         0
+antigravity	 100
+animationscript  data/scripts/oscript.c
+load	         MHead
+
+palette 	 data/chars/misc/empty.gif
+alternatepal 	 data/chars/misc/empty2.gif
+
+anim idle
+	loop	1
+	delay	1
+	offset	72 96
+        frame   data/chars/misc/empty.gif
+	delay	20
+	@cmd	offscreenkill 500 0
+        frame   data/chars/misc/empty.gif
+	@cmd	MspawnR "MHead" 360 120 0 110
+        frame   data/chars/misc/empty.gif
+

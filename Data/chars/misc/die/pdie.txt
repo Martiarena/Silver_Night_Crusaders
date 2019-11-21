@@ -1,0 +1,56 @@
+name	pdie
+type none
+#alpha 6
+nomove 1 1
+antigravity 100
+lifespan 1
+setlayer 100
+
+anim idle
+	loop	0
+	delay	3
+	offset	46 46
+	bbox    	0 0 0 0
+	frame	data/chars/misc/die/pdie01.gif
+	frame	data/chars/misc/die/pdie02.gif
+	frame	data/chars/misc/die/pdie03.gif
+	frame	data/chars/misc/die/pdie04.gif
+	frame	data/chars/misc/die/pdie05.gif
+	frame	data/chars/misc/die/pdie06.gif
+	frame	data/chars/misc/die/pdie07.gif
+	frame	data/chars/misc/die/pdie08.gif
+	frame	data/chars/misc/empty.gif
+
+	
+anim fall
+	loop	0
+	delay	4
+	offset	46 46
+	bbox    	0 0 0 0
+	frame	data/chars/misc/die/pdie01.gif
+	frame	data/chars/misc/die/pdie02.gif
+	frame	data/chars/misc/die/pdie03.gif
+	frame	data/chars/misc/die/pdie04.gif
+	frame	data/chars/misc/die/pdie05.gif
+	frame	data/chars/misc/die/pdie06.gif
+	frame	data/chars/misc/die/pdie07.gif
+	frame	data/chars/misc/die/pdie08.gif
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	delay	4
+	offset	46 46
+	bbox    	0 0 0 0
+	frame	data/chars/misc/die/pdie01.gif
+	frame	data/chars/misc/die/pdie02.gif
+	frame	data/chars/misc/die/pdie03.gif
+	frame	data/chars/misc/die/pdie04.gif
+	frame	data/chars/misc/die/pdie05.gif
+	frame	data/chars/misc/die/pdie06.gif
+	frame	data/chars/misc/die/pdie07.gif
+	frame	data/chars/misc/die/pdie08.gif
+	frame	data/chars/misc/empty.gif
+
+
+

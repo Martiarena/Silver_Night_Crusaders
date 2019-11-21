@@ -1,0 +1,108 @@
+name	    	caterpillar
+health          3
+speed           5
+type  		enemy
+nopain		1
+nolife		1
+cantgrab 	1
+nodrop	 	2
+death	 	1
+nodieblink 	2
+aggression	20
+offscreenkill	100
+hostile         player npc
+candamage       player npc
+subject_to_platform 0
+animationscript  data/scripts/escript.c
+
+palette		data/chars/queenmoth/caterpillar/caterpillar_palette.gif
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	range	-320 640
+	loop	1
+	delay	12
+	jumpframe	0 0 0.2 0
+	offset	13 10
+	bbox	4 3 18 7
+	followanim	1
+	followcond	1
+	attack	4 3 18 7 12 0 0 0 0 0
+	DOT	2 30 4 1 5
+	frame	data/chars/queenmoth/caterpillar/idle1a.gif
+	frame	data/chars/queenmoth/caterpillar/idle1b.gif
+	delay	11
+	frame	data/chars/queenmoth/caterpillar/idle1c.gif
+	delay	1
+	attack	0
+	frame	data/chars/queenmoth/caterpillar/idle1c.gif
+		
+anim	death
+	delay	12
+	offset	2 2
+	subentity	pdie
+	spawnframe	0 2 0 2 0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	delay	12
+	offset	2 2
+	subentity	pdie
+	spawnframe	0 2 0 2 0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	12
+	offset	13 10
+	bbox	4 3 18 7
+	attack	4 3 18 7 12 0 0 0 0 0
+	DOT	2 30 4 1 5
+	frame	data/chars/queenmoth/caterpillar/idle1a.gif
+	frame	data/chars/queenmoth/caterpillar/idle1b.gif
+	delay	11
+	frame	data/chars/queenmoth/caterpillar/idle1c.gif
+	delay	1
+	attack	0
+	frame	data/chars/queenmoth/caterpillar/idle1c.gif
+		
+anim	spawn
+	delay	60
+	offset	6 11
+	bbox	0 2 11 9
+	frame	data/chars/queenmoth/caterpillar/spawn1a.gif
+	delay	12
+	frame	data/chars/queenmoth/caterpillar/spawn1b.gif
+		
+anim	walk
+	loop	0
+	delay	12
+	jumpframe	0 0 0.2 0
+	offset	13 10
+	bbox	4 3 18 7
+	followanim	1
+	followcond	1
+	attack	4 3 18 7 12 0 0 0 0 0
+	DOT	2 30 4 1 5
+	frame	data/chars/queenmoth/caterpillar/idle1a.gif
+	frame	data/chars/queenmoth/caterpillar/idle1b.gif
+	delay	11
+	frame	data/chars/queenmoth/caterpillar/idle1c.gif
+	delay	1
+	attack	0
+	frame	data/chars/queenmoth/caterpillar/idle1c.gif
+		
+#|edited by openBor Stats v 0.67
+		

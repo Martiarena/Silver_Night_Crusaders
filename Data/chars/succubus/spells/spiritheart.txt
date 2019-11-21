@@ -1,0 +1,85 @@
+name	        SpiritHeart
+type	        none
+health		1
+nolife          1
+lifespan        5
+speed           10
+antigravity     100
+hostile  player
+candamage       player npc
+animationscript data/scripts/cscript.c
+load		HeartSpell
+
+palette		data/chars/succubus/succubo_palette.gif
+
+anim	follow1
+	delay	4
+	offset	9 10
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+@script
+    void self = getlocalvar("self"); //Get calling entity
+    int Dir = getentityproperty(self, "direction");
+    float Fram = (getentityproperty(self, "animpos") + 2)*1;
+    float Vx = 1.5+0.35*cos(Fram*360);
+    float Vy = 0*sin(Fram*360);
+
+    if(Dir==0){
+      Vx = -Vx;
+    }
+
+    changeentityproperty(self, "velocity", Vx , 0, Vy);
+	@end_script	
+	loop	1
+	delay	1
+	offset	7 7
+	followcond	1
+	followanim	1
+	attack	0 0 15 15 12 0 0 0 0 0
+	bbox	0 0 15 15
+	frame	data/chars/succubus/spells/spell1a.gif
+	delay	7
+	@cmd	spawn01 "HeartSpell" 0 0 0
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/succubus/spells/spell1b.gif
+	@cmd	spawn01 "HeartSpell" 0 0 0
+	frame	data/chars/succubus/spells/spell1a.gif
+	@cmd	spawn01 "HeartSpell" 0 0 0
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/succubus/spells/spell1b.gif
+	@cmd	spawn01 "HeartSpell" 0 0 0
+	frame	data/chars/succubus/spells/spell1a.gif
+	@cmd	spawn01 "HeartSpell" 0 0 0
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/succubus/spells/spell1b.gif
+	attack	0
+	@cmd	spawn01 "HeartSpell" 0 0 0
+	frame	data/chars/succubus/spells/spell1a.gif
+		
+anim	spawn
+	delay	1
+	offset	9 10
+	frame	data/chars/succubus/spells/spell1c.gif
+	frame	data/chars/succubus/spells/spell1b.gif
+	frame	data/chars/succubus/spells/spell1a.gif
+	attack	0 0 15 15 12 0 0 0 0 0
+	frame	data/chars/succubus/spells/spell1b.gif
+	frame	data/chars/succubus/spells/spell1a.gif
+	frame	data/chars/succubus/spells/spell1b.gif
+	frame	data/chars/succubus/spells/spell1a.gif
+	frame	data/chars/succubus/spells/spell1b.gif
+	frame	data/chars/succubus/spells/spell1a.gif
+	frame	data/chars/succubus/spells/spell1b.gif
+	frame	data/chars/succubus/spells/spell1a.gif
+	frame	data/chars/succubus/spells/spell1b.gif
+	frame	data/chars/succubus/spells/spell1a.gif
+	frame	data/chars/succubus/spells/spell1b.gif
+	frame	data/chars/succubus/spells/spell1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

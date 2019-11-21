@@ -1,0 +1,135 @@
+name     Ente_Helado
+health          32
+nomove  	1 1
+type		enemy
+cantgrab 	1
+nodrop  	2
+death	 	1
+nodieblink 	2
+nopain  	1
+subject_to_gravity 0
+setlayer        10
+offscreenkill	500
+Score           500 -1
+load            Ice
+load    	ShadeIce
+load            iceseal
+load     	Icedie
+
+icon 		data/chars/misc/bgmonster.gif
+
+palette		data/chars/iceshade/iceshade_palette.gif
+alternatepal	data/chars/iceshade/blink.gif
+
+defense normal4 3 0 0 0 0 0 0
+defense attack7 0.5 0 0 0 0 0 0
+defense normal19 1.5 0 0 0 0 0 0
+defense burn 1.5 0 0 0 0 0 0
+
+
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+
+
+
+
+
+
+
+
+
+
+anim	death
+	subentity	icedie
+	spawnframe	0 0 0 40 0
+	delay	5
+	offset	23 87
+	frame	data/chars/iceshade/death1a.gif
+	frame	data/chars/iceshade/death1b.gif
+	frame	data/chars/iceshade/death1c.gif
+	frame	data/chars/iceshade/death1d.gif
+	frame	data/chars/iceshade/death1e.gif
+	frame	data/chars/iceshade/death1f.gif
+	frame	data/chars/iceshade/death1g.gif
+	frame	data/chars/iceshade/death1h.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	delay	10
+	offset	23 87
+	bbox	20 27 15 50
+	hitfx	data/sounds/icebreak.wav
+	attack7	20 27 15 50 12 0 0 0 0
+	frame	data/chars/iceshade/idle.gif
+	frame	data/chars/iceshade/idle.gif
+	@cmd	clearL
+	frame	data/chars/iceshade/idle.gif
+	frame	data/chars/iceshade/idle.gif
+	delay	30
+	@cmd	spawn01 "iceseal" 20 40 0
+	frame	data/chars/iceshade/attack1a.gif
+	delay	10
+	bbox	20 27 15 50
+	attack7	20 27 15 50 12 0 0 0 0
+	@cmd	shooter2 "Ice" 30 60 0.5 0
+	frame	data/chars/iceshade/attack1b.gif
+	@cmd	shooter2 "Ice" 30 50 0.5 0.5
+	frame	data/chars/iceshade/attack1c.gif
+	@cmd	shooter2 "Ice" 30 50 0.5 1
+	frame	data/chars/iceshade/attack1b.gif
+	@cmd	shooter2 "Ice" 30 50 0.5 1.5
+	frame	data/chars/iceshade/attack1c.gif
+	@cmd	shooter2 "Ice" 30 50 0.5 1
+	frame	data/chars/iceshade/attack1b.gif
+	@cmd	shooter2 "Ice" 30 50 0.5 0.5
+	frame	data/chars/iceshade/attack1c.gif
+	@cmd	shooter2 "Ice" 30 50 0.5 0
+	frame	data/chars/iceshade/attack1b.gif
+	@cmd	shooter2 "Ice" 30 50 0.5 -0.5
+	frame	data/chars/iceshade/attack1c.gif
+	@cmd	shooter2 "Ice" 30 50 0.5 -1
+	frame	data/chars/iceshade/attack1b.gif
+	@cmd	shooter2 "Ice" 30 50 0.5 -1.5
+	frame	data/chars/iceshade/attack1c.gif
+	@cmd	shooter2 "Ice" 30 50 0.5 -1
+	frame	data/chars/iceshade/attack1b.gif
+	@cmd	shooter2 "Ice" 30 50 0.5 -0.5
+	frame	data/chars/iceshade/attack1c.gif
+	@cmd	looper 5 4
+	frame	data/chars/iceshade/attack1c.gif
+	frame	data/chars/iceshade/attack1d.gif
+	frame	data/chars/iceshade/idle.gif
+	frame	data/chars/iceshade/idle.gif
+	@cmd	beidle
+	frame	data/chars/iceshade/idle.gif
+		
+anim	idle
+	loop	1
+	delay	48
+	offset	23 87
+	bbox	20 27 15 50
+	hitfx	data/sounds/icebreak.wav
+	attack7	20 27 15 50 12 0 0 0 0 0
+	frame	data/chars/iceshade/idle.gif
+	delay	12
+	@cmd	targetT 40 0 -10 1
+	frame	data/chars/iceshade/idle.gif
+	@cmd	attack1 0 100 -30 80 "ANI_FOLLOW1"
+	frame	data/chars/iceshade/idle.gif
+	frame	data/chars/iceshade/idle.gif
+	@cmd	looper 3 10
+	frame	data/chars/iceshade/idle.gif
+	delay	14
+	@cmd	spawn01 "ShadeIce" 30 40 0
+	frame	data/chars/iceshade/attack1a.gif
+	delay	21
+	frame	data/chars/iceshade/attack1b.gif
+	delay	48
+	frame	data/chars/iceshade/attack1c.gif
+	delay	5
+	attack7	0
+	frame	data/chars/iceshade/attack1d.gif
+		
+#|edited by openBor Stats v 0.67
+		

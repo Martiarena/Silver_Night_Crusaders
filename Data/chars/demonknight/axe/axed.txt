@@ -1,0 +1,31 @@
+name		axed
+type	        none
+subject_to_gravity 1
+subject_to_hole	1
+no_adjust_base	0
+lifespan        1
+noquake 	1
+palette 	data/chars/demonknight/demonknight_palette.gif
+
+
+
+
+anim	idle
+	delay	6
+	offset	15 30
+	bouncefactor	2
+	frame	data/chars/demonknight/axe/axe2.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/demonknight/axe/axe2.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/demonknight/axe/axe2.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/demonknight/axe/axe2.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/demonknight/axe/axe2.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/demonknight/axe/axe2.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

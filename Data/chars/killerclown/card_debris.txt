@@ -1,0 +1,26 @@
+name	        Card_debris
+type	        none
+subject_to_gravity 1
+subject_to_hole	1
+no_adjust_base	0
+lifespan        2
+antigravity     50
+noquake 	1
+animationscript data/scripts/prscript.c
+
+palette 	 data/chars/killerclown/killerclown_palette.gif
+
+anim	idle
+	loop	1
+	delay	7
+	offset	4 5
+	frame	data/chars/killerclown/cardidle1a.gif
+	@cmd	groundkill
+	frame	data/chars/killerclown/cardidle1b.gif
+	@cmd	groundkill
+	frame	data/chars/killerclown/cardidle1c.gif
+	@cmd	groundkill
+	frame	data/chars/killerclown/cardidle1d.gif
+		
+#|edited by openBor Stats v 0.67
+		

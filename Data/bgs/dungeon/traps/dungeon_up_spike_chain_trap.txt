@@ -1,0 +1,206 @@
+name   Dungeon_up_spike_chain_trap
+type trap
+shadow  0
+noatflash 1
+antigravity 100
+nomove	 	1
+setlayer        -1
+nolife 1
+candamage       player npc
+
+palette	 data/bgs/dungeon/dungeon_misc.gif
+
+load     Dungeon_spike_chain_trap
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	1
+	offset	16 197
+	subentity	Dungeon_spike_chain_trap
+	spawnframe	1 0 0 135 0
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	loop	0
+	fastattack	1
+	delay	7
+	offset	16 197
+	hitfx	data/sounds/slash.wav
+	attack2	0 188 32 9 19 0 0 0 0 0
+	movea	1
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 188 32 9 19 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 188 32 9 19 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 188 32 9 19 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 188 32 9 19 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 188 32 9 19 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 188 32 9 19 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 188 32 9 19 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 188 32 9 19 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 188 32 9 19 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 188 32 9 19 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 188 32 9 19 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	attack2	0 188 32 9 19 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
+		
+#|edited by openBor Stats v 0.67
+		

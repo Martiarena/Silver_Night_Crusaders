@@ -1,0 +1,172 @@
+name    	 Evileye
+health           24
+speed            6
+running          12
+nolife           1
+type    	 enemy
+aimove           chase
+aimove           wander
+noquake  	 1
+nopain           1
+nodieblink       1
+nodrop  	 2
+death            1
+offscreenkill   9999
+score 300 -1
+aggression 9999
+subject_to_gravity 1
+hostile  player npc
+candamage player npc
+min_noatk_chance 0
+max_noatk_chance 0
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+
+load             edie
+
+icon 		data/chars/misc/bgmonster.gif
+
+palette 	data/chars/ficzko/magic/ficzko_eye_palette.gif
+alternatepal	data/chars/ficzko/magic/ficzko_eye_blink.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	rangea	0 180
+	range	-5 10
+	loop	0
+	delay	1
+	offset	24 220
+	bbox	8 13 33 50
+	attack2	8 13 32 50 12 0 0 0 0 0
+	frame	data/chars/ficzko/magic/attack1a.gif
+	frame	data/chars/ficzko/magic/idle.gif
+	frame	data/chars/ficzko/magic/attack1a.gif
+	frame	data/chars/ficzko/magic/idle.gif
+	frame	data/chars/ficzko/magic/attack1a.gif
+	frame	data/chars/ficzko/magic/idle.gif
+	frame	data/chars/ficzko/magic/attack1a.gif
+	frame	data/chars/ficzko/magic/idle.gif
+	frame	data/chars/ficzko/magic/attack1a.gif
+	frame	data/chars/ficzko/magic/idle.gif
+	frame	data/chars/ficzko/magic/attack1a.gif
+	frame	data/chars/ficzko/magic/idle.gif
+	frame	data/chars/ficzko/magic/attack1a.gif
+	frame	data/chars/ficzko/magic/idle.gif
+	frame	data/chars/ficzko/magic/attack1a.gif
+	frame	data/chars/ficzko/magic/idle.gif
+	frame	data/chars/ficzko/magic/attack1b.gif
+	frame	data/chars/ficzko/magic/idle.gif
+	frame	data/chars/ficzko/magic/attack1b.gif
+	frame	data/chars/ficzko/magic/idle.gif
+	frame	data/chars/ficzko/magic/attack1b.gif
+	frame	data/chars/ficzko/magic/idle.gif
+	frame	data/chars/ficzko/magic/attack1b.gif
+	delay	7
+	attack2	21 34 7 186 12 0 0 0 0 0
+	frame	data/chars/ficzko/magic/attack1c.gif
+	frame	data/chars/ficzko/magic/attack1d.gif
+	frame	data/chars/ficzko/magic/attack1e.gif
+	frame	data/chars/ficzko/magic/attack1f.gif
+	attack2	19 34 11 186 19 0 0 0 0 0
+	frame	data/chars/ficzko/magic/attack1g.gif
+	frame	data/chars/ficzko/magic/attack1h.gif
+	delay	1
+	frame	data/chars/ficzko/magic/attack1g.gif
+	frame	data/chars/ficzko/magic/attack1f.gif
+	frame	data/chars/ficzko/magic/attack1e.gif
+	frame	data/chars/ficzko/magic/attack1d.gif
+	frame	data/chars/ficzko/magic/attack1c.gif
+		
+anim	death
+	delay	3
+	offset	24 220
+	subentity	edie
+	spawnframe	4 0 0 190 0
+	frame	data/chars/ficzko/magic/death1a.gif
+	frame	data/chars/ficzko/magic/death1b.gif
+	frame	data/chars/ficzko/magic/death1c.gif
+	delay	12
+	frame	data/chars/ficzko/magic/death1d.gif
+	delay	3
+	frame	data/chars/ficzko/magic/death1e.gif
+	frame	data/chars/ficzko/magic/death1f.gif
+	frame	data/chars/ficzko/magic/death1g.gif
+	frame	data/chars/misc/empty.gif
+	delay	1
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	12
+	offset	24 220
+	bbox	8 13 33 50
+	attack	8 13 32 50 12 0 0 0 0 0
+	frame	data/chars/ficzko/magic/idle.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0
+	frame	data/chars/ficzko/magic/idle.gif
+		
+anim	spawn
+	loop	0
+	delay	7
+	offset	24 220
+	frame	data/chars/ficzko/magic/spawn1a.gif
+	frame	data/chars/ficzko/magic/spawn1b.gif
+	frame	data/chars/ficzko/magic/spawn1.gif
+	frame	data/chars/ficzko/magic/spawn1d.gif
+	frame	data/chars/ficzko/magic/spawn1c.gif
+	frame	data/chars/ficzko/magic/spawn1i.gif
+	frame	data/chars/ficzko/magic/spawn1.gif
+	frame	data/chars/ficzko/magic/spawn1h.gif
+	frame	data/chars/ficzko/magic/spawn1a.gif
+	frame	data/chars/ficzko/magic/spawn1b.gif
+	frame	data/chars/ficzko/magic/spawn1.gif
+	frame	data/chars/ficzko/magic/spawn1d.gif
+	frame	data/chars/ficzko/magic/spawn1c.gif
+	frame	data/chars/ficzko/magic/spawn1i.gif
+	frame	data/chars/ficzko/magic/spawn1.gif
+	frame	data/chars/ficzko/magic/spawn1h.gif
+	frame	data/chars/ficzko/magic/spawn1e.gif
+	frame	data/chars/ficzko/magic/spawn1g.gif
+	frame	data/chars/ficzko/magic/spawn1f.gif
+		
+anim	walk
+	loop	1 2 4
+	delay	12
+	offset	24 220
+	bbox	8 13 33 50
+	attack	8 13 32 50 12 0 0 0 0 0
+	frame	data/chars/ficzko/magic/walk1.gif
+	bbox	8 13 33 50
+	attack	8 13 32 50 12 0 0 0 0 0
+	frame	data/chars/ficzko/magic/walk2.gif
+	delay	11
+	frame	data/chars/ficzko/magic/walk2.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0
+	frame	data/chars/ficzko/magic/walk2.gif
+		
+#|edited by openBor Stats v 0.67
+		

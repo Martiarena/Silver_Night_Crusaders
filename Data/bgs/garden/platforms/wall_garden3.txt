@@ -1,0 +1,17 @@
+name  		Wall_garden3
+type		none
+facing	  	1
+setlayer	-1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/garden/palette_object.gif
+
+
+
+anim	idle
+	delay	100
+	offset	47 65
+	platform	0 65 -8 -8 102 102 10 999
+	frame	data/bgs/garden/platforms/platform_wall3.gif
+

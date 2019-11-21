@@ -1,0 +1,110 @@
+name 		Spawn_MulaBat
+nomove  	1
+type		none
+cantgrab 	1
+nodrop		2
+death		1
+nolife		1
+antigravity     100
+offscreenkill   70
+setlayer	40
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+load            MulanaBat
+
+palette		data/chars/countess/magic/spawn_bat1a.gif
+
+animationscript data/scripts/cscript.c
+
+
+anim	spawn
+	loop	0
+	delay	10
+	offset	19 19
+	drawmethod 256 256 0 0 0 0 0 0 0
+	frame	data/chars/countess/magic/spawn_bat1b.gif
+	drawmethod 256 256 0 0 0 0 0 0 90
+	frame	data/chars/countess/magic/spawn_bat1b.gif
+	drawmethod 256 256 0 0 0 0 0 0 180
+	frame	data/chars/countess/magic/spawn_bat1b.gif
+	drawmethod 256 256 0 0 0 0 0 0 270
+	frame	data/chars/countess/magic/spawn_bat1b.gif
+
+anim	idle
+	loop	0
+	delay	3
+	offset	19 19
+	drawmethod 256 256 0 0 0 0 0 0 90
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+	drawmethod 256 256 0 0 0 0 0 0 180
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+	drawmethod 256 256 0 0 0 0 0 0 270
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+	drawmethod 256 256 0 0 0 0 0 0 0
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+	drawmethod 256 256 0 0 0 0 0 0 90
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+	drawmethod 256 256 0 0 0 0 0 0 180
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+	drawmethod 256 256 0 0 0 0 0 0 270
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+	drawmethod 256 256 0 0 0 0 0 0 0
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+	drawmethod 256 256 0 0 0 0 0 0 90
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+	drawmethod 256 256 0 0 0 0 0 0 180
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+	drawmethod 256 256 0 0 0 0 0 0 270
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+	drawmethod 256 256 0 0 0 0 0 0 0
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+	drawmethod 256 256 0 0 0 0 0 0 90
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+	drawmethod 256 256 0 0 0 0 0 0 180
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+	drawmethod 256 256 0 0 0 0 0 0 270
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+	drawmethod 256 256 0 0 0 0 0 0 0
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+        @cmd    spawner2 "MulanaBat" 0 0 0
+	drawmethod 256 256 0 0 0 0 0 0 90
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+        @cmd    spawner2 "MulanaBat" 0 0 0
+	drawmethod 256 256 0 0 0 0 0 0 180
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+        @cmd    spawner2 "MulanaBat" 0 0 0
+	drawmethod 256 256 0 0 0 0 0 0 270
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+        @cmd    spawner2 "MulanaBat" 0 0 0
+	drawmethod 256 256 0 0 0 0 0 0 0
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+        @cmd    spawner2 "MulanaBat" 0 0 0
+	drawmethod 256 256 0 0 0 0 0 0 90
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+        @cmd    spawner2 "MulanaBat" 0 0 0
+	drawmethod 256 256 0 0 0 0 0 0 180
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+        @cmd    spawner2 "MulanaBat" 0 0 0
+	drawmethod 256 256 0 0 0 0 0 0 270
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+        @cmd    spawner2 "MulanaBat" 0 0 0
+	drawmethod 256 256 0 0 0 0 0 0 0
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+        @cmd    spawner2 "MulanaBat" 0 0 0
+	drawmethod 256 256 0 0 0 0 0 0 90
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+	drawmethod 256 256 0 0 0 0 0 0 180
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+	drawmethod 256 256 0 0 0 0 0 0 270
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+	drawmethod 256 256 0 0 0 0 0 0 0
+	frame	data/chars/countess/magic/spawn_bat1a.gif
+	drawmethod 256 256 0 0 0 0 0 0 90
+	frame	data/chars/countess/magic/spawn_bat1b.gif
+	drawmethod 256 256 0 0 0 0 0 0 180
+	frame	data/chars/countess/magic/spawn_bat1b.gif
+	drawmethod 256 256 0 0 0 0 0 0 270
+	frame	data/chars/countess/magic/spawn_bat1b.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif	

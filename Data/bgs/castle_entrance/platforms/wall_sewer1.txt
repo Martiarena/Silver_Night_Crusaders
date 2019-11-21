@@ -1,0 +1,22 @@
+name  		Wall_sewer1
+type		none
+facing	  	1
+setlayer	1
+antigravity	100
+offscreenkill   9999
+
+
+palette		data/bgs/castle_entrance/items_sewer.gif
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	32 65
+	platform	0 65 -8 -8 73 73 10 65
+	frame	data/bgs/castle_entrance/platforms/wall_sewer1.gif
+		
+#|edited by openBor Stats v 0.67
+		

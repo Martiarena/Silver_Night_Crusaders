@@ -1,0 +1,693 @@
+name	Legion_core
+health          303
+speed           0
+type    	enemy
+noquake  	1
+nopain  	1
+nodrop  	2
+death   	1
+nodieblink	2
+hostile         player npc
+candamage 	player npc
+offscreenkill 	9999
+setlayer        1
+nomove 	1 1
+antigravity	100
+cantgrab 	1
+nodrop 	2
+falldie 	1
+score	 	30000 -1
+lifebarstatus 5 101 1 0 1 -300 -300 -300 -300
+lifeposition 309 15
+nameposition -500 -500
+iconposition -500 -500
+defense normal6 0.5 0 0 0 0 0 0
+defense normal7 1.25 0 0 0 0 0 0
+defense normal8 0.25 0 0 0 0 0 0
+defense normal9 2 0 0 0 0 0 0
+defense normal19 0.25 0 0 0 0 0 0
+defense normal20 0 0 0 0 0 0 0
+defense burn 0.25 0 0 0 0 0 0
+defense schock 0.75 0 0 0 0 0 0
+load    ShadeFire
+load    Legion_bomb
+load	legion_die
+load Fire_Legion_blast
+
+diesound  data/sounds/chest.wav
+
+icon		data/chars/misc/bgmonster.gif
+
+palette          data/chars/legion/legion_core_palette.gif
+alternatepal     data/chars/legion/legion_core_blink_palette.gif
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	death
+	loop	0
+	offset	155 168
+	delay	14
+	subentity	legion_die
+	spawnframe	9 0 0 -69 0
+	frame	data/chars/legion/legion_core_death1a.gif
+	frame	data/chars/legion/legion_core_death1b.gif
+	frame	data/chars/legion/legion_core_death1c.gif
+	frame	data/chars/legion/legion_core_death1d.gif
+	frame	data/chars/legion/legion_core_death1e.gif
+	frame	data/chars/legion/legion_core_death1f.gif
+	frame	data/chars/legion/legion_core_death1g.gif
+	frame	data/chars/legion/legion_core_death1h.gif
+	sound	data/sounds/flame-dies.wav
+	frame	data/chars/legion/legion_core_death1i.gif
+	frame	data/chars/legion/legion_core_death1j.gif
+	frame	data/chars/legion/legion_core_death1k.gif
+	delay	100
+	frame	data/chars/legion/legion_core_death1l.gif
+	delay	1
+	movea	-1
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1l.gif
+	frame	data/chars/legion/legion_core_death1m.gif
+	frame	data/chars/legion/legion_core_death1m.gif
+	frame	data/chars/legion/legion_core_death1m.gif
+	frame	data/chars/legion/legion_core_death1m.gif
+	frame	data/chars/legion/legion_core_death1m.gif
+	frame	data/chars/legion/legion_core_death1m.gif
+	frame	data/chars/legion/legion_core_death1m.gif
+	frame	data/chars/legion/legion_core_death1m.gif
+	frame	data/chars/legion/legion_core_death1m.gif
+	frame	data/chars/legion/legion_core_death1m.gif
+	frame	data/chars/legion/legion_core_death1m.gif
+	frame	data/chars/legion/legion_core_death1m.gif
+	frame	data/chars/legion/legion_core_death1m.gif
+	frame	data/chars/legion/legion_core_death1m.gif
+	frame	data/chars/legion/legion_core_death1n.gif
+	frame	data/chars/legion/legion_core_death1n.gif
+	frame	data/chars/legion/legion_core_death1n.gif
+	frame	data/chars/legion/legion_core_death1n.gif
+	frame	data/chars/legion/legion_core_death1n.gif
+	frame	data/chars/legion/legion_core_death1n.gif
+	frame	data/chars/legion/legion_core_death1n.gif
+	frame	data/chars/legion/legion_core_death1n.gif
+	frame	data/chars/legion/legion_core_death1n.gif
+	frame	data/chars/legion/legion_core_death1n.gif
+	frame	data/chars/legion/legion_core_death1n.gif
+	frame	data/chars/legion/legion_core_death1n.gif
+	frame	data/chars/legion/legion_core_death1n.gif
+	frame	data/chars/legion/legion_core_death1n.gif
+	frame	data/chars/legion/legion_core_death1o.gif
+	frame	data/chars/legion/legion_core_death1o.gif
+	frame	data/chars/legion/legion_core_death1o.gif
+	frame	data/chars/legion/legion_core_death1o.gif
+	frame	data/chars/legion/legion_core_death1o.gif
+	frame	data/chars/legion/legion_core_death1o.gif
+	frame	data/chars/legion/legion_core_death1o.gif
+	frame	data/chars/legion/legion_core_death1o.gif
+	frame	data/chars/legion/legion_core_death1o.gif
+	frame	data/chars/legion/legion_core_death1o.gif
+	frame	data/chars/legion/legion_core_death1o.gif
+	frame	data/chars/legion/legion_core_death1o.gif
+	frame	data/chars/legion/legion_core_death1o.gif
+	frame	data/chars/legion/legion_core_death1o.gif
+	delay	70
+	frame	data/chars/misc/empty.gif
+	delay	7
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+@script
+    void self = getlocalvar("self");
+    int r = rand()%30;
+    int health = getentityproperty(self, "health");
+    int enemigos = openborvariant("count_enemies");
+
+    if( frame == 0){
+      if( enemigos <= 1 || health <= 200 ){
+      if( r > 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      } else if( r < -10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      }
+      }
+    }
+	@end_script	
+	loop	0
+	delay	14
+	offset	155 168
+	bbox	129 148 55 65
+	attack	129 148 55 65 19 0 1 0 0 0
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1b.gif
+	offset	155 166
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1c.gif
+	offset	155 164
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1b.gif
+	offset	155 166
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1c.gif
+	offset	155 168
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1b.gif
+	offset	155 166
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1c.gif
+	offset	155 164
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1b.gif
+	offset	155 166
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1c.gif
+	delay	1
+	@cmd	anichange "ANI_FOLLOW4"
+	attack	0 0 0 0
+	frame	data/chars/legion/legion_core1a.gif
+		
+anim	follow2
+	loop	0
+	delay	14
+	offset	155 168
+	bbox	129 148 55 65
+	attack	129 148 55 65 19 0 1 0 0 0
+	frame	data/chars/legion/legion_core5a.gif
+	frame	data/chars/legion/legion_core5a.gif
+	offset	155 166
+	frame	data/chars/legion/legion_core5a.gif
+	frame	data/chars/legion/legion_core5b.gif
+	offset	155 164
+	frame	data/chars/legion/legion_core5c.gif
+	frame	data/chars/legion/legion_core5d.gif
+	offset	155 166
+	delay	2
+	frame	data/chars/legion/legion_core5e.gif
+	delay	4
+	@cmd	targetB 120 32 -20 1
+	@cmd	toss2 "Legion_bomb" -81 75 3
+	frame	data/chars/legion/legion_core5f.gif
+	@cmd	targetB 120 32 -20 1
+	@cmd	toss2 "Legion_bomb" 85 75 3
+	frame	data/chars/legion/legion_core5f.gif
+	@cmd	targetB 120 32 -20 1
+	@cmd	toss2 "Legion_bomb" 42 95 3
+	frame	data/chars/legion/legion_core5f.gif
+	frame	data/chars/legion/legion_core5f.gif
+	delay	200
+	frame	data/chars/legion/legion_core5f.gif
+	delay	4
+	frame	data/chars/legion/legion_core5f.gif
+	@cmd	targetB 120 32 -20 1
+	@cmd	toss2 "Legion_bomb" -81 75 3
+	frame	data/chars/legion/legion_core5f.gif
+	@cmd	targetB 120 32 -20 1
+	@cmd	toss2 "Legion_bomb" 85 75 3
+	frame	data/chars/legion/legion_core5f.gif
+	@cmd	targetB 120 32 -20 1
+	@cmd	toss2 "Legion_bomb" 42 95 3
+	frame	data/chars/legion/legion_core5f.gif
+	frame	data/chars/legion/legion_core5f.gif
+	delay	14
+	frame	data/chars/legion/legion_core5e.gif
+	offset	155 168
+	frame	data/chars/legion/legion_core5d.gif
+	frame	data/chars/legion/legion_core5c.gif
+	offset	155 166
+	frame	data/chars/legion/legion_core5b.gif
+	frame	data/chars/legion/legion_core5a.gif
+	delay	1
+	@cmd	anichange "ANI_FOLLOW4"
+	attack	0 0 0 0
+	frame	data/chars/legion/legion_core5a.gif
+		
+anim	follow3
+	loop	0
+	delay	14
+	offset	155 168
+	bbox	129 148 55 65
+	attack	129 148 55 65 19 0 1 0 0 0
+	frame	data/chars/legion/legion_core4a.gif
+	frame	data/chars/legion/legion_core4b.gif
+	offset	155 166
+	frame	data/chars/legion/legion_core4c.gif
+	delay	2
+	frame	data/chars/legion/legion_core4d.gif
+	delay	4
+	@cmd	spawn01 "ShadeFire" -81 75 0
+	frame	data/chars/legion/legion_core4d.gif
+	@cmd	spawn01 "ShadeFire" 85 75 0
+	frame	data/chars/legion/legion_core4d.gif
+	@cmd	spawn01 "ShadeFire" -83 -96 0
+	frame	data/chars/legion/legion_core4d.gif
+	offset	155 164
+	@cmd	spawn01 "ShadeFire" 85 -96 0
+	frame	data/chars/legion/legion_core4e.gif
+	delay	10
+	frame	data/chars/legion/legion_core4e.gif
+	delay	14
+	frame	data/chars/legion/legion_core4f.gif
+	offset	155 166
+	frame	data/chars/legion/legion_core4c.gif
+	frame	data/chars/legion/legion_core4b.gif
+	offset	155 168
+	frame	data/chars/legion/legion_core4a.gif
+	frame	data/chars/legion/legion_core4a.gif
+	delay	1
+	@cmd	anichange "ANI_FOLLOW4"
+	attack	0 0 0 0
+	frame	data/chars/legion/legion_core4a.gif
+		
+anim	follow4
+@script
+    void self = getlocalvar("self");
+    int r = rand()%30;
+    int health = getentityproperty(self, "health");
+    int enemigos = openborvariant("count_enemies");
+
+    if( frame == 0){
+      if( enemigos <= 1 || health <= 200 ){
+      if( r > 0){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW5"));
+      }
+      }
+    }
+	@end_script	
+	loop	0
+	delay	14
+	offset	155 168
+	bbox	129 148 55 65
+	attack	129 148 55 65 19 0 1 0 0 0
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1b.gif
+	offset	155 166
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1c.gif
+	offset	155 164
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1b.gif
+	offset	155 166
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1c.gif
+	offset	155 168
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1b.gif
+	offset	155 166
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1c.gif
+	offset	155 164
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1b.gif
+	offset	155 166
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1c.gif
+	delay	1
+	@cmd	anichange "ANI_FOLLOW1"
+	attack	0 0 0 0
+	frame	data/chars/legion/legion_core1a.gif
+		
+anim	follow5
+	loop	0
+	delay	14
+	offset	155 168
+	bbox	129 148 55 65
+	attack	129 148 55 65 19 0 1 0 0 0
+	frame	data/chars/legion/legion_core6a.gif
+	frame	data/chars/legion/legion_core6b.gif
+	offset	155 166
+	frame	data/chars/legion/legion_core6c.gif
+	frame	data/chars/legion/legion_core6d.gif
+	frame	data/chars/legion/legion_core6d.gif
+	frame	data/chars/legion/legion_core6d.gif
+	offset	155 164
+	@cmd	spawn01 "Fire_Legion_blast" 0 -120 0
+	frame	data/chars/legion/legion_core6e.gif
+	frame	data/chars/legion/legion_core6f.gif
+	offset	155 166
+	frame	data/chars/legion/legion_core6c.gif
+	frame	data/chars/legion/legion_core6b.gif
+	offset	155 168
+	frame	data/chars/legion/legion_core6a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	delay	1
+	@cmd	anichange "ANI_FOLLOW1"
+	attack	0 0 0 0
+	frame	data/chars/legion/legion_core1a.gif
+		
+anim	idle
+	loop	1
+	delay	14
+	offset	155 168
+	bbox	129 148 55 65
+	attack	129 148 55 65 19 0 1 0 0 0
+	frame	data/chars/legion/legion_core1a.gif
+	@cmd	attack0 "ANI_FOLLOW1"
+	frame	data/chars/legion/legion_core1a.gif
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/legion/legion_core1a.gif
+		
+anim	spawn
+	loop	0
+	offset	155 168
+	movea	1
+	delay	50
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	delay	1
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	delay	1
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	delay	1
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	delay	1
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	delay	1
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	delay	1
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	delay	1
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	delay	1
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	delay	1
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	delay	1
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	delay	1
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	delay	1
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	delay	1
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	delay	1
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	delay	1
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	frame	data/chars/legion/legion_core1b.gif
+	delay	1
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	frame	data/chars/legion/legion_core1c.gif
+	delay	1
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+	frame	data/chars/legion/legion_core1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

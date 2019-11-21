@@ -1,0 +1,40 @@
+name		PBomrade
+type		none
+candamage	enemy obstacle
+#speed		10
+lifespan	5
+subject_to_gravity  0
+subject_to_platform 0
+
+
+anim idle
+@script
+    void self = getlocalvar("self"); //Get calling entity
+    int Dir = getentityproperty(self, "direction");
+    int Vx = getentityproperty(self, "xdir");
+    int Vy = getentityproperty(self, "tossv");
+    int Rev;
+
+    if(Dir==0){
+      Rev = 1;
+    } else {
+      Rev = -1;
+    }
+    
+    if(frame==3 || frame==7){
+      changeentityproperty(self, "velocity", Vx+Rev, 0, Vy-0.65);
+    }
+@end_script
+	loop	1
+	delay	6
+	offset  11 14
+	attack  3 4 20 20 10 1 0 0 0
+	frame	data/chars/misc/subweap/bumerad1.png
+	frame	data/chars/misc/subweap/bumerad2.png
+	frame	data/chars/misc/subweap/bumerad3.png
+	frame	data/chars/misc/subweap/bumerad4.png
+	frame	data/chars/misc/subweap/bumerad5.png
+	frame	data/chars/misc/subweap/bumerad6.png
+	frame	data/chars/misc/subweap/bumerad7.png
+	attack  0
+	frame	data/chars/misc/subweap/bumerad8.png

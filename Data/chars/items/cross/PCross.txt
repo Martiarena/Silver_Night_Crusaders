@@ -1,0 +1,42 @@
+name		PCross
+type		none
+candamage	enemy obstacle  shot
+speed		10
+lifespan	10
+remove		0
+subject_to_platform 0
+
+palette		data/chars/items/cross/cross_palette.gif
+
+
+
+
+anim	idle
+@script
+    void self = getlocalvar("self"); //Get calling entity
+    int Vx = getentityproperty(self, "speed");
+
+    if(frame==3){
+      changeentityproperty(self, "speed", Vx-0.125);
+    }
+	@end_script	
+	loop	1
+	delay	1
+	offset	13 13
+	attack3	2 2 22 22 6 0 0 0 0 0
+	frame	data/chars/items/cross/cross1.gif
+	frame	data/chars/items/cross/cross1a.gif
+	frame	data/chars/items/cross/cross1.gif
+	frame	data/chars/items/cross/cross2a.gif
+	frame	data/chars/items/cross/cross2.gif
+	frame	data/chars/items/cross/cross2a.gif
+	frame	data/chars/items/cross/cross3.gif
+	frame	data/chars/items/cross/cross3a.gif
+	frame	data/chars/items/cross/cross3.gif
+	frame	data/chars/items/cross/cross4a.gif
+	frame	data/chars/items/cross/cross4.gif
+	attack3	0
+	frame	data/chars/items/cross/cross4a.gif
+		
+#|edited by openBor Stats v 0.67
+		

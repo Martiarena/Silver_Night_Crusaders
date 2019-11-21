@@ -1,0 +1,1000 @@
+name		 Fran
+type		 player
+health		 100
+mp		 100
+mprate           2
+speed		 14
+running 14 3 1 0 0
+cantgrab	 1
+jumpmove  3
+knockdowncount   10
+jumpheight	 3
+noquake		 1
+bounce		 0
+death		 1
+nodieblink	 2
+icon		 data/chars/fran/icon.gif
+antigravity	 20
+makeinv		 3 0
+gfxshadow	0
+subject_to_wall  1
+subject_to_platform 1
+weapons         Soul_Bat Fran
+diesound	data/sounds/fran_death.wav
+defense normal20 0 1 999 0 0 0 0
+
+candamage       enemy obstacle shot
+
+palette		 data/chars/fran/palette1.gif
+
+alternatepal	data/chars/fran/palette2.gif
+alternatepal	data/chars/fran/palette3.gif
+alternatepal	data/chars/fran/palette4.gif
+alternatepal	data/chars/fran/palette5.gif
+alternatepal	data/chars/fran/palette6.gif
+alternatepal	data/chars/fran/palette7.gif
+alternatepal	data/chars/fran/palette8.gif
+
+animationscript	 data/scripts/player.c
+keyscript	 data/chars/fran/frankey.c
+takedamagescript data/scripts/invis.c
+
+atchain		 1 2 1 2
+
+com	a2	freespecial4
+com	a3	freespecial3
+com	a4	freespecial2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	delay	4
+	offset	55 63
+	bbox	47 15 15 45
+	@cmd	keyint "ANI_FOLLOW5" 0 "U" 0
+	frame	data/chars/fran/attack1.gif
+	delay	1
+	sound	data/sounds/throw_medium.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack2	70 15 50 17 9 0 0 0 0 0
+	frame	data/chars/fran/attack2a.gif
+	frame	data/chars/fran/attack2.gif
+	frame	data/chars/fran/attack2a.gif
+	frame	data/chars/fran/attack2.gif
+	frame	data/chars/fran/attack2a.gif
+	frame	data/chars/fran/attack2.gif
+	frame	data/chars/fran/attack3a.gif
+	frame	data/chars/fran/attack3.gif
+	frame	data/chars/fran/attack3a.gif
+	frame	data/chars/fran/attack3.gif
+	frame	data/chars/fran/attack3a.gif
+	frame	data/chars/fran/attack3.gif
+	frame	data/chars/fran/attack4.gif
+	frame	data/chars/fran/attack3a.gif
+	frame	data/chars/fran/attack4.gif
+	frame	data/chars/fran/attack3a.gif
+	frame	data/chars/fran/attack4.gif
+	frame	data/chars/fran/attack3a.gif
+	attack2	0 0 0 0
+	frame	data/chars/fran/attack5.gif
+	frame	data/chars/fran/attack5a.gif
+	frame	data/chars/fran/attack5.gif
+	frame	data/chars/fran/attack5a.gif
+	frame	data/chars/fran/attack5.gif
+	frame	data/chars/fran/attack5a.gif
+	frame	data/chars/fran/attack6.gif
+	frame	data/chars/fran/attack6a.gif
+	frame	data/chars/fran/attack6.gif
+	frame	data/chars/fran/attack6a.gif
+	frame	data/chars/fran/attack6.gif
+	delay	2
+	frame	data/chars/fran/attack6a.gif
+		
+anim	attack2
+	delay	4
+	offset	55 63
+	bbox	47 15 15 45
+	@cmd	keyint "ANI_FOLLOW5" 0 "U" 0
+	sound	data/sounds/fran_attack1.wav
+	sound	data/sounds/throw_medium.wav
+	frame	data/chars/fran/attack1.gif
+	delay	1
+	hitfx	data/sounds/hit-cut.wav
+	attack2	70 15 50 17 9 0 0 0 0 0
+	frame	data/chars/fran/attack2a.gif
+	frame	data/chars/fran/attack2.gif
+	frame	data/chars/fran/attack2a.gif
+	frame	data/chars/fran/attack2.gif
+	frame	data/chars/fran/attack2a.gif
+	frame	data/chars/fran/attack2.gif
+	frame	data/chars/fran/attack3a.gif
+	frame	data/chars/fran/attack3.gif
+	frame	data/chars/fran/attack3a.gif
+	frame	data/chars/fran/attack3.gif
+	frame	data/chars/fran/attack3a.gif
+	frame	data/chars/fran/attack3.gif
+	frame	data/chars/fran/attack4.gif
+	frame	data/chars/fran/attack3a.gif
+	frame	data/chars/fran/attack4.gif
+	frame	data/chars/fran/attack3a.gif
+	frame	data/chars/fran/attack4.gif
+	frame	data/chars/fran/attack3a.gif
+	attack2	0 0 0 0
+	frame	data/chars/fran/attack5.gif
+	frame	data/chars/fran/attack5a.gif
+	frame	data/chars/fran/attack5.gif
+	frame	data/chars/fran/attack5a.gif
+	frame	data/chars/fran/attack5.gif
+	frame	data/chars/fran/attack5a.gif
+	frame	data/chars/fran/attack6.gif
+	frame	data/chars/fran/attack6a.gif
+	frame	data/chars/fran/attack6.gif
+	frame	data/chars/fran/attack6a.gif
+	frame	data/chars/fran/attack6.gif
+	delay	2
+	frame	data/chars/fran/attack6a.gif
+		
+anim	bpain
+	loop	0
+	delay	9
+	offset	55 63
+	jumpframe	0 1.5 -1
+	bbox	47 18 15 45
+	sound	data/sounds/fran_pain.wav
+	@cmd	spawnbind "Hflame" 0 10 1
+	frame	data/chars/fran/painf1.gif
+	frame	data/chars/fran/painf2.gif
+	frame	data/chars/fran/painf3.gif
+		
+anim	burn
+	delay	5
+	offset	55 63
+	sound	data/sounds/fran_pain.wav
+	@cmd	spawnbind "Hflame" -10 30 1
+	frame	data/chars/fran/fallf1.gif
+	frame	data/chars/fran/fallf2.gif
+	frame	data/chars/fran/fallf3.gif
+	frame	data/chars/fran/fallf4.gif
+	@cmd	platform 1
+	frame	data/chars/fran/fallf3.gif
+	frame	data/chars/fran/fallf4.gif
+		
+anim	death
+	delay	7
+	offset	55 63
+	jumpframe	0 3 -1
+	frame	data/chars/fran/death1.gif
+	frame	data/chars/fran/death2.gif
+	frame	data/chars/fran/death3.gif
+	frame	data/chars/fran/death4.gif
+	frame	data/chars/fran/death5.gif
+	frame	data/chars/fran/death6.gif
+	frame	data/chars/fran/death7.gif
+	frame	data/chars/fran/death8.gif
+	frame	data/chars/fran/death9.gif
+	frame	data/chars/fran/death10.gif
+	frame	data/chars/fran/death11.gif
+	delay	100
+	frame	data/chars/misc/empty.gif
+		
+anim	duck
+	loop	0
+	delay	8
+	offset	55 63
+	bbox	45 35 15 25
+	cancel	0 2 0 a2 freespecial6
+	frame	data/chars/fran/duck4.gif
+		
+anim	duckattack
+	loop	0
+	delay	5
+	offset	55 63
+	bbox	45 35 15 25
+	frame	data/chars/fran/duck4.gif
+	frame	data/chars/fran/duckattack1.gif
+	delay	1
+	hitfx	data/sounds/hit-cut.wav
+	sound	data/sounds/throw_medium.wav
+	attack2	65 30 60 15 9 0 1 0 0 0
+	frame	data/chars/fran/duckattack2.gif
+	frame	data/chars/fran/duckattack2a.gif
+	frame	data/chars/fran/duckattack2.gif
+	frame	data/chars/fran/duckattack2a.gif
+	frame	data/chars/fran/duckattack2.gif
+	frame	data/chars/fran/duckattack2a.gif
+	frame	data/chars/fran/duckattack3.gif
+	frame	data/chars/fran/duckattack3a.gif
+	frame	data/chars/fran/duckattack3.gif
+	frame	data/chars/fran/duckattack3a.gif
+	frame	data/chars/fran/duckattack3.gif
+	frame	data/chars/fran/duckattack3a.gif
+	frame	data/chars/fran/duckattack4.gif
+	frame	data/chars/fran/duckattack4a.gif
+	frame	data/chars/fran/duckattack4.gif
+	frame	data/chars/fran/duckattack4a.gif
+	frame	data/chars/fran/duckattack4.gif
+	frame	data/chars/fran/duckattack4a.gif
+	frame	data/chars/fran/duckattack5.gif
+	frame	data/chars/fran/duckattack5a.gif
+	frame	data/chars/fran/duckattack5.gif
+	frame	data/chars/fran/duckattack5a.gif
+	frame	data/chars/fran/duckattack5.gif
+	attack2	0
+	frame	data/chars/fran/duckattack5a.gif
+	delay	2
+	frame	data/chars/fran/duckattack5a.gif
+		
+anim	fall
+	delay	5
+	offset	55 63
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/fall1.gif
+	frame	data/chars/fran/fall2.gif
+	frame	data/chars/fran/fall3.gif
+	frame	data/chars/fran/fall4.gif
+	@cmd	platform 1
+	frame	data/chars/fran/fall3.gif
+	frame	data/chars/fran/fall4.gif
+		
+anim	fall17
+	delay	5
+	offset	55 63
+	@cmd	spawnbind "blooda" 0 36 1
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/fall1.gif
+	frame	data/chars/fran/fall2.gif
+	frame	data/chars/fran/fall3.gif
+	frame	data/chars/fran/fall4.gif
+	@cmd	platform 1
+	frame	data/chars/fran/fall3.gif
+	frame	data/chars/fran/fall4.gif
+		
+anim	fall2
+	delay	5
+	offset	55 63
+	@cmd	spawnbind "blooda" 0 36 1
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/fall1.gif
+	frame	data/chars/fran/fall2.gif
+	frame	data/chars/fran/fall3.gif
+	frame	data/chars/fran/fall4.gif
+	@cmd	platform 1
+	frame	data/chars/fran/fall3.gif
+	frame	data/chars/fran/fall4.gif
+		
+anim	fall7
+	delay	5
+	offset	55 63
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/falli1.gif
+	frame	data/chars/fran/falli2.gif
+	frame	data/chars/fran/falli3.gif
+	frame	data/chars/fran/falli4.gif
+	@cmd	platform 1
+	frame	data/chars/fran/falli3.gif
+	frame	data/chars/fran/falli4.gif
+		
+anim	fall8
+	delay	5
+	offset	55 63
+	@cmd	spawnbind "prose" 4 32 1
+	@cmd	spawnbind "blooda" 0 36 1
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/fall1.gif
+	frame	data/chars/fran/fall2.gif
+	frame	data/chars/fran/fall3.gif
+	frame	data/chars/fran/fall4.gif
+	@cmd	platform 1
+	frame	data/chars/fran/fall3.gif
+	frame	data/chars/fran/fall4.gif
+		
+anim	follow1
+	delay	7
+	jumpframe	0 3 -1 0
+	offset	55 63
+	bbox	50 15 15 35
+	frame	data/chars/fran/jump4.gif
+	frame	data/chars/fran/jump5.gif
+	delay	6
+	frame	data/chars/fran/jump6.gif
+	frame	data/chars/fran/jump7.gif
+	frame	data/chars/fran/jump8.gif
+		
+anim	follow2
+	delay	10
+	offset	55 63
+	followanim	1
+	followcond	1
+	jumpframe	1 -4 3 0
+	bbox	45 15 20 25
+	attack	65 42 15 15 3 0 0 0 0 0
+	frame	data/chars/fran/kick1.gif
+	frame	data/chars/fran/kick2.gif
+	delay	100
+	frame	data/chars/fran/kick3.gif
+		
+anim	follow3
+	delay	10
+	followanim	1
+	followcond	1
+	jumpframe	1 -5 0 0
+	offset	55 63
+	bbox	45 15 20 20
+	attack	45 42 20 25 3 0 0 0 0 0
+	frame	data/chars/fran/kick1a.gif
+	frame	data/chars/fran/kick2a.gif
+	delay	100
+	frame	data/chars/fran/kick3a.gif
+		
+anim	follow4
+	cancel	0 5 0 a2 freespecial7
+	cancel	0 5 0 a3 freespecial3
+	cancel	0 5 0 a4 freespecial10
+	delay	7
+	offset	55 63
+	bbox	45 15 15 35
+	frame	data/chars/fran/jump4.gif
+	frame	data/chars/fran/jump5.gif
+	@cmd	platform 1
+	frame	data/chars/fran/jump6.gif
+	frame	data/chars/fran/jump7.gif
+	frame	data/chars/fran/jump8.gif
+		
+anim	follow5
+	delay	7
+	offset	55 63
+	bbox	48 20 15 40
+	@cmd	platform 1
+	@cmd	limiterSub
+	@cmd	limiter 10
+	frame	data/chars/fran/weapon1.gif
+	frame	data/chars/fran/weapon2.gif
+	@cmd	mpcost 10
+	@cmd	SubWeapon 23 35
+	frame	data/chars/fran/weapon3.gif
+	frame	data/chars/fran/weapon4.gif
+	frame	data/chars/fran/weapon5.gif
+		
+anim	freespecial10
+	delay	1
+	offset	55 63
+	bbox	47 15 15 45
+	@cmd	keyint "ANI_FREESPECIAL11" 0 "U" 0
+	@cmd	platform 1
+	@cmd	limiter 1
+	frame	data/chars/fran/jumpweapon1.gif
+	delay	7
+	frame	data/chars/fran/jumpweapon1.gif
+	@cmd	floater 35
+	@cmd	mpcost 10
+	@cmd	spawn01 "fireseal" 16 29 0
+	@cmd	shoot "fb01" 16 29 0
+	sound	data/sounds/fran_attack3.wav
+	frame	data/chars/fran/jumpweapon2.gif
+	frame	data/chars/fran/jumpweapon3.gif
+	frame	data/chars/fran/jumpweapon4.gif
+	frame	data/chars/fran/jumpweapon5.gif
+	delay	6
+	frame	data/chars/fran/jump6.gif
+	frame	data/chars/fran/jump7.gif
+	frame	data/chars/fran/jump8.gif
+		
+anim	freespecial11
+	delay	1
+	offset	55 63
+	bbox	47 15 15 45
+	@cmd	platform 1
+	@cmd	limiter 29
+	frame	data/chars/fran/jumpweapon1.gif
+	delay	7
+	frame	data/chars/fran/jumpweapon1.gif
+	@cmd	floater 35
+	@cmd	mpcost 30
+	@cmd	spawn01 "fireseal" 16 29 0
+	@cmd	shoot "fb02" 16 29 0
+	sound	data/sounds/fran_special2.wav
+	frame	data/chars/fran/jumpweapon2.gif
+	frame	data/chars/fran/jumpweapon3.gif
+	frame	data/chars/fran/jumpweapon4.gif
+	frame	data/chars/fran/jumpweapon5.gif
+	delay	6
+	frame	data/chars/fran/jump6.gif
+	frame	data/chars/fran/jump7.gif
+	frame	data/chars/fran/jump8.gif
+		
+anim	freespecial12
+	cancel	0 18 0 a2 freespecial7
+	cancel	0 18 0 a3 freespecial3
+	cancel	0 18 0 a4 freespecial10
+	offset	55 63
+	bbox	45 15 20 35
+	delay	12
+	@cmd	platform 1
+	frame	data/chars/fran/doublejump1.gif
+	frame	data/chars/fran/doublejump2.gif
+	frame	data/chars/fran/doublejump3.gif
+	frame	data/chars/fran/doublejump4.gif
+	bbox	45 15 15 40
+	delay	7
+	frame	data/chars/fran/jump4.gif
+	frame	data/chars/fran/jump5.gif
+	delay	6
+	frame	data/chars/fran/jump6.gif
+	frame	data/chars/fran/jump7.gif
+	frame	data/chars/fran/jump8.gif
+		
+anim	freespecial2
+	delay	1
+	offset	55 63
+	bbox	47 15 15 45
+	@cmd	keyint "ANI_FREESPECIAL5" 0 "U" 0
+	@cmd	limiter 10
+	frame	data/chars/fran/weapon1.gif
+	delay	7
+	frame	data/chars/fran/weapon1.gif
+	@cmd	floater 35
+	@cmd	mpcost 10
+	@cmd	spawn01 "fireseal" 16 29 0
+	@cmd	shoot "fb01" 16 29 0
+	sound	data/sounds/fran_attack3.wav
+	frame	data/chars/fran/weapon2.gif
+	frame	data/chars/fran/weapon3.gif
+	frame	data/chars/fran/weapon4.gif
+	frame	data/chars/fran/weapon5.gif
+		
+anim	freespecial3
+	loop	0
+	delay	1
+	offset	55 63
+	sound	data/sounds/transform.wav
+	frame	data/chars/fran/idle1.gif
+	frame	data/chars/fran/battransform1.gif
+	frame	data/chars/fran/battransform2.gif
+	frame	data/chars/fran/battransform3.gif
+	frame	data/chars/fran/battransform4.gif
+	delay	1
+	weaponframe	5 1
+	frame	data/chars/fran/batwalk1.gif
+	frame	data/chars/fran/batwalk1.gif
+		
+anim	freespecial4
+	delay	7
+	offset	55 63
+	bbox	48 20 15 40
+	@cmd	platform 1
+	@cmd	limiterSub
+	@cmd	limiter 10
+	frame	data/chars/fran/weapon1.gif
+	frame	data/chars/fran/weapon2.gif
+	@cmd	mpcost 10
+	@cmd	SubWeapon 23 35
+	frame	data/chars/fran/weapon3.gif
+	frame	data/chars/fran/weapon4.gif
+	frame	data/chars/fran/weapon5.gif
+		
+anim	freespecial5
+	delay	1
+	offset	55 63
+	bbox	47 15 15 45
+	@cmd	limiter 29
+	frame	data/chars/fran/weapon1.gif
+	delay	7
+	frame	data/chars/fran/weapon1.gif
+	@cmd	floater 35
+	@cmd	mpcost 30
+	@cmd	spawn01 "fireseal" 16 29 0
+	@cmd	shoot "fb02" 16 29 0
+	sound	data/sounds/fran_special2.wav
+	frame	data/chars/fran/weapon2.gif
+	frame	data/chars/fran/weapon3.gif
+	frame	data/chars/fran/weapon4.gif
+	frame	data/chars/fran/weapon5.gif
+		
+anim	freespecial6
+	delay	8
+	offset	55 63
+	bbox	45 30 15 25
+	frame	data/chars/fran/duckweapon1.gif
+	@cmd	limiterSub
+	@cmd	limiter 10
+	frame	data/chars/fran/duckweapon2.gif
+	@cmd	mpcost 10
+	@cmd	SubWeapon 17 22
+	frame	data/chars/fran/duckweapon3.gif
+	frame	data/chars/fran/duckweapon4.gif
+	frame	data/chars/fran/duckweapon5.gif
+	delay	8
+	frame	data/chars/fran/duckweapon5.gif
+		
+anim	freespecial7
+	delay	7
+	offset	55 63
+	bbox	48 15 15 40
+	@cmd	platform 1
+	@cmd	limiterSub
+	@cmd	limiter 10
+	frame	data/chars/fran/jumpweapon1.gif
+	frame	data/chars/fran/jumpweapon2.gif
+	@cmd	mpcost 10
+	@cmd	SubWeapon 23 35
+	frame	data/chars/fran/jumpweapon3.gif
+	frame	data/chars/fran/jumpweapon4.gif
+	frame	data/chars/fran/jumpweapon5.gif
+	delay	6
+	frame	data/chars/fran/jump6.gif
+	frame	data/chars/fran/jump7.gif
+	frame	data/chars/fran/jump8.gif
+		
+anim	idle
+	loop	1
+	delay	17
+	offset	55 63
+	bbox	47 15 15 45
+	frame	data/chars/fran/idle1.gif
+	frame	data/chars/fran/idle2.gif
+	frame	data/chars/fran/idle3.gif
+	frame	data/chars/fran/idle4.gif
+		
+anim	jump
+	cancel	0 9 0 a2 freespecial7
+	cancel	0 9 0 a3 freespecial3
+	cancel	0 9 0 a4 freespecial10
+	delay	7
+	offset	55 63
+	bbox	47 15 15 45
+	frame	data/chars/fran/jump1.gif
+	@cmd	platform 1
+	frame	data/chars/fran/jump2.gif
+	frame	data/chars/fran/jump3.gif
+	frame	data/chars/fran/jump4.gif
+	frame	data/chars/fran/jump5.gif
+	delay	6
+	frame	data/chars/fran/jump6.gif
+	frame	data/chars/fran/jump7.gif
+	frame	data/chars/fran/jump8.gif
+		
+anim	jumpattack
+	cancel	25 29 0 a2 freespecial7
+	cancel	25 29 0 a3 freespecial3
+	cancel	25 29 0 a4 freespecial10
+	delay	5
+	offset	55 63
+	bbox	50 15 15 45
+	sound	data/sounds/fran_attack1.wav
+	frame	data/chars/fran/jumpattack1.gif
+	sound	data/sounds/throw_medium.wav
+	delay	1
+	hitfx	data/sounds/hit-cut.wav
+	attack2	70 15 50 15 9 0 0 0 0 0
+	frame	data/chars/fran/jumpattack2.gif
+	frame	data/chars/fran/jumpattack2a.gif
+	frame	data/chars/fran/jumpattack2.gif
+	frame	data/chars/fran/jumpattack2a.gif
+	frame	data/chars/fran/jumpattack2.gif
+	frame	data/chars/fran/jumpattack2a.gif
+	frame	data/chars/fran/jumpattack3.gif
+	frame	data/chars/fran/jumpattack3a.gif
+	frame	data/chars/fran/jumpattack3.gif
+	frame	data/chars/fran/jumpattack3a.gif
+	frame	data/chars/fran/jumpattack3.gif
+	frame	data/chars/fran/jumpattack3a.gif
+	frame	data/chars/fran/jumpattack4.gif
+	frame	data/chars/fran/jumpattack4a.gif
+	frame	data/chars/fran/jumpattack4.gif
+	frame	data/chars/fran/jumpattack4a.gif
+	frame	data/chars/fran/jumpattack4.gif
+	frame	data/chars/fran/jumpattack4a.gif
+	delay	2
+	frame	data/chars/fran/jumpattack5.gif
+	frame	data/chars/fran/jumpattack5a.gif
+	frame	data/chars/fran/jumpattack5.gif
+	frame	data/chars/fran/jumpattack5a.gif
+	frame	data/chars/fran/jumpattack5.gif
+	frame	data/chars/fran/jumpattack5a.gif
+	attack2	0
+	bbox	50 15 15 45
+	delay	6
+	frame	data/chars/fran/jump6.gif
+	frame	data/chars/fran/jump7.gif
+	frame	data/chars/fran/jump8.gif
+		
+anim	jumpattack3
+	delay	7
+	offset	55 63
+	bbox	48 15 15 40
+	@cmd	platform 1
+	@cmd	limiterSub
+	@cmd	limiter 10
+	frame	data/chars/fran/jumpweapon1.gif
+	frame	data/chars/fran/jumpweapon2.gif
+	@cmd	mpcost 10
+	@cmd	SubWeapon 23 35
+	frame	data/chars/fran/jumpweapon3.gif
+	frame	data/chars/fran/jumpweapon4.gif
+	frame	data/chars/fran/jumpweapon5.gif
+	delay	6
+	frame	data/chars/fran/jump6.gif
+	frame	data/chars/fran/jump7.gif
+	frame	data/chars/fran/jump8.gif
+		
+anim	jumpland
+	loop	0
+	delay	2
+	offset	55 63
+	bbox	47 18 15 45
+	sound	data/sounds/land.wav
+	frame	data/chars/fran/land1.gif
+	frame	data/chars/fran/land2.gif
+	frame	data/chars/fran/land3.gif
+		
+anim	pain
+	loop	0
+	delay	9
+	offset	55 63
+	jumpframe	0 1.5 -1
+	bbox	47 18 15 45
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/pain1.gif
+	frame	data/chars/fran/pain2.gif
+	frame	data/chars/fran/pain3.gif
+		
+anim	pain17
+	loop	0
+	delay	9
+	offset	55 63
+	jumpframe	0 1.5 -1
+	@cmd	spawnbind "blooda" 0 36 1
+	bbox	47 18 15 45
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/pain1.gif
+	frame	data/chars/fran/pain2.gif
+	frame	data/chars/fran/pain3.gif
+		
+anim	pain2
+	loop	0
+	delay	9
+	offset	55 63
+	jumpframe	0 1.5 -1
+	@cmd	spawnbind "blooda" 0 36 1
+	bbox	47 18 15 45
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/pain1.gif
+	frame	data/chars/fran/pain2.gif
+	frame	data/chars/fran/pain3.gif
+		
+anim	pain7
+	loop	0
+	delay	9
+	offset	55 63
+	jumpframe	0 1.5 -1
+	bbox	47 18 15 45
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/paini1.gif
+	frame	data/chars/fran/paini2.gif
+	frame	data/chars/fran/paini3.gif
+		
+anim	pain8
+	loop	0
+	delay	9
+	offset	55 63
+	jumpframe	0 1.5 -1
+	@cmd	spawnbind "blooda" 0 36 1
+	@cmd	spawnbind "prose" 4 32 1
+	bbox	47 18 15 45
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/pain1.gif
+	frame	data/chars/fran/pain2.gif
+	frame	data/chars/fran/pain3.gif
+		
+anim	rise
+	loop	0
+	delay	8
+	offset	55 63
+	frame	data/chars/fran/duck2.gif
+	frame	data/chars/fran/duck1.gif
+		
+anim	run
+	loop	1
+	delay	10
+	offset	55 63
+	bbox	47 18 15 45
+	frame	data/chars/fran/walk1.gif
+	frame	data/chars/fran/walk2.gif
+	frame	data/chars/fran/walk3.gif
+	frame	data/chars/fran/walk4.gif
+	frame	data/chars/fran/walk5.gif
+	frame	data/chars/fran/walk6.gif
+		
+anim	select
+	loop	0
+	delay	4
+	offset	3 -1
+	frame	data/chars/fran/select1a.gif
+	delay	1
+	frame	data/chars/fran/select1b.gif
+	frame	data/chars/fran/select1c.gif
+	frame	data/chars/fran/select1b.gif
+	frame	data/chars/fran/select1c.gif
+	frame	data/chars/fran/select1b.gif
+	frame	data/chars/fran/select1c.gif
+	frame	data/chars/fran/select1b.gif
+	frame	data/chars/fran/select1d.gif
+	frame	data/chars/fran/select1e.gif
+	frame	data/chars/fran/select1d.gif
+	frame	data/chars/fran/select1e.gif
+	frame	data/chars/fran/select1d.gif
+	frame	data/chars/fran/select1f.gif
+	frame	data/chars/fran/select1e.gif
+	frame	data/chars/fran/select1f.gif
+	frame	data/chars/fran/select1e.gif
+	frame	data/chars/fran/select1f.gif
+	frame	data/chars/fran/select1e.gif
+	frame	data/chars/fran/select1g.gif
+	frame	data/chars/fran/select1h.gif
+	frame	data/chars/fran/select1g.gif
+	frame	data/chars/fran/select1h.gif
+	frame	data/chars/fran/select1g.gif
+	frame	data/chars/fran/select1h.gif
+	frame	data/chars/fran/select1i.gif
+	frame	data/chars/fran/select1j.gif
+	frame	data/chars/fran/select1i.gif
+	frame	data/chars/fran/select1j.gif
+	frame	data/chars/fran/select1i.gif
+	delay	4
+	frame	data/chars/fran/select1j.gif
+	delay	17
+	offset	0 -1
+	frame	data/chars/fran/waiting1a.gif
+	frame	data/chars/fran/waiting1b.gif
+	frame	data/chars/fran/waiting1c.gif
+	frame	data/chars/fran/waiting1d.gif
+	offset	3 -1
+	frame	data/chars/fran/ready1a.gif
+		
+anim	shock
+	delay	5
+	offset	55 63
+	sound	data/sounds/fran_pain.wav
+	@cmd	spawnbind "Hshock" -10 23 1
+	frame	data/chars/fran/fallt1.gif
+	frame	data/chars/fran/fallt2.gif
+	frame	data/chars/fran/fallt3.gif
+	frame	data/chars/fran/fallt4.gif
+	@cmd	platform 1
+	frame	data/chars/fran/fallt3.gif
+	frame	data/chars/fran/fallt4.gif
+		
+anim	slide
+@script
+    void self = getlocalvar("self");
+    int x = getentityproperty(self, "x");
+    int y = getentityproperty(self, "a");
+    int z = getentityproperty(self, "z");
+    int b = getentityproperty(self, "base");
+    void Plat = checkplatformbelow(x, z, y+2);
+
+    int iPIndex = getentityproperty(self,"playerindex");
+    void iLeft = playerkeys(iPIndex, 0, "moveleft");
+    void iRight = playerkeys(iPIndex, 0, "moveright");
+
+    if(getentityproperty(Plat,"name")!="Thick"){
+      if(y > 0 && frame == 0 && !iLeft && !iRight){
+        changeentityproperty(self, "Subject_to_Platform", 0);
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+        changeentityproperty(self, "aiflag", "jumping", 1);
+        changeentityproperty(self, "takeaction", "common_jump");
+      }
+    }
+
+    if(y > b && frame > 0){
+      changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+      changeentityproperty(self, "aiflag", "jumping", 1);
+      changeentityproperty(self, "takeaction", "common_jump");
+    }
+	@end_script	
+	delay	8
+	offset	55 63
+	bbox	47 35 15 27
+	sound	data/sounds/slide1.wav
+	frame	data/chars/fran/duck4.gif
+	delay	10
+	@cmd	dasher 2 0 0 1
+	bbox	45 40 20 23
+	attack	60 55 32 14 9 0 1 0 0 0
+	frame	data/chars/fran/slide1.gif
+	delay	20
+	frame	data/chars/fran/slide2.gif
+	delay	10
+	frame	data/chars/fran/slide3.gif
+	delay	8
+	attack	0
+	@cmd	dasher 0 0 0 1
+	bbox	47 35 15 27
+	frame	data/chars/fran/duck3.gif
+		
+anim	spain
+	loop	0
+	delay	9
+	offset	55 63
+	jumpframe	0 1.5 -1
+	bbox	47 18 15 45
+	sound	data/sounds/fran_pain.wav
+	@cmd	spawnbind "Hshock" 0 30 1
+	frame	data/chars/fran/paint1.gif
+	frame	data/chars/fran/paint2.gif
+	frame	data/chars/fran/paint3.gif
+		
+anim	special
+	loop	0
+	delay	7
+	offset	55 63
+	frame	data/chars/fran/dash1.gif
+	mpcost	0
+	delay	1
+	move	1
+	sound	data/sounds/slide.wav
+	frame	data/chars/fran/dash2.gif
+	frame	data/chars/fran/dash2.gif
+	frame	data/chars/fran/dash2.gif
+	frame	data/chars/fran/dash2.gif
+	frame	data/chars/fran/dash2.gif
+	frame	data/chars/fran/dash2.gif
+	frame	data/chars/fran/dash2.gif
+	move	3
+	frame	data/chars/fran/dash3.gif
+	frame	data/chars/fran/dash3.gif
+	frame	data/chars/fran/dash3.gif
+	frame	data/chars/fran/dash3.gif
+	frame	data/chars/fran/dash3.gif
+	frame	data/chars/fran/dash3.gif
+	frame	data/chars/fran/dash3.gif
+	frame	data/chars/fran/dash3.gif
+	frame	data/chars/fran/dash3.gif
+	frame	data/chars/fran/dash3.gif
+	frame	data/chars/fran/dash3.gif
+	frame	data/chars/fran/dash3.gif
+	frame	data/chars/fran/dash3.gif
+	frame	data/chars/fran/dash3.gif
+	frame	data/chars/fran/dash4.gif
+	frame	data/chars/fran/dash4.gif
+	frame	data/chars/fran/dash4.gif
+	frame	data/chars/fran/dash4.gif
+	frame	data/chars/fran/dash4.gif
+	frame	data/chars/fran/dash4.gif
+	frame	data/chars/fran/dash4.gif
+	frame	data/chars/fran/dash4.gif
+	frame	data/chars/fran/dash4.gif
+	frame	data/chars/fran/dash4.gif
+	frame	data/chars/fran/dash4.gif
+	frame	data/chars/fran/dash4.gif
+	frame	data/chars/fran/dash4.gif
+	frame	data/chars/fran/dash4.gif
+	move	1
+	frame	data/chars/fran/dash5.gif
+	frame	data/chars/fran/dash5.gif
+	frame	data/chars/fran/dash5.gif
+	frame	data/chars/fran/dash5.gif
+	frame	data/chars/fran/dash5.gif
+	frame	data/chars/fran/dash5.gif
+	frame	data/chars/fran/dash5.gif
+	delay	7
+	move	0
+	frame	data/chars/fran/dash6.gif
+		
+anim	waiting
+	loop	1
+	delay	17
+	offset	0 -1
+	frame	data/chars/fran/waiting1a.gif
+	frame	data/chars/fran/waiting1b.gif
+	frame	data/chars/fran/waiting1c.gif
+	frame	data/chars/fran/waiting1d.gif
+		
+anim	walk
+	loop	1
+	delay	10
+	offset	55 63
+	bbox	47 18 15 45
+	frame	data/chars/fran/walk1.gif
+	frame	data/chars/fran/walk2.gif
+	frame	data/chars/fran/walk3.gif
+	frame	data/chars/fran/walk4.gif
+	frame	data/chars/fran/walk5.gif
+	frame	data/chars/fran/walk6.gif
+		
+#|edited by openBor Stats v 0.67
+		

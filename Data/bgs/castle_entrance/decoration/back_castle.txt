@@ -1,0 +1,16 @@
+name	       	Back_castle
+type    	panel
+speed		5
+
+palette 	data/bgs/castle_entrance/decoration/back_castle.gif
+
+
+
+anim	idle
+	loop	1
+	delay	5
+	offset	0 0
+	frame	data/bgs/castle_entrance/decoration/back_castle.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,78 @@
+name    Dungeon_platform_trap
+type trap
+shadow  0
+antigravity                  100
+nolife 1
+nomove 1 1
+setlayer 0
+offscreenkill   9999
+
+hostile player npc
+candamage player npc
+
+animationscript  data/scripts/escript.c
+
+palette		data/bgs/dungeon/dungeon_misc.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	follow1
+	loop	0
+	delay	20
+	offset	16 24
+	platform	0 24 -8 -8 41 41 10 9
+	frame	data/bgs/dungeon/traps/platform_trap1a.gif
+	delay	10
+	hitfx	data/sounds/slash.wav
+	attack2	2 14 15 20 19 0 1 1 0 0
+	platform	0 0 0 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/platform_trap1b.gif
+	attack2	2 7 23 23 19 0 1 1 0 0
+	platform	0 0 0 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/platform_trap1c.gif
+	delay	56
+	attack2	2 0 30 17 19 0 1 0 0 0
+	platform	0 24 -8 -8 41 41 10 9
+	frame	data/bgs/dungeon/traps/platform_trap1d.gif
+	delay	10
+	attack2	2 7 23 23 19 0 1 1 0 0
+	platform	0 0 0 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/platform_trap1c.gif
+	attack2	2 14 15 20 19 0 1 1 0 0
+	platform	0 0 0 0 0 0 0 0
+	frame	data/bgs/dungeon/traps/platform_trap1b.gif
+	delay	19
+	attack2	0 0 0 0
+	platform	0 24 -8 -8 41 41 10 9
+	frame	data/bgs/dungeon/traps/platform_trap1a.gif
+	delay	1
+	@cmd	beidle
+	frame	data/bgs/dungeon/traps/platform_trap1a.gif
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	16 24
+	followcond	1
+	followanim	1
+	hitfx	data/sounds/no-hit.wav
+	noreflect	1
+	attack20	2 0 29 20 0 0 1 1 0 0
+	platform	0 24 -8 -8 41 41 10 9
+	frame	data/bgs/dungeon/traps/platform_trap1a.gif
+	delay	1
+	attack20	0 0 0 0
+	frame	data/bgs/dungeon/traps/platform_trap1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

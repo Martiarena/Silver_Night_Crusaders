@@ -1,0 +1,33 @@
+name	        BFBall
+type	        none
+nolife          1
+lifespan        1
+antigravity     100
+candamage       player npc
+
+anim idle
+	delay	5
+	offset	6 6
+	burn	3 3 6 6 10 1
+        hitfx   data/sounds/burnt.wav
+	frame	data/chars/gbat/bfball1.gif
+	frame	data/chars/gbat/bfball2.gif
+	frame	data/chars/gbat/bfball3.gif
+	burn	1 1 10 10 10 1
+	frame	data/chars/gbat/bfball4.gif
+	frame	data/chars/gbat/bfball5.gif
+	frame	data/chars/gbat/bfball4.gif
+	frame	data/chars/gbat/bfball5.gif
+	frame	data/chars/gbat/bfball4.gif
+	frame	data/chars/gbat/bfball5.gif
+	frame	data/chars/gbat/bfball4.gif
+	frame	data/chars/gbat/bfball5.gif
+	frame	data/chars/gbat/bfball4.gif
+	frame	data/chars/gbat/bfball5.gif
+	frame	data/chars/gbat/bfball4.gif
+	frame	data/chars/gbat/bfball5.gif
+	frame	data/chars/gbat/bfball4.gif
+	frame	data/chars/gbat/bfball5.gif
+	attack	0
+	frame	data/chars/gbat/bfball6.gif
+	frame	data/chars/misc/empty.gif

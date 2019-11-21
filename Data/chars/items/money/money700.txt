@@ -1,0 +1,28 @@
+name    	___700
+score           700
+type    	item
+facing          1
+antigravity	30
+candamage  	player
+icon 		data/chars/misc/bgmoney.gif
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	7
+	offset	8 14
+	itembox	0 0 15 14
+	frame	data/chars/items/money/idle1a.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	8 14
+	itembox	0 0 15 14
+	frame	data/chars/items/money/idle1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

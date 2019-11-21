@@ -1,0 +1,25 @@
+name	       	Banister_4
+type    	none
+antigravity     100
+shadow		0
+nomove	1
+setlayer 99
+offscreenkill   9999
+nolife	1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_gravity 0
+
+palette		data/bgs/moon_bridge/front_panel_palette.gif
+
+
+
+
+anim	idle
+	loop	1
+	delay	7
+	offset	0 29
+	frame	data/bgs/moon_bridge/decoration/banister_4.gif
+		
+#|edited by openBor Stats v 0.67
+		

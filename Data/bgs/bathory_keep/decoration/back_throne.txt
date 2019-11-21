@@ -1,0 +1,17 @@
+name	       	Back_throne
+type    	panel
+speed		10
+setlayer	-30
+
+palette 	data/bgs/bathory_keep/decoration/back_throne.gif
+
+
+
+anim	idle
+	loop	1
+	delay	5
+	offset	0 0
+	frame	data/bgs/bathory_keep/decoration/back_throne.gif
+		
+#|edited by openBor Stats v 0.67
+		

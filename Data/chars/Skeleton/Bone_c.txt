@@ -1,0 +1,71 @@
+name    	Bone_c
+health		1
+type    	enemy
+lifespan  	5
+nomove		1
+nolife          1
+nopain 1
+death		1
+antigravity	50
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+score 10
+candamage           player npc
+hostile		none
+animationscript data/scripts/prscript.c
+
+
+palette 	 data/chars/skeleton/skeleton_golden.gif
+alternatepal	 data/chars/skeleton/blink.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	death
+	delay	10
+	offset	9 9
+	spawnframe	0 0 0 0 0
+	subentity	pdie
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	delay	10
+	offset	9 9
+	platform	1 1 -1 -1 1 1 1 1
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	7
+	followanim	1
+	followcond	1
+	offset	9 9
+	bbox	2 2 16 16
+	attack	2 2 16 16 9 0 1 0 0 0
+	platform	1 1 -1 -1 1 1 1 1
+	frame	data/chars/skeleton/bone1.gif
+	@cmd	groundkill
+	frame	data/chars/skeleton/bone2.gif
+	@cmd	groundkill
+	frame	data/chars/skeleton/bone3.gif
+	attack	0
+	@cmd	groundkill
+	frame	data/chars/skeleton/bone3.gif
+		
+#|edited by openBor Stats v 0.67
+		

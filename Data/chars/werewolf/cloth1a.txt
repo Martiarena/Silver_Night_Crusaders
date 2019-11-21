@@ -1,0 +1,15 @@
+name	        Cloth1a
+type	        none
+subject_to_gravity 1
+subject_to_hole	1
+no_adjust_base	0
+antigravity 50
+lifespan        1
+noquake 	1
+
+palette 	data/chars/werewolf/werewolf_palette.gif
+
+anim idle
+	delay	5
+	offset	7 14
+	frame	data/chars/werewolf/cloth1a.gif

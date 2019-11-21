@@ -1,0 +1,82 @@
+name	        RoseSpell1
+type            enemy
+health          1
+nomove          1 1
+nolife          1
+death   	1
+score 0 -1
+candamage       player npc
+subject_to_wall 1
+subject_to_platform 1
+load	 Spore
+
+animationscript  data/scripts/EScript.c
+
+palette         data/chars/succubus/spells/rosespell_palette.gif
+
+
+
+
+
+
+
+
+
+
+
+
+anim	death
+	loop	0
+	delay	3
+	offset	13 195
+	subentity	edie
+	spawnframe	0 0 0 195 0
+	frame	data/chars/succubus/spells/rose2_deatha.gif
+	frame	data/chars/succubus/spells/rose2_deathb.gif
+	frame	data/chars/succubus/spells/rose2_deathc.gif
+	delay	14
+	frame	data/chars/succubus/spells/rose2_deathd.gif
+	delay	7
+	frame	data/chars/succubus/spells/rose2_deathe.gif
+	frame	data/chars/succubus/spells/rose2_deathf.gif
+	frame	data/chars/succubus/spells/rose2_deathg.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	70
+	offset	13 195
+	hitfx	data/sounds/slash.wav
+	bbox	2 2 22 20
+	@cmd	spawn01 "Spore" 9 180 1
+	frame	data/chars/succubus/spells/rose2i.gif
+	@cmd	spawn01 "Spore" -16 176 1
+	frame	data/chars/succubus/spells/rose2i.gif
+		
+anim	spawn
+	loop	0
+	delay	7
+	offset	13 99
+	frame	data/chars/succubus/spells/rose1a.gif
+	frame	data/chars/succubus/spells/rose1b.gif
+	frame	data/chars/succubus/spells/rose1c.gif
+	frame	data/chars/succubus/spells/rose1d.gif
+	frame	data/chars/succubus/spells/rose1e.gif
+	frame	data/chars/succubus/spells/rose1f.gif
+	frame	data/chars/succubus/spells/rose1g.gif
+	frame	data/chars/succubus/spells/rose1h.gif
+	frame	data/chars/succubus/spells/rose1i.gif
+	offset	13 195
+	frame	data/chars/succubus/spells/rose2a.gif
+	frame	data/chars/succubus/spells/rose2b.gif
+	frame	data/chars/succubus/spells/rose2c.gif
+	frame	data/chars/succubus/spells/rose2d.gif
+	frame	data/chars/succubus/spells/rose2e.gif
+	frame	data/chars/succubus/spells/rose2f.gif
+	frame	data/chars/succubus/spells/rose2g.gif
+	frame	data/chars/succubus/spells/rose2h.gif
+	frame	data/chars/succubus/spells/rose2i.gif
+		
+#|edited by openBor Stats v 0.67
+		

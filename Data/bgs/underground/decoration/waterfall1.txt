@@ -1,0 +1,22 @@
+name	Waterfall1a
+type		none
+facing		1
+setlayer  -2
+offscreenkill   9999
+antigravity	100
+
+palette	data/bgs/underground/palette_objects.gif
+
+
+
+anim	idle
+	loop	1
+	offset	156 279
+	delay	7
+	frame	data/bgs/underground/decoration/waterfall1d.gif
+	frame	data/bgs/underground/decoration/waterfall1a.gif
+	frame	data/bgs/underground/decoration/waterfall1b.gif
+	frame	data/bgs/underground/decoration/waterfall1c.gif
+		
+#|edited by openBor Stats v 0.67
+		

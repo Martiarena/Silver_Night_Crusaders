@@ -1,0 +1,38 @@
+name		Firewave_c
+lifespan  	2
+type		none
+nolife          1
+candamage	player npc shot
+
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	7
+	offset	138 187
+	hitfx	data/sounds/burnt.wav
+	sound	data/sounds/explosion.wav
+	burn	20 145 50 45 19 11 0 0 0 0
+	frame	data/chars/cerberus/firewave1a.gif
+	burn	30 110 90 80 19 11 0 0 0 0
+	frame	data/chars/cerberus/firewave1b.gif
+	burn	15 90 135 100 19 11 0 0 0 0
+	sound	data/sounds/explosion.wav
+	frame	data/chars/cerberus/firewave1c.gif
+	burn	65 90 110 100 19 11 0 0 0 0
+	frame	data/chars/cerberus/firewave1d.gif
+	burn	110 90 100 100 19 11 0 0 0 0
+	sound	data/sounds/explosion.wav
+	frame	data/chars/cerberus/firewave1e.gif
+	burn	160 80 70 110 19 11 0 0 0 0
+	frame	data/chars/cerberus/firewave1f.gif
+	burn	0 0 0 0
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

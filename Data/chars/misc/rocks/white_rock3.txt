@@ -1,0 +1,37 @@
+name	       		White_rock3
+type	       		none
+subject_to_gravity	1
+subject_to_hole		1
+no_adjust_base		0
+lifespan         3
+noquake 		1
+animationscript data/scripts/prscript.c
+
+palette 		data/chars/misc/rocks/white_rock_palete.gif
+
+
+
+anim	idle
+	loop	0
+	delay	50
+	offset	4 10
+	bouncefactor	2
+	frame	data/chars/misc/rocks/white_rock3.gif
+	delay	6
+	frame	data/chars/misc/rocks/white_rock3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/rocks/white_rock3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/rocks/white_rock3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/rocks/white_rock3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/rocks/white_rock3.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/rocks/white_rock3.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

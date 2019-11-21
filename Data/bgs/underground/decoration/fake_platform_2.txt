@@ -1,0 +1,48 @@
+name  	Fake_platform_2
+health	24
+type	obstacle
+nomove	1
+setlayer 1
+shadow  0
+nolife	1
+subject_to_wall 1
+subject_to_obstacle 0
+offscreenkill   9999
+animationscript  data/scripts/escript.c
+
+palette		data/bgs/underground/palette_objects.gif
+
+
+
+
+
+
+
+
+
+
+
+
+anim	fall
+	delay	5
+	offset	43 74
+	sound	data/sounds/rock_break1.wav
+	frame	data/chars/misc/empty.gif
+	@cmd	tosserM "Underground_rock4" 8 34 0 2.5
+	@cmd	tosserM "Underground_rock3" 5 26 0 1.5
+	@cmd	tosserM "Underground_rock2" 8 25 0.3 1.5
+	@cmd	tosserM "Underground_rock1" -3 27 -0.3 1.5
+	@cmd	tosserM "Underground_rock2" 5 12 0.3 1
+	@cmd	tosserM "Underground_rock3" -8 14 -0.3 1
+	sound	data/sounds/rock_break2.wav
+	frame	data/chars/misc/empty.gif
+	delay	200
+	frame	data/chars/misc/empty.gif
+
+anim	idle
+	delay	100
+	offset	25 45
+	platform	0 45 -8 -8 59 59 10 45
+	bbox	0 10 51 54
+	frame	data/bgs/underground/decoration/fake_platform_2.gif
+

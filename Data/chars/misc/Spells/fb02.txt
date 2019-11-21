@@ -1,0 +1,191 @@
+name	fb02
+type	none
+candamage enemy obstacle shot
+speedf	0.1
+remove  0
+offscreenkill	50
+
+
+
+
+
+
+
+anim	idle
+	delay	1
+	offset	135 118
+	move	1
+	hitfx	data/sounds/burnt.wav
+	attack	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb202.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb203.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb204.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb205.gif
+	move	2
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb202.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb203.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb204.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb205.gif
+	move	3
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb202.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb203.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb204.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb205.gif
+	move	4
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb202.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb203.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb204.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb205.gif
+	move	4
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb202.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb203.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb204.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb205.gif
+	move	4
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb202.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb203.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb204.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/spells/fb201.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb205.gif
+	move	4
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb202.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb203.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	delay	3
+	burn	135 102 31 32 9 0 0 0 0 0
+	frame	data/chars/misc/spells/fb204.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	delay	3
+	burn	135 102 31 32 6 0 0 0 0 0
+	frame	data/chars/misc/spells/fb205.gif
+	delay	1
+	burn	0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

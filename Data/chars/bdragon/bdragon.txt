@@ -1,0 +1,259 @@
+name            D._Negro
+health           72
+nomove   	 1 1
+type    	 enemy
+noquake  	 1
+nopain  	 1
+nodrop  	 2
+setlayer  	 100
+death   	 1
+score   	 1000 -1
+antigravity  	 100
+subject_to_wall  0
+subject_to_obstacle 0
+subject_to_platform 0
+hostile         player npc
+icon 		data/chars/misc/bgmonster.gif
+
+defense normal4 1.5 0 0 0 0 0 0
+defense normal6 2 0 0 0 0 0 0
+defense normal19 1.5 0 0 0 0 0 0
+defense burn 1.5 0 0 0 0 0 0
+
+animationscript  data/scripts/bscript.c
+takedamagescript data/scripts/blink.c
+load	         Rib
+load             edie
+load	         RBase
+load    	 fire
+load    	 cfball
+
+palette	         data/chars/bdragon/head1.gif
+alternatepal	 data/chars/bdragon/blink.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	death
+	delay	3
+	offset	15 27
+	bouncefactor	2
+	subentity	edie
+	spawnframe	0 30 0 15 0
+	frame	data/chars/bdragon/death1.gif
+	@cmd	stop
+	@cmd	degravity 0
+	frame	data/chars/bdragon/death2.gif
+	@cmd	clearL
+	frame	data/chars/bdragon/death3.gif
+	delay	50
+	frame	data/chars/bdragon/death4.gif
+		
+anim	fall
+	offset	15 17
+	delay	10
+	@cmd	stop
+	frame	data/chars/bdragon/head5.gif
+	@cmd	beidle
+	frame	data/chars/bdragon/head5.gif
+		
+anim	follow1
+@script
+    void self = getlocalvar("self");
+    int r = rand()%30;
+
+    if( frame == 0){
+      if( r > 0){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      }
+    }
+	@end_script	
+	loop	0
+	delay	1
+	offset	15 17
+	bbox	13 7 44 20
+	hitfx	data/sounds/slash.wav
+	attack2	13 7 44 20 19 0 0 0 0 0
+	frame	data/chars/bdragon/head5.gif
+	delay	10
+	@cmd	dasher -2 0 0 1
+	frame	data/chars/bdragon/head4.gif
+	frame	data/chars/bdragon/head3.gif
+	delay	100
+	@cmd	stop
+	frame	data/chars/bdragon/head3.gif
+	delay	40
+	hitfx	data/sounds/slash.wav
+	attack2	13 7 44 34 25 11 0 0 0 0
+	@cmd	targetT 40 0 -10 0
+	@cmd	dash 0 0
+	frame	data/chars/bdragon/head3.gif
+	delay	100
+	@cmd	stop
+	frame	data/chars/bdragon/head3.gif
+	delay	1
+	frame	data/chars/bdragon/head3.gif
+	delay	40
+	hitfx	data/sounds/slash.wav
+	attack2	13 7 44 20 19 0 0 0 0 0
+	@cmd	returner 40
+	frame	data/chars/bdragon/head4.gif
+	delay	10
+	@cmd	stop
+	frame	data/chars/bdragon/head5.gif
+	@cmd	beidle
+	frame	data/chars/bdragon/head5.gif
+	delay	1
+	attack2	0 0 0 0
+	frame	data/chars/bdragon/head5.gif
+		
+anim	follow2
+	delay	1
+	offset	15 17
+	bbox	13 7 44 22
+	attack	13 7 44 22 19 0 0 0 0 0
+	frame	data/chars/bdragon/head5.gif
+	delay	60
+	@cmd	dasher 0 -1.6 0 0
+	frame	data/chars/bdragon/head5.gif
+	@cmd	dasher 0 1.6 0 0
+	frame	data/chars/bdragon/head5.gif
+	delay	15
+	frame	data/chars/bdragon/head5.gif
+	frame	data/chars/bdragon/head4.gif
+	frame	data/chars/bdragon/head4.gif
+	frame	data/chars/bdragon/head3.gif
+	@cmd	dasher 0 -1.6 0 0
+	@cmd	shooter2 "fire" 20 0 1.5 0
+	frame	data/chars/bdragon/head2.gif
+	@cmd	shooter2 "fire" 20 0 1.5 0
+	frame	data/chars/bdragon/head3.gif
+	@cmd	shooter2 "fire" 20 0 1.5 0
+	frame	data/chars/bdragon/head2.gif
+	@cmd	shooter2 "fire" 20 0 1.5 0
+	frame	data/chars/bdragon/head2.gif
+	@cmd	shooter2 "fire" 20 0 1.5 0
+	frame	data/chars/bdragon/head2.gif
+	@cmd	shooter2 "fire" 20 0 1.5 0
+	frame	data/chars/bdragon/head2.gif
+	@cmd	shooter2 "fire" 20 0 1.5 0
+	frame	data/chars/bdragon/head2.gif
+	@cmd	shooter2 "fire" 20 0 1.5 0
+	frame	data/chars/bdragon/head2.gif
+	@cmd	dasher 0 1.6 0 0
+	@cmd	shooter2 "fire" 20 0 1.5 0
+	frame	data/chars/bdragon/head2.gif
+	@cmd	shooter2 "fire" 20 0 1.5 0
+	frame	data/chars/bdragon/head2.gif
+	@cmd	shooter2 "fire" 20 0 1.5 0
+	frame	data/chars/bdragon/head2.gif
+	@cmd	shooter2 "fire" 20 0 1.5 0
+	frame	data/chars/bdragon/head2.gif
+	@cmd	shooter2 "fire" 20 0 1.5 0
+	frame	data/chars/bdragon/head2.gif
+	@cmd	shooter2 "fire" 20 0 1.5 0
+	frame	data/chars/bdragon/head2.gif
+	@cmd	shooter2 "fire" 20 0 1.5 0
+	frame	data/chars/bdragon/head2.gif
+	@cmd	shooter2 "fire" 20 0 1.5 0
+	frame	data/chars/bdragon/head2.gif
+	@cmd	dasher 0 -1.6 0 0
+	frame	data/chars/bdragon/head2.gif
+	frame	data/chars/bdragon/head3.gif
+	frame	data/chars/bdragon/head4.gif
+	frame	data/chars/bdragon/head5.gif
+	delay	1
+	attack	0
+	@cmd	stop
+	@cmd	beidle
+	frame	data/chars/bdragon/head5.gif
+		
+anim	idle
+	loop	1
+	delay	1
+	offset	15 17
+	@cmd	clearL
+	bbox	13 7 44 15
+	attack	13 7 44 15 19 0 0 0 0 0
+	frame	data/chars/bdragon/head1.gif
+	delay	30
+	@cmd	dasher 0 -1.6 0 0
+	frame	data/chars/bdragon/head1.gif
+	@cmd	dasher 0 1.6 0 0
+	frame	data/chars/bdragon/head1.gif
+	frame	data/chars/bdragon/head1.gif
+	@cmd	dasher 0 -1.6 0 0
+	frame	data/chars/bdragon/head1.gif
+	delay	1
+	attack	0 0 0 0
+	@cmd	stop
+	@cmd	attack0 "ANI_FOLLOW1"
+	frame	data/chars/bdragon/head1.gif
+		
+anim	pain
+	loop	0
+	delay	5
+	offset	15 17
+	attack	13 7 44 21 19 0 0 0 0 0
+	frame	data/chars/bdragon/head5.gif
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/bdragon/head5.gif
+		
+anim	rise
+	loop	0
+	delay	5
+	offset	15 17
+	attack	13 7 44 21 19 0 0 0 0 0
+	frame	data/chars/bdragon/head5.gif
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/bdragon/head5.gif
+		
+anim	spawn
+	delay	1
+	offset	15 17
+	attack	13 7 44 21 19 0 0 0 0 0
+	frame	data/chars/bdragon/head5.gif
+	bbox	13 7 44 15
+	@cmd	spawnChainPoint "RBase" 0 0 0 0
+	frame	data/chars/bdragon/head5.gif
+	@cmd	spawnChainLink "Rib" 0 0.5 0 0 0
+	@cmd	spawnChainLink "Rib" 0 0.125 0 0 0
+	@cmd	spawnChainLink "Rib" 0 0.25 0 0 0
+	@cmd	spawnChainLink "Rib" 0 0.375 0 0 0
+	@cmd	spawnChainLink "Rib" 0 0.625 0 0 0
+	@cmd	spawnChainLink "Rib" 0 0.75 0 0 0
+	@cmd	spawnChainLink "Rib" 0 0.875 0 0 0
+	frame	data/chars/bdragon/head5.gif
+	delay	75
+	@cmd	dasher 1 0 0 1
+	frame	data/chars/bdragon/head5.gif
+	delay	1
+	attack	0
+	@cmd	getxy
+	@cmd	stop
+	frame	data/chars/bdragon/head5.gif
+		
+anim	walk
+	loop	1
+	delay	12
+	offset	15 17
+	bbox	13 7 44 21
+	attack	13 7 44 21 19 0 0 0 0 0
+	frame	data/chars/bdragon/head5.gif
+	delay	1
+	attack	0
+	frame	data/chars/bdragon/head5.gif
+		
+#|edited by openBor Stats v 0.67
+		

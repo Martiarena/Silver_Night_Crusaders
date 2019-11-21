@@ -1,0 +1,23 @@
+name	       	Skull_catacombs
+type    	none
+antigravity     100
+shadow		0
+nomove	1
+setlayer 99
+nolife	1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_gravity 0
+
+palette		data/bgs/dungeon/decoration/skull_catacombs.gif
+
+
+
+anim	idle
+	loop	0
+	delay	7
+	offset	268 15
+	frame	data/bgs/dungeon/decoration/skull_catacombs.gif
+		
+#|edited by openBor Stats v 0.67
+		

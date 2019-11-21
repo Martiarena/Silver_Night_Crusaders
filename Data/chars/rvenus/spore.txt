@@ -1,0 +1,66 @@
+name    	Spore
+health		1
+type     pshot
+lifespan  	5
+nomove		1
+nolife          1
+nopain 1
+death		1
+antigravity	95
+offscreenkill   500
+score 0 -1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+candamage       player npc
+hostile		none
+animationscript data/scripts/prscript.c
+
+
+palette 	 data/chars/rvenus/venus_rose_palette.gif
+alternatepal	 data/chars/rvenus/blink_palette.gif
+
+
+
+
+
+
+anim	death
+	delay	1
+	offset	9 9
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	delay	10
+	offset	9 9
+	platform	1 1 -1 -1 1 1 1 1
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	7
+	followanim	1
+	followcond	1
+	offset	7 8
+	noreflect	1
+	hitfx	data/sounds/no-hit.wav
+	bbox	0 0 14 16
+	attack20	0 0 14 16 0 0 1 1 0 0
+	DOT	1 30 1 1 5
+	platform	1 1 -1 -1 1 1 1 1
+	frame	data/chars/rvenus/spore1.gif
+	offset	9 8
+	@cmd	groundkill
+	frame	data/chars/rvenus/spore2.gif
+	offset	7 8
+	@cmd	groundkill
+	frame	data/chars/rvenus/spore3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	5 8
+	@cmd	groundkill
+	frame	data/chars/rvenus/spore4.gif
+		
+#|edited by openBor Stats v 0.67
+		

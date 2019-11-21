@@ -1,0 +1,51 @@
+name		Electricball_spawn_left
+lifespan  	3
+facing 1
+nolife	1
+type		none
+candamage	player npc
+
+load		Electricball
+
+animationscript data/scripts/escript.c
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	1
+	offset	16 122
+	@cmd	shooter2 "Electricball" 0 0 -2 0
+	frame	data/chars/countess/magic/electricball1l.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	loop	0
+	delay	7
+	offset	16 122
+	hitfx	data/sounds/jolted.wav
+	frame	data/chars/countess/magic/electricball1a.gif
+	frame	data/chars/countess/magic/electricball1b.gif
+	frame	data/chars/countess/magic/electricball1c.gif
+	frame	data/chars/countess/magic/electricball1d.gif
+	frame	data/chars/countess/magic/electricball1e.gif
+	frame	data/chars/countess/magic/electricball1f.gif
+	shock	5 0 22 64 25 0 1 0 0 0
+	frame	data/chars/countess/magic/electricball1g.gif
+	shock	5 0 22 98 25 0 1 0 0 0
+	frame	data/chars/countess/magic/electricball1h.gif
+	shock	5 0 22 122 25 0 1 0 0 0
+	frame	data/chars/countess/magic/electricball1i.gif
+	shock	5 0 22 122 25 0 1 0 0 0
+	frame	data/chars/countess/magic/electricball1j.gif
+	shock	5 0 22 122 25 0 1 0 0 0
+	frame	data/chars/countess/magic/electricball1k.gif
+	shock	5 0 22 122 25 0 1 0 0 0
+	frame	data/chars/countess/magic/electricball1l.gif
+		
+#|edited by openBor Stats v 0.67
+		

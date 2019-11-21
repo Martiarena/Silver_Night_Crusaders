@@ -1,0 +1,49 @@
+name	       		Gear_trap_walking_b
+health                  1
+type            enemy
+subject_to_gravity	1
+subject_to_hole		1
+subject_to_platform 1
+no_adjust_base		0
+subject_to_wall 1
+speed 0
+nomove 1 1
+lifespan 1
+nopain		1
+nolife		1
+cantgrab 	1
+nodrop	 	2
+death	 	1
+nodieblink  1
+min_noatk_chance 0
+max_noatk_chance 0
+offscreenkill	100
+
+palette 		data/bgs/clock_tower/traps/gear_trap_palette.gif
+
+
+
+
+
+anim	death
+	loop	0
+	delay	100
+	offset	15 32
+	frame	data/bgs/clock_tower/traps/gears_trap1d.gif
+		
+anim	idle
+	loop	0
+	delay	1
+	offset	15 32
+	frame	data/bgs/clock_tower/traps/gears_trap1a.gif
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	15 34
+	frame	data/bgs/clock_tower/traps/gears_trap1a.gif
+	offset	15 32
+	frame	data/bgs/clock_tower/traps/gears_trap1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,163 @@
+music		data/music/underground_reservoir.ogg 945945
+
+background	data/bgs/underground/underground_back.gif
+panel	        data/bgs/underground/cerberus_lair.gif
+
+order           a
+settime	        0
+notime		1
+spawn1          80 0 240
+spawn2          40 0 240
+direction	both
+type		0 0 0
+cameratype 1
+noslow 1
+
+Hole  0  248  0  0  6  6  40
+Hole  114  248  0  0  132  132  40
+
+
+spawn  Hidden_4
+coords  -30  216  15
+at  0
+
+spawn  Waterfall_lair
+coords  -30  216  0
+flip  1
+at  0
+
+spawn  Water_lair
+coords  0  216  0
+flip  1
+at  0
+
+spawn  Balsa1
+coords  60  216  0
+flip  1
+alias	Thick
+at  0
+
+spawn  Platform_rock25
+coords  131  216  7
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_rock25
+coords  183  216  18
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_rock22
+coords  298  216  136
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_rock21
+coords  322  216
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_rock24
+coords  443  216  31
+flip  1
+at  0
+
+spawn  Platform_rock23
+coords  505  216  64
+flip  1
+at  0
+
+spawn  Platform_rock23
+coords  505  216  137
+flip  1
+at  0
+
+spawn  Brazier1
+coords  298  216  46
+item  Hacha
+map 1
+at  0
+
+spawn	Cerberus_statue
+coords  632  216  0
+flip 1
+at  0
+
+spawn	Chain_top
+coords  635  216  98
+flip 1
+at  0
+
+spawn  Cell
+coords  717  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Chiroptera_
+coords  250  216  93
+at  0
+
+spawn  Chiroptera_
+coords  270  216  93
+at  0
+
+spawn  Chiroptera_
+coords  290  216  93
+at  0
+
+spawn  Chiroptera_
+coords  360  216  93
+at  0
+
+spawn  Chiroptera_
+coords  360  216  93
+at  40
+
+spawn  Brazier1
+coords  350  216  46
+item	Pollo_frito
+at  50
+
+spawn  Brazier1
+coords  360  216  152
+item	Pollo_frito
+at  145
+
+spawn  Candle1
+coords  350  216  103
+item	Gema_roja
+at  156
+
+spawn  Candle1
+coords  350  216  35
+item	___100
+at  156
+
+music	data/music/boss.ogg 367353
+at	400
+Blockade  400
+at  400
+wait
+at  400
+
+spawn	Boss2Spawner
+coords  20 0 0
+2pspawn 1
+at	400
+
+spawn  Cerbero
+coords  450  216  0
+health 50
+boss 1
+at  400
+
+spawn boss_lifebar
+coords  0 0 0
+flip 1
+at  400
+

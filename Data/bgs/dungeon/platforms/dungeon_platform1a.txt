@@ -1,0 +1,24 @@
+name  		dungeon_platform1a
+type		none
+facing	  	1
+setlayer	1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/dungeon/dungeon_walls_palette.gif
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	8 15
+	platform	0 15 -8 -8 24 24 10 15
+	frame	data/bgs/dungeon/platforms/dungeon_platform1a.gif
+

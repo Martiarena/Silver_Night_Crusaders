@@ -1,0 +1,52 @@
+name	dust_legion
+type 	none
+alpha 	7
+lifespan	10
+nomove 	1 1
+antigravity	100
+setlayer	200
+animationscript  data/scripts/escript.c
+
+anim	idle
+	loop	0
+	delay	7
+	offset	146 85
+	bbox	0
+	frame	data/chars/legion/debris/smoke1a.gif
+	frame	data/chars/legion/debris/smoke1b.gif
+	frame	data/chars/legion/debris/smoke1c.gif
+	frame	data/chars/legion/debris/smoke1d.gif
+	frame	data/chars/legion/debris/smoke1e.gif
+	frame	data/chars/legion/debris/smoke1f.gif
+	frame	data/chars/legion/debris/smoke1g.gif
+	frame	data/chars/legion/debris/smoke1h.gif
+	frame	data/chars/legion/debris/smoke1i.gif
+	frame	data/chars/legion/debris/smoke1j.gif
+	frame	data/chars/legion/debris/smoke1k.gif
+	frame	data/chars/legion/debris/smoke1l.gif
+	frame	data/chars/legion/debris/smoke1a.gif
+	frame	data/chars/legion/debris/smoke1b.gif
+	frame	data/chars/legion/debris/smoke1c.gif
+	frame	data/chars/legion/debris/smoke1d.gif
+	frame	data/chars/legion/debris/smoke1e.gif
+	frame	data/chars/legion/debris/smoke1f.gif
+	frame	data/chars/legion/debris/smoke1g.gif
+	frame	data/chars/legion/debris/smoke1h.gif
+	frame	data/chars/legion/debris/smoke1i.gif
+	frame	data/chars/legion/debris/smoke1j.gif
+	frame	data/chars/legion/debris/smoke1k.gif
+	frame	data/chars/legion/debris/smoke1l.gif
+	frame	data/chars/legion/debris/smoke1a.gif
+	frame	data/chars/legion/debris/smoke1b.gif
+	frame	data/chars/legion/debris/smoke1c.gif
+	frame	data/chars/legion/debris/smoke1d.gif
+	frame	data/chars/legion/debris/smoke1e.gif
+	frame	data/chars/legion/debris/smoke1f.gif
+	frame	data/chars/legion/debris/smoke1g.gif
+	frame	data/chars/legion/debris/smoke1h.gif
+	frame	data/chars/legion/debris/smoke1i.gif
+	frame	data/chars/legion/debris/smoke2a.gif
+	frame	data/chars/legion/debris/smoke2b.gif
+	frame	data/chars/legion/debris/smoke2c.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif

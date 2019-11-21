@@ -1,0 +1,21 @@
+name  		Clocktower_platform7
+type		none
+facing	  	1
+setlayer	1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/clock_tower/clock_palette_elements.gif
+
+
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	101 88
+	platform	0 88 -8 -8 207 207 10 88
+	frame	data/bgs/clock_tower/platforms/clocktower_platform7a.gif
+

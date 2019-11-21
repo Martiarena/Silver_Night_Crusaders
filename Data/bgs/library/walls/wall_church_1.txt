@@ -1,0 +1,15 @@
+name  		Wall_church_1
+type		none
+facing	  	1
+setlayer -1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/library/palette_object.gif
+
+anim	idle
+	delay	100
+	offset	15 224
+	platform	0 224 -8 -8 39 39 10 9999
+	frame	data/bgs/library/walls/wall_church_1.gif
+

@@ -1,0 +1,25 @@
+name		Keep_castle_shade
+type            none
+shadow		0
+nomove	1
+nolife	1
+setlayer 1
+offscreenkill   9999
+
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_gravity 0
+
+palette	data/bgs/bathory_keep/decoration/keep_castle_shade.gif
+
+
+
+
+anim	idle
+	loop	0
+	offset	93 102
+	delay	7
+	frame	data/bgs/bathory_keep/decoration/keep_castle_shade.gif
+		
+#|edited by openBor Stats v 0.67
+		

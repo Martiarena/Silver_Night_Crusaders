@@ -1,0 +1,39 @@
+name	       	Ani_big_gear
+type    	none
+antigravity     100
+shadow		0
+nomove	1
+setlayer 99
+nolife	1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_gravity 0
+
+palette 	data/bgs/clock_tower/decoration/big_gear_palette.gif
+
+
+
+
+anim	idle
+	loop	1
+	delay	10
+	offset	61 60
+	frame	data/bgs/clock_tower/decoration/big_gear_1a.gif
+	frame	data/bgs/clock_tower/decoration/big_gear_1b.gif
+	frame	data/bgs/clock_tower/decoration/big_gear_1c.gif
+	frame	data/bgs/clock_tower/decoration/big_gear_1d.gif
+	frame	data/bgs/clock_tower/decoration/big_gear_1e.gif
+	frame	data/bgs/clock_tower/decoration/big_gear_1f.gif
+	frame	data/bgs/clock_tower/decoration/big_gear_1g.gif
+	frame	data/bgs/clock_tower/decoration/big_gear_1h.gif
+	frame	data/bgs/clock_tower/decoration/big_gear_1i.gif
+	frame	data/bgs/clock_tower/decoration/big_gear_1j.gif
+	frame	data/bgs/clock_tower/decoration/big_gear_1k.gif
+	frame	data/bgs/clock_tower/decoration/big_gear_1l.gif
+	frame	data/bgs/clock_tower/decoration/big_gear_1m.gif
+	frame	data/bgs/clock_tower/decoration/big_gear_1n.gif
+	frame	data/bgs/clock_tower/decoration/big_gear_1o.gif
+	frame	data/bgs/clock_tower/decoration/big_gear_1p.gif
+		
+#|edited by openBor Stats v 0.67
+		

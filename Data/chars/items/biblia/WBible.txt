@@ -1,0 +1,162 @@
+name    	Biblia
+type    	none
+facing          1
+nolife  	1
+antigravity	50
+lifespan   	15
+subject_to_hole 1
+no_adjust_base  0
+subject_to_platform 1
+candamage  	player
+offscreenkill	100
+animationscript	data/scripts/escript.c
+
+palette		data/chars/items/weapons.gif
+
+
+
+anim	follow1
+@script
+    void self = getlocalvar("self");
+    void player = getentityproperty(self, "opponent");
+    int iPI = getentityproperty(player,"playerindex");
+
+    setglobalvar(iPI+"0", 6);
+
+    killentity(self); //Suicide!
+	@end_script	
+	delay	500
+	offset	12 23
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	0
+	delay	1
+	followanim	1
+	followcond	1
+	offset	7 16
+	hitfx	data/sounds/BEEP.WAV
+	attack20	0 0 14 16 0 0 1 1 0 0
+	noreflect	1
+	frame	data/chars/items/biblia/bible1.gif
+	delay	70
+	frame	data/chars/items/biblia/bible1.gif
+	delay	2
+	frame	data/chars/items/biblia/bible2.gif
+	delay	70
+	frame	data/chars/items/biblia/bible1.gif
+	delay	2
+	frame	data/chars/items/biblia/bible2.gif
+	delay	70
+	frame	data/chars/items/biblia/bible1.gif
+	delay	2
+	frame	data/chars/items/biblia/bible2.gif
+	delay	70
+	frame	data/chars/items/biblia/bible1.gif
+	delay	2
+	frame	data/chars/items/biblia/bible2.gif
+	delay	70
+	frame	data/chars/items/biblia/bible1.gif
+	delay	2
+	frame	data/chars/items/biblia/bible2.gif
+	delay	70
+	frame	data/chars/items/biblia/bible1.gif
+	delay	2
+	frame	data/chars/items/biblia/bible2.gif
+	delay	6
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/biblia/bible1.gif
+	delay	10
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	loop	0
+	delay	3
+	offset	7 16
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible1.gif
+	delay	2
+	followanim	1
+	followcond	1
+	hitfx	data/sounds/BEEP.WAV
+	attack20	0 0 14 16 0 0 1 1 0 0
+	noreflect	1
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/items/biblia/bible2.gif
+	delay	1
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/items/biblia/bible2.gif
+	frame	data/chars/items/biblia/bible1.gif
+	frame	data/chars/items/biblia/bible2.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,127 @@
+music		data/music/interiorgarden.ogg 1525860
+bossmusic	data/music/boss.ogg 367353
+
+fglayer		data/bgs/garden/back_garden.gif -10000 0.5 0.5 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/garden/castle_wall_1.gif -12000 0.6 0.6 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/garden/castle_towers.gif -13000 0.8 0.8 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/castle_entrance/castle_sky_night.gif -14000 0.9 0.9 0 0 0 0 -1 1 1 0 0 0 0 0 1
+
+panel	        data/bgs/garden/gardenb.gif
+
+order           a
+settime	        0
+notime		1
+spawn1          80 0 240
+spawn2          40 0 240
+direction	both
+type		0 0 0
+cameratype 1
+noslow 1
+
+
+spawn  Wall_garden2
+coords  -19  216
+alias	Thick
+flip  1
+at  0
+
+spawn  Wall_garden4
+coords  -13  216  176
+alias	Thick
+flip  1
+at  0
+
+spawn  Wall_garden5
+coords  946  216
+alias	Thick
+flip  1
+at  0
+
+spawn  Hidden_5
+coords  914  216  112
+flip 1
+at  0
+
+spawn  Wall_garden6
+coords  914  216  112
+alias	Thick
+flip  1
+at  0
+
+spawn  Farol
+coords  81  216  95
+flip  1
+item	___10
+at  0
+
+spawn  Farol
+coords  176  216  95
+flip  1
+item	Gema_roja
+at  0
+
+spawn  Farol
+coords  270  216  95
+flip  1
+item Hacha
+map 1
+at  0
+
+spawn  Farol
+coords  366  216  95
+flip  1
+item	___20
+at  0
+
+spawn  Farol
+coords  360  216  95
+flip  1
+item	___10
+at  101
+
+spawn  Farol
+coords  360  216  95
+flip  1
+item	___20
+at  196
+
+spawn  Farol
+coords  360  216  95
+flip  1
+item	___50
+at  291
+
+spawn  Farol
+coords  360  216  95
+flip  1
+item	___10
+at  386
+
+spawn  Farol
+coords  360  216  95
+flip  1
+item	___20
+at  480
+
+Blockade 545
+at  545
+
+spawn	Boss3Spawner
+coords  0 0 0
+#2pspawn 1
+at	545
+
+spawn  R._Polilla
+coords  356  216  149
+boss 1
+at  545
+
+spawn boss_lifebar
+coords  0 0 0
+flip 1
+at  545
+
+spawn  Barril
+coords  365  216
+item Pollo_frito
+at  545

@@ -1,0 +1,23 @@
+name  		Townwall2
+type		none
+facing	  	1
+setlayer	1
+antigravity	100
+offscreenkill   9999
+
+
+
+
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	41 80
+	platform	0 80 -8 -8 90 90 10 80
+	frame	data/bgs/cachtice/platforms/townwall2.gif
+		
+#|edited by openBor Stats v 0.67
+		

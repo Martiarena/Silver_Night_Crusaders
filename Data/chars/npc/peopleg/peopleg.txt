@@ -1,0 +1,38 @@
+name	peopleg
+health	10
+type 	none
+shadow	0
+speed	13
+subject_to_wall 1
+subject_to_platform 1
+palette	data/chars/npc/people-palette.gif
+
+
+
+anim	idle
+	loop	0
+	offset	12 51
+	delay	1000
+	frame	data/chars/npc/peopleg/walk1g.gif
+		
+anim	spawn
+	loop	0
+	offset	12 51
+	delay	1000
+	frame	data/chars/npc/peopleg/walk1g.gif
+		
+anim	walk
+	loop	1
+	delay	7
+	offset	12 51
+	frame	data/chars/npc/peopleg/walk1g.gif
+	frame	data/chars/npc/peopleg/walk2g.gif
+	frame	data/chars/npc/peopleg/walk3g.gif
+	frame	data/chars/npc/peopleg/walk4g.gif
+	frame	data/chars/npc/peopleg/walk5g.gif
+	frame	data/chars/npc/peopleg/walk6g.gif
+	frame	data/chars/npc/peopleg/walk7g.gif
+	frame	data/chars/npc/peopleg/walk8g.gif
+		
+#|edited by openBor Stats v 0.67
+		

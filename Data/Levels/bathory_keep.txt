@@ -1,0 +1,150 @@
+bossmusic	data/music/boss.ogg 367353
+#music		data/music/castlewalls.ogg
+
+panel	        data/bgs/bathory_keep/alcoba.gif
+
+fglayer		data/bgs/bathory_keep/clock_tower.gif -10000 0.3 0.3 0 0 0 0 1 1 1 0 0 0 0 0 1
+#fglayer	data/bgs/moon_bridge/back_forest_1.gif -11000 0.5 0.5 0 0 0 0 -1 1 1 0 0 0 0 0 1
+#fglayer	data/bgs/moon_bridge/back_forest_2.gif -12000 0.6 0.6 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/moon_bridge/back_bridge.gif -13000 0.8 0.8 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/moon_bridge/sky_night_2.gif -14000 0.9 0.9 0 0 0 0 -1 1 1 0 0 0 0 0 1
+
+musicfade	200
+order           a
+settime	        0
+notime		1
+spawn1          80 0 240
+spawn2          40 0 240
+direction	both
+type		0 0 0
+cameratype 1
+noslow 1
+
+spawn  Keep_wall_1
+coords  778  216  128
+at  0
+
+spawn  Keep_roof_1
+coords  986  216  192
+flip  1
+at  0
+
+spawn  Dark_artifact
+coords  990  216 0
+at  0
+
+spawn  Throne
+coords  1133  216 0
+at  0
+
+spawn	Keep_wall_1
+coords	1197  216  128
+flip	-1
+at	0
+
+spawn  Brazier1
+coords  240  216
+map 1
+item	A._Bendita
+at  0
+
+spawn  Brazier1
+coords  340  216
+item	___10
+at  0
+
+
+spawn  Jar2
+coords  360  216  32
+item	___250
+at  90
+
+spawn  Jar2
+coords  360  216  32
+item	___400
+at  130
+
+spawn  Big_candle
+coords  360  216  160
+at  169
+
+spawn  Jar2
+coords  360  216  32
+item	C._Arcoiris
+at  210
+
+spawn  Jar2
+coords  360  216  32
+item	___700
+at  250
+
+spawn  Brazier1
+coords  360  216
+item	___20
+at  320
+
+spawn  Back_throne
+coords  500  0
+at  360
+
+spawn  Brazier1
+coords  360  216
+item	___50
+at  420
+
+spawn  Brazier1
+coords  360  216
+item	___100
+at  500
+
+spawn  Brazier1
+coords  360  216
+item	Gema_roja
+at  670
+
+spawn  Brazier1
+coords  400  216
+item	C._Sagrada
+map 1
+at  700
+
+Blockade  770
+at  700
+
+spawn  Bathory
+coords  360  216  0
+health 10
+at  700
+
+group 1 1
+at 700
+
+Blockade  885
+at  700
+
+spawn	Back_final
+coords	-80 0 0
+flip 1
+at 	700
+
+group 1 4
+at 700
+
+spawn	Keep_castle_shade
+coords  70  216  0
+flip 1
+at  885
+
+spawn	Keep_root
+#coords  60  216  105
+coords  265  216  105
+flip 1
+at  885
+
+#spawn	Broke_window
+#coords  60  216  0
+#at  885
+
+spawn  Bathory
+coords  240  216  0
+at  885

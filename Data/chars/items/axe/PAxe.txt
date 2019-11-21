@@ -1,0 +1,34 @@
+name		PAxe
+lifespan  	2
+type		none
+candamage	enemy obstacle shot
+noquake		1
+subject_to_hole	1
+no_adjust_base	0
+subject_to_platform 0
+animationscript data/scripts/prscript.c
+palette	data/chars/items/weapons.gif
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	6
+	offset	14 30
+	attack2	2 0 26 23 9 0 0 0 0 0
+	sound	data/chars/misc/weap/axe1.wav
+	frame	data/chars/items/axe/idle1.gif
+	@cmd	groundkill
+	attack2	7 2 23 26 9 0 0 0 0 0
+	frame	data/chars/items/axe/idle2.gif
+	@cmd	groundkill
+	attack2	2 7 26 23 9 0 0 0 0 0
+	frame	data/chars/items/axe/idle3.gif
+	@cmd	groundkill
+	attack2	0 2 23 26 9 0 0 0 0 0
+	frame	data/chars/items/axe/idle4.gif
+		
+#|edited by openBor Stats v 0.67
+		

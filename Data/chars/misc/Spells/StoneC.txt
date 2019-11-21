@@ -1,0 +1,46 @@
+name    	StoneC
+type    	none
+health		1
+nomove		1
+nodrop		2
+death		1
+subject_to_wall 0
+subject_to_gravity 0
+subject_to_obstacle 0
+subject_to_platform 0
+animationscript data/scripts/cscript.c
+#ondeathscript	data/scripts/stondead.c
+
+
+anim spawn
+@script
+    if(frame==2){
+      void self = getlocalvar("self");
+      void Stone1 = getentityvar(self, 1);
+      void Stone2 = getentityvar(self, 2);
+      void Stone3 = getentityvar(self, 3);
+      void Stone4 = getentityvar(self, 4);
+
+      killentity(Stone1);
+      killentity(Stone2);
+      killentity(Stone3);
+      killentity(Stone4);
+    }
+    if(frame==3){
+      void self = getlocalvar("self");
+      killentity(self);
+    }
+@end_script
+	delay	10
+	offset	12 12
+	frame	data/chars/misc/empty.gif
+	delay	1010
+	@cmd	spawner4 "Stone1" 40 30 0 1
+	@cmd	spawner4 "Stone2" -40 70 0 2
+	@cmd	spawner4 "Stone3" -20 10 0 3
+	@cmd	spawner4 "Stone4" 20 90 0 4
+	frame	data/chars/misc/empty.gif
+#	frame	data/chars/misc/spells/stone1.png
+	delay	10
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif

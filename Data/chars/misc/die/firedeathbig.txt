@@ -1,0 +1,168 @@
+name		Firedeathbig
+type		none
+nomove		1 1
+antigravity	100
+lifespan	2
+setlayer	100
+
+palette         data/chars/misc/die/firedeathbig_palette.gif
+
+
+anim	death
+	loop	0
+	delay	4
+	offset	105 100
+	bbox	0 0 0 0
+	frame	data/chars/misc/die/firedeathbig1a.gif
+	frame	data/chars/misc/die/firedeathbig1b.gif
+	frame	data/chars/misc/die/firedeathbig1c.gif
+	frame	data/chars/misc/die/firedeathbig1d.gif
+	frame	data/chars/misc/die/firedeathbig1e.gif
+	frame	data/chars/misc/die/firedeathbig1f.gif
+	frame	data/chars/misc/die/firedeathbig1g.gif
+	frame	data/chars/misc/die/firedeathbig1h.gif
+	frame	data/chars/misc/die/firedeathbig1i.gif
+	frame	data/chars/misc/die/firedeathbig1j.gif
+	frame	data/chars/misc/die/firedeathbig1k.gif
+	frame	data/chars/misc/die/firedeathbig1l.gif
+	frame	data/chars/misc/die/firedeathbig1m.gif
+	frame	data/chars/misc/die/firedeathbig1n.gif
+	frame	data/chars/misc/die/firedeathbig1o.gif
+	frame	data/chars/misc/die/firedeathbig1p.gif
+	frame	data/chars/misc/die/firedeathbig1r.gif
+	frame	data/chars/misc/die/firedeathbig1s.gif
+	frame	data/chars/misc/die/firedeathbig1t.gif
+	frame	data/chars/misc/die/firedeathbig1u.gif
+	frame	data/chars/misc/die/firedeathbig1v.gif
+	frame	data/chars/misc/die/firedeathbig1w.gif
+	frame	data/chars/misc/die/firedeathbig1x.gif
+	frame	data/chars/misc/die/firedeathbig1y.gif
+	frame	data/chars/misc/die/firedeathbig1z.gif
+	frame	data/chars/misc/die/firedeathbig2a.gif
+	frame	data/chars/misc/die/firedeathbig2b.gif
+	frame	data/chars/misc/die/firedeathbig2c.gif
+	frame	data/chars/misc/die/firedeathbig2d.gif
+	frame	data/chars/misc/die/firedeathbig2e.gif
+	frame	data/chars/misc/die/firedeathbig2f.gif
+	frame	data/chars/misc/die/firedeathbig2g.gif
+	frame	data/chars/misc/die/firedeathbig2h.gif
+	frame	data/chars/misc/die/firedeathbig2i.gif
+	frame	data/chars/misc/die/firedeathbig2j.gif
+	frame	data/chars/misc/die/firedeathbig2k.gif
+	frame	data/chars/misc/die/firedeathbig2l.gif
+	frame	data/chars/misc/die/firedeathbig2m.gif
+	frame	data/chars/misc/die/firedeathbig2n.gif
+	frame	data/chars/misc/die/firedeathbig2o.gif
+	frame	data/chars/misc/die/firedeathbig2p.gif
+	frame	data/chars/misc/die/firedeathbig2q.gif
+	frame	data/chars/misc/die/firedeathbig2r.gif
+	frame	data/chars/misc/die/firedeathbig2s.gif
+	frame	data/chars/misc/die/firedeathbig2t.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	fall
+	loop	0
+	delay	4
+	offset	105 100
+	bbox	0 0 0 0
+	frame	data/chars/misc/die/firedeathbig1a.gif
+	frame	data/chars/misc/die/firedeathbig1b.gif
+	frame	data/chars/misc/die/firedeathbig1c.gif
+	frame	data/chars/misc/die/firedeathbig1d.gif
+	frame	data/chars/misc/die/firedeathbig1e.gif
+	frame	data/chars/misc/die/firedeathbig1f.gif
+	frame	data/chars/misc/die/firedeathbig1g.gif
+	frame	data/chars/misc/die/firedeathbig1h.gif
+	frame	data/chars/misc/die/firedeathbig1i.gif
+	frame	data/chars/misc/die/firedeathbig1j.gif
+	frame	data/chars/misc/die/firedeathbig1k.gif
+	frame	data/chars/misc/die/firedeathbig1l.gif
+	frame	data/chars/misc/die/firedeathbig1m.gif
+	frame	data/chars/misc/die/firedeathbig1n.gif
+	frame	data/chars/misc/die/firedeathbig1o.gif
+	frame	data/chars/misc/die/firedeathbig1p.gif
+	frame	data/chars/misc/die/firedeathbig1r.gif
+	frame	data/chars/misc/die/firedeathbig1s.gif
+	frame	data/chars/misc/die/firedeathbig1t.gif
+	frame	data/chars/misc/die/firedeathbig1u.gif
+	frame	data/chars/misc/die/firedeathbig1v.gif
+	frame	data/chars/misc/die/firedeathbig1w.gif
+	frame	data/chars/misc/die/firedeathbig1x.gif
+	frame	data/chars/misc/die/firedeathbig1y.gif
+	frame	data/chars/misc/die/firedeathbig1z.gif
+	frame	data/chars/misc/die/firedeathbig2a.gif
+	frame	data/chars/misc/die/firedeathbig2b.gif
+	frame	data/chars/misc/die/firedeathbig2c.gif
+	frame	data/chars/misc/die/firedeathbig2d.gif
+	frame	data/chars/misc/die/firedeathbig2e.gif
+	frame	data/chars/misc/die/firedeathbig2f.gif
+	frame	data/chars/misc/die/firedeathbig2g.gif
+	frame	data/chars/misc/die/firedeathbig2h.gif
+	frame	data/chars/misc/die/firedeathbig2i.gif
+	frame	data/chars/misc/die/firedeathbig2j.gif
+	frame	data/chars/misc/die/firedeathbig2k.gif
+	frame	data/chars/misc/die/firedeathbig2l.gif
+	frame	data/chars/misc/die/firedeathbig2m.gif
+	frame	data/chars/misc/die/firedeathbig2n.gif
+	frame	data/chars/misc/die/firedeathbig2o.gif
+	frame	data/chars/misc/die/firedeathbig2p.gif
+	frame	data/chars/misc/die/firedeathbig2q.gif
+	frame	data/chars/misc/die/firedeathbig2r.gif
+	frame	data/chars/misc/die/firedeathbig2s.gif
+	frame	data/chars/misc/die/firedeathbig2t.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	0
+	delay	4
+	offset	105 100
+	bbox	0 0 0 0
+	frame	data/chars/misc/die/firedeathbig1a.gif
+	frame	data/chars/misc/die/firedeathbig1b.gif
+	frame	data/chars/misc/die/firedeathbig1c.gif
+	frame	data/chars/misc/die/firedeathbig1d.gif
+	frame	data/chars/misc/die/firedeathbig1e.gif
+	frame	data/chars/misc/die/firedeathbig1f.gif
+	frame	data/chars/misc/die/firedeathbig1g.gif
+	frame	data/chars/misc/die/firedeathbig1h.gif
+	frame	data/chars/misc/die/firedeathbig1i.gif
+	frame	data/chars/misc/die/firedeathbig1j.gif
+	frame	data/chars/misc/die/firedeathbig1k.gif
+	frame	data/chars/misc/die/firedeathbig1l.gif
+	frame	data/chars/misc/die/firedeathbig1m.gif
+	frame	data/chars/misc/die/firedeathbig1n.gif
+	frame	data/chars/misc/die/firedeathbig1o.gif
+	frame	data/chars/misc/die/firedeathbig1p.gif
+	frame	data/chars/misc/die/firedeathbig1r.gif
+	frame	data/chars/misc/die/firedeathbig1s.gif
+	frame	data/chars/misc/die/firedeathbig1t.gif
+	frame	data/chars/misc/die/firedeathbig1u.gif
+	frame	data/chars/misc/die/firedeathbig1v.gif
+	frame	data/chars/misc/die/firedeathbig1w.gif
+	frame	data/chars/misc/die/firedeathbig1x.gif
+	frame	data/chars/misc/die/firedeathbig1y.gif
+	frame	data/chars/misc/die/firedeathbig1z.gif
+	frame	data/chars/misc/die/firedeathbig2a.gif
+	frame	data/chars/misc/die/firedeathbig2b.gif
+	frame	data/chars/misc/die/firedeathbig2c.gif
+	frame	data/chars/misc/die/firedeathbig2d.gif
+	frame	data/chars/misc/die/firedeathbig2e.gif
+	frame	data/chars/misc/die/firedeathbig2f.gif
+	frame	data/chars/misc/die/firedeathbig2g.gif
+	frame	data/chars/misc/die/firedeathbig2h.gif
+	frame	data/chars/misc/die/firedeathbig2i.gif
+	frame	data/chars/misc/die/firedeathbig2j.gif
+	frame	data/chars/misc/die/firedeathbig2k.gif
+	frame	data/chars/misc/die/firedeathbig2l.gif
+	frame	data/chars/misc/die/firedeathbig2m.gif
+	frame	data/chars/misc/die/firedeathbig2n.gif
+	frame	data/chars/misc/die/firedeathbig2o.gif
+	frame	data/chars/misc/die/firedeathbig2p.gif
+	frame	data/chars/misc/die/firedeathbig2q.gif
+	frame	data/chars/misc/die/firedeathbig2r.gif
+	frame	data/chars/misc/die/firedeathbig2s.gif
+	frame	data/chars/misc/die/firedeathbig2t.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

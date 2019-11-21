@@ -1,0 +1,25 @@
+name  		Dead
+type            none
+facing	  	1
+setlayer        -1
+antigravity	100
+offscreenkill   9999
+
+palette  	data/bgs/dungeon/dungeon_misc.gif
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	45
+	offset	21 24
+	frame	data/bgs/dungeon/decoration/dead1a.gif
+	frame	data/bgs/dungeon/decoration/dead1b.gif
+	frame	data/bgs/dungeon/decoration/dead1c.gif
+	delay	280
+	frame	data/bgs/dungeon/decoration/dead1b.gif
+		
+#|edited by openBor Stats v 0.67
+		

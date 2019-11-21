@@ -1,0 +1,373 @@
+name    	 Anfauglir
+health           27
+speed            6
+type    	 enemy
+sleepwait        10
+noquake  	 1
+nopain  	 1
+nodrop  	 2
+death   	 1
+nodieblink       3
+offscreenkill  500
+score 400 -1
+hostile         player npc
+candamage 	player npc
+
+defense normal9 3 0 0 0 0 0 0
+
+icon 		data/chars/misc/bgmonster.gif
+
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+
+palette 	 data/chars/anfauglir/idle1.gif
+alternatepal	 data/chars/anfauglir/blink.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	range	25 100
+	rangea	0 0
+	delay	3
+	offset	71 105
+	bbox	30 30 90 75
+	sound	data/sounds/growl.wav
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/idle2.gif
+	frame	data/chars/anfauglir/idle1.gif
+	frame	data/chars/anfauglir/idle2.gif
+	frame	data/chars/anfauglir/idle1.gif
+	frame	data/chars/anfauglir/idle2.gif
+	frame	data/chars/anfauglir/idle1.gif
+	frame	data/chars/anfauglir/idle2.gif
+	frame	data/chars/anfauglir/idle1.gif
+	frame	data/chars/anfauglir/idle2.gif
+	frame	data/chars/anfauglir/idle1.gif
+	delay	1
+	move	1
+	frame	data/chars/anfauglir/attack1a.gif
+	frame	data/chars/anfauglir/attack1a.gif
+	frame	data/chars/anfauglir/attack1a.gif
+	frame	data/chars/anfauglir/attack1a.gif
+	frame	data/chars/anfauglir/attack1a.gif
+	frame	data/chars/anfauglir/attack1a.gif
+	frame	data/chars/anfauglir/attack1a.gif
+	frame	data/chars/anfauglir/attack1a.gif
+	frame	data/chars/anfauglir/attack1a.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1a.gif
+	hitfx	data/sounds/slash.wav
+	attack2	105 42 30 35 25 1 0 0 0 0
+	frame	data/chars/anfauglir/attack1b.gif
+	hitfx	data/sounds/beat1.wav
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1b.gif
+	hitfx	data/sounds/slash.wav
+	attack2	105 42 30 35 25 1 0 0 0 0
+	frame	data/chars/anfauglir/attack1b.gif
+	hitfx	data/sounds/beat1.wav
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1b.gif
+	hitfx	data/sounds/slash.wav
+	attack2	105 42 30 35 25 1 0 0 0 0
+	frame	data/chars/anfauglir/attack1b.gif
+	hitfx	data/sounds/beat1.wav
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1b.gif
+	hitfx	data/sounds/slash.wav
+	attack2	105 42 30 35 25 1 0 0 0 0
+	frame	data/chars/anfauglir/attack1b.gif
+	hitfx	data/sounds/beat1.wav
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1b.gif
+	hitfx	data/sounds/slash.wav
+	attack2	105 42 30 35 25 1 0 0 0 0
+	frame	data/chars/anfauglir/attack1b.gif
+	attack2	0 0 0 0 0
+	frame	data/chars/anfauglir/attack1b.gif
+	bbox	30 45 90 60
+	hitfx	data/sounds/slash.wav
+	attack2	110 55 25 35 19 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1c.gif
+	hitfx	data/sounds/beat1.wav
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1c.gif
+	hitfx	data/sounds/slash.wav
+	attack2	110 55 25 35 19 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1c.gif
+	hitfx	data/sounds/beat1.wav
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1c.gif
+	hitfx	data/sounds/slash.wav
+	attack2	110 55 25 35 19 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1c.gif
+	hitfx	data/sounds/beat1.wav
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1c.gif
+	hitfx	data/sounds/slash.wav
+	attack2	110 55 25 35 19 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1c.gif
+	hitfx	data/sounds/beat1.wav
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1c.gif
+	hitfx	data/sounds/slash.wav
+	attack2	110 55 25 35 19 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1c.gif
+	hitfx	data/sounds/beat1.wav
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1c.gif
+	hitfx	data/sounds/slash.wav
+	attack2	110 55 25 35 19 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1d.gif
+	hitfx	data/sounds/beat1.wav
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1d.gif
+	hitfx	data/sounds/slash.wav
+	attack2	110 55 25 35 19 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1d.gif
+	hitfx	data/sounds/beat1.wav
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1d.gif
+	hitfx	data/sounds/slash.wav
+	attack2	110 55 25 35 19 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1d.gif
+	hitfx	data/sounds/beat1.wav
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1d.gif
+	hitfx	data/sounds/slash.wav
+	attack2	110 55 25 35 19 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1d.gif
+	hitfx	data/sounds/beat1.wav
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1d.gif
+	hitfx	data/sounds/slash.wav
+	attack2	110 55 25 35 19 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1d.gif
+	hitfx	data/sounds/beat1.wav
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1d.gif
+	attack2	0 0 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1e.gif
+	bbox	30 45 90 60
+	hitfx	data/sounds/beat1.wav
+	attack	30 45 90 60 12 0 0 0 0 0
+	frame	data/chars/anfauglir/attack1e.gif
+	frame	data/chars/anfauglir/attack1e.gif
+	frame	data/chars/anfauglir/attack1e.gif
+	frame	data/chars/anfauglir/attack1e.gif
+	frame	data/chars/anfauglir/attack1e.gif
+	frame	data/chars/anfauglir/attack1e.gif
+	frame	data/chars/anfauglir/attack1e.gif
+	frame	data/chars/anfauglir/attack1e.gif
+	frame	data/chars/anfauglir/attack1e.gif
+	frame	data/chars/anfauglir/attack1f.gif
+	frame	data/chars/anfauglir/attack1f.gif
+	frame	data/chars/anfauglir/attack1f.gif
+	frame	data/chars/anfauglir/attack1f.gif
+	frame	data/chars/anfauglir/attack1f.gif
+	frame	data/chars/anfauglir/attack1f.gif
+	frame	data/chars/anfauglir/attack1f.gif
+	frame	data/chars/anfauglir/attack1f.gif
+	frame	data/chars/anfauglir/attack1f.gif
+	attack	0 0 0 0
+	frame	data/chars/anfauglir/attack1f.gif
+	move	0
+	delay	1
+	bbox	30 30 90 75
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/idle1.gif
+	delay	7
+	frame	data/chars/anfauglir/idle1.gif
+	frame	data/chars/anfauglir/idle2.gif
+		
+anim	attack2
+	range	50 100
+	rangea	-60 60
+	delay	3
+	offset	71 105
+	bbox	30 30 90 75
+	jumpframe	16 2 2 0 0
+	attack	30 30 90 75 12 0 0 0 0 0
+	sound	data/sounds/growl.wav
+	frame	data/chars/anfauglir/idle2.gif
+	frame	data/chars/anfauglir/idle1.gif
+	frame	data/chars/anfauglir/idle2.gif
+	frame	data/chars/anfauglir/idle1.gif
+	frame	data/chars/anfauglir/idle2.gif
+	frame	data/chars/anfauglir/idle1.gif
+	frame	data/chars/anfauglir/idle2.gif
+	frame	data/chars/anfauglir/idle1.gif
+	frame	data/chars/anfauglir/idle2.gif
+	frame	data/chars/anfauglir/idle1.gif
+	delay	7
+	frame	data/chars/anfauglir/attack2a.gif
+	frame	data/chars/anfauglir/attack2b.gif
+	frame	data/chars/anfauglir/attack2c.gif
+	frame	data/chars/anfauglir/attack2d.gif
+	delay	7
+	bbox	30 25 90 55
+	attack	30 25 98 55 19 11 0 0 0 0
+	frame	data/chars/anfauglir/attack2e.gif
+	delay	14
+	bbox	30 25 90 45
+	attack	30 25 98 45 19 11 0 0 0 0
+	frame	data/chars/anfauglir/attack2f.gif
+	bbox	30 30 90 55
+	attack	30 30 98 55 19 11 0 0 0 0
+	frame	data/chars/anfauglir/attack2g.gif
+	bbox	30 30 90 55
+	attack	30 30 98 55 19 11 0 0 0 0
+	frame	data/chars/anfauglir/attack2h.gif
+	delay	1
+	move	1
+	bbox	30 30 90 75
+	frame	data/chars/anfauglir/attack2i.gif
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/attack2i.gif
+	frame	data/chars/anfauglir/attack2i.gif
+	frame	data/chars/anfauglir/attack2i.gif
+	frame	data/chars/anfauglir/attack2i.gif
+	frame	data/chars/anfauglir/attack2i.gif
+	frame	data/chars/anfauglir/attack2j.gif
+	frame	data/chars/anfauglir/attack2j.gif
+	frame	data/chars/anfauglir/attack2j.gif
+	frame	data/chars/anfauglir/attack2j.gif
+	frame	data/chars/anfauglir/attack2j.gif
+	frame	data/chars/anfauglir/attack2j.gif
+	move	0
+	delay	7
+	frame	data/chars/anfauglir/attack2k.gif
+	frame	data/chars/anfauglir/attack2l.gif
+	frame	data/chars/anfauglir/idle1.gif
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/anfauglir/idle2.gif
+		
+anim	death
+	loop	0
+	delay	7
+	offset	71 105
+	sound	data/sounds/flame-dies.wav
+	subentity	wdie
+	spawnframe	1 0 0 0 0
+	frame	data/chars/anfauglir/death1.gif
+	sound	data/sounds/wolf.wav
+	frame	data/chars/anfauglir/death2.gif
+	frame	data/chars/anfauglir/death3.gif
+	frame	data/chars/anfauglir/death4.gif
+	frame	data/chars/anfauglir/death5.gif
+	frame	data/chars/anfauglir/death6.gif
+	frame	data/chars/anfauglir/death7.gif
+	frame	data/chars/anfauglir/death8.gif
+	frame	data/chars/anfauglir/death9.gif
+	frame	data/chars/anfauglir/death10.gif
+	frame	data/chars/anfauglir/death11.gif
+	delay	100
+	frame	data/chars/anfauglir/death11.gif
+	delay	3
+	frame	data/chars/anfauglir/death12.gif
+	frame	data/chars/anfauglir/death13.gif
+	frame	data/chars/anfauglir/death14.gif
+	delay	1
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	20
+	offset	71 105
+	bbox	30 30 90 75
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/idle3.gif
+	frame	data/chars/anfauglir/idle4.gif
+	frame	data/chars/anfauglir/idle5.gif
+	attack	0
+	frame	data/chars/anfauglir/idle6.gif
+		
+anim	sleep
+	loop	0
+	delay	20
+	offset	71 105
+	bbox	30 30 90 75
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/idle1.gif
+	frame	data/chars/anfauglir/idle2.gif
+	frame	data/chars/anfauglir/idle1.gif
+	frame	data/chars/anfauglir/idle2.gif
+	frame	data/chars/anfauglir/idle1.gif
+	frame	data/chars/anfauglir/idle2.gif
+	frame	data/chars/anfauglir/idle1.gif
+	frame	data/chars/anfauglir/idle2.gif
+	frame	data/chars/anfauglir/idle1.gif
+	attack	0
+	frame	data/chars/anfauglir/idle2.gif
+		
+anim	spawn
+	loop	0
+	delay	7
+	offset	71 105
+	bbox	30 30 90 75
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/idle3.gif
+		
+anim	turn
+	loop	0
+	delay	10
+	offset	71 105
+	bbox	30 30 90 75
+	flipframe	8
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/turn1.gif
+	frame	data/chars/anfauglir/turn2.gif
+	frame	data/chars/anfauglir/turn3.gif
+	bbox	50 30 55 75
+	attack	50 30 55 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/turn4.gif
+	frame	data/chars/anfauglir/turn5.gif
+	bbox	30 30 90 75
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/turn6.gif
+	frame	data/chars/anfauglir/turn7.gif
+	attack	0
+	frame	data/chars/anfauglir/turn8.gif
+		
+anim	walk
+	loop	1
+	delay	20
+	offset	71 105
+	bbox	30 30 90 75
+	attack	30 30 90 75 12 0 0 0 0 0
+	frame	data/chars/anfauglir/walk1.gif
+	frame	data/chars/anfauglir/walk2.gif
+	frame	data/chars/anfauglir/walk3.gif
+	frame	data/chars/anfauglir/walk4.gif
+	frame	data/chars/anfauglir/walk5.gif
+	attack	0
+	frame	data/chars/anfauglir/walk6.gif
+		
+#|edited by openBor Stats v 0.67
+		

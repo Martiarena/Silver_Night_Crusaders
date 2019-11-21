@@ -1,0 +1,18 @@
+name  		Clocktower_wall3
+type		none
+facing	  	1
+setlayer	1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/clock_tower/clock_palette_elements.gif
+
+
+
+
+anim	idle
+	delay	100
+	offset	71 112
+	platform	0 112 -8 -8 120 120 10 999
+	frame	data/bgs/clock_tower/walls/clocktower_wall3a.gif
+

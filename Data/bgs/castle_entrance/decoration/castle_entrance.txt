@@ -1,0 +1,22 @@
+name	       	Castle_entrance
+type    	none
+antigravity     100
+shadow		0
+nomove	1
+setlayer 99
+nolife	1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_gravity 0
+
+palette		data/bgs/castle_entrance/decoration/entrance.gif
+
+
+anim	idle
+	loop	1
+	delay	5
+	offset	28 152
+	frame	data/bgs/castle_entrance/decoration/entrance.gif
+		
+#|edited by openBor Stats v 0.67
+		

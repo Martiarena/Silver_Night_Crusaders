@@ -1,0 +1,82 @@
+name    	 RibPis3
+health  	 10
+nomove   	 1 1
+type    	 enemy
+nolife  	 1
+noquake  	 1
+death   	 1
+score   	 0 -1
+antigravity  	 100
+setlayer   	 99
+hostile  	 none
+candamage  	 player
+animationscript  data/scripts/Cscript.c
+load    	 RibPis2
+
+palette	         data/chars/wdragon/head01.gif
+alternatepal	 data/chars/wdragon/blink.gif
+alternatepal	 data/chars/wdragon/gold.gif
+alternatepal	 data/chars/wdragon/white.gif
+alternatepal	 data/chars/wdragon/red.gif
+
+anim spawn
+	delay	10
+	offset	9 5
+	attack	2 2 14 14 5 1
+	frame	data/chars/wdragon/rib.gif
+        @cmd    spawner "RibPis2" 0 0 0
+	frame	data/chars/wdragon/rib.gif
+
+anim idle
+	loop	1
+	delay	5
+	offset	9 15
+	attack	2 2 14 14 5 1
+        @cmd    suicidePar
+        @cmd    targetPardashT 10 0 0
+        @cmd    mapPar
+	frame	data/chars/wdragon/rib.gif
+        @cmd    suicidePar
+        @cmd    mapPar
+	attack	0
+	frame	data/chars/wdragon/rib.gif
+
+anim walk
+	loop	1
+	delay	12
+	offset	9 15
+	attack	2 2 14 14 5 1
+	frame	data/chars/wdragon/rib.gif
+	attack	0
+	frame	data/chars/wdragon/rib.gif
+
+
+anim death
+	delay	5
+	offset	9 15
+	bouncefactor	2
+        @cmd    degravity 0
+	frame	data/chars/wdragon/rib.gif
+	delay	50
+	frame	data/chars/wdragon/rib.gif
+
+anim pain
+	delay	5
+	offset	9 15
+	attack	2 2 14 14 5 1
+	frame	data/chars/wdragon/rib.gif
+	attack	0
+	frame	data/chars/wdragon/rib.gif
+
+anim fall
+	offset	9 15
+	delay	10
+        @cmd    stop
+	frame	data/chars/wdragon/rib.gif
+        @cmd    beidle
+	frame	data/chars/wdragon/rib.gif
+
+anim rise
+	delay	5
+	offset	9 15
+	frame	data/chars/wdragon/rib.gif

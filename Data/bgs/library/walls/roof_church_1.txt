@@ -1,0 +1,16 @@
+name  		Roof_church_1
+type		none
+facing	  	1
+setlayer -1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/library/palette_object.gif
+
+
+anim	idle
+	delay	100
+	offset	172 32
+	platform	0 160 -8 -8 353 353 10 9999
+	frame	data/bgs/library/walls/roof_church_1.gif
+

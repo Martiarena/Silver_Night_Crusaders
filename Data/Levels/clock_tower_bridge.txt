@@ -1,0 +1,748 @@
+music		data/music/interiorgarden.ogg 1525860
+
+panel	        data/bgs/clock_tower/clock_tower_bridge.gif
+
+fglayer		data/bgs/clock_tower/clock_tower_clouds.gif -11000 0.5 0.5 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/clock_tower/clock_tower_mountains.gif -13000 0.8 0.8 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/clock_tower/clock_tower_sky.gif -14000 0.9 0.9 0 0 0 0 -1 1 1 0 0 0 0 0 1
+order           a
+settime	        0
+notime		1
+spawn1          100 0 240
+spawn2          60 0 240
+direction	both
+type		0 0 0
+cameratype 1
+Hole  1375  248  0  0  130  130  35
+Hole  1640  248  0  0  145  145  35
+Hole  1975  248  0  0  134  134  35
+Hole  2300  248  0  0  130  130  35
+Hole  2702  248  0  0  85  85  35
+Hole  3405  248  0  0  86  86  35
+Hole  3493  248  0  0  99  99  35
+Hole  3594  248  0  0  101  101  35
+Hole  3697  248  0  0  79  79  35
+Hole  4225  248  0  0  115  115  35
+Hole  4343  248  0  0  130  130  35
+Hole  4475  248  0  0  145  145  35
+Hole  4622  248  0  0  128  128  35
+Hole  4753  248  0  0  95  95  35
+Hole  5106  248  0  0  125  125  35
+Hole  6280  248  0  0  108  108  35
+
+spawn	Stage5
+coords  160 240  0
+flip    1
+at      0
+
+spawn  Clocktower_front1
+coords  0  248  0
+flip  1
+at  0
+
+spawn  Clocktower_platform2
+coords  282  216  65
+flip  1
+at  0
+
+spawn  Clocktower_platform2
+coords  378  216  65
+flip  1
+at  0
+
+spawn  Moon
+coords  460  10
+at  0
+
+spawn  Clocktower_platform2
+coords  587  216  65
+flip  1
+at  0
+
+spawn  Clocktower_platform2
+coords  682  216  65
+flip  1
+at  0
+
+spawn  Clocktower_platform5
+coords  976  216  84
+flip  1
+at  0
+
+spawn  Clocktower_wall4
+coords  1347  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  clocktower_platform1
+coords  1564  216  48
+alias	Thick
+flip  1
+at  0
+
+spawn  Clocktower_wall1
+coords  1921  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  clocktower_platform1
+coords  1928  216  80
+alias	Thick
+flip  1
+at  0
+
+spawn  clocktower_platform1
+coords  2461  216  80
+alias	Thick
+flip  1
+at  0
+
+spawn  Clocktower_wall2
+coords  2487  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Clocktower_wall3
+coords  2946  216  108
+alias	Thick
+flip  1
+at  0
+
+spawn  Ani_gear_window
+coords  3075  216  54
+at  0
+
+spawn  Ani_gear_window
+coords  3139  216  134
+at  0
+
+spawn  Ani_gear_window
+coords  3203  216  54
+at  0
+
+spawn  Clocktower_platform3
+coords  3494  216  20
+alias	Thick
+flip  1
+at  0
+
+spawn  Clocktower_platform3
+coords  3595  216  76
+alias	Thick
+flip  1
+at  0
+
+spawn	Ani_gear_deco2
+coords	3675  216  176
+flip	1
+at	0
+
+spawn  Clocktower_platform3
+coords  3697  216  29
+alias	Thick
+flip  1
+at  0
+
+spawn	Ani_gear_window
+coords	3914  216  54
+flip	1
+at	0
+
+spawn  Ani_gear_window
+coords  3978  216  134
+at  0
+
+
+spawn  Ani_gear_window
+coords  4042  216  54
+at  0
+
+spawn  Ani_gear_deco
+coords  4255  216  176
+flip 1
+at  0
+
+spawn  Clocktower_platform3
+coords  4344  216  56
+alias	Thick
+flip  1
+at  0
+
+spawn  Ani_gear_deco2
+coords  4415  216  176
+flip 1
+at  0
+
+spawn  Clocktower_platform3
+coords  4474  216  25
+alias	Thick
+flip  1
+at  0
+
+spawn  Ani_gear_deco2
+coords  4589  216  176
+flip 1
+at 0
+
+spawn  Clocktower_platform4
+coords  4622  216  25
+alias	Thick
+flip  1
+at  0
+
+spawn  Clocktower_platform3
+coords  4752  216  24
+alias	Thick
+flip  1
+at  0
+
+spawn  Clocktower_platform3
+coords  4752  216  120
+flip  1
+at  0
+
+spawn  Ani_gear_deco2
+coords  4910  216  176
+flip 1
+at  0
+
+
+spawn  Ani_gear_deco3
+coords  5080  216  176
+flip 1
+at  0
+
+spawn  Ani_gear_deco2
+coords  5255  216  176
+flip 1
+at  0
+
+spawn  Ani_gear_window
+coords  5272  216  54
+at  0
+
+spawn  Ani_gear_window
+coords  5384  216  134
+at  0
+
+spawn  Clocktower_platform9
+coords  5393  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Ani_gear_deco3
+coords  5425  216  176
+flip 1
+at  0
+
+spawn  Clocktower_platform8
+coords  5502  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Ani_gear_window
+coords  5624  216  134
+at  0
+
+spawn  Clocktower_platform7
+coords  5667  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Pike_trap
+coords  5778  216  198
+flip 1
+at  0
+
+spawn  Spike_trapd
+coords  5815  216  0
+at  0
+
+spawn  Clocktower_platform6
+coords  5901  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Pike_trap
+coords  5949  216  198
+flip 1
+at  0
+
+spawn  Spike_trapd
+coords  5987  216
+at  0
+
+spawn  Clocktower_platform6
+coords  6071  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Pike_trap
+coords  6120  216  198
+flip 1
+at  0
+
+spawn  Spike_trapd
+coords  6157  216  0
+at  0
+
+spawn  Clocktower_platform6
+coords  6241  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Clocktower_wall5
+coords  6619  216  0
+alias	Thick
+flip  1
+at  0
+
+#spawn	Stage5
+#coords  160 240  0
+#flip    1
+#at      0
+
+spawn  Brazier1
+coords  230  216  0
+item  ___10
+at  0
+
+spawn  Brazier1
+coords  330  216  0
+item	A._Bendita
+map	1
+at  0
+
+spawn  Chiroptera_
+coords  360  216 21
+at  15
+
+spawn  BatSpawner
+coords  0  70
+at  50
+
+spawn  Brazier1
+coords  340  216  0
+item  ___10
+at  80
+
+spawn  Brazier1
+coords  340  216  0
+item  ___10
+at  205
+
+spawn  Brazier1
+coords  340  216  0
+item  ___10
+at  295
+
+Blockade  320
+at  300
+Wait
+at  320
+
+spawn  Nigromante
+coords  275  216
+at  320
+
+spawn  Nigromante
+coords  55  216  0
+flip  1
+at  320
+
+spawn  Brazier1
+coords  340  216  0
+item  ___10
+at  390
+
+spawn  T._de_huesos
+coords  340  216  30
+at  440
+
+spawn  T._de_huesos
+coords  340  216  0
+at  440
+
+spawn  Torch
+coords  340  216  59
+flip  1
+item  Gema_azul
+at  494
+
+spawn  Chiroptera_
+coords  360  216 40
+at  495
+
+spawn  Torch
+coords  340  216  167
+flip  1
+item  Gema_roja
+at  518
+
+spawn  Chiroptera_
+coords  360  216 40
+at  535
+
+spawn  Torch
+coords  340  216  59
+flip  1
+item  ___10
+at  542
+
+spawn  Torch
+coords  340  216  167
+flip  1
+item ___20
+at  566
+
+spawn  Chiroptera_
+coords  360  216 40
+at  575
+
+spawn  C._Demonio
+coords  360  216  0
+at  580
+
+spawn  Charmandra
+coords  -50  216  0
+at  580
+
+spawn  Torch
+coords  340  216  59
+flip  1
+item ___10
+at  630
+
+spawn  Charmandra
+coords  360  216  107
+at  650
+
+spawn  Torch
+coords  340  216  59
+flip  1
+item ___10
+at  710
+
+spawn  Charmandra
+coords  360  216  0
+at  800
+
+spawn  Clocktower_wall4b
+coords  340  216
+flip  1
+item	C._arcoiris
+at  976
+
+spawn  BatSpawner
+coords  320  0
+at  1200
+
+spawn  T._de_huesos
+coords  340  216  80
+at  1200
+
+spawn  T._de_huesos
+coords  340  214  110
+at  1200
+
+spawn  Brazier1
+coords  340  216  80
+item  ___20
+at  1250
+
+Blockade  1345
+at  1345
+
+spawn  Chiroptera_
+coords  360  216 37
+at  1480
+
+spawn  Charmandra
+coords  340  216  112
+at  1550
+
+spawn  Brazier1
+coords  340  216  112
+item  ___20
+at  1585
+
+spawn  Barril
+coords  340  216
+item	Pollo_frito
+at  1810
+
+spawn  T._de_huesos
+coords  340  216  64
+at  1870
+
+spawn  T._de_huesos
+coords  340  216
+at  1870
+
+spawn  T._de_huesos
+coords  340  216  32
+at  1870
+
+spawn  Brazier1
+coords  340  216
+item	Bumeran
+map	1
+at  1920
+
+spawn  Brazier1
+coords  340  216  111
+item  ___50
+at  2120
+
+spawn  C._Demonio
+coords  340  216  115
+at  2170
+
+spawn  Brazier1
+coords  340  216
+item  ___20
+at  2260
+
+spawn  Brazier1
+coords  340  216
+item  ___50
+at  2500
+
+Blockade  2575
+at  2400
+Wait
+at  2575
+
+spawn  D._Negro
+coords  310  216  120
+at  2575
+
+spawn  Brazier1
+coords  340  216
+item  ___10
+at  2670
+
+spawn  BatSpawner
+coords  320  1
+at  2700
+
+spawn  Barril
+coords  340  216
+item	P._invisible
+at  2730
+
+spawn  Barril
+coords  340  216
+item	___250
+at  2775
+
+spawn  Brazier1
+coords  340  216
+item  ___10
+at  2840
+
+spawn  T._de_huesos
+coords  340  217
+at  2850
+
+spawn  T._de_huesos
+coords  340  216  32
+at  2850
+
+spawn  Ani_gears_background
+coords  160  248
+flip 1
+at  2930
+
+Blockade  2930
+at  2930
+
+spawn  Brazier1
+coords  340  216
+item  ___10
+at  2970
+
+spawn  Arana
+coords  340  216  160
+at  3210
+
+spawn  Ani_big_gear
+coords  360  216  0
+flip  1
+at  3260
+
+spawn  C._Demonio
+coords  -50  216
+at  3300
+
+spawn  Arana
+coords  340  216  160
+at  3300
+
+spawn  gear_trap_1b
+coords  360  216  176
+at  3362
+
+spawn  Brazier1
+coords  340  216
+item  ___20
+at  3500
+
+spawn  Brazier1
+coords  340  216
+item  ___50
+at  3640
+
+spawn  Ani_big_gear
+coords  360  216  0
+flip  1
+at  3660
+
+spawn  Brazier1
+coords  340  216
+item  ___20
+at  3755
+
+spawn  Arana
+coords  340  216  160
+at  3821
+
+spawn  BatSpawner
+coords  320  0
+at  4000
+
+Blockade  4000
+at  4000
+
+spawn  Arana
+coords  340  216  160
+at  4060
+
+spawn  gear_trap_1b
+coords  360  216  176
+flip 1
+at  4103
+
+spawn  Arana
+coords  340  216  160
+at  4215
+
+spawn  gear_trap_1b
+coords  360  216  176
+flip 1
+at  4277
+
+spawn  Ani_big_gear
+coords  360  216  0
+flip  1
+at  4350
+
+spawn  Chiroptera_
+coords  360  216 76
+at  4389
+
+spawn  gear_trap_1a
+coords  360  216  176
+flip 1
+at  4598
+
+spawn  Ani_big_gear
+coords  360  216  0
+flip  1
+at  4640
+
+spawn  gear_trap_1a
+coords  360  216  174
+flip 1
+at  4693
+
+spawn  Brazier1
+coords  340  216
+item  ___10
+at  4710
+
+spawn  BatSpawner
+coords  320  -5
+at  4850
+
+Blockade  4850
+at  4850
+
+spawn  gear_trap_1a
+coords  360  216  176
+flip 1
+at  4942
+
+spawn  Brazier1
+coords  340  216  0
+item  Bomba
+flip 1
+at  4960
+
+spawn  gear_trap_1a
+coords  360  216  174
+flip 1
+at  5039
+
+spawn  T._de_huesos_
+coords  360  216  80
+at  5120
+
+spawn  T._de_huesos
+coords  360  216  50
+at  5120
+
+spawn  Brazier1
+coords  340  216  50
+item  ___10
+at  5170
+
+spawn  C._Demonio
+coords  340  216  90
+at  5300
+
+spawn  Brazier1
+coords  340  216  90
+item  ___20
+at  5380
+
+spawn  Brazier1
+coords  340  216  90
+item  ___100
+at  5562
+
+Blockade  5660
+at  5660
+
+spawn  T._de_huesos
+coords  340  216  118
+at  5750
+
+spawn  T._de_huesos_
+coords  340  216  88
+at  5750
+
+spawn  Brazier1
+coords  340  216  88
+item  ___50
+at  5900
+
+spawn  Barril
+coords  340  216
+item	Pollo_frito
+at  6100
+
+spawn  ToShop
+coords  360  216  0
+flip  1
+at  6170
+

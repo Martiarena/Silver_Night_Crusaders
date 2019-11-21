@@ -1,0 +1,55 @@
+name    	Gema_Roja
+type    	item
+mp		40
+facing          1
+antigravity	30
+icon 		data/chars/misc/bgitem.gif
+
+palette 	data/chars/items/items_palette3.gif
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	70
+	offset	3 10
+	itembox	0 0 15 14
+	frame	data/chars/items/red_gem/idle1.gif
+	delay	2
+	frame	data/chars/items/red_gem/idle1a.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	3 10
+	itembox	0 0 15 14
+	frame	data/chars/items/red_gem/idle1.gif
+	frame	data/chars/items/red_gem/idle1a.gif
+	frame	data/chars/items/red_gem/idle1.gif
+	frame	data/chars/items/red_gem/idle1a.gif
+	frame	data/chars/items/red_gem/idle1.gif
+	frame	data/chars/items/red_gem/idle1a.gif
+	frame	data/chars/items/red_gem/idle1.gif
+	frame	data/chars/items/red_gem/idle1a.gif
+	frame	data/chars/items/red_gem/idle1.gif
+	frame	data/chars/items/red_gem/idle1a.gif
+	frame	data/chars/items/red_gem/idle1.gif
+	frame	data/chars/items/red_gem/idle1a.gif
+	frame	data/chars/items/red_gem/idle1.gif
+	frame	data/chars/items/red_gem/idle1a.gif
+	frame	data/chars/items/red_gem/idle1.gif
+	frame	data/chars/items/red_gem/idle1a.gif
+	frame	data/chars/items/red_gem/idle1.gif
+	frame	data/chars/items/red_gem/idle1a.gif
+	frame	data/chars/items/red_gem/idle1.gif
+	frame	data/chars/items/red_gem/idle1a.gif
+	frame	data/chars/items/red_gem/idle1.gif
+	frame	data/chars/items/red_gem/idle1a.gif
+	frame	data/chars/items/red_gem/idle1.gif
+	frame	data/chars/items/red_gem/idle1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

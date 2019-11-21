@@ -1,0 +1,21 @@
+name  		Bridge_platform_5
+type		none
+facing	  	1
+setlayer	-1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/moon_bridge/bridge_palette.gif
+
+
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	48 33
+	platform	0 33 -8 -8 104 104 10 33
+	frame	data/bgs/moon_bridge/platforms/bridge_platform_5.gif
+

@@ -1,0 +1,86 @@
+name	        ShadeIce
+type	        none
+health		1
+nolife          1
+lifespan        4
+antigravity     100
+hostile		player npc
+candamage       player npc
+animationscript data/scripts/cscript.c
+load		ShIceS
+
+palette		data/chars/misc/ESpells/ice_spell_palette.gif
+
+
+
+
+
+anim	death
+	delay	4
+	offset	9 10
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	delay	4
+	offset	9 10
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	1
+	offset	9 10
+	followcond	1
+	followanim	1
+	bbox	2 2 14 14
+	attack7	2 2 14 14 19 0 0 0 0 0
+	hitfx	data/sounds/icebreak.wav
+	frame	data/chars/misc/espells/shice6.gif
+	delay	8
+	@cmd	spawn01 "ShIceS" 0 0 0
+	@cmd	target 0.4 0.4 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/espells/shice6.gif
+	@cmd	spawn01 "ShIceS" 0 0 0
+	frame	data/chars/misc/espells/shice7.gif
+	@cmd	spawn01 "ShIceS" 0 0 0
+	@cmd	target 0.4 0.4 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/espells/shice8.gif
+	@cmd	spawn01 "ShIceS" 0 0 0
+	frame	data/chars/misc/espells/shice6.gif
+	@cmd	spawn01 "ShIceS" 0 0 0
+	@cmd	target 0.4 0.4 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/espells/shice7.gif
+	attack7	0 0 0 0
+	@cmd	spawn01 "ShIceS" 0 0 0
+	frame	data/chars/misc/espells/shice8.gif
+		
+anim	spawn
+	delay	8
+	offset	9 10
+	hitfx	data/sounds/icebreak.wav
+	frame	data/chars/misc/espells/shice1.gif
+	frame	data/chars/misc/espells/shice2.gif
+	frame	data/chars/misc/espells/shice3.gif
+	frame	data/chars/misc/espells/shice4.gif
+	bbox	2 2 14 14
+	attack7	2 2 14 14 19 0 0 0 0 0
+	frame	data/chars/misc/espells/shice5.gif
+	frame	data/chars/misc/espells/shice6.gif
+	frame	data/chars/misc/espells/shice7.gif
+	frame	data/chars/misc/espells/shice8.gif
+	frame	data/chars/misc/espells/shice6.gif
+	frame	data/chars/misc/espells/shice7.gif
+	frame	data/chars/misc/espells/shice8.gif
+	frame	data/chars/misc/espells/shice6.gif
+	frame	data/chars/misc/espells/shice7.gif
+	frame	data/chars/misc/espells/shice8.gif
+	frame	data/chars/misc/espells/shice6.gif
+	frame	data/chars/misc/espells/shice7.gif
+	frame	data/chars/misc/espells/shice8.gif
+		
+#|edited by openBor Stats v 0.67
+		
