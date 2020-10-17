@@ -1,0 +1,238 @@
+name	        Tail_serpent_1
+type	        none
+nolife          1
+setlayer	40
+candamage	player npc
+hostile		player npc
+
+load    Tail_impact
+load	btw_rock1
+load	btw_rock2
+load	btw_rock3
+load	btw_rock4
+load	btw_rock5
+
+animationscript  data/scripts/escript.c
+
+palette          data/chars/countess/finalform/spawn_tail1a.gif
+
+
+
+
+anim	idle
+	loop	0
+	delay	7
+	offset	93 105
+	attack	60 40 115 36 19 0 0 0 0 0
+	@cmd	spawn01 "Tail_impact" -30 0 0
+	@cmd	tosserM "white_rock1" -30 0.5 0 2.5
+	@cmd	tosserM "white_rock2" -30 -0.5 0 1.5
+	@cmd	tosserM "white_rock3" -30 1 0.3 1.5
+	@cmd	tosserM "white_rock2" -30 -1.5 -0.3 1.5
+	@cmd	tosserM "white_rock1" -30 1 0.3 1
+	@cmd	tosserM "white_rock3" -30 -1 -0.3 1
+	frame	data/chars/countess/finalform/tail1a.gif
+	frame	data/chars/countess/finalform/tail1b.gif
+	frame	data/chars/countess/finalform/tail1c.gif
+	@cmd	tosserM "btw_rock1" 72 0.5 0.3 2.5
+	@cmd	tosserM "btw_rock2" 72 -0.5 -0.3 1.5
+	@cmd	tosserM "btw_rock3" 72 1 0.9 1.5
+	@cmd	tosserM "btw_rock4" 72 -1 -0.9 1.5
+	@cmd	tosserM "btw_rock5" 72 1.5 0.15 1
+	@cmd	tosserM "btw_rock3" 72 -1.5 -0.15 1
+	frame	data/chars/countess/finalform/tail1d.gif
+	frame	data/chars/countess/finalform/tail1e.gif
+	frame	data/chars/countess/finalform/tail1f.gif
+	frame	data/chars/countess/finalform/tail1g.gif
+	@cmd	tosserM "btw_rock1" -30 -0.5 0.3 2.5
+	@cmd	tosserM "btw_rock2" -30 0.5 -0.3 1.5
+	@cmd	tosserM "btw_rock3" -30 -1 0.9 1.5
+	@cmd	tosserM "btw_rock4" -30 1 -0.9 1.5
+	@cmd	tosserM "btw_rock5" -30 -1.5 0.15 1
+	@cmd	tosserM "btw_rock3" -30 1.5 -0.15 1
+	frame	data/chars/countess/finalform/tail1a.gif
+	frame	data/chars/countess/finalform/tail1b.gif
+	frame	data/chars/countess/finalform/tail1c.gif
+	@cmd	tosserM "btw_rock1" 72 0.5 0.3 2.5
+	@cmd	tosserM "btw_rock2" 72 -0.5 -0.3 1.5
+	@cmd	tosserM "btw_rock3" 72 1 0.9 1.5
+	@cmd	tosserM "btw_rock4" 72 -1 -0.9 1.5
+	@cmd	tosserM "btw_rock5" 72 1.5 0.15 1
+	@cmd	tosserM "btw_rock3" 72 -1.5 -0.15 1
+	frame	data/chars/countess/finalform/tail1d.gif
+	frame	data/chars/countess/finalform/tail1e.gif
+	frame	data/chars/countess/finalform/tail1f.gif
+	frame	data/chars/countess/finalform/tail1g.gif
+	@cmd	tosserM "btw_rock1" -30 -0.5 0.3 2.5
+	@cmd	tosserM "btw_rock2" -30 0.5 -0.3 1.5
+	@cmd	tosserM "btw_rock3" -30 -1 0.9 1.5
+	@cmd	tosserM "btw_rock4" -30 1 -0.9 1.5
+	@cmd	tosserM "btw_rock5" -30 -1.5 0.15 1
+	@cmd	tosserM "btw_rock3" -30 1.5 -0.15 1
+	frame	data/chars/countess/finalform/tail1a.gif
+	frame	data/chars/countess/finalform/tail1b.gif
+	frame	data/chars/countess/finalform/tail1c.gif
+	@cmd	tosserM "btw_rock1" 72 0.5 0.3 2.5
+	@cmd	tosserM "btw_rock2" 72 -0.5 -0.3 1.5
+	@cmd	tosserM "btw_rock3" 72 1 0.9 1.5
+	@cmd	tosserM "btw_rock4" 72 -1 -0.9 1.5
+	@cmd	tosserM "btw_rock5" 72 1.5 0.15 1
+	@cmd	tosserM "btw_rock3" 72 -1.5 -0.15 1
+	frame	data/chars/countess/finalform/tail1d.gif
+	frame	data/chars/countess/finalform/tail1e.gif
+	frame	data/chars/countess/finalform/tail1f.gif
+	frame	data/chars/countess/finalform/tail1g.gif
+	@cmd	tosserM "btw_rock1" -30 -0.5 0.3 2.5
+	@cmd	tosserM "btw_rock2" -30 0.5 -0.3 1.5
+	@cmd	tosserM "btw_rock3" -30 -1 0.9 1.5
+	@cmd	tosserM "btw_rock4" -30 1 -0.9 1.5
+	@cmd	tosserM "btw_rock5" -30 -1.5 0.15 1
+	@cmd	tosserM "btw_rock3" -30 1.5 -0.15 1
+	frame	data/chars/countess/finalform/tail1a.gif
+	frame	data/chars/countess/finalform/tail1b.gif
+	frame	data/chars/countess/finalform/tail1c.gif
+	@cmd	tosserM "btw_rock1" 72 0.5 0.3 2.5
+	@cmd	tosserM "btw_rock2" 72 -0.5 -0.3 1.5
+	@cmd	tosserM "btw_rock3" 72 1 0.9 1.5
+	@cmd	tosserM "btw_rock4" 72 -1 -0.9 1.5
+	@cmd	tosserM "btw_rock5" 72 1.5 0.15 1
+	@cmd	tosserM "btw_rock3" 72 -1.5 -0.15 1
+	frame	data/chars/countess/finalform/tail1d.gif
+	frame	data/chars/countess/finalform/tail1e.gif
+	frame	data/chars/countess/finalform/tail1f.gif
+	delay	1
+	attack	0 0 0 0 0 0
+	frame	data/chars/countess/finalform/tail1f.gif
+	delay	50
+	attack	42 50 142 55 12 0 0 0 0 0
+	@cmd	tosserM "btw_rock1" -30 -0.5 0.3 2.5
+	@cmd	tosserM "btw_rock2" -30 0.5 -0.3 1.5
+	@cmd	tosserM "btw_rock3" -30 -1 0.9 1.5
+	@cmd	tosserM "btw_rock4" -30 1 -0.9 1.5
+	@cmd	tosserM "btw_rock5" -30 -1.5 0.15 1
+	@cmd	tosserM "btw_rock3" -30 1.5 -0.15 1
+	frame	data/chars/countess/finalform/tail1g.gif
+	delay	5
+	attack	42 50 142 55 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/tail1f.gif
+	frame	data/chars/countess/finalform/tail1e.gif
+	frame	data/chars/countess/finalform/tail1d.gif
+	@cmd	tosserM "btw_rock1" 72 0.5 0.3 2.5
+	@cmd	tosserM "btw_rock2" 72 -0.5 -0.3 1.5
+	@cmd	tosserM "btw_rock3" 72 1 0.9 1.5
+	@cmd	tosserM "btw_rock4" 72 -1 -0.9 1.5
+	@cmd	tosserM "btw_rock5" 72 1.5 0.15 1
+	@cmd	tosserM "btw_rock3" 72 -1.5 -0.15 1
+	frame	data/chars/countess/finalform/tail1c.gif
+	frame	data/chars/countess/finalform/tail1b.gif
+	frame	data/chars/countess/finalform/tail1a.gif
+	@cmd	tosserM "btw_rock1" -30 -0.5 0.3 2.5
+	@cmd	tosserM "btw_rock2" -30 0.5 -0.3 1.5
+	@cmd	tosserM "btw_rock3" -30 -1 0.9 1.5
+	@cmd	tosserM "btw_rock4" -30 1 -0.9 1.5
+	@cmd	tosserM "btw_rock5" -30 -1.5 0.15 1
+	@cmd	tosserM "btw_rock3" -30 1.5 -0.15 1
+	frame	data/chars/countess/finalform/tail1g.gif
+	frame	data/chars/countess/finalform/tail1f.gif
+	frame	data/chars/countess/finalform/tail1e.gif
+	@cmd	tosserM "btw_rock1" 72 0.5 0.3 2.5
+	@cmd	tosserM "btw_rock2" 72 -0.5 -0.3 1.5
+	@cmd	tosserM "btw_rock3" 72 1 0.9 1.5
+	@cmd	tosserM "btw_rock4" 72 -1 -0.9 1.5
+	@cmd	tosserM "btw_rock5" 72 1.5 0.15 1
+	@cmd	tosserM "btw_rock3" 72 -1.5 -0.15 1
+	frame	data/chars/countess/finalform/tail1d.gif
+	frame	data/chars/countess/finalform/tail1c.gif
+	frame	data/chars/countess/finalform/tail1b.gif
+	frame	data/chars/countess/finalform/tail1a.gif
+	@cmd	tosserM "btw_rock1" -30 -0.5 0.3 2.5
+	@cmd	tosserM "btw_rock2" -30 0.5 -0.3 1.5
+	@cmd	tosserM "btw_rock3" -30 -1 0.9 1.5
+	@cmd	tosserM "btw_rock4" -30 1 -0.9 1.5
+	@cmd	tosserM "btw_rock5" -30 -1.5 0.15 1
+	@cmd	tosserM "btw_rock3" -30 1.5 -0.15 1
+	frame	data/chars/countess/finalform/tail1g.gif
+	frame	data/chars/countess/finalform/tail1f.gif
+	frame	data/chars/countess/finalform/tail1e.gif
+	@cmd	tosserM "btw_rock1" 72 0.5 0.3 2.5
+	@cmd	tosserM "btw_rock2" 72 -0.5 -0.3 1.5
+	@cmd	tosserM "btw_rock3" 72 1 0.9 1.5
+	@cmd	tosserM "btw_rock4" 72 -1 -0.9 1.5
+	@cmd	tosserM "btw_rock5" 72 1.5 0.15 1
+	@cmd	tosserM "btw_rock3" 72 -1.5 -0.15 1
+	frame	data/chars/countess/finalform/tail1d.gif
+	frame	data/chars/countess/finalform/tail1c.gif
+	frame	data/chars/countess/finalform/tail1b.gif
+	frame	data/chars/countess/finalform/tail1a.gif
+	@cmd	tosserM "btw_rock1" -30 -0.5 0.3 2.5
+	@cmd	tosserM "btw_rock2" -30 0.5 -0.3 1.5
+	@cmd	tosserM "btw_rock3" -30 -1 0.9 1.5
+	@cmd	tosserM "btw_rock4" -30 1 -0.9 1.5
+	@cmd	tosserM "btw_rock5" -30 -1.5 0.15 1
+	@cmd	tosserM "btw_rock3" -30 1.5 -0.15 1
+	frame	data/chars/countess/finalform/tail1g.gif
+	frame	data/chars/countess/finalform/tail1f.gif
+	frame	data/chars/countess/finalform/tail1e.gif
+	@cmd	tosserM "btw_rock1" 72 0.5 0.3 2.5
+	@cmd	tosserM "btw_rock2" 72 -0.5 -0.3 1.5
+	@cmd	tosserM "btw_rock3" 72 1 0.9 1.5
+	@cmd	tosserM "btw_rock4" 72 -1 -0.9 1.5
+	@cmd	tosserM "btw_rock5" 72 1.5 0.15 1
+	@cmd	tosserM "btw_rock3" 72 -1.5 -0.15 1
+	frame	data/chars/countess/finalform/tail1d.gif
+	frame	data/chars/countess/finalform/tail1c.gif
+	frame	data/chars/countess/finalform/tail1b.gif
+	attack	0 0 0 0 0 0
+	@cmd	tosserM "btw_rock1" -30 -0.5 0.3 2.5
+	@cmd	tosserM "btw_rock2" -30 0.5 -0.3 1.5
+	@cmd	tosserM "btw_rock3" -30 -1 0.9 1.5
+	@cmd	tosserM "btw_rock4" -30 1 -0.9 1.5
+	@cmd	tosserM "btw_rock5" -30 -1.5 0.15 1
+	@cmd	tosserM "btw_rock3" -30 1.5 -0.15 1
+	frame	data/chars/countess/finalform/tail1a.gif
+	delay	18
+	frame	data/chars/countess/finalform/spawn_tail1a.gif
+	frame	data/chars/countess/finalform/spawn_tail1b.gif
+	@cmd	tosserM "btw_rock1" 72 0.5 0.3 2.5
+	@cmd	tosserM "btw_rock2" 72 -0.5 -0.3 1.5
+	@cmd	tosserM "btw_rock3" 72 1 0.9 1.5
+	@cmd	tosserM "btw_rock4" 72 -1 -0.9 1.5
+	@cmd	tosserM "btw_rock5" 72 1.5 0.15 1
+	@cmd	tosserM "btw_rock3" 72 -1.5 -0.15 1
+	frame	data/chars/countess/finalform/spawn_tail1a.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	loop	0
+	delay	36
+	offset	93 105
+	@cmd	tosserM "btw_rock1" 72 0.5 0.3 2.5
+	@cmd	tosserM "btw_rock2" 72 -0.5 -0.3 1.5
+	@cmd	tosserM "btw_rock3" 72 1 0.9 1.5
+	@cmd	tosserM "btw_rock4" 72 -1 -0.9 1.5
+	@cmd	tosserM "btw_rock5" 72 1.5 0.15 1
+	@cmd	tosserM "btw_rock3" 72 -1.5 -0.15 1
+	frame	data/chars/countess/finalform/empty_serpent.gif
+	@cmd	tosserM "btw_rock1" 72 0.5 0.3 2.5
+	@cmd	tosserM "btw_rock2" 72 -0.5 -0.3 1.5
+	@cmd	tosserM "btw_rock3" 72 1 0.9 1.5
+	@cmd	tosserM "btw_rock4" 72 -1 -0.9 1.5
+	@cmd	tosserM "btw_rock5" 72 1.5 0.15 1
+	@cmd	tosserM "btw_rock3" 72 -1.5 -0.15 1
+	frame	data/chars/countess/finalform/empty_serpent.gif
+	frame	data/chars/countess/finalform/empty_serpent.gif
+	@cmd	tosserM "white_rock1" 72 -0.5 0 2.5
+	@cmd	tosserM "white_rock2" 72 0.5 0 1.5
+	@cmd	tosserM "white_rock3" 72 -1 0.3 1.5
+	@cmd	tosserM "white_rock2" 72 1 -0.3 1.5
+	@cmd	tosserM "white_rock1" 72 -1.5 0.3 1
+	@cmd	tosserM "white_rock3" 72 1.5 -0.3 1
+	sound	data/sounds/rock_break2.wav
+	frame	data/chars/countess/finalform/spawn_tail1a.gif
+	frame	data/chars/countess/finalform/spawn_tail1b.gif
+	frame	data/chars/countess/finalform/spawn_tail1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

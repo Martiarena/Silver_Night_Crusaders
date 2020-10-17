@@ -1,7 +1,7 @@
 name  		Keep_wall_1
 type		none
 facing	  	1
-setlayer 	-1
+setlayer 	-5
 antigravity	100
 offscreenkill   9999
 

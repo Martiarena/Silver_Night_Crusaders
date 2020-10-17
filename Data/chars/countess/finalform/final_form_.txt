@@ -1,0 +1,658 @@
+name      Final_form_
+health  	300
+speed            4
+type    	 enemy
+noquake  	 1
+nopain  	 1
+nomove 1 1
+nodrop  	 2
+death   	 1
+nodieblink	 2
+score		 50000 -1
+hostile        	player npc
+candamage       player npc
+setlayer         3
+aggression  30
+lifebarstatus 5 100 1 0 1 -300 -300 -300 -300
+lifeposition 309 15
+nameposition -500 -500
+iconposition -500 -500
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+
+defense normal 0.75 0 0 0 0 0 0
+defense normal2 0.75 0 0 0 0 0 0
+defense normal3 0.25 0 0 0 0 0 0
+defense normal4 0.25 0 0 0 0 0 0
+defense normal5 0.15 0 0 0 0 0 0
+defense normal6 0.5 0 0 0 0 0 0
+defense normal7 0.75 0 0 0 0 0 0
+defense normal8 0.25 0 0 0 0 0 0
+defense normal9 2 0 0 0 0 0 0
+defense normal18 0.75 0 0 0 0 0 0
+defense normal19 0.75 0 0 0 0 0 0
+defense normal20 0 0 0 0 0 0 0
+defense normal21 0.75 0 0 0 0 0 0
+defense burn 0.75 0 0 0 0 0 0
+
+diesound     data/sounds/dumbrae_death.wav
+
+load    Spellexplo
+load    forb_fireseal
+load    Sparks_serpent
+load    Tail_serpent_1
+load    Electricball_3
+load	Bodyj
+
+icon		data/chars/misc/bgmonster.gif
+
+palette   data/chars/countess/finalform/idle1a.gif
+alternatepal  data/chars/countess/finalform/basilisk_palette_blink.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	range	0 205
+	rangea	0 70
+	loop	0
+	delay	14
+	offset	119 206
+	bbox	10 55 145 130
+	attack	10 55 145 130 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/attack1a.gif
+	frame	data/chars/countess/finalform/attack2a.gif
+	delay	1
+	sound	data/sounds/throw_medium.wav
+	steal	138 156 185 14 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/attack2b.gif
+	attack	10 55 145 130 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/attack2b.gif
+	steal	138 156 185 14 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/attack2b.gif
+	attack	10 55 145 130 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/attack2b.gif
+	steal	138 156 185 14 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/attack2b.gif
+	attack	10 55 145 130 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/attack2b.gif
+	steal	138 156 185 14 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/attack2b.gif
+	attack	10 55 145 130 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/attack2b.gif
+	steal	138 156 185 14 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/attack2b.gif
+	attack	10 55 145 130 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/attack2b.gif
+	steal	138 156 185 14 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/attack2b.gif
+	attack	10 55 145 130 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/attack2b.gif
+	steal	138 156 185 14 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/attack2b.gif
+	attack	10 55 145 130 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/attack2b.gif
+	steal	138 156 185 14 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/attack2b.gif
+	attack	10 55 145 130 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/attack2b.gif
+	steal	138 156 185 14 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/attack2b.gif
+	attack	10 55 145 130 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/attack2b.gif
+	steal	138 156 185 14 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/attack2b.gif
+	attack	10 55 145 130 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/attack2b.gif
+	delay	14
+	frame	data/chars/countess/finalform/attack2c.gif
+	frame	data/chars/countess/finalform/attack2d.gif
+		
+anim	attack2
+	range	0 209
+	rangea	0 60
+	loop	0
+	delay	48
+	offset	119 206
+	bbox	10 55 145 130
+	attack	10 55 145 130 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	delay	1
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	delay	18
+	@cmd	spawn01 "Tail_serpent_1" 110 0 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle2b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle2b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle2b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle2b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	delay	4
+	@script
+	       void self = getlocalvar("self");
+	       int HP = getentityproperty(self,"health");
+	       if(frame>=40 && frame<=80){
+	       	       changeentityproperty(self, "health", HP+1);
+	       }
+	@end_script	
+	@cmd	mapchange 2
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 2
+	@cmd	spawn01 "sparkles_health" -30 40 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 2
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	spawn01 "sparkles_health" -10 70 0
+	@cmd	mapchange 2
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 2
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	spawn01 "sparkles_health" -70 -55 0
+	@cmd	mapchange 2
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 2
+	frame	data/chars/countess/finalform/idle2b.gif
+	@cmd	mapchange 0
+	frame	data/chars/countess/finalform/idle2b.gif
+	@cmd	mapchange 2
+	frame	data/chars/countess/finalform/idle2b.gif
+	@cmd	mapchange 0
+	@cmd	spawn01 "sparkles_health" 30 35 0
+	frame	data/chars/countess/finalform/idle2b.gif
+	delay	4
+	@cmd	mapchange 2
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 2
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 2
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 2
+	@cmd	spawn01 "sparkles_health" -80 75 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 2
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	spawn01 "sparkles_health" 10 55 0
+	@cmd	mapchange 2
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 2
+	frame	data/chars/countess/finalform/idle2b.gif
+	@cmd	mapchange 0
+	@cmd	spawn01 "sparkles_health" -60 40 0
+	frame	data/chars/countess/finalform/idle2b.gif
+	@cmd	mapchange 2
+	frame	data/chars/countess/finalform/idle2b.gif
+	@cmd	mapchange 0
+	frame	data/chars/countess/finalform/idle2b.gif
+	delay	4
+	@cmd	mapchange 2
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 0
+	@cmd	spawn01 "sparkles_health" 25 40 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 2
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 2
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 2
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	spawn01 "sparkles_health" -20 15 0
+	@cmd	mapchange 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 2
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 2
+	@cmd	spawn01 "sparkles_health" -60 55 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	mapchange 2
+	frame	data/chars/countess/finalform/idle2b.gif
+	@cmd	mapchange 0
+	frame	data/chars/countess/finalform/idle2b.gif
+	@cmd	mapchange 2
+	frame	data/chars/countess/finalform/idle2b.gif
+	@cmd	mapchange 0
+	frame	data/chars/countess/finalform/idle2b.gif
+	delay	16
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle2b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	delay	1
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/countess/finalform/idle1b.gif
+		
+anim	death
+	loop	0
+	delay	14
+	offset	119 206
+	bbox	0 0 0 0
+	attack	0 0 0 0
+	frame	data/chars/countess/finalform/attack1a.gif
+	delay	50
+	frame	data/chars/countess/finalform/attack1b.gif
+	@cmd	spawn01 "Bright_summon" 0 100 0
+	delay	200
+@script
+	if(frame==4){
+      void vEntity;
+      int  iEntity;
+      char iType;
+      char iName;
+      int  iMax      = openborvariant("count_entities");
+
+      for(iEntity=0; iEntity<iMax; iEntity++){
+        vEntity = getentity(iEntity);
+        iType   = getentityproperty(vEntity, "type");
+	iName   = getentityproperty(vEntity, "name");
+
+        if(iType == openborconstant("TYPE_PANEL")){
+
+	  if (iName == "Bright_summon") {
+
+          } else {
+		killentity(vEntity);
+	  }
+	}
+
+        if(iType == openborconstant("TYPE_NONE")){
+
+	  if (iName == "Coliseum_torch1" || iName == "Coliseum_torch2" || iName == "Coliseum_torch3") {
+
+          } else {
+		killentity(vEntity);
+	  }
+	}
+      }
+}
+	@end_script	
+	frame	data/chars/countess/finalform/attack1b.gif
+	frame	data/chars/misc/empty.gif
+	delay	600
+	@cmd	spawn01 "Bodyj" 0 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	freespecial
+	range	0 205
+	rangea	40 120
+	loop	0
+	delay	28
+	offset	119 206
+	bbox	10 55 145 130
+	attack	10 55 145 130 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	spawn01 "forb_fireseal" 50 55 0
+	delay	1
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	delay	18
+	@cmd	spawn01 "Spellexplo" 50 55 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	spawn01 "Spellexplo" 50 55 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	spawn01 "Spellexplo" 50 55 0
+	frame	data/chars/countess/finalform/idle2b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	delay	17
+	frame	data/chars/countess/finalform/idle1b.gif
+	delay	1
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/countess/finalform/idle1b.gif
+		
+anim	freespecial2
+	range	0 205
+	rangea	70 120
+	loop	0
+	delay	28
+	offset	119 206
+	bbox	10 55 145 130
+	attack	10 55 145 130 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	delay	1
+	@cmd	spawn01 "Sparks_serpent" 0 0 0
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	delay	18
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle2b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle2b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	delay	17
+	frame	data/chars/countess/finalform/idle1b.gif
+	delay	1
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/countess/finalform/idle1b.gif
+		
+anim	freespecial3
+	range	0 205
+	rangea	0 120
+	loop	0
+	delay	28
+	offset	119 206
+	bbox	10 55 145 130
+	attack	10 55 145 130 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	delay	1
+	@cmd	spawn01 "forb_fireseal" 50 55 0
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	delay	18
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	spawn01 "Electricball_3" 60 0 0
+	@cmd	spawn01 "Electricball_3" 120 0 0
+	@cmd	spawn01 "Electricball_3" 180 0 0
+	sound	data/sounds/thunder.wav
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle2b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle2b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	delay	17
+	frame	data/chars/countess/finalform/idle1b.gif
+	delay	1
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/countess/finalform/idle1b.gif
+		
+anim	freespecial4
+	range	0 205
+	rangea	0 120
+	loop	0
+	delay	28
+	offset	119 206
+	bbox	10 55 145 130
+	attack	10 55 145 130 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	delay	1
+	@cmd	spawn01 "forb_fireseal" 50 55 0
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1a.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	delay	18
+	frame	data/chars/countess/finalform/idle1b.gif
+	@cmd	spawn01 "Electricball_3" 30 0 0
+	@cmd	spawn01 "Electricball_3" 90 0 0
+	@cmd	spawn01 "Electricball_3" 150 0 0
+	sound	data/sounds/thunder.wav
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle2b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle2b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	delay	17
+	frame	data/chars/countess/finalform/idle1b.gif
+	delay	1
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/countess/finalform/idle1b.gif
+		
+anim	idle
+	loop	1
+	delay	18
+	offset	119 206
+	bbox	10 55 145 130
+	attack	10 55 145 130 19 0 0 0 0 0
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	frame	data/chars/countess/finalform/idle1b.gif
+	delay	17
+	frame	data/chars/countess/finalform/idle2b.gif
+	delay	1
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/countess/finalform/idle2b.gif
+		
+anim	spawn
+	loop	0
+	delay	700
+	offset	119 206
+	frame	data/chars/misc/empty.gif
+	delay	3
+	sound	data/sounds/dumbrae_spawn.wav
+	frame	data/chars/countess/finalform/serpent_body1a.gif
+	frame	data/chars/countess/finalform/spawn1a.gif
+	frame	data/chars/countess/finalform/spawn1b.gif
+	frame	data/chars/countess/finalform/spawn1c.gif
+	frame	data/chars/countess/finalform/spawn1d.gif
+	frame	data/chars/countess/finalform/spawn1e.gif
+	frame	data/chars/countess/finalform/spawn1f.gif
+	frame	data/chars/countess/finalform/spawn1g.gif
+	frame	data/chars/countess/finalform/spawn1h.gif
+	frame	data/chars/countess/finalform/spawn1i.gif
+	frame	data/chars/countess/finalform/spawn1j.gif
+	frame	data/chars/countess/finalform/spawn1k.gif
+	frame	data/chars/countess/finalform/spawn1l.gif
+	frame	data/chars/countess/finalform/spawn1m.gif
+	frame	data/chars/countess/finalform/spawn1n.gif
+	frame	data/chars/countess/finalform/spawn1o.gif
+		
+#|edited by openBor Stats v 0.67
+		

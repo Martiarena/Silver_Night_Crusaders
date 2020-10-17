@@ -1,5 +1,5 @@
 name    	H._espinosa
-health  	3
+health          3
 nomove  	1 1
 type		enemy
 cantgrab 	1
@@ -45,12 +45,17 @@ takedamagescript data/scripts/blink.c
 
 
 
+
+
+
 anim	attack
 	rangea	0 11
 	range	-24 47
 	loop	0
 	delay	7
 	offset	21 21
+	bbox	18 14 6 7
+	sound	data/sounds/hiedra.wav
 	@script
 	void self = getlocalvar("self");
  	if(frame == 4){
@@ -58,15 +63,21 @@ anim	attack
 	}
 	@end_script	
 	frame	data/chars/une/attack1a.gif
+	bbox	17 8 6 13
 	frame	data/chars/une/attack1b.gif
+	bbox	12 6 16 15
 	frame	data/chars/une/attack1c.gif
 	delay	1
 	hitfx	data/sounds/slash.wav
 	attack2	0 0 41 21 6 0 0 0 0 0
+	bbox	0 0 41 21
 	frame	data/chars/une/idle2a.gif
 	attack2	0 0 0 0
+	bbox	12 6 16 15
 	frame	data/chars/une/attack1c.gif
+	bbox	17 8 6 13
 	frame	data/chars/une/attack1b.gif
+	bbox	18 14 6 7
 	frame	data/chars/une/attack1a.gif
 		
 anim	death

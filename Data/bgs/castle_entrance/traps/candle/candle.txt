@@ -8,32 +8,50 @@ setlayer        -1
 antigravity 100
 nolife 1
 hostile player npc
-candamage  player npc obstacle
+candamage  player npc
 
 load      Falling_candle
 
 
 
 
+
+
+
+
 anim	death
 	loop	0
-	delay	1
-	offset	30 32
+	delay	4
+	offset	30 30
 	subentity	Falling_candle
-	spawnframe	2 0 0 0 0
+	spawnframe	4 0 0 0 0
 	frame	data/bgs/castle_entrance/traps/candle/candle1.gif
+	offset	30 28
+	frame	data/bgs/castle_entrance/traps/candle/candle1.gif
+	offset	30 26
+	frame	data/bgs/castle_entrance/traps/candle/candle1.gif
+	delay	28
+	offset	30 24
 	frame	data/bgs/castle_entrance/traps/candle/candle2.gif
+	delay	1
 	@cmd	killentity getlocalvar("self")
 	frame	data/bgs/castle_entrance/traps/candle/candle2.gif
 		
 anim	follow1
 	loop	0
-	delay	1
-	offset	30 32
+	delay	4
+	offset	30 30
 	subentity	Falling_candle
-	spawnframe	2 0 0 0 0
+	spawnframe	4 0 0 0 0
 	frame	data/bgs/castle_entrance/traps/candle/candle1.gif
+	offset	30 28
+	frame	data/bgs/castle_entrance/traps/candle/candle1.gif
+	offset	30 26
+	frame	data/bgs/castle_entrance/traps/candle/candle1.gif
+	delay	28
+	offset	30 24
 	frame	data/bgs/castle_entrance/traps/candle/candle2.gif
+	delay	1
 	@cmd	killentity getlocalvar("self")
 	frame	data/bgs/castle_entrance/traps/candle/candle2.gif
 		

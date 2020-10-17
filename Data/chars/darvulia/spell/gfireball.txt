@@ -1,0 +1,191 @@
+name	        GfireBall
+type	        none
+nolife          1
+lifespan        4
+nodieblink	1
+death 		1
+falldie		1
+nopain          1
+nomove          1 0
+antigravity     100
+candamage       player npc
+hostile         player npc
+subject_to_wall 0
+subject_to_platform 0
+subject_to_basemap 0
+
+animationscript data/scripts/prscript.c
+
+palette		data/chars/darvulia/spell/gfireball1a.gif
+
+
+
+
+anim	death
+	delay	1
+	offset	17 17
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/gfireball1d.gif
+	frame	data/chars/darvulia/spell/gfireball2d.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/darvulia/spell/gfireball1d.gif
+	frame	data/chars/darvulia/spell/gfireball2d.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/gfireball1d.gif
+	frame	data/chars/darvulia/spell/gfireball2d.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/gfireball1d.gif
+	frame	data/chars/darvulia/spell/gfireball2d.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/gfireball1c.gif
+	frame	data/chars/darvulia/spell/gfireball2c.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/darvulia/spell/gfireball1c.gif
+	frame	data/chars/darvulia/spell/gfireball2c.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/gfireball1c.gif
+	frame	data/chars/darvulia/spell/gfireball2c.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/gfireball1c.gif
+	frame	data/chars/darvulia/spell/gfireball2c.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/gfireball1b.gif
+	frame	data/chars/darvulia/spell/gfireball2b.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/darvulia/spell/gfireball1b.gif
+	frame	data/chars/darvulia/spell/gfireball2b.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/gfireball1b.gif
+	frame	data/chars/darvulia/spell/gfireball2b.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/gfireball1b.gif
+	frame	data/chars/darvulia/spell/gfireball2b.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/gfireball1a.gif
+	frame	data/chars/darvulia/spell/gfireball2a.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/darvulia/spell/gfireball1a.gif
+	frame	data/chars/darvulia/spell/gfireball2a.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/gfireball1a.gif
+	frame	data/chars/darvulia/spell/gfireball2a.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/gfireball1a.gif
+	frame	data/chars/darvulia/spell/gfireball2a.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1 7 13
+	delay	1
+	offset	17 17
+	hitfx	data/sounds/burnt.wav
+	burn	2 2 30 30 25 0 0 0 0 0
+	drawmethod	256 256 0 0 0 0 0 0 90
+	@cmd	target 1.2 1.2 0 -20 0 1
+	@cmd	dash 0 0
+	frame	data/chars/darvulia/spell/gfireball1d.gif
+	@cmd	target 1.2 1.2 0 -20 0 1
+	@cmd	dash 0 0
+	@cmd	groundkill
+	frame	data/chars/darvulia/spell/gfireball1d.gif
+	@cmd	target 1.2 1.2 0 -20 0 1
+	@cmd	dash 0 0
+	@cmd	groundkill
+	frame	data/chars/darvulia/spell/gfireball1d.gif
+	@cmd	target 1.2 1.2 0 -20 0 1
+	@cmd	dash 0 0
+	@cmd	groundkill
+	frame	data/chars/darvulia/spell/gfireball1d.gif
+	@cmd	target 1.2 1.2 0 -20 0 1
+	@cmd	dash 0 0
+	@cmd	groundkill
+	frame	data/chars/darvulia/spell/gfireball1d.gif
+	@cmd	target 1.2 1.2 0 -20 0 1
+	@cmd	dash 0 0
+	@cmd	groundkill
+	frame	data/chars/darvulia/spell/gfireball1d.gif
+	@cmd	target 1.2 1.2 0 -20 0 1
+	@cmd	dash 0 0
+	@cmd	groundkill
+	frame	data/chars/darvulia/spell/gfireball1d.gif
+	delay	3
+	burn	2 2 30 30 25 0 0 0 0 0
+	drawmethod	256 256 0 0 0 0 0 0 90
+	@cmd	groundkill
+	frame	data/chars/darvulia/spell/gfireball1d.gif
+	delay	7
+	drawmethod	256 256 0 0 0 0 0 0 180
+	@cmd	groundkill
+	frame	data/chars/darvulia/spell/gfireball1d.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	@cmd	groundkill
+	frame	data/chars/darvulia/spell/gfireball1d.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	@cmd	groundkill
+	frame	data/chars/darvulia/spell/gfireball1d.gif
+	delay	3
+	drawmethod	256 256 0 0 0 0 0 0 90
+	@cmd	groundkill
+	frame	data/chars/darvulia/spell/gfireball1d.gif
+	delay	1
+	@cmd	groundkill
+	burn	0 0 0 0 0 0 0
+	frame	data/chars/darvulia/spell/gfireball1d.gif
+		
+anim	spawn
+	delay	2
+	offset	17 17
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/gfireball1a.gif
+	frame	data/chars/darvulia/spell/gfireball2a.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/darvulia/spell/gfireball1a.gif
+	frame	data/chars/darvulia/spell/gfireball2a.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/gfireball1a.gif
+	frame	data/chars/darvulia/spell/gfireball2a.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/gfireball1a.gif
+	frame	data/chars/darvulia/spell/gfireball2a.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/gfireball1b.gif
+	frame	data/chars/darvulia/spell/gfireball2b.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/darvulia/spell/gfireball1b.gif
+	frame	data/chars/darvulia/spell/gfireball2b.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/gfireball1b.gif
+	frame	data/chars/darvulia/spell/gfireball2b.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/gfireball1b.gif
+	frame	data/chars/darvulia/spell/gfireball2b.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/gfireball1c.gif
+	frame	data/chars/darvulia/spell/gfireball2c.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/darvulia/spell/gfireball1c.gif
+	frame	data/chars/darvulia/spell/gfireball2c.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/gfireball1c.gif
+	frame	data/chars/darvulia/spell/gfireball2c.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/gfireball1c.gif
+	frame	data/chars/darvulia/spell/gfireball2c.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/gfireball1d.gif
+	frame	data/chars/darvulia/spell/gfireball2d.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/darvulia/spell/gfireball1d.gif
+	frame	data/chars/darvulia/spell/gfireball2d.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/gfireball1d.gif
+	frame	data/chars/darvulia/spell/gfireball2d.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/gfireball1d.gif
+	sound	data/sounds/explosion-fire.wav
+	frame	data/chars/darvulia/spell/gfireball2d.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,68 @@
+name	         ScytheSpawner
+health	         3
+type          	enemy
+antigravity	 100
+stealth          300
+animationscript  data/scripts/oscript.c
+load	         Mini_Scythe
+
+anim	death
+	delay	7
+	offset	1 1
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow2
+	loop	0
+	delay	100
+	offset	1 1
+	@cmd	offscreenkill 500 0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	beidle
+	frame	data/chars/misc/empty.gif
+		
+anim	follow3
+	loop	0
+	delay	100
+	offset	1 1
+	@cmd	offscreenkill 500 0
+	frame	data/chars/misc/empty.gif
+	@cmd	MspawnR "Mini_Scythe" 260 100 70 25
+	frame	data/chars/misc/empty.gif
+	@cmd	beidle
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	100
+	offset	1 1
+	frame	data/chars/misc/empty.gif
+	@script
+	    void self = getlocalvar("self");
+	    int r = rand()%30;
+
+	    if( frame == 0){
+	      if( r > 10){
+	        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+	      } else {
+		changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+	      }
+	    }
+	@end_script	
+	frame	data/chars/misc/empty.gif
+	@cmd	offscreenkill 500 0
+	frame	data/chars/misc/empty.gif
+	@cmd	MspawnR "Mini_Scythe" 260 100 70 25
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	delay	50
+	offset	1 1
+	frame	data/chars/misc/empty.gif
+	@cmd	clearE 0
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

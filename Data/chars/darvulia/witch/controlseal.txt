@@ -1,0 +1,150 @@
+name	        Controlseal
+type	        none
+antigravity     100
+
+animationscript  data/scripts/escript.c
+
+palette	data/chars/darvulia/witch/spell_circle1a.gif
+
+
+
+anim	idle
+	delay	1
+	offset	29 29
+	sound	data/sounds/forbbinspell.wav
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	delay	5
+	offset	29 29
+	drawmethod	256 256 0 0 0 0 0 0 45
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 135
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 225
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 315
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 45
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 135
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 225
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 315
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 45
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 135
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 225
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 315
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	delay	5
+	offset	29 27
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 25
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 23
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 21
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 19
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 17
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 15
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 13
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 11
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 9
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 7
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 5
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 3
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 1
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 -1
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 -3
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 -5
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 -7
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 -9
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 -11
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 -13
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 -15
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 -17
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	offset	29 -19
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	delay	100
+	frame	data/chars/darvulia/witch/spell_circle1b.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

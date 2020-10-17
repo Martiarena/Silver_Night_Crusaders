@@ -15,6 +15,7 @@ palette 	data/chars/items/weapons.gif
 
 
 
+
 anim	attack1
 	delay	2
 	offset	49 50
@@ -93,6 +94,15 @@ anim	idle
 	frame	data/chars/items/bomb/bomb1f.gif
 	frame	data/chars/items/bomb/bomb1g.gif
 	frame	data/chars/items/bomb/bomb1h.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	17 18
+	sound	data/sounds/throw_big.wav
+	bbox	11 11 12 13
+	attack	11 11 12 13 12 0 0 0 0 0
+	frame	data/chars/items/bomb/bomb1a.gif
 		
 #|edited by openBor Stats v 0.67
 		

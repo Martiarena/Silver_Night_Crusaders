@@ -1,0 +1,144 @@
+name  		Firehell2a
+health  	3
+nomove  	1
+type		enemy
+cantgrab 	1
+lifespan        5
+nodrop		2
+flip            1
+death		1
+nolife		1
+hostile         player npc
+candamage       player npc
+antigravity     100
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+
+diesound            data/sounds/burnt.wav
+
+load		Firehell1a
+
+palette  	data/chars/countess/magic/firehell2a.gif
+
+animationscript data/scripts/cscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+anim	death
+	loop	0
+	delay	7
+	offset	10 66
+	frame	data/chars/countess/magic/firehell1f.gif
+	frame	data/chars/countess/magic/firehell1e.gif
+	frame	data/chars/countess/magic/firehell1d.gif
+	frame	data/chars/countess/magic/firehell1c.gif
+	frame	data/chars/countess/magic/firehell1b.gif
+	frame	data/chars/countess/magic/firehell1a.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	loop	0
+	delay	7
+	offset	10 66
+	frame	data/chars/countess/magic/firehell1f.gif
+	frame	data/chars/countess/magic/firehell1e.gif
+	frame	data/chars/countess/magic/firehell1d.gif
+	frame	data/chars/countess/magic/firehell1c.gif
+	frame	data/chars/countess/magic/firehell1b.gif
+	frame	data/chars/countess/magic/firehell1a.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	8 16
+	followcond	1
+	followanim	1
+	bbox	0 7 17 25
+	hitfx	data/sounds/burnt.wav
+	burn	0 7 17 25 25 0 1 1 0 0
+	frame	data/chars/countess/magic/firehell2a.gif
+	frame	data/chars/countess/magic/firehell2b.gif
+	@cmd	target 0.7 0.7 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/countess/magic/firehell2b.gif
+	frame	data/chars/countess/magic/firehell2a.gif
+	@cmd	target 0.7 0.7 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/countess/magic/firehell2a.gif
+	frame	data/chars/countess/magic/firehell2b.gif
+	delay	1
+	burn	0 0 0 0 0
+	frame	data/chars/countess/magic/firehell2a.gif
+		
+anim	spawn
+	loop	0
+	delay	7
+	offset	10 66
+	frame	data/chars/countess/magic/firehell1a.gif
+	frame	data/chars/countess/magic/firehell1b.gif
+	frame	data/chars/countess/magic/firehell1c.gif
+	frame	data/chars/countess/magic/firehell1d.gif
+	frame	data/chars/countess/magic/firehell1e.gif
+	frame	data/chars/countess/magic/firehell1f.gif
+	offset	8 16
+	delay	1
+	frame	data/chars/countess/magic/firehell2a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell2a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell2a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell2a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell2b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell2b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell2b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell2a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell2a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell2a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell2a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell2b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell2b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell2b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell2a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell2a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell2a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell2a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell2b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell2b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell2b.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

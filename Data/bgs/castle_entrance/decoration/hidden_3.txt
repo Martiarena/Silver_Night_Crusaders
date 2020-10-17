@@ -7,7 +7,7 @@ nolife	1
 subject_to_wall 0
 subject_to_obstacle 0
 subject_to_gravity 0
-load  Espada_Leg.
+load  Dukuro
 
 animationscript  data/scripts/escript.c
 
@@ -16,7 +16,7 @@ anim	follow1
 	delay	10
 	offset	2 2
 	frame	data/chars/misc/empty.gif
-	@cmd	spawn02 "Espada_Leg." 145 0 0
+	@cmd	spawn02 "Dukuro" 145 0 0
 	frame	data/chars/misc/empty.gif
 	frame	data/chars/misc/empty.gif
 	@cmd	suicide

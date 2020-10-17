@@ -1,0 +1,21 @@
+name  		Coliseum_wall2
+type		none
+facing	  	1
+setlayer	-1
+antigravity	100
+offscreenkill   9999
+
+
+
+
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	17 122
+	platform	0 122 -8 -8 41 41 10 999
+	frame	data/bgs/coliseum/walls/coliseum_wall3.gif
+

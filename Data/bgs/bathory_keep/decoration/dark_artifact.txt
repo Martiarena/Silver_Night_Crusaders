@@ -3,7 +3,7 @@ type            none
 shadow		0
 nomove	1
 nolife	1
-setlayer -20
+setlayer -4
 offscreenkill   9999
 
 subject_to_wall 0

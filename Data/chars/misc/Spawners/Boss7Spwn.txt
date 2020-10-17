@@ -1,28 +1,44 @@
 name	         Boss7Spawner
 health	         18
-type	         enemy
+type	        None
 antigravity	 100
 animationscript  data/scripts/oscript.c
 load	         Gargola
 load	         E._Electrico
 
-anim 	spawn
-	delay	200
-	offset	1 1
-        frame   data/chars/misc/empty.gif
-	@cmd	clearE 0
-        frame   data/chars/misc/empty.gif
 
-anim 	death
+anim	death
 	delay	1
 	offset	1 1
-        frame   data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
 	@cmd	suicide
-        frame   data/chars/misc/empty.gif
-
+	frame	data/chars/misc/empty.gif
+		
+anim	follow2
+	loop	0
+	delay	140
+	offset	1 1
+	@cmd	offscreenkill 500 0
+	frame	data/chars/misc/empty.gif
+	@cmd	MspawnR "E._Electrico" 240 0 60 0
+	frame	data/chars/misc/empty.gif
+	@cmd	beidle
+	frame	data/chars/misc/empty.gif
+		
+anim	follow3
+	loop	0
+	delay	70
+	offset	1 1
+	@cmd	offscreenkill 500 0
+	frame	data/chars/misc/empty.gif
+	@cmd	MspawnR "Gargola" 380 0 10 0
+	frame	data/chars/misc/empty.gif
+	@cmd	beidle
+	frame	data/chars/misc/empty.gif
+		
 anim	idle
 	loop	1
-	delay	300
+	delay	70
 	offset	1 1
 	@script
 	    void self = getlocalvar("self");
@@ -35,31 +51,19 @@ anim	idle
 		changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
 	      }
 	    }
-	@end_script
-        frame   data/chars/misc/empty.gif
+	@end_script	
+	frame	data/chars/misc/empty.gif
 	@cmd	offscreenkill 500 0
-        frame   data/chars/misc/empty.gif
-        @cmd	MspawnR "Gargola" 380 0 10 0
-        frame   data/chars/misc/empty.gif
-
-anim 	follow2
-	loop	0
-	delay	10
+	frame	data/chars/misc/empty.gif
+	@cmd	MspawnR "Gargola" 380 0 10 0
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	delay	300
 	offset	1 1
-	@cmd	offscreenkill 500 0
-        frame   data/chars/misc/empty.gif
-	@cmd	MspawnR "E._Electrico" 240 0 60 0
-        frame   data/chars/misc/empty.gif
-	@cmd	beidle
-        frame   data/chars/misc/empty.gif
-
-anim 	follow3
-	loop	0
-	delay	10
-	offset	1 1
-	@cmd	offscreenkill 500 0
-        frame   data/chars/misc/empty.gif
-        @cmd	MspawnR "Gargola" 380 0 10 0
-        frame   data/chars/misc/empty.gif
-	@cmd	beidle
-        frame   data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	clearE 0
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

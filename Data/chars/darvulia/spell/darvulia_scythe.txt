@@ -1,0 +1,200 @@
+name		Darvulia_Scythe
+lifespan  	5
+type		none
+candamage	player
+antigravity	100
+animationscript data/scripts/cscript.c
+
+palette		data/chars/darvulia/spell/scythe1b.gif
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	10
+	offset	61 61
+	hitfx	data/sounds/slash.wav
+	attack2	10 10 100 100 19 0 1 0 0 0
+	drawmethod	256 256 0 0 0 0 0 0 180
+	sound	data/sounds/swipe.wav
+	frame	data/chars/darvulia/spell/scythe1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/scythe1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/scythe1b.gif
+	delay	9
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/scythe1b.gif
+	delay	1
+	attack2	0
+	frame	data/chars/darvulia/spell/scythe1b.gif
+		
+anim	spawn
+	delay	3
+	offset	61 61
+	hitfx	data/sounds/slash.wav
+	attack2	10 10 100 100 19 0 1 0 0 0
+	frame	data/chars/darvulia/spell/scythe1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	sound	data/sounds/swipe.wav
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	sound	data/sounds/swipe.wav
+	frame	data/chars/darvulia/spell/scythe1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	sound	data/sounds/swipe.wav
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/scythe1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	sound	data/sounds/swipe.wav
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/scythe1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	sound	data/sounds/swipe.wav
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/scythe1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	sound	data/sounds/swipe.wav
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	sound	data/sounds/swipe.wav
+	frame	data/chars/darvulia/spell/scythe1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	sound	data/sounds/swipe.wav
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/scythe1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	sound	data/sounds/swipe.wav
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/scythe1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	sound	data/sounds/swipe.wav
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	@cmd	dasher 0 0 0 0
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/scythe1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	sound	data/sounds/swipe.wav
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	sound	data/sounds/swipe.wav
+	frame	data/chars/darvulia/spell/scythe1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	sound	data/sounds/swipe.wav
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/scythe1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	@cmd	targetPar 1 1 0 -180 0
+	@cmd	dash 0 0
+	delay	5
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	sound	data/sounds/swipe.wav
+	frame	data/chars/darvulia/spell/scythe1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/scythe1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	sound	data/sounds/swipe.wav
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/scythe1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/scythe1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	sound	data/sounds/swipe.wav
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/scythe1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	sound	data/sounds/swipe.wav
+	frame	data/chars/darvulia/spell/scythe1b.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/scythe1a.gif
+	attack2	0
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/scythe1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

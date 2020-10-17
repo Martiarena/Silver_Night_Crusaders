@@ -1,0 +1,124 @@
+music	data/music/umbrae_countess.ogg 396410
+panel	data/bgs/coliseum/coliseum_bossrush_3.gif
+
+order           a
+settime	        0
+notime		1
+spawn1          140 0 240
+spawn2          100 0 240
+direction	both
+type		0 0 0
+cameratype 1
+noslow 1
+
+spawn	Coliseum_torch1
+coords  40  216  130
+flip	1
+at 0
+
+spawn	Coliseum_torch2
+coords  105  216  113
+flip	1
+at 0
+
+spawn	Coliseum_torch3
+coords  162  216  109
+flip	1
+at 0
+
+spawn	Coliseum_torch3
+coords  272  216  109
+at 0
+
+spawn	Coliseum_torch2
+coords  331  216  113
+at 0
+
+spawn	Coliseum_torch1
+coords  395  216  130
+at 0
+
+spawn	Round9
+coords  160  240  0
+flip	1
+at 0
+
+spawn 	boss_lifebar
+coords  0 0 0
+flip 	1
+at 	0
+
+spawn	BeamSkeletonSpawner
+coords	160 216 0
+#2pspawn	1
+at	0
+
+spawn	Bathory_
+coords  261  216  0
+alias	E._Bathory
+at  0
+
+group 1 1
+at 0
+
+Blockade 116
+at  0
+
+group	1 2
+at 116
+
+spawn	Back_final
+coords	-112 0 0
+flip	1
+at 	116
+
+spawn	Keep_castle_shade
+coords  227  216  0
+at  	116
+
+spawn	Keep_root
+coords	55  216  105
+at	116
+
+spawn	Platform_final_1
+coords	5 216 70
+flip	1
+at 	116
+
+spawn	Final_cloud
+coords	160  216  170
+at	116
+
+spawn	Final_cloud_1
+coords	160  216  0
+flip	1
+at	116
+
+spawn	Final_cloud_clear
+coords	160  236  0
+at	116
+
+spawn	Serpent_body
+coords	220  216  0
+at	116
+
+spawn	EctoSpawner_2
+coords  0 216 0
+#2pspawn 1
+at	116
+
+spawn	Final_form_
+coords	220  216  0
+alias	D._Umbrae
+at	116
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn  orbe_lunar
+coords  160  216  150
+at 116

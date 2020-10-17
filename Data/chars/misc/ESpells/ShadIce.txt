@@ -15,6 +15,7 @@ palette		data/chars/misc/ESpells/ice_spell_palette.gif
 
 
 
+
 anim	death
 	delay	4
 	offset	9 10
@@ -34,24 +35,24 @@ anim	idle
 	followcond	1
 	followanim	1
 	bbox	2 2 14 14
-	attack7	2 2 14 14 19 0 0 0 0 0
+	attack7	2 2 14 14 12 0 0 0 0 0
 	hitfx	data/sounds/icebreak.wav
 	frame	data/chars/misc/espells/shice6.gif
 	delay	8
 	@cmd	spawn01 "ShIceS" 0 0 0
-	@cmd	target 0.4 0.4 0 -20 1 1
+	@cmd	target 0.4 0.4 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/misc/espells/shice6.gif
 	@cmd	spawn01 "ShIceS" 0 0 0
 	frame	data/chars/misc/espells/shice7.gif
 	@cmd	spawn01 "ShIceS" 0 0 0
-	@cmd	target 0.4 0.4 0 -20 1 1
+	@cmd	target 0.4 0.4 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/misc/espells/shice8.gif
 	@cmd	spawn01 "ShIceS" 0 0 0
 	frame	data/chars/misc/espells/shice6.gif
 	@cmd	spawn01 "ShIceS" 0 0 0
-	@cmd	target 0.4 0.4 0 -20 1 1
+	@cmd	target 0.4 0.4 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/misc/espells/shice7.gif
 	attack7	0 0 0 0
@@ -67,7 +68,7 @@ anim	spawn
 	frame	data/chars/misc/espells/shice3.gif
 	frame	data/chars/misc/espells/shice4.gif
 	bbox	2 2 14 14
-	attack7	2 2 14 14 19 0 0 0 0 0
+	attack7	2 2 14 14 12 0 0 0 0 0
 	frame	data/chars/misc/espells/shice5.gif
 	frame	data/chars/misc/espells/shice6.gif
 	frame	data/chars/misc/espells/shice7.gif

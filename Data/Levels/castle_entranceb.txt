@@ -130,6 +130,9 @@ coords  261  216  111
 item  ___20
 at  0
 
+spawn  Sahagin
+coords  270  216
+at  0
 
 spawn  BatSpawner
 coords  360  216
@@ -149,6 +152,10 @@ coords  340  216  111
 item  ___50
 at  157
 
+spawn  Sahagin
+coords  250  216
+at  200
+
 spawn  Esqueleto
 coords  360  216  65
 at  200
@@ -163,6 +170,10 @@ coords  340  216  65
 item  ___50
 at  340
 
+spawn  Sahagin
+coords  250  216
+at  350
+
 spawn  Esqueleto
 coords  360  216  0
 at  400
@@ -171,6 +182,10 @@ spawn  Candle1
 coords  340  216  65
 item  ___10
 at  447
+
+spawn  Sahagin
+coords  240  216
+at  470
 
 spawn  Candle1
 coords  340  216  65
@@ -191,9 +206,9 @@ coords  340  216  140
 item  ___10
 at  653
 
-spawn  Chiroptera_
-coords  360  216  149
-at  735
+spawn  Sahagin
+coords  120  216
+at  700
 
 spawn  Esqueleto
 coords  360  216  113
@@ -207,10 +222,6 @@ at  805
 spawn  Esqueleto
 coords  360  216  113
 at  820
-
-spawn  Chiroptera_
-coords  360  216  149
-at  830
 
 spawn  Esqueleto
 coords  360  216  113
@@ -228,7 +239,7 @@ at  1000
 
 spawn  Candle1
 coords  340  216  170
-item  P._Invisible
+item  Ajo
 at  1090
 
 spawn  Sewer_wall2
@@ -241,10 +252,6 @@ spawn  Candle1
 coords  340  216  145
 item  ___20
 at  1179
-
-spawn  Chiroptera_
-coords  360  216  149
-at  1210
 
 spawn  C._Demonio
 coords  360  216
@@ -269,6 +276,10 @@ coords  340  216  111
 item  ___20
 at  1477
 
+spawn  Sahagin
+coords  90  216
+at  1500
+
 spawn  Esqueleto
 coords  350  216  66
 at  1500
@@ -282,6 +293,14 @@ coords  340  216  111
 item  ___50
 at  1571
 
+spawn  Sahagin
+coords  100  216
+at  1600
+
+spawn  Sahagin
+coords  280  216
+at  1600
+
 spawn  Candle1
 coords  340  216  101
 item  ___50
@@ -290,10 +309,6 @@ at  1700
 spawn  Esqueleto
 coords  350  216  50
 at  1700
-
-spawn  Chiroptera_
-coords  360  216  53
-at  1790
 
 spawn  Candle1
 coords  340  216  65

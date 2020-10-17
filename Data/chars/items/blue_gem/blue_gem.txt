@@ -1,5 +1,5 @@
 name		Gema_Azul
-mp		10
+mp		20
 type    	item
 facing          1
 antigravity	30

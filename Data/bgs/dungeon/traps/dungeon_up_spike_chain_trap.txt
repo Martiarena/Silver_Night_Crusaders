@@ -27,12 +27,12 @@ load     Dungeon_spike_chain_trap
 anim	idle
 	loop	1
 	delay	1
-	offset	16 197
+	offset	16 332
 	subentity	Dungeon_spike_chain_trap
 	spawnframe	1 0 0 135 0
-	frame	data/chars/misc/empty.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
 	@cmd	killentity getlocalvar("self")
-	frame	data/chars/misc/empty.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
 		
 anim	spawn
 	loop	0

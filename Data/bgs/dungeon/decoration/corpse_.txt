@@ -1,0 +1,87 @@
+name	    	Corpse_
+health          1
+nolife		1
+speed		4
+nomove	 	1 1
+type		none
+setlayer	-1
+lifespan 4
+nopain		1
+cantgrab 	1
+nodrop	 	2
+death	 	1
+nodieblink 	2
+aggression	20
+offscreenkill	9999
+subject_to_platform 0
+
+animationscript  data/scripts/escript.c
+palette		data/bgs/dungeon/decoration/walk1a.gif
+
+
+anim	death
+	loop	0
+	delay	3
+	offset	13 51
+	move	2
+	frame	data/bgs/dungeon/decoration/walk1a.gif
+	frame	data/bgs/dungeon/decoration/walk1a.gif
+	frame	data/bgs/dungeon/decoration/walk1a.gif
+	frame	data/bgs/dungeon/decoration/walk1a.gif
+	frame	data/bgs/dungeon/decoration/walk1a.gif
+	frame	data/bgs/dungeon/decoration/walk1b.gif
+	frame	data/bgs/dungeon/decoration/walk1b.gif
+	frame	data/bgs/dungeon/decoration/walk1b.gif
+	frame	data/bgs/dungeon/decoration/walk1b.gif
+	frame	data/bgs/dungeon/decoration/walk1b.gif
+	frame	data/bgs/dungeon/decoration/walk1c.gif
+	frame	data/bgs/dungeon/decoration/walk1c.gif
+	frame	data/bgs/dungeon/decoration/walk1c.gif
+	frame	data/bgs/dungeon/decoration/walk1c.gif
+	frame	data/bgs/dungeon/decoration/walk1c.gif
+	frame	data/bgs/dungeon/decoration/walk1c.gif
+	frame	data/bgs/dungeon/decoration/walk1d.gif
+	frame	data/bgs/dungeon/decoration/walk1d.gif
+	frame	data/bgs/dungeon/decoration/walk1d.gif
+	frame	data/bgs/dungeon/decoration/walk1d.gif
+	frame	data/bgs/dungeon/decoration/walk1d.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+
+anim	idle
+	loop	1
+	delay	3
+	offset	13 51
+	move	2
+	frame	data/bgs/dungeon/decoration/walk1a.gif
+	frame	data/bgs/dungeon/decoration/walk1a.gif
+	frame	data/bgs/dungeon/decoration/walk1a.gif
+	frame	data/bgs/dungeon/decoration/walk1a.gif
+	frame	data/bgs/dungeon/decoration/walk1a.gif
+	frame	data/bgs/dungeon/decoration/walk1b.gif
+	frame	data/bgs/dungeon/decoration/walk1b.gif
+	frame	data/bgs/dungeon/decoration/walk1b.gif
+	frame	data/bgs/dungeon/decoration/walk1b.gif
+	frame	data/bgs/dungeon/decoration/walk1b.gif
+	frame	data/bgs/dungeon/decoration/walk1c.gif
+	frame	data/bgs/dungeon/decoration/walk1c.gif
+	frame	data/bgs/dungeon/decoration/walk1c.gif
+	frame	data/bgs/dungeon/decoration/walk1c.gif
+	frame	data/bgs/dungeon/decoration/walk1c.gif
+	frame	data/bgs/dungeon/decoration/walk1c.gif
+	frame	data/bgs/dungeon/decoration/walk1d.gif
+	frame	data/bgs/dungeon/decoration/walk1d.gif
+	frame	data/bgs/dungeon/decoration/walk1d.gif
+	frame	data/bgs/dungeon/decoration/walk1d.gif
+	frame	data/bgs/dungeon/decoration/walk1d.gif
+		
+anim	spawn
+	loop	0
+	delay	15
+	offset	13 51
+	frame	data/bgs/dungeon/decoration/spawn1a.gif
+	frame	data/bgs/dungeon/decoration/spawn1b.gif
+	frame	data/bgs/dungeon/decoration/spawn1c.gif
+	frame	data/bgs/dungeon/decoration/spawn1d.gif
+		
+#|edited by openBor Stats v 0.67

@@ -6,6 +6,8 @@ lifespan	5
 subject_to_gravity  0
 subject_to_platform 0
 
+animationscript data/scripts/prscript.c
+
 
 
 
@@ -32,19 +34,37 @@ anim	idle
 	loop	1
 	delay	6
 	offset	15 15
+	hitfx	data/sounds/hit-cut.wav
 	attack2	3 4 20 20 9 0 0 0 0
 	frame	data/chars/items/boomerang/bumerad1.gif
+	@cmd	groundkill
 	frame	data/chars/items/boomerang/bumerad2.gif
+	@cmd	groundkill
 	frame	data/chars/items/boomerang/bumerad3.gif
+	@cmd	groundkill
 	frame	data/chars/items/boomerang/bumerad4.gif
+	@cmd	groundkill
 	frame	data/chars/items/boomerang/bumerad5.gif
+	@cmd	groundkill
 	frame	data/chars/items/boomerang/bumerad6.gif
+	@cmd	groundkill
 	frame	data/chars/items/boomerang/bumerad7.gif
 	delay	5
+	@cmd	groundkill
 	frame	data/chars/items/boomerang/bumerad8.gif
 	delay	1
 	attack2	0
+	@cmd	groundkill
 	frame	data/chars/items/boomerang/bumerad8.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	15 15
+	sound	data/sounds/throw_medium.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack2	3 4 20 20 9 0 0 0 0
+	frame	data/chars/items/boomerang/bumerad1.gif
 		
 #|edited by openBor Stats v 0.67
 		

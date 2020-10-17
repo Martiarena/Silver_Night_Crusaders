@@ -26,6 +26,8 @@ palette		data/chars/queenmoth/caterpillar/caterpillar_palette.gif
 
 
 
+
+
 anim	attack1
 	range	-320 640
 	loop	1
@@ -35,8 +37,7 @@ anim	attack1
 	bbox	4 3 18 7
 	followanim	1
 	followcond	1
-	attack	4 3 18 7 12 0 0 0 0 0
-	DOT	2 30 4 1 5
+	attack	4 3 18 7 6 0 0 0 0 0
 	frame	data/chars/queenmoth/caterpillar/idle1a.gif
 	frame	data/chars/queenmoth/caterpillar/idle1b.gif
 	delay	11
@@ -68,8 +69,7 @@ anim	idle
 	delay	12
 	offset	13 10
 	bbox	4 3 18 7
-	attack	4 3 18 7 12 0 0 0 0 0
-	DOT	2 30 4 1 5
+	attack	4 3 18 7 6 0 0 0 0 0
 	frame	data/chars/queenmoth/caterpillar/idle1a.gif
 	frame	data/chars/queenmoth/caterpillar/idle1b.gif
 	delay	11
@@ -84,6 +84,7 @@ anim	spawn
 	bbox	0 2 11 9
 	frame	data/chars/queenmoth/caterpillar/spawn1a.gif
 	delay	12
+	sound	data/sounds/hatch.wav
 	frame	data/chars/queenmoth/caterpillar/spawn1b.gif
 		
 anim	walk
@@ -94,8 +95,7 @@ anim	walk
 	bbox	4 3 18 7
 	followanim	1
 	followcond	1
-	attack	4 3 18 7 12 0 0 0 0 0
-	DOT	2 30 4 1 5
+	attack	4 3 18 7 6 0 0 0 0 0
 	frame	data/chars/queenmoth/caterpillar/idle1a.gif
 	frame	data/chars/queenmoth/caterpillar/idle1b.gif
 	delay	11

@@ -1,0 +1,21 @@
+name    	evasion4_shadow_teo
+type    	none
+lifespan  	1
+alpha		1
+antigravity     100
+
+animationscript  data/scripts/escript.c
+
+palette		data/chars/teobaldo/shadow/palette_shadow.gif
+
+anim	idle
+	delay	7
+	offset	95 152
+	frame	data/chars/teobaldo/eva1d.gif
+	frame	data/chars/teobaldo/eva1d.gif
+	frame	data/chars/misc/empty.gif
+	@cmd 	suicide
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

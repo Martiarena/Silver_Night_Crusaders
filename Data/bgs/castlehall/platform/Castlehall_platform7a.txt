@@ -1,0 +1,23 @@
+name  		Castlehall_platform7a
+type		none
+facing	  	1
+setlayer	1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/castlehall/platform/platform7a.gif
+
+
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	140 72
+	platform	0 72 -8 -8 288 288 10 72
+	frame	data/bgs/castlehall/platform/platform7a.gif
+		
+#|edited by openBor Stats v 0.67
+		

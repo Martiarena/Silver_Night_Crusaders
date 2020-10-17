@@ -1,0 +1,7 @@
+music		data/music/pictures.ogg 0
+animation	data/Scenes/credits/credits_part_1.gif 0 0 0 1
+animation	data/Scenes/credits/credits_part_2.gif 0 0 0 1
+animation	data/Scenes/credits/credits_part_3.gif 0 0 0 1
+animation	data/Scenes/credits/credits_part_4.gif 0 0 0 1
+animation	data/Scenes/credits/credits_part_5.gif 0 0 0 1
+silence 1

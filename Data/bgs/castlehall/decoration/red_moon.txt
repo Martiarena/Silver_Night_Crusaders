@@ -1,0 +1,20 @@
+name	       	Red_Moon
+type    	panel
+speed		9
+antigravity     100
+shadow		0
+nomove	1
+setlayer -10000
+nolife	1
+
+palette 	data/bgs/castlehall/decoration/red_moon.gif
+
+
+anim	idle
+	loop	1
+	delay	5
+	offset	32 32
+	frame	data/bgs/castlehall/decoration/red_moon.gif
+		
+#|edited by openBor Stats v 0.67
+		

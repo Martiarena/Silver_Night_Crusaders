@@ -1,15 +1,16 @@
 name    	Biblia
 type    	none
 facing          1
-nolife  	1
 antigravity	50
-lifespan   	15
 subject_to_hole 1
 no_adjust_base  0
 subject_to_platform 1
 candamage  	player
 offscreenkill	100
+
 animationscript	data/scripts/escript.c
+
+icon 		data/chars/misc/bgitem.gif
 
 palette		data/chars/items/weapons.gif
 
@@ -25,9 +26,11 @@ anim	follow1
 
     killentity(self); //Suicide!
 	@end_script	
-	delay	500
+	delay	400
 	offset	12 23
 	frame	data/chars/misc/empty.gif
+	delay	1
+	@cmd 	suicide
 	frame	data/chars/misc/empty.gif
 		
 anim	idle

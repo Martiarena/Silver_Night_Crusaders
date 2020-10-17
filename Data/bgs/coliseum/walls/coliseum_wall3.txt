@@ -1,0 +1,60 @@
+name  		Coliseum_wall3
+type		npc
+health          1
+antigravity     100
+shadow		0
+nomove	1 1
+setlayer 1
+nolife	1
+death   	 1
+subject_to_wall 0
+subject_to_obstacle 0
+stealth	300
+subject_to_gravity 0
+offscreenkill   9999
+
+load	Rock1B_coliseum
+load	Rock2B_coliseum
+load	Rock3B_coliseum
+
+animationscript  data/scripts/escript.c
+
+
+
+
+
+anim	death
+	delay	50
+	offset	17 122
+	bbox	200 50 1 1
+	platform	0 122 -8 -8 41 41 10 999
+	frame	data/bgs/coliseum/walls/coliseum_wall3.gif
+	sound	data/sounds/rock_break3.wav
+	@cmd	tosserM "Rock1B_coliseum" -28 0 -4.8 1.3
+	@cmd	tosserM "Rock2B_coliseum" -2 89 -2.4 1.6
+	@cmd	tosserM "Rock3B_coliseum" -12 9 -1.4 2.2
+	@cmd	tosserM "Rock1B_coliseum" -18 0 -1.6 3.2
+	@cmd	tosserM "Rock3B_coliseum" -4 88 -2.6 1.4
+	@cmd	tosserM "Rock2B_coliseum" -6 22 -2.8 1
+	@cmd	tosserM "Rock3B_coliseum" -8 12 -2.3 0.8
+	@cmd	tosserM "Rock1B_coliseum" -32 99 -1.3 2.1
+	@cmd	tosserM "Rock2B_coliseum" -30 41 -1.2 0.9
+	@cmd	tosserM "Rock1B_coliseum" -18 22 -0.7 1.3
+	@cmd	tosserM "Rock2B_coliseum" -26 36 -1.7 2
+	@cmd	tosserM "Rock3B_coliseum" -14 44 -4.2 1.2
+	@cmd	tosserM "Rock2B_coliseum" -6 29 -1.9 2.6
+	@cmd	tosserM "Rock1B_coliseum" -8 21 -3 0.5
+	@cmd	tosserM "Rock3B_coliseum" -2 12 -1.8 2
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	delay	100
+	offset	17 122
+	bbox	200 50 1 1
+	platform	0 122 -8 -8 41 41 10 999
+	frame	data/bgs/coliseum/walls/coliseum_wall3.gif
+		
+#|edited by openBor Stats v 0.67
+		

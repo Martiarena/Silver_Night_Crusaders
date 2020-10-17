@@ -1,0 +1,41 @@
+name 		Shockwave_thunder_2
+type		none
+speed  		20
+remove		0
+cantgrab 	1
+nodrop		2
+death		1
+nolife		1
+antigravity     100
+offscreenkill   70
+setlayer	40
+hostile             player npc
+candamage           player npc
+
+palette		data/chars/countess/magic/shockwave_thunder1a.gif
+
+
+
+anim	idle
+	loop	1
+	delay	7
+	offset	8 59
+	hitfx	data/sounds/jolted.wav
+	shock	0 0 17 119 25 0 0 0 0 0
+	frame	data/chars/countess/magic/shockwave_thunder_2a.gif
+	frame	data/chars/countess/magic/shockwave_thunder_2b.gif
+	delay	6
+	frame	data/chars/countess/magic/shockwave_thunder_2c.gif
+	delay	1
+	shock	0 0 0 0 0 0 0
+	frame	data/chars/countess/magic/shockwave_thunder_2c.gif
+		
+anim	spawn
+	loop	0
+	delay	7
+	offset	8 59
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

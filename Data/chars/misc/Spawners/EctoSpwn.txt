@@ -1,5 +1,5 @@
 name	         EctoSpawner
-health	         10
+health	         12
 type	         None
 antigravity	 100
 animationscript  data/scripts/oscript.c

@@ -1,0 +1,182 @@
+name		Glass_tube
+health          1
+nolife          1
+nomove  	1 1
+type		enemy
+cantgrab 	1
+nodrop		2
+death		1
+setlayer        -2
+antigravity     100
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+offscreenkill 500
+hostile         player npc
+candamage 	player npc
+
+load	Smoke1
+load	Breakglass1a
+load	Breakglass1b
+load	Breakglass1c
+load 	Breakglass1d
+load	Breakglass1e
+load	Breakglass1f
+load	Breakglass1g
+load	Breakglass1h
+load	Breakglass1i
+load	E._Laser_
+
+
+palette         data/bgs/dungeon/decoration/glasstube/glass_tube1a.gif
+
+animationscript data/scripts/cscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack
+	range	-100 200
+	loop	0
+	delay	14
+	offset	22 91
+	sound	data/sounds/glasstep.wav
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube2a.gif
+	@cmd	spawner2 "Smoke1" -16 68 0
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube2a.gif
+	@cmd	spawner2 "Smoke1" 0 74 0
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube2a.gif
+	@cmd	spawner2 "Smoke1" 20 63 0
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube2a.gif
+	@cmd	spawner2 "Smoke1" -10 50 0
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube2a.gif
+	@cmd	spawner2 "Smoke1" 5 45 0
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube2a.gif
+	@cmd	spawner2 "Smoke1" 22 30 0
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube2a.gif
+	delay	50
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube2a.gif
+	sound	data/sounds/glasscrash.wav
+	@cmd	tosserM "Breakglass1a" 10 75 1 1.5
+	@cmd	tosserM "Breakglass1b" 14 65 0.8 2.5
+	@cmd	tosserM "Breakglass1c" 18 55 0.4 3.5
+	@cmd	tosserM "Breakglass1d" 22 45 0.2 4.5
+	@cmd	tosserM "Breakglass1e" 8 40 0 1
+	@cmd	tosserM "breakglass1f" -22 45 -0.2 4.5
+	@cmd	tosserM "breakglass1g" -18 55 -0.4 3.5
+	@cmd	tosserM "breakglass1h" -14 65 -0.8 2.5
+	@cmd	tosserM "breakglass1i" -10 75 -1 1.5
+	@cmd	tosserM "E._Laser" 0 0 -2 2
+	delay	1
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	loop	0
+	delay	14
+	offset	22 91
+	sound	data/sounds/glasstep.wav
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube2a.gif
+	@cmd	spawner2 "Smoke1" -16 68 0
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube2a.gif
+	@cmd	spawner2 "Smoke1" 0 74 0
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube2a.gif
+	@cmd	spawner2 "Smoke1" 20 63 0
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube2a.gif
+	@cmd	spawner2 "Smoke1" -10 50 0
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube2a.gif
+	@cmd	spawner2 "Smoke1" 5 45 0
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube2a.gif
+	@cmd	spawner2 "Smoke1" 22 30 0
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube2a.gif
+	delay	50
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube2a.gif
+	sound	data/sounds/glasscrash.wav
+	@cmd	tosserM "Breakglass1a" 10 75 1 1.5
+	@cmd	tosserM "Breakglass1b" 14 65 0.8 2.5
+	@cmd	tosserM "Breakglass1c" 18 55 0.4 3.5
+	@cmd	tosserM "Breakglass1d" 22 45 0.2 4.5
+	@cmd	tosserM "Breakglass1e" 8 40 0 1
+	@cmd	tosserM "breakglass1f" -22 45 -0.2 4.5
+	@cmd	tosserM "breakglass1g" -18 55 -0.4 3.5
+	@cmd	tosserM "breakglass1h" -14 65 -0.8 2.5
+	@cmd	tosserM "breakglass1i" -10 75 -1 1.5
+	@cmd	tosserM "E._Laser_" 0 0 -2 2
+	delay	1
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow2
+	loop	1
+	@script
+	    void self = getlocalvar("self");
+	    int r = rand()%30;
+
+	    if( frame == 0){
+	      if( r > 0){
+	        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+	      }
+	    }
+	@end_script	
+	delay	7
+	offset	22 91
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1b.gif
+	@cmd	beidle
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1b.gif
+		
+anim	idle
+	loop	1
+	delay	14
+	offset	22 91
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1a.gif
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1b.gif
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1c.gif
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1b.gif
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1a.gif
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1b.gif
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1c.gif
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1b.gif
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1a.gif
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1b.gif
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1c.gif
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1b.gif
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1a.gif
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1b.gif
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1c.gif
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1b.gif
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1a.gif
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1b.gif
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1c.gif
+	@cmd	attack0 "ANI_FOLLOW1"
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1b.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	22 91
+	frame	data/bgs/dungeon/decoration/glasstube/glass_tube1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

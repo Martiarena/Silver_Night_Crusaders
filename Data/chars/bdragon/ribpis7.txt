@@ -1,0 +1,88 @@
+name    	 RibPis7
+health  	 10
+nomove   	 1 1
+type    	 enemy
+nolife  	 1
+noquake  	 1
+death   	 1
+score   	 0 -1
+antigravity  	 100
+setlayer   	 99
+hostile  	 none
+subject_to_platform 0
+candamage  	 player
+animationscript  data/scripts/Cscript.c
+load    	 RibPis6
+
+palette	         data/chars/bdragon/zombidragon.gif
+alternatepal	 data/chars/bdragon/blink.gif
+
+
+
+
+
+anim	death
+	delay	7
+	offset	9 16
+	bouncefactor	2
+	@cmd	degravity 0
+	subentity	edie
+	spawnframe	0 0 0 0 0
+	frame	data/chars/bdragon/rib.gif
+	delay	50
+	frame	data/chars/bdragon/ribd.gif
+		
+anim	fall
+	offset	9 16
+	delay	10
+	@cmd	stop
+	frame	data/chars/bdragon/rib.gif
+	@cmd	beidle
+	frame	data/chars/bdragon/rib.gif
+		
+anim	idle
+	loop	1
+	delay	5
+	offset	9 16
+	attack	2 2 14 14 12 1 0 0 0 0
+	@cmd	suicidePar
+	@cmd	targetPardashT 10 0 0
+	@cmd	mapPar
+	frame	data/chars/bdragon/rib.gif
+	@cmd	suicidePar
+	@cmd	mapPar
+	attack	0
+	frame	data/chars/bdragon/rib.gif
+		
+anim	pain
+	delay	5
+	offset	9 16
+	attack	2 2 14 14 12 1 0 0 0 0
+	frame	data/chars/bdragon/rib.gif
+	attack	0
+	frame	data/chars/bdragon/rib.gif
+		
+anim	rise
+	delay	5
+	offset	9 16
+	frame	data/chars/bdragon/rib.gif
+		
+anim	spawn
+	delay	10
+	offset	9 16
+	attack	2 2 14 14 12 1 0 0 0 0
+	frame	data/chars/bdragon/rib.gif
+	@cmd	spawner "RibPis6" 0 0 0
+	frame	data/chars/bdragon/rib.gif
+		
+anim	walk
+	loop	1
+	delay	12
+	offset	9 16
+	attack	2 2 14 14 12 1 0 0 0 0
+	frame	data/chars/bdragon/rib.gif
+	attack	0
+	frame	data/chars/bdragon/rib.gif
+		
+#|edited by openBor Stats v 0.67
+		

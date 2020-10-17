@@ -3,10 +3,13 @@ type	        none
 lifespan        2
 antigravity     100
 
+animationscript  data/scripts/escript.c
 
-anim idle
+
+anim	idle
 	delay	1
 	offset	9 33
+	sound	data/sounds/spell.wav
 	frame	data/chars/misc/spells/circle_magic_element.gif
 	frame	data/chars/misc/empty.gif
 	frame	data/chars/misc/spells/circle_magic_element.gif
@@ -49,3 +52,8 @@ anim idle
 	frame	data/chars/misc/empty.gif
 	frame	data/chars/misc/spells/circle_magic_element.gif
 	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

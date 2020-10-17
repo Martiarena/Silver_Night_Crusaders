@@ -1,0 +1,60 @@
+name    Pike_trap_2
+type trap
+shadow  0
+nolife 1
+nomove 1 1
+setlayer 0
+antigravity 100
+offscreenkill   9999
+
+hostile player npc obstacle
+candamage player npc obstacle
+
+palette		data/bgs/clock_tower/traps/traps_palette.gif
+
+
+
+
+
+
+
+
+
+anim	attack
+	loop	1
+	delay	14
+	offset	8 39
+	hitfx	data/sounds/slash.wav
+	attack2	0 0 0 0 0 0
+	frame	data/bgs/clock_tower/traps/pike2a.gif
+	attack2	3 24 3 14 19 11 1 1 0 0
+	frame	data/bgs/clock_tower/traps/pike2b.gif
+	attack2	3 19 3 20 19 11 1 1 0 0
+	frame	data/bgs/clock_tower/traps/pike2c.gif
+	attack2	3 2 3 76 19 11 1 1 0 0
+	frame	data/bgs/clock_tower/traps/pike2d.gif
+	attack2	3 44 3 18 19 11 1 1 0 0
+	frame	data/bgs/clock_tower/traps/pike2e.gif
+	attack2	3 42 3 14 19 11 1 1 0 0
+	frame	data/bgs/clock_tower/traps/pike2f.gif
+		
+anim	idle
+	loop	1
+	delay	14
+	offset	8 39
+	hitfx	data/sounds/slash.wav
+	attack2	0 0 0 0 0 0
+	frame	data/bgs/clock_tower/traps/pike2a.gif
+	attack2	3 24 3 14 19 11 1 1 0 0
+	frame	data/bgs/clock_tower/traps/pike2b.gif
+	attack2	3 19 3 20 19 11 1 1 0 0
+	frame	data/bgs/clock_tower/traps/pike2c.gif
+	attack2	3 2 3 76 19 11 1 1 0 0
+	frame	data/bgs/clock_tower/traps/pike2d.gif
+	attack2	3 44 3 18 19 11 1 1 0 0
+	frame	data/bgs/clock_tower/traps/pike2e.gif
+	attack2	3 42 3 14 19 11 1 1 0 0
+	frame	data/bgs/clock_tower/traps/pike2f.gif
+		
+#|edited by openBor Stats v 0.67
+		

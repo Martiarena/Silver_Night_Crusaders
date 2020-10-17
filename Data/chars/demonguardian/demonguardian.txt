@@ -1,5 +1,6 @@
 name    	 G._demonio
-health           56
+health           36
+mp               2
 speed            8
 type    	 enemy
 noquake  	 1
@@ -11,6 +12,7 @@ aggression       99
 min_noatk_chance 0
 max_noatk_chance 0
 offscreenkill	500
+offscreen_noatk_factor 1
 score 600 -1
 hostile  player npc
 candamage player npc
@@ -20,11 +22,16 @@ load		slashg
 icon 		data/chars/misc/bgmonster.gif
 
 defense normal3 0.5 0 0 0 0 0 0
-defense normal6 2 0 0 0 0 0 0
+defense normal6 4 0 0 0 0 0 0
+defense normal16 1.5 0 0 0 0 0 0
+defense shock 3 0 0 0 0 0 0
+
 
 palette 	data/chars/demonguardian/demonguardian_palette.gif
 
 alternatepal	 data/chars/demonguardian/blink.gif
+
+
 
 
 
@@ -80,6 +87,7 @@ anim	attack1
 	attack	0 0 0 0
 	frame	data/chars/demonguardian/idle1a.gif
 	delay	200
+	sound	data/sounds/throw2.wav
 	hitfx	data/sounds/slash.wav
 	attack2	40 30 65 70 19 10 0 0 0 0
 	@cmd	immunity 0
@@ -89,23 +97,59 @@ anim	attack1
 	frame	data/chars/demonguardian/idle1a.gif
 		
 anim	attack2
-	range	54 130
-	rangea	0 106
+	range	30 100
+	rangea	0 0
 	delay	1
 	offset	54 106
 	bbox	40 30 33 70
 	attack	40 30 33 70 12 0 0 0 0 0
 	frame	data/chars/demonguardian/idle1a.gif
-	delay	32
-	@cmd	targetB 120 16 -20 1
+	delay	64
 	frame	data/chars/demonguardian/attack1a.gif
-	delay	7
-	custknife	slashg
-	throwframe	3 10
-	frame	data/chars/demonguardian/attack1b.gif
-	frame	data/chars/demonguardian/attack1c.gif
-	delay	56
-	frame	data/chars/demonguardian/attack1c.gif
+	delay	1
+	move	3
+	@cmd	immunity 0
+	sound	data/sounds/throw1.wav
+	hitfx	data/sounds/slash.wav
+	attack2	40 30 64 70 19 11 0 0 0 0
+	dropv	3 2 0
+	frame	data/chars/demonguardian/block1b.gif
+	frame	data/chars/demonguardian/block1b.gif
+	frame	data/chars/demonguardian/block1b.gif
+	frame	data/chars/demonguardian/block1b.gif
+	frame	data/chars/demonguardian/block1b.gif
+	frame	data/chars/demonguardian/block1b.gif
+	frame	data/chars/demonguardian/block1b.gif
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/demonguardian/block1b.gif
+	delay	1
+	attack2	40 30 64 70 19 11 0 0 0 0
+	dropv	3 2 0
+	frame	data/chars/demonguardian/block1b.gif
+	frame	data/chars/demonguardian/block1b.gif
+	frame	data/chars/demonguardian/block1b.gif
+	frame	data/chars/demonguardian/block1b.gif
+	frame	data/chars/demonguardian/block1b.gif
+	frame	data/chars/demonguardian/block1b.gif
+	frame	data/chars/demonguardian/block1b.gif
+	frame	data/chars/demonguardian/block1b.gif
+	frame	data/chars/demonguardian/block1b.gif
+	frame	data/chars/demonguardian/block1b.gif
+	move	2
+	frame	data/chars/demonguardian/block1b.gif
+	frame	data/chars/demonguardian/block1b.gif
+	frame	data/chars/demonguardian/block1b.gif
+	move	1
+	frame	data/chars/demonguardian/block1b.gif
+	frame	data/chars/demonguardian/block1b.gif
+	frame	data/chars/demonguardian/block1b.gif
+	delay	28
+	move	0
+	frame	data/chars/demonguardian/block1b.gif
+	attack2	0 0 0 0 0 0 0
+	@cmd	immunity 1
+	delay	1
+	frame	data/chars/demonguardian/idle1a.gif
 		
 anim	attack3
 	range	5 32
@@ -123,6 +167,7 @@ anim	attack3
 	delay	1
 	attack	0 0 0 0
 	frame	data/chars/demonguardian/attack1c.gif
+	sound	data/sounds/throw2.wav
 	hitfx	data/sounds/slash.wav
 	attack2	40 30 68 70 19 0 0 0 0 0
 	frame	data/chars/demonguardian/attack1d.gif
@@ -148,7 +193,7 @@ anim	attack4
 	frame	data/chars/demonguardian/attack1a.gif
 	delay	1
 	move	3
-	attack	40 30 68 70 25 11 0 0 0 0
+	attack	40 30 68 70 19 11 0 0 0 0
 	dropv	3 2 0
 	frame	data/chars/demonguardian/attack1b.gif
 	frame	data/chars/demonguardian/attack1b.gif
@@ -160,8 +205,9 @@ anim	attack4
 	attack	0 0 0 0 0 0 0
 	frame	data/chars/demonguardian/attack1c.gif
 	delay	1
+	sound	data/sounds/throw1.wav
 	hitfx	data/sounds/slash.wav
-	attack2	40 30 68 70 25 11 0 0 0 0
+	attack2	40 30 68 70 19 11 0 0 0 0
 	dropv	3 2 0
 	frame	data/chars/demonguardian/attack1d.gif
 	frame	data/chars/demonguardian/attack1c.gif
@@ -185,60 +231,6 @@ anim	attack4
 	move	0
 	attack2	0 0 0 0 0 0 0
 	frame	data/chars/demonguardian/attack1c.gif
-		
-anim	attack5
-	range	30 100
-	rangea	0 0
-	delay	1
-	offset	54 106
-	bbox	40 30 33 70
-	attack	40 30 33 70 12 0 0 0 0 0
-	frame	data/chars/demonguardian/idle1a.gif
-	delay	64
-	frame	data/chars/demonguardian/attack1a.gif
-	delay	1
-	move	3
-	@cmd	immunity 0
-	hitfx	data/sounds/slash.wav
-	attack2	40 30 64 70 19 11 0 0 0 0
-	dropv	3 2 0
-	frame	data/chars/demonguardian/block1b.gif
-	frame	data/chars/demonguardian/block1b.gif
-	frame	data/chars/demonguardian/block1b.gif
-	frame	data/chars/demonguardian/block1b.gif
-	frame	data/chars/demonguardian/block1b.gif
-	frame	data/chars/demonguardian/block1b.gif
-	frame	data/chars/demonguardian/block1b.gif
-	attack	0 0 0 0 0 0 0
-	frame	data/chars/demonguardian/block1b.gif
-	delay	1
-	attack2	40 30 64 70 19 11 0 0 0 0
-	dropv	3 2 0
-	frame	data/chars/demonguardian/block1b.gif
-	frame	data/chars/demonguardian/block1b.gif
-	frame	data/chars/demonguardian/block1b.gif
-	frame	data/chars/demonguardian/block1b.gif
-	frame	data/chars/demonguardian/block1b.gif
-	frame	data/chars/demonguardian/block1b.gif
-	frame	data/chars/demonguardian/block1b.gif
-	frame	data/chars/demonguardian/block1b.gif
-	frame	data/chars/demonguardian/block1b.gif
-	frame	data/chars/demonguardian/block1b.gif
-	move	2
-	frame	data/chars/demonguardian/block1b.gif
-	frame	data/chars/demonguardian/block1b.gif
-	frame	data/chars/demonguardian/block1b.gif
-	move	1
-	frame	data/chars/demonguardian/block1b.gif
-	frame	data/chars/demonguardian/block1b.gif
-	frame	data/chars/demonguardian/block1b.gif
-	delay	28
-	move	0
-	frame	data/chars/demonguardian/block1b.gif
-	attack2	0 0 0 0 0 0 0
-	@cmd	immunity 1
-	delay	1
-	frame	data/chars/demonguardian/idle1a.gif
 		
 anim	death
 	delay	5
@@ -262,6 +254,28 @@ anim	death
 	frame	data/chars/demonguardian/death1k.gif
 	@cmd	suicide
 	frame	data/chars/misc/empty.gif
+		
+anim	freespecial
+	range	54 130
+	rangea	0 106
+	delay	1
+	offset	54 106
+	energycost	2
+	mponly	1
+	bbox	40 30 33 70
+	attack	40 30 33 70 12 0 0 0 0 0
+	frame	data/chars/demonguardian/idle1a.gif
+	delay	32
+	@cmd	targetB 120 16 -20 1
+	frame	data/chars/demonguardian/attack1a.gif
+	delay	7
+	sound	data/sounds/throw2.wav
+	custknife	slashg
+	throwframe	3 10
+	frame	data/chars/demonguardian/attack1b.gif
+	frame	data/chars/demonguardian/attack1c.gif
+	delay	56
+	frame	data/chars/demonguardian/attack1c.gif
 		
 anim	idle
 	loop	1

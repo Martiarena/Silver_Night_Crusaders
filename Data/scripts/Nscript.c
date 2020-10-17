@@ -286,3 +286,8 @@ void shooter(void Shot, float dx, float dy, float Vx, float Vy)
    changeentityproperty(vShot, "velocity", Vx, 0, Vy);
    return vShot;
 }
+void degravity(int Ratio)
+{// Changes antigravity effect
+    void self = getlocalvar("self");
+    changeentityproperty(self, "antigravity", Ratio);
+}

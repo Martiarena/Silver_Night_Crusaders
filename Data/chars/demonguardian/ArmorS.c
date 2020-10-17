@@ -11,14 +11,33 @@ void immunity(int Def)
     int iTyp2 = openborconstant("ATK_NORMAL2");
     int iTyp3 = openborconstant("ATK_NORMAL3");
     int iTyp4 = openborconstant("ATK_NORMAL4");
-    int iTypS = openborconstant("ATK_SHOCK");
+    int iTyp6 = openborconstant("ATK_NORMAL6");
+    int iTyp7 = openborconstant("ATK_NORMAL7");
+    int iTyp9 = openborconstant("ATK_NORMAL9");
+    int iTyp10 = openborconstant("ATK_NORMAL10");
+    int iTyp11 = openborconstant("ATK_NORMAL11");
+    int iTyp15 = openborconstant("ATK_NORMAL15");
+    int iTyp16 = openborconstant("ATK_NORMAL16");
+    int iTyp17 = openborconstant("ATK_NORMAL17");
+    int iTyp18 = openborconstant("ATK_NORMAL18");
+    int iTyp19 = openborconstant("ATK_NORMAL19");
+    int iTyp20 = openborconstant("ATK_NORMAL20");
     int iTypB = openborconstant("ATK_BURN");
 
     changeentityproperty(self,"defense", iTyp1, Def);
     changeentityproperty(self,"defense", iTyp2, Def);
     changeentityproperty(self,"defense", iTyp3, Def);
     changeentityproperty(self,"defense", iTyp4, Def);
-    changeentityproperty(self,"defense", iTypS, Def);
+    changeentityproperty(self,"defense", iTyp6, Def);
+    changeentityproperty(self,"defense", iTyp7, Def);
+    changeentityproperty(self,"defense", iTyp9, Def);
+    changeentityproperty(self,"defense", iTyp10, Def);
+    changeentityproperty(self,"defense", iTyp11, Def);
+    changeentityproperty(self,"defense", iTyp15, Def);
+    changeentityproperty(self,"defense", iTyp16, Def);
+    changeentityproperty(self,"defense", iTyp18, Def);
+    changeentityproperty(self,"defense", iTyp19, Def);
+    changeentityproperty(self,"defense", iTyp20, Def);
     changeentityproperty(self,"defense", iTypB, Def);
 }
 

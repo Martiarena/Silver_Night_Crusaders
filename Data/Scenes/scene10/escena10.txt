@@ -1,0 +1,5 @@
+music		data/Scenes/scene10/scene10.ogg 0
+animation	data/Scenes/scene10/escena10_part_1.gif 0 0 0 0
+animation	data/Scenes/scene10/escena10_part_2.gif 0 0 0 0
+animation	data/Scenes/scene10/escena10_part_3.gif 0 0 0 0
+silence 1

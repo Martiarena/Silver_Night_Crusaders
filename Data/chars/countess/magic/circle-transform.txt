@@ -1,0 +1,122 @@
+name	        Circle_transform
+type	        none
+antigravity     100
+setlayer	-1
+
+palette		data/chars/countess/magic/circle-transform1a.gif
+animationscript  data/scripts/escript.c
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	1
+	offset	63 63
+	frame	data/chars/countess/magic/circle-transform1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	63 63
+	sound	data/sounds/umbrae_spell.wav
+	frame	data/chars/countess/magic/circle-transform1a.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/countess/magic/circle-transform1b.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/countess/magic/circle-transform1c.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/countess/magic/circle-transform1d.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/countess/magic/circle-transform1a.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/countess/magic/circle-transform1b.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/countess/magic/circle-transform1c.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+	frame	data/chars/countess/magic/circle-transform1d.gif
+	frame	data/chars/countess/magic/circle-transform1e.gif
+		
+#|edited by openBor Stats v 0.67
+		

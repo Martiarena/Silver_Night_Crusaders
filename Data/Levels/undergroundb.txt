@@ -1,4 +1,4 @@
-music		data/music/underground_reservoir.ogg 945945
+music		data/music/hard_fight.ogg 32250
 
 background	data/bgs/underground/waterfall.gif
 panel	        data/bgs/underground/waterfall.gif

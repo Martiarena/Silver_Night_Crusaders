@@ -53,7 +53,7 @@ anim	idle
 	delay	1
 	offset	13 12
 	bbox	2 2 22 21
-	attack	2 2 22 21 19 0 0 0 0 0
+	attack	2 2 22 21 25 0 0 0 0 0
 	followanim	1
 	followcond	1
 	frame	data/chars/legion/minilegions/bomb.gif

@@ -1,0 +1,394 @@
+name      	Soul_Cloud
+type  	 none
+health		 100
+mp		 100
+mprate           2
+speed		 10
+running          10 0 0 0 0
+cantgrab	 1
+noquake		 1
+bounce		 0
+jumpmove	3
+jumpheight	 3
+death		 1
+nodieblink	 2
+icon		 data/chars/fran/icon.gif
+antigravity  70
+makeinv		 3 0
+gfxshadow        0
+knockdowncount   10
+subject_to_wall  1
+subject_to_platform 1
+defense normal20 0 1 0
+weapons          fran
+palette		 data/chars/fran/palette1.gif
+
+alternatepal	data/chars/fran/palette2.gif
+alternatepal	data/chars/fran/palette3.gif
+alternatepal	data/chars/fran/palette4.gif
+alternatepal	data/chars/fran/palette5.gif
+alternatepal	data/chars/fran/palette6.gif
+alternatepal	data/chars/fran/palette7.gif
+alternatepal	data/chars/fran/palette8.gif
+
+animationscript	 data/scripts/player.c
+keyscript	 data/chars/fran/frankey.c
+takedamagescript data/scripts/invis.c
+
+com	a3	freespecial3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	attack2
+		
+anim	bpain
+		
+anim	burn
+		
+anim	death
+		
+anim	duck
+		
+anim	duckattack
+		
+anim	fall
+	delay	5
+	offset	55 63
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/fall1.gif
+	frame	data/chars/fran/fall2.gif
+	frame	data/chars/fran/fall3.gif
+	frame	data/chars/fran/fall4.gif
+	@cmd	platform 1
+	frame	data/chars/fran/fall3.gif
+	frame	data/chars/fran/fall4.gif
+		
+anim	fall17
+	delay	5
+	offset	55 63
+	@cmd	spawnbind "blooda" 0 36 1
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/fall1.gif
+	frame	data/chars/fran/fall2.gif
+	frame	data/chars/fran/fall3.gif
+	frame	data/chars/fran/fall4.gif
+	@cmd	platform 1
+	frame	data/chars/fran/fall3.gif
+	frame	data/chars/fran/fall4.gif
+		
+anim	fall2
+	delay	5
+	offset	55 63
+	@cmd	spawnbind "blooda" 0 36 1
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/fall1.gif
+	frame	data/chars/fran/fall2.gif
+	frame	data/chars/fran/fall3.gif
+	frame	data/chars/fran/fall4.gif
+	@cmd	platform 1
+	frame	data/chars/fran/fall3.gif
+	frame	data/chars/fran/fall4.gif
+		
+anim	fall7
+	delay	5
+	offset	55 63
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/falli1.gif
+	frame	data/chars/fran/falli2.gif
+	frame	data/chars/fran/falli3.gif
+	frame	data/chars/fran/falli4.gif
+	@cmd	platform 1
+	frame	data/chars/fran/falli3.gif
+	frame	data/chars/fran/falli4.gif
+		
+anim	fall8
+	delay	5
+	offset	55 63
+	@cmd	spawnbind "prose" 4 32 1
+	@cmd	spawnbind "blooda" 0 36 1
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/fall1.gif
+	frame	data/chars/fran/fall2.gif
+	frame	data/chars/fran/fall3.gif
+	frame	data/chars/fran/fall4.gif
+	@cmd	platform 1
+	frame	data/chars/fran/fall3.gif
+	frame	data/chars/fran/fall4.gif
+		
+anim	follow1
+		
+anim	follow2
+		
+anim	follow3
+		
+anim	follow4
+		
+anim	follow5
+	loop	0
+	delay	7
+	offset	55 63
+	frame	data/chars/fran/cloudtransform4.gif
+	frame	data/chars/fran/cloudtransform3.gif
+	frame	data/chars/fran/cloudtransform2.gif
+	frame	data/chars/fran/cloudtransform1.gif
+	delay	1
+	frame	data/chars/fran/idle1.gif
+	weaponframe	5 1
+	frame	data/chars/fran/idle1.gif
+		
+anim	freespecial10
+		
+anim	freespecial11
+		
+anim	freespecial12
+		
+anim	freespecial13
+	loop	0
+	delay	1
+	offset	55 63
+	@cmd	limiter 9
+	sound	data/sounds/transform.wav
+	frame	data/chars/fran/cloudtransform1.gif
+	frame	data/chars/fran/cloudtransform2.gif
+	frame	data/chars/fran/cloudtransform3.gif
+	frame	data/chars/fran/cloudtransform4.gif
+	delay	1
+	weaponframe	5 3
+	frame	data/chars/fran/cloudidle1.gif
+	frame	data/chars/fran/cloudidle1.gif
+		
+anim	freespecial14
+		
+anim	freespecial2
+		
+anim	freespecial3
+	loop	0
+	delay	7
+	offset	55 63
+	frame	data/chars/fran/cloudtransform4.gif
+	frame	data/chars/fran/cloudtransform3.gif
+	frame	data/chars/fran/cloudtransform2.gif
+	frame	data/chars/fran/cloudtransform1.gif
+	delay	1
+	frame	data/chars/fran/idle1.gif
+	weaponframe	5 1
+	frame	data/chars/fran/idle1.gif
+		
+anim	freespecial4
+		
+anim	freespecial5
+		
+anim	freespecial6
+		
+anim	freespecial7
+		
+anim	freespecial8
+		
+anim	freespecial9
+		
+anim	idle
+	loop	1
+	delay	17
+	offset	55 63
+@script
+    void self = getlocalvar("self");
+    int MP = getentityproperty(self,"mp");
+
+    if(frame >= 1){
+      if(MP < 0.5){
+        changeentityproperty(self, "velocity", 0, 0, 0);
+        performattack(self, openborconstant("ANI_FOLLOW5"));
+      } else {
+        changeentityproperty(self, "mp", MP-0.5);
+      }
+    }
+	@end_script	
+	frame	data/chars/fran/cloudidle1.gif
+	frame	data/chars/fran/cloudidle2.gif
+	frame	data/chars/fran/cloudidle3.gif
+	frame	data/chars/fran/cloudidle4.gif
+		
+anim	jump
+		
+anim	jumpattack
+		
+anim	jumpattack3
+		
+anim	jumpland
+		
+anim	jumpspecial
+		
+anim	pain
+	loop	0
+	delay	9
+	offset	55 63
+	jumpframe	0 1.5 -1
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/pain1.gif
+	frame	data/chars/fran/pain2.gif
+	frame	data/chars/fran/pain3.gif
+		
+anim	pain17
+	loop	0
+	delay	9
+	offset	55 63
+	jumpframe	0 1.5 -1
+	@cmd	spawnbind "blooda" 0 36 1
+	bbox	47 18 15 45
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/pain1.gif
+	frame	data/chars/fran/pain2.gif
+	frame	data/chars/fran/pain3.gif
+		
+anim	pain2
+	loop	0
+	delay	9
+	offset	55 63
+	jumpframe	0 1.5 -1
+	@cmd	spawnbind "blooda" 0 36 1
+	bbox	47 18 15 45
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/pain1.gif
+	frame	data/chars/fran/pain2.gif
+	frame	data/chars/fran/pain3.gif
+		
+anim	pain7
+	loop	0
+	delay	9
+	offset	55 63
+	jumpframe	0 1.5 -1
+	bbox	47 18 15 45
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/paini1.gif
+	frame	data/chars/fran/paini2.gif
+	frame	data/chars/fran/paini3.gif
+		
+anim	pain8
+	loop	0
+	delay	9
+	offset	55 63
+	jumpframe	0 1.5 -1
+	@cmd	spawnbind "blooda" 0 36 1
+	@cmd	spawnbind "prose" 4 32 1
+	bbox	47 18 15 45
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/pain1.gif
+	frame	data/chars/fran/pain2.gif
+	frame	data/chars/fran/pain3.gif
+		
+anim	rise
+		
+anim	run
+@script
+    void self = getlocalvar("self");
+    int MP = getentityproperty(self,"mp");
+
+    if(frame >= 1){
+      if(MP < 1){
+        changeentityproperty(self, "velocity", 0, 0, 0); // this is not necessary in IDLE
+        performattack(self, openborconstant("ANI_FOLLOW5"));
+      } else {
+        changeentityproperty(self, "mp", MP-0.5);
+      }
+    }
+	@end_script	
+	loop	1
+	delay	10
+	offset	55 63
+	frame	data/chars/fran/cloudwalk1.gif
+	frame	data/chars/fran/cloudwalk2.gif
+	frame	data/chars/fran/cloudwalk3.gif
+	frame	data/chars/fran/cloudwalk4.gif
+		
+anim	runattack
+		
+anim	shock
+		
+anim	slide
+		
+anim	spain
+		
+anim	special
+		
+anim	walk
+@script
+    void self = getlocalvar("self");
+    int MP = getentityproperty(self,"mp");
+
+    if(frame >= 1){
+      if(MP < 1){
+        changeentityproperty(self, "velocity", 0, 0, 0); // this is not necessary in IDLE
+        performattack(self, openborconstant("ANI_FOLLOW5"));
+      } else {
+        changeentityproperty(self, "mp", MP-0.5);
+      }
+    }
+	@end_script	
+	loop	1
+	delay	10
+	offset	55 63
+	frame	data/chars/fran/cloudwalk1.gif
+	frame	data/chars/fran/cloudwalk2.gif
+	frame	data/chars/fran/cloudwalk3.gif
+	frame	data/chars/fran/cloudwalk4.gif
+		
+#|edited by openBor Stats v 0.67
+		

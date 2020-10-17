@@ -1,0 +1,818 @@
+music		data/music/demongallery.ogg 186965
+
+panel	        data/bgs/castlehall/castlehall_1.gif
+
+fglayer		data/bgs/castlehall/castle_wall_hall.gif -10000 0.3 0.3 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/castle_entrance/castle_trees.gif -11000 0.5 0.5 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/castle_entrance/castle_wall_1.gif -12000 0.6 0.6 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/castle_entrance/castle_sky_night_red.gif -14000 0.9 0.9 0 0 0 0 -1 1 1 0 0 0 0 0 1
+
+order           a
+settime	        0
+notime		1
+spawn1          80 0 240
+spawn2          40 0 240
+direction	leftright
+type		0 0 0
+cameratype 1
+
+
+
+spawn  Castlehall_wall1a
+coords  296  216  104
+flip	1
+alias	Thick
+at  0
+
+spawn  Castlehall_platform2a
+coords  -256  216  96
+flip	1
+at  0
+
+spawn  Back_castle_hall
+coords  -600  0  0
+flip	1
+at  0
+
+spawn  Castlehall_platform1a
+coords  -663  216  79
+flip	1
+at  0
+
+spawn  Castlehall_platform2a
+coords  -1216  216  96
+flip	1
+at  0
+
+spawn  Castlehall_wall2a
+coords  -1466  216  107
+alias	Thick
+at  0
+
+spawn  Fuente_agua
+coords  -2121  216
+flip	1
+at  0
+
+
+
+spawn  Castlehall_platform4a
+coords  -2854  216  0
+alias	Thick
+flip	1
+at  0
+
+spawn  Castlehall_wall3a
+coords  -2943  216  170
+alias	Thick
+flip	1
+at  0
+
+spawn  Castlehall_wall4a
+coords  -3375  216  174
+alias	Thick
+flip	1
+at  0
+
+spawn  Castlehall_platform3a
+coords  -3375  216  0
+alias	Thick
+flip	1
+at  0
+
+spawn  Castlehall_platform1a
+coords  -3737  216  64
+flip	1
+at  0
+
+spawn  Castlehall_platform1a
+coords  -3849  216  94
+flip	1
+at  0
+
+spawn  Castlehall_platform7a
+coords  -4126  216  0
+alias	Thick
+flip	1
+at  0
+
+spawn  Castlehall_platform1a
+coords  -4457  216  100
+flip	1
+at  0
+
+spawn  Castlehall_platform5a
+coords  -4725  216  96
+flip	1
+at  0
+
+spawn  Castlehall_platform5a
+coords  -4840  216  96
+flip	1
+at  0
+
+spawn  Castlehall_platform5a
+coords  -4960  216  96
+flip	1
+at  0
+
+spawn  Castlehall_wall5a
+coords  -5124  216  109
+alias	Thick
+flip	1
+at  0
+
+spawn	Stage8
+coords  160 240  0
+flip    1
+at      0
+
+spawn  Candle1
+coords  0  216  82
+item	Bomba
+map 1
+flip 1
+at  0
+
+spawn  E._Laser_
+coords  -59  216  0
+flip 1
+at  0
+
+spawn  Candle1
+coords  -29  216  160
+item	___100
+at  98
+
+spawn  P._de_huesos_
+coords  -39  216  30
+flip 1
+at  100
+
+spawn  P._de_huesos
+coords  -39  216  60
+flip 1
+at  100
+
+spawn  P._de_huesos
+coords  -39  216
+flip 1
+at  100
+
+spawn  E._Laser_
+coords  349  216
+flip 1
+at  150
+
+spawn  Chiroptera_
+coords  -39  216  50
+flip 1
+at  158
+
+spawn  Estatua
+coords  -39  216  112
+item	___250
+at  160
+
+spawn  Chiroptera_
+coords  -39  216  50
+flip 1
+at  214
+
+spawn  Estatua
+coords  -39  216  112
+item	gema_azul
+at  219
+
+spawn  Chiroptera_
+coords  -39  216  50
+flip 1
+at  274
+
+spawn  Estatua
+coords  -39  216  112
+item	___400
+at  277
+
+spawn  Candle1
+coords  -29  216  82
+item	___10
+flip 1
+at  354
+
+Blockade  415
+at  415
+
+spawn  Cazadora
+coords  -39  216
+flip 1
+at  415
+
+spawn  Candle1
+coords  -29  216  82
+item	___20
+flip 1
+at  603
+
+spawn  Chiroptera_
+coords  -39  216  35
+flip 1
+at  620
+
+spawn  Jar2
+coords  -39  216  105
+flip 1
+item	Pollo_frito
+at  624
+
+Blockade  700
+at  700
+
+spawn  Candle1
+coords  -29  216  160
+flip 1
+item	Gema_roja
+at  700
+
+spawn  J._Anfauglir
+coords  419  216  0
+flip 1
+at  800
+
+spawn  G._demonio
+coords  -39  216  0
+flip 1
+at  800
+
+spawn  Big_candle
+coords  -39  216  160
+flip 1
+at  802
+
+spawn  J._Anfauglir
+coords  -79  216
+flip 1
+at  900
+
+spawn  Candle1
+coords  -29  216  160
+item	Cuchillo
+map 1
+flip 1
+at  923
+
+spawn  Soldado_raso
+coords  359  216 0
+flip 1
+at  950
+
+spawn  E._Laser
+coords  169  216
+flip 1
+at  950
+
+spawn  Candle1
+coords  -29  216  82
+item	___50
+flip 1
+at  1068
+
+spawn  Candle1
+coords  -29  216  145
+item	___100
+flip 1
+at  1068
+
+spawn  E._Laser
+coords  -39  216
+flip 1
+at  1100
+
+spawn  Soldado_raso
+coords  -79  216 0
+flip 1
+at  1100
+
+spawn  Chiroptera_
+coords  -39  216  51
+flip 1
+at  1120
+
+spawn  Estatua
+coords  -39  216  112
+item	___700
+at  1121
+
+Blockade  1140
+at  1140
+
+spawn  Estatua
+coords  -39  216  112
+item	Gema_roja
+at  1180
+
+spawn  Chiroptera_
+coords  -39  216  51
+flip 1
+at  1230
+
+spawn  Estatua
+coords  -39  216  112
+item	___250
+at  1238
+
+spawn  Soldado_raso
+coords  369  216 0
+flip 1
+at  1300
+
+spawn  J._Anfauglir
+coords  -79  216
+flip 1
+at  1300
+
+spawn  Candle1
+coords  -29  216  82
+item	___100
+flip 1
+at  1314
+
+spawn  Chiroptera_
+coords  -39  216  59
+flip 1
+at  1375
+
+spawn  Fake_enemy
+coords  2020  216 160
+at  1400
+
+spawn  Chiroptera_
+coords  -39  216  59
+flip 1
+at  1405
+
+spawn  Chiroptera_
+coords  -39  216  59
+flip 1
+at  1435
+
+spawn  J._Anfauglir
+coords  -79  216
+flip 1
+at  1500
+
+spawn  Torch2
+coords  -29  216  29
+item	___100
+at  1583
+
+spawn  Red_Moon
+coords  -20  216 200
+at  1600
+
+spawn  Torch2
+coords  -29  216  29
+item	___100
+at  1679
+
+spawn  E._Laser_
+coords  -79  216
+flip 1
+at  1700
+
+spawn  Soldado_raso
+coords  -39  216
+flip 1
+at  1700
+
+spawn  Torch2
+coords  -29  216  29
+#coords  350  216  29
+item	Gema_azul
+at  1775
+
+spawn  E._Laser_
+coords  -39  216
+flip 1
+at  1790
+
+spawn  Xavier
+coords  -79  216  0
+flip 1
+at  1790
+
+Blockade  1790
+at  1790
+
+spawn  Soldado_raso
+coords  -59  216
+flip 1
+at  1800
+
+spawn  Torch2
+coords  -29  216  29
+at  1870
+
+spawn  G._demonio
+coords  -39  216
+flip 1
+at  1890
+
+spawn  J._Anfauglir
+coords  -79  216  0
+flip 1
+at  1940
+
+spawn  Hidden_13
+coords -160  216  181
+flip 1
+at  1967
+
+spawn  P._de_huesos
+coords  -39  216  0
+flip 1
+at  2082
+
+spawn  P._de_huesos
+coords  -39  216  30
+flip 1
+at  2082
+
+spawn  P._de_huesos
+coords  -39  216  60
+flip 1
+at  2082
+
+spawn  Torch2
+coords  -29  216  29
+item	___100
+at  2314
+
+spawn  E._Laser
+coords  250  216  0
+flip 1
+at  2230
+
+spawn  E._Laser_
+coords  -39  216  0
+flip 1
+at  2230
+
+spawn  P._de_huesos
+coords  -39  216  0
+flip 1
+at  2355
+
+spawn  P._de_huesos_
+coords  -39  216  30
+flip 1
+at  2355
+
+spawn  P._de_huesos
+coords  -39  216  60
+flip 1
+at  2355
+
+spawn  P._de_huesos_
+coords  -39  216  90
+flip 1
+at  2355
+
+spawn  Torch2
+coords  -29  216  29
+item	___100
+at  2410
+
+spawn  Torch2
+coords  -29  216  29
+item	___100
+at  2505
+
+spawn  J._Anfauglir
+coords  -79  216  0
+flip 1
+at  2550
+
+spawn  E._Laser
+coords  250  216  0
+flip 1
+at  2550
+
+spawn  Torch2
+coords  -29  216  29
+item	Gema_roja
+at  2602
+
+spawn  Jar1
+coords  -39  216  73
+item	Pollo_frito
+at  2740
+
+spawn  E._Laser_
+coords  -39  216  80
+flip 1
+at  2800
+
+spawn  Fake_enemy
+coords  1800  216 160
+at  2900
+
+Blockade  2900
+at  2900
+
+spawn  Jar1
+coords  -39  216
+item	Pollo_frito
+at  3006
+
+spawn  Jar1
+coords  -39  216
+item	Gema_roja
+at  3225
+
+Blockade  3315
+at  3300
+
+spawn  Bafomet
+coords  100  216
+flip 1
+at  3315
+
+Wait
+at  3315
+
+spawn  Big_candle
+coords  -39  216  160
+flip 1
+at  3460
+
+spawn  Cazadora
+coords  -39  216
+flip 1
+at  3580
+
+spawn  Candle1
+coords  -29  216  82
+item	___100
+flip 1
+at  3659
+
+spawn  Jar2
+coords  -39  216  83
+item	___250
+at  3695
+
+Blockade  3700
+at  3700
+
+spawn  Back_castle_hall
+coords  320  0  0
+at  3700
+
+spawn  E._Laser_
+coords  -39  216
+flip 1
+at  3700
+
+spawn  E._Laser
+coords  220  216
+flip 1
+at  3800
+
+spawn  Jar2
+coords  -39  216  112
+item	___400
+at  3807
+
+Blockade  3850
+at  3850
+
+spawn  G._demonio
+coords  -99  216
+flip 1
+at  3850
+
+spawn  Soldado_raso
+coords  -39  216  0
+flip 1
+at  3850
+
+spawn  Candle1
+coords  -29  216  175
+item	___100
+flip 1
+at  3940
+
+spawn  Jar1
+coords  -39  216  73
+item	___700
+at  4026
+
+spawn  Soldado_raso
+coords  -39  216  75
+flip 1
+at  4030
+
+spawn  P._de_huesos
+coords  -39  216  104
+flip 1
+at  4080
+
+spawn  P._de_huesos
+coords  -39  216  134
+flip 1
+at  4080
+
+spawn  P._de_huesos
+coords  -39  216  74
+flip 1
+at  4080
+
+spawn  Jar1
+coords  -39  216  73
+item	gema_roja
+at  4147
+
+spawn  Fake_enemy
+coords  1820  216  160
+at  4200
+
+spawn  E._Laser
+coords  -39  216 80
+flip 1
+at  4200
+
+spawn  Candle1
+coords  -29  216  135
+item	A._bendita
+map 1
+flip 1
+at  4235
+
+blockade 4360
+at  4360
+
+spawn  E._Laser
+coords  -39  216
+flip 1
+at  4360
+
+spawn  G._demonio
+coords  -39  216 0
+flip 1
+at  4400
+
+spawn  Jar2
+coords  -39  216  120
+item	gema_azul
+at  4417
+
+spawn  Candle1
+coords  -29  216  82
+flip 1
+item	___100
+at  4492
+
+spawn  Candle1
+coords  -29  216  135
+flip 1
+item	___100
+at  4492
+
+spawn  E._Laser
+coords  250  216  0
+flip 1
+at  4550
+
+spawn  P._de_huesos
+coords  -39  216
+flip 1
+at  4550
+
+spawn  P._de_huesos_
+coords  -39  216  30
+flip 1
+at  4550
+
+spawn  P._de_huesos
+coords  -39  216  60
+flip 1
+at  4550
+
+spawn  P._de_huesos
+coords  -39  216  90
+flip 1
+at  4550
+
+spawn  P._de_huesos_
+coords  -39  216  120
+flip 1
+at  4550
+
+spawn  P._de_huesos
+coords  -39  216  150
+flip 1
+at  4550
+
+spawn  Big_candle
+coords  -39  216  160
+flip 1
+at  4609
+
+spawn  Candle1
+coords  -29  216  135
+flip 1
+item	___100
+at  4619
+
+spawn  Candle1
+coords  -29  216  82
+flip 1
+item	___100
+at  4619
+
+spawn  Estatua
+coords  -39  216  112
+item	gema_azul
+at  4687
+
+spawn  E._Laser
+coords  39  216  0
+flip 1
+at  4700
+
+spawn  Jar1
+coords  -39  216  0
+item	___250
+at  4738
+
+spawn  Candle1
+coords  -29  216  135
+flip 1
+item	___100
+at  4750
+
+spawn  Estatua
+coords  -39  216  112
+item	gema_roja
+at  4804
+
+spawn  Candle1
+coords  -29  216  135
+flip 1
+item	___100
+at  4875
+
+spawn  Jar1
+coords  -39  216  0
+item	___400
+at  4865
+
+Blockade  4876
+at  4876
+
+spawn  E._Laser_
+coords  -39  216 115
+flip 1
+at  4900
+
+spawn  Estatua
+coords  -39  216  112
+item	___700
+at  4921
+
+spawn  Candle1
+coords  -29  216  135
+flip 1
+item	Biblia
+map 1
+at  5003
+
+spawn  Xavier
+coords  419  216 0
+flip 1
+at  5030
+
+spawn  G._demonio
+coords  -39  216
+flip 1
+at  5030
+
+spawn  J._Anfauglir
+coords  -79  216
+flip 1
+at  5030
+
+spawn  E._Laser
+coords  -1  216  0
+flip 1
+at  5030
+
+spawn  ToDeathChamber
+coords  -39  216
+flip 1
+at  5100
+
+spawn  Fake_enemy
+coords  -1500  216  160
+at  5160

@@ -1,0 +1,991 @@
+name		Xavier_
+health		200
+mp            100
+speed		13
+type		npc
+turndelay       1
+mprate          6
+escapehits      1
+noquake		1
+falldie         2
+death           2
+nodieblink      3
+risetime        200
+blockodds       1
+hostile		enemy
+candamage       enemy shot
+diesound     data/sounds/no-hit.wav
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+cantgrab	1
+bounce		0
+offscreenkill   200
+subject_to_wall 1
+subject_to_platform 1
+subject_to_hole 1
+load            ShotRiffle
+load            IceSpear
+load            iceseal
+load            axexavier
+load            iceberg
+load            empty
+defense normal 0.75 11 0 0 0 0 0
+defense normal2 0.75 13 0 0 0 0 0
+defense normal3 0.25 30 1 0 0 0 0
+defense normal4 0.25 30 1 0 0 0 0
+defense normal5 0.25 30 1 0 0 0 0
+defense normal6 0.25 30 1 0 0 0 0
+defense normal7 0.5 10 1 0 0 0 0
+defense normal8 0.25 0 0 0 0 0 0
+defense normal15 0.5 10 1 0 0 0 0
+defense normal16 0.5 10 1 0 0 0 0
+defense normal18 0.25 12 1 0 0 0 0
+defense normal19 0.5 13 1 0 0 0 0
+defense normal20 0 0 0 0 0 0 0
+defense burn 0.5 10 1 0 0 0 0
+defense schock 0.5 10 1 0 0 0 0
+
+
+icon		data/chars/misc/bgmonster.gif
+
+palette		data/chars/xavier/xavier_palette.gif
+alternatepal  data/chars/xavier/xavier_palette_blink.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	rangea	0 55
+	range	30 65
+	loop	0
+	delay	10
+	offset	70 90
+	bbox	63 42 15 47
+	frame	data/chars/xavier/attack1a.gif
+	delay	7
+	sound	data/sounds/swipe.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack7	70 16 90 70 12 0 1 0 0 0
+	frame	data/chars/xavier/attack1b.gif
+	frame	data/chars/xavier/attack1c.gif
+	frame	data/chars/xavier/attack1d.gif
+	delay	12
+	attack7	0 0 0 0
+	frame	data/chars/xavier/attack1e.gif
+		
+anim	attack3
+	rangea	0 55
+	range	30 65
+	loop	0
+	delay	10
+	offset	70 90
+	bbox	63 42 15 47
+	frame	data/chars/xavier/attack1a.gif
+	delay	7
+	sound	data/sounds/swipe.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack7	70 16 90 70 12 0 1 0 0 0
+	frame	data/chars/xavier/attack1b.gif
+	frame	data/chars/xavier/attack1c.gif
+	frame	data/chars/xavier/attack1d.gif
+	delay	12
+	attack7	0 0 0 0
+	frame	data/chars/xavier/attack1e.gif
+	delay	10
+	offset	70 90
+	bbox	60 44 15 48
+	sound	data/sounds/xavier_attack1.wav
+	frame	data/chars/xavier/attack2a.gif
+	delay	7
+	sound	data/sounds/swipe.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack7	90 55 72 35 12 0 1 0 0 0
+	frame	data/chars/xavier/attack2b.gif
+	attack7	30 19 125 35 12 0 1 0 0 0
+	frame	data/chars/xavier/attack2c.gif
+	frame	data/chars/xavier/attack2d.gif
+	frame	data/chars/xavier/attack2e.gif
+	delay	12
+	attack7	0 0 0 0
+	frame	data/chars/xavier/attack2f.gif
+	delay	10
+	offset	70 90
+	bbox	60 44 15 48
+	frame	data/chars/xavier/attack3a.gif
+	delay	5
+	sound	data/sounds/xavier_special.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack7	95 55 72 11 9 0 0 0 0 0
+	frame	data/chars/xavier/attack3b.gif
+	frame	data/chars/xavier/attack3d.gif
+	sound	data/sounds/swipe.wav
+	attack7	95 46 72 30 9 0 0 0 0 0
+	frame	data/chars/xavier/attack3c.gif
+	attack7	0 0 0 0 0
+	frame	data/chars/xavier/attack3d.gif
+	attack7	95 45 75 30 9 0 0 0 0 0
+	frame	data/chars/xavier/attack3e.gif
+	attack7	0 0 0 0 0
+	frame	data/chars/xavier/attack3d.gif
+	sound	data/sounds/swipe.wav
+	attack7	95 46 72 30 9 0 0 0 0 0
+	frame	data/chars/xavier/attack3c.gif
+	attack7	0 0 0 0 0
+	frame	data/chars/xavier/attack3d.gif
+	attack7	95 45 75 30 9 0 0 0 0 0
+	frame	data/chars/xavier/attack3e.gif
+	attack7	0 0 0 0 0
+	frame	data/chars/xavier/attack3d.gif
+	sound	data/sounds/swipe.wav
+	attack7	95 46 72 30 9 0 0 0 0 0
+	frame	data/chars/xavier/attack3c.gif
+	attack7	0 0 0 0 0
+	frame	data/chars/xavier/attack3f.gif
+	attack7	98 57 72 40 9 0 0 0 0 0
+	frame	data/chars/xavier/attack3g.gif
+	delay	7
+	sound	data/sounds/swipe.wav
+	frame	data/chars/xavier/attack3h.gif
+	attack7	0 0 0 0
+	frame	data/chars/xavier/attack3i.gif
+	frame	data/chars/xavier/attack3j.gif
+		
+anim	backwalk
+	loop	1
+	delay	10
+	offset	66 90
+	bbox	52 38 15 49
+	frame	data/chars/xavier/walk2a.gif
+	frame	data/chars/xavier/walk2b.gif
+	frame	data/chars/xavier/walk2c.gif
+	frame	data/chars/xavier/walk2d.gif
+	frame	data/chars/xavier/walk2e.gif
+	frame	data/chars/xavier/walk2f.gif
+	frame	data/chars/xavier/walk2g.gif
+	frame	data/chars/xavier/walk2h.gif
+		
+anim	block
+	loop	0
+	delay	1
+	offset	70 90
+	move	-3
+	blockflash	empty
+	@cmd	shoot "dust" 0 0 0
+	sound	data/sounds/slide.wav
+	frame	data/chars/xavier/evasion1a.gif
+	frame	data/chars/xavier/evasion1a.gif
+	frame	data/chars/xavier/evasion1a.gif
+	frame	data/chars/xavier/evasion1a.gif
+	frame	data/chars/xavier/evasion1a.gif
+	frame	data/chars/xavier/evasion1b.gif
+	frame	data/chars/xavier/evasion1b.gif
+	frame	data/chars/xavier/evasion1b.gif
+	frame	data/chars/xavier/evasion1b.gif
+	frame	data/chars/xavier/evasion1b.gif
+	@cmd	shoot "dust" 0 0 0
+	frame	data/chars/xavier/evasion1c.gif
+	frame	data/chars/xavier/evasion1c.gif
+	move	-2
+	frame	data/chars/xavier/evasion1c.gif
+	frame	data/chars/xavier/evasion1c.gif
+	frame	data/chars/xavier/evasion1c.gif
+	frame	data/chars/xavier/evasion1d.gif
+	frame	data/chars/xavier/evasion1d.gif
+	frame	data/chars/xavier/evasion1d.gif
+	frame	data/chars/xavier/evasion1d.gif
+	@cmd	shoot "dust" 0 0 0
+	frame	data/chars/xavier/evasion1d.gif
+	frame	data/chars/xavier/evasion1e.gif
+	move	-1
+	frame	data/chars/xavier/evasion1e.gif
+	frame	data/chars/xavier/evasion1e.gif
+	frame	data/chars/xavier/evasion1e.gif
+	frame	data/chars/xavier/evasion1e.gif
+	frame	data/chars/xavier/evasion1f.gif
+	frame	data/chars/xavier/evasion1f.gif
+	move	0
+	delay	14
+	frame	data/chars/xavier/evasion1f.gif
+		
+anim	bpain
+	loop	0
+	delay	9
+	offset	70 90
+	jumpframe	0 1.5 -1
+	sound	data/sounds/xavier_pain.wav
+	@cmd	spawnbind "Hflame" 0 20 1
+	frame	data/chars/xavier/bpain1a.gif
+	frame	data/chars/xavier/bpain1b.gif
+		
+anim	burn
+	loop	0
+	delay	20
+	offset	70 90
+	bbox	0 0 0 0
+	landframe	2
+	@cmd	spawnbind "Hflame" -10 30 1
+	sound	data/sounds/xavier_pain.wav
+	frame	data/chars/xavier/bfall1a.gif
+	delay	1000
+	frame	data/chars/xavier/bfall1b.gif
+	delay	7
+	frame	data/chars/xavier/duck.gif
+	delay	1
+	frame	data/chars/xavier/duck.gif
+		
+anim	death
+	loop	0
+	delay	17
+	offset	70 90
+	sound	data/sounds/xavier_death.wav
+	frame	data/chars/xavier/death1a.gif
+	delay	7
+	frame	data/chars/xavier/death1b.gif
+	frame	data/chars/xavier/death1c.gif
+	frame	data/chars/xavier/death1d.gif
+	frame	data/chars/xavier/death1e.gif
+	frame	data/chars/xavier/death1f.gif
+	frame	data/chars/xavier/death1g.gif
+	frame	data/chars/xavier/death1h.gif
+	frame	data/chars/xavier/death1i.gif
+	delay	24
+	frame	data/chars/xavier/death1j.gif
+		
+anim	duck
+	loop	0
+	delay	7
+	offset	70 90
+	bbox	64 60 16 30
+	frame	data/chars/xavier/duck.gif
+		
+anim	fall
+	loop	0
+	delay	20
+	offset	70 90
+	bbox	0 0 0 0
+	landframe	2
+	sound	data/sounds/xavier_pain.wav
+	frame	data/chars/xavier/fall1a.gif
+	delay	1000
+	frame	data/chars/xavier/fall1b.gif
+	delay	7
+	frame	data/chars/xavier/duck.gif
+	delay	1
+	frame	data/chars/xavier/duck.gif
+		
+anim	fall15
+	loop	0
+	delay	20
+	offset	70 90
+	bbox	0 0 0 0
+	landframe	2
+	@cmd	spawnbind "Hflame" -10 30 1
+	sound	data/sounds/xavier_pain.wav
+	frame	data/chars/xavier/bfall1a.gif
+	delay	1000
+	frame	data/chars/xavier/bfall1b.gif
+	delay	7
+	frame	data/chars/xavier/duck.gif
+	delay	1
+	frame	data/chars/xavier/duck.gif
+		
+anim	fall18
+	loop	0
+	delay	20
+	offset	70 90
+	bbox	0 0 0 0
+	landframe	2
+	@cmd	spawnbind "blooda" 15 24 1
+	sound	data/sounds/xavier_pain.wav
+	frame	data/chars/xavier/fall1a.gif
+	delay	1000
+	frame	data/chars/xavier/fall1b.gif
+	delay	7
+	frame	data/chars/xavier/duck.gif
+	delay	1
+	frame	data/chars/xavier/duck.gif
+		
+anim	fall19
+	loop	0
+	delay	20
+	offset	70 90
+	bbox	0 0 0 0
+	landframe	2
+	@cmd	spawnbind "Hflame" -10 30 1
+	sound	data/sounds/xavier_pain.wav
+	frame	data/chars/xavier/bfall1a.gif
+	delay	1000
+	frame	data/chars/xavier/bfall1b.gif
+	delay	7
+	frame	data/chars/xavier/duck.gif
+	delay	1
+	frame	data/chars/xavier/duck.gif
+		
+anim	fall2
+	loop	0
+	delay	20
+	offset	70 90
+	bbox	0 0 0 0
+	landframe	2
+	@cmd	spawnbind "blooda" 15 24 1
+	sound	data/sounds/xavier_pain.wav
+	frame	data/chars/xavier/fall1a.gif
+	delay	1000
+	frame	data/chars/xavier/fall1b.gif
+	delay	7
+	frame	data/chars/xavier/duck.gif
+	delay	1
+	frame	data/chars/xavier/duck.gif
+		
+anim	fall4
+	loop	0
+	delay	20
+	offset	70 90
+	bbox	0 0 0 0
+	landframe	2
+	@cmd	spawnbind "Hflame" -10 30 1
+	sound	data/sounds/xavier_pain.wav
+	frame	data/chars/xavier/bfall1a.gif
+	delay	1000
+	frame	data/chars/xavier/bfall1b.gif
+	delay	7
+	frame	data/chars/xavier/duck.gif
+	delay	1
+	frame	data/chars/xavier/duck.gif
+		
+anim	fall7
+	loop	0
+	delay	20
+	offset	70 90
+	bbox	0 0 0 0
+	landframe	2
+	sound	data/sounds/xavier_pain.wav
+	frame	data/chars/xavier/ffall1a.gif
+	delay	1000
+	frame	data/chars/xavier/ffall1b.gif
+	delay	7
+	frame	data/chars/xavier/duck.gif
+	delay	1
+	frame	data/chars/xavier/duck.gif
+		
+anim	fall8
+	loop	0
+	delay	20
+	offset	70 90
+	bbox	0 0 0 0
+	landframe	2
+	sound	data/sounds/xavier_pain.wav
+	frame	data/chars/xavier/fall1a.gif
+	delay	1000
+	frame	data/chars/xavier/fall1b.gif
+	delay	7
+	frame	data/chars/xavier/duck.gif
+	delay	1
+	frame	data/chars/xavier/duck.gif
+		
+anim	follow1
+	loop	0
+	delay	10
+	offset	70 90
+	bbox	60 44 15 48
+	frame	data/chars/xavier/attack3a.gif
+	delay	5
+	sound	data/sounds/xavier_special.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack7	95 55 72 11 9 0 0 0 0 0
+	frame	data/chars/xavier/attack3b.gif
+	frame	data/chars/xavier/attack3d.gif
+	sound	data/sounds/swipe.wav
+	attack7	95 46 72 30 9 0 0 0 0 0
+	frame	data/chars/xavier/attack3c.gif
+	attack7	0 0 0 0 0
+	frame	data/chars/xavier/attack3d.gif
+	attack7	95 45 75 30 9 0 0 0 0 0
+	frame	data/chars/xavier/attack3e.gif
+	attack7	0 0 0 0 0
+	frame	data/chars/xavier/attack3d.gif
+	sound	data/sounds/swipe.wav
+	attack7	95 46 72 30 9 0 0 0 0 0
+	frame	data/chars/xavier/attack3c.gif
+	attack7	0 0 0 0 0
+	frame	data/chars/xavier/attack3d.gif
+	attack7	95 45 75 30 9 0 0 0 0 0
+	frame	data/chars/xavier/attack3e.gif
+	attack7	0 0 0 0 0
+	frame	data/chars/xavier/attack3d.gif
+	sound	data/sounds/swipe.wav
+	attack7	95 46 72 30 9 0 0 0 0 0
+	frame	data/chars/xavier/attack3c.gif
+	attack7	0 0 0 0 0
+	frame	data/chars/xavier/attack3f.gif
+	attack7	98 57 72 40 9 0 0 0 0 0
+	frame	data/chars/xavier/attack3g.gif
+	delay	7
+	sound	data/sounds/swipe.wav
+	frame	data/chars/xavier/attack3h.gif
+	attack7	0 0 0 0
+	frame	data/chars/xavier/attack3i.gif
+	frame	data/chars/xavier/attack3j.gif
+		
+anim	follow2
+	delay	10
+	offset	70 90
+	bbox	60 44 15 48
+	sound	data/sounds/xavier_attack1.wav
+	frame	data/chars/xavier/attack2a.gif
+	delay	7
+	sound	data/sounds/swipe.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack7	90 55 72 35 12 0 1 0 0 0
+	frame	data/chars/xavier/attack2b.gif
+	attack7	30 19 125 35 12 0 1 0 0 0
+	frame	data/chars/xavier/attack2c.gif
+	frame	data/chars/xavier/attack2d.gif
+	frame	data/chars/xavier/attack2e.gif
+	delay	12
+	attack7	0 0 0 0
+	frame	data/chars/xavier/attack2f.gif
+		
+anim	follow3
+	rangea	0 300
+	range	150 300
+	loop	0
+	delay	7
+	offset	70 90
+	landframe	6
+	bbox	68 34 15 44
+	sound	data/sounds/xavier_attack2.wav
+	frame	data/chars/xavier/jumpattack1a.gif
+	bbox	70 36 15 44
+	sound	data/sounds/throw_whip.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack7	66 13 90 40 12 12 1 0 0 0
+	frame	data/chars/xavier/jumpattack1b.gif
+	attack7	20 45 125 42 12 12 1 0 0 0
+	frame	data/chars/xavier/jumpattack1c.gif
+	attack7	18 52 92 33 12 12 1 0 0 0
+	frame	data/chars/xavier/jumpattack1d.gif
+	attack7	18 63 60 25 12 12 1 0 0 0
+	frame	data/chars/xavier/jumpattack1e.gif
+	delay	1
+	attack7	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/xavier/jumpattack1f.gif
+	frame	data/chars/xavier/jumpattack1f.gif
+		
+anim	follow4
+	loop	0
+	delay	14
+	landframe	3
+	offset	70 90
+	bbox	69 36 15 45
+	frame	data/chars/xavier/jump1f.gif
+	frame	data/chars/xavier/jump1g.gif
+	frame	data/chars/xavier/jump1h.gif
+	delay	1
+	frame	data/chars/xavier/jump1i.gif
+		
+anim	freespecial
+	delay	7
+	offset	70 90
+	mpcost	10
+	mponly	1
+	range	75 120
+	bbox	62 37 15 53
+	frame	data/chars/xavier/freespecial0a.gif
+	frame	data/chars/xavier/freespecial0b.gif
+	delay	1
+	sound	data/sounds/xavier_special.wav
+	frame	data/chars/xavier/freespecial0c.gif
+	custentity	ShotRiffle
+	spawnframe	4 40 0 32 0
+	frame	data/chars/xavier/freespecial0d.gif
+	frame	data/chars/xavier/freespecial0c.gif
+	frame	data/chars/xavier/freespecial0d.gif
+	frame	data/chars/xavier/freespecial0c.gif
+	frame	data/chars/xavier/freespecial0d.gif
+	frame	data/chars/xavier/freespecial0c.gif
+	delay	7
+	frame	data/chars/xavier/freespecial0e.gif
+	frame	data/chars/xavier/freespecial0f.gif
+	frame	data/chars/xavier/freespecial0g.gif
+		
+anim	freespecial2
+	delay	7
+	offset	70 90
+	mpcost	20
+	mponly	1
+	range	100 200
+	bbox	62 37 15 53
+	frame	data/chars/xavier/freespecial1a.gif
+	frame	data/chars/xavier/freespecial1b.gif
+	frame	data/chars/xavier/freespecial1c.gif
+	sound	data/sounds/xavier_attack3.wav
+	frame	data/chars/xavier/freespecial1d.gif
+	custentity	IceSpear
+	spawnframe	5 60 0 55 0
+	sound	data/sounds/throw1.wav
+	frame	data/chars/xavier/freespecial1e.gif
+	frame	data/chars/xavier/freespecial1f.gif
+	delay	28
+	frame	data/chars/xavier/freespecial1g.gif
+		
+anim	freespecial3
+	delay	7
+	offset	70 90
+	mpcost	20
+	mponly	1
+	range	0 100
+	bbox	62 37 15 53
+	frame	data/chars/xavier/freespecial2a.gif
+	frame	data/chars/xavier/freespecial2b.gif
+	frame	data/chars/xavier/freespecial2c.gif
+	sound	data/sounds/xavier_special.wav
+	frame	data/chars/xavier/freespecial2d.gif
+	bbox	75 52 15 39
+	custentity	iceberg
+	spawnframe	5 46 0 0 0
+	sound	data/sounds/throw2.wav
+	frame	data/chars/xavier/freespecial2e.gif
+	frame	data/chars/xavier/freespecial2f.gif
+	frame	data/chars/xavier/freespecial2g.gif
+	frame	data/chars/xavier/freespecial2h.gif
+	bbox	67 40 15 50
+	frame	data/chars/xavier/freespecial2i.gif
+		
+anim	freespecial4
+	loop	0
+	rangea	50 75
+	range	-30 125
+	mpcost	0
+	mponly	1
+	delay	1
+	offset	70 90
+	move	-3
+	@cmd	shoot "dust" 0 0 0
+	sound	data/sounds/slide.wav
+	frame	data/chars/xavier/evasion1a.gif
+	frame	data/chars/xavier/evasion1a.gif
+	frame	data/chars/xavier/evasion1a.gif
+	frame	data/chars/xavier/evasion1a.gif
+	frame	data/chars/xavier/evasion1a.gif
+	frame	data/chars/xavier/evasion1b.gif
+	frame	data/chars/xavier/evasion1b.gif
+	frame	data/chars/xavier/evasion1b.gif
+	frame	data/chars/xavier/evasion1b.gif
+	frame	data/chars/xavier/evasion1b.gif
+	@cmd	shoot "dust" 0 0 0
+	frame	data/chars/xavier/evasion1c.gif
+	frame	data/chars/xavier/evasion1c.gif
+	move	-2
+	frame	data/chars/xavier/evasion1c.gif
+	frame	data/chars/xavier/evasion1c.gif
+	frame	data/chars/xavier/evasion1c.gif
+	frame	data/chars/xavier/evasion1d.gif
+	frame	data/chars/xavier/evasion1d.gif
+	frame	data/chars/xavier/evasion1d.gif
+	frame	data/chars/xavier/evasion1d.gif
+	@cmd	shoot "dust" 0 0 0
+	frame	data/chars/xavier/evasion1d.gif
+	frame	data/chars/xavier/evasion1e.gif
+	move	-1
+	frame	data/chars/xavier/evasion1e.gif
+	frame	data/chars/xavier/evasion1e.gif
+	frame	data/chars/xavier/evasion1e.gif
+	frame	data/chars/xavier/evasion1e.gif
+	frame	data/chars/xavier/evasion1f.gif
+	frame	data/chars/xavier/evasion1f.gif
+	move	0
+	delay	14
+	frame	data/chars/xavier/evasion1f.gif
+		
+anim	freespecial5
+	rangea	50 130
+	delay	7
+	offset	70 90
+	mpcost	10
+	mponly	1
+	range	0 150
+	bbox	62 37 15 53
+	@cmd	targetB 120 16 0 1
+	frame	data/chars/xavier/freespecial1h.gif
+	frame	data/chars/xavier/freespecial1i.gif
+	sound	data/sounds/throw1.wav
+	@cmd	toss2 "axexavier" 16 52 4
+	frame	data/chars/xavier/freespecial1e.gif
+	frame	data/chars/xavier/freespecial1f.gif
+	delay	28
+	frame	data/chars/xavier/freespecial1g.gif
+		
+anim	idle
+	loop	1
+	delay	17
+	offset	70 90
+	bbox	61 35 15 53
+	frame	data/chars/xavier/idle1a.gif
+	frame	data/chars/xavier/idle1b.gif
+	frame	data/chars/xavier/idle1c.gif
+		
+anim	freespecial6
+	loop	0
+	rangea	100 300
+	range	0 300
+	delay	14
+	offset	70 90
+	bbox	69 36 15 45
+	landframe	8
+	jumpframe	0 3.5 1 0
+	frame	data/chars/xavier/jump1a.gif
+	frame	data/chars/xavier/jump1b.gif
+	@cmd	attack1 0 100 -100 50 "ANI_FOLLOW3"
+	frame	data/chars/xavier/jump1c.gif
+	@cmd	attack1 0 100 -100 50 "ANI_FOLLOW3"
+	frame	data/chars/xavier/jump1d.gif
+	@cmd	attack1 0 100 -100 50 "ANI_FOLLOW3"
+	frame	data/chars/xavier/jump1e.gif
+	frame	data/chars/xavier/jump1f.gif
+	frame	data/chars/xavier/jump1g.gif
+	frame	data/chars/xavier/jump1h.gif
+	delay	1
+	frame	data/chars/xavier/jump1i.gif
+		
+anim	jumpland
+	loop	0
+	delay	1
+	offset	70 90
+	bbox	63 61 16 29
+	frame	data/chars/xavier/duck.gif
+
+
+anim	jumpattack
+	loop	0
+	rangea	0 300
+	range	150 300
+	delay	14
+	offset	70 90
+	bbox	69 36 15 45
+	landframe	8
+	jumpframe	0 3.5 1 0
+	frame	data/chars/xavier/jump1a.gif
+	frame	data/chars/xavier/jump1b.gif
+	@cmd	attack1 0 100 -100 50 "ANI_FOLLOW3"
+	frame	data/chars/xavier/jump1c.gif
+	@cmd	attack1 0 100 -100 50 "ANI_FOLLOW3"
+	frame	data/chars/xavier/jump1d.gif
+	@cmd	attack1 0 100 -100 50 "ANI_FOLLOW3"
+	frame	data/chars/xavier/jump1e.gif
+	frame	data/chars/xavier/jump1f.gif
+	frame	data/chars/xavier/jump1g.gif
+	frame	data/chars/xavier/jump1h.gif
+	delay	1
+	frame	data/chars/xavier/jump1i.gif
+		
+anim	land
+	loop	0
+	delay	1
+	offset	70 90
+	bbox	63 61 16 29
+	frame	data/chars/xavier/duck.gif
+		
+anim	attack2
+	rangea	0 55
+	range	30 65
+	loop	0
+	delay	10
+	offset	70 90
+	bbox	63 42 15 47
+	frame	data/chars/xavier/attack1a.gif
+	delay	7
+	sound	data/sounds/swipe.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack7	70 16 90 70 12 0 1 0 0 0
+	frame	data/chars/xavier/attack1b.gif
+	frame	data/chars/xavier/attack1c.gif
+	frame	data/chars/xavier/attack1d.gif
+	delay	12
+	attack7	0 0 0 0
+	frame	data/chars/xavier/attack1e.gif
+	delay	10
+	offset	70 90
+	bbox	60 44 15 48
+	sound	data/sounds/xavier_attack1.wav
+	frame	data/chars/xavier/attack2a.gif
+	delay	7
+	sound	data/sounds/swipe.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack7	90 55 72 35 12 0 1 0 0 0
+	frame	data/chars/xavier/attack2b.gif
+	attack7	30 19 125 35 12 0 1 0 0 0
+	frame	data/chars/xavier/attack2c.gif
+	frame	data/chars/xavier/attack2d.gif
+	frame	data/chars/xavier/attack2e.gif
+	delay	12
+	attack7	0 0 0 0
+	frame	data/chars/xavier/attack2f.gif
+	delay	10
+	offset	70 90
+	bbox	60 44 15 48
+	frame	data/chars/xavier/attack3a.gif
+		
+anim	pain
+	loop	0
+	delay	9
+	offset	70 90
+	jumpframe	0 1.5 -1
+	sound	data/sounds/xavier_pain.wav
+	frame	data/chars/xavier/pain1a.gif
+	frame	data/chars/xavier/pain1b.gif
+		
+anim	pain15
+	loop	0
+	delay	9
+	offset	70 90
+	jumpframe	0 1.5 -1
+	@cmd	spawnbind "Hflame" 0 20 1
+	sound	data/sounds/xavier_pain.wav
+	frame	data/chars/xavier/bpain1a.gif
+	frame	data/chars/xavier/bpain1b.gif
+		
+anim	pain2
+	loop	0
+	delay	9
+	offset	70 90
+	jumpframe	0 1.5 -1
+	sound	data/sounds/xavier_pain.wav
+	frame	data/chars/xavier/pain1a.gif
+	frame	data/chars/xavier/pain1b.gif
+		
+anim	pain7
+	loop	0
+	delay	9
+	offset	70 90
+	jumpframe	0 1.5 -1
+	sound	data/sounds/xavier_pain.wav
+	frame	data/chars/xavier/fpain1a.gif
+	frame	data/chars/xavier/fpain1b.gif
+		
+anim	pain8
+	loop	0
+	delay	9
+	offset	70 90
+	jumpframe	0 1.5 -1
+	sound	data/sounds/xavier_pain.wav
+	frame	data/chars/xavier/pain1a.gif
+	frame	data/chars/xavier/pain1b.gif
+		
+anim	rise
+	loop	0
+	delay	1
+	offset	70 90
+	frame	data/chars/xavier/duck.gif
+		
+anim	shock
+	loop	0
+	delay	20
+	offset	70 90
+	bbox	0 0 0 0
+	landframe	2
+	@cmd	spawnbind "Hshock" -10 23 1
+	sound	data/sounds/xavier_pain.wav
+	frame	data/chars/xavier/sfall1a.gif
+	delay	1000
+	frame	data/chars/xavier/sfall1b.gif
+	delay	7
+	frame	data/chars/xavier/duck.gif
+	delay	1
+	frame	data/chars/xavier/duck.gif
+		
+anim	spain
+	loop	0
+	delay	9
+	offset	70 90
+	@cmd	spawnbind "Hshock" 0 30 1
+	jumpframe	0 1.5 -1
+	sound	data/sounds/xavier_pain.wav
+	frame	data/chars/xavier/spain1a.gif
+	frame	data/chars/xavier/spain1b.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	70 90
+	bbox	61 35 15 53
+	frame	data/chars/xavier/idle1a.gif
+		
+anim	walk
+	loop	1
+	delay	10
+	offset	70 90
+	bbox	63 38 15 49
+	frame	data/chars/xavier/walk1a.gif
+	frame	data/chars/xavier/walk1b.gif
+	frame	data/chars/xavier/walk1c.gif
+	frame	data/chars/xavier/walk1d.gif
+	frame	data/chars/xavier/walk1e.gif
+	frame	data/chars/xavier/walk1f.gif
+	frame	data/chars/xavier/walk1g.gif
+	frame	data/chars/xavier/walk1h.gif
+		
+#|edited by openBor Stats v 0.67
+		

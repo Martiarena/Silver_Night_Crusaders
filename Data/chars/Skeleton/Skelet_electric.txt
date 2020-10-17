@@ -7,20 +7,25 @@ nopain           1
 nodrop  	 2
 death            1
 offscreenkill   500
-score 400 -1
+score 500 -1
 subject_to_gravity 1
 hostile  player npc
 candamage player npc
 animationscript  data/scripts/escript.c
 takedamagescript data/scripts/blink.c
 
+
 defense normal3 2 0 0 0 0 0 0
+defense normal6 4 0 0 0 0 0 0
+defense normal16 2 0 0 0 0 0 0
+defense shock 0.5 0 0 0 0 0 0
 
 load		 BoneSpark
 icon 		data/chars/misc/bgmonster.gif
 
 palette 	data/chars/skeleton/electric_skeleton.gif
 alternatepal	 data/chars/skeleton/blink.gif
+
 
 
 
@@ -54,6 +59,11 @@ anim	attack1
 	offset	43 75
 	bbox	43 28 14 37
 	attack	40 22 20 50 9 0 0 0 0 0
+	sound	data/sounds/sparks2.wav
+	frame	data/chars/skeleton/throw3a.gif
+	frame	data/chars/skeleton/throw3b.gif
+	frame	data/chars/skeleton/throw3a.gif
+	frame	data/chars/skeleton/throw3b.gif
 	frame	data/chars/skeleton/throw3a.gif
 	frame	data/chars/skeleton/throw3b.gif
 	frame	data/chars/skeleton/throw3a.gif
@@ -61,6 +71,14 @@ anim	attack1
 	frame	data/chars/skeleton/throw3a.gif
 	frame	data/chars/skeleton/throw3c.gif
 	frame	data/chars/skeleton/throw3a.gif
+	frame	data/chars/skeleton/throw3c.gif
+	frame	data/chars/skeleton/throw3a.gif
+	frame	data/chars/skeleton/throw3c.gif
+	frame	data/chars/skeleton/throw3a.gif
+	frame	data/chars/skeleton/throw3d.gif
+	frame	data/chars/skeleton/throw3a.gif
+	frame	data/chars/skeleton/throw3d.gif
+	frame	data/chars/skeleton/throw3a.gif
 	frame	data/chars/skeleton/throw3d.gif
 	frame	data/chars/skeleton/throw3a.gif
 	frame	data/chars/skeleton/throw3d.gif
@@ -69,9 +87,21 @@ anim	attack1
 	frame	data/chars/skeleton/throw3a.gif
 	frame	data/chars/skeleton/throw3e.gif
 	frame	data/chars/skeleton/throw3a.gif
+	frame	data/chars/skeleton/throw3e.gif
+	frame	data/chars/skeleton/throw3a.gif
+	frame	data/chars/skeleton/throw3e.gif
+	frame	data/chars/skeleton/throw3a.gif
 	frame	data/chars/skeleton/throw3f.gif
 	frame	data/chars/skeleton/throw3a.gif
 	frame	data/chars/skeleton/throw3f.gif
+	frame	data/chars/skeleton/throw3a.gif
+	frame	data/chars/skeleton/throw3f.gif
+	frame	data/chars/skeleton/throw3a.gif
+	frame	data/chars/skeleton/throw3f.gif
+	frame	data/chars/skeleton/throw3a.gif
+	frame	data/chars/skeleton/throw3g.gif
+	frame	data/chars/skeleton/throw3a.gif
+	frame	data/chars/skeleton/throw3g.gif
 	frame	data/chars/skeleton/throw3a.gif
 	frame	data/chars/skeleton/throw3g.gif
 	frame	data/chars/skeleton/throw3a.gif
@@ -88,12 +118,12 @@ anim	death
 	offset	43 74
 	sound	data/sounds/skeletondie.wav
 	frame	data/chars/misc/empty.gif
-	@cmd	tosserM "BS" 8 34 0 2.5
-	@cmd	tosserM "BR" 5 26 0 1.5
-	@cmd	tosserM "BA" 8 25 0.3 1.5
-	@cmd	tosserM "BA" -3 27 -0.3 1.5
-	@cmd	tosserM "BL" 5 12 0.3 1
-	@cmd	tosserM "BL" -8 14 -0.3 1
+	@cmd	tosserM "BS_e" 8 34 0 2.5
+	@cmd	tosserM "BR_e" 5 26 0 1.5
+	@cmd	tosserM "BA_e" 8 25 0.3 1.5
+	@cmd	tosserM "BA_e" -3 27 -0.3 1.5
+	@cmd	tosserM "BL_e" 5 12 0.3 1
+	@cmd	tosserM "BL_e" -8 14 -0.3 1
 	frame	data/chars/misc/empty.gif
 	delay	200
 	frame	data/chars/misc/empty.gif

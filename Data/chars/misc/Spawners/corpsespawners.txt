@@ -1,0 +1,69 @@
+name	         CorpseSpawners
+health	         1
+type	         None
+antigravity	 100
+offscreenkill    9999
+load	         Corpse
+setlayer	-1
+animationscript  data/scripts/escript.c
+
+palette		data/bgs/dungeon/decoration/corpse_alt_palette.gif
+
+anim 	spawn
+	delay	1
+	offset	1 1
+        frame   data/chars/misc/empty.gif
+
+anim	idle
+	loop	1
+	delay	100
+	offset	1 1
+	@script
+	    void self = getlocalvar("self");
+	    int r = rand()%30;
+
+	    if( frame == 0){
+	      if( r > 10){
+	        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+	      } else {
+		changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+	      }
+	    }
+	@end_script
+        frame   data/chars/misc/empty.gif
+	delay	15
+	offset	13 51
+	frame	data/bgs/dungeon/decoration/spawn1a.gif
+	frame	data/bgs/dungeon/decoration/spawn1b.gif
+	frame	data/bgs/dungeon/decoration/spawn1c.gif
+	frame	data/bgs/dungeon/decoration/spawn1d.gif
+	delay	100
+	offset	1 1
+	@cmd	spawn01 "Corpse" 0 0 0
+        frame   data/chars/misc/empty.gif
+	@cmd	beidle
+        frame   data/chars/misc/empty.gif
+
+anim 	follow2
+	loop	0
+	delay	15
+	offset	13 51
+	frame	data/bgs/dungeon/decoration/spawn1a.gif
+	frame	data/bgs/dungeon/decoration/spawn1b.gif
+	frame	data/bgs/dungeon/decoration/spawn1c.gif
+	frame	data/bgs/dungeon/decoration/spawn1d.gif
+	delay	100
+	offset	1 1
+	@cmd	spawn01 "Corpse" 0 0 0
+        frame   data/chars/misc/empty.gif
+	@cmd	beidle
+        frame   data/chars/misc/empty.gif
+
+anim 	follow3
+	loop	0
+	delay	100
+	offset	1 1
+        frame   data/chars/misc/empty.gif
+	@cmd	beidle
+        frame   data/chars/misc/empty.gif
+		

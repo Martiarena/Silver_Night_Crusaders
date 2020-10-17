@@ -1,0 +1,157 @@
+music		data/music/demongallery.ogg 186965
+bossmusic	data/music/lunar_witch.ogg 448143
+
+panel	        data/bgs/castlehall/castlehall_4.gif
+
+fglayer		data/bgs/castlehall/b_j_pillars.gif -9000 0.3 0.3 59 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/castlehall/pillars_1.gif -10000 0.5 0.5 61 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/castlehall/pillars_2.gif -11000 0.6 0.6 115 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/castlehall/pillars_3.gif -12000 0.7 0.7 40 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/castlehall/eye_pillar.gif -13000 0.8 0.8 20 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/castlehall/fondo_castlehall.gif -14000 0.9 0.9 0 0 0 0 -1 1 1 0 0 0 0 0 1
+
+order           a
+settime	        0
+notime		1
+spawn1          80 0 240
+spawn2          40 0 240
+direction	leftright
+type		0 0 0
+cameratype 1
+noslow 1
+
+spawn  leon_statue
+coords  133  216  57
+flip 1
+at  0
+
+spawn  leon_statue
+coords  -92  216  57
+flip 1
+at  0
+
+spawn  leon_statue
+coords  -315  216  57
+flip 1
+at  0
+
+spawn  Castlehall_platform1a
+coords  -572  216  47
+flip  1
+at  0
+
+spawn  Castlehall_platform1a
+coords  -795  216  47
+flip  1
+at  0
+
+spawn  Sealed_door
+coords  -934  216  0
+flip 1
+at  0
+
+spawn  Candle1
+coords  244  216  60
+flip 1
+item	Gema_roja
+at  0
+
+spawn  Candle1
+coords  20  216  60
+flip 1
+item	___100
+at  0
+
+spawn  Candle1
+coords  -30  216  60
+flip 1
+item	Gema_azul
+at  174
+
+spawn  Candle1
+coords  -30  216  60
+flip 1
+item	C._Plateada
+map 1
+at  406
+
+spawn  Brazier1
+coords  -30  216
+flip 1
+item	___100
+at  490
+
+spawn  Jar1
+coords  -40  216  65
+flip 1
+item	Pollo_frito
+at  532
+
+spawn  Brazier1
+coords  -30  216 0
+flip 1
+item	___100
+at  595
+
+spawn  Brazier1
+coords  -30  216 0
+flip 1
+item	___100
+at  715
+
+spawn  Jar1
+coords  -40  216  65
+flip 1
+item	Gema_roja
+at  755
+
+spawn  Brazier1
+coords  -89  216
+flip 1
+item	___100
+at  756
+
+Blockade  756
+at  756
+
+music	data/music/vs-paladin.ogg 164309
+at	756
+
+spawn boss_lifebar
+coords  0 0 0
+flip 1
+at  756
+
+spawn  Paladin_p
+coords  -30  216  0
+flip 1
+alias Teobaldo_M.
+at  756
+
+spawn	GDemonSpawner
+coords  0 0 0
+2pspawn 1
+at	756
+
+spawn  Darvulia_witch
+coords  -70  216  0
+flip 1
+at  756
+
+group	1 1
+at	756
+
+group	2 2
+at	756
+
+spawn  Darvulia
+coords  120  216  0
+flip 1
+alias	A._Darvulia
+boss 1
+at  756
+
+spawn	ESkeletonSpawner
+coords  0 0 0
+2pspawn 1
+at	756

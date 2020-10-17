@@ -1,5 +1,5 @@
 name    	 P._Asesino
-health           30
+health           24
 speed            4
 type    	 enemy
 noquake  	 1
@@ -7,14 +7,19 @@ nopain           1
 nodrop  	 2
 death            1
 offscreenkill   1000
-score		300 -1
+score		400 -1
 subject_to_gravity 1
 hostile  player npc
 candamage player npc
 animationscript  data/scripts/escript.c
 takedamagescript data/scripts/blink.c
+offscreen_noatk_factor 1
 load		Card_clown
 load            Clowndie
+
+defense shock 5 0 0 0 0 0 0
+defense normal16 2 0 0 0 0 0 0
+defense normal21 2 0 0 0 0 0 0
 
 icon 		data/chars/misc/bgmonster.gif
 
@@ -73,6 +78,40 @@ anim	attack1
 	attack	55 25 25 50 9 0 0 0 0 0
 	frame	data/chars/killerclown/attack1p.gif
 	delay	14
+	sound	data/sounds/throw_medium.wav
+	@cmd	target 2 2 0 0 0 0
+	@cmd	shoot2 "Card_clown" 40 30
+	frame	data/chars/killerclown/attack1p.gif
+	frame	data/chars/killerclown/attack1p.gif
+		
+anim	attack2
+	range	20 180
+	rangea	0 180
+	delay	7
+	offset	54 77
+	bbox	35 20 25 50
+	attack	35 20 25 50 9 0 0 0 0 0
+	sound	data/sounds/killerclown.wav
+	frame	data/chars/killerclown/attack1a.gif
+	frame	data/chars/killerclown/attack1b.gif
+	frame	data/chars/killerclown/attack1c.gif
+	frame	data/chars/killerclown/attack1d.gif
+	frame	data/chars/killerclown/attack1e.gif
+	frame	data/chars/killerclown/attack1f.gif
+	frame	data/chars/killerclown/attack1g.gif
+	frame	data/chars/killerclown/attack1h.gif
+	frame	data/chars/killerclown/attack1i.gif
+	frame	data/chars/killerclown/attack1j.gif
+	frame	data/chars/killerclown/attack1k.gif
+	frame	data/chars/killerclown/attack1l.gif
+	frame	data/chars/killerclown/attack1m.gif
+	frame	data/chars/killerclown/attack1n.gif
+	frame	data/chars/killerclown/attack1o.gif
+	bbox	55 25 25 50
+	attack	55 25 25 50 9 0 0 0 0 0
+	frame	data/chars/killerclown/attack1p.gif
+	delay	14
+	sound	data/sounds/throw_medium.wav
 	@cmd	target 2 2 0 0 0 0
 	@cmd	shoot2 "Card_clown" 40 30
 	frame	data/chars/killerclown/attack1p.gif
@@ -96,7 +135,7 @@ anim	death
 	delay	1
 	@cmd	suicide
 	frame	data/chars/misc/empty.gif
-
+		
 anim	idle
 	loop	1
 	delay	7

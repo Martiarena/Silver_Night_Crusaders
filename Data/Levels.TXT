@@ -11,11 +11,11 @@ totalscore 999 999 93 192 210 192 999 999 999 999
 pauseoffset 0 1 160 140 3 140 120
 
 e1life	-550 -500
-e1icon	206 217
+e1icon	206 216
 e1name	222 224 0
 
 e2life	-550 -500
-e2icon	92 217
+e2icon	92 216
 e2name	108 224 0
 
 p1namej 4 2 71 2 40 2 0
@@ -49,6 +49,7 @@ maxplayers  2
 noshare 0
 nosame	1 0
 continuescore 1
+ifcomplete 1
 noslowfx 1
 nomaxrushreset 1
 showrushbonus 1
@@ -57,32 +58,16 @@ p2smenu	29 150 240 320
 rush	1	1.5	_	3	3	_	1	1
 p1rush	-999	-999	-999	-999	-999	-999	-999	-999
 p2rush	-999	-999	-999	-999	-999	-999	-999	-999
-scbonuses 4000 1000 100 1
+scbonuses 5000 1000 100 1
 
-
 z	216 216
-file	data/levels/dungeon.txt
-file	data/levels/bathory_keep.txt
-next
-file	data/levels/moon_bridge_b.txt
-file	data/levels/gardenb.txt
-file	data/levels/debbug.txt
-z	464 464
-file	data/levels/dungeonc.txt
+file 	data/levels/clock_tower.txt
+file 	data/levels/debbug.txt
 z	216 216
-file	data/levels/clock_tower_bridge.txt
-z	464 464
-file	data/levels/dungeonc.txt
-z	216 216
-file	data/levels/debbug.txt
-file	data/levels/castle_entrance.txt
-z	464 464
-file	data/levels/dungeonc.txt
-z	216 216
-file	data/levels/debbug.txt
-z	216 216
-file	data/levels/libraryc.txt
-
+file	data/levels/castlehalla.txt
+z	302 302
+file	data/levels/castlehallc.txt
+end
 
 set	Modo_Historia
 lives	3
@@ -93,6 +78,7 @@ maxplayers  2
 noshare 0
 nosame	1 0
 continuescore 1
+ifcomplete 0
 noslowfx 1
 nomaxrushreset 1
 showrushbonus 1
@@ -101,7 +87,152 @@ p2smenu	29 151 240 320
 rush	1	1.5	_	3	3	_	1	1
 p1rush	-999	-999	-999	-999	-999	-999	-999	-999
 p2rush	-999	-999	-999	-999	-999	-999	-999	-999
-scbonuses 4000 1000 100 1
+scbonuses 5000 1000 100 1
+
+z	216 216
+file	data/levels/town.txt
+file	data/levels/shop.txt
+next
+scene	data/Scenes/scene1/escena1a.txt
+scene	data/sprites/map_intro/intro_map_1.txt
+file	data/levels/castle_entrance.txt
+file	data/levels/castle_entranceb.txt
+file	data/levels/castle_entrancec.txt
+next
+scene	data/Scenes/scene2/escena2.txt
+scene	data/sprites/map_intro/intro_map_2.txt
+z	216 216
+file	data/levels/undergrounda.txt
+z	198 198
+file	data/levels/undergroundb.txt
+z	216 216
+file	data/levels/undergroundc.txt
+next
+scene	data/Scenes/scene3/escena3.txt
+scene	data/sprites/map_intro/intro_map_3.txt
+z	216 216
+file	data/levels/gardena.txt
+file	data/levels/gardenb.txt
+next
+scene	data/Scenes/scene4/escena4.txt
+scene	data/sprites/map_intro/intro_map_4.txt
+z	216 216
+file	data/levels/librarya.txt
+z	464 464
+file	data/levels/libraryb.txt
+z	216 216
+file	data/levels/libraryc.txt
+next
+scene	data/Scenes/scene5/escena5.txt
+scene	data/sprites/map_intro/intro_map_5.txt
+z	216 216
+file	data/levels/clock_tower_bridge.txt
+file	data/levels/clock_tower_elevator.txt
+file 	data/levels/clock_tower.txt
+next
+scene	data/Scenes/scene6/escena6.txt
+scene	data/sprites/map_intro/intro_map_6.txt
+file	data/levels/moon_bridge.txt
+file	data/levels/moon_bridge_b.txt
+next
+scene	data/Scenes/scene7/escena7.txt
+scene	data/sprites/map_intro/intro_map_7.txt
+file	data/levels/dungeon.txt
+file	data/levels/dungeonb.txt
+z	464 464
+file	data/levels/dungeonc.txt
+next
+scene	data/Scenes/scene8/escena8.txt
+scene	data/sprites/map_intro/intro_map_8.txt
+z	216 216
+file	data/levels/castlehalla.txt
+file	data/levels/castlehall_elevator.txt
+z	302 302
+file	data/levels/castlehallc.txt
+z	216 216
+file	data/levels/castlehalld.txt
+next
+scene	data/Scenes/scene9/escena9.txt
+scene	data/sprites/map_intro/intro_map_e.txt
+z	216 216
+file	data/levels/bathory_keep.txt
+next
+scene	data/Scenes/scene10/escena10.txt
+scene	data/Scenes/credits/credits.txt
+scene	data/Scenes/epilogue/epilogue.txt
+end
+z	216 216
+file	data/levels/town_h.txt
+file	data/levels/shop.txt
+next
+file	data/levels/castle_entrance_h.txt
+file	data/levels/castle_entranceb_h.txt
+file	data/levels/castle_entrancec.txt
+next
+z	216 216
+file	data/levels/undergrounda_h.txt
+z	198 198
+file	data/levels/undergroundb.txt
+z	216 216
+file	data/levels/undergroundc.txt
+next
+z	216 216
+file	data/levels/gardena_h.txt
+file	data/levels/gardenb.txt
+next
+z	216 216
+file	data/levels/librarya.txt
+z	464 464
+file	data/levels/libraryb.txt
+z	216 216
+file	data/levels/libraryc.txt
+next
+z	216 216
+file	data/levels/clock_tower_bridge_h.txt
+file	data/levels/clock_tower_elevator.txt
+file 	data/levels/clock_tower.txt
+next
+file	data/levels/moon_bridge_h.txt
+file	data/levels/moon_bridge_b.txt
+next
+file	data/levels/dungeon.txt
+file	data/levels/dungeonb.txt
+z	464 464
+file	data/levels/dungeonc.txt
+next
+z	216 216
+file	data/levels/castlehalla.txt
+file	data/levels/castlehall_elevator.txt
+z	302 302
+file	data/levels/castlehallc.txt
+z	216 216
+file	data/levels/castlehalld.txt
+next
+z	216 216
+file	data/levels/bathory_keep.txt
+next
+scene	data/Scenes/thanks/thanks.txt
+end
+
+set	Juego_Libre
+lives	3
+credits	9999
+cansave	1
+typemp	1
+maxplayers  2
+noshare 0
+nosame	1 0
+continuescore 1
+ifcomplete 1
+noslowfx 1
+nomaxrushreset 1
+showrushbonus 1
+p1smenu	29 52 240 320
+p2smenu	29 151 240 320
+rush	1	1.5	_	3	3	_	1	1
+p1rush	-999	-999	-999	-999	-999	-999	-999	-999
+p2rush	-999	-999	-999	-999	-999	-999	-999	-999
+scbonuses 5000 1000 100 1
 
 z	216 216
 file	data/levels/town.txt
@@ -132,46 +263,63 @@ next
 z	216 216
 file	data/levels/clock_tower_bridge.txt
 file	data/levels/clock_tower_elevator.txt
-file 	data/levels/clock_tower.txt
+file 	data/levels/clock_tower_f.txt
 next
 file	data/levels/moon_bridge.txt
 file	data/levels/moon_bridge_b.txt
 next
 file	data/levels/dungeon.txt
+file	data/levels/dungeonb.txt
 z	464 464
 file	data/levels/dungeonc.txt
 next
+z	216 216
+file	data/levels/castlehalla.txt
+file	data/levels/castlehall_elevator.txt
+z	302 302
+file	data/levels/castlehallc.txt
+z	216 216
+file	data/levels/castlehalld_f.txt
+next
+z	216 216
+file	data/levels/bathory_keep.txt
+next
 end
 
-set	Debbug
-lives	5
-credits	10
-cansave	1
+set	Coliseo
+lives	3
+credits	1
+cansave	2
 typemp	1
+maxplayers  2
+noshare 0
+nosame	1 0
+ifcomplete 1
+continuescore 1
+noslowfx 1
+nomaxrushreset 1
+showrushbonus 1
+p1smenu	29 52 240 320
+p2smenu	29 151 240 320
+rush	1	1.5	_	3	3	_	1	1
+p1rush	-999	-999	-999	-999	-999	-999	-999	-999
+p2rush	-999	-999	-999	-999	-999	-999	-999	-999
+scbonuses 5000 1000 100 1
 
 z	216 216
-file 	data/levels/clock_tower.txt
-file	data/levels/gardena.txt
-file	data/levels/debbug.txt
-file	data/levels/gardena.txt
-file	data/levels/debbug.txt
-file	data/levels/moon_bridge_b.txt
-file 	data/levels/clock_tower.txt
-file	data/levels/debbug.txt
-file 	data/levels/clock_tower.txt
-end 
-
-set	Boss_Stages
-lives	5
-credits	10
-cansave	1
-typemp	1
-
+file 	data/levels/coliseum_entrance.txt
+file 	data/levels/coliseum_arena.txt
+next
+scene	data/Scenes/thanks/thanks_2.txt
+end
+branch	ToBossRush
 z	216 216
-file	data/levels/shop.txt
-file	data/levels/castle_entrancec.txt
-file	data/levels/undergroundc.txt
-file	data/levels/gardenb.txt
-file	data/levels/libraryc.txt
-file 	data/levels/clock_tower.txt
-file	data/levels/moon_bridge_b.txt
+file 	data/levels/coliseum_bossrush_1.txt
+file 	data/levels/coliseum_bossrush_2.txt
+z	459 459
+file 	data/levels/coliseum_bossrush_3.txt
+z	216 216
+file 	data/levels/coliseum_bossrush_4.txt
+next
+scene	data/Scenes/thanks/thanks_2.txt
+end

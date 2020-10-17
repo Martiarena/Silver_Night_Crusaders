@@ -1,0 +1,21 @@
+name  		Castlehall_wall4a
+type		none
+facing	  	1
+setlayer	1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/castlehall/wall/wall4a.gif
+
+
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	59 10
+	platform	0 10 -8 -8 126 126 10 9999
+	frame	data/bgs/castlehall/wall/wall4a.gif
+

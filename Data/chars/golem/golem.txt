@@ -20,11 +20,10 @@ score	 	1000 -1
 defense normal4 2 0 0 0 0 0 0
 defense normal7 2 0 0 0 0 0 0
 
-diesound  data/sounds/chest.wav
+diesound  data/sounds/golemdie.wav
 
 icon		data/chars/misc/bgmonster.gif
-load            DRose
-load            DHiedra
+load            Shockwave
 
 palette          data/chars/golem/golem_palette.gif
 alternatepal     data/chars/golem/blink_palette.gif
@@ -168,6 +167,36 @@ anim	spawn
 	bbox	44 30 30 75
 	attack	44 30 30 75 19 0 1 0 0 0
 	delay	1
+	frame	data/chars/golem/idle1.gif
+
+anim	walkoff
+	loop	0
+	delay	1000
+	landframe	1
+	offset	60 104
+	bbox	44 30 30 75
+	attack	44 30 30 75 25 0 1 0 0 0
+	frame	data/chars/golem/idle1.gif
+	delay	7
+	subentity	Shockwave
+	spawnframe	2 0 0 0 0
+	sound	data/sounds/land_big_damage.wav
+	frame	data/chars/golem/idle1.gif
+	frame	data/chars/golem/idle1.gif
+
+anim	jumpland
+	loop	0
+	delay	1000
+	landframe	1
+	offset	60 104
+	bbox	44 30 30 75
+	attack	44 30 30 75 25 0 1 0 0 0
+	frame	data/chars/golem/idle1.gif
+	delay	7
+	subentity	Shockwave
+	spawnframe	2 0 0 0 0
+	sound	data/sounds/land_big_damage.wav
+	frame	data/chars/golem/idle1.gif
 	frame	data/chars/golem/idle1.gif
 		
 #|edited by openBor Stats v 0.67

@@ -13,6 +13,7 @@ palette		data/chars/misc/ESpells/windspell/wind_spell_palette.gif
 
 
 
+
 anim	idle
 	loop	1
 	delay	7
@@ -35,6 +36,7 @@ anim	spawn
 	delay	7
 	offset	17 17
 	frame	data/chars/misc/ESpells/windspell/wind1a.gif
+	sound	data/sounds/windspell.wav
 	frame	data/chars/misc/ESpells/windspell/wind1b.gif
 		
 #|edited by openBor Stats v 0.67

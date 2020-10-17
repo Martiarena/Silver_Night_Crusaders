@@ -7,61 +7,110 @@ candamage       player npc
 animationscript data/scripts/prscript.c
 
 
+
 anim	idle
 	delay	5
 	offset	8 8
 	attack2	2 2 12 12 12 0 0 0 0 0
-	DOT	2 30 4 1 5
 	frame	data/chars/queenmoth/caterpillar/poisonball1a.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1b.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1c.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1d.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1a.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1b.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1c.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1d.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1a.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1b.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1c.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1d.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1a.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1b.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1c.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1d.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1a.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1b.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1c.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1d.gif
 	delay	1
+	@cmd	groundkill
 	frame	data/chars/misc/empty.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1a.gif
+	@cmd	groundkill
 	frame	data/chars/misc/empty.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1a.gif
+	@cmd	groundkill
 	frame	data/chars/misc/empty.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1a.gif
+	@cmd	groundkill
 	frame	data/chars/misc/empty.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1a.gif
+	@cmd	groundkill
 	frame	data/chars/misc/empty.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1a.gif
+	@cmd	groundkill
 	frame	data/chars/misc/empty.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1b.gif
+	@cmd	groundkill
 	frame	data/chars/misc/empty.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1b.gif
+	@cmd	groundkill
 	frame	data/chars/misc/empty.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1b.gif
+	@cmd	groundkill
 	frame	data/chars/misc/empty.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1b.gif
+	@cmd	groundkill
 	frame	data/chars/misc/empty.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1b.gif
+	@cmd	groundkill
 	frame	data/chars/misc/empty.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1c.gif
+	@cmd	groundkill
 	frame	data/chars/misc/empty.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1c.gif
+	@cmd	groundkill
 	frame	data/chars/misc/empty.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1c.gif
+	@cmd	groundkill
 	frame	data/chars/misc/empty.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1c.gif
+	@cmd	groundkill
 	frame	data/chars/misc/empty.gif
+	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1c.gif
 	@cmd	suicide
 	attack2	0

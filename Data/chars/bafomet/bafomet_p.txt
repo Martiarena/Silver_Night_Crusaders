@@ -1,0 +1,917 @@
+name		 Bafomet_
+type		 player
+health		 100
+mp		 100
+mprate           0
+speed            6
+speedf		 0
+cantgrab	 1
+antigravity      20
+nomove           0 0
+nolife 1
+knockdowncount   10
+jumpheight   3.5
+jumpmove  3
+sleep     100
+noquake		 1
+bounce		 0
+stealth 0
+secret 1 3
+death		 1
+nodieblink	 2
+makeinv		 3 0
+gfxshadow        0
+subject_to_basemap 1
+subject_to_wall  1
+subject_to_platform 1
+defense normal 0.75 0 0 0 0 0 0
+defense normal2 0.75 0 0 0 0 0 0
+defense normal6 2
+defense normal7 0.75
+defense normal8 0.5
+defense normal10 0.75
+defense normal17 0.75
+defense normal19 0.75
+defense normal20 0 1 999 0 0 0 0
+defense normal21 0.75 0 0 0 0 0 0
+defense burn 0.75 0 1 0 0 0 0
+defense schock 2 0 0 0 0 0 0
+
+parrow 		data/chars/misc/parrow1p.gif -8 -120
+parrow2 	data/chars/misc/parrow2p.gif -8 -120
+
+hostile         enemy
+candamage       enemy obstacle shot
+diesound     data/sounds/diem1.wav
+
+icon		 data/chars/bafomet/icon.gif
+palette  	data/chars/bafomet/bafomet_palette.gif
+
+animationscript	 data/scripts/player.c
+keyscript	 data/chars/bafomet/bafomet.c
+ondeathscript	 data/scripts/dead.c
+takedamagescript data/scripts/invis.c
+
+atchain          1
+
+com	a2	freespecial2
+com	a4	freespecial
+
+load	Empty
+load    Blooda
+load	Circle_transform
+load 	bafo_seal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack
+	loop	0
+	delay	1
+	offset	50 143
+	bbox	30 50 40 90
+	@cmd	limiter 9
+	@cmd	keyint "ANI_FOLLOW5" 0 "U" 0
+	frame	data/chars/bafomet/magic1a.gif
+	delay	7
+	frame	data/chars/bafomet/magic1a.gif
+	@cmd	spawn01 "forb_fireseal" 20 58 0
+	frame	data/chars/bafomet/magic1b.gif
+	sound	data/sounds/bafomet_spell2.wav
+	frame	data/chars/bafomet/magic1c.gif
+	frame	data/chars/bafomet/magic1c.gif
+	delay	7
+	@cmd	mpcost 10
+	sound	data/sounds/explosion-fire.wav
+	@cmd	shooter2 "Bafo_shot_3_p" 30 58 2 0
+	frame	data/chars/bafomet/magic1c.gif
+	@cmd	shooter2 "Bafo_shot_3_p" 30 58 2 0.5
+	@cmd	shooter2 "Bafo_shot_3_p" 30 58 2 -0.5
+	frame	data/chars/bafomet/magic1c.gif
+	@cmd	shooter2 "Bafo_shot_3_p" 30 58 1.8 1
+	@cmd	shooter2 "Bafo_shot_3_p" 30 58 1.8 -1
+	frame	data/chars/bafomet/magic1c.gif
+	delay	7
+	frame	data/chars/bafomet/magic1c.gif
+	frame	data/chars/bafomet/magic1c.gif
+	frame	data/chars/bafomet/magic1b.gif
+	frame	data/chars/bafomet/magic1a.gif
+		
+anim	bpain
+	loop	0
+	delay	27
+	offset	50 143
+	bbox	30 55 40 88
+	@cmd	platform 1
+	jumpframe	0 1.5 -1
+	@cmd	spawnbind "Hflame" 0 50 1
+	sound	data/sounds/bafomet_spell2.wav
+	@cmd	mpcost -20
+	frame	data/chars/bafomet/magic1b.gif
+		
+anim	burn
+	loop	0
+	delay	14
+	offset	50 143
+	landframe	2
+	@cmd	spawnbind "Hflame" 0 50 1
+	sound	data/sounds/bafomet_spell2.wav
+	@cmd	mpcost -30
+	frame	data/chars/bafomet/magic1b.gif
+	frame	data/chars/bafomet/magic1c.gif
+		
+anim	death
+	loop	0
+	delay	21
+	offset	50 143
+	frame	data/chars/bafomet/magic1b.gif
+	delay	7
+	frame	data/chars/bafomet/magic1c.gif
+	frame	data/chars/bafomet/death1a.gif
+	frame	data/chars/bafomet/death1b.gif
+	@cmd	spawnbind "kdie" 0 0 0
+	sound	data/sounds/flame-dies.wav
+	frame	data/chars/bafomet/death1c.gif
+	delay	168
+	frame	data/chars/bafomet/death1d.gif
+	delay	7
+	frame	data/chars/bafomet/death1e.gif
+	frame	data/chars/bafomet/death1f.gif
+	frame	data/chars/bafomet/death1g.gif
+	delay	50
+	frame	data/chars/misc/empty.gif
+		
+anim	fall
+	loop	0
+	delay	14
+	offset	50 143
+	landframe	2
+	sound	data/sounds/bafomet_spell2.wav
+	@cmd	mpcost -30
+	frame	data/chars/bafomet/magic1b.gif
+	frame	data/chars/bafomet/magic1c.gif
+		
+anim	fall17
+	loop	0
+	delay	14
+	offset	50 143
+	landframe	2
+	sound	data/sounds/bafomet_spell2.wav
+	@cmd	mpcost -30
+	frame	data/chars/bafomet/magic1b.gif
+	frame	data/chars/bafomet/magic1c.gif
+		
+anim	fall2
+	loop	0
+	delay	14
+	offset	50 143
+	landframe	2
+	@cmd	spawnbind "blooda" 40 102 1
+	sound	data/sounds/bafomet_spell2.wav
+	@cmd	mpcost -30
+	frame	data/chars/bafomet/magic1b.gif
+	frame	data/chars/bafomet/magic1c.gif
+		
+anim	fall7
+	loop	0
+	delay	14
+	offset	50 143
+	landframe	2
+	sound	data/sounds/bafomet_spell2.wav
+	@cmd	mpcost -30
+	frame	data/chars/bafomet/magic1b.gif
+	frame	data/chars/bafomet/magic1c.gif
+		
+anim	fall8
+	loop	0
+	delay	14
+	offset	50 143
+	landframe	2
+	@cmd	spawnbind "prose" 10 50 1
+	@cmd	spawnbind "blooda" 40 82 1
+	sound	data/sounds/bafomet_spell2.wav
+	@cmd	mpcost -30
+	frame	data/chars/bafomet/magic1b.gif
+	frame	data/chars/bafomet/magic1c.gif
+		
+anim	follow1
+	loop	0
+	delay	7
+	offset	50 143
+	bbox	30 40 40 100
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1c.gif
+	frame	data/chars/bafomet/jump1b.gif
+	frame	data/chars/bafomet/jump1e.gif
+	frame	data/chars/bafomet/jump1d.gif
+	frame	data/chars/bafomet/jump1f.gif
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1c.gif
+	frame	data/chars/bafomet/jump1b.gif
+		
+anim	follow10
+	loop	0
+	delay	1
+	offset	50 143
+	bbox	30 40 40 100
+	frame	data/chars/bafomet/jump1e.gif
+		
+anim	follow4
+	loop	0
+	delay	7
+	offset	50 143
+	bbox	30 40 40 100
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1c.gif
+	@cmd	platform 1
+	frame	data/chars/bafomet/jump1b.gif
+		
+anim	follow5
+	loop	0
+	delay	7
+	offset	50 143
+	bbox	30 40 40 100
+	@cmd	platform 1
+	@cmd	limiterSub
+	@cmd	limiter 9
+	frame	data/chars/bafomet/idle2a.gif
+	frame	data/chars/bafomet/idle2b.gif
+	@cmd	mpcost 10
+	@cmd	SubWeapon 34 100
+	frame	data/chars/bafomet/magic2c.gif
+	frame	data/chars/bafomet/idle2d.gif
+		
+anim	follow9
+	loop	0
+	delay	100
+	offset	50 143
+	@cmd	spawn01 "Circle_transform" 0 80 0
+	frame	data/chars/misc/empty.gif
+	delay	3
+	frame	data/chars/bafomet/spawn1i.gif
+	sound	data/sounds/bafomet_spawn.wav
+	frame	data/chars/bafomet/spawn1g.gif
+	frame	data/chars/bafomet/spawn1f.gif
+	frame	data/chars/bafomet/spawn1e.gif
+	frame	data/chars/bafomet/spawn1d.gif
+	frame	data/chars/bafomet/spawn1c.gif
+	frame	data/chars/bafomet/spawn1b.gif
+	frame	data/chars/bafomet/spawn1a.gif
+	delay	7
+	frame	data/chars/bafomet/idle2a.gif
+	frame	data/chars/bafomet/idle2b.gif
+	frame	data/chars/bafomet/idle2c.gif
+	frame	data/chars/bafomet/idle2d.gif
+	frame	data/chars/bafomet/idle2a.gif
+	frame	data/chars/bafomet/idle2b.gif
+	frame	data/chars/bafomet/idle2c.gif
+	frame	data/chars/bafomet/idle2d.gif
+	frame	data/chars/bafomet/idle2a.gif
+	frame	data/chars/bafomet/idle2b.gif
+	frame	data/chars/bafomet/idle2c.gif
+	frame	data/chars/bafomet/idle2d.gif
+		
+anim	freespecial
+	loop	0
+	delay	1
+	offset	50 143
+	bbox	30 55 40 88
+	@cmd	limiter 29
+	@cmd	keyint "ANI_FREESPECIAL3" 0 "U" 0
+	frame	data/chars/bafomet/magic1a.gif
+	delay	7
+	frame	data/chars/bafomet/magic1a.gif
+	@cmd	spawn01 "Bafo_seal" 30 58 0
+	sound	data/sounds/bafomet_spell2.wav
+	frame	data/chars/bafomet/magic1b.gif
+	frame	data/chars/bafomet/magic1c.gif
+	frame	data/chars/bafomet/magic1c.gif
+	frame	data/chars/bafomet/magic1c.gif
+	sound	data/sounds/fire2.wav
+	@cmd	mpcost 30
+	@cmd	shooter2 "Bafo_shot_p" 50 58 1 0
+	frame	data/chars/bafomet/magic1c.gif
+	frame	data/chars/bafomet/magic1c.gif
+	frame	data/chars/bafomet/magic1b.gif
+	frame	data/chars/bafomet/magic1a.gif
+		
+anim	freespecial12
+	loop	0
+	delay	7
+	offset	50 143
+	bbox	30 40 40 100
+	sound	data/sounds/jump_big.wav
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1c.gif
+	frame	data/chars/bafomet/jump1b.gif
+	frame	data/chars/bafomet/jump1e.gif
+	frame	data/chars/bafomet/jump1d.gif
+	frame	data/chars/bafomet/jump1f.gif
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1c.gif
+	frame	data/chars/bafomet/jump1b.gif
+		
+anim	freespecial2
+	loop	0
+	delay	7
+	offset	50 143
+	bbox	30 40 40 100
+	@cmd	platform 1
+	@cmd	limiterSub
+	@cmd	limiter 9
+	frame	data/chars/bafomet/idle2a.gif
+	frame	data/chars/bafomet/idle2b.gif
+	@cmd	mpcost 10
+	@cmd	SubWeapon 34 100
+	frame	data/chars/bafomet/magic2c.gif
+	frame	data/chars/bafomet/idle2d.gif
+		
+anim	freespecial3
+	loop	0
+	delay	1
+	offset	50 143
+	bbox	30 40 40 100
+	@cmd	limiter 29
+	frame	data/chars/bafomet/idle2a.gif
+	delay	3
+	sound	data/sounds/bafomet_spell.wav
+	frame	data/chars/bafomet/idle2a.gif
+	frame	data/chars/bafomet/idle2b.gif
+	frame	data/chars/bafomet/idle2c.gif
+	frame	data/chars/bafomet/idle2d.gif
+	@cmd	spawn01 "MagicSeal" 34 98 0
+	frame	data/chars/bafomet/magic2a.gif
+	frame	data/chars/bafomet/magic2b.gif
+	sound	data/sounds/ghost_spawn.wav
+	frame	data/chars/bafomet/magic2c.gif
+	@cmd	mpcost 30
+	@cmd	spawn01 "Bafo_shot_2_p" 35 120 0
+	frame	data/chars/bafomet/magic2d.gif
+	frame	data/chars/bafomet/magic2a.gif
+	frame	data/chars/bafomet/magic2b.gif
+	frame	data/chars/bafomet/magic2c.gif
+	@cmd	spawn01 "Bafo_shot_2_p" -45 120 0
+	frame	data/chars/bafomet/magic2d.gif
+	frame	data/chars/bafomet/magic2a.gif
+	frame	data/chars/bafomet/magic2b.gif
+	frame	data/chars/bafomet/magic2c.gif
+	@cmd	spawn01 "Bafo_shot_2_p" 45 80 0
+	frame	data/chars/bafomet/magic2d.gif
+	frame	data/chars/bafomet/magic2a.gif
+	frame	data/chars/bafomet/magic2b.gif
+	frame	data/chars/bafomet/magic2c.gif
+	@cmd	spawn01 "Bafo_shot_2_p" -55 80 0
+	frame	data/chars/bafomet/magic2d.gif
+	frame	data/chars/bafomet/magic2a.gif
+	frame	data/chars/bafomet/magic2b.gif
+	frame	data/chars/bafomet/magic2c.gif
+	@cmd	spawn01 "Bafo_shot_2_p" 35 50 0
+	frame	data/chars/bafomet/magic2d.gif
+	frame	data/chars/bafomet/magic2a.gif
+	frame	data/chars/bafomet/magic2b.gif
+	frame	data/chars/bafomet/magic2c.gif
+	@cmd	spawn01 "Bafo_shot_2_p" -45 50 0
+	frame	data/chars/bafomet/magic2d.gif
+	frame	data/chars/bafomet/idle2a.gif
+		
+anim	idle
+	loop	1
+	delay	21
+	offset	50 143
+	bbox	30 50 40 93
+	frame	data/chars/bafomet/idle1a.gif
+	frame	data/chars/bafomet/idle1b.gif
+	frame	data/chars/bafomet/idle1c.gif
+	@cmd	mpcost -2
+	frame	data/chars/bafomet/idle1d.gif
+		
+anim	jump
+	loop	0
+	delay	7
+	offset	50 143
+	bbox	30 40 40 100
+	sound	data/sounds/jump_big.wav
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1c.gif
+	frame	data/chars/bafomet/jump1b.gif
+	frame	data/chars/bafomet/jump1e.gif
+	frame	data/chars/bafomet/jump1d.gif
+	frame	data/chars/bafomet/jump1f.gif
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1c.gif
+	frame	data/chars/bafomet/jump1b.gif
+		
+anim	jumpdelay
+	loop	0
+	delay	1
+	offset	50 143
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1a.gif
+		
+anim	jumpland
+	loop	0
+	delay	1
+	offset	50 143
+	bbox	30 40 40 100
+	frame	data/chars/bafomet/jump1b.gif
+		
+anim	pain
+	loop	0
+	delay	27
+	offset	50 143
+	bbox	30 55 40 88
+	@cmd	platform 1
+	jumpframe	0 1.5 -1
+	@cmd	mpcost -20
+	sound	data/sounds/bafomet_spell2.wav
+	frame	data/chars/bafomet/magic1b.gif
+		
+anim	pain17
+	loop	0
+	delay	27
+	offset	50 143
+	bbox	30 55 40 88
+	@cmd	platform 1
+	jumpframe	0 1.5 -1
+	@cmd	spawnbind "blooda" 40 82 1
+	@cmd	mpcost -20
+	sound	data/sounds/bafomet_spell2.wav
+	frame	data/chars/bafomet/magic1b.gif
+		
+anim	pain2
+	loop	0
+	delay	27
+	offset	50 143
+	bbox	30 55 40 88
+	@cmd	platform 1
+	jumpframe	0 1.5 -1
+	@cmd	spawnbind "blooda" 40 82 1
+	@cmd	mpcost -20
+	sound	data/sounds/bafomet_spell2.wav
+	frame	data/chars/bafomet/magic1b.gif
+		
+anim	pain7
+	loop	0
+	delay	27
+	offset	50 143
+	bbox	30 55 40 88
+	@cmd	platform 1
+	jumpframe	0 1.5 -1
+	@cmd	spawnbind "blooda" 40 82 1
+	@cmd	mpcost -20
+	sound	data/sounds/bafomet_spell2.wav
+	frame	data/chars/bafomet/magic1b.gif
+		
+anim	pain8
+	loop	0
+	delay	27
+	offset	50 143
+	bbox	30 55 40 88
+	@cmd	platform 1
+	jumpframe	0 1.5 -1
+	@cmd	spawnbind "prose" 14 52 1
+	@cmd	spawnbind "blooda" 40 82 1
+	@cmd	mpcost -20
+	sound	data/sounds/bafomet_spell2.wav
+	frame	data/chars/bafomet/magic1b.gif
+		
+anim	rise
+	loop	0
+	delay	1
+	offset	50 143
+	frame	data/chars/bafomet/idle1a.gif
+		
+anim	select
+	loop	0
+	delay	10
+	offset	10 29
+	frame	data/chars/flametaur/select1a.gif
+	frame	data/chars/flametaur/select1b.gif
+	frame	data/chars/flametaur/select1c.gif
+	delay	7
+	frame	data/chars/flametaur/select1d.gif
+	frame	data/chars/flametaur/select1e.gif
+	delay	10
+	frame	data/chars/flametaur/select1e.gif
+	delay	14
+	frame	data/chars/flametaur/select1f.gif
+	delay	20
+	frame	data/chars/flametaur/waiting1a.gif
+	frame	data/chars/flametaur/waiting1b.gif
+	frame	data/chars/flametaur/waiting1c.gif
+	frame	data/chars/flametaur/ready1a.gif
+		
+anim	shock
+	loop	0
+	delay	14
+	offset	50 143
+	landframe	2
+	sound	data/sounds/bafomet_spell2.wav
+	@cmd	spawnbind "Hshock" 0 50 1
+	@cmd	mpcost -30
+	frame	data/chars/bafomet/magic1b.gif
+	frame	data/chars/bafomet/magic1c.gif
+		
+anim	sleep
+	loop	1
+	delay	21
+	offset	50 143
+	bbox	30 30 40 113
+	@cmd	mpcost -3
+	frame	data/chars/bafomet/idle2a.gif
+	@cmd	mpcost -3
+	frame	data/chars/bafomet/idle2b.gif
+	@cmd	mpcost -3
+	frame	data/chars/bafomet/idle2c.gif
+	@cmd	mpcost -3
+	frame	data/chars/bafomet/idle2d.gif
+		
+anim	slide
+@script
+    void self = getlocalvar("self");
+    int x = getentityproperty(self, "x");
+    int y = getentityproperty(self, "a");
+    int z = getentityproperty(self, "z");
+    int b = getentityproperty(self, "base");
+    void Plat = checkplatformbelow(x, z, y+2);
+
+    int iPIndex = getentityproperty(self,"playerindex");
+    void iLeft = playerkeys(iPIndex, 0, "moveleft");
+    void iRight = playerkeys(iPIndex, 0, "moveright");
+
+    if(getentityproperty(Plat,"name")!="Thick"){
+      if(y > 0 && frame == 0 && !iLeft && !iRight){
+        changeentityproperty(self, "Subject_to_Platform", 0);
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+        changeentityproperty(self, "aiflag", "jumping", 1);
+        changeentityproperty(self, "takeaction", "common_jump");
+      }
+    }
+
+    if(y > b && frame > 0){
+      changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+      changeentityproperty(self, "aiflag", "jumping", 1);
+      changeentityproperty(self, "takeaction", "common_jump");
+    }
+	@end_script	
+	loop	0
+	delay	7
+	offset	50 143
+	bbox	30 40 40 100
+	frame	data/chars/bafomet/jump1a.gif
+		
+anim	spain
+	loop	0
+	delay	27
+	offset	50 143
+	bbox	30 55 40 88
+	@cmd	platform 1
+	jumpframe	0 1.5 -1
+	@cmd	spawnbind "Hshock" 0 50 1
+	@cmd	mpcost -20
+	sound	data/sounds/bafomet_spell2.wav
+	frame	data/chars/bafomet/magic1b.gif
+		
+anim	special
+	loop	0
+	delay	1
+	offset	50 143
+	energycost	0
+	mponly	1
+	@cmd	mpcost -10
+	frame	data/chars/bafomet/spawn1a.gif
+	frame	data/chars/bafomet/spawn1b.gif
+	frame	data/chars/bafomet/spawn1c.gif
+	frame	data/chars/bafomet/spawn1d.gif
+	frame	data/chars/bafomet/spawn1e.gif
+	frame	data/chars/bafomet/spawn1f.gif
+	frame	data/chars/bafomet/spawn1g.gif
+	frame	data/chars/bafomet/spawn1h.gif
+	frame	data/chars/bafomet/spawn1i.gif
+	frame	data/chars/misc/empty.gif
+	delay	7
+	move	-80
+	frame	data/chars/misc/empty.gif
+	move	0
+	delay	1
+	frame	data/chars/bafomet/spawn1i.gif
+	frame	data/chars/bafomet/spawn1h.gif
+	frame	data/chars/bafomet/spawn1g.gif
+	frame	data/chars/bafomet/spawn1f.gif
+	frame	data/chars/bafomet/spawn1e.gif
+	frame	data/chars/bafomet/spawn1d.gif
+	frame	data/chars/bafomet/spawn1c.gif
+	frame	data/chars/bafomet/spawn1b.gif
+	frame	data/chars/bafomet/spawn1a.gif
+	frame	data/chars/bafomet/idle2a.gif
+		
+anim	waiting
+	loop	1
+	delay	20
+	offset	10 29
+	frame	data/chars/flametaur/waiting1a.gif
+	frame	data/chars/flametaur/waiting1b.gif
+	frame	data/chars/flametaur/waiting1c.gif
+		
+anim	walk
+	loop	1 56 96
+	delay	3
+	offset	50 143
+	bbox	30 40 40 100
+	@script
+	       void self = getlocalvar("self");
+	       int MP = getentityproperty(self,"mp");
+               int eTime = openborvariant("elapsed_time");
+    	       float xdir = getentityproperty(self, "xdir");
+               float zdir = getentityproperty(self, "zdir");
+               float ydir = getentityproperty(self, "y");
+               float tossv = getentityproperty(self, "tossv");
+
+    int iPlIndex = getlocalvar("player");
+
+    void iLeftH = playerkeys(iPlIndex, 0, "moveleft");
+    void iRightH = playerkeys(iPlIndex, 0, "moveright");
+    	       int dirx = 0;
+               int dirz = 0;
+               int diry = 0;
+
+	       if(frame>=13 && frame<=55){
+  		    if(iLeftH){
+	               dirx = xdir-1;
+		    } else if(iRightH){
+                       dirx = xdir+1;
+		    } else {
+		       dirx = 0;
+		    }
+
+		  dirz = zdir+1;
+		  diry = ydir+1;
+		  changeentityproperty(self, "velocity", dirx, dirz, tossv);
+		  changeentityproperty(self, "y", diry);
+		  changeentityproperty(self, "tosstime", eTime + 2*1);
+	       }
+	       if(frame>=56 && frame<=96){
+		    if(iLeftH){
+	               dirx = xdir-1;
+		    } else if(iRightH){
+                       dirx = xdir+1;
+		    } else {
+		       dirx = 0;
+		    }
+		  changeentityproperty(self, "velocity", dirx, 0, tossv);
+	       	  changeentityproperty(self, "mp", MP+1);
+		  changeentityproperty(self, "tosstime", eTime + 2*1);
+	       }
+	@end_script	
+	frame	data/chars/bafomet/idle1a.gif
+	frame	data/chars/bafomet/idle1b.gif
+	frame	data/chars/bafomet/idle1c.gif
+	frame	data/chars/bafomet/idle1d.gif
+	sound	data/sounds/wingflap.wav
+	frame	data/chars/bafomet/idle1a.gif
+	frame	data/chars/bafomet/idle1b.gif
+	frame	data/chars/bafomet/idle1c.gif
+	frame	data/chars/bafomet/idle1d.gif
+	sound	data/sounds/wingflap.wav
+	frame	data/chars/bafomet/idle1a.gif
+	frame	data/chars/bafomet/idle1b.gif
+	frame	data/chars/bafomet/idle1c.gif
+	frame	data/chars/bafomet/idle1d.gif
+	sound	data/sounds/wingflap.wav
+	delay	1
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1c.gif
+	frame	data/chars/bafomet/jump1c.gif
+	frame	data/chars/bafomet/jump1c.gif
+	frame	data/chars/bafomet/jump1c.gif
+	frame	data/chars/bafomet/jump1c.gif
+	frame	data/chars/bafomet/jump1c.gif
+	frame	data/chars/bafomet/jump1c.gif
+	frame	data/chars/bafomet/jump1b.gif
+	frame	data/chars/bafomet/jump1b.gif
+	frame	data/chars/bafomet/jump1b.gif
+	frame	data/chars/bafomet/jump1b.gif
+	frame	data/chars/bafomet/jump1b.gif
+	frame	data/chars/bafomet/jump1b.gif
+	frame	data/chars/bafomet/jump1b.gif
+	frame	data/chars/bafomet/jump1e.gif
+	frame	data/chars/bafomet/jump1e.gif
+	frame	data/chars/bafomet/jump1e.gif
+	frame	data/chars/bafomet/jump1e.gif
+	frame	data/chars/bafomet/jump1e.gif
+	frame	data/chars/bafomet/jump1e.gif
+	frame	data/chars/bafomet/jump1e.gif
+	frame	data/chars/bafomet/jump1d.gif
+	frame	data/chars/bafomet/jump1d.gif
+	frame	data/chars/bafomet/jump1d.gif
+	frame	data/chars/bafomet/jump1d.gif
+	frame	data/chars/bafomet/jump1d.gif
+	frame	data/chars/bafomet/jump1d.gif
+	frame	data/chars/bafomet/jump1d.gif
+	frame	data/chars/bafomet/jump1f.gif
+	frame	data/chars/bafomet/jump1f.gif
+	frame	data/chars/bafomet/jump1f.gif
+	frame	data/chars/bafomet/jump1f.gif
+	frame	data/chars/bafomet/jump1f.gif
+	frame	data/chars/bafomet/jump1f.gif
+	frame	data/chars/bafomet/jump1f.gif
+	sound	data/sounds/wingflap.wav
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1a.gif
+	frame	data/chars/bafomet/jump1c.gif
+	frame	data/chars/bafomet/jump1c.gif
+	frame	data/chars/bafomet/jump1c.gif
+	frame	data/chars/bafomet/jump1c.gif
+	frame	data/chars/bafomet/jump1c.gif
+	frame	data/chars/bafomet/jump1c.gif
+	frame	data/chars/bafomet/jump1c.gif
+	frame	data/chars/bafomet/jump1b.gif
+	frame	data/chars/bafomet/jump1b.gif
+	frame	data/chars/bafomet/jump1b.gif
+	frame	data/chars/bafomet/jump1b.gif
+	frame	data/chars/bafomet/jump1b.gif
+	frame	data/chars/bafomet/jump1b.gif
+	frame	data/chars/bafomet/jump1b.gif
+	frame	data/chars/bafomet/jump1e.gif
+	frame	data/chars/bafomet/jump1e.gif
+	frame	data/chars/bafomet/jump1e.gif
+	frame	data/chars/bafomet/jump1e.gif
+	frame	data/chars/bafomet/jump1e.gif
+	frame	data/chars/bafomet/jump1e.gif
+	frame	data/chars/bafomet/jump1e.gif
+	frame	data/chars/bafomet/jump1d.gif
+	frame	data/chars/bafomet/jump1d.gif
+	frame	data/chars/bafomet/jump1d.gif
+	frame	data/chars/bafomet/jump1d.gif
+	frame	data/chars/bafomet/jump1d.gif
+	frame	data/chars/bafomet/jump1d.gif
+	frame	data/chars/bafomet/jump1d.gif
+	frame	data/chars/bafomet/jump1f.gif
+	frame	data/chars/bafomet/jump1f.gif
+	frame	data/chars/bafomet/jump1f.gif
+	frame	data/chars/bafomet/jump1f.gif
+	frame	data/chars/bafomet/jump1f.gif
+	frame	data/chars/bafomet/jump1f.gif
+	frame	data/chars/bafomet/jump1f.gif
+		
+anim	walkoff
+	loop	0
+	delay	7
+	offset	50 143
+	bbox	30 40 40 100
+	frame	data/chars/bafomet/jump1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

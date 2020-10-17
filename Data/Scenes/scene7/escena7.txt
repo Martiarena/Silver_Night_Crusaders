@@ -1,0 +1,8 @@
+music		data/Scenes/scene7/scene7.ogg 0
+animation	data/Scenes/scene7/escena7_part_1.gif 0 0 0 0
+animation	data/Scenes/scene7/escena7_part_2.gif 0 0 0 0
+animation	data/Scenes/scene7/escena7_part_3.gif 0 0 0 0
+animation	data/Scenes/scene7/escena7_part_4.gif 0 0 0 0
+animation	data/Scenes/scene7/escena7_part_5.gif 0 0 0 0
+animation	data/Scenes/scene7/escena7_part_6.gif 0 0 0 0
+silence 1

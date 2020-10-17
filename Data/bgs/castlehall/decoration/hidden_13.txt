@@ -1,0 +1,73 @@
+name	       	Hidden_13
+type            obstacle
+health          50
+antigravity     100
+shadow		0
+offscreenkill	500
+nomove	1 1
+nolife	1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_gravity 0
+load            Estaca
+
+animationscript  data/scripts/escript.c
+
+palette	data/bgs/castlehall/decoration/rod1a.gif
+
+
+
+anim	death
+	loop	0
+	delay	10
+	offset	2 2
+	@cmd	spawn02 "Estaca" 160 0 0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	loop	0
+	delay	10
+	offset	2 2
+	@cmd	spawn02 "Estaca" 160 0 0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	280
+	offset	7 4
+	noreflect	1
+	followcond	1
+	followanim	1
+	hitfx	data/sounds/no-hit.wav
+	bbox	-10 0 36 20
+	attack20	-10 0 36 20 0 0 1 1 0 0
+	platform	21 69 -10 -10 10 10 10 10
+	frame	data/bgs/castlehall/decoration/rod1a.gif
+	delay	7
+	frame	data/bgs/castlehall/decoration/rod1b.gif
+		
+anim	spawn
+	loop	0
+	delay	280
+	offset	7 4
+	noreflect	1
+	followcond	1
+	followanim	1
+	hitfx	data/sounds/no-hit.wav
+	bbox	0 -1 16 10
+	attack20	0 -1 16 10 0 0 1 1 0 0
+	platform	21 69 -10 -10 10 10 10 10
+	frame	data/bgs/castlehall/decoration/rod1a.gif
+	delay	7
+	frame	data/bgs/castlehall/decoration/rod1b.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,7 +1,6 @@
 name		axeteo
 lifespan  	2
-health          3
-type    	enemy
+type     none
 candamage       player npc shot
 noquake		1
 subject_to_hole	1
@@ -51,6 +50,13 @@ anim	idle
 	hitfx	data/sounds/slash.wav
 	attack2	0 2 23 26 19 0 0 0 0 0
 	frame	data/chars/items/axe/idle4.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	14 30
+	sound	data/sounds/throw2.wav
+	frame	data/chars/items/axe/idle1.gif
 		
 #|edited by openBor Stats v 0.67
 		

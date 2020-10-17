@@ -9,6 +9,8 @@ animationscript data/scripts/cscript.c
 
 palette		data/chars/succubus/succubo_palette.gif
 
+
+
 anim	death
 	loop	0
 	delay	4
@@ -19,6 +21,7 @@ anim	idle
 	loop	1
 	delay	14
 	offset	46 9
+	DOT	1 30 3 4 5
 	attack	30 0 61 17 19 0 0 0 0 0
 	frame	data/chars/succubus/spells/spell2a.gif
 	frame	data/chars/succubus/spells/spell2b.gif

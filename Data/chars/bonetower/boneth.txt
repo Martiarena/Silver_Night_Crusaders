@@ -1,5 +1,5 @@
 name    	T._de_huesos_
-health  	27
+health          18
 nomove  	1 1
 score   300 -1
 type		enemy
@@ -10,8 +10,9 @@ nodieblink 	2
 nopain  	1
 nodrop  	2
 setlayer        10
-offscreenkill	500
-diesound        data/sounds/chest.wav
+offscreenkill	300
+diesound  data/sounds/bone3.wav
+offscreen_noatk_factor 1
 icon		data/chars/misc/bgmonster.gif
 load     	fb01_e
 load    	bpflame
@@ -23,6 +24,7 @@ alternatepal    data/chars/bonetower/bonetower_blink.gif
 
 animationscript  data/scripts/escript.c
 takedamagescript data/scripts/blink.c
+
 
 
 
@@ -160,6 +162,7 @@ anim	idle
 	frame	data/chars/bonetower/attack1b.gif
 	frame	data/chars/bonetower/attack1c.gif
 	delay	50
+	sound	data/sounds/fire1.wav
 	@cmd	shoot "fb01_e" 10 10 0
 	frame	data/chars/bonetower/attack1d.gif
 	delay	15

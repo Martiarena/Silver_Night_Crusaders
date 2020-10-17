@@ -1,5 +1,5 @@
-music		data/music/interiorgarden.ogg 1525860
-bossmusic	data/music/boss.ogg 367353
+music		data/music/highroof.ogg 1749800
+bossmusic	data/music/vs-paladin.ogg 164309
 
 panel	        data/bgs/clock_tower/clock_tower.gif
 
@@ -76,23 +76,18 @@ at  0
 
 spawn  Candle1
 coords  66  216  75
-item  ___100
+item  Hacha
+map 1
 at  0
 
-spawn  Candle1
-coords  129  216  75
-item	Hacha
-map 1
+spawn  Barril
+coords  130  216  0
+item  Pollo_frito
 at  0
 
 spawn  Candle1
 coords  176  216  140
 item  Gema_azul
-at  0
-
-spawn  Barril
-coords  193  216  54
-item  Pollo_frito
 at  0
 
 spawn  Candle1
@@ -113,17 +108,18 @@ at  0
 Blockade 80
 at  80
 
-spawn  Inquisidor
+spawn  Paladin
 coords  340  216  0
 boss 1
+alias Teobaldo_M.
 at  80
 
-spawn boss_lifebar
+spawn	SoldierSpawner
+coords  0 0 0
+2pspawn 1
+at	80
+
+spawn boss_lifebar_2
 coords  0 0 0
 flip 1
 at  80
-
-spawn  Barril
-coords  340  216  54
-item Pollo_frito
-at  110

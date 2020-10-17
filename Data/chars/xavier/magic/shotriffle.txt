@@ -1,0 +1,72 @@
+name	        ShotRiffle
+type	        none
+nolife          1
+lifespan        2
+setlayer	10
+antigravity     100
+candamage       enemy shot
+
+palette		data/chars/xavier/magic/shot1a.gif
+
+
+
+
+
+anim	idle
+	delay	1
+	offset	60 12
+	hitfx	data/sounds/burnt.wav
+	sound	data/sounds/explosion-fire.wav
+	burn	80 3 40 20 12 1 0 0 0 0
+	move	3
+	frame	data/chars/xavier/magic/shot1a.gif
+	frame	data/chars/xavier/magic/shot1a.gif
+	frame	data/chars/xavier/magic/shot1a.gif
+	frame	data/chars/xavier/magic/shot1a.gif
+	frame	data/chars/xavier/magic/shot1a.gif
+	frame	data/chars/xavier/magic/shot1a.gif
+	frame	data/chars/xavier/magic/shot1a.gif
+	frame	data/chars/xavier/magic/shot1a.gif
+	frame	data/chars/xavier/magic/shot1a.gif
+	frame	data/chars/xavier/magic/shot1a.gif
+	frame	data/chars/xavier/magic/shot1a.gif
+	frame	data/chars/xavier/magic/shot1a.gif
+	frame	data/chars/xavier/magic/shot1a.gif
+	frame	data/chars/xavier/magic/shot1a.gif
+	move	2
+	delay	1
+	frame	data/chars/xavier/magic/shot1b.gif
+	frame	data/chars/xavier/magic/shot1b.gif
+	frame	data/chars/xavier/magic/shot1b.gif
+	frame	data/chars/xavier/magic/shot1b.gif
+	frame	data/chars/xavier/magic/shot1b.gif
+	frame	data/chars/xavier/magic/shot1b.gif
+	frame	data/chars/xavier/magic/shot1b.gif
+	burn	0 0 0 0
+	frame	data/chars/xavier/magic/shot1b.gif
+	frame	data/chars/xavier/magic/shot1b.gif
+	frame	data/chars/xavier/magic/shot1b.gif
+	frame	data/chars/xavier/magic/shot1b.gif
+	frame	data/chars/xavier/magic/shot1b.gif
+	frame	data/chars/xavier/magic/shot1b.gif
+	frame	data/chars/xavier/magic/shot1b.gif
+	move	1
+	frame	data/chars/xavier/magic/shot1c.gif
+	frame	data/chars/xavier/magic/shot1c.gif
+	frame	data/chars/xavier/magic/shot1c.gif
+	frame	data/chars/xavier/magic/shot1c.gif
+	frame	data/chars/xavier/magic/shot1c.gif
+	frame	data/chars/xavier/magic/shot1c.gif
+	frame	data/chars/xavier/magic/shot1c.gif
+	frame	data/chars/xavier/magic/shot1d.gif
+	frame	data/chars/xavier/magic/shot1d.gif
+	frame	data/chars/xavier/magic/shot1d.gif
+	frame	data/chars/xavier/magic/shot1d.gif
+	frame	data/chars/xavier/magic/shot1d.gif
+	frame	data/chars/xavier/magic/shot1d.gif
+	frame	data/chars/xavier/magic/shot1d.gif
+	move	0
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

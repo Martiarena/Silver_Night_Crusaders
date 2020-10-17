@@ -1,0 +1,32 @@
+name  		Serpent_body
+type		none
+nolife		1
+setlayer  	2
+antigravity	100
+offscreenkill   9999
+candamage 	player	npc
+hostile		player	npc
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	100
+	offset	119 206
+	attack	0 20 80 214 25 0 0 0 0 0
+	frame	data/chars/countess/finalform/serpent_body1a.gif
+		
+anim	spawn
+	loop	0
+	delay	1000
+	offset	119 206
+	frame	data/chars/countess/finalform/serpent_body1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

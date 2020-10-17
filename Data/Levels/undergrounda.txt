@@ -353,19 +353,10 @@ spawn  Esqueleto
 coords  360  216 0
 at  650
 
-spawn  Chiroptera_
-coords  360  216  148
-flip 1
-at  700
-
 spawn  Candle1
 coords  360  216  40
 item	___50
 at  770
-
-spawn  Chiroptera_
-coords  360  216  38
-at  780
 
 spawn  Fake_wall_c1
 coords  353  216  111
@@ -439,10 +430,6 @@ spawn  BatSpawner
 coords  0  210
 at  1700
 
-spawn  Chiroptera_
-coords  360  216  148
-at  1710
-
 spawn  Candle1
 coords  360  216  110
 item	___50
@@ -457,10 +444,6 @@ spawn  Platform_rock
 coords  360  216  95
 flip  1
 at  1870
-
-spawn  Chiroptera_
-coords  360  216  148
-at  1935
 
 spawn  Candle1
 coords  360  216  95
@@ -489,6 +472,14 @@ at  2500
 Blockade  2550
 at  2550
 
+spawn	SahaginSpawner
+coords  360  216  0
+at  2550
+
+spawn	Sahagin
+coords  270  216  0
+at  2550
+
 spawn  Brazier1
 coords  360  216  80
 item	___50
@@ -508,6 +499,10 @@ coords  360  216  61
 item	___50
 at  3020
 
+spawn	Sahagin
+coords  50  216  0
+at  3150
+
 spawn  Brazier1
 coords  360  216  50
 item	___50
@@ -522,13 +517,13 @@ coords  360  216  62
 item  Gema_roja
 at  3520
 
+spawn	Sahagin
+coords  240  216  0
+at  3685
+
 spawn  BatSpawner
 coords  0  210
 at  3700
-
-spawn  Chiroptera_
-coords  360  216  148
-at  3710
 
 spawn  Esqueleto
 coords  360  216  25
@@ -578,10 +573,6 @@ spawn  Candle1
 coords  340  216  80
 item	___20
 at  4100
-
-spawn  Chiroptera_
-coords  360  216  148
-at  4110
 
 spawn  Stalactite
 coords  360  216  140

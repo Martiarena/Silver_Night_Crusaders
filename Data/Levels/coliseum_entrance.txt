@@ -1,0 +1,88 @@
+music		data/music/demongallery.ogg 186965
+panel	        data/bgs/coliseum/coliseum_entrance.gif
+
+order           a
+settime	        0
+notime		1
+spawn1          80 0 240
+spawn2          40 0 240
+direction	both
+cameratype 1
+noslow 1
+type		1
+
+spawn  Coliseum_wall2
+coords  8  216  94
+flip  1
+at  0
+
+spawn  Coliseum_wall1
+coords  714  216  0
+flip  1
+at  0
+
+spawn  Platform_sewer1
+coords  119  216  90
+flip  1
+at  0
+
+spawn  Platform_sewer1
+coords  244  216  90
+flip  1
+at  0
+
+spawn  Platform_sewer1
+coords  376  216  90
+flip  1
+at  0
+
+spawn	StageEx
+coords  160 240  0
+flip    1
+at      0
+
+spawn 	Brazier2
+coords	120  216  108
+item	Cuchillo
+at  0
+
+spawn  Brazier2
+coords  150  216  0
+item	Hacha
+at  0
+
+spawn  Brazier2
+coords  235  216  0
+item	Bomba
+at  0
+
+spawn  Brazier2
+coords  245  216  108
+item	Bumeran
+at  0
+
+spawn  Brazier2
+coords  315  216  0
+item	C._Plateada
+at  0
+
+spawn  ToArena
+coords  475  216  0
+flip  1
+at  0
+
+spawn  ToBossRush
+coords  635  216  0
+flip  1
+at  0
+
+spawn  Brazier2
+coords  330  216  108
+item	A._Bendita
+at  45
+
+spawn  Brazier2
+coords  320  216  0
+item	Biblia
+at  60
+

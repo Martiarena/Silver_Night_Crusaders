@@ -10,6 +10,8 @@ offscreenkill 	500
 subject_to_wall 0
 subject_to_obstacle 0
 
+diesound            data/sounds/candlecut.wav
+
 palette 	 data/chars/destructible/candle1/candle1_palette.gif
 alternatepal	 data/chars/destructible/candle1/candle1_palette_alt.gif
 

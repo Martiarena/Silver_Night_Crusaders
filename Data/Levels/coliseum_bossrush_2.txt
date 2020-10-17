@@ -1,0 +1,136 @@
+music		data/music/boss.ogg 367353
+panel	        data/bgs/coliseum/coliseum_bossrush.gif
+
+fglayer		data/bgs/moon_bridge/back_forest_1.gif -11000 0.5 0.5 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/moon_bridge/back_forest_2.gif -12000 0.6 0.6 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/moon_bridge/back_bridge.gif -13000 0.8 0.8 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/moon_bridge/sky_night_2.gif -14000 0.9 0.9 0 0 0 0 -1 1 1 0 0 0 0 0 1
+order           a
+settime	        0
+notime		1
+spawn1          100 0 240
+spawn2          60 0 240
+direction	both
+type		0 0 0
+cameratype 1
+noslow 1
+
+spawn	Coliseum_wall2
+coords  17  216  94
+at 0
+
+spawn	Coliseum_platform1
+coords  168  216  37
+at 0
+
+spawn	Coliseum_platform1
+coords  412  216  37
+at 0
+
+spawn	Coliseum_wall2
+coords  565  216  94
+flip	1
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 80
+
+spawn	Round5
+coords  160  240  0
+flip	1
+at 80
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 80
+
+group 1 1
+at 80
+
+spawn boss_lifebar
+coords  0 0 0
+flip 1
+at  80
+
+spawn	ClownSpawner
+coords  0 216 0
+2pspawn 1
+at  80
+
+spawn  Ficzko
+coords  250  216  120
+item	Pollo_frito
+at 80
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round6
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 1 1
+at 0
+
+spawn	ESkeletonSpawner
+coords  0 216 0
+2pspawn 1
+at	0
+
+spawn  Darvulia
+coords  250  216  0
+alias	A._Darvulia
+item	Pollo_frito
+at  0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round7
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 1 1
+at 0
+
+spawn	DKnightSpawner
+coords  0 216 0
+2pspawn 1
+at	0
+
+spawn  Dopelganger
+coords  250  216  160
+Alias	Dopelganger
+item	Pollo_frito
+map 2
+at  0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+boss	1
+at 0

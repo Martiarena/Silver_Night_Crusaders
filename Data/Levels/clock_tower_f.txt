@@ -1,0 +1,125 @@
+music		data/music/highroof.ogg 1749800
+bossmusic	data/music/boss.ogg 367353
+
+panel	        data/bgs/clock_tower/clock_tower.gif
+
+fglayer		data/bgs/moon_bridge/back_forest_1.gif -11000 0.5 0.5 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/moon_bridge/back_forest_2.gif -12000 0.6 0.6 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/moon_bridge/back_bridge.gif -13000 0.8 0.8 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/moon_bridge/sky_night_2.gif -14000 0.9 0.9 0 0 0 0 -1 1 1 0 0 0 0 0 1
+
+order           a
+settime	        0
+notime		1
+spawn1          80 0 240
+spawn2          40 0 240
+direction	both
+type		0 0 0
+cameratype 1
+noslow 1
+
+spawn  Clock
+coords  320  216  113
+flip  1
+at  0
+
+spawn  Clocktower_wall6
+coords  16  216  103
+alias	Thick
+flip  1
+at  0
+
+spawn  Entplat3
+coords  56  216  153
+flip  1
+at  0
+
+spawn  Banister_3
+coords  89  216  0
+flip  1
+at  0
+
+spawn  Entplat2
+coords  176  216  37
+flip  1
+at  0
+
+spawn  Banister_4
+coords  203  216  0
+flip  1
+at  0
+
+spawn  Entplat2
+coords  208  216  37
+flip  1
+at  0
+
+spawn  Banister_2
+coords  428  216  0
+flip  1
+at  0
+
+spawn  Entplat2
+coords  433  216  37
+flip  1
+at  0
+
+spawn  Entplat2
+coords  465  216  37
+flip  1
+at  0
+
+spawn  Jar1
+coords  55  216  170
+item  C._Arcoiris
+at  0
+
+spawn  Candle1
+coords  66  216  75
+item  Hacha
+map 1
+at  0
+
+spawn  Barril
+coords  130  216  0
+item  Pollo_frito
+at  0
+
+spawn  Candle1
+coords  176  216  140
+item  Gema_azul
+at  0
+
+spawn  Candle1
+coords  208  216  140
+item  ___100
+at  0
+
+spawn  Candle1
+coords  434  216  140
+item  ___100
+at  0
+
+spawn  Candle1
+coords  466  216  140
+item  Gema_roja
+at  0
+
+Blockade 80
+at  80
+
+spawn  Dopelganger
+coords  300  216  160
+boss 1
+map 2
+at  80
+
+spawn	DKnightSpawner
+coords  0 0 0
+2pspawn 1
+at	80
+
+spawn boss_lifebar
+coords  0 0 0
+flip 1
+at  80

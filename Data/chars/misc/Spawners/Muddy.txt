@@ -1,24 +1,27 @@
 name	         Muddy
-health	         10
+health           24
 type	         None
 antigravity	 100
 animationscript  data/scripts/oscript.c
 load	         Loda
 
 
-anim spawn
-	delay	10
-	offset	1 1
-        frame   data/chars/misc/empty.gif
-	@cmd	clearE 0
-        frame   data/chars/misc/empty.gif
-
-anim idle
+anim	idle
 	loop	1
 	delay	20
 	offset	1 1
-        frame   data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
 	@cmd	offscreenkill 1500 0
-        frame   data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
 	@cmd	MspawnR "Loda" 260 0 40 0
-        frame   data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	delay	10
+	offset	1 1
+	frame	data/chars/misc/empty.gif
+	@cmd	clearE 0
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

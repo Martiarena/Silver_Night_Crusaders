@@ -1,0 +1,477 @@
+name    	Sucubo_npc
+health          100
+mp              1
+speed           13
+type    	npc
+aimove          chase
+noquake  	1
+lifespan        30
+nopain  	1
+nodrop  	2
+death   	1
+nodieblink	2
+hostile        	enemy
+candamage       enemy
+offscreenkill 	9999
+aggresion       9999
+blockodds 1
+nopassiveblock 0
+blockflash	Empty
+score 0 -1
+animationscript	data/scripts/escript.c
+takedamagescript	data/scripts/blink.c
+load	Empty
+load    EnchantSpell_npc
+load    EHeart_MP_npc
+defense normal 0.75
+defense normal1 0.75
+defense normal2 0.75
+defense normal6 0.5
+defense normal7 0.75
+defense normal10 0.75
+defense normal17 0.75
+defense normal20 0 1 999 0 0 0 0
+defense burn 0.75
+
+icon		data/chars/misc/bgmonster.gif
+
+palette 	data/chars/succubus/succubo_palette.gif
+alternatepal	data/chars/succubus/blink.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	range	25 117
+	rangea	0 60
+	delay	7
+	offset	52 87
+	bbox	45 30 15 55
+	frame	data/chars/succubus/attack1a.gif
+	frame	data/chars/succubus/attack1b.gif
+	frame	data/chars/succubus/attack1c.gif
+	sound	data/sounds/throw_big.wav
+	attack2	5 10 87 55 0 0 0 0 0 0
+	frame	data/chars/succubus/attack1d.gif
+	attack2	50 20 95 65 0 0 0 0 0 0
+	frame	data/chars/succubus/attack1e.gif
+	delay	3
+	attack2	50 20 100 65 0 0 0 0 0 0
+	frame	data/chars/succubus/attack1f.gif
+	delay	1
+	attack2	0 0 0 0 0 0
+	frame	data/chars/succubus/attack1f.gif
+	attack	143 65 50 25 0 0 0 0 0 0
+	frame	data/chars/succubus/attack1g.gif
+	frame	data/chars/succubus/attack1h.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/succubus/attack1i.gif
+	frame	data/chars/succubus/attack1j.gif
+	delay	7
+	frame	data/chars/succubus/attack1j.gif
+	delay	1
+	frame	data/chars/succubus/attack1j.gif
+	frame	data/chars/succubus/attack1j.gif
+		
+anim	attack2
+	followcond	1
+	followanim	1
+	range	25 117
+	rangea	0 60
+	delay	7
+	offset	52 87
+	bbox	45 30 15 55
+	attack	45 30 15 55 0 0 0 0 0 0
+	frame	data/chars/succubus/attack1a.gif
+	frame	data/chars/succubus/attack1b.gif
+	frame	data/chars/succubus/attack1c.gif
+	sound	data/sounds/throw_big.wav
+	attack2	5 10 87 55 0 0 0 0 0 0
+	frame	data/chars/succubus/attack1d.gif
+	attack2	50 20 95 65 0 0 0 0 0 0
+	frame	data/chars/succubus/attack1e.gif
+	delay	3
+	attack2	50 20 100 65 0 0 0 0 0 0
+	frame	data/chars/succubus/attack1f.gif
+	delay	1
+	attack2	0 0 0 0 0 0
+	frame	data/chars/succubus/attack1f.gif
+	attack	143 65 50 25 0 0 0 0 0 0
+	frame	data/chars/succubus/attack1g.gif
+	frame	data/chars/succubus/attack1h.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/succubus/attack1i.gif
+	frame	data/chars/succubus/attack1j.gif
+	delay	7
+	frame	data/chars/succubus/attack1j.gif
+	delay	1
+	frame	data/chars/succubus/attack1j.gif
+	frame	data/chars/succubus/attack1j.gif
+		
+anim	attack3
+	followcond	1
+	followanim	1
+	range	25 117
+	rangea	0 60
+	delay	7
+	offset	52 87
+	bbox	45 30 15 55
+	attack	45 30 15 55 0 0 0 0 0 0
+	frame	data/chars/succubus/attack1a.gif
+	frame	data/chars/succubus/attack1b.gif
+	frame	data/chars/succubus/attack1c.gif
+	sound	data/sounds/throw_big.wav
+	attack2	5 10 87 55 0 0 0 0 0 0
+	frame	data/chars/succubus/attack1d.gif
+	sound	data/sounds/succubus_whip.wav
+	attack2	50 20 95 65 0 0 0 0 0 0
+	frame	data/chars/succubus/attack1e.gif
+	delay	3
+	attack2	50 20 100 65 0 0 0 0 0 0
+	frame	data/chars/succubus/attack1f.gif
+	delay	1
+	attack2	0 0 0 0 0 0
+	frame	data/chars/succubus/attack1f.gif
+	attack	143 65 50 25 0 0 0 0 0 0
+	frame	data/chars/succubus/attack1g.gif
+	frame	data/chars/succubus/attack1h.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/succubus/attack1i.gif
+	frame	data/chars/succubus/attack1j.gif
+	delay	7
+	frame	data/chars/succubus/attack1j.gif
+	delay	1
+	frame	data/chars/succubus/attack1j.gif
+	frame	data/chars/succubus/attack1j.gif
+		
+anim	attack4
+	range	25 117
+	rangea	0 60
+	delay	10
+	offset	52 87
+	bbox	45 30 15 55
+	frame	data/chars/succubus/attack1a.gif
+	frame	data/chars/succubus/attack1b.gif
+	frame	data/chars/succubus/attack1c.gif
+	delay	7
+	sound	data/sounds/throw_big.wav
+	attack2	5 10 87 55 0 0 0 0 0 0
+	frame	data/chars/succubus/attack1d.gif
+	sound	data/sounds/succubus_whip.wav
+	attack2	50 20 95 65 0 0 0 0 0 0
+	frame	data/chars/succubus/attack1e.gif
+	delay	6
+	attack2	50 20 100 65 0 0 0 0 0 0
+	frame	data/chars/succubus/attack1f.gif
+	delay	1
+	attack2	0 0 0 0 0 0
+	frame	data/chars/succubus/attack1f.gif
+	attack	143 65 50 25 0 0 0 0 0 0
+	frame	data/chars/succubus/attack1g.gif
+	frame	data/chars/succubus/attack1h.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/succubus/attack1i.gif
+	frame	data/chars/succubus/attack1j.gif
+	delay	10
+	frame	data/chars/succubus/attack1j.gif
+	delay	1
+	frame	data/chars/succubus/attack1j.gif
+	frame	data/chars/succubus/attack1j.gif
+		
+anim	backwalk
+	loop	1
+	delay	12
+	offset	52 87
+	bbox	55 40 20 45
+	frame	data/chars/succubus/walk2a.gif
+	delay	11
+	frame	data/chars/succubus/walk2b.gif
+	delay	1
+	frame	data/chars/succubus/walk2b.gif
+		
+anim	block
+	loop	0
+	delay	1
+	offset	52 87
+	blockflash	Empty
+	sound	data/sounds/jump_big.wav
+	move	-6
+	frame	data/chars/succubus/backwalk1a.gif
+	frame	data/chars/succubus/backwalk1a.gif
+	move	-5
+	frame	data/chars/succubus/backwalk1a.gif
+	frame	data/chars/succubus/backwalk1a.gif
+	frame	data/chars/succubus/backwalk1a.gif
+	move	-4
+	frame	data/chars/succubus/backwalk1a.gif
+	frame	data/chars/succubus/backwalk1a.gif
+	move	-3
+	frame	data/chars/succubus/backwalk1b.gif
+	frame	data/chars/succubus/backwalk1b.gif
+	frame	data/chars/succubus/backwalk1b.gif
+	move	-2
+	frame	data/chars/succubus/backwalk1b.gif
+	frame	data/chars/succubus/backwalk1b.gif
+	frame	data/chars/succubus/backwalk1b.gif
+	move	-1
+	frame	data/chars/succubus/backwalk1b.gif
+	frame	data/chars/succubus/backwalk1b.gif
+	frame	data/chars/succubus/backwalk1c.gif
+	delay	12
+	move	0
+	frame	data/chars/succubus/backwalk1c.gif
+	delay	11
+	frame	data/chars/succubus/backwalk1d.gif
+	delay	1
+	move	-0
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/succubus/backwalk1d.gif
+		
+anim	death
+	delay	10
+	offset	52 87
+	frame	data/chars/succubus/spawn1k.gif
+	frame	data/chars/succubus/spawn1j.gif
+	frame	data/chars/succubus/spawn1i.gif
+	frame	data/chars/succubus/spawn1h.gif
+	frame	data/chars/succubus/spawn1g.gif
+	delay	7
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1b.gif
+	frame	data/chars/succubus/spawn1a.gif
+	delay	50
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	loop	0
+	delay	14
+	offset	52 87
+	bbox	45 30 15 55
+	sound	data/sounds/succubus_laugh.wav
+	frame	data/chars/succubus/laugh1a.gif
+	frame	data/chars/succubus/laugh1b.gif
+	frame	data/chars/succubus/laugh1a.gif
+	frame	data/chars/succubus/laugh1b.gif
+	frame	data/chars/succubus/laugh1a.gif
+	frame	data/chars/succubus/laugh1b.gif
+	frame	data/chars/succubus/laugh1a.gif
+	frame	data/chars/succubus/laugh1b.gif
+	frame	data/chars/succubus/laugh1a.gif
+	frame	data/chars/succubus/laugh1b.gif
+	delay	1
+	frame	data/chars/succubus/idle1c.gif
+		
+anim	freespecial
+	delay	50
+	offset	52 87
+	bbox	45 30 15 55
+	subentity	magicseal
+	spawnframe	1 16 0 29 0
+	energycost	1
+	mponly	1
+	frame	data/chars/succubus/freespecial1a.gif
+	delay	12
+	frame	data/chars/succubus/freespecial1b.gif
+	frame	data/chars/succubus/freespecial1c.gif
+	delay	20
+	custknife	EnchantSpell_npc
+	throwframe	2 50
+	frame	data/chars/succubus/freespecial1d.gif
+	delay	1
+	frame	data/chars/succubus/freespecial1d.gif
+		
+anim	freespecial2
+	delay	50
+	offset	52 87
+	bbox	45 30 15 55
+	energycost	1
+	mponly	1
+	frame	data/chars/succubus/freespecial1a.gif
+	delay	12
+	frame	data/chars/succubus/freespecial1b.gif
+	frame	data/chars/succubus/freespecial1c.gif
+	delay	20
+	@cmd	target 1 1 0 54 0 0
+	@cmd	shoot2 "EHeart_MP_npc" 0 50
+	frame	data/chars/succubus/freespecial1d.gif
+	delay	1
+	frame	data/chars/succubus/freespecial1d.gif
+		
+anim	freespecial5
+	delay	10
+	rangea	100 200
+	range	92 50
+	offset	52 87
+	bbox	45 30 15 55
+	frame	data/chars/succubus/attack1a.gif
+	frame	data/chars/succubus/attack1b.gif
+	frame	data/chars/succubus/attack1c.gif
+	delay	7
+	sound	data/sounds/throw_big.wav
+	attack2	5 10 87 55 9 0 0 0 0 0
+	frame	data/chars/succubus/attack1d.gif
+	sound	data/sounds/succubus_whip.wav
+	attack2	85 20 55 65 9 0 0 0 0 0
+	frame	data/chars/succubus/attack1e.gif
+	delay	6
+	attack2	70 20 75 65 9 0 0 0 0 0
+	@cmd	spawn01 "EnchantSpell2_npc" 94 50 0
+	frame	data/chars/succubus/attack3f.gif
+	delay	1
+	attack2	0 0 0 0 0 0
+	frame	data/chars/succubus/attack3f.gif
+	frame	data/chars/succubus/attack3g.gif
+	frame	data/chars/succubus/attack3h.gif
+	frame	data/chars/succubus/attack1i.gif
+	frame	data/chars/succubus/attack1j.gif
+	delay	10
+	frame	data/chars/succubus/attack1j.gif
+	delay	1
+	frame	data/chars/succubus/attack1j.gif
+	frame	data/chars/succubus/attack1j.gif
+		
+anim	idle
+@script
+void self = getlocalvar("self");
+    int x = getentityproperty(self, "x");
+    int y = getentityproperty(self, "a");
+    int Sx = getentityproperty(self, "xdir");
+    int Sy = getentityproperty(self, "tossv");
+    int XPos = openborvariant("xpos");
+    int Screen = openborvariant("hResolution");
+
+	@end_script	
+	loop	1
+	delay	20
+	offset	52 87
+	bbox	45 30 15 55
+	frame	data/chars/succubus/idle1a.gif
+	frame	data/chars/succubus/idle1b.gif
+	frame	data/chars/succubus/idle1c.gif
+	delay	1
+	frame	data/chars/succubus/idle1c.gif
+		
+anim	jumpattack
+	loop	0
+	delay	10
+	offset	52 87
+	sound	data/sounds/jump_big.wav
+	frame	data/chars/succubus/jump1.gif
+	frame	data/chars/succubus/walk1a.gif
+	frame	data/chars/succubus/walk1b.gif
+	frame	data/chars/succubus/walk1a.gif
+	frame	data/chars/succubus/walk1b.gif
+	frame	data/chars/succubus/walk1a.gif
+	frame	data/chars/succubus/walk1b.gif
+	frame	data/chars/succubus/walk1a.gif
+	frame	data/chars/succubus/walk1b.gif
+		
+anim	jumpland
+	loop	0
+	delay	1
+	offset	50 87
+	bbox	40 40 18 45
+	frame	data/chars/succubus/idle1a.gif
+		
+anim	spawn
+	loop	0
+	delay	10
+	offset	52 87
+	frame	data/chars/succubus/spawn1a.gif
+	frame	data/chars/succubus/spawn1b.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1e.gif
+	delay	30
+	frame	data/chars/succubus/spawn1f.gif
+	delay	10
+	frame	data/chars/succubus/spawn1g.gif
+	frame	data/chars/succubus/spawn1h.gif
+	frame	data/chars/succubus/spawn1i.gif
+	frame	data/chars/succubus/spawn1j.gif
+	frame	data/chars/succubus/spawn1k.gif
+		
+anim	walk
+	loop	1
+	delay	12
+	offset	52 87
+	bbox	55 40 20 45
+	frame	data/chars/succubus/walk1a.gif
+	frame	data/chars/succubus/walk1b.gif
+		
+#|edited by openBor Stats v 0.67
+		

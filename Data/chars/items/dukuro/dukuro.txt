@@ -1,0 +1,61 @@
+name    	Dukuro
+score           5000
+type    	item
+facing          1
+antigravity	30
+candamage  	player
+icon 		data/chars/misc/bgitem.gif
+
+palette		data/chars/items/dukuro/dukuro_palette.gif
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	70
+	offset	6 18
+	itembox	0 0 13 18
+	frame	data/chars/items/dukuro/idle1a.gif
+	delay	2
+	frame	data/chars/items/dukuro/idle1b.gif
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	6 18
+	sound	data/sounds/secret.wav
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/dukuro/frame-01.gif
+	frame	data/chars/items/dukuro/frame-02.gif
+	frame	data/chars/items/dukuro/frame-03.gif
+	frame	data/chars/items/dukuro/frame-04.gif
+	frame	data/chars/items/dukuro/frame-05.gif
+	frame	data/chars/items/dukuro/frame-06.gif
+	frame	data/chars/items/dukuro/frame-07.gif
+	frame	data/chars/items/dukuro/frame-08.gif
+	frame	data/chars/items/dukuro/frame-09.gif
+	frame	data/chars/items/dukuro/frame-10.gif
+	frame	data/chars/items/dukuro/frame-11.gif
+	frame	data/chars/items/dukuro/frame-12.gif
+	frame	data/chars/items/dukuro/frame-13.gif
+	delay	2
+	frame	data/chars/items/dukuro/frame-14b.gif
+	delay	3
+	frame	data/chars/items/dukuro/frame-14.gif
+	delay	5
+	frame	data/chars/items/dukuro/frame-15.gif
+	frame	data/chars/items/dukuro/frame-16.gif
+	frame	data/chars/items/dukuro/frame-17.gif
+	itembox	0 0 13 18
+	frame	data/chars/items/dukuro/idle1a.gif
+	frame	data/chars/items/dukuro/idle1a.gif
+	frame	data/chars/items/dukuro/idle1b.gif
+		
+#|edited by openBor Stats v 0.67
+		

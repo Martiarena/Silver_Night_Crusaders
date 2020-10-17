@@ -1,33 +1,24 @@
 name      	Sheeba_Volaticus
-type   none
+type   		none
 health		 100
 mp		 100
 mprate           2
 speed		 12
 cantgrab	 1
+antigravity      40
+nolife		 1
+knockdowncount 	 10
 noquake		 1
-weaploss         1
 bounce		 0
 death		 1
 nodieblink	 2
-antigravity      20
+weaploss         1
 icon		 data/chars/sheeba/icon.gif
 makeinv		 3 0
 gfxshadow        0
 subject_to_wall  0
 subject_to_platform 0
 subject_to_gravity 0
-knockdowncount 10
-weapons         Sheeba
-palette		data/chars/sheeba/paletta_1.gif
-alternatepal	data/chars/sheeba/paletta_2.gif
-alternatepal	data/chars/sheeba/paletta_3.gif
-alternatepal	data/chars/sheeba/paletta_4.gif
-alternatepal	data/chars/sheeba/paletta_5.gif
-alternatepal	data/chars/sheeba/paletta_6.gif
-alternatepal	data/chars/sheeba/paletta_7.gif
-alternatepal	data/chars/sheeba/paletta_8.gif
-
 defense normal 1.5
 defense normal1 1.5
 defense normal2 1.5
@@ -36,6 +27,18 @@ defense normal17 1.5
 defense normal20 0 1 999 0 0 0 0
 defense burn 0.75
 defense shock 0.75
+
+weapons         Sheeba
+candamage	enemy obstacle shot
+
+palette		data/chars/sheeba/paletta_1.gif
+alternatepal	data/chars/sheeba/paletta_2.gif
+alternatepal	data/chars/sheeba/paletta_3.gif
+alternatepal	data/chars/sheeba/paletta_4.gif
+alternatepal	data/chars/sheeba/paletta_5.gif
+alternatepal	data/chars/sheeba/paletta_6.gif
+alternatepal	data/chars/sheeba/paletta_7.gif
+alternatepal	data/chars/sheeba/paletta_8.gif
 
 animationscript	 data/scripts/player.c
 keyscript	 data/chars/sheeba/sheebaflykey.c
@@ -105,6 +108,10 @@ com     a       freespecial12
 
 
 
+
+
+
+
 anim	attack1
 		
 anim	attack2
@@ -113,7 +120,7 @@ anim	bpain
 	loop	0
 	delay	9
 	offset	80 124
-	jumpframe	0 1.5 -1
+	weaponframe	1 1
 	bbox	70 75 20 45
 	sound	data/sounds/sheeba_pain.wav
 	frame	data/chars/sheeba/painf1.gif
@@ -230,6 +237,25 @@ anim	fall7
 	frame	data/chars/sheeba/falli8.gif
 	frame	data/chars/sheeba/falli9.gif
 		
+anim	fall8
+	delay	5
+	offset	80 124
+	@cmd	spawnbind "prose" 4 32 1
+	@cmd	spawnbind "blooda" 0 42 1
+	sound	data/sounds/sheeba_pain.wav
+	frame	data/chars/sheeba/fall1.gif
+	frame	data/chars/sheeba/fall2.gif
+	delay	10
+	frame	data/chars/sheeba/fall3.gif
+	frame	data/chars/sheeba/fall4.gif
+	frame	data/chars/sheeba/fall5.gif
+	frame	data/chars/sheeba/fall6.gif
+	frame	data/chars/sheeba/fall7.gif
+	@cmd	platform 1
+	delay	15
+	frame	data/chars/sheeba/fall8.gif
+	frame	data/chars/sheeba/fall9.gif
+		
 anim	follow1
 		
 anim	follow2
@@ -252,6 +278,8 @@ anim	follow5
 	frame	data/chars/sheeba/magic/spawn2a.gif
 		
 anim	freespecial10
+		
+anim	freespecial11
 		
 anim	freespecial12
 @script
@@ -327,6 +355,18 @@ anim	freespecial16
 anim	freespecial17
 		
 anim	freespecial2
+	loop	0
+	delay	7
+	offset	80 124
+	@cmd	keyint "ANI_FREESPECIAL5" 0 "U" 0
+	frame	data/chars/sheeba/magic/spawn2d.gif
+	frame	data/chars/sheeba/magic/spawn2c.gif
+	frame	data/chars/sheeba/magic/spawn2b.gif
+	frame	data/chars/sheeba/magic/spawn2a.gif
+	delay	1
+	frame	data/chars/sheeba/magic/spawn2a.gif
+	weaponframe	5 1
+	frame	data/chars/sheeba/magic/spawn2a.gif
 		
 anim	freespecial20
 		
@@ -339,13 +379,11 @@ anim	freespecial3
 	@cmd	limiter 9
 	frame	data/chars/sheeba/magic/spell2a.gif
 	delay	7
-	@cmd	keyint "ANI_FREESPECIAL5" 0 "U" 0
-	@cmd	keyint "ANI_FREESPECIAL8" 0 "F" 0
 	frame	data/chars/sheeba/magic/spell2a.gif
 	@cmd	mpcost 10
 	@cmd	spawn01 "fireseal" 16 29 0
 	@cmd	Triafire 16 29
-	sound	data/sounds/sheeba_attack3.wav
+	sound	data/sounds/sheeba_special.wav
 	frame	data/chars/sheeba/magic/spell2b.gif
 	frame	data/chars/sheeba/magic/spell2c.gif
 	frame	data/chars/sheeba/magic/spell2d.gif
@@ -400,7 +438,7 @@ anim	freespecial8
 	@cmd	mpcost 10
 	@cmd	spawn01 "lightningseal" 16 29 0
 	@cmd	shoot "Thunder_sh" 16 29 0
-	sound	data/sounds/sheeba_attack3.wav
+	sound	data/sounds/sheeba_special.wav
 	frame	data/chars/sheeba/magic/spell2b.gif
 	frame	data/chars/sheeba/magic/spell2c.gif
 	frame	data/chars/sheeba/magic/spell2d.gif
@@ -460,30 +498,12 @@ anim	jumpland
 		
 anim	jumpspecial
 		
-anim	fall8
-	delay	5
-	offset	80 124
-	@cmd	spawnbind "prose" 4 32 1
-	@cmd	spawnbind "blooda" 0 42 1
-	sound	data/sounds/sheeba_pain.wav
-	frame	data/chars/sheeba/fall1.gif
-	frame	data/chars/sheeba/fall2.gif
-	delay	10
-	frame	data/chars/sheeba/fall3.gif
-	frame	data/chars/sheeba/fall4.gif
-	frame	data/chars/sheeba/fall5.gif
-	frame	data/chars/sheeba/fall6.gif
-	frame	data/chars/sheeba/fall7.gif
-	@cmd	platform 1
-	delay	15
-	frame	data/chars/sheeba/fall8.gif
-	frame	data/chars/sheeba/fall9.gif
-		
 anim	pain
 	loop	0
 	delay	9
 	offset	80 124
 	jumpframe	0 1.5 -1
+	weaponframe	1 1
 	bbox	70 75 20 45
 	sound	data/sounds/sheeba_pain.wav
 	frame	data/chars/sheeba/pain1.gif
@@ -494,8 +514,8 @@ anim	pain17
 	loop	0
 	delay	9
 	offset	80 124
+	weaponframe	1 1
 	@cmd	spawnbind "blooda" 0 42 1
-	jumpframe	0 1.5 -1
 	bbox	70 75 20 45
 	sound	data/sounds/sheeba_pain.wav
 	frame	data/chars/sheeba/pain1.gif
@@ -506,8 +526,8 @@ anim	pain2
 	loop	0
 	delay	9
 	offset	80 124
+	weaponframe	1 1
 	@cmd	spawnbind "blooda" 0 42 1
-	jumpframe	0 1.5 -1
 	bbox	70 75 20 45
 	sound	data/sounds/sheeba_pain.wav
 	frame	data/chars/sheeba/pain1.gif
@@ -518,12 +538,25 @@ anim	pain7
 	loop	0
 	delay	9
 	offset	80 124
-	jumpframe	0 1.5 -1
+	weaponframe	1 1
 	bbox	70 75 20 45
 	sound	data/sounds/sheeba_pain.wav
 	frame	data/chars/sheeba/paini1.gif
 	frame	data/chars/sheeba/paini2.gif
 	frame	data/chars/sheeba/paini1.gif
+		
+anim	pain8
+	loop	0
+	delay	9
+	offset	80 124
+	weaponframe	1 1
+	@cmd	spawnbind "prose" 4 32 1
+	@cmd	spawnbind "blooda" 0 42 1
+	bbox	70 75 20 45
+	sound	data/sounds/sheeba_pain.wav
+	frame	data/chars/sheeba/pain1.gif
+	frame	data/chars/sheeba/pain2.gif
+	frame	data/chars/sheeba/pain1.gif
 		
 anim	rise
 		
@@ -547,7 +580,7 @@ anim	spain
 	loop	0
 	delay	9
 	offset	80 124
-	jumpframe	0 1.5 -1
+	weaponframe	1 1
 	bbox	70 75 20 45
 	sound	data/sounds/sheeba_pain.wav
 	frame	data/chars/sheeba/paint1.gif

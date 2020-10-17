@@ -6,10 +6,13 @@ candamage	player npc
 antigravity	100
 load  Esqueleto
 load  E._electrico
-load  E._Laser
+load  Zombi
 animationscript  data/scripts/escript.c
 
 palette		data/chars/misc/espells/lightcolumn1_palette.gif
+
+
+
 
 
 
@@ -53,6 +56,7 @@ anim	follow
 	frame	data/chars/misc/empty.gif
 	frame	data/chars/misc/espells/lightcolumn1f.gif
 	frame	data/chars/misc/empty.gif
+	sound	data/sounds/bones1.wav
 	@cmd	spawn01 "E._Electrico" 0 0 0
 	frame	data/chars/misc/espells/lightcolumn1f.gif
 	frame	data/chars/misc/empty.gif
@@ -126,15 +130,18 @@ anim	follow2
 	frame	data/chars/misc/espells/lightcolumn1e.gif
 	frame	data/chars/misc/empty.gif
 	frame	data/chars/misc/espells/lightcolumn1f.gif
+	sound	data/sounds/zombie_spawn.wav
+	@cmd	spawn01 "Zombi" -20 0 0
 	frame	data/chars/misc/empty.gif
 	frame	data/chars/misc/espells/lightcolumn1f.gif
 	frame	data/chars/misc/empty.gif
 	frame	data/chars/misc/espells/lightcolumn1f.gif
-	frame	data/chars/misc/empty.gif
-	@cmd	spawn01 "E._Laser" 0 0 0
-	frame	data/chars/misc/espells/lightcolumn1f.gif
+	@cmd	spawn01 "Zombi" 0 0 0
 	frame	data/chars/misc/empty.gif
 	frame	data/chars/misc/espells/lightcolumn1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/espells/lightcolumn1f.gif
+	@cmd	spawn01 "Zombi" 20 0 0
 	frame	data/chars/misc/empty.gif
 	frame	data/chars/misc/espells/lightcolumn1e.gif
 	frame	data/chars/misc/empty.gif
@@ -226,11 +233,12 @@ anim	spawn
 	frame	data/chars/misc/espells/lightcolumn1f.gif
 	frame	data/chars/misc/empty.gif
 	frame	data/chars/misc/espells/lightcolumn1f.gif
+	sound	data/sounds/bones1.wav
 	frame	data/chars/misc/empty.gif
-	@cmd	spawn01 "Esqueleto" 10 0 0
+	@cmd	spawn01 "Esqueleto_" 10 0 0
 	frame	data/chars/misc/espells/lightcolumn1f.gif
 	frame	data/chars/misc/empty.gif
-	@cmd	spawn01 "Esqueleto" -10 0 0
+	@cmd	spawn01 "Esqueleto_" -10 0 0
 	frame	data/chars/misc/espells/lightcolumn1f.gif
 	frame	data/chars/misc/empty.gif
 	frame	data/chars/misc/espells/lightcolumn1f.gif

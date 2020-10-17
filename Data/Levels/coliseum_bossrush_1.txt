@@ -1,0 +1,203 @@
+music		data/music/boss.ogg 367353
+panel	        data/bgs/coliseum/coliseum_arena.gif
+
+order           a
+settime	        0
+notime		1
+spawn1          140 0 240
+spawn2          100 0 240
+direction	both
+type		0 0 0
+cameratype 1
+noslow 1
+
+spawn	Coliseum_wall2
+coords  17  216  94
+at 0
+
+spawn	Coliseum_torch1
+coords  65  216  130
+flip	1
+at 0
+
+spawn	Coliseum_platform1
+coords  100  216  90
+at 0
+
+spawn	Coliseum_torch2
+coords  126  216  113
+flip	1
+at 0
+
+spawn	Coliseum_torch3
+coords  185  216  109
+flip	1
+at 0
+
+spawn	Coliseum_torch3
+coords  297  216  109
+at 0
+
+spawn	Coliseum_torch2
+coords  356  216  113
+at 0
+
+spawn	Coliseum_platform1
+coords  380  216  90
+at 0
+
+spawn	Coliseum_torch1
+coords  417  216  130
+at 0
+
+spawn	Coliseum_wall3
+coords  466  216  94
+flip	1
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round1
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 1 1
+at 0
+
+spawn boss_lifebar
+coords  0 0 0
+flip 1
+at  0
+
+spawn	SkeletonSpawner_2
+coords  0 216 0
+2pspawn 1
+at	0
+
+spawn  Gevaudan_
+coords  270  216  260
+item	Pollo_frito
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round2
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 1 1
+at 0
+
+spawn	GhostSpawner_2
+coords  0 216 0
+2pspawn 1
+at  0
+
+spawn  Sucubo
+coords  270  216  0
+item	Pollo_frito
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round3
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 1 1
+at 0
+
+blockade 81
+at 0
+
+spawn	Fake_enemy_3
+coords  0  216  240
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn  MuddySpawner
+coords  0  216  0
+2pspawn 1
+at  0
+
+spawn  R._Polilla_
+coords  160  216  190
+item	Pollo_frito
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round4
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 1 1
+at 0
+
+blockade 162
+at 0
+
+spawn	Coliseum_platform1
+coords  80  216  90
+at 162
+
+spawn	SkeletonSpawner_2
+coords  0 216 0
+2pspawn 1
+at	0
+
+spawn  Cerbero_
+coords  450  216  0
+item	Pollo_frito
+at  162
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+boss	1
+at 0

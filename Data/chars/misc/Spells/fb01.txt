@@ -1,9 +1,10 @@
 name	fb01
 type	none
-candamage enemy obstacle
 speed	10
 offscreenkill	50
 candamage enemy obstacle shot
+hostile enemy obstacle shot
+
 
 
 
@@ -28,7 +29,7 @@ anim	idle
 	delay	4
 	offset	134 118
 	hitfx	data/sounds/burnt.wav
-	attack19	133 110 30 14 12 0 0 0 0 0
+	attack19	133 110 30 14 6 0 0 0 0 0
 	frame	data/chars/misc/spells/fb01.gif
 	frame	data/chars/misc/spells/fb02.gif
 	frame	data/chars/misc/spells/fb03.gif

@@ -1,0 +1,44 @@
+name 		Shockwave_thunder
+nomove  	1
+type		none
+cantgrab 	1
+nodrop		2
+death		1
+nolife		1
+antigravity     100
+offscreenkill   70
+setlayer        40
+
+load            Shockwave_thunder_2
+
+palette		data/chars/countess/magic/shockwave_thunder1a.gif
+
+animationscript data/scripts/escript.c
+
+
+
+anim	idle
+	loop	0
+	delay	7
+	offset	16 63
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	loop	0
+	delay	7
+	offset	16 63
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/shockwave_thunder1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/shockwave_thunder1b.gif
+	frame	data/chars/misc/empty.gif
+	sound	data/sounds/thunder.wav
+	@cmd	shoot "Shockwave_thunder_2" 0 0 0 0
+	frame	data/chars/countess/magic/shockwave_thunder1c.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,24 @@
+name	         EctoSpawner_2
+health	         12
+type	        None
+antigravity	 100
+animationscript  data/scripts/oscript.c
+load	         Ectoplasma
+
+
+anim spawn
+	delay	500
+	offset	1 1
+        frame   data/chars/misc/empty.gif
+	@cmd	clearE 0
+        frame   data/chars/misc/empty.gif
+
+anim idle
+	loop	1
+	delay	200
+	offset	1 1
+        frame   data/chars/misc/empty.gif
+	@cmd	offscreenkill 500 0
+        frame   data/chars/misc/empty.gif
+	@cmd	MspawnR "Ectoplasma" 260 100 70 25
+        frame   data/chars/misc/empty.gif

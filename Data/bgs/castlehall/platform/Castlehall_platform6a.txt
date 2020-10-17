@@ -1,0 +1,23 @@
+name  		Castlehall_platform6a
+type		none
+facing	  	1
+setlayer	1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/castlehall/platform/Castlehall_platform6a.gif
+
+
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	433 68
+	platform	0 68 -8 -8 875 875 10 68
+	frame	data/bgs/castlehall/platform/platform6a.gif
+		
+#|edited by openBor Stats v 0.67
+		

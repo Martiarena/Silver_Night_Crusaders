@@ -430,10 +430,16 @@ spawn  T._de_huesos
 coords  340  216  13
 at  640
 
+Blockade  650
+at  650
+
 spawn  Brazier1
 coords  340  216  14
 item  ___20
 at  687
+
+Blockade  1080
+at  1080
 
 spawn  Ente_Helado
 coords  340  216  100
@@ -444,6 +450,9 @@ coords  340  216
 item  ___10
 at  1094
 
+Blockade  1250
+at  1250
+
 spawn  T._de_huesos
 coords  340  216  32
 at  1330
@@ -451,10 +460,6 @@ at  1330
 spawn  T._de_huesos
 coords  340  216
 at  1330
-
-spawn  Chiroptera_
-coords  360  216  30
-at  1360
 
 spawn  Brazier1
 coords  341  216  0
@@ -493,6 +498,9 @@ coords  340  216  111
 item	Pollo_frito
 flip 1
 at  2050
+
+Blockade  2180
+at  2180
 
 spawn  Ente_Helado
 coords  340  216  50
@@ -560,6 +568,9 @@ coords  340  216  78
 item  ___10
 at  3234
 
+Blockade  3375
+at  3375
+
 spawn  Ente_Helado
 coords  340  216  100
 at  3375
@@ -591,6 +602,9 @@ coords  340  216
 item  ___10
 at  3855
 
+Blockade  3880
+at  3880
+
 spawn  P._Asesino
 coords  340  216
 at  3920
@@ -607,6 +621,9 @@ coords  340  216
 item  ___10
 at  4100
 
+Blockade  4350
+at  4350
+
 spawn  P._Asesino
 coords  340  216  82
 at  4350
@@ -620,6 +637,9 @@ spawn  Brazier1
 coords  340  216  50
 item  ___10
 at  4575
+
+Blockade  4620
+at  4620
 
 spawn  P._Asesino
 coords  380  216  50
@@ -764,12 +784,15 @@ at  6550
 
 spawn	Brazier1
 coords  340  216  101
-item  P._Invisible
+item  Ajo
 at	6630
 
 spawn  Cuervo
 coords  340  216  86
 at  6700
+
+Blockade  6890
+at  6890
 
 spawn  T._de_huesos_
 coords  340  216  138
@@ -833,6 +856,9 @@ spawn  Brazier1
 coords  340  216  35
 item  ___10
 at  7370
+
+Blockade  7500
+at  7500
 
 spawn  Brazier1
 coords  340  216

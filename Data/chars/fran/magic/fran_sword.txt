@@ -1,0 +1,106 @@
+name	        Fran_sword
+type	        none
+nolife          1
+lifespan        0.7
+antigravity     100
+candamage       enemy obstacle
+
+animationscript data/scripts/prscript.c
+
+palette		data/chars/fran/magic/palette_shadow.gif
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	7
+	offset	55 63
+	frame	data/chars/fran/jumpattack1.gif
+	delay	1
+	sound	data/sounds/throw_medium.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack2	4 15 50 15 9 12 0 0 0 0
+	frame	data/chars/fran/magic/jumpattack2.gif
+	frame	data/chars/fran/magic/jumpattack2a.gif
+	frame	data/chars/fran/magic/jumpattack2.gif
+	frame	data/chars/fran/magic/jumpattack2a.gif
+	frame	data/chars/fran/magic/jumpattack2.gif
+	frame	data/chars/fran/magic/jumpattack2a.gif
+	frame	data/chars/fran/magic/jumpattack3.gif
+	frame	data/chars/fran/magic/jumpattack3a.gif
+	frame	data/chars/fran/magic/jumpattack3.gif
+	frame	data/chars/fran/magic/jumpattack3a.gif
+	frame	data/chars/fran/magic/jumpattack3.gif
+	frame	data/chars/fran/magic/jumpattack3a.gif
+	frame	data/chars/fran/magic/jumpattack4.gif
+	frame	data/chars/fran/magic/jumpattack4a.gif
+	frame	data/chars/fran/magic/jumpattack4.gif
+	frame	data/chars/fran/magic/jumpattack4a.gif
+	frame	data/chars/fran/magic/jumpattack4.gif
+	frame	data/chars/fran/magic/jumpattack4a.gif
+	delay	2
+	attack2	0 0 0 0
+	frame	data/chars/fran/magic/jumpattack5.gif
+	frame	data/chars/fran/magic/jumpattack5a.gif
+	frame	data/chars/fran/magic/jumpattack5.gif
+	frame	data/chars/fran/magic/jumpattack5a.gif
+	frame	data/chars/fran/magic/jumpattack5.gif
+	delay	1
+	sound	data/sounds/throw_medium.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack2	4 15 50 15 9 12 0 0 0 0
+	frame	data/chars/fran/magic/jumpattack2.gif
+	frame	data/chars/fran/magic/jumpattack2a.gif
+	frame	data/chars/fran/magic/jumpattack2.gif
+	frame	data/chars/fran/magic/jumpattack2a.gif
+	frame	data/chars/fran/magic/jumpattack2.gif
+	frame	data/chars/fran/magic/jumpattack2a.gif
+	frame	data/chars/fran/magic/jumpattack3.gif
+	frame	data/chars/fran/magic/jumpattack3a.gif
+	frame	data/chars/fran/magic/jumpattack3.gif
+	frame	data/chars/fran/magic/jumpattack3a.gif
+	frame	data/chars/fran/magic/jumpattack3.gif
+	frame	data/chars/fran/magic/jumpattack3a.gif
+	frame	data/chars/fran/magic/jumpattack4.gif
+	frame	data/chars/fran/magic/jumpattack4a.gif
+	frame	data/chars/fran/magic/jumpattack4.gif
+	frame	data/chars/fran/magic/jumpattack4a.gif
+	frame	data/chars/fran/magic/jumpattack4.gif
+	frame	data/chars/fran/magic/jumpattack4a.gif
+	delay	2
+	attack2	0 0 0 0
+	frame	data/chars/fran/magic/jumpattack5.gif
+	frame	data/chars/fran/magic/jumpattack5a.gif
+	frame	data/chars/fran/magic/jumpattack5.gif
+	frame	data/chars/fran/magic/jumpattack5a.gif
+	frame	data/chars/fran/magic/jumpattack5.gif
+	delay	1
+	move	-30
+	frame	data/chars/fran/magic/jumpattack1.gif
+	frame	data/chars/fran/magic/jumpattack1.gif
+	frame	data/chars/fran/magic/jumpattack1.gif
+	frame	data/chars/fran/magic/jumpattack1.gif
+	frame	data/chars/fran/magic/jumpattack1.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	55 63
+	move	30
+	frame	data/chars/fran/jumpattack1.gif
+	frame	data/chars/fran/jumpattack1.gif
+	frame	data/chars/fran/jumpattack1.gif
+	frame	data/chars/fran/jumpattack1.gif
+	frame	data/chars/fran/jumpattack1.gif
+		
+#|edited by openBor Stats v 0.67
+		

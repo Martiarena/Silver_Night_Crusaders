@@ -1,0 +1,48 @@
+name	        Darvulia_sparks
+type	        none
+setlayer	400
+nolife		1
+antigravity	100
+candamage       player  npc
+hostile         player  npc
+
+animationscript  data/scripts/escript.c
+
+palette		data/chars/darvulia/spell/spark1a.gif
+
+
+anim	idle
+	loop	0
+	delay	7
+	offset	17 28
+	sound	data/sounds/sparks1.wav
+	frame	data/chars/darvulia/spell/spark1a.gif
+	frame	data/chars/darvulia/spell/spark1b.gif
+	frame	data/chars/darvulia/spell/spark1c.gif
+	frame	data/chars/darvulia/spell/spark1d.gif
+	sound	data/sounds/sparks1.wav
+	frame	data/chars/darvulia/spell/spark1e.gif
+	frame	data/chars/darvulia/spell/spark1f.gif
+	frame	data/chars/darvulia/spell/spark1g.gif
+	frame	data/chars/darvulia/spell/spark1h.gif
+	sound	data/sounds/sparks1.wav
+	frame	data/chars/darvulia/spell/spark1i.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/spell/spark1a.gif
+	frame	data/chars/darvulia/spell/spark1b.gif
+	sound	data/sounds/sparks1.wav
+	frame	data/chars/darvulia/spell/spark1c.gif
+	frame	data/chars/darvulia/spell/spark1d.gif
+	frame	data/chars/darvulia/spell/spark1e.gif
+	frame	data/chars/darvulia/spell/spark1f.gif
+	sound	data/sounds/sparks1.wav
+	frame	data/chars/darvulia/spell/spark1g.gif
+	frame	data/chars/darvulia/spell/spark1h.gif
+	frame	data/chars/darvulia/spell/spark1i.gif
+	sound	data/sounds/sparks1.wav
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

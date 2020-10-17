@@ -31,7 +31,7 @@ load	Legion_fall_corpse
 load	Legion_fall_corpse_2
 load	Legion_fall_corpse_3
 
-diesound  data/sounds/chest.wav
+diesound  data/sounds/legiondie.wav
 
 icon		data/chars/misc/bgmonster.gif
 
@@ -86,10 +86,12 @@ takedamagescript data/scripts/blink.c
 
 
 
+
 anim	death
 	loop	0
 	offset	165 166
 	delay	14
+	sound	data/sounds/explosion-fire.wav
 	@cmd	tosserM "Legion_fall_corpse" -20 -20 -0.4 1.6
 	@cmd	tosserM "Legion_fall_corpse_2" -20 40 -0.4 1.8
 	@cmd	tosserM "Legion_fall_corpse_3" 20 20 -0.4 2
@@ -145,6 +147,7 @@ anim	follow2
 	bbox	115 127 85 100
 	attack	115 127 85 100 19 0 1 0 0 0
 	delay	14
+	sound	data/sounds/legion_scream1.wav
 	@cmd	tosserM "Legion_fall_corpse_2" 0 0 0.3 1
 	frame	data/chars/legion/legion_center1a.gif
 	frame	data/chars/legion/legion_center1b.gif
@@ -223,6 +226,7 @@ anim	follow5
 	bbox	115 127 85 100
 	attack	115 127 85 100 19 0 1 0 0 0
 	delay	14
+	sound	data/sounds/legion_scream2.wav
 	@cmd	tosserM "Legion_fall_corpse" 0 0 -0.3 1
 	frame	data/chars/legion/legion_center1a.gif
 	frame	data/chars/legion/legion_center1b.gif
@@ -260,69 +264,11 @@ anim	spawn
 	attack	115 127 85 100 19 0 1 0 0 0
 	movea	1
 	delay	50
+	sound	data/sounds/legion_scream1.wav
 	frame	data/chars/legion/legion_center1a.gif
 	frame	data/chars/legion/legion_center1a.gif
 	delay	1
-	frame	data/chars/legion/legion_center1a.gif
-	frame	data/chars/legion/legion_center1a.gif
-	frame	data/chars/legion/legion_center1a.gif
-	frame	data/chars/legion/legion_center1a.gif
-	frame	data/chars/legion/legion_center1a.gif
-	frame	data/chars/legion/legion_center1a.gif
-	frame	data/chars/legion/legion_center1a.gif
-	frame	data/chars/legion/legion_center1a.gif
-	frame	data/chars/legion/legion_center1a.gif
-	frame	data/chars/legion/legion_center1a.gif
-	frame	data/chars/legion/legion_center1a.gif
-	frame	data/chars/legion/legion_center1a.gif
-	frame	data/chars/legion/legion_center1a.gif
-	frame	data/chars/legion/legion_center1a.gif
-	delay	1
-	frame	data/chars/legion/legion_center1b.gif
-	frame	data/chars/legion/legion_center1b.gif
-	frame	data/chars/legion/legion_center1b.gif
-	frame	data/chars/legion/legion_center1b.gif
-	frame	data/chars/legion/legion_center1b.gif
-	frame	data/chars/legion/legion_center1b.gif
-	frame	data/chars/legion/legion_center1b.gif
-	frame	data/chars/legion/legion_center1b.gif
-	frame	data/chars/legion/legion_center1b.gif
-	frame	data/chars/legion/legion_center1b.gif
-	frame	data/chars/legion/legion_center1b.gif
-	frame	data/chars/legion/legion_center1b.gif
-	frame	data/chars/legion/legion_center1b.gif
-	frame	data/chars/legion/legion_center1b.gif
-	delay	1
-	frame	data/chars/legion/legion_center1c.gif
-	frame	data/chars/legion/legion_center1c.gif
-	frame	data/chars/legion/legion_center1c.gif
-	frame	data/chars/legion/legion_center1c.gif
-	frame	data/chars/legion/legion_center1c.gif
-	frame	data/chars/legion/legion_center1c.gif
-	frame	data/chars/legion/legion_center1c.gif
-	frame	data/chars/legion/legion_center1c.gif
-	frame	data/chars/legion/legion_center1c.gif
-	frame	data/chars/legion/legion_center1c.gif
-	frame	data/chars/legion/legion_center1c.gif
-	frame	data/chars/legion/legion_center1c.gif
-	frame	data/chars/legion/legion_center1c.gif
-	frame	data/chars/legion/legion_center1c.gif
-	delay	1
-	frame	data/chars/legion/legion_center1d.gif
-	frame	data/chars/legion/legion_center1d.gif
-	frame	data/chars/legion/legion_center1d.gif
-	frame	data/chars/legion/legion_center1d.gif
-	frame	data/chars/legion/legion_center1d.gif
-	frame	data/chars/legion/legion_center1d.gif
-	frame	data/chars/legion/legion_center1d.gif
-	frame	data/chars/legion/legion_center1d.gif
-	frame	data/chars/legion/legion_center1d.gif
-	frame	data/chars/legion/legion_center1d.gif
-	frame	data/chars/legion/legion_center1d.gif
-	frame	data/chars/legion/legion_center1d.gif
-	frame	data/chars/legion/legion_center1d.gif
-	frame	data/chars/legion/legion_center1d.gif
-	delay	1
+	sound	data/sounds/legion_scream2.wav
 	frame	data/chars/legion/legion_center1a.gif
 	frame	data/chars/legion/legion_center1a.gif
 	frame	data/chars/legion/legion_center1a.gif
@@ -428,6 +374,7 @@ anim	spawn
 	frame	data/chars/legion/legion_center1c.gif
 	frame	data/chars/legion/legion_center1c.gif
 	delay	1
+	sound	data/sounds/legion_scream1.wav
 	frame	data/chars/legion/legion_center1d.gif
 	frame	data/chars/legion/legion_center1d.gif
 	frame	data/chars/legion/legion_center1d.gif
@@ -473,6 +420,67 @@ anim	spawn
 	frame	data/chars/legion/legion_center1b.gif
 	frame	data/chars/legion/legion_center1b.gif
 	delay	1
+	frame	data/chars/legion/legion_center1c.gif
+	frame	data/chars/legion/legion_center1c.gif
+	frame	data/chars/legion/legion_center1c.gif
+	frame	data/chars/legion/legion_center1c.gif
+	frame	data/chars/legion/legion_center1c.gif
+	frame	data/chars/legion/legion_center1c.gif
+	frame	data/chars/legion/legion_center1c.gif
+	frame	data/chars/legion/legion_center1c.gif
+	frame	data/chars/legion/legion_center1c.gif
+	frame	data/chars/legion/legion_center1c.gif
+	frame	data/chars/legion/legion_center1c.gif
+	frame	data/chars/legion/legion_center1c.gif
+	frame	data/chars/legion/legion_center1c.gif
+	frame	data/chars/legion/legion_center1c.gif
+	delay	1
+	frame	data/chars/legion/legion_center1d.gif
+	frame	data/chars/legion/legion_center1d.gif
+	frame	data/chars/legion/legion_center1d.gif
+	frame	data/chars/legion/legion_center1d.gif
+	frame	data/chars/legion/legion_center1d.gif
+	frame	data/chars/legion/legion_center1d.gif
+	frame	data/chars/legion/legion_center1d.gif
+	frame	data/chars/legion/legion_center1d.gif
+	frame	data/chars/legion/legion_center1d.gif
+	frame	data/chars/legion/legion_center1d.gif
+	frame	data/chars/legion/legion_center1d.gif
+	frame	data/chars/legion/legion_center1d.gif
+	frame	data/chars/legion/legion_center1d.gif
+	frame	data/chars/legion/legion_center1d.gif
+	delay	1
+	frame	data/chars/legion/legion_center1a.gif
+	frame	data/chars/legion/legion_center1a.gif
+	frame	data/chars/legion/legion_center1a.gif
+	frame	data/chars/legion/legion_center1a.gif
+	frame	data/chars/legion/legion_center1a.gif
+	frame	data/chars/legion/legion_center1a.gif
+	frame	data/chars/legion/legion_center1a.gif
+	frame	data/chars/legion/legion_center1a.gif
+	frame	data/chars/legion/legion_center1a.gif
+	frame	data/chars/legion/legion_center1a.gif
+	frame	data/chars/legion/legion_center1a.gif
+	frame	data/chars/legion/legion_center1a.gif
+	frame	data/chars/legion/legion_center1a.gif
+	frame	data/chars/legion/legion_center1a.gif
+	delay	1
+	frame	data/chars/legion/legion_center1b.gif
+	frame	data/chars/legion/legion_center1b.gif
+	frame	data/chars/legion/legion_center1b.gif
+	frame	data/chars/legion/legion_center1b.gif
+	frame	data/chars/legion/legion_center1b.gif
+	frame	data/chars/legion/legion_center1b.gif
+	frame	data/chars/legion/legion_center1b.gif
+	frame	data/chars/legion/legion_center1b.gif
+	frame	data/chars/legion/legion_center1b.gif
+	frame	data/chars/legion/legion_center1b.gif
+	frame	data/chars/legion/legion_center1b.gif
+	frame	data/chars/legion/legion_center1b.gif
+	frame	data/chars/legion/legion_center1b.gif
+	frame	data/chars/legion/legion_center1b.gif
+	delay	1
+	sound	data/sounds/legion_scream2.wav
 	frame	data/chars/legion/legion_center1c.gif
 	frame	data/chars/legion/legion_center1c.gif
 	frame	data/chars/legion/legion_center1c.gif

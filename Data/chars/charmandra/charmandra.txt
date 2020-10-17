@@ -1,5 +1,5 @@
 name	    	Charmandra
-health		26
+health          18
 speed		6
 type		enemy
 nopain		1
@@ -11,13 +11,17 @@ sleep           50
 score           300 -1
 offscreenkill	500
 aimove	 	chase
+offscreen_noatk_factor 1
 hostile  player npc
 candamage player npc
 defense burn 0 0 0 0 0 0 0
 animationscript  data/scripts/escript.c
 takedamagescript data/scripts/blink.c
 
+diesound         data/sounds/diem.wav
+
 defense normal7 1.25 0 0 0 0 0 0
+defense normal16 2 0 0 0 0 0 0
 defense normal19 0.5 0 0 0 0 0 0
 defense burn 0.5 0 0 0 0 0 0
 
@@ -47,6 +51,7 @@ anim	attack1
 	frame	data/chars/charmandra/special1a.gif
 	frame	data/chars/charmandra/special1b.gif
 	delay	8
+	sound	data/sounds/explosion-fire.wav
 	custknife	fb01_e
 	throwframe	4 32
 	frame	data/chars/charmandra/special1c.gif
@@ -100,7 +105,9 @@ anim	sleep
 	hitfx	data/sounds/burnt.wav
 	burn	43 18 30 45 12 0 0 0 0 0
 	bbox	47 20 22 48
+	sound	data/sounds/firewalk.wav
 	frame	data/chars/charmandra/sleep1.gif
+	sound	data/sounds/throw_whip.wav
 	frame	data/chars/charmandra/sleep2.gif
 	frame	data/chars/charmandra/sleep3.gif
 	frame	data/chars/charmandra/sleep4.gif
@@ -118,6 +125,7 @@ anim	spawn
 	hitfx	data/sounds/burnt.wav
 	burn	43 18 30 45 12 0 0 0 0 0
 	bbox	47 20 22 48
+	sound	data/sounds/firewalk.wav
 	frame	data/chars/charmandra/sleep1.gif
 	frame	data/chars/charmandra/sleep2.gif
 	frame	data/chars/charmandra/sleep3.gif

@@ -29,7 +29,7 @@ void main()
     void iRightH = playerkeys(iPlIndex, 0, "moveright");
 
 //Move while jumping
-    if(vAniID == openborconstant("ANI_JUMP") || vAniID == openborconstant("ANI_FREESPECIAL") ){ //Jumping?
+    if(vAniID == openborconstant("ANI_JUMP")){ //Jumping?
       if(iLeftR || iRightR){ //Left or Right released?
         if(!iLeftH && !iRightH){ //Left and Right not pressed?
           changeentityproperty(vSelf, "velocity", 0);

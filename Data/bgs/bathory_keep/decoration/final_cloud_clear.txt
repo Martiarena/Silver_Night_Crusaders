@@ -1,0 +1,39 @@
+name  		Final_Cloud_clear
+type		panel
+facing	  	1
+speed		10
+setlayer 	1
+alpha		1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/bathory_keep/decoration/final_cloud1a.gif
+
+anim	spawn
+	loop	0
+	delay	1
+	offset	160 46
+	frame	data/bgs/bathory_keep/decoration/final_cloud1a.gif
+
+
+anim	idle
+	loop	1
+	delay	1
+	offset	160 46
+	frame	data/bgs/bathory_keep/decoration/final_cloud1a.gif
+	frame	data/bgs/bathory_keep/decoration/final_cloud1b.gif
+	frame	data/bgs/bathory_keep/decoration/final_cloud1c.gif
+	frame	data/bgs/bathory_keep/decoration/final_cloud1d.gif
+	frame	data/bgs/bathory_keep/decoration/final_cloud1e.gif
+	frame	data/bgs/bathory_keep/decoration/final_cloud1f.gif
+	frame	data/bgs/bathory_keep/decoration/final_cloud1g.gif
+	frame	data/bgs/bathory_keep/decoration/final_cloud1h.gif
+	frame	data/bgs/bathory_keep/decoration/final_cloud1i.gif
+	frame	data/bgs/bathory_keep/decoration/final_cloud1j.gif
+	frame	data/bgs/bathory_keep/decoration/final_cloud1k.gif
+	frame	data/bgs/bathory_keep/decoration/final_cloud1l.gif
+	frame	data/bgs/bathory_keep/decoration/final_cloud1m.gif
+	frame	data/bgs/bathory_keep/decoration/final_cloud1n.gif
+		
+#|edited by openBor Stats v 0.67
+		

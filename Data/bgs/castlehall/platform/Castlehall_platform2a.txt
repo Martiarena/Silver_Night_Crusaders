@@ -1,0 +1,21 @@
+name  		Castlehall_platform2a
+type		none
+facing	  	1
+setlayer	1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/castlehall/platform/platform2a.gif
+
+
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	98 16
+	platform	0 16 -8 -8 204 204 10 16
+	frame	data/bgs/castlehall/platform/platform2a.gif
+

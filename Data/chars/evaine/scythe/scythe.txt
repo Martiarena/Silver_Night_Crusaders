@@ -1,7 +1,7 @@
 name	Scythe
 health          3
 speed           0
-type    	enemy
+type     none
 noquake  	1
 nolife		1
 nopain  	1

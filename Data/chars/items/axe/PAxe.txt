@@ -13,10 +13,12 @@ palette	data/chars/items/weapons.gif
 
 
 
+
 anim	idle
 	loop	1
 	delay	6
 	offset	14 30
+	hitfx	data/sounds/hit-cut.wav
 	attack2	2 0 26 23 9 0 0 0 0 0
 	sound	data/chars/misc/weap/axe1.wav
 	frame	data/chars/items/axe/idle1.gif
@@ -29,6 +31,15 @@ anim	idle
 	@cmd	groundkill
 	attack2	0 2 23 26 9 0 0 0 0 0
 	frame	data/chars/items/axe/idle4.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	14 30
+	sound	data/sounds/throw2.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack2	2 0 26 23 9 0 0 0 0 0
+	frame	data/chars/items/axe/idle1.gif
 		
 #|edited by openBor Stats v 0.67
 		

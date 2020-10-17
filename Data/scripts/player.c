@@ -4,6 +4,13 @@
 #include "data/scripts/fscript.c"
 #include "data/scripts/keyfly.c"
 
+
+void stealth(int Ratio)
+{// Changes antigravity effect
+    void self = getlocalvar("self");
+    changeentityproperty(self, "stealth", Ratio);
+}
+
 void mpcost( int Cost)
 {// Spend some MP
     void self = getlocalvar("self");
@@ -90,6 +97,12 @@ void keyint(void Ani, int Frame, void Key, int Hflag)
         iRKey = playerkeys(iPIndex, 0, "jump"); // "Jump"
       } else if (Key=="A"){ //Attack Required?
         iRKey = playerkeys(iPIndex, 0, "attack"); // "Attack"
+      } else if (Key=="A2"){ //Attack Required?
+        iRKey = playerkeys(iPIndex, 0, "attack2"); // "Attack"
+      } else if (Key=="A3"){ //Attack Required?
+        iRKey = playerkeys(iPIndex, 0, "attack3"); // "Attack"
+      } else if (Key=="A4"){ //Attack Required?
+        iRKey = playerkeys(iPIndex, 0, "attack4"); // "Attack"
       } else if (Key=="S"){ //Special Required?
         iRKey = playerkeys(iPIndex, 0, "special"); // "Special"
       }
@@ -129,9 +142,9 @@ void Triafire(float dx, float dy)
   int iPI = getentityproperty(self,"playerindex"); //Get player index
   int SubWeapon = getglobalvar(iPI+"0");
 
-  shooterAnim("Fire_sh", dx, dy, 0.4, 1.8, "ANI_FOLLOW2");
+  shooterAnim("Fire_sh", dx, dy, 1, 1.5, "ANI_FOLLOW2");
   shooter2("Fire_sh", dx, dy, 1, 0);
-  shooterAnim("Fire_sh", dx, dy, 0.4, -1.8, "ANI_FOLLOW5");
+  shooterAnim("Fire_sh", dx, dy, 1, -1.5, "ANI_FOLLOW5");
 }
 
 void SubWeapon(float dx, float dy)
@@ -139,8 +152,10 @@ void SubWeapon(float dx, float dy)
    void self = getlocalvar("self");
    int iPI = getentityproperty(self,"playerindex"); //Get player index
    int SubWeapon = getglobalvar(iPI+"0");
+   int SFXKnife = loadsample("data/sounds/throw_small.wav");
 
    if (SubWeapon == 1){ //--- Knife
+      playsample(SFXKnife, 0, 120, 120, 100, 0);
       shooterAnim("PKnife", dx, dy, 1.4, 2.8, "ANI_FOLLOW2");
       shooterAnim("PKnife", dx, dy, 1.8, 1.5, "ANI_FOLLOW3");
       shooter2("PKnife", dx, dy, 2, 0);

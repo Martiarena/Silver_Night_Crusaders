@@ -1,4 +1,4 @@
-music		data/music/interiorgarden.ogg 1525860
+music		data/music/highroof.ogg 1749800
 
 panel	        data/bgs/clock_tower/clock_tower_bridge.gif
 
@@ -29,11 +29,6 @@ Hole  4622  248  0  0  128  128  35
 Hole  4753  248  0  0  95  95  35
 Hole  5106  248  0  0  125  125  35
 Hole  6280  248  0  0  108  108  35
-
-spawn	Stage5
-coords  160 240  0
-flip    1
-at      0
 
 spawn  Clocktower_front1
 coords  0  248  0
@@ -306,10 +301,14 @@ alias	Thick
 flip  1
 at  0
 
-#spawn	Stage5
-#coords  160 240  0
-#flip    1
-#at      0
+spawn	Stage5
+coords  160 240  0
+flip    1
+at      0
+
+spawn  Hidden_9
+coords  10  216 80
+at  0
 
 spawn  Brazier1
 coords  230  216  0
@@ -321,10 +320,6 @@ coords  330  216  0
 item	A._Bendita
 map	1
 at  0
-
-spawn  Chiroptera_
-coords  360  216 21
-at  15
 
 spawn  BatSpawner
 coords  0  70
@@ -378,19 +373,11 @@ flip  1
 item  Gema_azul
 at  494
 
-spawn  Chiroptera_
-coords  360  216 40
-at  495
-
 spawn  Torch
 coords  340  216  167
 flip  1
 item  Gema_roja
 at  518
-
-spawn  Chiroptera_
-coords  360  216 40
-at  535
 
 spawn  Torch
 coords  340  216  59
@@ -403,10 +390,6 @@ coords  340  216  167
 flip  1
 item ___20
 at  566
-
-spawn  Chiroptera_
-coords  360  216 40
-at  575
 
 spawn  C._Demonio
 coords  360  216  0
@@ -421,6 +404,9 @@ coords  340  216  59
 flip  1
 item ___10
 at  630
+
+Blockade  640
+at  640
 
 spawn  Charmandra
 coords  360  216  107
@@ -442,29 +428,25 @@ flip  1
 item	C._arcoiris
 at  976
 
+spawn  Brazier1
+coords  360  216  80
+item  ___20
+at  1170
+
 spawn  BatSpawner
 coords  320  0
 at  1200
 
 spawn  T._de_huesos
-coords  340  216  80
-at  1200
+coords  350  216  80
+at  1240
 
 spawn  T._de_huesos
-coords  340  214  110
-at  1200
-
-spawn  Brazier1
-coords  340  216  80
-item  ___20
-at  1250
+coords  350  214  110
+at  1240
 
 Blockade  1345
 at  1345
-
-spawn  Chiroptera_
-coords  360  216 37
-at  1480
 
 spawn  Charmandra
 coords  340  216  112
@@ -480,23 +462,29 @@ coords  340  216
 item	Pollo_frito
 at  1810
 
-spawn  T._de_huesos
-coords  340  216  64
-at  1870
-
-spawn  T._de_huesos
-coords  340  216
-at  1870
-
-spawn  T._de_huesos
-coords  340  216  32
-at  1870
-
 spawn  Brazier1
-coords  340  216
+coords  350  216
 item	Bumeran
 map	1
+at  1850
+
+Blockade  1880
+at  1880
+
+spawn  T._de_huesos
+coords  350  216  64
 at  1920
+
+spawn  T._de_huesos
+coords  350  216
+at  1920
+
+spawn  T._de_huesos
+coords  350  216  32
+at  1920
+
+Blockade  2120
+at  2120
 
 spawn  Brazier1
 coords  340  216  111
@@ -537,7 +525,7 @@ at  2700
 
 spawn  Barril
 coords  340  216
-item	P._invisible
+item	Ajo
 at  2730
 
 spawn  Barril
@@ -582,6 +570,7 @@ at  3260
 
 spawn  C._Demonio
 coords  -50  216
+item	___700
 at  3300
 
 spawn  Arana
@@ -623,32 +612,10 @@ at  4000
 Blockade  4000
 at  4000
 
-spawn  Arana
-coords  340  216  160
-at  4060
-
-spawn  gear_trap_1b
-coords  360  216  176
-flip 1
-at  4103
-
-spawn  Arana
-coords  340  216  160
-at  4215
-
-spawn  gear_trap_1b
-coords  360  216  176
-flip 1
-at  4277
-
 spawn  Ani_big_gear
 coords  360  216  0
 flip  1
 at  4350
-
-spawn  Chiroptera_
-coords  360  216 76
-at  4389
 
 spawn  gear_trap_1a
 coords  360  216  176
@@ -723,13 +690,10 @@ at  5562
 Blockade  5660
 at  5660
 
-spawn  T._de_huesos
-coords  340  216  118
-at  5750
-
-spawn  T._de_huesos_
-coords  340  216  88
-at  5750
+spawn  Brazier1
+coords  350  216  90
+item  ___100
+at  5720
 
 spawn  Brazier1
 coords  340  216  88
@@ -746,3 +710,6 @@ coords  360  216  0
 flip  1
 at  6170
 
+spawn  Hidden_10
+coords  360  216 0
+at  6230

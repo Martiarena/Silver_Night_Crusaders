@@ -42,19 +42,19 @@ anim	idle
 	frame	data/chars/succubus/spells/spell1a.gif
 	delay	7
 	@cmd	spawn01 "HeartSpell" 0 0 0
-	@cmd	target 1 1 0 -20 1 1
+	@cmd	target 1 1 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/succubus/spells/spell1b.gif
 	@cmd	spawn01 "HeartSpell" 0 0 0
 	frame	data/chars/succubus/spells/spell1a.gif
 	@cmd	spawn01 "HeartSpell" 0 0 0
-	@cmd	target 1 1 0 -20 1 1
+	@cmd	target 1 1 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/succubus/spells/spell1b.gif
 	@cmd	spawn01 "HeartSpell" 0 0 0
 	frame	data/chars/succubus/spells/spell1a.gif
 	@cmd	spawn01 "HeartSpell" 0 0 0
-	@cmd	target 1 1 0 -20 1 1
+	@cmd	target 1 1 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/succubus/spells/spell1b.gif
 	attack	0

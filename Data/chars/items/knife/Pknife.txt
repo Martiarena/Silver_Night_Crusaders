@@ -13,6 +13,9 @@ palette         data/chars/items/weapons.gif
 
 
 
+
+
+
 anim	follow1
 	delay	6
 	offset	13 11
@@ -23,6 +26,7 @@ anim	follow2
 	followanim	1
 	followcond	1
 	offset	11 11
+	hitfx	data/sounds/hit-cut.wav
 	attack9	6 2 12 12 3 0 0 0 0 0
 	frame	data/chars/items/knife/knife3.gif
 		
@@ -31,6 +35,7 @@ anim	follow3
 	followanim	1
 	followcond	1
 	offset	13 11
+	hitfx	data/sounds/hit-cut.wav
 	attack9	8 4 12 12 3 0 0 0 0 0
 	frame	data/chars/items/knife/knife2.gif
 		
@@ -40,6 +45,7 @@ anim	follow4
 	followanim	1
 	followcond	1
 	offset	13 11
+	hitfx	data/sounds/hit-cut.wav
 	attack9	6 6 12 12 3 0 0 0 0 0
 	frame	data/chars/items/knife/knife4.gif
 	@cmd	groundkill
@@ -51,6 +57,7 @@ anim	follow5
 	followanim	1
 	followcond	1
 	offset	13 11
+	hitfx	data/sounds/hit-cut.wav
 	attack9	7 6 12 12 3 0 0 0 0 0
 	frame	data/chars/items/knife/knife5.gif
 	@cmd	groundkill
@@ -62,6 +69,7 @@ anim	idle
 	followanim	1
 	followcond	1
 	offset	13 11
+	hitfx	data/sounds/hit-cut.wav
 	attack9	8 6 13 12 3 0 0 0 0 0
 	frame	data/chars/items/knife/knife1.gif
 	@cmd	groundkill

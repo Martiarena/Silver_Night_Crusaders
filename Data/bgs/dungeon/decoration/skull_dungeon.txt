@@ -6,6 +6,7 @@ offscreenkill   9999
 subject_to_platform 1
 
 palette  	data/bgs/dungeon/dungeon_misc.gif
+alternatepal  	data/bgs/dungeon/decoration/skull_dungeon_1.gif
 
 
 

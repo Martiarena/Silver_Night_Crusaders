@@ -1,0 +1,99 @@
+name    	Sparkles_health
+type    	none
+lifespan  	1
+nomove		1
+nolife          1
+nopain 		1
+death		1
+antigravity	100
+offscreenkill   500
+animationscript data/scripts/prscript.c
+
+
+palette 	 data/chars/countess/finalform/sparkles1a.gif
+
+
+
+
+
+
+
+anim	death
+	delay	1
+	offset	7 7
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	delay	10
+	offset	7 7
+	platform	1 1 -1 -1 1 1 1 1
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	1
+	followanim	1
+	followcond	1
+	offset	7 7
+	movea	1
+	hitfx	data/sounds/no-hit.wav
+	platform	1 1 -1 -1 1 1 1 1
+	frame	data/chars/items/biblia/sparkles1a.gif
+	frame	data/chars/items/biblia/sparkles1a.gif
+	frame	data/chars/items/biblia/sparkles1a.gif
+	frame	data/chars/items/biblia/sparkles1a.gif
+	frame	data/chars/items/biblia/sparkles1a.gif
+	frame	data/chars/items/biblia/sparkles1a.gif
+	frame	data/chars/items/biblia/sparkles1a.gif
+	offset	9 8
+	frame	data/chars/items/biblia/sparkles1b.gif
+	frame	data/chars/items/biblia/sparkles1b.gif
+	frame	data/chars/items/biblia/sparkles1b.gif
+	frame	data/chars/items/biblia/sparkles1b.gif
+	frame	data/chars/items/biblia/sparkles1b.gif
+	frame	data/chars/items/biblia/sparkles1b.gif
+	frame	data/chars/items/biblia/sparkles1b.gif
+	offset	7 8
+	frame	data/chars/items/biblia/sparkles1c.gif
+	frame	data/chars/items/biblia/sparkles1c.gif
+	frame	data/chars/items/biblia/sparkles1c.gif
+	frame	data/chars/items/biblia/sparkles1c.gif
+	frame	data/chars/items/biblia/sparkles1c.gif
+	frame	data/chars/items/biblia/sparkles1c.gif
+	frame	data/chars/items/biblia/sparkles1c.gif
+	offset	5 8
+	frame	data/chars/items/biblia/sparkles1d.gif
+	frame	data/chars/items/biblia/sparkles1d.gif
+	frame	data/chars/items/biblia/sparkles1d.gif
+	frame	data/chars/items/biblia/sparkles1d.gif
+	frame	data/chars/items/biblia/sparkles1d.gif
+	frame	data/chars/items/biblia/sparkles1d.gif
+	frame	data/chars/items/biblia/sparkles1d.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	7 7
+	noreflect	1
+	hitfx	data/sounds/no-hit.wav
+	attack20	0 0 14 16 3 0 1 1 0 0
+	platform	1 1 -1 -1 1 1 1 1
+@script
+    void self = getlocalvar("self");
+    int r = rand()%15;
+
+    if( frame == 0){
+      if( r > 0){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      }
+    }
+	@end_script	
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -9,8 +9,11 @@ subject_to_wall 1
 subject_to_platform 1
 subject_to_obstacle 0
 
+diesound	data/sounds/candlecut.wav
+
 palette 	 data/chars/destructible/brazier1/brazier1_palette.gif
 alternatepal	 data/chars/destructible/brazier1/brazier1_palette_alt.gif
+
 
 
 

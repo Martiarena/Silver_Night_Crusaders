@@ -1,5 +1,5 @@
 name     Ente_Helado
-health          32
+health          24
 nomove  	1 1
 type		enemy
 cantgrab 	1
@@ -11,10 +11,13 @@ subject_to_gravity 0
 setlayer        10
 offscreenkill	500
 Score           500 -1
+offscreen_noatk_factor 1
 load            Ice
 load    	ShadeIce
 load            iceseal
 load     	Icedie
+
+diesound        data/sounds/femaledemon_die.wav
 
 icon 		data/chars/misc/bgmonster.gif
 
@@ -23,12 +26,15 @@ alternatepal	data/chars/iceshade/blink.gif
 
 defense normal4 3 0 0 0 0 0 0
 defense attack7 0.5 0 0 0 0 0 0
+defense normal15 2 0 0 0 0 0 0
 defense normal19 1.5 0 0 0 0 0 0
 defense burn 1.5 0 0 0 0 0 0
+defense schock 2 0 0 0 0 0 0
 
 
 animationscript  data/scripts/escript.c
 takedamagescript data/scripts/blink.c
+
 
 
 
@@ -44,6 +50,7 @@ anim	death
 	spawnframe	0 0 0 40 0
 	delay	5
 	offset	23 87
+	sound	data/sounds/icebreak.wav
 	frame	data/chars/iceshade/death1a.gif
 	frame	data/chars/iceshade/death1b.gif
 	frame	data/chars/iceshade/death1c.gif
@@ -60,7 +67,7 @@ anim	follow1
 	offset	23 87
 	bbox	20 27 15 50
 	hitfx	data/sounds/icebreak.wav
-	attack7	20 27 15 50 12 0 0 0 0
+	attack7	20 27 15 50 9 0 0 0 0
 	frame	data/chars/iceshade/idle.gif
 	frame	data/chars/iceshade/idle.gif
 	@cmd	clearL
@@ -69,9 +76,12 @@ anim	follow1
 	delay	30
 	@cmd	spawn01 "iceseal" 20 40 0
 	frame	data/chars/iceshade/attack1a.gif
+	delay	1
+	sound	data/sounds/femaledemon_magic.wav
+	frame	data/chars/iceshade/attack1a.gif
 	delay	10
 	bbox	20 27 15 50
-	attack7	20 27 15 50 12 0 0 0 0
+	attack7	20 27 15 50 9 0 0 0 0
 	@cmd	shooter2 "Ice" 30 60 0.5 0
 	frame	data/chars/iceshade/attack1b.gif
 	@cmd	shooter2 "Ice" 30 50 0.5 0.5
@@ -96,7 +106,7 @@ anim	follow1
 	frame	data/chars/iceshade/attack1b.gif
 	@cmd	shooter2 "Ice" 30 50 0.5 -0.5
 	frame	data/chars/iceshade/attack1c.gif
-	@cmd	looper 5 4
+	@cmd	looper 6 4
 	frame	data/chars/iceshade/attack1c.gif
 	frame	data/chars/iceshade/attack1d.gif
 	frame	data/chars/iceshade/idle.gif
@@ -110,7 +120,7 @@ anim	idle
 	offset	23 87
 	bbox	20 27 15 50
 	hitfx	data/sounds/icebreak.wav
-	attack7	20 27 15 50 12 0 0 0 0 0
+	attack7	20 27 15 50 9 0 0 0 0 0
 	frame	data/chars/iceshade/idle.gif
 	delay	12
 	@cmd	targetT 40 0 -10 1
@@ -121,6 +131,7 @@ anim	idle
 	@cmd	looper 3 10
 	frame	data/chars/iceshade/idle.gif
 	delay	14
+	sound	data/sounds/femaledemon_attack.wav
 	@cmd	spawn01 "ShadeIce" 30 40 0
 	frame	data/chars/iceshade/attack1a.gif
 	delay	21
@@ -130,6 +141,18 @@ anim	idle
 	delay	5
 	attack7	0
 	frame	data/chars/iceshade/attack1d.gif
+		
+anim	spawn
+	loop	0
+	delay	7
+	offset	23 87
+	frame	data/chars/iceshade/spawn1a.gif
+	frame	data/chars/iceshade/spawn1b.gif
+	frame	data/chars/iceshade/spawn1c.gif
+	frame	data/chars/iceshade/spawn1d.gif
+	frame	data/chars/iceshade/spawn1e.gif
+	frame	data/chars/iceshade/spawn1f.gif
+	frame	data/chars/iceshade/spawn1g.gif
 		
 #|edited by openBor Stats v 0.67
 		

@@ -1,7 +1,7 @@
 name    	Mimic
-health          7
+health          9
 nomove  	1 1
-type		enemy
+type		obstacle
 facing          1
 cantgrab 	1
 nodrop  	2
@@ -17,6 +17,7 @@ score	 	400 -1
 hostile         player npc
 candamage 	player npc
 icon		data/chars/misc/bgmonster.gif
+diesound        data/sounds/die2.wav
 
 palette          data/chars/mimic/mimic_palette.gif
 alternatepal     data/chars/mimic/blink_palette.gif
@@ -49,12 +50,14 @@ takedamagescript data/scripts/blink.c
 
 
 
-anim	attack
+
+anim	follow2
 	rangea	0 14
 	range	-10 22
 	loop	0
 	delay	3
 	offset	13 31
+	platform	-999 -999 -5 -5 5 5 10 10
 	@script
 	void self = getlocalvar("self");
  	if(frame == 9){
@@ -65,11 +68,12 @@ anim	attack
 	frame	data/chars/mimic/attack1a.gif
 	frame	data/chars/mimic/attack1b.gif
 	frame	data/chars/mimic/attack1c.gif
-	attack	5 7 18 24 19 0 0 0 0 0
+	attack	5 7 18 24 9 0 0 0 0 0
 	frame	data/chars/mimic/attack1d.gif
 	frame	data/chars/mimic/attack1e.gif
 	frame	data/chars/mimic/attack1f.gif
 	frame	data/chars/mimic/attack1g.gif
+	sound	data/sounds/mimic_spawn.wav
 	frame	data/chars/mimic/attack1h.gif
 	frame	data/chars/mimic/attack1i.gif
 	attack	0 0 0 0
@@ -80,6 +84,7 @@ anim	death
 	loop	0
 	delay	7
 	offset	13 31
+	platform	-999 -999 -5 -5 5 5 10 10
 	subentity	edie
 	spawnframe	0 0 0 30 0
 	frame	data/chars/mimic/death1a.gif
@@ -97,8 +102,9 @@ anim	follow
 	loop	1
 	delay	7
 	offset	13 31
+	platform	-999 -999 -5 -5 5 5 10 10
 	bbox	5 1 18 30
-	attack	5 1 18 30 19 0 0 0 0 0
+	attack	5 1 18 30 6 0 0 0 0 0
 	frame	data/chars/mimic/idle2a.gif
 	frame	data/chars/mimic/idle2b.gif
 	frame	data/chars/mimic/idle2c.gif
@@ -109,15 +115,24 @@ anim	follow
 anim	idle
 	loop	0
 	delay	1
+	platform	-999 -999 -5 -5 5 5 10 10
 	offset	13 31
 	bbox	8 20 11 11
+	followanim 2
+	followcond 1
+	hitfx	data/sounds/no-hit.wav
+	attack20	5 1 18 30 0 0 1 1 0 0
+	noreflect	1
 	frame	data/chars/mimic/idle1a.gif
 		
 anim	spawn
 	loop	0
-	delay	1
+	delay	1000
+	landframe	1
+	platform	-999 -999 -5 -5 5 5 10 10
 	offset	13 31
-	bbox	8 20 11 11
+	frame	data/chars/mimic/idle1a.gif
+	delay	7
 	frame	data/chars/mimic/idle1a.gif
 		
 #|edited by openBor Stats v 0.67

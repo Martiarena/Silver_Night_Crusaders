@@ -1,0 +1,37 @@
+name	EnchantSpell_npc
+type	none
+candamage enemy
+speed 20
+offscreenkill	50
+remove          0
+load		HeartSpell
+animationscript data/scripts/cscript.c
+
+palette		data/chars/succubus/succubo_palette.gif
+
+anim	death
+	loop	0
+	delay	4
+	offset	134 118
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	14
+	offset	46 9
+	attack	30 0 61 17 0 0 0 0 0 0
+	frame	data/chars/succubus/spells/spell2a.gif
+	frame	data/chars/succubus/spells/spell2b.gif
+	@cmd	spawn01 "HeartSpell" 0 0 0
+	frame	data/chars/succubus/spells/spell2a.gif
+	frame	data/chars/succubus/spells/spell2b.gif
+	@cmd	spawn01 "HeartSpell" 0 0 0
+	frame	data/chars/succubus/spells/spell2a.gif
+	frame	data/chars/succubus/spells/spell2b.gif
+	@cmd	spawn01 "HeartSpell" 0 0 0
+	frame	data/chars/succubus/spells/spell2a.gif
+	attack	0
+	frame	data/chars/succubus/spells/spell2b.gif
+		
+#|edited by openBor Stats v 0.67
+		

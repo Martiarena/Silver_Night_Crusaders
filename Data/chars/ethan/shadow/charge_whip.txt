@@ -1,0 +1,47 @@
+name    	Charge_whip
+type    	none
+lifespan  	1
+alpha		1
+antigravity     100
+setlayer	1
+candamage	enemy obstacle
+
+animationscript  data/scripts/escript.c
+
+palette		data/chars/ethan/shadow/charge_whip1a.gif
+
+
+anim	idle
+	delay	1
+	move	1
+	offset	47 22
+	frame	data/chars/ethan/shadow/charge_whip1e.gif
+	frame	data/chars/ethan/shadow/charge_whip1e.gif
+	frame	data/chars/ethan/shadow/charge_whip1e.gif
+	frame	data/chars/ethan/shadow/charge_whip1d.gif
+	frame	data/chars/ethan/shadow/charge_whip1d.gif
+	frame	data/chars/ethan/shadow/charge_whip1d.gif
+	frame	data/chars/ethan/shadow/charge_whip1c.gif
+	frame	data/chars/ethan/shadow/charge_whip1c.gif
+	frame	data/chars/ethan/shadow/charge_whip1c.gif
+	burn	25 7 50 31 19 0 0 0 0 0
+	frame	data/chars/ethan/shadow/charge_whip1b.gif
+	frame	data/chars/ethan/shadow/charge_whip1b.gif
+	frame	data/chars/ethan/shadow/charge_whip1b.gif
+	burn	25 4 68 35 19 0 0 0 0 0
+	frame	data/chars/ethan/shadow/charge_whip1a.gif
+	frame	data/chars/ethan/shadow/charge_whip1a.gif
+	frame	data/chars/ethan/shadow/charge_whip1a.gif
+	frame	data/chars/ethan/shadow/charge_whip1a.gif
+	frame	data/chars/ethan/shadow/charge_whip1a.gif
+	frame	data/chars/ethan/shadow/charge_whip1a.gif
+	frame	data/chars/ethan/shadow/charge_whip1a.gif
+	burn	0 0 0 0
+	frame	data/chars/ethan/shadow/charge_whip1f.gif
+	frame	data/chars/ethan/shadow/charge_whip1g.gif
+	frame	data/chars/ethan/shadow/charge_whip1h.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

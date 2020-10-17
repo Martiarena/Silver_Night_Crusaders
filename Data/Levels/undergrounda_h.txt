@@ -1,0 +1,610 @@
+music		data/music/underground_reservoir.ogg 945945
+
+background	data/bgs/underground/underground_back.gif
+panel	        data/bgs/underground/underground_cave.gif
+
+order           a
+settime	        0
+notime		1
+spawn1          80 0 240
+spawn2          40 0 240
+direction	both
+type		0 0 0
+cameratype 1
+Hole  490  248  0  0  120  120  40
+Hole  615  248  0  0  70  70  40
+Hole  690  248  0  0  203  203  40
+Hole  2626  248  0  0  200  200  40
+Hole  2830  248  0  0  180  180  40
+Hole  3015  248  0  0  180  180  40
+Hole  3200  248  0  0  180  180  40
+Hole  3385  248  0  0  230  230  40
+Hole  3620  248  0  0  130  130  40
+Hole  3755  248  0  0  130  130  40
+Hole  3890  248  0  0  149  149  40
+Hole  4534  248  0  0  550  550  40
+
+spawn	Stage2
+coords  160 240  0
+flip    1
+at      0
+
+spawn  Wall_cave1
+coords  8  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Wall_cave2
+coords  18  216  114
+alias	Thick
+flip  1
+at  0
+
+spawn  Wall_cave2
+coords  33  216  188
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_roof1
+coords  60  216  36
+flip  1
+at  0
+
+spawn  Roof_cave
+coords  365  216  162
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_rock1
+coords  369  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_bridge1
+coords  568  216  18
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_rock2
+coords  670  216
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_rock3
+coords  711  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_rock4
+coords  807  216  57
+flip  1
+at  0
+
+spawn  Platform_rock5
+coords  1131  216  80
+flip  1
+at  0
+
+spawn  Platform_rock6
+coords  1201  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_rock8
+coords  1672  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_rock9
+coords  1754  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_rock10
+coords  1810  216  48
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_rock11
+coords  1882  216  71
+flip  1
+at  0
+
+spawn  Platform_rock11
+coords  2120  216  60
+flip  1
+at  0
+
+spawn  Spike_trap
+coords  2132  216
+at  0
+
+spawn  Platform_rock11
+coords  2325  216  43
+flip  1
+at  0
+
+spawn  Platform_rock17
+coords  2444  216  13
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_rock18
+coords  2504  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_rock19
+coords  2588  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_bridge2
+coords  2794  216  42
+alias	Thick
+flip  1
+at  0
+
+spawn  Waterfall_f2
+coords  3000  216  0
+flip  1
+at  0
+
+spawn  Platform_bridge4
+coords  3013  216  62
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_bridge3
+coords  3265  216  44
+alias	Thick
+flip  1
+at  0
+
+spawn  Waterfall_f1
+coords  3300  216  0
+flip  1
+at  0
+
+spawn  Platform_bridge12
+coords  3417  216  56
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_bridge9
+coords  3473  216  44
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_bridge8
+coords  3615  216  33
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_bridge7
+coords  3754  216  44
+alias	Thick
+flip  1
+at  0
+
+spawn  Waterfall_f3
+coords  3800  216  0
+flip  1
+at  0
+
+spawn  Platform_bridge9
+coords  3899  216  45
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_bridge10
+coords  3952  216  54
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_bridge11
+coords  3977  216  68
+alias	Thick
+flip  1
+at  0
+
+spawn  Waterfall_f2
+coords  4000  216  0
+flip  1
+at  0
+
+spawn  Platform_rock12
+coords  4077  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_rock13
+coords  4126  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_rock14
+coords  4277  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Waterfall_f1
+coords  4400  216  0
+flip  1
+at  0
+
+spawn  Platform_rock15
+coords  4471  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Platform_dock1
+coords  4639  216  55
+alias	Thick
+flip  1
+at  0
+
+spawn  Dock_c
+coords  4650  248  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Balsa
+coords  4775  216  33
+alias	Thick
+flip  1
+at  0
+
+spawn  Waterfall1a
+coords  4820  248  0
+flip  1
+at  0
+
+spawn  Candle1
+coords  45  216  90
+item	___10
+at  0
+
+spawn  Candle1
+coords  165  216  50
+item	___10
+at  0
+
+spawn  Brazier1
+coords  223  216  0
+item	___20
+at  0
+
+spawn  Moho
+coords  297  216  34
+flip  1
+at  0
+
+spawn  Moho
+coords  360  216  34
+flip  1
+at  7
+
+spawn  Moho
+coords  360  216  34
+flip  1
+at  78
+
+spawn  BatSpawner
+coords  0  216
+at  300
+
+spawn  Stalactite
+coords  360  216  140
+flip  1
+at  306
+
+spawn  Brazier1
+coords  360  216  33
+item  Bomba
+map 1
+at  310
+
+spawn  Stalactite
+coords  360  216  140
+flip  1
+at  443
+
+Blockade  470
+at  470
+
+spawn  Candle1
+coords  360  216  40
+item	___10
+at  580
+
+spawn  Fake_stalactite_1
+coords  360  216  140
+flip 1
+item C._Arcoiris
+at  632
+
+spawn  Esqueleto
+coords  360  216 0
+at  650
+
+spawn  Chiroptera_
+coords  360  216  148
+flip 1
+at  700
+
+spawn  Candle1
+coords  360  216  40
+item	___50
+at  770
+
+spawn  Chiroptera_
+coords  360  216  38
+at  780
+
+spawn  Fake_wall_c1
+coords  353  216  111
+alias	Thick
+at  850
+
+spawn  Candle1
+coords  360  216  40
+item	___10
+at  920
+
+spawn  Stalactite
+coords  360  216  139
+flip  1
+at  957
+
+spawn  Stalactite
+coords  360  216  139
+flip  1
+at  1077
+
+spawn  Esqueleto
+coords  350  216
+at  1100
+
+spawn  Esqueleto
+coords  380  216
+at  1150
+
+spawn  Stalactite
+coords  360  216  139
+flip  1
+at  1193
+
+Blockade  1200
+at  1200
+
+spawn  Candle1
+coords  360  216  40
+item	___10
+at  1250
+
+spawn  Candle1
+coords  360  216  100
+item	___20
+at  1320
+
+spawn  Flamataura
+coords  360  216  61
+at  1320
+
+spawn  Candle1
+coords  360  216  140
+item	Gema_azul
+at  1400
+
+spawn  Candle1
+coords  360  216  120
+item	___50
+at  1520
+
+spawn  Platform_rock
+coords  360  216  110
+flip  1
+at  1640
+
+Blockade  1690
+at  1690
+
+spawn  BatSpawner
+coords  0  210
+at  1700
+
+spawn  Chiroptera_
+coords  360  216  148
+at  1710
+
+spawn  Candle1
+coords  360  216  110
+item	___50
+at  1760
+
+spawn  Stalactite
+coords  360  216  139
+flip  1
+at  1765
+
+spawn  Platform_rock
+coords  360  216  95
+flip  1
+at  1870
+
+spawn  Chiroptera_
+coords  360  216  148
+at  1935
+
+spawn  Candle1
+coords  360  216  95
+item	___50
+at  1965
+
+spawn  Barril
+coords  360  216  61
+item	___250
+at  2125
+
+spawn  Stalactite
+coords  360  216  139
+flip  1
+at  2368
+
+spawn  Esqueleto
+coords  380  216  60
+at  2430
+
+spawn  Brazier1
+coords  360  216  59
+item	___50
+at  2500
+
+Blockade  2550
+at  2550
+
+spawn	SahaginSpawner
+coords  360  216  0
+at  2550
+
+spawn	Sahagin
+coords  270  216  0
+at  2550
+
+spawn  Brazier1
+coords  360  216  80
+item	___50
+at  2650
+
+spawn  Brazier1
+coords  360  216  61
+item	___50
+at  2820
+
+spawn  C._Demonio
+coords  360  216  61
+at  3000
+
+spawn  Brazier1
+coords  360  216  61
+item	___50
+at  3020
+
+spawn	Sahagin
+coords  50  216  0
+at  3150
+
+spawn  Brazier1
+coords  360  216  50
+item	___50
+at  3260
+
+spawn  Esqueleto
+coords  360  216  62
+at  3400
+
+spawn  Brazier1
+coords  360  216  62
+item  Gema_roja
+at  3520
+
+spawn	Sahagin
+coords  240  216  0
+at  3685
+
+spawn  BatSpawner
+coords  0  210
+at  3700
+
+spawn  Chiroptera_
+coords  360  216  148
+at  3710
+
+spawn  Esqueleto
+coords  360  216  25
+at  3725
+
+spawn  Stalactite
+coords  360  216  140
+flip  1
+at  3750
+
+spawn  Candle1
+coords  360  216  100
+item	___20
+at  3765
+
+spawn  Candle1
+coords  360  216  130
+item	___20
+at  3830
+
+Blockade  3850
+at  3850
+
+spawn  Brazier1
+coords  360  216  86
+item	Bumeran
+map 1
+at  3900
+
+spawn  Candle1
+coords  360  216  130
+item	___20
+at  3965
+
+spawn  Flamataura
+coords  360  216  85
+at  4000
+
+spawn  Fake_platform_2
+coords  360  216  40
+flip 1
+alias	Thick
+item  Pollo_frito
+at  4030
+
+spawn  Candle1
+coords  340  216  80
+item	___20
+at  4100
+
+spawn  Chiroptera_
+coords  360  216  148
+at  4110
+
+spawn  Stalactite
+coords  360  216  140
+flip  1
+at  4150
+
+spawn  ToWaterfall
+coords  360  216  50
+flip  1
+at  4420

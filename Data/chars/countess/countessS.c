@@ -1,5 +1,3 @@
-//Script for Graham
-
 #include "data/scripts/library/spawn.h"
 #include "data/scripts/library/target.h"
 #include "data/scripts/library/basic.h"

@@ -2,13 +2,21 @@ name		Electricball
 lifespan  	3
 facing 1
 nolife	1
+falldie 1
+death 1
+offscreenkill 50
 type		none
 candamage	player npc
 
+animationscript data/scripts/escript.c
 
-
-
-
+anim	spawn
+	loop	0
+	delay	7
+	offset	16 122
+	hitfx	data/sounds/jolted.wav
+	shock	5 0 22 122 25 0 1 0 0 0
+	frame	data/chars/countess/magic/electricball1m.gif
 
 
 
@@ -24,8 +32,18 @@ anim	idle
 	frame	data/chars/countess/magic/electricball1p.gif
 	frame	data/chars/countess/magic/electricball1q.gif
 	frame	data/chars/countess/magic/electricball1r.gif
+	delay	6
 	frame	data/chars/countess/magic/electricball1s.gif
 	shock	0 0 0 0
+	delay	1
+	frame	data/chars/countess/magic/electricball1s.gif
+		
+anim	death
+	loop	0
+	delay	7
+	offset	16 122
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
 	frame	data/chars/misc/empty.gif
 		
 #|edited by openBor Stats v 0.67

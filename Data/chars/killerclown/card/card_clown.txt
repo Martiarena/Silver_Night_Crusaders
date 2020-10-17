@@ -1,11 +1,16 @@
 name	        Card_clown
 type	        none
 nolife          1
+lifespan        5
 offscreenkill   100
 antigravity     100
 candamage       player npc
 
+animationscript data/scripts/prscript.c
+
 palette		data/chars/killerclown/card/cardattack1a.gif
+
+
 
 
 
@@ -24,11 +29,13 @@ anim	idle
 	offset	11 2
 	followanim	1
 	followcond	1
-	attack10	0 0 20 5 19 0 0 0 0 0
+	attack10	0 0 20 5 12 0 0 0 0 0
 	hitfx	data/sounds/slash.wav
 	frame	data/chars/killerclown/card/cardattack1a.gif
+	@cmd	groundkill
 	frame	data/chars/killerclown/card/cardattack1b.gif
 	delay	1
+	@cmd	groundkill
 	attack10	0
 	frame	data/chars/killerclown/card/cardattack1a.gif
 		

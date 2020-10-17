@@ -16,6 +16,7 @@ palette         data/chars/driade/driade_palette.gif
 
 
 
+
 anim	death
 	loop	0
 	delay	7

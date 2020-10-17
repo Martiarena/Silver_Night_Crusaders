@@ -7,6 +7,10 @@ void main()
     int iDir = getentityproperty(vSelf, "direction");  //Get current facing direction
     int MP = getentityproperty(vSelf,"mp"); //Get current MP
     void Familiar = getentityvar(vSelf, 1);
+    void StoneCircle = getentityvar(vSelf, 2);
+    int SFX = loadsample("data/chars/char/sp4.wav");
+    char StoName;
+    int StoEx;
 
     void iUp = playerkeys(iPlIndex, 1, "moveup"); // New key status of "Up"
     void iDown = playerkeys(iPlIndex, 1, "movedown"); // New key status of "Down"
@@ -60,13 +64,15 @@ void main()
       }
     }
 
-// Summon & kill Familiar
-    if (iAttack3){ //Attack3 pressed?
-      if(Familiar==NULL() && MP >= 4){
-        spawner("NOwl",-30, 50, 0);
-      } else {
-        killentity(Familiar);
-        setentityvar(vSelf, 1, NULL());
+    // Summon & kill Familiar
+    if(!iUpH){
+      if (iAttack3){ //Attack3 pressed?
+        if(Familiar==NULL() && MP >= 4){
+          spawner("NOwl",-30, 50, 0);
+        } else {
+          killentity(Familiar);
+          setentityvar(vSelf, 1, NULL());
+        }
       }
     }
 
@@ -75,13 +81,42 @@ void main()
       setentityvar(vSelf, 1, NULL());
     }
 
-// Order Familiar to attack
+    // Order Familiar to attack
     if (iAttack && vAniID != openborconstant("ANI_DIE")){ //Attack pressed?
       if(Familiar!=NULL()){
         void FamiID = getentityproperty(Familiar,"animationID");
         if(FamiID == openborconstant("ANI_IDLE") ){ //Familiar in Idle state?
           performattack(Familiar, openborconstant("ANI_ATTACK1")); //Attack!
           changeentityproperty(vSelf, "mp", MP-5);
+        }
+      }
+    }
+
+// Summon & shoot Stone Circle
+    if(vAniID == openborconstant("ANI_IDLE") || vAniID == openborconstant("ANI_FREESPECIAL11")){ //Attack4 pressed?
+      if(iAttack4){
+        if(iUpH){
+          if(StoneCircle!=NULL()){
+            StoName = getentityproperty(StoneCircle,"name");
+            StoEx = getentityproperty(StoneCircle,"exists");
+
+            if(StoName=="StoneC" && StoEx==1){
+              bindentity(StoneCircle, NULL());
+              if(iDir==1){
+                changeentityproperty(StoneCircle, "velocity", 1.5);
+              } else {
+                changeentityproperty(StoneCircle, "velocity", -1.5);
+              }
+            } else {
+              StoneCircle=NULL();
+            }
+            setentityvar(vSelf, 2, NULL());
+          }
+          if(StoneCircle==NULL() && MP >= 30){
+            spawnBind("StoneC",0, 5, 1, 2);
+            playsample(SFX, 0, 120, 120, 100, 0);  
+            changeentityproperty(vSelf, "mp", MP-30);
+          }
         }
       }
     }
@@ -136,4 +171,24 @@ void spawner(void vName, float fX, float fY, float fZ)
         setentityvar(self, 1, vSpawn);
 	changeentityproperty(vSpawn, "owner", self);   
 	return vSpawn; //Return spawn
+}
+
+void spawnBind(void vName, float fX, float fY, float fZ, int Num)
+{ //Spawns entity next to caller and set them as child.
+  //
+  //vName: Model name of entity to be spawned in.
+  //fX: X location adjustment.
+  //fY: Y location adjustment
+      //fZ: Z location adjustment
+
+  int player = getlocalvar("player");
+  void self = getplayerproperty(player, "entity");
+  void vSpawn; //Spawn object.
+  
+  vSpawn = spawn01(vName, fX, fY, fZ); //Spawn in entity.
+
+  changeentityproperty(vSpawn, "parent", self); //Set caller as parent.
+    bindentity(vSpawn, self, fX, fZ, fY);
+        setentityvar(self, Num, vSpawn);  
+  return vSpawn; //Return spawn
 }

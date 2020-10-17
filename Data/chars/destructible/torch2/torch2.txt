@@ -1,0 +1,45 @@
+name    	Torch2
+health          1
+type    	obstacle
+nomove		1
+nolife          1
+death		1
+setlayer	3
+antigravity	100
+subject_to_wall 0
+subject_to_obstacle 0
+
+diesound            data/sounds/candlecut.wav
+
+palette 	 data/chars/destructible/torch2/antorcha1a.gif
+
+
+anim	death
+@script
+    void self = getlocalvar("self");
+
+    if(frame==2){
+      killentity(self); //Suicide!
+    }
+	@end_script	
+	delay	5
+	offset	4 18
+	sound	data/sounds/rock_break1.wav
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	delay	300
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	9
+	offset	9 25
+	bbox	6 15 12 16
+	platform	21 69 -10 -10 10 10 10 10
+	frame	data/chars/destructible/torch2/antorcha1a.gif
+	frame	data/chars/destructible/torch2/antorcha1b.gif
+	frame	data/chars/destructible/torch2/antorcha1c.gif
+	frame	data/chars/destructible/torch2/antorcha1d.gif
+		
+#|edited by openBor Stats v 0.67
+		

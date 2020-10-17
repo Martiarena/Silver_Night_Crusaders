@@ -21,13 +21,13 @@ anim	idle
 	loop	0
 	delay	3
 	offset	84 104
-	attack	40 35 90 65 19 0 0 0 0 0
+	attack	40 35 90 65 25 0 0 0 0 0
 	frame	data/chars/legion/corpse/acid1a.gif
 	frame	data/chars/legion/corpse/acid1b.gif
-	attack	30 25 110 80 19 0 0 0 0 0
+	attack	30 25 110 80 25 0 0 0 0 0
 	frame	data/chars/legion/corpse/acid1c.gif
 	frame	data/chars/legion/corpse/acid1d.gif
-	attack	20 25 130 80 19 0 0 0 0 0
+	attack	20 25 130 80 25 0 0 0 0 0
 	frame	data/chars/legion/corpse/acid1e.gif
 	frame	data/chars/legion/corpse/acid1f.gif
 	attack	0 0 0 0 0 0 0

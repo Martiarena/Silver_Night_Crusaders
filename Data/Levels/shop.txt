@@ -96,30 +96,33 @@ coords  337  216  104
 item  ___400
 at  0
 
-spawn  Knight
-aggression 3
+spawn  Guard
+aggression 9999
 coords  185  216
 at  0
 
-spawn  Knight
-aggression 3
+spawn  Guard
+aggression 9999
 coords  265  216
 at  0
 
-spawn  Knight
+spawn  Guard
+aggression 3
 coords  10  216
 at  0
 
-spawn  Esqueleto_npc
+spawn  Esqueleto
 alias	Esqueleto
 coords  225  216
-health  1
+health  4
+aggression 0
 at  0
 
-spawn  Esqueleto_npc
+spawn  Esqueleto
 alias	Esqueleto
 coords  240  216  0
-health  1
+health  2
+aggression 0
 at  0
 
 spawn  La_criatura

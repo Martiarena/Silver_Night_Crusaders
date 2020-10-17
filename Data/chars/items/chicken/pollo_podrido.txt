@@ -1,9 +1,13 @@
 name    	P._Podrido
-health		-50
-type    	item
+type     trap
 facing          1
-antigravity	30
+antigravity	50
+subject_to_hole 1
+nomove 1 0
+no_adjust_base  0
+subject_to_platform 1
 candamage  	player
+offscreenkill	100
 icon 		data/chars/misc/bgitem.gif
 
 animationscript	data/scripts/escript.c
@@ -12,13 +16,24 @@ palette		data/chars/items/chicken/idle3.gif
 
 
 
-
-
+anim	follow1
+	delay	400
+	offset	12 23
+	frame	data/chars/misc/empty.gif
+	delay	1
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
 anim	idle
 	loop	0
 	delay	70
 	offset	11 24
-	itembox	0 0 22 24
+	hitfx	data/sounds/get.wav
+	attack21	0 0 22 24 50 0 1 1 0 0
+	noreflect	1
+	followanim	1
+	followcond	1
 	frame	data/chars/items/chicken/idle3.gif
 	delay	2
 	frame	data/chars/items/chicken/idle4.gif
@@ -115,8 +130,12 @@ anim	spawn
 	loop	0
 	delay	1
 	offset	11 24
-	itembox	0 0 22 24
+	hitfx	data/sounds/get.wav
+	attack21	0 0 22 24 50 0 1 1 0 0
+	noreflect	1
 	frame	data/chars/items/chicken/idle4.gif
+	followanim	1
+	followcond	1
 	frame	data/chars/items/chicken/idle3.gif
 	frame	data/chars/items/chicken/idle4.gif
 	frame	data/chars/items/chicken/idle3.gif
@@ -141,5 +160,5 @@ anim	spawn
 	frame	data/chars/items/chicken/idle4.gif
 	frame	data/chars/items/chicken/idle3.gif
 		
-#|edited by openBor Stats v 0.56
+#|edited by openBor Stats v 0.67
 		

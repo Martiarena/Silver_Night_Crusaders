@@ -1,0 +1,54 @@
+name	        Llight
+type	        none
+setlayer	400
+nolife		1
+candamage       player  npc
+hostile         player  npc
+
+animationscript  data/scripts/escript.c
+
+palette		data/chars/darvulia/spell/light1a.gif
+
+
+anim	idle
+	delay	1
+	offset	108 248
+	frame	data/chars/darvulia/spell/light1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/spell/light1a.gif
+	frame	data/chars/misc/empty.gif
+	attack	93 40 32 208 25 0 0 0 0 0
+	frame	data/chars/darvulia/spell/light1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/spell/light1b.gif
+	frame	data/chars/misc/empty.gif
+	attack	93 40 32 208 25 0 0 0 0 0
+	frame	data/chars/darvulia/spell/light1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/spell/light1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/spell/light1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/spell/light1d.gif
+	frame	data/chars/misc/empty.gif
+	attack	96 40 26 208 19 0 0 0 0 0
+	frame	data/chars/darvulia/spell/light1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/spell/light1e.gif
+	frame	data/chars/misc/empty.gif
+	attack	99 40 20 208 19 0 0 0 0 0
+	frame	data/chars/darvulia/spell/light1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/spell/light1f.gif
+	frame	data/chars/misc/empty.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/darvulia/spell/light1g.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/spell/light1g.gif
+	frame	data/chars/misc/empty.gif
+	delay	1
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

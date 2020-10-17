@@ -1,0 +1,26 @@
+name    	BPetir
+type    	none
+lifespan  	0.6
+antigravity     -900
+candamage       enemy obstacle
+falldie		1
+death           1
+nodrop          2
+
+anim	idle
+	loop	1
+	delay	5
+	offset	7 249
+	attack8	2 0 12 250 9 0 1 0 0 0
+	hitfx	data/sounds/jolted.wav
+	frame	data/chars/sheeba/magic/petir1.gif
+	frame	data/chars/sheeba/magic/petir2.gif
+	frame	data/chars/sheeba/magic/petir3.gif
+	frame	data/chars/sheeba/magic/petir4.gif
+	frame	data/chars/sheeba/magic/petir1.gif
+	frame	data/chars/sheeba/magic/petir2.gif
+	frame	data/chars/sheeba/magic/petir3.gif
+	frame	data/chars/sheeba/magic/petir4.gif
+		
+#|edited by openBor Stats v 0.67
+		

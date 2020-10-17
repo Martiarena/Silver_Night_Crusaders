@@ -11,6 +11,7 @@ animationscript  data/scripts/escript.c
 
 palette	data/chars/misc/espells/ice_spell_palette.gif
 
+
 anim	death
 	loop	0
 	delay	4
@@ -39,8 +40,8 @@ anim	follow1
 	frame	data/chars/misc/empty.gif
 	@cmd	suicide
 	frame	data/chars/misc/empty.gif
-
-anim idle
+		
+anim	idle
 	loop	1
 	delay	6
 	offset	14 14
@@ -48,8 +49,11 @@ anim idle
 	followcond	1
 	hitfx	data/sounds/icebreak.wav
 	bbox	2 2 20 10
-	attack7	2 2 44 10 25 0 0 0 0 0
+	attack7	2 2 44 10 19 0 0 0 0 0
 	frame	data/chars/misc/espells/ice1a.gif
 	frame	data/chars/misc/espells/ice1a.gif
 	frame	data/chars/misc/espells/ice1a.gif
 	frame	data/chars/misc/espells/ice1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

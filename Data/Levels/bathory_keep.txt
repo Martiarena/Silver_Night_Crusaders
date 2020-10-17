@@ -1,11 +1,8 @@
-bossmusic	data/music/boss.ogg 367353
-#music		data/music/castlewalls.ogg
+music		data/music/tension.ogg 205440
 
 panel	        data/bgs/bathory_keep/alcoba.gif
 
-fglayer		data/bgs/bathory_keep/clock_tower.gif -10000 0.3 0.3 0 0 0 0 1 1 1 0 0 0 0 0 1
-#fglayer	data/bgs/moon_bridge/back_forest_1.gif -11000 0.5 0.5 0 0 0 0 -1 1 1 0 0 0 0 0 1
-#fglayer	data/bgs/moon_bridge/back_forest_2.gif -12000 0.6 0.6 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/bathory_keep/clock_tower.gif -10000 0.3 0.3 848 0 0 0 1 1 1 0 0 0 0 0 1
 fglayer		data/bgs/moon_bridge/back_bridge.gif -13000 0.8 0.8 0 0 0 0 -1 1 1 0 0 0 0 0 1
 fglayer		data/bgs/moon_bridge/sky_night_2.gif -14000 0.9 0.9 0 0 0 0 -1 1 1 0 0 0 0 0 1
 
@@ -15,105 +12,100 @@ settime	        0
 notime		1
 spawn1          80 0 240
 spawn2          40 0 240
-direction	both
+direction	leftright
 type		0 0 0
 cameratype 1
 noslow 1
 
+Wall  1155  218  10  0  60  50  10  999
+
 spawn  Keep_wall_1
-coords  778  216  128
+coords  -458  216  128
 at  0
 
-spawn  Keep_roof_1
-coords  986  216  192
-flip  1
+spawn	Reflect_bathory
+coords  -654  216  80
 at  0
 
 spawn  Dark_artifact
-coords  990  216 0
+coords  -670  216  0
 at  0
 
 spawn  Throne
-coords  1133  216 0
+coords  -813  216 0
 at  0
 
 spawn	Keep_wall_1
-coords	1197  216  128
-flip	-1
+coords	-877  216  128
+flip	1
 at	0
 
+spawn	Epilogue
+coords  160 240  0
+flip    1
+at      0
+
+spawn  Candle1
+coords  75  216  75
+item	___100
+at  0
+
 spawn  Brazier1
-coords  240  216
-map 1
+coords  180  216  0
 item	A._Bendita
+map 1
 at  0
 
-spawn  Brazier1
-coords  340  216
-item	___10
-at  0
-
-
-spawn  Jar2
-coords  360  216  32
+spawn  Jar2_floating
+coords  -40  216  32
 item	___250
 at  90
 
-spawn  Jar2
-coords  360  216  32
+spawn  Jar2_floating
+coords  -40  216  32
 item	___400
 at  130
 
 spawn  Big_candle
-coords  360  216  160
+coords  -40  216  160
 at  169
 
-spawn  Jar2
-coords  360  216  32
+spawn  Jar2_floating
+coords  -40  216  32
 item	C._Arcoiris
 at  210
 
-spawn  Jar2
-coords  360  216  32
+spawn  Jar2_floating
+coords  -40  216  32
 item	___700
 at  250
 
-spawn  Brazier1
-coords  360  216
-item	___20
-at  320
-
-spawn  Back_throne
-coords  500  0
-at  360
-
-spawn  Brazier1
-coords  360  216
-item	___50
-at  420
-
-spawn  Brazier1
-coords  360  216
-item	___100
-at  500
-
-spawn  Brazier1
-coords  360  216
-item	Gema_roja
-at  670
-
-spawn  Brazier1
-coords  400  216
-item	C._Sagrada
+spawn  Candle1
+coords  -160  216 75
+item	C._Plateada
 map 1
 at  700
 
 Blockade  770
 at  700
 
+spawn boss_lifebar
+coords  0 0 0
+flip 1
+at  700
+
+music	data/music/umbrae_countess.ogg 396410
+at	700
+
+spawn	BeamSkeletonSpawner
+coords  0 0 0
+2pspawn 1
+at	700
+
 spawn  Bathory
-coords  360  216  0
-health 10
+coords  -40  216  0
+alias	E._Bathory
+flip 1
 at  700
 
 group 1 1
@@ -122,29 +114,57 @@ at 700
 Blockade  885
 at  700
 
+group 1 2
+at 700
+
 spawn	Back_final
-coords	-80 0 0
+coords	-90 0 0
 flip 1
 at 	700
 
-group 1 4
-at 700
-
 spawn	Keep_castle_shade
-coords  70  216  0
-flip 1
+coords  260  216  0
 at  885
+
+spawn	Platform_final_1
+coords	305 216 70
+at 	885
 
 spawn	Keep_root
-#coords  60  216  105
-coords  265  216  105
+coords  55  216  105
+at  885
+
+spawn	Broke_window
+coords  265  216  0
+flip	1
+at  885
+
+spawn  	Final_cloud
+coords  160  216  170
+at  885
+
+spawn  	Final_cloud_1
+coords  160  216  0
+flip  1
+at  885
+
+spawn  	Final_cloud_clear
+coords  160  236  0
+at  885
+
+spawn  	Serpent_body
+coords  110  216  0
 flip 1
 at  885
 
-#spawn	Broke_window
-#coords  60  216  0
-#at  885
-
-spawn  Bathory
-coords  240  216  0
+spawn  Final_form
+coords  110  216  0
+alias	D._Umbrae
+flip 1
+boss 1
 at  885
+
+spawn	EctoSpawner_2
+coords  0 0 0
+2pspawn 1
+at	885

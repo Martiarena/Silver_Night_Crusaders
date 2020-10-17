@@ -1,4 +1,4 @@
-music		data/music/monsterkiller.ogg 471870
+music		data/music/monsterkiller.ogg 181692
 
 panel	        data/bgs/cachtice/town.gif
 
@@ -15,6 +15,11 @@ spawn	Prologue
 coords  160 240  0
 flip    1
 at      0
+
+spawn  Horses
+coords  25  216  0
+flip  1
+at  0
 
 spawn  fireruins
 coords  0  0  0
@@ -185,7 +190,7 @@ spawn  bodyb
 coords  400  216
 at  350
 
-spawn  Knight
+spawn  Guard
 coords  360  215  0
 health 6
 at  380
@@ -361,7 +366,7 @@ spawn  peoplef
 coords  400  216
 at  2170
 
-spawn  Knight
+spawn  Guard
 coords  400  216  0
 at  2170
 
@@ -386,14 +391,6 @@ map 1
 item	Hacha
 at  2352
 
-spawn  Chiroptera_
-coords  360  216  54
-at  2420
-
-spawn  Chiroptera_
-coords  360  216  54
-at  2440
-
 spawn  Barril
 coords  360  216  104
 item ___250
@@ -415,10 +412,6 @@ at  2656
 
 Blockade  2740
 at  2740
-
-spawn  Chiroptera_
-coords  360  216  50
-at  2780
 
 spawn  Barril
 coords  360  216  127

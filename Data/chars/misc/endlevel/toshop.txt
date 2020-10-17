@@ -12,11 +12,12 @@ palette		data/chars/misc/endlevel/arrow-right-a.gif
 
 
 
+
 anim	idle
 	loop	1
 	delay	7
 	offset	6 75
-	bbox	15 0 4 75
+	bbox	15 -70 4 150
 	frame	data/chars/misc/endlevel/arrow-right-a.gif
 	frame	data/chars/misc/endlevel/arrow-right-b.gif
 		

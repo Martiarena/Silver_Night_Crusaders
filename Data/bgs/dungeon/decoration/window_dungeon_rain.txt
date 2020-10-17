@@ -1,0 +1,116 @@
+name  		window_dungeon_rain
+type            none
+facing	  	1
+antigravity	100
+alpha		1
+setlayer	100
+offscreenkill   9999
+
+animationscript  data/scripts/escript.c
+
+palette  	data/bgs/dungeon/decoration/window_dungeon1a.gif
+
+
+
+
+anim	follow1
+	loop	0
+	offset	0 0
+	delay	370
+	sound	data/sounds/rainscene.wav
+	frame	data/chars/misc/empty.gif
+	delay	370
+	sound	data/sounds/storm.wav
+	frame	data/chars/misc/empty.gif
+	delay	100
+	frame	data/chars/misc/empty.gif
+	delay	1
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	delay	600
+	frame	data/chars/misc/empty.gif
+	delay	1
+	@cmd	anichange "ANI_FOLLOW1"
+	frame	data/chars/misc/empty.gif
+		
+anim	follow2
+	loop	0
+	offset	0 0
+	delay	300
+	sound	data/sounds/rainscene.wav
+	frame	data/chars/misc/empty.gif
+	delay	440
+	sound	data/sounds/storm.wav
+	frame	data/chars/misc/empty.gif
+	delay	100
+	frame	data/chars/misc/empty.gif
+	delay	1
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	delay	600
+	frame	data/chars/misc/empty.gif
+	delay	1
+	@cmd	anichange "ANI_FOLLOW1"
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	offset	0 0
+@script
+    void self = getlocalvar("self");
+    int r = rand()%30;
+
+    if( frame == 0){
+      if( r > 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } else if( r < -10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      }
+    }
+	@end_script	
+	delay	640
+	sound	data/sounds/rainscene.wav
+	frame	data/chars/misc/empty.gif
+	delay	200
+	sound	data/sounds/storm.wav
+	frame	data/chars/misc/empty.gif
+	delay	100
+	frame	data/chars/misc/empty.gif
+	delay	1
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	delay	600
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	loop	0
+	offset	0 0
+	delay	1
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

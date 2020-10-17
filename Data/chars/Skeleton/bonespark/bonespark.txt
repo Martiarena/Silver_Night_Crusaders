@@ -15,10 +15,13 @@ animationscript  data/scripts/escript.c
 
 
 
+
+
 anim	idle
 	delay	1
 	offset	0 25
 	shock	0 10 38 15 19 0 0 0 0 0
+	sound	data/sounds/thunder.wav
 	hitfx	data/sounds/hit_thunder.wav
 	frame	data/chars/skeleton/bonespark/spark1a.gif
 	frame	data/chars/skeleton/bonespark/spark2a.gif

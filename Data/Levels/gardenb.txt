@@ -106,10 +106,10 @@ at  480
 Blockade 545
 at  545
 
-spawn	Boss3Spawner
-coords  0 0 0
-#2pspawn 1
-at	545
+spawn  MuddySpawner
+coords  0  0  0
+2pspawn 1
+at  545
 
 spawn  R._Polilla
 coords  356  216  149

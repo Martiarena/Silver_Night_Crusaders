@@ -9,33 +9,38 @@ antigravity	100
 subject_to_wall 0
 subject_to_obstacle 0
 
+diesound            data/sounds/candlecut.wav
+
 palette 	 data/chars/destructible/candle2/candle2_palette.gif
 alternatepal	 data/chars/destructible/candle2/candle2_palette_alt.gif
 
 
-anim idle
-	loop	1
-	delay	9
-	offset	4 15
-	bbox	0 1 8 15
-	platform 21 69 -10 -10 10 10 10 10
-	frame	data/chars/destructible/candle2/candle21.gif
-	frame	data/chars/destructible/candle2/candle22.gif
-	frame	data/chars/destructible/candle2/candle23.gif
-
-anim death
+anim	death
 @script
     void self = getlocalvar("self");
 
     if(frame==2){
       killentity(self); //Suicide!
     }
-@end_script
+	@end_script	
 	delay	5
 	offset	4 15
-	spawnframe 0 0 0 5 0
-	custentity SDie
+	spawnframe	0 0 0 5 0
+	custentity	SDie
 	frame	data/chars/misc/empty.gif
 	frame	data/chars/misc/empty.gif
 	delay	300
 	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	9
+	offset	4 15
+	bbox	0 1 8 15
+	platform	21 69 -10 -10 10 10 10 10
+	frame	data/chars/destructible/candle2/candle21.gif
+	frame	data/chars/destructible/candle2/candle22.gif
+	frame	data/chars/destructible/candle2/candle23.gif
+		
+#|edited by openBor Stats v 0.67
+		

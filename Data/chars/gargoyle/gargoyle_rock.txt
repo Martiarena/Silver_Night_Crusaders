@@ -21,8 +21,6 @@ defense normal6 2 0 0 0 0 0 0
 defense normal19 0.5 0 0 0 0 0 0
 defense burn 0.5 0 0 0 0 0 0
 
-icon 		data/chars/misc/bggargola.gif
-
 palette         data/chars/gargoyle/gargoyle_palette.gif
 alternatepal    data/chars/gargoyle/gargoyle_blink.gif
 

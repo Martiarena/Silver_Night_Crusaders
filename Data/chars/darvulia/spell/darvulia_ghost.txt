@@ -1,0 +1,183 @@
+name  		Darvulia_ghost
+health  	13
+nomove  	1
+type		enemy
+cantgrab 	1
+nodrop		2
+flip            1
+death		1
+nolife		1
+alpha           0.4
+Score           100 -1
+hostile         player npc
+candamage       player npc
+antigravity     100
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+
+defense normal6 4 0 0 0 0 0 0
+
+diesound  	data/sounds/die4.wav
+icon 		data/chars/misc/bgmonster.gif
+
+palette  	data/chars/darvulia/spell/darvulia_ghost1v.gif
+
+animationscript data/scripts/cscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	death
+	delay	7
+	offset	35 45
+	frame	data/chars/darvulia/spell/darvulia_ghost1x.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost_death1a.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost_death1b.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost_death1c.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	delay	3
+	offset	35 45
+	frame	data/chars/darvulia/spell/darvulia_ghost1z.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost_death2a.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost_death2b.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost_death2c.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	1
+	offset	35 45
+	bbox	15 20 35 45
+	followcond	1
+	followanim	1
+	attack6	15 20 38 60 25 0 1 1 0 0
+	DOT	1 1 3 100 1
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	@cmd	target 1 1 0 -20 0 1
+	@cmd	dash 0 0
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	@cmd	target 1 1 0 -20 0 1
+	@cmd	dash 0 0
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1w.gif
+	attack6	0
+	frame	data/chars/darvulia/spell/darvulia_ghost1v.gif
+		
+anim	pain
+	delay	5
+	offset	35 45
+	frame	data/chars/darvulia/spell/darvulia_ghost1z.gif
+	@cmd	dasher -4 0 0 1
+	frame	data/chars/darvulia/spell/darvulia_ghost1z.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1z.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1z.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1z.gif
+	@cmd	dasher 0 0 0 1
+	@cmd	beidle
+	frame	data/chars/darvulia/spell/darvulia_ghost1z.gif
+		
+anim	spawn
+	delay	7
+	offset	35 45
+	frame	data/chars/darvulia/spell/darvulia_ghost1a.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1b.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1c.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1d.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1e.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1f.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1g.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1h.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1i.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1j.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1k.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	sound	data/sounds/sparks1.wav
+	frame	data/chars/darvulia/spell/darvulia_ghost1l.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1q.gif
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/darvulia/spell/darvulia_ghost1m.gif
+	sound	data/sounds/sparks1.wav
+	frame	data/chars/darvulia/spell/darvulia_ghost1q.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/darvulia_ghost1n.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1q.gif
+	drawmethod	256 256 0 0 0 0 0 0 360
+	sound	data/sounds/sparks1.wav
+	frame	data/chars/darvulia/spell/darvulia_ghost1o.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1q.gif
+	drawmethod	256 256 0 0 0 0 0 0 0
+	frame	data/chars/darvulia/spell/darvulia_ghost1p.gif
+	sound	data/sounds/sparks1.wav
+	frame	data/chars/darvulia/spell/darvulia_ghost1q.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1r.gif
+	frame	data/chars/darvulia/spell/darvulia_ghost1s.gif
+	sound	data/sounds/sparks1.wav
+	frame	data/chars/darvulia/spell/darvulia_ghost1t.gif
+	sound	data/sounds/specter.wav
+	frame	data/chars/darvulia/spell/darvulia_ghost1u.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,53 @@
+name     C._Arcoiris_
+type    	item
+health		0
+facing          1
+antigravity	30
+candamage  	player
+icon 		data/chars/misc/bgitem.gif
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	70
+	offset	9 16
+	itembox	0 0 19 16
+	frame	data/chars/items/1up/idle1.gif
+	delay	2
+	frame	data/chars/items/1up/idle2.gif
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	9 16
+	sound	data/sounds/secret.wav
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/1up/spawn1a.gif
+	frame	data/chars/items/1up/spawn1b.gif
+	frame	data/chars/items/1up/spawn1c.gif
+	frame	data/chars/items/1up/spawn1d.gif
+	frame	data/chars/items/1up/spawn1e.gif
+	frame	data/chars/items/1up/spawn1f.gif
+	frame	data/chars/items/1up/spawn1g.gif
+	frame	data/chars/items/1up/spawn1h.gif
+	frame	data/chars/items/1up/spawn1i.gif
+	frame	data/chars/items/1up/spawn1j.gif
+	frame	data/chars/items/1up/spawn1k.gif
+	frame	data/chars/items/1up/spawn1l.gif
+	frame	data/chars/items/1up/spawn1m.gif
+	delay	2
+	frame	data/chars/items/1up/spawn2n.gif
+	delay	3
+	frame	data/chars/items/1up/spawn1n.gif
+	delay	5
+	frame	data/chars/items/1up/spawn1o.gif
+	itembox	0 0 19 16
+	frame	data/chars/items/1up/idle1.gif
+	frame	data/chars/items/1up/idle1.gif
+	frame	data/chars/items/1up/idle1.gif
+	frame	data/chars/items/1up/idle1.gif
+
+		

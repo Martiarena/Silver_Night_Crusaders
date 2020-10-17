@@ -6,10 +6,17 @@ no_adjust_base	0
 antigravity 50
 lifespan        1
 noquake 	1
+animationscript data/scripts/prscript.c
 
 palette 	data/chars/werewolf/werewolf_palette.gif
 
-anim idle
+anim	idle
+	loop	1
 	delay	5
 	offset	7 14
 	frame	data/chars/werewolf/cloth1a.gif
+	@cmd	groundkill
+	frame	data/chars/werewolf/cloth1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

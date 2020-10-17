@@ -1,7 +1,7 @@
 name	       	Back_final
 type    	panel
 speed		9
-setlayer	-1
+setlayer	-3
 
 palette 	data/bgs/bathory_keep/decoration/back_final.gif
 

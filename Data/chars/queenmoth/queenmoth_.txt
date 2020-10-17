@@ -1,0 +1,708 @@
+name	    	R._Polilla_
+health  	200
+type		enemy
+nomove          1 1
+noquake  	1
+death   	1
+nodieblink	2
+falldie 	1
+cantgrab 	1
+nopain  	1
+nodrop  	2
+aggression      11
+score   	20000 -1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+hostile        	npc player
+candamage       npc player
+antigravity     100
+lifebarstatus 5 100 1 0 1 -300 -300 -300 -300
+lifeposition 309 15
+nameposition -500 -500
+iconposition -500 -500
+defense normal 0.75 0 0 0 0 0 0
+defense normal2 0.75 0 0 0 0 0 0
+defense normal3 0.5 0 0 0 0 0 0
+defense normal5 0.5 0 0 0 0 0 0
+defense normal6 0.5 0 0 0 0 0 0
+defense normal7 0.75 0 0 0 0 0 0
+defense normal8 0.25 0 0 0 0 0 0
+defense normal20 0 0 0 0 0 0 0
+defense shock 0.75 0 0 0 0 0 0
+
+diesound      data/sounds/queenmothdie.wav
+
+icon		data/chars/misc/bgmonster.gif
+
+
+palette          data/chars/queenmoth/spawn1.gif
+alternatepal     data/chars/queenmoth/blink_palette.gif
+
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+load    	BFBall
+load      	Polilla
+load      	Polilla_
+load            Spore
+load            Caterpillar
+load            kdie
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	death
+	delay	5
+	subentity	kdie
+	spawnframe	9 0 0 0 0
+	offset	55 139
+	@cmd	stop
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	sound	data/sounds/wingflap.wav
+	frame	data/chars/queenmoth/idle3.gif
+	sound	data/sounds/flame-dies.wav
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	sound	data/sounds/wingflap.wav
+	frame	data/chars/queenmoth/idle3.gif
+	movea	-1
+	frame	data/chars/queenmoth/death4.gif
+	frame	data/chars/queenmoth/death5.gif
+	frame	data/chars/queenmoth/death6.gif
+	frame	data/chars/queenmoth/death4.gif
+	frame	data/chars/queenmoth/death5.gif
+	frame	data/chars/queenmoth/death6.gif
+	frame	data/chars/queenmoth/death4.gif
+	frame	data/chars/queenmoth/death5.gif
+	frame	data/chars/queenmoth/death6.gif
+	frame	data/chars/queenmoth/death7.gif
+	frame	data/chars/queenmoth/death8.gif
+	frame	data/chars/queenmoth/death9.gif
+	frame	data/chars/queenmoth/death7.gif
+	frame	data/chars/queenmoth/death8.gif
+	frame	data/chars/queenmoth/death9.gif
+	frame	data/chars/queenmoth/death7.gif
+	frame	data/chars/queenmoth/death8.gif
+	frame	data/chars/queenmoth/death9.gif
+	frame	data/chars/queenmoth/death7.gif
+	frame	data/chars/queenmoth/death8.gif
+	frame	data/chars/queenmoth/death9.gif
+	frame	data/chars/queenmoth/death7.gif
+	frame	data/chars/queenmoth/death8.gif
+	frame	data/chars/queenmoth/death9.gif
+	frame	data/chars/queenmoth/death7.gif
+	frame	data/chars/queenmoth/death8.gif
+	frame	data/chars/queenmoth/death9.gif
+	frame	data/chars/queenmoth/death10.gif
+	frame	data/chars/queenmoth/death11.gif
+	frame	data/chars/queenmoth/death12.gif
+	frame	data/chars/queenmoth/death10.gif
+	frame	data/chars/queenmoth/death11.gif
+	frame	data/chars/queenmoth/death12.gif
+	frame	data/chars/queenmoth/death10.gif
+	frame	data/chars/queenmoth/death11.gif
+	frame	data/chars/queenmoth/death12.gif
+	frame	data/chars/queenmoth/death13.gif
+	frame	data/chars/queenmoth/death14.gif
+	frame	data/chars/queenmoth/death15.gif
+	frame	data/chars/queenmoth/death13.gif
+	frame	data/chars/queenmoth/death14.gif
+	frame	data/chars/queenmoth/death15.gif
+	delay	1
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	fall
+	delay	10
+	offset	55 139
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	@cmd	spawn01 "Spore" -31 81 1
+	@cmd	spawn01 "Spore" -39 40 1
+	@cmd	spawn01 "Spore" 21 75 1
+	@cmd	spawn01 "Spore" 14 33 1
+	frame	data/chars/queenmoth/idle3.gif
+		
+anim	follow1
+@script
+    void self = getlocalvar("self");
+    int r = rand()%30;
+
+    if( frame == 0){
+      if( r > 0){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      }
+    }
+	@end_script	
+	delay	1
+	offset	55 139
+	bbox	40 70 35 70
+	attack	40 70 35 70 19 0 0 0 0 0
+	frame	data/chars/queenmoth/idle1.gif
+	delay	10
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	sound	data/sounds/wingflap.wav
+	@cmd	spawn01 "Spore" -31 81 1
+	@cmd	spawn01 "Spore" -39 40 1
+	@cmd	spawn01 "Spore" 21 75 1
+	@cmd	spawn01 "Spore" 14 33 1
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	sound	data/sounds/moths.wav
+	@cmd	spawn01 "Polilla" 0 0 0
+	frame	data/chars/queenmoth/idle2.gif
+	@cmd	spawn01 "Polilla" 10 30 0
+	frame	data/chars/queenmoth/idle3.gif
+	@cmd	spawn01 "Polilla" -10 10 0
+	frame	data/chars/queenmoth/idle1.gif
+	@cmd	spawn01 "Polilla" -10 30 0
+	frame	data/chars/queenmoth/attack2a.gif
+	@cmd	spawn01 "Polilla" 10 10 0
+	@cmd	spawn01 "Caterpillar" -7 0 1
+	frame	data/chars/queenmoth/attack2b.gif
+	@cmd	spawn01 "Polilla" 30 30 0
+	frame	data/chars/queenmoth/idle1.gif
+	@cmd	spawn01 "Polilla" -30 10 0
+	frame	data/chars/queenmoth/idle2.gif
+	@cmd	spawn01 "Polilla" -30 30 0
+	frame	data/chars/queenmoth/idle3.gif
+	@cmd	spawn01 "Polilla" 30 10 0
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	sound	data/sounds/wingflap.wav
+	@cmd	spawn01 "Spore" -31 81 1
+	@cmd	spawn01 "Spore" -39 40 1
+	@cmd	spawn01 "Spore" 21 75 1
+	@cmd	spawn01 "Spore" 14 33 1
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	@cmd	beidle
+	frame	data/chars/queenmoth/idle3.gif
+		
+anim	follow2
+@script
+    void self = getlocalvar("self");
+    int r = rand()%30;
+
+    if( frame == 0){
+      if( r > 0){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      }
+    }
+	@end_script	
+	delay	1
+	offset	55 139
+	bbox	40 70 35 70
+	attack	40 70 35 70 19 0 0 0 0 0
+	frame	data/chars/queenmoth/idle1.gif
+	delay	10
+	@cmd	dasher 1 0 0 0
+	frame	data/chars/queenmoth/idle1a.gif
+	frame	data/chars/queenmoth/idle2a.gif
+	delay	1
+	@cmd	dasher 0 0 0 0
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	delay	10
+	@cmd	target 1 1 0 0 0 0
+	@cmd	shoot2 "BFBall" 0 25
+	@cmd	dasher 1 0 0 0
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle1a.gif
+	frame	data/chars/queenmoth/idle2a.gif
+	sound	data/sounds/wingflap.wav
+	@cmd	spawn01 "Spore" -31 81 1
+	@cmd	spawn01 "Spore" -39 40 1
+	@cmd	spawn01 "Spore" 21 75 1
+	@cmd	spawn01 "Spore" 14 33 1
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle1a.gif
+	frame	data/chars/queenmoth/idle2a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle1a.gif
+	frame	data/chars/queenmoth/idle2a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle1a.gif
+	frame	data/chars/queenmoth/idle2a.gif
+	sound	data/sounds/wingflap.wav
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle1a.gif
+	@cmd	dasher -1 0 0 0
+	frame	data/chars/queenmoth/idle2a.gif
+	@cmd	spawn01 "Spore" -31 81 1
+	@cmd	spawn01 "Spore" -39 40 1
+	@cmd	spawn01 "Spore" 21 75 1
+	@cmd	spawn01 "Spore" 14 33 1
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	sound	data/sounds/wingflap.wav
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/attack1a.gif
+	@cmd	spawn01 "Caterpillar" 7 0 1
+	frame	data/chars/queenmoth/attack1b.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	@cmd	spawn01 "Spore" -31 81 1
+	@cmd	spawn01 "Spore" -39 40 1
+	@cmd	spawn01 "Spore" 21 75 1
+	@cmd	spawn01 "Spore" 14 33 1
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	delay	1
+	@cmd	dasher 0 0 0 0
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	delay	10
+	@cmd	target 1 1 0 0 0 0
+	@cmd	shoot2 "BFBall" 0 25
+	@cmd	dasher -1 0 0 0
+	sound	data/sounds/wingflap.wav
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	sound	data/sounds/wingflap.wav
+	@cmd	spawn01 "Spore" -31 81 1
+	@cmd	spawn01 "Spore" -39 40 1
+	@cmd	spawn01 "Spore" 21 75 1
+	@cmd	spawn01 "Spore" 14 33 1
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/attack1a.gif
+	@cmd	spawn01 "Caterpillar" 7 0 1
+	frame	data/chars/queenmoth/attack1b.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle3.gif
+	@cmd	dasher 1 0 0 0
+	frame	data/chars/queenmoth/idle1a.gif
+	frame	data/chars/queenmoth/idle2a.gif
+	sound	data/sounds/wingflap.wav
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle1a.gif
+	frame	data/chars/queenmoth/idle2a.gif
+	@cmd	spawn01 "Spore" -31 81 1
+	@cmd	spawn01 "Spore" -39 40 1
+	@cmd	spawn01 "Spore" 21 75 1
+	@cmd	spawn01 "Spore" 14 33 1
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle1a.gif
+	frame	data/chars/queenmoth/idle2a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle1a.gif
+	frame	data/chars/queenmoth/idle2a.gif
+	sound	data/sounds/wingflap.wav
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle1a.gif
+	frame	data/chars/queenmoth/idle2a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle1a.gif
+	@cmd	stop
+	@cmd	beidle
+	frame	data/chars/queenmoth/idle2.gif
+		
+anim	follow3
+	delay	1
+	offset	55 139
+	bbox	40 70 35 70
+	attack	40 70 35 70 19 0 0 0 0 0
+	frame	data/chars/queenmoth/idle1.gif
+	delay	10
+	@cmd	dasher -1 0 0 0
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	delay	1
+	@cmd	dasher 0 0 0 0
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle2-a.gif
+	frame	data/chars/queenmoth/idle2.gif
+	delay	10
+	@cmd	target 1 1 0 0 0 0
+	@cmd	shoot2 "BFBall" 0 25
+	@cmd	dasher -1 0 0 0
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	@cmd	spawn01 "Spore" -31 81 1
+	@cmd	spawn01 "Spore" -39 40 1
+	@cmd	spawn01 "Spore" 21 75 1
+	@cmd	spawn01 "Spore" 14 33 1
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/attack1a.gif
+	@cmd	spawn01 "Caterpillar" 7 0 1
+	frame	data/chars/queenmoth/attack1b.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	sound	data/sounds/wingflap.wav
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	@cmd	dasher 1 0 0 0
+	frame	data/chars/queenmoth/idle2a.gif
+	@cmd	spawn01 "Spore" -31 81 1
+	@cmd	spawn01 "Spore" -39 40 1
+	@cmd	spawn01 "Spore" 21 75 1
+	@cmd	spawn01 "Spore" 14 33 1
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle1a.gif
+	frame	data/chars/queenmoth/idle2a.gif
+	sound	data/sounds/wingflap.wav
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle1a.gif
+	frame	data/chars/queenmoth/idle2a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle1a.gif
+	frame	data/chars/queenmoth/idle2a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle1a.gif
+	frame	data/chars/queenmoth/idle2a.gif
+	sound	data/sounds/wingflap.wav
+	@cmd	spawn01 "Spore" -31 81 1
+	@cmd	spawn01 "Spore" -39 40 1
+	@cmd	spawn01 "Spore" 21 75 1
+	@cmd	spawn01 "Spore" 14 33 1
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle1a.gif
+	frame	data/chars/queenmoth/idle2a.gif
+	delay	1
+	@cmd	dasher 0 0 0 0
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle3a-a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	delay	10
+	@cmd	target 1 1 0 0 0 0
+	@cmd	shoot2 "BFBall" 0 25
+	@cmd	dasher 1 0 0 0
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle1a.gif
+	frame	data/chars/queenmoth/idle2a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle1a.gif
+	frame	data/chars/queenmoth/idle2a.gif
+	sound	data/sounds/wingflap.wav
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle1a.gif
+	frame	data/chars/queenmoth/idle2a.gif
+	@cmd	spawn01 "Spore" -31 81 1
+	@cmd	spawn01 "Spore" -39 40 1
+	@cmd	spawn01 "Spore" 21 75 1
+	@cmd	spawn01 "Spore" 14 33 1
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle1a.gif
+	frame	data/chars/queenmoth/idle2a.gif
+	frame	data/chars/queenmoth/idle3a.gif
+	frame	data/chars/queenmoth/idle1a.gif
+	frame	data/chars/queenmoth/idle2a.gif
+	sound	data/sounds/wingflap.wav
+	frame	data/chars/queenmoth/idle3a.gif
+	@cmd	dasher -1 0 0 0
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	@cmd	spawn01 "Spore" -31 81 1
+	@cmd	spawn01 "Spore" -39 40 1
+	@cmd	spawn01 "Spore" 21 75 1
+	@cmd	spawn01 "Spore" 14 33 1
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	sound	data/sounds/wingflap.wav
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/attack1a.gif
+	@cmd	spawn01 "Caterpillar" 7 0 1
+	frame	data/chars/queenmoth/attack1b.gif
+	frame	data/chars/queenmoth/idle1.gif
+	@cmd	stop
+	@cmd	beidle
+	frame	data/chars/queenmoth/idle2.gif
+		
+anim	idle
+	loop	1
+	delay	10
+	offset	55 139
+	bbox	40 70 35 70
+	attack	40 70 35 70 19 0 0 0 0 0
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	sound	data/sounds/wingflap.wav
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle3.gif
+	delay	1
+	@cmd	attack0 "ANI_FOLLOW1"
+	frame	data/chars/queenmoth/idle3.gif
+		
+anim	pain
+	delay	10
+	offset	55 139
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle3.gif
+		
+anim	spawn
+	delay	10
+	offset	55 139
+	@cmd	dasher 0 -1 0 1
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	@cmd	stop
+	sound	data/sounds/wingflap.wav
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	@cmd	spawn01 "Spore" -31 81 1
+	@cmd	spawn01 "Spore" -39 40 1
+	@cmd	spawn01 "Spore" 21 75 1
+	@cmd	spawn01 "Spore" 14 33 1
+	sound	data/sounds/wingflap.wav
+	frame	data/chars/queenmoth/idle3.gif
+	frame	data/chars/queenmoth/idle1.gif
+	@cmd	stop
+	frame	data/chars/queenmoth/idle2.gif
+		
+anim	walk
+	loop	1
+	delay	10
+	offset	55 139
+	bbox	40 70 35 70
+	attack	40 70 35 70 19 0 0 0 0 0
+	frame	data/chars/queenmoth/idle1.gif
+	frame	data/chars/queenmoth/idle2.gif
+	delay	9
+	@cmd	spawn01 "Spore" -31 81 1
+	@cmd	spawn01 "Spore" -39 40 1
+	@cmd	spawn01 "Spore" 21 75 1
+	@cmd	spawn01 "Spore" 14 33 1
+	frame	data/chars/queenmoth/idle3.gif
+	delay	1
+	attack	0 0 0 0 0
+	frame	data/chars/queenmoth/idle3.gif
+		
+#|edited by openBor Stats v 0.67
+		

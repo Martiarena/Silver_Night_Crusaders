@@ -1,6 +1,6 @@
 name	         Boss0Spawner
 health	         10
-type	         enemy
+type	        None
 antigravity	 100
 animationscript  data/scripts/oscript.c
 load	         Esqueleto_
@@ -44,7 +44,7 @@ anim	idle
 
 anim 	follow2
 	loop	0
-	delay	10
+	delay	100
 	offset	1 1
 	@cmd	offscreenkill 500 0
         frame   data/chars/misc/empty.gif
@@ -55,7 +55,7 @@ anim 	follow2
 
 anim 	follow3
 	loop	0
-	delay	10
+	delay	100
 	offset	1 1
 	@cmd	offscreenkill 500 0
         frame   data/chars/misc/empty.gif

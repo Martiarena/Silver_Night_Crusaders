@@ -1,0 +1,115 @@
+name	        Bafo_shot_2_p
+type         	npc
+nomove       	1
+stealth         300
+health		1
+nolife          1
+death		1
+lifespan        8
+antigravity     100
+subject_to_platform 0
+hostile		enemy
+candamage       enemy obstacle
+animationscript data/scripts/cscript.c
+
+diesound        data/sounds/ghostdie.wav
+
+palette		data/chars/bafomet/magic/bafo_shot2a.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	death
+	loop	0
+	delay	4
+	offset	11 12
+	frame	data/chars/bafomet/magic/bafo_shot2e.gif
+	frame	data/chars/bafomet/magic/bafo_shot2d.gif
+	frame	data/chars/bafomet/magic/bafo_shot2c.gif
+	frame	data/chars/bafomet/magic/bafo_shot2b.gif
+	frame	data/chars/bafomet/magic/bafo_shot2a.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	loop	0
+	delay	4
+	offset	11 12
+	sound	data/sounds/ghostdie.wav
+	frame	data/chars/bafomet/magic/bafo_shot2e.gif
+	frame	data/chars/bafomet/magic/bafo_shot2d.gif
+	frame	data/chars/bafomet/magic/bafo_shot2c.gif
+	frame	data/chars/bafomet/magic/bafo_shot2b.gif
+	frame	data/chars/bafomet/magic/bafo_shot2a.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	11 15
+	followcond	1
+	followanim	1
+	@cmd	target 1 1 0 -20 0 1
+	@cmd	dash 0 0
+	bbox	8 8 8 4
+	burn	4 8 16 18 19 0 0 0 0 0
+	hitfx	data/sounds/burnt.wav
+	frame	data/chars/bafomet/magic/bafo_shot2f.gif
+	@cmd	target 1.2 1.2 0 -20 0 1
+	@cmd	dash 0 0
+	frame	data/chars/bafomet/magic/bafo_shot2g.gif
+	@cmd	target 1.4 1.4 0 -20 0 1
+	@cmd	dash 0 0
+	frame	data/chars/bafomet/magic/bafo_shot2h.gif
+	@cmd	target 1.6 1.6 0 -20 0 1
+	@cmd	dash 0 0
+	frame	data/chars/bafomet/magic/bafo_shot2f.gif
+	@cmd	target 1.8 1.8 0 -20 0 1
+	@cmd	dash 0 0
+	frame	data/chars/bafomet/magic/bafo_shot2g.gif
+	@cmd	target 2 2 0 -20 0 1
+	@cmd	dash 0 0
+	frame	data/chars/bafomet/magic/bafo_shot2h.gif
+	@cmd	target 2.2 2.2 0 -20 0 1
+	@cmd	dash 0 0
+	frame	data/chars/bafomet/magic/bafo_shot2f.gif
+	@cmd	target 2.4 2.4 0 -20 0 1
+	@cmd	dash 0 0
+	frame	data/chars/bafomet/magic/bafo_shot2g.gif
+	delay	1
+	@cmd	groundkill
+	frame	data/chars/bafomet/magic/bafo_shot2h.gif
+	@cmd	groundkill
+	frame	data/chars/bafomet/magic/bafo_shot2f.gif
+	@cmd	groundkill
+	frame	data/chars/bafomet/magic/bafo_shot2g.gif
+	@cmd	groundkill
+	frame	data/chars/bafomet/magic/bafo_shot2h.gif
+		
+anim	spawn
+	loop	0
+	delay	14
+	offset	11 12
+	frame	data/chars/bafomet/magic/bafo_shot2a.gif
+	frame	data/chars/bafomet/magic/bafo_shot2b.gif
+	frame	data/chars/bafomet/magic/bafo_shot2c.gif
+	frame	data/chars/bafomet/magic/bafo_shot2d.gif
+	frame	data/chars/bafomet/magic/bafo_shot2e.gif
+		
+#|edited by openBor Stats v 0.67
+		

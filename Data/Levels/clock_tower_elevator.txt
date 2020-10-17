@@ -1,4 +1,4 @@
-music		data/music/underground_reservoir.ogg 945945
+music		data/music/hard_fight.ogg 19200
 
 background	data/bgs/clock_tower/back-elevator.gif
 

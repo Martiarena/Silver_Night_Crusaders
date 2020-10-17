@@ -1,0 +1,34 @@
+name	         GhostSpawner_2
+health           10
+type	         None
+antigravity	 100
+animationscript  data/scripts/oscript.c
+load          	Fantasma
+
+anim	death
+	delay	1
+	offset	1 1
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+
+		
+anim	idle
+	loop	1
+	delay	140
+	offset	1 1	
+	frame	data/chars/misc/empty.gif
+	@cmd	offscreenkill 500 0
+	frame	data/chars/misc/empty.gif
+	@cmd	MspawnR "Fantasma" 260 100 70 25
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	delay	200
+	offset	1 1
+	frame	data/chars/misc/empty.gif
+	@cmd	clearE 0
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

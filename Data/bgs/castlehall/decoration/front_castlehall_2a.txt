@@ -1,0 +1,22 @@
+name	Front_castlehall_2a
+type    	none
+antigravity     100
+shadow		0
+nomove	1
+setlayer 999
+nolife	1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_gravity 0
+
+palette	data/bgs/castlehall/decoration/front_castlehall_2a.gif
+
+
+anim	idle
+	loop	0
+	offset	147 47
+	delay	7
+	frame	data/bgs/castlehall/decoration/front_castlehall_2a.gif
+		
+#|edited by openBor Stats v 0.67
+		

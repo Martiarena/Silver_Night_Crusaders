@@ -10,20 +10,21 @@ nodieblink	2
 hostile        	npc player
 candamage       npc player
 offscreenkill 	500
-score 1000 -1
+score 2500 -1
 nomove 	1 0
 cantgrab 	1
 nodrop 	2
 falldie 	1
-score	 	3000 -1
 defense normal 0.75 0 0 0 0 0 0
 defense normal2 0.75 0 0 0 0 0 0
-defense normal7 0.75 0 0 0 0 0 0
+defense normal15 2 0 0 0 0 0 0
+defense normal16 1.5 0 0 0 0 0 0
+defense normal21 0.75 0 0 0 0 0 0
 defense schock 0.75 0 0 0 0 0 0
 
 diesound         data/sounds/die3.wav
 
-icon		data/chars/misc/bgmonster.gif
+icon		data/chars/driade/bgdriade.gif
 load            DRose
 load            DHiedra
 
@@ -31,6 +32,7 @@ palette          data/chars/driade/driade_palette.gif
 alternatepal     data/chars/driade/blink_palette.gif
 animationscript  data/scripts/EScript.c
 takedamagescript data/scripts/blink.c
+
 
 
 
@@ -94,22 +96,29 @@ anim	attack
 	@cmd	spawnM "DHiedra" -100 0 0
 	@cmd	spawnM "DHiedra" -130 0 0
 	@cmd	spawnM "DHiedra" 130 0 0
+	sound	data/sounds/hiedra.wav
 	frame	data/chars/driade/attack2o.gif
 	delay	7
+	sound	data/sounds/hiedra.wav
 	frame	data/chars/driade/attack2p.gif
 	frame	data/chars/driade/attack2q.gif
+	sound	data/sounds/hiedra.wav
 	frame	data/chars/driade/attack2r.gif
 	frame	data/chars/driade/attack2o.gif
 	frame	data/chars/driade/attack2p.gif
 	frame	data/chars/driade/attack2q.gif
 	frame	data/chars/driade/attack2r.gif
 	frame	data/chars/driade/attack2o.gif
+	sound	data/sounds/hiedra_attack.wav
 	frame	data/chars/driade/attack2p.gif
+	sound	data/sounds/hiedra_attack.wav
 	frame	data/chars/driade/attack2q.gif
 	frame	data/chars/driade/attack2r.gif
 	frame	data/chars/driade/attack2o.gif
+	sound	data/sounds/sword_ground.wav
 	frame	data/chars/driade/attack2p.gif
 	frame	data/chars/driade/attack2q.gif
+	sound	data/sounds/sword_ground.wav
 	frame	data/chars/driade/attack2r.gif
 	frame	data/chars/driade/attack2o.gif
 	frame	data/chars/driade/attack2p.gif
@@ -161,22 +170,29 @@ anim	attack2
 	@cmd	spawnM "DHiedra" -90 0 0
 	@cmd	spawnM "DHiedra" -120 0 0
 	@cmd	spawnM "DHiedra" 120 0 0
+	sound	data/sounds/hiedra.wav
 	frame	data/chars/driade/attack2o.gif
 	delay	7
+	sound	data/sounds/hiedra.wav
 	frame	data/chars/driade/attack2p.gif
 	frame	data/chars/driade/attack2q.gif
+	sound	data/sounds/hiedra.wav
 	frame	data/chars/driade/attack2r.gif
 	frame	data/chars/driade/attack2o.gif
 	frame	data/chars/driade/attack2p.gif
 	frame	data/chars/driade/attack2q.gif
 	frame	data/chars/driade/attack2r.gif
 	frame	data/chars/driade/attack2o.gif
+	sound	data/sounds/hiedra_attack.wav
 	frame	data/chars/driade/attack2p.gif
+	sound	data/sounds/hiedra_attack.wav
 	frame	data/chars/driade/attack2q.gif
 	frame	data/chars/driade/attack2r.gif
 	frame	data/chars/driade/attack2o.gif
+	sound	data/sounds/sword_ground.wav
 	frame	data/chars/driade/attack2p.gif
 	frame	data/chars/driade/attack2q.gif
+	sound	data/sounds/sword_ground.wav
 	frame	data/chars/driade/attack2r.gif
 	frame	data/chars/driade/attack2o.gif
 	frame	data/chars/driade/attack2p.gif
@@ -228,22 +244,29 @@ anim	attack3
 	@cmd	spawnM "DHiedra" -100 0 0
 	@cmd	spawnM "DHiedra" -130 0 0
 	@cmd	spawnM "DHiedra" 130 0 0
+	sound	data/sounds/hiedra.wav
 	frame	data/chars/driade/attack2o.gif
 	delay	7
+	sound	data/sounds/hiedra.wav
 	frame	data/chars/driade/attack2p.gif
 	frame	data/chars/driade/attack2q.gif
+	sound	data/sounds/hiedra.wav
 	frame	data/chars/driade/attack2r.gif
 	frame	data/chars/driade/attack2o.gif
 	frame	data/chars/driade/attack2p.gif
 	frame	data/chars/driade/attack2q.gif
 	frame	data/chars/driade/attack2r.gif
 	frame	data/chars/driade/attack2o.gif
+	sound	data/sounds/hiedra_attack.wav
 	frame	data/chars/driade/attack2p.gif
+	sound	data/sounds/hiedra_attack.wav
 	frame	data/chars/driade/attack2q.gif
 	frame	data/chars/driade/attack2r.gif
 	frame	data/chars/driade/attack2o.gif
+	sound	data/sounds/sword_ground.wav
 	frame	data/chars/driade/attack2p.gif
 	frame	data/chars/driade/attack2q.gif
+	sound	data/sounds/sword_ground.wav
 	frame	data/chars/driade/attack2r.gif
 	frame	data/chars/driade/attack2o.gif
 	frame	data/chars/driade/attack2p.gif
@@ -295,22 +318,29 @@ anim	attack4
 	@cmd	spawnM "DHiedra" 90 0 0
 	@cmd	spawnM "DHiedra" -120 0 0
 	@cmd	spawnM "DHiedra" 120 0 0
+	sound	data/sounds/hiedra.wav
 	frame	data/chars/driade/attack2o.gif
 	delay	7
+	sound	data/sounds/hiedra.wav
 	frame	data/chars/driade/attack2p.gif
 	frame	data/chars/driade/attack2q.gif
+	sound	data/sounds/hiedra.wav
 	frame	data/chars/driade/attack2r.gif
 	frame	data/chars/driade/attack2o.gif
 	frame	data/chars/driade/attack2p.gif
 	frame	data/chars/driade/attack2q.gif
 	frame	data/chars/driade/attack2r.gif
 	frame	data/chars/driade/attack2o.gif
+	sound	data/sounds/hiedra_attack.wav
 	frame	data/chars/driade/attack2p.gif
+	sound	data/sounds/hiedra_attack.wav
 	frame	data/chars/driade/attack2q.gif
 	frame	data/chars/driade/attack2r.gif
 	frame	data/chars/driade/attack2o.gif
+	sound	data/sounds/sword_ground.wav
 	frame	data/chars/driade/attack2p.gif
 	frame	data/chars/driade/attack2q.gif
+	sound	data/sounds/sword_ground.wav
 	frame	data/chars/driade/attack2r.gif
 	frame	data/chars/driade/attack2o.gif
 	frame	data/chars/driade/attack2p.gif
@@ -350,6 +380,25 @@ anim	death
 	frame	data/chars/driade/death10.gif
 	frame	data/chars/driade/death11.gif
 	frame	data/chars/misc/empty.gif
+@script
+	    if(frame==12){
+      void vEntity;                                       //Target entity placeholder.
+      int  iEntity;                                       //Entity enumeration holder.
+      char iType;                                         //Entity type.
+      int  iMax      = openborvariant("count_entities");  //Entity count.
+
+      //Enumerate and loop through entity collection.
+      for(iEntity=0; iEntity<iMax; iEntity++){
+        vEntity = getentity(iEntity);                 //Get target entity from current loop.
+        iType   = getentityproperty(vEntity, "type"); //Get target type.
+
+        if(iType == openborconstant("TYPE_ENEMY")){
+          killentity(vEntity);
+        }
+      }
+    }
+	@end_script	
+	frame	data/chars/misc/empty.gif
 		
 anim	freespecial
 	rangea	0 100
@@ -366,6 +415,7 @@ anim	freespecial
 	frame	data/chars/driade/attack1e.gif
 	frame	data/chars/driade/attack1f.gif
 	frame	data/chars/driade/attack1g.gif
+	sound	data/sounds/dryad_attack.wav
 	frame	data/chars/driade/attack1h.gif
 	@cmd	target 2 2 0 0 0 0
 	@cmd	shoot2 "DRose" 10 70

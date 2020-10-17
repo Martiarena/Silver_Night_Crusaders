@@ -13,6 +13,7 @@ animationscript	data/scripts/prscript.c
 
 palette	data/chars/sheeba/magic/magic_palette.gif
 
+
 anim	death
 	loop	0
 	delay	4
@@ -31,7 +32,7 @@ anim	follow2
 	followcond	1
 	offset	15 14
 	hitfx	data/sounds/burnt.wav
-	burn	0 2 30 24 12 0 0 0 0 0
+	burn	2 2 30 24 12 0 1 0 0 0
 	frame	data/chars/sheeba/magic/fire3a.gif
 	frame	data/chars/sheeba/magic/fire3b.gif
 	frame	data/chars/sheeba/magic/fire3c.gif
@@ -75,7 +76,7 @@ anim	follow5
 	followcond	1
 	offset	15 14
 	hitfx	data/sounds/burnt.wav
-	burn	0 2 30 24 12 0 0 0 0 0
+	burn	2 4 30 24 12 0 1 0 0 0
 	frame	data/chars/sheeba/magic/fire2a.gif
 	@cmd	groundkill
 	frame	data/chars/sheeba/magic/fire2b.gif
@@ -127,7 +128,7 @@ anim	idle
 	followcond	1
 	offset	15 14
 	hitfx	data/sounds/burnt.wav
-	burn	0 2 30 24 12 0 0 0 0 0
+	burn	0 2 30 24 12 0 1 0 0 0
 	frame	data/chars/sheeba/magic/fire1a.gif
 	frame	data/chars/sheeba/magic/fire1b.gif
 	frame	data/chars/sheeba/magic/fire1c.gif
@@ -152,5 +153,5 @@ anim	idle
 	frame	data/chars/sheeba/magic/fire1k.gif
 	frame	data/chars/misc/empty.gif
 		
-#|edited by openBor Stats v 0.56
+#|edited by openBor Stats v 0.67
 		

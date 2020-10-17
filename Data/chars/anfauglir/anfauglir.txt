@@ -1,5 +1,5 @@
 name    	 Anfauglir
-health           27
+health           24
 speed            6
 type    	 enemy
 sleepwait        10
@@ -8,12 +8,12 @@ nopain  	 1
 nodrop  	 2
 death   	 1
 nodieblink       3
-offscreenkill  500
+offscreenkill  300
 score 400 -1
 hostile         player npc
 candamage 	player npc
 
-defense normal9 3 0 0 0 0 0 0
+defense normal9 5 0 0 0 0 0 0
 
 icon 		data/chars/misc/bgmonster.gif
 
@@ -22,6 +22,7 @@ takedamagescript data/scripts/blink.c
 
 palette 	 data/chars/anfauglir/idle1.gif
 alternatepal	 data/chars/anfauglir/blink.gif
+
 
 
 
@@ -231,6 +232,7 @@ anim	attack2
 	frame	data/chars/anfauglir/attack2d.gif
 	delay	7
 	bbox	30 25 90 55
+	sound	data/sounds/wolf_jump.wav
 	attack	30 25 98 55 19 11 0 0 0 0
 	frame	data/chars/anfauglir/attack2e.gif
 	delay	14
@@ -252,6 +254,7 @@ anim	attack2
 	frame	data/chars/anfauglir/attack2i.gif
 	frame	data/chars/anfauglir/attack2i.gif
 	frame	data/chars/anfauglir/attack2i.gif
+	sound	data/sounds/wolf3.wav
 	frame	data/chars/anfauglir/attack2i.gif
 	frame	data/chars/anfauglir/attack2j.gif
 	frame	data/chars/anfauglir/attack2j.gif

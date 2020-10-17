@@ -8,16 +8,19 @@ nodrop  	 2
 death   	 1
 nodieblink       3
 offscreenkill  500
-score 400 -1
+score 500 -1
 hostile  player npc
 candamage player npc
 animationscript  data/scripts/escript.c
 takedamagescript data/scripts/blink.c
+diesound         data/sounds/dknightdie.wav
 load  axeh
 icon 		data/chars/misc/bgmonster.gif
 
 defense normal3 0.5 0 0 0 0 0 0
-defense normal6 2 0 0 0 0 0 0
+defense normal6 3 0 0 0 0 0 0
+defense normal16 1.5 0 0 0 0 0 0
+defense shock 5 0 0 0 0 0 0
 
 palette 	data/chars/demonknight/demonknight_palette.gif
 
@@ -171,13 +174,12 @@ anim	attack4
 	throwframe	2 52
 	frame	data/chars/demonknight/attack2a.gif
 	frame	data/chars/demonknight/attack2b.gif
-	delay	32
+	delay	64
 	frame	data/chars/demonknight/attack2c.gif
 		
 anim	death
 	delay	5
 	offset	36 103
-	sound	data/sounds/dknightdie.wav
 	frame	data/chars/demonknight/walk1.gif
 	sound	data/sounds/flame-dies.wav
 	subentity	kdie

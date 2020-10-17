@@ -5,7 +5,7 @@ void main()
     int Health = getentityproperty(self,"health");
     int iTyp = openborconstant("ATK_NORMAL");  
     int Def = getentityproperty(self, "defense", iTyp, "factor");
-    int SFX = loadsample("data/sounds/clang.wav");
+    int SFX = loadsample("data/sounds/bike.wav");
 
     if(Health > 0 && Def != 0){
 	changeentityproperty(self, "colourmap", 1);

@@ -17,7 +17,7 @@ subject_to_wall 0
 subject_to_obstacle 0
 subject_to_platform 0
 antigravity     100
-diesound	data/sounds/dog_death.wav
+diesound	data/sounds/fizcko_death.wav
 lifebarstatus 5 100 1 0 1 -300 -300 -300 -300
 lifeposition 309 15
 nameposition -500 -500
@@ -25,6 +25,9 @@ iconposition -500 -500
 defense normal 0.75 0 0 0 0 0 0
 defense normal2 0.75 0 0 0 0 0 0
 defense normal3 0.5 0 0 0 0 0 0
+defense normal4 0.25 0 0 0 0 0 0
+defense normal5 0.25 0 0 0 0 0 0
+defense normal6 0.5 0 0 0 0 0 0
 defense normal7 0.75 0 0 0 0 0 0
 defense normal8 0.25 0 0 0 0 0 0
 defense normal9 1 0 0 0 0 0 0
@@ -34,8 +37,10 @@ defense burn 0.75 0 0 0 0 0 0
 defense schock 0.75 0 0 0 0 0 0
 
 load    kdie
+load    P._Asesino_
 
-icon 		data/chars/misc/bgmonster.gif
+#icon 		data/chars/misc/bgmonster.gif
+icon 		data/chars/ficzko/bgficzko.gif
 
 palette          data/chars/ficzko/ficzko_palette.gif
 alternatepal     data/chars/ficzko/ficzko_blink.gif
@@ -50,6 +55,9 @@ load  		Circle_spell
 load  		Circle_spell_2
 load  		Circle_spell_3
 load            Clown_bomb
+
+
+
 
 
 
@@ -117,6 +125,7 @@ anim	follow1
 	@end_script	
 	delay	7
 	offset	61 74
+	sound	data/sounds/fizcko_appear.wav
 	frame	data/chars/ficzko/spawn1a.gif
 	frame	data/chars/ficzko/spawn1b.gif
 	frame	data/chars/ficzko/spawn1c.gif
@@ -148,12 +157,14 @@ anim	follow1
 	attack	35 45 33 60 19 0 0 0 0 0
 	frame	data/chars/ficzko/idle1a.gif
 	delay	10
+	sound	data/sounds/fizcko_laugh.wav
 	frame	data/chars/ficzko/block1a.gif
 	delay	20
 	offset	80 65
 	bbox	57 36 39 60
 	attack	57 36 39 60 19 0 0 0 0 0
 	frame	data/chars/ficzko/freespecial1b.gif
+	sound	data/sounds/throw_big.wav
 	@cmd	targetB 120 32 -20 1
 	@cmd	toss2 "Clown_bomb" 24 42 3
 	frame	data/chars/ficzko/freespecial1e.gif
@@ -165,6 +176,7 @@ anim	follow1
 	bbox	57 36 39 60
 	attack	57 36 39 60 19 0 0 0 0 0
 	frame	data/chars/ficzko/freespecial1b.gif
+	sound	data/sounds/throw_big.wav
 	@cmd	targetB 120 32 -20 1
 	@cmd	toss2 "Clown_bomb" 24 42 3
 	frame	data/chars/ficzko/freespecial1e.gif
@@ -176,6 +188,7 @@ anim	follow1
 	bbox	57 36 39 60
 	attack	57 36 39 60 19 0 0 0 0 0
 	frame	data/chars/ficzko/freespecial1b.gif
+	sound	data/sounds/throw_big.wav
 	@cmd	targetB 120 32 -20 1
 	@cmd	toss2 "Clown_bomb" 24 42 3
 	frame	data/chars/ficzko/freespecial1e.gif
@@ -189,6 +202,7 @@ anim	follow1
 	bbox	57 36 39 60
 	attack	57 36 39 60 19 0 0 0 0 0
 	frame	data/chars/ficzko/freespecial1b.gif
+	sound	data/sounds/throw_big.wav
 	@cmd	targetB 120 32 -20 1
 	@cmd	toss2 "Clown_bomb" 24 42 3
 	frame	data/chars/ficzko/freespecial1e.gif
@@ -204,6 +218,7 @@ anim	follow1
 	delay	7
 	bbox	0
 	attack	0
+	sound	data/sounds/fizcko_appear.wav
 	frame	data/chars/ficzko/spawn2a.gif
 	frame	data/chars/ficzko/spawn2b.gif
 	frame	data/chars/ficzko/spawn2c.gif
@@ -234,7 +249,7 @@ anim	follow1
 	frame	data/chars/ficzko/spawn2ab.gif
 	frame	data/chars/ficzko/spawn2ac.gif
 	frame	data/chars/ficzko/spawn2ad.gif
-	delay	200
+	delay	100
 	frame	data/chars/misc/empty.gif
 	attack	0
 	@cmd	anichange "ANI_FOLLOW4"
@@ -243,6 +258,19 @@ anim	follow1
 anim	follow2
 	delay	7
 	offset	61 74
+@script
+    void self = getlocalvar("self");
+    int r = rand()%30;
+
+    if( frame == 0){
+      if( r > 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      } else if( r < -10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW6"));
+      }
+    }
+	@end_script	
+	sound	data/sounds/fizcko_appear.wav
 	frame	data/chars/ficzko/spawn1a.gif
 	frame	data/chars/ficzko/spawn1b.gif
 	frame	data/chars/ficzko/spawn1c.gif
@@ -285,15 +313,7 @@ anim	follow2
 	frame	data/chars/ficzko/spell1c.gif
 	frame	data/chars/ficzko/spell1c.gif
 	frame	data/chars/ficzko/spell1c.gif
-	frame	data/chars/ficzko/spell1c.gif
-	frame	data/chars/ficzko/spell1c.gif
-	frame	data/chars/ficzko/spell1c.gif
-	frame	data/chars/ficzko/spell1c.gif
 	@cmd	spawn01 "Circle_spell" 40 -20 0
-	frame	data/chars/ficzko/spell1c.gif
-	frame	data/chars/ficzko/spell1c.gif
-	frame	data/chars/ficzko/spell1c.gif
-	frame	data/chars/ficzko/spell1c.gif
 	frame	data/chars/ficzko/spell1c.gif
 	frame	data/chars/ficzko/spell1c.gif
 	frame	data/chars/ficzko/spell1c.gif
@@ -303,24 +323,12 @@ anim	follow2
 	frame	data/chars/ficzko/spell1c.gif
 	frame	data/chars/ficzko/spell1c.gif
 	frame	data/chars/ficzko/spell1c.gif
-	frame	data/chars/ficzko/spell1c.gif
-	frame	data/chars/ficzko/spell1c.gif
-	frame	data/chars/ficzko/spell1c.gif
-	frame	data/chars/ficzko/spell1c.gif
 	@cmd	spawn01 "Circle_spell" -40 -20 0
 	frame	data/chars/ficzko/spell1c.gif
 	frame	data/chars/ficzko/spell1c.gif
 	frame	data/chars/ficzko/spell1c.gif
 	frame	data/chars/ficzko/spell1c.gif
-	frame	data/chars/ficzko/spell1c.gif
-	frame	data/chars/ficzko/spell1c.gif
-	frame	data/chars/ficzko/spell1c.gif
-	frame	data/chars/ficzko/spell1c.gif
 	@cmd	spawn01 "Circle_spell_2" 0 70 0
-	frame	data/chars/ficzko/spell1c.gif
-	frame	data/chars/ficzko/spell1c.gif
-	frame	data/chars/ficzko/spell1c.gif
-	frame	data/chars/ficzko/spell1c.gif
 	frame	data/chars/ficzko/spell1c.gif
 	frame	data/chars/ficzko/spell1c.gif
 	frame	data/chars/ficzko/spell1c.gif
@@ -336,6 +344,7 @@ anim	follow2
 	delay	7
 	bbox	0
 	attack	0
+	sound	data/sounds/fizcko_appear.wav
 	frame	data/chars/ficzko/spawn2a.gif
 	frame	data/chars/ficzko/spawn2b.gif
 	frame	data/chars/ficzko/spawn2c.gif
@@ -366,7 +375,7 @@ anim	follow2
 	frame	data/chars/ficzko/spawn2ab.gif
 	frame	data/chars/ficzko/spawn2ac.gif
 	frame	data/chars/ficzko/spawn2ad.gif
-	delay	200
+	delay	100
 	frame	data/chars/misc/empty.gif
 	attack	0
 	@cmd	anichange "ANI_FOLLOW4"
@@ -375,6 +384,19 @@ anim	follow2
 anim	follow3
 	delay	7
 	offset	61 74
+@script
+    void self = getlocalvar("self");
+    int r = rand()%30;
+
+    if( frame == 0){
+      if( r > 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      } else if( r < -10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW6"));
+      }
+    }
+	@end_script	
+	sound	data/sounds/fizcko_appear.wav
 	frame	data/chars/ficzko/spawn1a.gif
 	frame	data/chars/ficzko/spawn1b.gif
 	frame	data/chars/ficzko/spawn1c.gif
@@ -406,169 +428,13 @@ anim	follow3
 	bbox	57 36 39 60
 	attack	57 36 39 60 19 0 0 0 0 0
 	frame	data/chars/ficzko/freespecial1a.gif
+	sound	data/sounds/spell.wav
 	frame	data/chars/ficzko/freespecial1b.gif
 	frame	data/chars/ficzko/freespecial1a.gif
 	frame	data/chars/ficzko/freespecial1b.gif
 	frame	data/chars/ficzko/freespecial1a.gif
 	frame	data/chars/ficzko/freespecial1b.gif
 	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
 	frame	data/chars/ficzko/freespecial1c.gif
 	frame	data/chars/ficzko/freespecial1b.gif
 	frame	data/chars/ficzko/freespecial1c.gif
@@ -579,6 +445,7 @@ anim	follow3
 	delay	55
 	frame	data/chars/ficzko/freespecial1d.gif
 	delay	14
+	sound	data/sounds/throw_big.wav
 	frame	data/chars/ficzko/freespecial1f.gif
 	@cmd	spawn01 "Evileye" 90 -140 0
 	frame	data/chars/ficzko/freespecial1e.gif
@@ -594,83 +461,13 @@ anim	follow3
 	bbox	57 36 39 60
 	attack	57 36 39 60 19 0 0 0 0 0
 	frame	data/chars/ficzko/freespecial1a.gif
+	sound	data/sounds/spell.wav
 	frame	data/chars/ficzko/freespecial1b.gif
 	frame	data/chars/ficzko/freespecial1a.gif
 	frame	data/chars/ficzko/freespecial1b.gif
 	frame	data/chars/ficzko/freespecial1a.gif
 	frame	data/chars/ficzko/freespecial1b.gif
 	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1a.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
-	frame	data/chars/ficzko/freespecial1c.gif
-	frame	data/chars/ficzko/freespecial1b.gif
 	frame	data/chars/ficzko/freespecial1c.gif
 	frame	data/chars/ficzko/freespecial1b.gif
 	frame	data/chars/ficzko/freespecial1c.gif
@@ -684,6 +481,7 @@ anim	follow3
 	attack	57 36 39 60 19 0 0 0 0 0
 	frame	data/chars/ficzko/freespecial1d.gif
 	delay	14
+	sound	data/sounds/throw_big.wav
 	frame	data/chars/ficzko/freespecial1f.gif
 	@cmd	spawn01 "Evileye" 90 -140 0
 	frame	data/chars/ficzko/freespecial1e.gif
@@ -698,6 +496,7 @@ anim	follow3
 	delay	7
 	bbox	0
 	attack	0
+	sound	data/sounds/fizcko_appear.wav
 	frame	data/chars/ficzko/spawn2a.gif
 	frame	data/chars/ficzko/spawn2b.gif
 	frame	data/chars/ficzko/spawn2c.gif
@@ -728,7 +527,7 @@ anim	follow3
 	frame	data/chars/ficzko/spawn2ab.gif
 	frame	data/chars/ficzko/spawn2ac.gif
 	frame	data/chars/ficzko/spawn2ad.gif
-	delay	300
+	delay	100
 	frame	data/chars/misc/empty.gif
 	attack	0
 	@cmd	anichange "ANI_FOLLOW4"
@@ -748,7 +547,9 @@ anim	follow4
 	delay	1
 	offset	61 74
 	frame	data/chars/misc/empty.gif
-	delay	300
+	delay	100
+	@cmd	move 300 0 0
+	@cmd	targetB 120 32 -20 1
 	frame	data/chars/misc/empty.gif
 	delay	7
 	bbox	0
@@ -761,9 +562,9 @@ anim	follow5
 	delay	1
 	offset	61 74
 	frame	data/chars/misc/empty.gif
-	delay	300
+	delay	100
 	@cmd	move 300 0 0
-	@cmd	flip
+	@cmd	targetB 120 32 -20 1
 	frame	data/chars/misc/empty.gif
 	delay	7
 	frame	data/chars/misc/empty.gif
@@ -773,19 +574,10 @@ anim	follow5
 	@cmd	anichange "ANI_FOLLOW1"
 	frame	data/chars/misc/empty.gif
 		
-anim	idle
-	loop	1
+anim	follow6
 	delay	7
 	offset	61 74
-	frame	data/chars/misc/empty.gif
-	attack	0
-	@cmd	attack0 "ANI_FOLLOW1"
-	frame	data/chars/misc/empty.gif
-		
-anim	spawn
-	loop	0
-	delay	7
-	offset	61 74
+	sound	data/sounds/fizcko_appear.wav
 	frame	data/chars/ficzko/spawn1a.gif
 	frame	data/chars/ficzko/spawn1b.gif
 	frame	data/chars/ficzko/spawn1c.gif
@@ -812,20 +604,45 @@ anim	spawn
 	frame	data/chars/ficzko/spawn1x.gif
 	frame	data/chars/ficzko/spawn1y.gif
 	frame	data/chars/ficzko/spawn1z.gif
-	delay	10
-	bbox	35 45 33 60
-	attack	35 45 33 60 19 0 0 0 0 0
+	delay	1
+	offset	80 65
+	bbox	57 36 39 60
+	attack	57 36 39 60 19 0 0 0 0 0
+	frame	data/chars/ficzko/freespecial1a.gif
+	sound	data/sounds/spell.wav
+	frame	data/chars/ficzko/freespecial1b.gif
+	frame	data/chars/ficzko/freespecial1a.gif
+	frame	data/chars/ficzko/freespecial1b.gif
+	frame	data/chars/ficzko/freespecial1a.gif
+	frame	data/chars/ficzko/freespecial1b.gif
+	frame	data/chars/ficzko/freespecial1a.gif
+	frame	data/chars/ficzko/freespecial1c.gif
+	frame	data/chars/ficzko/freespecial1b.gif
+	frame	data/chars/ficzko/freespecial1c.gif
+	frame	data/chars/ficzko/freespecial1b.gif
+	frame	data/chars/ficzko/freespecial1c.gif
+	frame	data/chars/ficzko/freespecial1b.gif
+	frame	data/chars/ficzko/freespecial1c.gif
+	delay	35
+	frame	data/chars/ficzko/freespecial1d.gif
+	delay	14
+	sound	data/sounds/throw.wav
+	frame	data/chars/ficzko/freespecial1f.gif
+	@cmd	spawn01 "P._Asesino_" 30 -120 0
+	@cmd	spawn01 "P._Asesino_" 160 -120 0
+	@cmd	spawn01 "P._Asesino_" 290 -120 0
+	frame	data/chars/ficzko/freespecial1e.gif
+	delay	55
+	frame	data/chars/ficzko/freespecial1e.gif
+	delay	14
+	offset	61 74
+	frame	data/chars/ficzko/spell1b.gif
 	frame	data/chars/ficzko/idle1a.gif
-	frame	data/chars/ficzko/idle1b.gif
-	frame	data/chars/ficzko/idle1c.gif
-	frame	data/chars/ficzko/idle1b.gif
-	frame	data/chars/ficzko/idle1a.gif
-	frame	data/chars/ficzko/idle1b.gif
-	frame	data/chars/ficzko/idle1c.gif
-	frame	data/chars/ficzko/idle1b.gif
+	frame	data/chars/ficzko/block1a.gif
 	delay	7
+	bbox	0
 	attack	0
-	bbox	0 0 0 0
+	sound	data/sounds/fizcko_appear.wav
 	frame	data/chars/ficzko/spawn2a.gif
 	frame	data/chars/ficzko/spawn2b.gif
 	frame	data/chars/ficzko/spawn2c.gif
@@ -856,6 +673,27 @@ anim	spawn
 	frame	data/chars/ficzko/spawn2ab.gif
 	frame	data/chars/ficzko/spawn2ac.gif
 	frame	data/chars/ficzko/spawn2ad.gif
+	delay	100
+	frame	data/chars/misc/empty.gif
+	attack	0
+	@cmd	anichange "ANI_FOLLOW4"
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	61 74
+	frame	data/chars/misc/empty.gif
+	attack	0
+	@cmd	attack0 "ANI_FOLLOW1"
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	loop	0
+	delay	100
+	offset	61 74
+	sound	data/sounds/fizcko_laugh_high.wav
+	frame	data/chars/misc/empty.gif
 		
 #|edited by openBor Stats v 0.67
 		

@@ -1,7 +1,7 @@
 name	        Spiral_disapear_b
 type	        none
 lifespan        4
-setlayer        1
+setlayer        50
 antigravity     100
 
 animationscript  data/scripts/escript.c
@@ -9,9 +9,11 @@ animationscript  data/scripts/escript.c
 
 
 
+
 anim	idle
 	delay	7
 	offset	49 104
+	sound	data/sounds/spiralspell.wav
 	frame	data/chars/wizard/spell/transform1a.gif
 	frame	data/chars/wizard/spell/transform1b.gif
 	frame	data/chars/wizard/spell/transform1c.gif

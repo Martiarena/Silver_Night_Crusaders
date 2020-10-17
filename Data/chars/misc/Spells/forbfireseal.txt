@@ -6,6 +6,7 @@ antigravity     100
 palette		data/chars/misc/spells/forb_magiccircle.gif
 
 
+
 anim	idle
 	delay	1
 	offset	7 49
@@ -51,10 +52,11 @@ anim	idle
 	frame	data/chars/misc/empty.gif
 	frame	data/chars/misc/spells/forb_magiccircle_fire1c.gif
 	frame	data/chars/misc/empty.gif
-
+		
 anim	spawn
 	delay	1
 	offset	7 49
+	sound	data/sounds/forbbinspell.wav
 	frame	data/chars/misc/spells/forb_magiccircle_fire1a.gif
 	frame	data/chars/misc/empty.gif
 	frame	data/chars/misc/spells/forb_magiccircle_fire1a.gif
@@ -71,5 +73,5 @@ anim	spawn
 	frame	data/chars/misc/empty.gif
 	frame	data/chars/misc/spells/forb_magiccircle_fire1b.gif
 		
-#|edited by openBor Stats v 0.56
+#|edited by openBor Stats v 0.67
 		

@@ -1,0 +1,138 @@
+name	        IceSpear
+type	        none
+nolife          1
+setlayer	10
+lifespan        4
+remove          0
+antigravity     100
+candamage       enemy shot
+
+palette		data/chars/xavier/magic/icespear1a.gif
+
+
+
+
+
+anim	idle
+	delay	1
+	offset	71 19
+	hitfx	data/sounds/icebreak.wav
+	attack7	70 13 60 15 19 1 0 0 0 0
+	move	3
+	frame	data/chars/xavier/magic/icespear1a.gif
+	frame	data/chars/xavier/magic/icespear1a.gif
+	frame	data/chars/xavier/magic/icespear1a.gif
+	frame	data/chars/xavier/magic/icespear1b.gif
+	frame	data/chars/xavier/magic/icespear1b.gif
+	frame	data/chars/xavier/magic/icespear1b.gif
+	attack7	15 13 120 15 19 1 0 0 0 0
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1c.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	frame	data/chars/xavier/magic/icespear1d.gif
+	attack7	0 0 0 0
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

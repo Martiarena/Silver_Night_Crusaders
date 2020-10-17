@@ -1,24 +1,24 @@
 name    	 Guard
-health           15
+health           12
 speed            10
 type npc
 subtype follow
 noquake  	 1
 nodrop  	 2
 jumpheight       2
-aggression 9999
+aggression 	 9999
 death   	 1
 nodieblink       3
 min_noatk_chance 0
 max_noatk_chance 0
 hostile          enemy
 candamage        enemy obstacle
-animationscript	 data/scripts/escript.c
+animationscript	data/scripts/escript.c
 load Blooda
 
-palette 	 data/chars/npc/guard/soldier_palette.gif
+diesound	data/sounds/knightdie.wav
 
-
+palette 	 data/chars/npc/guard/guard.gif
 
 
 
@@ -42,112 +42,114 @@ anim	attack1
 	rangea	-20 80
 	loop	0
 	delay	7
-	offset	48 99
-	bbox	47 45 10 50
+	offset	35 76
+	bbox	30 24 10 50
 	sound	data/sounds/throw_big.wav
 	frame	data/chars/npc/guard/attack1a.gif
-	attack	57 30 58 40 3 0 0 0 0 0
 	frame	data/chars/npc/guard/attack1b.gif
-	attack	57 65 58 40 3 0 0 0 0 0
 	frame	data/chars/npc/guard/attack1c.gif
 	frame	data/chars/npc/guard/attack1d.gif
+	delay	3
+	offset	35 82
+	bbox	30 39 10 38
+	hitfx	data/sounds/hit-cut.wav
+	attack2	40 0 50 82 3 0 0 0 0 0
+	frame	data/chars/npc/guard/attack1e.gif
+	delay	1
+	attack2	0 0 0 0
+	frame	data/chars/npc/guard/attack1f.gif
 	delay	7
-	attack	0 0 0 0
-	frame	data/chars/npc/guard/attack1d.gif
+	frame	data/chars/npc/guard/attack1f.gif
 		
 anim	death
 	loop	0
 	delay	7
-	offset	48 99
-	jumpframe	0 2 -1
-	frame	data/chars/npc/guard/pain1a.gif
+	offset	35 81
+	frame	data/chars/npc/guard/land.gif
 	delay	5
-	sound	data/sounds/guarddie.wav
 	subentity	Blooda
 	spawnframe	0 38 0 33 0
-	frame	data/chars/npc/guard/death1a.gif
+	frame	data/chars/npc/guard/death1.gif
 	delay	25
-	frame	data/chars/npc/guard/death1b.gif
+	frame	data/chars/npc/guard/death1.gif
 	delay	3
-	frame	data/chars/npc/guard/death1c.gif
-	frame	data/chars/npc/guard/death1d.gif
-	frame	data/chars/npc/guard/death1e.gif
-	frame	data/chars/npc/guard/death1f.gif
+	frame	data/chars/npc/guard/death7.gif
+	frame	data/chars/npc/guard/death8.gif
+	frame	data/chars/npc/guard/death9.gif
+	frame	data/chars/npc/guard/death10.gif
 	delay	7
-	frame	data/chars/npc/guard/death1g.gif
+	frame	data/chars/npc/guard/death11.gif
+	frame	data/chars/npc/guard/death12.gif
+	frame	data/chars/npc/guard/death13.gif
+	frame	data/chars/npc/guard/death14.gif
 	frame	data/chars/misc/empty.gif
 		
 anim	fall
 	loop	0
 	delay	7
-	offset	48 99
-	jumpframe	0 1.5 -1
-	frame	data/chars/npc/guard/pain1a.gif
+	offset	35 76
+	frame	data/chars/npc/guard/fall1.gif
 	@cmd	platform 1
-	frame	data/chars/npc/guard/walk1.gif
+	frame	data/chars/npc/guard/fall2.gif
 		
 anim	fall2
 	loop	0
 	delay	7
-	offset	48 99
+	offset	35 76
 	subentity	Blooda
 	spawnframe	0 20 0 30 0
-	jumpframe	0 1.5 -1
-	frame	data/chars/npc/guard/pain1a.gif
+	frame	data/chars/npc/guard/fall1.gif
 	@cmd	platform 1
-	frame	data/chars/npc/guard/walk1.gif
+	frame	data/chars/npc/guard/fall2.gif
 		
 anim	idle
-	loop	0
-	delay	7
-	offset	48 99
-	bbox	44 45 10 50
-	frame	data/chars/npc/guard/walk1.gif
+	loop	1
+	delay	20
+	offset	35 76
+	bbox	30 24 10 50
+	frame	data/chars/npc/guard/idle.gif
 		
 anim	land
 	loop	0
-	delay	7
-	offset	48 99
-	bbox	44 45 10 50
-	frame	data/chars/npc/guard/walk1.gif
+	delay	9
+	offset	35 81
+	frame	data/chars/npc/guard/land.gif
 		
 anim	pain
 	loop	0
 	delay	9
-	offset	48 99
+	offset	35 76
 	jumpframe	0 1.5 -1
-	frame	data/chars/npc/guard/pain1a.gif
-	frame	data/chars/npc/guard/walk1.gif
+	frame	data/chars/npc/guard/walk4.gif
+	frame	data/chars/npc/guard/land.gif
 		
 anim	pain2
 	loop	0
 	delay	9
-	offset	48 99
+	offset	35 76
 	jumpframe	0 1.5 -1
 	subentity	Blooda
 	spawnframe	0 20 0 30 0
-	frame	data/chars/npc/guard/pain1a.gif
-	frame	data/chars/npc/guard/walk1.gif
+	frame	data/chars/npc/guard/walk4.gif
+	frame	data/chars/npc/guard/land.gif
 		
 anim	spawn
 	loop	0
 	delay	1
-	offset	48 99
-	frame	data/chars/npc/guard/walk1.gif
+	offset	35 76
+	frame	data/chars/npc/guard/idle.gif
 		
 anim	walk
 	loop	1
-	delay	7
-	offset	48 99
-	bbox	44 45 10 50
+	delay	10
+	offset	35 76
+	bbox	30 24 10 50
 	frame	data/chars/npc/guard/walk1.gif
-	frame	data/chars/npc/guard/walk1b.gif
-	frame	data/chars/npc/guard/walk1c.gif
-	frame	data/chars/npc/guard/walk1d.gif
-	frame	data/chars/npc/guard/walk1e.gif
-	frame	data/chars/npc/guard/walk1f.gif
-	frame	data/chars/npc/guard/walk1g.gif
-	frame	data/chars/npc/guard/walk1h.gif
+	frame	data/chars/npc/guard/walk2.gif
+	frame	data/chars/npc/guard/walk3.gif
+	frame	data/chars/npc/guard/walk4.gif
+	frame	data/chars/npc/guard/walk2.gif
+	frame	data/chars/npc/guard/walk3.gif
 		
 #|edited by openBor Stats v 0.67
 		

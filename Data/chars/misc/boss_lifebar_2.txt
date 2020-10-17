@@ -1,0 +1,25 @@
+name	boss_lifebar_2
+speed 	10
+type	panel
+setlayer 99999
+
+palette	data/chars/misc/boss_lifebar_2.gif
+
+
+
+
+
+anim	death
+	loop	0
+	offset	0 0
+	delay	7
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	offset	0 0
+	delay	7
+	frame	data/chars/misc/boss_lifebar_2.gif
+		
+#|edited by openBor Stats v 0.67
+		

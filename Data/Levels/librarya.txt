@@ -394,7 +394,7 @@ at  1000
 
 spawn  Lampara_libreria
 coords  -38  216  155
-item  P._Invisible
+item  Ajo
 flip 1
 at  1171
 
@@ -512,7 +512,7 @@ at  3000
 
 spawn  Lampara_libreria
 coords  -38  216  155
-item	Agua_Santa
+item	Crucifijo
 flip 1
 at  3016
 
@@ -522,7 +522,7 @@ at  3170
 
 spawn  Lampara_libreria
 coords -38  216  123
-item	C._Sagrada
+item	C._Plateada
 map 1
 flip 1
 at  3208

@@ -1,4 +1,4 @@
-music		data/music/castlewalls.ogg 305613
+music		data/music/prisonpurgatory.ogg 637951
 
 panel	        data/bgs/dungeon/dungeon.gif
 
@@ -36,6 +36,11 @@ flip  1
 at  0
 
 spawn	window_dungeon_1
+coords  131  216  185
+flip  1
+at  0
+
+spawn	window_dungeon_rain
 coords  131  216  185
 flip  1
 at  0
@@ -105,6 +110,11 @@ alias	Thick
 flip  1
 at  0
 
+spawn  Skull_dungeon
+coords  962  216  40
+flip  1
+at  0
+
 spawn  Prisoner_1
 coords  1033  216  0
 at  0
@@ -145,10 +155,7 @@ spawn  Prisoner_3
 coords  1259  216  112
 at  0
 
-spawn  Skull_dungeon
-coords  1280  216  110
-flip  1
-at  0
+
 
 spawn  dungeon_platform1c
 coords  1297  216  90
@@ -200,10 +207,6 @@ coords  1642  217  0
 flip  1
 at  0
 
-spawn  Sword_dungeon
-coords  1660  216  110
-at  0
-
 spawn  dungeon_platform1c
 coords  1681  216  90
 flip  1
@@ -227,6 +230,10 @@ at  0
 spawn  dungeon_platform1c
 coords  1892  216  89
 flip  1
+at  0
+
+spawn  Sword_dungeon
+coords  1895  216  0
 at  0
 
 spawn  Dungeon_spikewheel
@@ -335,7 +342,7 @@ flip  1
 at  0
 
 spawn  Dungeon_wall1e
-coords  3237  216  1
+coords  3237  216  0
 alias	Thick
 flip  1
 at  0
@@ -346,13 +353,13 @@ flip  1
 at  0
 
 spawn  Dungeon_wall1f
-coords  3485  216  34
+coords  3485  216  33
 alias	Thick
 flip  1
 at  0
 
 spawn  Dungeon_wall1g
-coords  3485  216  74
+coords  3485  216  73
 alias	Thick
 flip  1
 at  0
@@ -423,6 +430,11 @@ alias	Thick
 flip  1
 at  0
 
+spawn	Stage7
+coords  160 240  0
+flip    1
+at      0
+
 spawn  Jar1
 coords  35  216  120
 flip  1
@@ -479,6 +491,9 @@ coords  340  216  150
 item  ___20
 at  765
 
+Blockade  853
+at  853
+
 spawn  Candle1
 coords  340  216  150
 item  ___20
@@ -493,18 +508,18 @@ spawn  E._Carmesi
 coords  360  216  108
 at  980
 
-Blockade  1015
-at  1015
-
 spawn  Candle1
 coords  340  216  150
-item  P._invisible
+item  Ajo
 at  1020
 
 spawn  Candle1
 coords  340  216  60
 item  ___10
 at  1068
+
+Blockade  1130
+at  1130
 
 spawn  E._Carmesi
 coords  -40  216
@@ -553,6 +568,9 @@ spawn  EctoSpawner
 coords  400  216  55
 at  2100
 
+Blockade  2240
+at  2240
+
 spawn  Candle1
 coords  340  216  65
 item  ___20
@@ -587,8 +605,11 @@ at  2900
 
 spawn  Candle1
 coords  340  216  144
-item  Agua_Santa
+item  Crucifijo
 at  2900
+
+Blockade  2965
+at  2965
 
 spawn  Brujo
 coords  360  216  95

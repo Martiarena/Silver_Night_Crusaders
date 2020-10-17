@@ -1,7 +1,8 @@
 name    	 Evileye
 health           24
-speed            6
-running          12
+speed            16
+running          24
+lifespan	12
 nolife           1
 type    	 enemy
 aimove           chase
@@ -22,14 +23,17 @@ max_noatk_chance 0
 animationscript  data/scripts/escript.c
 takedamagescript data/scripts/blink.c
 
+defense normal6 4 0 0 0 0 0 0
+defense normal21 2 0 0 0 0 0 0
+
 load             edie
+
+diesound	data/sounds/die5.wav
 
 icon 		data/chars/misc/bgmonster.gif
 
 palette 	data/chars/ficzko/magic/ficzko_eye_palette.gif
 alternatepal	data/chars/ficzko/magic/ficzko_eye_blink.gif
-
-
 
 
 
@@ -83,6 +87,8 @@ anim	attack1
 	frame	data/chars/ficzko/magic/idle.gif
 	frame	data/chars/ficzko/magic/attack1b.gif
 	delay	7
+	sound	data/sounds/eye_beam.wav
+	hitfx	data/sounds/slash.wav
 	attack2	21 34 7 186 12 0 0 0 0 0
 	frame	data/chars/ficzko/magic/attack1c.gif
 	frame	data/chars/ficzko/magic/attack1d.gif
@@ -101,6 +107,7 @@ anim	attack1
 anim	death
 	delay	3
 	offset	24 220
+	sound	data/sounds/explosion-fire.wav
 	subentity	edie
 	spawnframe	4 0 0 190 0
 	frame	data/chars/ficzko/magic/death1a.gif
@@ -127,6 +134,22 @@ anim	idle
 	delay	1
 	attack	0 0 0 0 0 0 0 0
 	frame	data/chars/ficzko/magic/idle.gif
+		
+anim	run
+	loop	1 2 4
+	delay	12
+	offset	24 220
+	bbox	8 13 33 50
+	attack	8 13 32 50 12 0 0 0 0 0
+	frame	data/chars/ficzko/magic/walk1.gif
+	bbox	8 13 33 50
+	attack	8 13 32 50 12 0 0 0 0 0
+	frame	data/chars/ficzko/magic/walk2.gif
+	delay	11
+	frame	data/chars/ficzko/magic/walk2.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0
+	frame	data/chars/ficzko/magic/walk2.gif
 		
 anim	spawn
 	loop	0

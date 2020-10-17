@@ -26,19 +26,24 @@ load    fireseal
 load    Firedeathbig
 defense normal 0.75 0 0 0 0 0 0
 defense normal2 0.75 0 0 0 0 0 0
+defense normal4 0.1 0 0 0 0 0 0
+defense normal5 0.5 0 0 0 0 0 0
 defense normal6 0.5 0 0 0 0 0 0
-defense normal7 1.25 0 0 0 0 0 0
+defense normal7 1.5 0 0 0 0 0 0
 defense normal8 0.25 0 0 0 0 0 0
 defense normal9 2 0 0 0 0 0 0
+defense normal15 0.25 0 0 0 0 0 0
 defense normal19 0.25 0 0 0 0 0 0
 defense normal20 0 0 0 0 0 0 0
+defense normal21 0.75 0 0 0 0 0 0
 defense burn 0.25 0 0 0 0 0 0
-defense schock 0.75 0 0 0 0 0 0
+defense shock 3 0 0 0 0 0 0
 
 icon		data/chars/misc/bgmonster.gif
 
 palette   data/chars/cerberus/cerberus_palette.gif
 alternatepal  data/chars/cerberus/cerberus_blink.gif
+
 
 
 
@@ -177,7 +182,7 @@ anim	death
 	delay	1
 	@cmd	suicide
 	frame	data/chars/misc/empty.gif
-
+		
 anim	freespecial
 	loop	0
 	rangea	0 156
@@ -285,7 +290,7 @@ anim	freespecial2
 anim	freespecial3
 	loop	0
 	rangea	0 140
-	range	150 300
+	range	120 340
 	delay	35
 	offset	105 192
 	bbox	0 40 140 150

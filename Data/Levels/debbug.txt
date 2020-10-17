@@ -1,8 +1,4 @@
-bossmusic	data/music/boss.ogg 367353
-#music		data/music/castlewalls.ogg
-
-panel	        data/bgs/debbug/alcoba.gif
-
+panel	        data/bgs/debbug/debbug.gif
 
 musicfade	200
 order           a
@@ -15,44 +11,55 @@ type		0 0 0
 cameratype 1
 noslow 1
 
-spawn  ___250
-coords  130  216  0
+spawn  Hacha
+coords  120  216  0
 at  0
 
-spawn  Mimic
+spawn  C._Plateada
 coords  150  216  0
 at  0
 
-spawn  ___400
-coords  165  216  0
-at  0
-
-spawn  Mimic
+spawn  Biblia
 coords  180  216  0
-map 2
 at  0
 
-spawn  ___700
-coords  195  216  0
+spawn  Bomba
+coords  210  216  0
 at  0
 
-spawn  Mimic
-coords  200  216  0
-map 3
+spawn  C._Plateada
+coords  240  216  0
 at  0
 
-spawn  E._Laser
-coords  320  216  50
+spawn  A._Bendita
+coords  270  216  0
 at  0
 
-spawn	J._Anfauglir
+spawn  Bumeran
+coords  300  216  0
+at  0
+
+spawn  Gema_roja
+coords  330  216  0
+at  0
+
+spawn  Gema_azul
 coords  360  216  0
 at  0
 
-Blockade  425
-at  345
 
-spawn  Bathory
-coords  340  216  0
-at  345
+spawn	E._Laser
+coords  160  216  0
+at 0
 
+spawn  Tomo_magico
+coords  50  216  0
+at 0
+
+spawn  Xavier
+coords  270  216  0
+at 0
+
+spawn	Bafomet
+coords  160  216  0
+at	100

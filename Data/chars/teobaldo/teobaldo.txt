@@ -9,8 +9,9 @@ jumpmove	3
 jumpheight	3
 noquake		1
 bounce		0
-sleepwait       2000
-knockdowncount   10
+sleepwait       500
+knockdowncount  10
+secret		1 1
 death		1
 nodieblink	2
 icon		data/chars/teobaldo/icon.gif
@@ -29,6 +30,8 @@ defense normal20 0 1 999 0 0 0 0
 defense burn 0.75
 defense shock 0.75
 candamage       enemy obstacle shot
+parrow 		data/chars/misc/parrow1p.gif -8 -75
+parrow2 	data/chars/misc/parrow2p.gif -8 -75
 
 load            ice_sh
 load            icecross
@@ -41,6 +44,10 @@ palette		data/chars/teobaldo/palette1.gif
 alternatepal	data/chars/teobaldo/palette2.gif
 alternatepal	data/chars/teobaldo/palette3.gif
 alternatepal	data/chars/teobaldo/palette4.gif
+alternatepal	data/chars/teobaldo/palette5.gif
+alternatepal	data/chars/teobaldo/palette6.gif
+alternatepal	data/chars/teobaldo/palette7.gif
+alternatepal	data/chars/teobaldo/palette8.gif
 
 animationscript	 data/scripts/player.c
 keyscript	 data/chars/teobaldo/teobaldokey.c
@@ -186,6 +193,41 @@ com     a4      freespecial
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 anim	attack1
 	loop	0
 	delay	10
@@ -196,8 +238,9 @@ anim	attack1
 	bbox	95 110 20 40
 	frame	data/chars/teobaldo/attack1b.gif
 	delay	1
-	sound	data/sounds/throw_whip.wav
-	attack2	45 80 130 70 9 0 1 0 0 0
+	sound	data/sounds/swipe.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack2	45 80 130 70 12 0 1 0 0 0
 	bbox	85 120 40 30
 	frame	data/chars/teobaldo/attack1c.gif
 	frame	data/chars/teobaldo/attack1g.gif
@@ -206,7 +249,7 @@ anim	attack1
 	frame	data/chars/teobaldo/attack1c.gif
 	frame	data/chars/teobaldo/attack1g.gif
 	frame	data/chars/teobaldo/attack1c.gif
-	attack2	114 103 70 50 9 0 1 0 0 0
+	attack2	114 103 70 50 12 0 1 0 0 0
 	frame	data/chars/teobaldo/attack1d.gif
 	frame	data/chars/teobaldo/attack1h.gif
 	frame	data/chars/teobaldo/attack1d.gif
@@ -226,10 +269,12 @@ anim	attack2
 	@cmd	keyint "ANI_FOLLOW2" 0 "U" 0
 	frame	data/chars/teobaldo/attack2a.gif
 	bbox	90 100 15 50
+	sound	data/sounds/teobaldo_attack4.wav
 	frame	data/chars/teobaldo/attack2b.gif
 	delay	1
-	sound	data/sounds/throw_whip.wav
-	attack2	120 100 90 50 10 0 1 0 0 0
+	sound	data/sounds/swipe.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack21	120 100 90 50 13 0 1 0 0 0
 	bbox	85 120 40 30
 	frame	data/chars/teobaldo/attack2c.gif
 	frame	data/chars/teobaldo/attack2g.gif
@@ -239,7 +284,7 @@ anim	attack2
 	frame	data/chars/teobaldo/attack2g.gif
 	frame	data/chars/teobaldo/attack2c.gif
 	bbox	100 114 15 35
-	attack2	30 97 160 55 10 0 1 0 0 0
+	attack21	30 97 160 55 13 0 1 0 0 0
 	frame	data/chars/teobaldo/attack2d.gif
 	frame	data/chars/teobaldo/attack2h.gif
 	frame	data/chars/teobaldo/attack2d.gif
@@ -255,20 +300,22 @@ anim	attack2
 	frame	data/chars/teobaldo/attack2e.gif
 	frame	data/chars/teobaldo/attack2i.gif
 	delay	14
-	attack2	0 0 0 0 0 0
+	attack21	0 0 0 0 0 0
 	frame	data/chars/teobaldo/attack2f.gif
 		
 anim	attack3
 	loop	0
-	delay	7
+	delay	10
 	offset	95 152
 	bbox	90 99 15 40
+	sound	data/sounds/teobaldo_attack1.wav
 	@cmd	keyint "ANI_FOLLOW2" 0 "U" 0
 	frame	data/chars/teobaldo/attack3a.gif
 	delay	1
 	bbox	99 123 28 29
-	sound	data/sounds/throw_whip.wav
-	attack2	120 100 100 50 11 0 1 0 0 0
+	sound	data/sounds/swipe.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack21	120 100 100 50 11 14 1 0 0 0
 	frame	data/chars/teobaldo/attack3b.gif
 	frame	data/chars/teobaldo/attack3g.gif
 	frame	data/chars/teobaldo/attack3b.gif
@@ -276,7 +323,7 @@ anim	attack3
 	frame	data/chars/teobaldo/attack3b.gif
 	frame	data/chars/teobaldo/attack3g.gif
 	frame	data/chars/teobaldo/attack3b.gif
-	attack2	130 82 65 70 11 0 1 0 0 0
+	attack21	130 82 65 70 11 14 1 0 0 0
 	frame	data/chars/teobaldo/attack3c.gif
 	frame	data/chars/teobaldo/attack3h.gif
 	frame	data/chars/teobaldo/attack3c.gif
@@ -284,7 +331,7 @@ anim	attack3
 	frame	data/chars/teobaldo/attack3c.gif
 	frame	data/chars/teobaldo/attack3h.gif
 	frame	data/chars/teobaldo/attack3c.gif
-	attack2	120 138 80 15 11 0 1 0 0 0
+	attack21	120 138 80 15 11 14 1 0 0 0
 	frame	data/chars/teobaldo/attack3f.gif
 	frame	data/chars/teobaldo/attack3d.gif
 	frame	data/chars/teobaldo/attack3f.gif
@@ -301,11 +348,11 @@ anim	attack3
 	frame	data/chars/teobaldo/attack3f.gif
 	frame	data/chars/teobaldo/attack3e.gif
 	frame	data/chars/teobaldo/attack3f.gif
-	delay	17
+	delay	20
 	frame	data/chars/teobaldo/attack3f.gif
 	delay	7
 	bbox	90 100 15 50
-	attack2	0 0 0 0 0 0
+	attack21	0 0 0 0 0 0
 	frame	data/chars/teobaldo/attack2a.gif
 		
 anim	bpain
@@ -322,6 +369,7 @@ anim	burn
 	loop	0
 	delay	7
 	offset	95 152
+	sound	data/sounds/teobaldo_pain.wav
 	@cmd	spawnbind "Hflame" -10 30 1
 	sound	data/sounds/teobaldo_pain.wav
 	frame	data/chars/teobaldo/fall2a.gif
@@ -361,11 +409,14 @@ anim	duckattack
 	cancel	0 3 0 a2 freespecial6
 	bbox	90 123 16 29
 	frame	data/chars/teobaldo/duckattack1a.gif
+	sound	data/sounds/teobaldo_attack1.wav
 	frame	data/chars/teobaldo/duckattack1b.gif
 	delay	1
 	offset	103 152
 	bbox	107 123 16 29
-	attack2	120 100 100 50 11 0 1 0 0 0
+	sound	data/sounds/swipe.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack2	120 100 100 50 12 0 1 0 0 0
 	frame	data/chars/teobaldo/attack3b.gif
 	frame	data/chars/teobaldo/attack3g.gif
 	frame	data/chars/teobaldo/attack3b.gif
@@ -373,7 +424,7 @@ anim	duckattack
 	frame	data/chars/teobaldo/attack3b.gif
 	frame	data/chars/teobaldo/attack3g.gif
 	frame	data/chars/teobaldo/attack3b.gif
-	attack2	130 82 65 70 11 0 1 0 0 0
+	attack2	130 82 65 70 12 0 1 0 0 0
 	frame	data/chars/teobaldo/attack3c.gif
 	frame	data/chars/teobaldo/attack3h.gif
 	frame	data/chars/teobaldo/attack3c.gif
@@ -381,7 +432,7 @@ anim	duckattack
 	frame	data/chars/teobaldo/attack3c.gif
 	frame	data/chars/teobaldo/attack3h.gif
 	frame	data/chars/teobaldo/attack3c.gif
-	attack2	120 138 80 15 11 0 1 0 0 0
+	attack2	120 138 80 15 9 0 1 0 0 0
 	frame	data/chars/teobaldo/attack3f.gif
 	frame	data/chars/teobaldo/attack3d.gif
 	frame	data/chars/teobaldo/attack3f.gif
@@ -393,7 +444,6 @@ anim	duckattack
 	delay	14
 	frame	data/chars/teobaldo/attack3f.gif
 	delay	1
-	bbox	90 100 15 50
 	attack2	0 0 0 0 0 0
 	frame	data/chars/teobaldo/attack3f.gif
 		
@@ -447,15 +497,18 @@ anim	fall8
 	frame	data/chars/teobaldo/fall1a.gif
 		
 anim	follow1
-	cancel	0 2 0 a4 freespecial10
-	cancel	0 2 0 a2 freespecial7
-	cancel	0 2 0 u u a freespecial3
+	cancel	0 3 0 a4 freespecial10
+	cancel	0 3 0 a2 freespecial7
+	cancel	0 3 0 u u a freespecial3
+	cancel	0 3 0 f f a freespecial16
 	jumpframe	0 3 -1 0
 	delay	14
 	offset	95 152
 	bbox	87 98 15 40
 	frame	data/chars/teobaldo/jump1b.gif
 	@cmd	platform 1
+	frame	data/chars/teobaldo/jump1c.gif
+	delay	1
 	frame	data/chars/teobaldo/jump1c.gif
 		
 anim	follow2
@@ -481,14 +534,15 @@ anim	follow2
 	frame	data/chars/teobaldo/weapon1b.gif
 		
 anim	follow4
-	cancel	0 2 0 a4 freespecial10
-	cancel	0 2 0 a2 freespecial7
-	cancel	0 2 0 u u a freespecial3
+	cancel	0 3 0 a4 freespecial10
+	cancel	0 3 0 a2 freespecial7
+	cancel	0 3 0 u u a freespecial3
+	cancel	0 3 0 f f a freespecial16
 	delay	14
 	offset	95 152
-	bbox	88 100 15 45
+	bbox	88 100 15 36
 	frame	data/chars/teobaldo/jump1c.gif
-	@cmd	platform 1
+	delay	1
 	frame	data/chars/teobaldo/jump1c.gif
 		
 anim	freespecial
@@ -504,7 +558,7 @@ anim	freespecial
 	@cmd	mpcost 10
 	@cmd	spawn01 "iceseal" 26 32 0
 	@cmd	shoot "ice_sh" 26 32 0
-	sound	data/sounds/fran_attack3.wav
+	sound	data/sounds/teobaldo_attack1.wav
 	frame	data/chars/teobaldo/spell1c.gif
 	frame	data/chars/teobaldo/spell1c.gif
 	frame	data/chars/teobaldo/spell1b.gif
@@ -513,7 +567,7 @@ anim	freespecial
 anim	freespecial10
 	delay	1
 	offset	95 152
-	bbox	47 15 15 45
+	bbox	88 96 10 45
 	@cmd	keyint "ANI_FREESPECIAL11" 0 "U" 0
 	@cmd	platform 1
 	@cmd	limiter 9
@@ -524,19 +578,20 @@ anim	freespecial10
 	@cmd	mpcost 10
 	@cmd	spawn01 "iceseal" 20 35 0
 	@cmd	shoot "ice_sh" 20 35 0
-	sound	data/sounds/fran_attack3.wav
+	sound	data/sounds/teobaldo_attack1.wav
 	frame	data/chars/teobaldo/spelljump1c.gif
 	frame	data/chars/teobaldo/spelljump1c.gif
 	frame	data/chars/teobaldo/spelljump1b.gif
 	frame	data/chars/teobaldo/spelljump1a.gif
 	delay	6
 	frame	data/chars/teobaldo/jump1b.gif
+	delay	1
 	frame	data/chars/teobaldo/jump1c.gif
 		
 anim	freespecial11
 	delay	1
 	offset	95 152
-	bbox	47 15 15 45
+	bbox	88 96 10 45
 	@cmd	platform 1
 	@cmd	limiter 19
 	frame	data/chars/teobaldo/spelljump1a.gif
@@ -546,8 +601,9 @@ anim	freespecial11
 	@cmd	mpcost 20
 	@cmd	spawn01 "iceseal" 20 35 0
 	@cmd	shoot "icecross" 20 35 0
-	sound	data/sounds/fran_attack3.wav
+	sound	data/sounds/icecross.wav
 	frame	data/chars/teobaldo/spelljump1c.gif
+	sound	data/sounds/teobaldo_attack1.wav
 	@cmd	shoot "icecross" 20 65 0
 	frame	data/chars/teobaldo/spelljump1c.gif
 	@cmd	shoot "icecross" 26 5 0
@@ -555,13 +611,14 @@ anim	freespecial11
 	frame	data/chars/teobaldo/spelljump1a.gif
 	delay	6
 	frame	data/chars/teobaldo/jump1b.gif
+	delay	1
 	frame	data/chars/teobaldo/jump1c.gif
 		
 anim	freespecial12
-	cancel	15 16 0 a2 freespecial7
-	cancel	15 16 0 a4 freespecial10
-	cancel	15 16 0 u u a freespecial3
-	cancel	15 16 0 f f a freespecial2
+	cancel	15 17 0 a2 freespecial7
+	cancel	15 17 0 a4 freespecial10
+	cancel	15 17 0 u u a freespecial3
+	cancel	15 17 0 f f a freespecial16
 	offset	95 152
 	bbox	80 112 20 25
 	delay	2
@@ -583,25 +640,162 @@ anim	freespecial12
 	delay	7
 	bbox	88 100 15 45
 	frame	data/chars/teobaldo/jump1b.gif
+	delay	1
 	frame	data/chars/teobaldo/jump1c.gif
 		
-anim	freespecial2
+anim	freespecial13
+	loop	0
+	delay	10
+	offset	95 152
+	bbox	0 0 0 0
+	jumpframe	1 3.6 1.5
+	sound	data/sounds/teobaldo_special.wav
+	@cmd	spawn01 "rising1_shadow" 2 -2 0
+	frame	data/chars/teobaldo/rising1a.gif
+	delay	1
+	sound	data/sounds/swipe.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack21	130 40 40 100 12 11 0 0 0 0
+	frame	data/chars/teobaldo/rising1b.gif
+	attack21	0 0 0 0 0 0 0 0 0
+	@cmd	spawn01 "rising2_shadow" 2 -2 0
+	frame	data/chars/teobaldo/rising1d.gif
+	frame	data/chars/teobaldo/rising1c.gif
+	frame	data/chars/teobaldo/rising1d.gif
+	attack21	130 40 40 100 12 11 0 0 0 0
+	frame	data/chars/teobaldo/rising1b.gif
+	attack21	0 0 0 0 0 0 0 0 0
+	@cmd	spawn01 "rising2_shadow" 2 -2 0
+	frame	data/chars/teobaldo/rising1d.gif
+	frame	data/chars/teobaldo/rising1c.gif
+	frame	data/chars/teobaldo/rising1d.gif
+	attack21	130 40 40 100 11 11 0 0 0 0
+	frame	data/chars/teobaldo/rising1b.gif
+	attack21	0 0 0 0 0 0 0 0 0
+	@cmd	spawn01 "rising2_shadow" 2 -2 0
+	frame	data/chars/teobaldo/rising1d.gif
+	frame	data/chars/teobaldo/rising1c.gif
+	frame	data/chars/teobaldo/rising1d.gif
+	attack21	130 40 40 100 12 11 0 0 0 0
+	dropv	3 2 0
+	frame	data/chars/teobaldo/rising1b.gif
+	attack21	0 0 0 0 0 0 0 0 0
+	@cmd	spawn01 "rising2_shadow" 2 -2 0
+	frame	data/chars/teobaldo/rising1d.gif
+	frame	data/chars/teobaldo/rising1c.gif
+	frame	data/chars/teobaldo/rising1d.gif
+	attack21	130 40 40 100 12 11 0 0 0 0
+	dropv	3 2 0
+	frame	data/chars/teobaldo/rising1b.gif
+	attack21	0 0 0 0 0 0 0 0 0
+	@cmd	spawn01 "rising2_shadow" 2 -2 0
+	frame	data/chars/teobaldo/rising1d.gif
+	frame	data/chars/teobaldo/rising1c.gif
+	frame	data/chars/teobaldo/rising1d.gif
+	attack21	130 40 40 100 12 11 0 0 0 0
+	dropv	3 2 0
+	frame	data/chars/teobaldo/rising1b.gif
+	attack21	0 0 0 0 0 0 0 0 0
+	@cmd	spawn01 "rising2_shadow" 2 -2 0
+	frame	data/chars/teobaldo/rising1d.gif
+	frame	data/chars/teobaldo/rising1c.gif
+	frame	data/chars/teobaldo/rising1d.gif
+	attack21	130 40 40 100 12 11 0 0 0 0
+	dropv	3 2 0
+	frame	data/chars/teobaldo/rising1b.gif
+	attack21	0 0 0 0 0 0 0 0 0
+	@cmd	spawn01 "rising2_shadow" 2 -2 0
+	frame	data/chars/teobaldo/rising1d.gif
+	frame	data/chars/teobaldo/rising1c.gif
+	frame	data/chars/teobaldo/rising1d.gif
+	frame	data/chars/teobaldo/rising1b.gif
+	@cmd	spawn01 "rising2_shadow" 2 -2 0
+	frame	data/chars/teobaldo/rising1d.gif
+	frame	data/chars/teobaldo/rising1c.gif
+	frame	data/chars/teobaldo/rising1d.gif
+	attack21	130 40 40 100 12 11 0 0 0 0
+	dropv	3 2 0
+	frame	data/chars/teobaldo/rising1b.gif
+	attack21	0 0 0 0 0 0 0 0 0
+	@cmd	spawn01 "rising2_shadow" 2 -2 0
+	frame	data/chars/teobaldo/rising1d.gif
+	frame	data/chars/teobaldo/rising1c.gif
+	frame	data/chars/teobaldo/rising1d.gif
+	delay	1
+	@cmd	platform 1
+	attack21	70 10 35 60 19 19 0 0 0 0
+	dropv	3 2 0
+	cancel	39 53 0 a4 freespecial10
+	cancel	39 53 0 a2 freespecial7
+	frame	data/chars/teobaldo/rising1f.gif
+	frame	data/chars/teobaldo/rising1e.gif
+	frame	data/chars/teobaldo/rising1f.gif
+	frame	data/chars/teobaldo/rising1e.gif
+	frame	data/chars/teobaldo/rising1f.gif
+	frame	data/chars/teobaldo/rising1e.gif
+	frame	data/chars/teobaldo/rising1f.gif
+	delay	7
+	attack21	0 0 0 0 0 0 0
+	frame	data/chars/teobaldo/rising1f.gif
+	@cmd	platform 1
+	frame	data/chars/teobaldo/jump1b.gif
+	@cmd	platform 1
+	@cmd	spawn01 "jump1_shadow" 2 -2 0
+	frame	data/chars/teobaldo/jump1c.gif
+	frame	data/chars/teobaldo/jump1c.gif
+		
+anim	freespecial14
+	jumpframe	1 1.5 -2
+	delay	7
+	mpcost	0
+	@cmd	limiter 9
+	@cmd	mpcost 10
+	offset	95 152
+	sound	data/sounds/teobaldo_attack2.wav
+	frame	data/chars/teobaldo/duck.gif
+	delay	10
+	frame	data/chars/teobaldo/eva1a.gif
+	delay	20
+	@cmd	spawn01 "evasion1_shadow_teo" 2 -2 0
+	frame	data/chars/teobaldo/eva2a.gif
+	delay	10
+	frame	data/chars/teobaldo/eva1b.gif
+	@cmd	spawn01 "evasion2_shadow_teo" 2 -2 0
+	frame	data/chars/teobaldo/eva2b.gif
+	delay	14
+	@cmd	spawn01 "evasion3_shadow_teo" 2 -2 0
+	frame	data/chars/teobaldo/eva1c.gif
+	delay	9
+	@cmd	spawn01 "evasion4_shadow_teo" 2 -2 0
+	frame	data/chars/teobaldo/eva1d.gif
+	delay	4
+	cancel	7 9 0 u u a freespecial13
+	cancel	7 9 0 f f a freespecial15
+	frame	data/chars/teobaldo/duck1.gif
+	frame	data/chars/teobaldo/duck.gif
+		
+anim	freespecial15
 	loop	0
 	delay	1
 	offset	95 152
-	bbox	90 99 15 40
-	quakeframe	4 4 3
-	@cmd	limiter 19
-	@cmd	mpcost 20
-	frame	data/chars/teobaldo/attack3a.gif
-	delay	32
-	frame	data/chars/teobaldo/attack3a.gif
+	bbox	90 99 15 30
+	jumpframe	0 1.5 2
+	landframe	3
+	quakeframe	5 4 3
+	frame	data/chars/teobaldo/jumpattack2a.gif
+	delay	7
+	frame	data/chars/teobaldo/jumpattack2b.gif
+	delay	1000
+	frame	data/chars/teobaldo/jumpattack2a.gif
 	delay	1
 	bbox	99 123 28 29
-	sound	data/sounds/throw_whip.wav
-	attack2	94 100 115 50 50 0 1 0 0 0
+	sound	data/sounds/teobaldo_attack3.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack21	94 100 115 50 50 25 1 0 0 0
+	dropv	3 2 0
+	@cmd	mpcost 10
 	frame	data/chars/teobaldo/slam1a.gif
-	sound	data/sounds/throw_whip.wav
+	sound	data/sounds/throw_big.wav
 	@cmd	tosserM "teo_rock1" 80 0 2 2.5
 	@cmd	tosserM "teo_rock2" 80 0 1.5 2
 	@cmd	tosserM "teo_rock3" 80 0 3 1.5
@@ -609,12 +803,15 @@ anim	freespecial2
 	@cmd	tosserM "teo_rock2" 80 0 2.5 0.5
 	@cmd	tosserM "teo_rock3" 80 0 1 3
 	frame	data/chars/teobaldo/attack3g.gif
+	sound	data/sounds/sword_ground.wav
 	frame	data/chars/teobaldo/slam1a.gif
+	sound	data/sounds/rock_break2.wav
 	frame	data/chars/teobaldo/attack3g.gif
 	frame	data/chars/teobaldo/slam1a.gif
 	frame	data/chars/teobaldo/attack3g.gif
 	frame	data/chars/teobaldo/slam1a.gif
-	attack2	95 135 125 18 25 0 1 0 0 0
+	attack21	95 135 125 18 25 25 1 0 0 0
+	dropv	3 2 0
 	frame	data/chars/teobaldo/attack3h.gif
 	frame	data/chars/teobaldo/slam1b.gif
 	frame	data/chars/teobaldo/attack3h.gif
@@ -622,7 +819,8 @@ anim	freespecial2
 	frame	data/chars/teobaldo/attack3h.gif
 	frame	data/chars/teobaldo/slam1b.gif
 	frame	data/chars/teobaldo/attack3h.gif
-	attack2	120 138 80 15 11 0 1 0 0 0
+	attack21	120 138 80 15 11 19 1 0 0 0
+	dropv	3 2 0
 	frame	data/chars/teobaldo/slam1c.gif
 	frame	data/chars/teobaldo/attack3f.gif
 	frame	data/chars/teobaldo/slam1c.gif
@@ -648,86 +846,254 @@ anim	freespecial2
 	frame	data/chars/teobaldo/attack3f.gif
 	delay	7
 	bbox	90 100 15 50
-	attack2	0 0 0 0 0 0
+	attack21	0 0 0 0 0 0
+	frame	data/chars/teobaldo/attack2a.gif
+		
+anim	freespecial16
+	loop	0
+	delay	1
+	offset	95 152
+	bbox	90 99 15 40
+	landframe	5
+	quakeframe	7 4 3
+	@cmd	limiter 19
+	@cmd	floater 22
+	frame	data/chars/teobaldo/jumpattack2a.gif
+	delay	21
+	frame	data/chars/teobaldo/jumpattack2a.gif
+	jumpframe	2 -5 0
+	delay	7
+	frame	data/chars/teobaldo/jumpattack2b.gif
+	frame	data/chars/teobaldo/jumpattack2a.gif
+	delay	1000
+	attack21	94 110 115 50 50 25 1 0 0 0
+	dropv	2 2 0
+	@cmd	mpcost 20
+	frame	data/chars/teobaldo/attack3g.gif
+	delay	1
+	bbox	99 123 28 29
+	sound	data/sounds/teobaldo_attack3.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack21	94 100 115 50 50 25 1 0 0 0
+	dropv	3 2 0
+	frame	data/chars/teobaldo/slam1a.gif
+	sound	data/sounds/throw_big.wav
+	@cmd	tosserM "teo_rock1" 80 0 2 2.5
+	@cmd	tosserM "teo_rock2" 80 0 1.5 2
+	@cmd	tosserM "teo_rock3" 80 0 3 1.5
+	@cmd	tosserM "teo_rock1" 80 0 0.5 1
+	@cmd	tosserM "teo_rock2" 80 0 2.5 0.5
+	@cmd	tosserM "teo_rock3" 80 0 1 3
+	frame	data/chars/teobaldo/attack3g.gif
+	sound	data/sounds/sword_ground.wav
+	frame	data/chars/teobaldo/slam1a.gif
+	sound	data/sounds/rock_break2.wav
+	frame	data/chars/teobaldo/attack3g.gif
+	frame	data/chars/teobaldo/slam1a.gif
+	frame	data/chars/teobaldo/attack3g.gif
+	frame	data/chars/teobaldo/slam1a.gif
+	attack21	95 135 125 18 25 25 1 0 0 0
+	dropv	3 2 0
+	frame	data/chars/teobaldo/attack3h.gif
+	frame	data/chars/teobaldo/slam1b.gif
+	frame	data/chars/teobaldo/attack3h.gif
+	frame	data/chars/teobaldo/slam1b.gif
+	frame	data/chars/teobaldo/attack3h.gif
+	frame	data/chars/teobaldo/slam1b.gif
+	frame	data/chars/teobaldo/attack3h.gif
+	attack21	120 138 80 15 11 19 1 0 0 0
+	dropv	3 2 0
+	frame	data/chars/teobaldo/slam1c.gif
+	frame	data/chars/teobaldo/attack3f.gif
+	frame	data/chars/teobaldo/slam1c.gif
+	frame	data/chars/teobaldo/attack3f.gif
+	frame	data/chars/teobaldo/slam1c.gif
+	frame	data/chars/teobaldo/attack3f.gif
+	frame	data/chars/teobaldo/slam1c.gif
+	frame	data/chars/teobaldo/attack3e.gif
+	frame	data/chars/teobaldo/slam1d.gif
+	frame	data/chars/teobaldo/attack3e.gif
+	frame	data/chars/teobaldo/slam1d.gif
+	frame	data/chars/teobaldo/attack3e.gif
+	frame	data/chars/teobaldo/slam1d.gif
+	frame	data/chars/teobaldo/attack3e.gif
+	frame	data/chars/teobaldo/slam1e.gif
+	frame	data/chars/teobaldo/slam1f.gif
+	frame	data/chars/teobaldo/slam1e.gif
+	frame	data/chars/teobaldo/slam1f.gif
+	frame	data/chars/teobaldo/slam1e.gif
+	frame	data/chars/teobaldo/slam1f.gif
+	frame	data/chars/teobaldo/slam1e.gif
+	delay	17
+	frame	data/chars/teobaldo/attack3f.gif
+	delay	7
+	bbox	90 100 15 50
+	attack21	0 0 0 0 0 0
+	frame	data/chars/teobaldo/attack2a.gif
+		
+anim	freespecial2
+	loop	0
+	delay	1
+	offset	95 152
+	bbox	90 99 15 40
+	quakeframe	4 4 3
+	@cmd	limiter 19
+	frame	data/chars/teobaldo/attack3a.gif
+	delay	32
+	frame	data/chars/teobaldo/attack3a.gif
+	delay	1
+	bbox	99 123 28 29
+	sound	data/sounds/teobaldo_attack3.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack21	94 100 115 50 50 25 1 0 0 0
+	dropv	3 2 0
+	@cmd	mpcost 20
+	frame	data/chars/teobaldo/slam1a.gif
+	sound	data/sounds/throw_big.wav
+	@cmd	tosserM "teo_rock1" 80 0 2 2.5
+	@cmd	tosserM "teo_rock2" 80 0 1.5 2
+	@cmd	tosserM "teo_rock3" 80 0 3 1.5
+	@cmd	tosserM "teo_rock1" 80 0 0.5 1
+	@cmd	tosserM "teo_rock2" 80 0 2.5 0.5
+	@cmd	tosserM "teo_rock3" 80 0 1 3
+	frame	data/chars/teobaldo/attack3g.gif
+	sound	data/sounds/sword_ground.wav
+	frame	data/chars/teobaldo/slam1a.gif
+	sound	data/sounds/rock_break2.wav
+	frame	data/chars/teobaldo/attack3g.gif
+	frame	data/chars/teobaldo/slam1a.gif
+	frame	data/chars/teobaldo/attack3g.gif
+	frame	data/chars/teobaldo/slam1a.gif
+	attack21	95 135 125 18 25 25 1 0 0 0
+	dropv	3 2 0
+	frame	data/chars/teobaldo/attack3h.gif
+	frame	data/chars/teobaldo/slam1b.gif
+	frame	data/chars/teobaldo/attack3h.gif
+	frame	data/chars/teobaldo/slam1b.gif
+	frame	data/chars/teobaldo/attack3h.gif
+	frame	data/chars/teobaldo/slam1b.gif
+	frame	data/chars/teobaldo/attack3h.gif
+	attack21	120 138 80 15 11 19 1 0 0 0
+	dropv	3 2 0
+	frame	data/chars/teobaldo/slam1c.gif
+	frame	data/chars/teobaldo/attack3f.gif
+	frame	data/chars/teobaldo/slam1c.gif
+	frame	data/chars/teobaldo/attack3f.gif
+	frame	data/chars/teobaldo/slam1c.gif
+	frame	data/chars/teobaldo/attack3f.gif
+	frame	data/chars/teobaldo/slam1c.gif
+	frame	data/chars/teobaldo/attack3e.gif
+	frame	data/chars/teobaldo/slam1d.gif
+	frame	data/chars/teobaldo/attack3e.gif
+	frame	data/chars/teobaldo/slam1d.gif
+	frame	data/chars/teobaldo/attack3e.gif
+	frame	data/chars/teobaldo/slam1d.gif
+	frame	data/chars/teobaldo/attack3e.gif
+	frame	data/chars/teobaldo/slam1e.gif
+	frame	data/chars/teobaldo/slam1f.gif
+	frame	data/chars/teobaldo/slam1e.gif
+	frame	data/chars/teobaldo/slam1f.gif
+	frame	data/chars/teobaldo/slam1e.gif
+	frame	data/chars/teobaldo/slam1f.gif
+	frame	data/chars/teobaldo/slam1e.gif
+	delay	17
+	frame	data/chars/teobaldo/attack3f.gif
+	delay	7
+	bbox	90 100 15 50
+	attack21	0 0 0 0 0 0
 	frame	data/chars/teobaldo/attack2a.gif
 		
 anim	freespecial3
 	loop	0
+	landframe	48
 	delay	10
 	offset	95 152
 	bbox	0 0 0 0
 	jumpframe	1 3.6 0.5
 	@cmd	limiter 9
-	@cmd	mpcost 10
+	frame	data/chars/teobaldo/rising1a.gif
+	sound	data/sounds/teobaldo_special.wav
 	frame	data/chars/teobaldo/rising1a.gif
 	delay	1
-	attack2	130 40 50 100 11 0 0 0 0 0
-	frame	data/chars/teobaldo/rising1b.gif
-	attack2	0 0 0 0 0 0 0 0 0
-	frame	data/chars/teobaldo/rising1d.gif
-	frame	data/chars/teobaldo/rising1c.gif
-	frame	data/chars/teobaldo/rising1d.gif
-	attack2	130 40 50 100 11 0 0 0 0 0
-	frame	data/chars/teobaldo/rising1b.gif
-	attack2	0 0 0 0 0 0 0 0 0
-	frame	data/chars/teobaldo/rising1d.gif
-	frame	data/chars/teobaldo/rising1c.gif
-	frame	data/chars/teobaldo/rising1d.gif
-	attack2	130 40 50 100 11 0 0 0 0 0
-	frame	data/chars/teobaldo/rising1b.gif
-	attack2	0 0 0 0 0 0 0 0 0
-	frame	data/chars/teobaldo/rising1d.gif
-	frame	data/chars/teobaldo/rising1c.gif
-	frame	data/chars/teobaldo/rising1d.gif
-	attack2	130 40 50 100 11 0 0 0 0 0
-	frame	data/chars/teobaldo/rising1b.gif
-	attack2	0 0 0 0 0 0 0 0 0
-	frame	data/chars/teobaldo/rising1d.gif
-	frame	data/chars/teobaldo/rising1c.gif
-	frame	data/chars/teobaldo/rising1d.gif
-	attack2	130 40 50 100 11 0 0 0 0 0
-	frame	data/chars/teobaldo/rising1b.gif
-	attack2	0 0 0 0 0 0 0 0 0
-	frame	data/chars/teobaldo/rising1d.gif
-	frame	data/chars/teobaldo/rising1c.gif
-	frame	data/chars/teobaldo/rising1d.gif
-	attack2	130 40 50 100 11 0 0 0 0 0
-	frame	data/chars/teobaldo/rising1b.gif
-	attack2	0 0 0 0 0 0 0 0 0
-	frame	data/chars/teobaldo/rising1d.gif
-	frame	data/chars/teobaldo/rising1c.gif
-	frame	data/chars/teobaldo/rising1d.gif
-	attack2	130 40 50 100 11 0 0 0 0 0
-	frame	data/chars/teobaldo/rising1b.gif
-	attack2	0 0 0 0 0 0 0 0 0
-	frame	data/chars/teobaldo/rising1d.gif
-	frame	data/chars/teobaldo/rising1c.gif
-	frame	data/chars/teobaldo/rising1d.gif
-	frame	data/chars/teobaldo/rising1b.gif
-	frame	data/chars/teobaldo/rising1d.gif
-	frame	data/chars/teobaldo/rising1c.gif
-	frame	data/chars/teobaldo/rising1d.gif
-	attack2	130 40 50 100 11 0 0 0 0 0
-	frame	data/chars/teobaldo/rising1b.gif
-	attack2	0 0 0 0 0 0 0 0 0
-	frame	data/chars/teobaldo/rising1d.gif
-	frame	data/chars/teobaldo/rising1c.gif
-	frame	data/chars/teobaldo/rising1d.gif
-	sound	data/sounds/teobaldo_attack2.wav
-	delay	14
-	@cmd	platform 1
+	sound	data/sounds/swipe.wav
+	hitfx	data/sounds/hit-cut.wav
 	@cmd	mpcost 10
-	attack2	120 40 66 30 11 0 0 0 0 0
-	cancel	39 40 0 a4 freespecial10
-	cancel	39 40 0 a2 freespecial7
-	cancel	39 40 0 u u a freespecial3
+	attack21	130 40 40 100 12 11 0 0 0 0
+	frame	data/chars/teobaldo/rising1b.gif
+	attack21	0 0 0 0 0 0 0 0 0
 	frame	data/chars/teobaldo/rising1d.gif
-	attack2	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/teobaldo/rising1c.gif
+	frame	data/chars/teobaldo/rising1d.gif
+	attack21	130 40 40 100 12 11 0 0 0 0
+	frame	data/chars/teobaldo/rising1b.gif
+	attack21	0 0 0 0 0 0 0 0 0
+	frame	data/chars/teobaldo/rising1d.gif
+	frame	data/chars/teobaldo/rising1c.gif
+	frame	data/chars/teobaldo/rising1d.gif
+	attack21	130 40 40 100 11 11 0 0 0 0
+	frame	data/chars/teobaldo/rising1b.gif
+	attack21	0 0 0 0 0 0 0 0 0
+	frame	data/chars/teobaldo/rising1d.gif
+	frame	data/chars/teobaldo/rising1c.gif
+	frame	data/chars/teobaldo/rising1d.gif
+	attack21	130 40 40 100 12 11 0 0 0 0
+	dropv	3 2 0
+	frame	data/chars/teobaldo/rising1b.gif
+	attack21	0 0 0 0 0 0 0 0 0
+	frame	data/chars/teobaldo/rising1d.gif
+	frame	data/chars/teobaldo/rising1c.gif
+	frame	data/chars/teobaldo/rising1d.gif
+	attack21	130 40 40 100 12 11 0 0 0 0
+	dropv	3 2 0
+	frame	data/chars/teobaldo/rising1b.gif
+	attack21	0 0 0 0 0 0 0 0 0
+	frame	data/chars/teobaldo/rising1d.gif
+	frame	data/chars/teobaldo/rising1c.gif
+	frame	data/chars/teobaldo/rising1d.gif
+	attack21	130 40 40 100 12 11 0 0 0 0
+	dropv	3 2 0
+	frame	data/chars/teobaldo/rising1b.gif
+	attack21	0 0 0 0 0 0 0 0 0
+	frame	data/chars/teobaldo/rising1d.gif
+	frame	data/chars/teobaldo/rising1c.gif
+	frame	data/chars/teobaldo/rising1d.gif
+	attack21	130 40 40 100 12 11 0 0 0 0
+	dropv	3 2 0
+	frame	data/chars/teobaldo/rising1b.gif
+	attack21	0 0 0 0 0 0 0 0 0
+	frame	data/chars/teobaldo/rising1d.gif
+	frame	data/chars/teobaldo/rising1c.gif
+	frame	data/chars/teobaldo/rising1d.gif
+	frame	data/chars/teobaldo/rising1b.gif
+	frame	data/chars/teobaldo/rising1d.gif
+	frame	data/chars/teobaldo/rising1c.gif
+	frame	data/chars/teobaldo/rising1d.gif
+	attack21	130 40 40 100 12 11 0 0 0 0
+	dropv	3 2 0
+	frame	data/chars/teobaldo/rising1b.gif
+	attack21	0 0 0 0 0 0 0 0 0
+	frame	data/chars/teobaldo/rising1d.gif
+	frame	data/chars/teobaldo/rising1c.gif
+	frame	data/chars/teobaldo/rising1d.gif
+	delay	1
+	@cmd	platform 1
+	attack21	70 10 35 60 19 19 0 0 0 0
+	dropv	3 2 0
+	cancel	39 47 0 a4 freespecial10
+	cancel	39 47 0 a2 freespecial7
+	cancel	39 47 0 u u a freespecial3
+	frame	data/chars/teobaldo/rising1f.gif
+	frame	data/chars/teobaldo/rising1e.gif
+	frame	data/chars/teobaldo/rising1f.gif
+	frame	data/chars/teobaldo/rising1e.gif
+	frame	data/chars/teobaldo/rising1f.gif
+	frame	data/chars/teobaldo/rising1e.gif
+	frame	data/chars/teobaldo/rising1f.gif
 	delay	7
-	@cmd	platform 1
-	bbox	88 95 18 45
+	frame	data/chars/teobaldo/rising1f.gif
+	delay	7
+	attack21	0 0 0 0 0 0 0
 	frame	data/chars/teobaldo/jump1b.gif
-	@cmd	platform 1
 	frame	data/chars/teobaldo/jump1c.gif
 		
 anim	freespecial4
@@ -757,12 +1123,12 @@ anim	freespecial5
 	delay	1
 	offset	95 152
 	bbox	95 123 16 29
-	@cmd	limiter 10
+	@cmd	limiter 9
 	frame	data/chars/teobaldo/duckweapon1a.gif
 	@cmd	mpcost 10
 	@cmd	spawn01 "iceseal" 35 20 0
 	@cmd	shoot "ice_sh" 35 20 0
-	sound	data/sounds/fran_attack3.wav
+	sound	data/sounds/teobaldo_attack1.wav
 	frame	data/chars/teobaldo/duckweapon1b.gif
 	frame	data/chars/teobaldo/duckweapon1a.gif
 	frame	data/chars/teobaldo/duckweapon1b.gif
@@ -781,7 +1147,7 @@ anim	freespecial6
 	offset	95 152
 	bbox	95 123 16 29
 	@cmd	limiterSub
-	@cmd	limiter 10
+	@cmd	limiter 9
 	frame	data/chars/teobaldo/duckweapon1a.gif
 	@cmd	mpcost 10
 	@cmd	SubWeapon 30 27
@@ -801,9 +1167,8 @@ anim	freespecial7
 	loop	0
 	delay	10
 	offset	95 152
-	bbox	90 100 15 50
+	bbox	90 100 15 40
 	frame	data/chars/teobaldo/weaponjump1a.gif
-	@cmd	platform 1
 	@cmd	limiterSub
 	@cmd	limiter 9
 	delay	4
@@ -813,6 +1178,7 @@ anim	freespecial7
 	frame	data/chars/teobaldo/weaponjump1c.gif
 	frame	data/chars/teobaldo/weaponjump1c.gif
 	delay	6
+	frame	data/chars/teobaldo/jump1c.gif
 	frame	data/chars/teobaldo/jump1c.gif
 		
 anim	freespecial8
@@ -826,8 +1192,9 @@ anim	freespecial8
 	@cmd	mpcost 20
 	@cmd	spawn01 "iceseal" 26 32 0
 	@cmd	shoot "icecross" 26 32 0
-	sound	data/sounds/fran_attack3.wav
+	sound	data/sounds/icecross.wav
 	frame	data/chars/teobaldo/spell1b.gif
+	sound	data/sounds/teobaldo_attack1.wav
 	@cmd	shoot "icecross" 26 62 0
 	frame	data/chars/teobaldo/spell1c.gif
 	@cmd	shoot "icecross" 26 2 0
@@ -846,7 +1213,7 @@ anim	freespecial9
 	@cmd	mpcost 10
 	@cmd	spawn01 "iceseal" 26 32 0
 	@cmd	shoot "ice_sh" 26 32 0
-	sound	data/sounds/fran_attack3.wav
+	sound	data/sounds/teobaldo_attack1.wav
 	frame	data/chars/teobaldo/spell1c.gif
 	frame	data/chars/teobaldo/spell1c.gif
 	frame	data/chars/teobaldo/spell1b.gif
@@ -867,10 +1234,12 @@ anim	idle
 	frame	data/chars/teobaldo/idle1d.gif
 		
 anim	jump
-	cancel	0 3 0 a4 freespecial10
-	cancel	0 3 0 a2 freespecial7
-	cancel	0 3 0 u u a freespecial3
+	cancel	0 4 0 a4 freespecial10
+	cancel	0 4 0 a2 freespecial7
+	cancel	0 4 0 u u a freespecial3
+	cancel	0 4 0 f f a freespecial16
 	loop	0
+	landframe	3
 	delay	14
 	offset	95 152
 	bbox	88 100 15 45
@@ -878,21 +1247,24 @@ anim	jump
 	@cmd	platform 1
 	frame	data/chars/teobaldo/jump1b.gif
 	frame	data/chars/teobaldo/jump1c.gif
+	frame	data/chars/teobaldo/jump1c.gif
 		
 anim	jumpattack
-	cancel	18 19 0 a4 freespecial10
-	cancel	18 19 0 a2 freespecial7
-	cancel	18 19 0 u u a freespecial3
-	delay	7
+	loop	0
+	cancel	18 20 0 a4 freespecial10
+	cancel	18 20 0 a2 freespecial7
+	cancel	18 20 0 u u a freespecial3
+	delay	10
 	offset	95 152
-	bbox	93 96 15 40
+	bbox	88 100 15 45
 	sound	data/sounds/teobaldo_attack1.wav
 	frame	data/chars/teobaldo/jumpattack2a.gif
-	sound	data/sounds/throw_whip.wav
+	sound	data/sounds/swipe.wav
 	frame	data/chars/teobaldo/jumpattack2b.gif
 	delay	1
-	bbox	97 101 15 39
-	attack2	80 66 95 90 9 0 1 0 0 0
+	bbox	95 105 15 35
+	hitfx	data/sounds/hit-cut.wav
+	attack2	80 66 95 90 9 9 1 0 0 0
 	frame	data/chars/teobaldo/jumpattack2c.gif
 	frame	data/chars/teobaldo/jumpattack2d.gif
 	frame	data/chars/teobaldo/jumpattack2c.gif
@@ -900,8 +1272,8 @@ anim	jumpattack
 	frame	data/chars/teobaldo/jumpattack2c.gif
 	frame	data/chars/teobaldo/jumpattack2d.gif
 	frame	data/chars/teobaldo/jumpattack2c.gif
-	bbox	95 93 15 45
-	attack2	120 94 60 65 9 0 1 0 0 0
+	bbox	95 105 15 35
+	attack2	120 94 60 65 9 9 1 0 0 0
 	frame	data/chars/teobaldo/jumpattack2d.gif
 	frame	data/chars/teobaldo/jumpattack2e.gif
 	frame	data/chars/teobaldo/jumpattack2d.gif
@@ -909,23 +1281,25 @@ anim	jumpattack
 	frame	data/chars/teobaldo/jumpattack2d.gif
 	frame	data/chars/teobaldo/jumpattack2e.gif
 	frame	data/chars/teobaldo/jumpattack2d.gif
-	delay	7
+	delay	10
 	frame	data/chars/teobaldo/jumpattack2d.gif
 	attack2	0 0 0 0 0 0 0 0 0 0
-	bbox	90 95 15 45
+	delay	7
+	bbox	88 100 15 45
 	frame	data/chars/teobaldo/jump1c.gif
+	delay	1
 	frame	data/chars/teobaldo/jump1c.gif
 		
 anim	jumpattack2
-	cancel	31 31 0 a4 freespecial10
-	cancel	31 31 0 a2 freespecial7
-	cancel	31 31 0 u u a freespecial3
+	cancel	30 31 0 a4 freespecial10
+	cancel	30 31 0 a2 freespecial7
+	cancel	30 31 0 u u a freespecial3
 	delay	7
 	offset	95 152
 	bbox	88 93 15 45
 	sound	data/sounds/teobaldo_attack1.wav
 	frame	data/chars/teobaldo/jumpattack1a.gif
-	sound	data/sounds/throw_whip.wav
+	sound	data/sounds/swipe.wav
 	delay	1
 	frame	data/chars/teobaldo/jumpattack1i.gif
 	frame	data/chars/teobaldo/jumpattack1b.gif
@@ -934,7 +1308,8 @@ anim	jumpattack2
 	frame	data/chars/teobaldo/jumpattack1i.gif
 	frame	data/chars/teobaldo/jumpattack1b.gif
 	frame	data/chars/teobaldo/jumpattack1i.gif
-	attack11	106 102 86 53 9 0 1 0 0 0
+	hitfx	data/sounds/hit-cut.wav
+	attack21	106 102 86 53 9 0 1 0 0 0
 	frame	data/chars/teobaldo/jumpattack1c.gif
 	frame	data/chars/teobaldo/jumpattack1f.gif
 	frame	data/chars/teobaldo/jumpattack1c.gif
@@ -943,7 +1318,7 @@ anim	jumpattack2
 	frame	data/chars/teobaldo/jumpattack1f.gif
 	frame	data/chars/teobaldo/jumpattack1c.gif
 	bbox	95 93 15 45
-	attack11	20 75 170 75 9 0 1 0 0 0
+	attack21	20 75 170 75 9 0 1 0 0 0
 	frame	data/chars/teobaldo/jumpattack1g.gif
 	frame	data/chars/teobaldo/jumpattack1d.gif
 	frame	data/chars/teobaldo/jumpattack1g.gif
@@ -952,7 +1327,7 @@ anim	jumpattack2
 	frame	data/chars/teobaldo/jumpattack1d.gif
 	frame	data/chars/teobaldo/jumpattack1g.gif
 	bbox	97 87 15 50
-	attack11	30 60 80 80 9 0 1 0 0 0
+	attack21	30 60 80 80 9 0 1 0 0 0
 	frame	data/chars/teobaldo/jumpattack1e.gif
 	frame	data/chars/teobaldo/jumpattack1h.gif
 	frame	data/chars/teobaldo/jumpattack1e.gif
@@ -961,8 +1336,9 @@ anim	jumpattack2
 	frame	data/chars/teobaldo/jumpattack1h.gif
 	frame	data/chars/teobaldo/jumpattack1e.gif
 	delay	7
-	attack11	0 0 0 0 0 0 0 0 0 0
+	attack21	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/teobaldo/jumpattack1h.gif
+	delay	1
 	bbox	90 95 15 45
 	frame	data/chars/teobaldo/jump1c.gif
 		
@@ -983,13 +1359,15 @@ anim	jumpattack3
 	frame	data/chars/teobaldo/weaponjump1c.gif
 	delay	6
 	frame	data/chars/teobaldo/jump1c.gif
+	delay	1
+	frame	data/chars/teobaldo/jump1c.gif
 		
 anim	pain
 	loop	0
 	delay	9
 	offset	95 152
 	jumpframe	0 1.5 -1
-	sound	data/sounds/ethan_pain.wav
+	sound	data/sounds/teobaldo_pain.wav
 	frame	data/chars/teobaldo/pain1a.gif
 	frame	data/chars/teobaldo/pain1b.gif
 		
@@ -998,7 +1376,7 @@ anim	pain17
 	delay	9
 	offset	95 152
 	jumpframe	0 1.5 -1
-	sound	data/sounds/ethan_pain.wav
+	sound	data/sounds/teobaldo_pain.wav
 	@cmd	spawnbind "blooda" 36 36 1
 	frame	data/chars/teobaldo/pain1a.gif
 	frame	data/chars/teobaldo/pain1b.gif
@@ -1008,7 +1386,7 @@ anim	pain2
 	delay	9
 	offset	95 152
 	jumpframe	0 1.5 -1
-	sound	data/sounds/ethan_pain.wav
+	sound	data/sounds/teobaldo_pain.wav
 	@cmd	spawnbind "blooda" 36 36 1
 	frame	data/chars/teobaldo/pain1a.gif
 	frame	data/chars/teobaldo/pain1b.gif
@@ -1018,7 +1396,7 @@ anim	pain7
 	delay	9
 	offset	95 152
 	jumpframe	0 1.5 -1
-	sound	data/sounds/ethan_pain.wav
+	sound	data/sounds/teobaldo_pain.wav
 	frame	data/chars/teobaldo/pain3a.gif
 	frame	data/chars/teobaldo/pain3b.gif
 		
@@ -1146,21 +1524,21 @@ anim	special
 	delay	7
 	mpcost	0
 	offset	95 152
+	@cmd	keyint "ANI_FREESPECIAL14" 0 "U" 0
+	sound	data/sounds/teobaldo_attack2.wav
 	frame	data/chars/teobaldo/duck.gif
 	delay	10
-	sound	data/sounds/teobaldo_attack3.wav
-	frame	data/chars/teobaldo/eva1a.gif
 	frame	data/chars/teobaldo/eva1a.gif
 	delay	20
-	frame	data/chars/teobaldo/eva1a.gif
-	delay	4
-	frame	data/chars/teobaldo/eva1b.gif
-	frame	data/chars/teobaldo/eva1b.gif
+	frame	data/chars/teobaldo/eva2a.gif
 	delay	10
+	frame	data/chars/teobaldo/eva1b.gif
+	frame	data/chars/teobaldo/eva2b.gif
+	delay	14
 	frame	data/chars/teobaldo/eva1c.gif
-	delay	6
+	delay	9
 	frame	data/chars/teobaldo/eva1d.gif
-	delay	3
+	delay	4
 	frame	data/chars/teobaldo/duck1.gif
 	frame	data/chars/teobaldo/duck.gif
 		

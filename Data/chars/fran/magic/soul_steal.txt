@@ -1,0 +1,38 @@
+name	        Soul_steal
+type	        none
+lifespan        5
+nolife	1
+alpha	1
+candamage       enemy
+hostile 	enemy
+antigravity     100
+
+palette		data/chars/fran/magic/soul_steal1a.gif
+
+animationscript  data/scripts/escript.c
+
+
+
+
+anim	idle
+	loop	0
+	delay	1
+	offset	-108 108
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	loop	0
+	fastattack	1
+	delay	1
+	offset	108 108
+	frame	data/chars/fran/magic/soul_steal1a.gif
+	frame	data/chars/fran/magic/soul_steal1b.gif
+	frame	data/chars/fran/magic/soul_steal1c.gif
+	frame	data/chars/fran/magic/soul_steal1d.gif
+	frame	data/chars/fran/magic/soul_steal1e.gif
+	frame	data/chars/fran/magic/soul_steal1f.gif
+		
+#|edited by openBor Stats v 0.67
+		

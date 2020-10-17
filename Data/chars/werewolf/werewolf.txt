@@ -14,7 +14,7 @@ hostile         player npc
 candamage 	player npc
 setlayer         1
 aggression  6
-diesound	data/sounds/dog_death.wav
+diesound	data/sounds/wolfdeath1.wav
 lifebarstatus 5 100 1 0 1 -300 -300 -300 -300
 lifeposition 309 15
 nameposition -500 -500
@@ -30,18 +30,31 @@ load	Cloth1c
 defense normal 0.75 0 0 0 0 0 0
 defense normal2 0.75 0 0 0 0 0 0
 defense normal3 0.5 0 0 0 0 0 0
+defense normal4 0.25 0 0 0 0 0 0
+defense normal5 0.25 0 0 0 0 0 0
+defense normal6 0.5 0 0 0 0 0 0
 defense normal7 0.75 0 0 0 0 0 0
 defense normal8 0.25 0 0 0 0 0 0
-defense normal9 2 0 0 0 0 0 0
+defense normal9 5 0 0 0 0 0 0
 defense normal19 0.75 0 0 0 0 0 0
 defense normal20 0 0 0 0 0 0 0
+defense normal21 0.75 0 0 0 0 0 0
 defense burn 0.75 0 0 0 0 0 0
 defense schock 0.75 0 0 0 0 0 0
 
-icon		data/chars/misc/bgmonster.gif
+#icon		data/chars/misc/bgmonster.gif
+icon 		data/chars/gargoyle/bggargola.gif
 
 palette   data/chars/werewolf/werewolf_palette.gif
 alternatepal  data/chars/werewolf/werewolf_blink.gif
+
+
+
+
+
+
+
+
 
 
 
@@ -162,7 +175,7 @@ anim	attack2
       }
     }
 	@end_script	
-	range	100 180
+	range	23 200
 	delay	1
 	offset	127 159
 	bbox	100 70 50 85
@@ -270,8 +283,9 @@ anim	death
 	loop	0
 	delay	7
 	offset	127 159
-	subentity	Bloode
-	spawnframe	1 30 0 100 0
+	@cmd	spawn01 "Bloode" 30 100 0
+	subentity	kdie
+	spawnframe	10 0 0 0 0
 	frame	data/chars/werewolf/death2.gif
 	frame	data/chars/werewolf/death3.gif
 	frame	data/chars/werewolf/death4.gif
@@ -291,8 +305,10 @@ anim	death
 	frame	data/chars/werewolf/death13.gif
 	frame	data/chars/werewolf/death14.gif
 	frame	data/chars/werewolf/death15.gif
-	delay	1
+	delay	56
+	sound	data/sounds/flame-dies.wav
 	frame	data/chars/werewolf/death16.gif
+	delay	1
 	frame	data/chars/werewolf/death17.gif
 	frame	data/chars/werewolf/death16.gif
 	frame	data/chars/werewolf/death17.gif
@@ -563,6 +579,7 @@ anim	spawn
 	delay	100
 	frame	data/chars/werewolf/spawn2f.gif
 	delay	14
+	sound	data/sounds/tearingclothes.wav
 	frame	data/chars/werewolf/spawn2g.gif
 	delay	80
 	frame	data/chars/werewolf/spawn2f.gif
@@ -583,6 +600,7 @@ anim	spawn
 	frame	data/chars/werewolf/spawn2g.gif
 	frame	data/chars/werewolf/spawn2f.gif
 	frame	data/chars/werewolf/spawn2g.gif
+	sound	data/sounds/ripcloth.wav
 	frame	data/chars/werewolf/spawn2f.gif
 	delay	10
 	@cmd	tosserM "Cloth1a" 8 34 0 2.5

@@ -1,0 +1,2 @@
+music		data/music/stage_trans.ogg 0
+animation	data/sprites/map_intro/intro_map_8.gif 0 0 0 1

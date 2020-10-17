@@ -1,11 +1,14 @@
 name		NOwl
-health          9
-nomove 1
+health          6
+nomove 		1
 death		1
+nodieblink 	1
+falldie		1
 type		npc
 hostile		enemy
 candamage	enemy obstacle
-subject_to_gravity 0
+antigravity     100
+subject_to_gravity 1
 subject_to_wall 0
 subject_to_obstacle 0
 subject_to_platform 0
@@ -17,9 +20,11 @@ animationscript data/scripts/nscript.c
 
 
 
+
 anim	attack1
 	delay	10
 	offset	25 35
+	sound	data/sounds/wingflap.wav
 	frame	data/chars/owl/owl5.gif
 	attack2	12 30 28 13 6 0 1 0 0 0
 	@cmd	targetdash 3 3 0 -10 0
@@ -33,6 +38,7 @@ anim	attack1
 	frame	data/chars/owl/owl5.gif
 	frame	data/chars/owl/owl7.gif
 	attack2	0
+	sound	data/sounds/wingflap.wav
 	@cmd	dasher 0 0 0 0
 	frame	data/chars/owl/owl1.gif
 	@cmd	suicidePar
@@ -58,8 +64,39 @@ anim	attack1
 	frame	data/chars/owl/owl1.gif
 		
 anim	death
+	loop	0
 	delay	5
+	offset	20 35
+	landframe	8
+	frame	data/chars/owl/owl1.gif
 	offset	25 35
+	frame	data/chars/owl/owl1.gif
+	offset	20 35
+	frame	data/chars/owl/owl1.gif
+	offset	25 35
+	frame	data/chars/owl/owl1.gif
+	offset	20 35
+	frame	data/chars/owl/owl1.gif
+	offset	25 35
+	frame	data/chars/owl/owl1.gif
+	offset	20 35
+	frame	data/chars/owl/owl1.gif
+	delay	1000
+	offset	25 35
+	@cmd	degravity 0
+	frame	data/chars/owl/death1a.gif
+	delay	7
+	frame	data/chars/owl/death1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/owl/death1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/owl/death1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/owl/death1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/owl/death1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/owl/death1b.gif
 	frame	data/chars/misc/empty.gif
 		
 anim	idle
@@ -81,9 +118,13 @@ anim	idle
 	frame	data/chars/owl/owl2.gif
 		
 anim	spawn
-	delay	5
+	delay	1
 	offset	25 35
-	frame	data/chars/misc/empty.gif
+	sound	data/sounds/snow_spawn.wav
+	frame	data/chars/owl/spawn1a.gif
+	frame	data/chars/owl/spawn1b.gif
+	frame	data/chars/owl/spawn1c.gif
+	frame	data/chars/owl/owl2.gif
 	@cmd	mapchange 1
 	@cmd	dirparent
 	frame	data/chars/owl/owl1.gif

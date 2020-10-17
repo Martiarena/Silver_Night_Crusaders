@@ -1,7 +1,6 @@
 name    	Bumeran
 type    	none
 facing          1
-nolife  	1
 antigravity	50
 lifespan   	15
 subject_to_hole 1
@@ -9,7 +8,10 @@ no_adjust_base  0
 subject_to_platform 1
 candamage  	player
 offscreenkill	100
+
 animationscript	data/scripts/escript.c
+
+icon 		data/chars/misc/bgitem.gif
 
 palette		data/chars/items/weapons.gif
 
@@ -27,9 +29,11 @@ anim	follow1
 
     killentity(self); //Suicide!
 	@end_script	
-	delay	500
+	delay	400
 	offset	11 22
 	frame	data/chars/misc/empty.gif
+	delay	1
+	@cmd 	suicide
 	frame	data/chars/misc/empty.gif
 		
 anim	idle
@@ -42,10 +46,6 @@ anim	idle
 	attack20	2 0 17 22 0 0 1 1 0 0
 	noreflect	1
 	frame	data/chars/items/boomerang/idle1a.gif
-	delay	70
-	frame	data/chars/items/boomerang/idle1a.gif
-	delay	2
-	frame	data/chars/items/boomerang/idle1b.gif
 	delay	70
 	frame	data/chars/items/boomerang/idle1a.gif
 	delay	2

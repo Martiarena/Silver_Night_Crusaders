@@ -145,14 +145,13 @@ at  400
 wait
 at  400
 
-spawn	Boss2Spawner
-coords  20 0 0
+spawn	SkeletonSpawner_2
+coords  0 0 0
 2pspawn 1
 at	400
 
 spawn  Cerbero
 coords  450  216  0
-health 50
 boss 1
 at  400
 
@@ -160,4 +159,3 @@ spawn boss_lifebar
 coords  0 0 0
 flip 1
 at  400
-

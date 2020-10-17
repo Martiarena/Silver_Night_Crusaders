@@ -1,0 +1,54 @@
+name	        Bright_summon
+type         panel
+antigravity     100
+setlayer	99
+speed           10
+nomove	1 1
+subject_to_wall 0
+subject_to_gravity 0
+subject_to_obstacle 0
+subject_to_platform 0
+subject_to_screen 0
+subject_to_hole 0
+offscreenkill	1500
+lifespan	999
+
+palette		data/chars/countess/magic/bright1a.gif
+
+animationscript  data/scripts/escript.c
+
+
+
+
+anim	idle
+	loop	0
+	delay	400
+	offset	960 124
+	frame	data/chars/countess/magic/bright1g.gif
+	delay	7
+	offset	160 124
+	frame	data/chars/countess/magic/bright1a.gif
+	frame	data/chars/countess/magic/bright1b.gif
+	frame	data/chars/countess/magic/bright1c.gif
+	frame	data/chars/countess/magic/bright1d.gif
+	frame	data/chars/countess/magic/bright1e.gif
+	frame	data/chars/countess/magic/bright1f.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	loop	0
+	delay	7
+	offset	160 124
+	sound	data/sounds/screedwn.wav
+	frame	data/chars/countess/magic/bright1f.gif
+	frame	data/chars/countess/magic/bright1e.gif
+	frame	data/chars/countess/magic/bright1d.gif
+	frame	data/chars/countess/magic/bright1c.gif
+	frame	data/chars/countess/magic/bright1b.gif
+	offset	960 124
+	frame	data/chars/countess/magic/bright1g.gif
+		
+#|edited by openBor Stats v 0.67
+		

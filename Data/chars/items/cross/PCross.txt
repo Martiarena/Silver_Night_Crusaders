@@ -11,6 +11,7 @@ palette		data/chars/items/cross/cross_palette.gif
 
 
 
+
 anim	idle
 @script
     void self = getlocalvar("self"); //Get calling entity
@@ -37,6 +38,14 @@ anim	idle
 	frame	data/chars/items/cross/cross4.gif
 	attack3	0
 	frame	data/chars/items/cross/cross4a.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	13 13
+	attack3	2 2 22 22 6 0 0 0 0 0
+	sound	data/sounds/throw_medium.wav
+	frame	data/chars/items/cross/cross1.gif
 		
 #|edited by openBor Stats v 0.67
 		

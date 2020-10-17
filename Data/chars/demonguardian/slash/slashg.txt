@@ -12,22 +12,23 @@ palette		data/chars/demonguardian/slash/slash_palette.gif
 
 
 
+
 anim	idle
 	loop	0
 	delay	10
 	offset	14 59
 	hitfx	data/sounds/slash.wav
-	attack2	14 0 14 59 19 20 0 0 0 0
+	attack2	14 0 14 59 12 20 0 0 0 0
 	frame	data/chars/demonguardian/slash/slash1a.gif
 	delay	7
-	attack2	14 0 14 59 19 20 0 0 0 0
+	attack2	14 0 14 59 12 20 0 0 0 0
 	frame	data/chars/demonguardian/slash/slash1b.gif
 	frame	data/chars/demonguardian/slash/slash1c.gif
-	attack2	11 8 15 46 19 20 0 0 0 0
+	attack2	11 8 15 46 12 20 0 0 0 0
 	frame	data/chars/demonguardian/slash/slash1d.gif
 	frame	data/chars/demonguardian/slash/slash1e.gif
 	frame	data/chars/demonguardian/slash/slash1f.gif
-	attack2	7 20 20 22 19 20 0 0 0 0
+	attack2	7 20 20 22 12 20 0 0 0 0
 	frame	data/chars/demonguardian/slash/slash1g.gif
 	frame	data/chars/demonguardian/slash/slash1h.gif
 	frame	data/chars/demonguardian/slash/slash1i.gif

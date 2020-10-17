@@ -2,5 +2,12 @@
 #	animation	[path] [x] [y]		# GIF animation to play
 #	silence					# Stop music
 
-
-#animation	data/scenes/newintro.gif 0 0
+music		data/Scenes/intro/intropart1.ogg 0
+animation	data/scenes/intro/intro_part_1.gif 0 0
+animation	data/scenes/intro/intro_part_2.gif 0 0
+animation	data/scenes/intro/intro_part_3.gif 0 0
+music		data/Scenes/intro/intropart2.ogg 0
+animation	data/scenes/intro/intro_part_4.gif 0 0
+music		data/Scenes/intro/intropart3.ogg 0
+animation	data/scenes/intro/intro_part_5.gif 0 0
+silence 1

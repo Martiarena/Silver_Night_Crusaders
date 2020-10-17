@@ -1,0 +1,80 @@
+name	        Bafo_seal
+type	        none
+lifespan        2
+antigravity     100
+setlayer	99
+
+palette		data/chars/bafomet/magic/bafo_seal.gif
+
+
+
+
+anim	idle
+	delay	1
+	offset	23 59
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	23 59
+	sound	data/sounds/forbbinspell.wav
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/bafomet/magic/bafo_seal.gif
+		
+#|edited by openBor Stats v 0.67
+		

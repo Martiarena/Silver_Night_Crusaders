@@ -12,6 +12,7 @@ knockdowncount   10
 jumpheight	 3
 noquake		 1
 bounce		 0
+stealth 0
 death		 1
 nodieblink	 2
 icon		 data/chars/sheeba/icon.gif
@@ -22,11 +23,15 @@ subject_to_platform 1
 defense normal 1.5
 defense normal1 1.5
 defense normal2 1.5
+defense normal6 0.75
+defense normal7 0.75
 defense normal10 0.75
 defense normal17 1.5
 defense normal20 0 1 999 0 0 0 0
-defense burn 0.75
+defense burn 0.50
 defense shock 0.75
+parrow 		data/chars/misc/parrow1p.gif -8 -78
+parrow2 	data/chars/misc/parrow2p.gif -8 -78
 
 weapons      Sheeba_Volaticus Sheeba
 candamage       enemy obstacle shot
@@ -57,6 +62,31 @@ com	a3	freespecial2
 com	a4	freespecial3
 
 com f f a	freespecial13
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -460,12 +490,13 @@ anim	follow1
 	offset	80 124
 	bbox	65 70 20 40
 	frame	data/chars/sheeba/doublejump15.gif
-	@cmd	platform 1
 	delay	6
+	@cmd	platform 1
 	frame	data/chars/sheeba/jump4.gif
 	frame	data/chars/sheeba/jump5.gif
 	frame	data/chars/sheeba/jump4.gif
 	frame	data/chars/sheeba/jump5.gif
+	delay	1
 	frame	data/chars/sheeba/jump4.gif
 		
 anim	follow2
@@ -495,18 +526,20 @@ anim	follow3
 	frame	data/chars/sheeba/kick2a.gif
 		
 anim	follow4
-	cancel	0 5 0 a4 freespecial10
-	cancel	0 5 0 a3 freespecial20
-	cancel	0 5 0 a2 freespecial7
+	cancel	0 6 0 a4 freespecial10
+	cancel	0 6 0 a3 freespecial20
+	cancel	0 6 0 a2 freespecial7
 	delay	6
 	offset	80 124
 	bbox	77 68 20 40
 	frame	data/chars/sheeba/jump3.gif
 	frame	data/chars/sheeba/jump4.gif
-	@cmd	platform 1
 	frame	data/chars/sheeba/jump5.gif
 	frame	data/chars/sheeba/jump4.gif
 	frame	data/chars/sheeba/jump5.gif
+	@cmd	platform 1
+	delay	1
+	frame	data/chars/sheeba/jump4.gif
 		
 anim	follow5
 	delay	7
@@ -529,15 +562,15 @@ anim	freespecial10
 	delay	1
 	offset	80 124
 	bbox	75 65 20 45
-	@cmd	keyint "ANI_FREESPECIAL9" 0 "U" 0
 	@cmd	keyint "ANI_FREESPECIAL14" 0 "F" 0
 	@cmd	platform 1
-	@cmd	limiter 9
+	@cmd	limiter 19
 	frame	data/chars/sheeba/jumpweapon1.gif
 	delay	7
+	sound	data/sounds/sheeba_special.wav
 	frame	data/chars/sheeba/jumpweapon1.gif
 	@cmd	floater 35
-	@cmd	mpcost 10
+	@cmd	mpcost 20
 	@cmd	spawn01 "fireseal" 16 29 0
 	@cmd	Triafire 16 29
 	sound	data/sounds/sheeba_attack3.wav
@@ -552,6 +585,20 @@ anim	freespecial10
 	frame	data/chars/sheeba/jump4.gif
 	frame	data/chars/sheeba/jump5.gif
 	frame	data/chars/sheeba/jump4.gif
+		
+anim	freespecial11
+	delay	1
+	offset	80 124
+	bbox	70 70 20 50
+	@cmd	limiter 29
+	frame	data/chars/sheeba/weapon1.gif
+	delay	7
+	frame	data/chars/sheeba/weapon1.gif
+	@cmd	spawn01 "iceseal" 16 29 0
+	frame	data/chars/sheeba/weapon2.gif
+	frame	data/chars/sheeba/weapon3.gif
+	delay	14
+	frame	data/chars/sheeba/weapon3.gif
 		
 anim	freespecial12
 	cancel	0 18 0 a4 freespecial10
@@ -581,10 +628,8 @@ anim	freespecial12
 	frame	data/chars/sheeba/jump5.gif
 	bbox	80 68 17 41
 	frame	data/chars/sheeba/jump4.gif
+	delay	1
 	frame	data/chars/sheeba/jump5.gif
-	frame	data/chars/sheeba/jump4.gif
-	frame	data/chars/sheeba/jump5.gif
-	frame	data/chars/sheeba/jump4.gif
 		
 anim	freespecial13
 	delay	14
@@ -655,12 +700,13 @@ anim	freespecial14
 	offset	80 124
 	bbox	75 65 20 45
 	@cmd	platform 1
-	@cmd	limiter 19
+	@cmd	limiter 9
 	frame	data/chars/sheeba/jumpweapon1.gif
 	delay	7
+	sound	data/sounds/sheeba_special.wav
 	frame	data/chars/sheeba/jumpweapon1.gif
 	@cmd	floater 35
-	@cmd	mpcost 20
+	@cmd	mpcost 10
 	@cmd	spawn01 "lightningseal" 16 29 0
 	@cmd	shoot "Thunder_sh" 16 29 0
 	sound	data/sounds/sheeba_special2.wav
@@ -670,34 +716,58 @@ anim	freespecial14
 	frame	data/chars/sheeba/jumpweapon3.gif
 	delay	6
 	frame	data/chars/sheeba/jump4.gif
+	delay	1
 	frame	data/chars/sheeba/jump5.gif
-	frame	data/chars/sheeba/jump4.gif
-	frame	data/chars/sheeba/jump5.gif
-	frame	data/chars/sheeba/jump4.gif
 		
 anim	freespecial15
-	delay	8
+	delay	1
 	offset	80 124
 	bbox	70 90 20 33
+	@cmd	limiter 19
 	frame	data/chars/sheeba/duckweapon1.gif
+	delay	8
 	@cmd	keyint "ANI_FREESPECIAL17" 0 "F" 0
-	@cmd	limiter 9
+	sound	data/sounds/sheeba_special.wav
 	frame	data/chars/sheeba/duckweapon2.gif
-	@cmd	mpcost 10
+	@cmd	mpcost 20
 	@cmd	spawn01 "fireseal" 16 15 0
 	@cmd	Triafire 16 15
 	frame	data/chars/sheeba/duckweapon3.gif
 	delay	12
 	frame	data/chars/sheeba/duckweapon3.gif
 		
+anim	freespecial16
+	delay	1
+	offset	80 124
+	bbox	75 65 20 45
+	@cmd	limiter 29
+	frame	data/chars/sheeba/jumpweapon1.gif
+	delay	7
+	sound	data/sounds/sheeba_special.wav
+	frame	data/chars/sheeba/jumpweapon1.gif
+	@cmd	floater 35
+	@cmd	spawn01 "iceseal" 16 29 0
+	sound	data/sounds/sheeba_attack3.wav
+	frame	data/chars/sheeba/jumpweapon2.gif
+	frame	data/chars/sheeba/jumpweapon2a.gif
+	frame	data/chars/sheeba/jumpweapon3.gif
+	frame	data/chars/sheeba/jumpweapon2a.gif
+	frame	data/chars/sheeba/jumpweapon3.gif
+	delay	6
+	frame	data/chars/sheeba/jump4.gif
+	delay	1
+	frame	data/chars/sheeba/jump5.gif
+		
 anim	freespecial17
-	delay	8
+	delay	1
 	offset	80 124
 	bbox	70 90 20 33
+	@cmd	limiter 9
 	frame	data/chars/sheeba/duckweapon1.gif
-	@cmd	limiter 19
+	delay	8
+	sound	data/sounds/sheeba_special.wav
 	frame	data/chars/sheeba/duckweapon2.gif
-	@cmd	mpcost 20
+	@cmd	mpcost 10
 	@cmd	spawn01 "lightningseal" 16 15 0
 	@cmd	shoot "Thunder_sh" 16 15 0
 	frame	data/chars/sheeba/duckweapon3.gif
@@ -708,7 +778,8 @@ anim	freespecial2
 	delay	1
 	offset	80 124
 	bbox	70 70 20 50
-	@cmd	limiter 4
+	@cmd	limiter 9
+	@cmd	keyint "ANI_FREESPECIAL5" 0 "U" 0
 	frame	data/chars/sheeba/weapon1.gif
 	delay	7
 	frame	data/chars/sheeba/weapon1.gif
@@ -723,7 +794,8 @@ anim	freespecial20
 	offset	80 124
 	bbox	75 65 20 45
 	@cmd	platform 1
-	@cmd	limiter 4
+	@cmd	limiter 9
+	@cmd	keyint "ANI_FREESPECIAL5" 0 "U" 0
 	frame	data/chars/sheeba/jumpweapon1.gif
 	delay	7
 	frame	data/chars/sheeba/jumpweapon1.gif
@@ -737,16 +809,14 @@ anim	freespecial20
 	frame	data/chars/sheeba/jumpweapon3.gif
 	delay	6
 	frame	data/chars/sheeba/jump4.gif
+	delay	1
 	frame	data/chars/sheeba/jump5.gif
-	frame	data/chars/sheeba/jump4.gif
-	frame	data/chars/sheeba/jump5.gif
-	frame	data/chars/sheeba/jump4.gif
 		
 anim	freespecial21
 	delay	8
 	offset	80 124
 	bbox	70 90 20 33
-	@cmd	limiter 4
+	@cmd	limiter 9
 	frame	data/chars/sheeba/duckweapon1.gif
 	frame	data/chars/sheeba/duckweapon2.gif
 	@cmd	spawn01 "magicseal" 16 15 0
@@ -758,13 +828,14 @@ anim	freespecial3
 	delay	1
 	offset	80 124
 	bbox	70 70 20 50
-	@cmd	keyint "ANI_FREESPECIAL5" 0 "U" 0
+	@cmd	keyint "ANI_FREESPECIAL11" 0 "U" 0
 	@cmd	keyint "ANI_FREESPECIAL8" 0 "F" 0
-	@cmd	limiter 9
+	@cmd	limiter 19
 	frame	data/chars/sheeba/weapon1.gif
 	delay	7
+	sound	data/sounds/sheeba_special.wav
 	frame	data/chars/sheeba/weapon1.gif
-	@cmd	mpcost 10
+	@cmd	mpcost 20
 	@cmd	spawn01 "fireseal" 16 29 0
 	@cmd	Triafire 16 29
 	sound	data/sounds/sheeba_attack3.wav
@@ -795,7 +866,7 @@ anim	freespecial4
 anim	freespecial5
 	delay	10
 	offset	80 124
-	@cmd	limiter 1
+	@cmd	limiter 9
 	frame	data/chars/sheeba/magic/spawn2a.gif
 	frame	data/chars/sheeba/magic/spawn2b.gif
 	frame	data/chars/sheeba/magic/spawn2c.gif
@@ -847,20 +918,19 @@ anim	freespecial7
 	delay	6
 	@cmd	platform 1
 	frame	data/chars/sheeba/jump4.gif
+	delay	1
 	frame	data/chars/sheeba/jump5.gif
-	frame	data/chars/sheeba/jump4.gif
-	frame	data/chars/sheeba/jump5.gif
-	frame	data/chars/sheeba/jump4.gif
 		
 anim	freespecial8
 	delay	1
 	offset	80 124
 	bbox	70 70 20 50
+	@cmd	limiter 9
 	frame	data/chars/sheeba/weapon1.gif
 	delay	7
-	@cmd	limiter 19
+	sound	data/sounds/sheeba_special.wav
 	frame	data/chars/sheeba/weapon1.gif
-	@cmd	mpcost 20
+	@cmd	mpcost 10
 	@cmd	spawn01 "lightningseal" 16 29 0
 	@cmd	shoot "Thunder_sh" 16 29 0
 	sound	data/sounds/sheeba_attack3.wav
@@ -871,51 +941,24 @@ anim	freespecial8
 	frame	data/chars/sheeba/weapon5.gif
 	frame	data/chars/sheeba/weapon6.gif
 		
-anim	freespecial9
-	delay	10
-	offset	80 124
-	@cmd	limiter 1
-	frame	data/chars/sheeba/magic/spawn2a.gif
-	frame	data/chars/sheeba/magic/spawn2b.gif
-	frame	data/chars/sheeba/magic/spawn2c.gif
-	frame	data/chars/sheeba/magic/spawn2d.gif
-	delay	14
-	frame	data/chars/sheeba/magic/spawn2e.gif
-	delay	1
-	movea	3
-	frame	data/chars/sheeba/magic/spawn2f.gif
-	frame	data/chars/sheeba/magic/spawn2f.gif
-	frame	data/chars/sheeba/magic/spawn2f.gif
-	frame	data/chars/sheeba/magic/spawn2f.gif
-	frame	data/chars/sheeba/magic/spawn2f.gif
-	frame	data/chars/sheeba/magic/spawn2f.gif
-	frame	data/chars/sheeba/magic/spawn2f.gif
-	frame	data/chars/sheeba/magic/spawn2f.gif
-	delay	10
-	movea	0
-	weaponframe	14 1
-	frame	data/chars/sheeba/magic/idle2a.gif
-	frame	data/chars/sheeba/magic/idle2a.gif
-		
 anim	idle
 	loop	1
 	delay	15
 	offset	80 124
-	bbox	73 70 15 54
+	bbox	75 70 10 50
 	frame	data/chars/sheeba/idle1.gif
 	frame	data/chars/sheeba/idle2.gif
 	frame	data/chars/sheeba/idle3.gif
 	frame	data/chars/sheeba/idle4.gif
 		
 anim	jump
-	cancel	0 9 0 a4 freespecial10
-	cancel	0 9 0 a3 freespecial20
-	cancel	0 9 0 a2 freespecial7
+	cancel	0 11 0 a4 freespecial10
+	cancel	0 11 0 a3 freespecial20
+	cancel	0 11 0 a2 freespecial7
 	delay	7
 	offset	80 124
-	bbox	75 72 20 42
+	bbox	77 70 15 40
 	frame	data/chars/sheeba/jump1.gif
-	@cmd	platform 1
 	frame	data/chars/sheeba/jump2.gif
 	frame	data/chars/sheeba/jump1.gif
 	frame	data/chars/sheeba/jump2.gif
@@ -925,15 +968,14 @@ anim	jump
 	frame	data/chars/sheeba/jump5.gif
 	frame	data/chars/sheeba/jump4.gif
 	frame	data/chars/sheeba/jump5.gif
-	frame	data/chars/sheeba/jump4.gif
 		
 anim	jumpattack
-	cancel	23 28 0 a4 freespecial10
-	cancel	23 28 0 a3 freespecial20
-	cancel	23 28 0 a2 freespecial7
+	cancel	23 29 0 a4 freespecial10
+	cancel	23 29 0 a3 freespecial20
+	cancel	23 29 0 a2 freespecial7
 	delay	10
 	offset	80 124
-	bbox	75 72 20 40
+	bbox	79 70 15 40
 	sound	data/sounds/sheeba_attack1.wav
 	@cmd	platform 1
 	frame	data/chars/sheeba/jumpattack1.gif
@@ -970,10 +1012,7 @@ anim	jumpattack
 	delay	6
 	bbox	79 69 20 45
 	frame	data/chars/sheeba/jump4.gif
-	frame	data/chars/sheeba/jump5.gif
-	frame	data/chars/sheeba/jump4.gif
-	frame	data/chars/sheeba/jump5.gif
-	frame	data/chars/sheeba/jump4.gif
+	delay	1
 	frame	data/chars/sheeba/jump5.gif
 		
 anim	jumpattack3
@@ -998,7 +1037,7 @@ anim	jumpattack3
 		
 anim	jumpland
 	loop	0
-	delay	2
+	delay	4
 	offset	80 124
 	bbox	75 75 20 45
 	sound	data/sounds/land.wav
@@ -1007,121 +1046,203 @@ anim	jumpland
 anim	jumpspecial
 	@cmd	limiter 99
 	delay	1
+	landframe	80
 	offset	80 124
 	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell2.gif
 	delay	7
-	@cmd	floater 570
+	@cmd	floater 682
 	@cmd	dasher 0 0 0 0
+	sound	data/sounds/sheeba_spell2.wav
 	frame	data/chars/sheeba/gigaspell2.gif
 	frame	data/chars/sheeba/gigaspell3.gif
+	frame	data/chars/sheeba/gigaspell2.gif
+	frame	data/chars/sheeba/gigaspell3.gif
+	frame	data/chars/sheeba/gigaspell2.gif
+	frame	data/chars/sheeba/gigaspell3.gif
+	frame	data/chars/sheeba/gigaspell2.gif
+	frame	data/chars/sheeba/gigaspell3.gif
+	frame	data/chars/sheeba/gigaspell4.gif
+	frame	data/chars/sheeba/gigaspell5.gif
+	frame	data/chars/sheeba/gigaspell4.gif
+	frame	data/chars/sheeba/gigaspell5.gif
+	frame	data/chars/sheeba/gigaspell4.gif
+	frame	data/chars/sheeba/gigaspell5.gif
+	frame	data/chars/sheeba/gigaspell4.gif
+	frame	data/chars/sheeba/gigaspell5.gif
+	frame	data/chars/sheeba/gigaspell4.gif
+	frame	data/chars/sheeba/gigaspell5.gif
 	frame	data/chars/sheeba/gigaspell4.gif
 	frame	data/chars/sheeba/gigaspell5.gif
 	frame	data/chars/sheeba/gigaspell6.gif
 	frame	data/chars/sheeba/gigaspell7.gif
 	frame	data/chars/sheeba/gigaspell8.gif
 	delay	10
+	sound	data/sounds/sheeba_spell1.wav
 	@cmd	spawner3 "Quetzal" 160 110 0
 	@cmd	spawner3 "BPetir" 160 200 0
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell10.gif
+	@cmd	mpcost 100
 	@cmd	spawner3 "BPetir" 80 200 0
 	@cmd	spawner3 "BPetir" 280 200 0
 	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell10.gif
 	@cmd	spawner3 "BPetir" 20 200 0
 	@cmd	spawner3 "BPetir" 180 200 0
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell10.gif
 	@cmd	spawner3 "BPetir" 100 200 0
 	@cmd	spawner3 "BPetir" 260 200 0
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell10.gif
 	@cmd	spawner3 "BPetir" 40 200 0
 	@cmd	spawner3 "BPetir" 220 200 0
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell10.gif
+	sound	data/sounds/thunder.wav
 	@cmd	spawner3 "BPetir" 120 200 0
 	@cmd	spawner3 "BPetir" 240 200 0
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell10.gif
 	@cmd	spawner3 "BPetir" 60 200 0
 	@cmd	spawner3 "BPetir" 200 200 0
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell10.gif
+	sound	data/sounds/thunder.wav
 	@cmd	spawner3 "BPetir" 140 200 0
 	@cmd	spawner3 "BPetir" 300 200 0
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
+	frame	data/chars/sheeba/gigaspell10.gif
+	@cmd	spawner3 "BPetir" 160 200 0
+	@cmd	mpcost 100
+	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
+	frame	data/chars/sheeba/gigaspell10.gif
+	sound	data/sounds/thunder.wav
+	@cmd	spawner3 "BPetir" 80 200 0
+	@cmd	spawner3 "BPetir" 280 200 0
+	@cmd	mpcost 100
+	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
+	frame	data/chars/sheeba/gigaspell10.gif
+	@cmd	spawner3 "BPetir" 20 200 0
+	@cmd	spawner3 "BPetir" 180 200 0
+	@cmd	mpcost 100
+	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
+	frame	data/chars/sheeba/gigaspell10.gif
+	sound	data/sounds/thunder.wav
+	@cmd	spawner3 "BPetir" 100 200 0
+	@cmd	spawner3 "BPetir" 260 200 0
+	@cmd	mpcost 100
+	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
+	frame	data/chars/sheeba/gigaspell10.gif
+	@cmd	spawner3 "BPetir" 40 200 0
+	@cmd	spawner3 "BPetir" 220 200 0
+	@cmd	mpcost 100
+	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
+	frame	data/chars/sheeba/gigaspell10.gif
+	sound	data/sounds/thunder.wav
+	@cmd	spawner3 "BPetir" 120 200 0
+	@cmd	spawner3 "BPetir" 240 200 0
+	@cmd	mpcost 100
+	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
+	frame	data/chars/sheeba/gigaspell10.gif
+	@cmd	spawner3 "BPetir" 60 200 0
+	@cmd	spawner3 "BPetir" 200 200 0
+	@cmd	mpcost 100
+	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
+	frame	data/chars/sheeba/gigaspell10.gif
+	sound	data/sounds/thunder.wav
+	@cmd	spawner3 "BPetir" 140 200 0
+	@cmd	spawner3 "BPetir" 300 200 0
+	@cmd	mpcost 100
+	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell10.gif
 	@cmd	spawner3 "BPetir" 160 200 0
 	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell10.gif
+	@cmd	mpcost 100
+	sound	data/sounds/thunder.wav
 	@cmd	spawner3 "BPetir" 80 200 0
 	@cmd	spawner3 "BPetir" 280 200 0
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell10.gif
 	@cmd	spawner3 "BPetir" 20 200 0
 	@cmd	spawner3 "BPetir" 180 200 0
 	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell10.gif
+	sound	data/sounds/thunder.wav
 	@cmd	spawner3 "BPetir" 100 200 0
 	@cmd	spawner3 "BPetir" 260 200 0
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell10.gif
 	@cmd	spawner3 "BPetir" 40 200 0
 	@cmd	spawner3 "BPetir" 220 200 0
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell10.gif
+	@cmd	mpcost 100
+	sound	data/sounds/thunder.wav
 	@cmd	spawner3 "BPetir" 120 200 0
 	@cmd	spawner3 "BPetir" 240 200 0
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell10.gif
 	@cmd	spawner3 "BPetir" 60 200 0
 	@cmd	spawner3 "BPetir" 200 200 0
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell10.gif
+	sound	data/sounds/thunder.wav
 	@cmd	spawner3 "BPetir" 140 200 0
 	@cmd	spawner3 "BPetir" 300 200 0
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell10.gif
-	@cmd	spawner3 "BPetir" 160 200 0
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell10.gif
-	@cmd	spawner3 "BPetir" 80 200 0
-	@cmd	spawner3 "BPetir" 280 200 0
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell9.gif
-	frame	data/chars/sheeba/gigaspell10.gif
-	@cmd	spawner3 "BPetir" 20 200 0
-	@cmd	spawner3 "BPetir" 180 200 0
-	frame	data/chars/sheeba/gigaspell9.gif
-	frame	data/chars/sheeba/gigaspell10.gif
-	@cmd	spawner3 "BPetir" 100 200 0
-	@cmd	spawner3 "BPetir" 260 200 0
-	frame	data/chars/sheeba/gigaspell9.gif
-	frame	data/chars/sheeba/gigaspell10.gif
-	@cmd	spawner3 "BPetir" 40 200 0
-	@cmd	spawner3 "BPetir" 220 200 0
-	frame	data/chars/sheeba/gigaspell9.gif
-	frame	data/chars/sheeba/gigaspell10.gif
-	@cmd	spawner3 "BPetir" 120 200 0
-	@cmd	spawner3 "BPetir" 240 200 0
-	frame	data/chars/sheeba/gigaspell9.gif
-	frame	data/chars/sheeba/gigaspell10.gif
-	@cmd	spawner3 "BPetir" 60 200 0
-	@cmd	spawner3 "BPetir" 200 200 0
-	frame	data/chars/sheeba/gigaspell9.gif
-	frame	data/chars/sheeba/gigaspell10.gif
-	@cmd	spawner3 "BPetir" 140 200 0
-	@cmd	spawner3 "BPetir" 300 200 0
-	frame	data/chars/sheeba/gigaspell9.gif
-	frame	data/chars/sheeba/gigaspell10.gif
-	frame	data/chars/sheeba/gigaspell9.gif
-	frame	data/chars/sheeba/gigaspell10.gif
-	frame	data/chars/sheeba/gigaspell9.gif
+	@cmd	mpcost 100
 	frame	data/chars/sheeba/gigaspell10.gif
 	frame	data/chars/sheeba/gigaspell11.gif
 	frame	data/chars/sheeba/gigaspell12.gif
 	frame	data/chars/sheeba/gigaspell11.gif
+	frame	data/chars/sheeba/gigaspell12.gif
 	frame	data/chars/sheeba/gigaspell12.gif
 		
 anim	pain

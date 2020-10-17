@@ -1,6 +1,5 @@
 name	        Spellexplo
 type	        none
-health		1
 nolife          1
 death       	1
 antigravity     100
@@ -8,7 +7,8 @@ hostile		player npc
 candamage       player npc
 animationscript data/scripts/cscript.c
 
-palette		data/chars/ficzko/magic/sphere_palette.gif
+palette		data/chars/countess/magic/magic_countess_palette.gif
+
 
 
 
@@ -22,74 +22,212 @@ palette		data/chars/ficzko/magic/sphere_palette.gif
 
 
 anim	death
-	delay	7
-	offset	13 14
-	frame	data/chars/countess/magic/spellexplo1a.gif
-	frame	data/chars/ficzko/block1a.gif
+	loop	0
+	delay	1
+	offset	1 0
 	frame	data/chars/misc/empty.gif
 	@cmd	suicide
 	frame	data/chars/misc/empty.gif
 		
 anim	follow1
-	delay	4
-	offset	13 14
-	frame	data/chars/misc/empty.gif
-	@cmd	suicide
-	frame	data/chars/misc/empty.gif
-		
-anim	idle
 	loop	0
 	delay	7
+	@cmd	target 0 0 0 0 0 0
+	@cmd	dash 0 0
 	offset	44 46
-	followcond	1
-	followanim	1
-	@cmd	target 0.9 0.9 0 -20 1 1
-	@cmd	dash 0 0
-	burn	5 6 16 16 19 0 0 0 0 0
+	sound	data/sounds/flame.wav
+	hitfx	data/sounds/burnt.wav
 	frame	data/chars/countess/magic/spellexplo1a.gif
-	@cmd	target 0.9 0.9 0 -20 1 1
-	@cmd	dash 0 0
 	frame	data/chars/countess/magic/spellexplo1b.gif
-	@cmd	target 0.9 0.9 0 -20 1 1
-	@cmd	dash 0 0
 	frame	data/chars/countess/magic/spellexplo1a.gif
-	@cmd	target 0.9 0.9 0 -20 1 1
-	@cmd	dash 0 0
 	frame	data/chars/countess/magic/spellexplo1b.gif
-	@cmd	target 1 1 0 -20 1 1
-	@cmd	dash 0 0
 	frame	data/chars/countess/magic/spellexplo1a.gif
-	@cmd	target 1 1 0 -20 1 1
-	@cmd	dash 0 0
 	frame	data/chars/countess/magic/spellexplo1b.gif
-	@cmd	target 1 1 0 -20 1 1
-	@cmd	dash 0 0
 	frame	data/chars/countess/magic/spellexplo1a.gif
-	@cmd	target 1 1 0 -20 1 1
-	@cmd	dash 0 0
 	frame	data/chars/countess/magic/spellexplo1b.gif
-	delay	20
-	@cmd	groundkill
-	frame	data/chars/countess/magic/spellexplo1a.gif
-	@cmd	groundkill
-	frame	data/chars/countess/magic/spellexplo1b.gif
-	@cmd	groundkill
-	delay	7
 	frame	data/chars/countess/magic/spellexplo1c.gif
+	sound	data/sounds/explosion-fire.wav
+	burn	5 5 80 80 25 0 0 0 0 0
 	frame	data/chars/countess/magic/spellexplo1d.gif
 	frame	data/chars/countess/magic/spellexplo1e.gif
 	frame	data/chars/countess/magic/spellexplo1f.gif
+	burn	0 0 0 0 0 0 0
 	frame	data/chars/countess/magic/spellexplo1g.gif
 	frame	data/chars/countess/magic/spellexplo1h.gif
 	frame	data/chars/misc/empty.gif
 	@cmd	suicide
 	frame	data/chars/misc/empty.gif
 		
+anim	idle
+	loop	0
+	delay	3
+	offset	1 0
+	followcond	1
+	followanim	1
+	noreflect	1
+	hitfx	data/sounds/no-hit.wav
+	attack20	-1 -1 6 6 0 0 1 1 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
 		
 anim	spawn
-	delay	7
-	offset	13 14
-	frame	data/chars/ficzko/magic/spawn3a.gif
+	loop	0
+	delay	1
+	offset	1 0
+	followcond	1
+	followanim	1
+	noreflect	1
+	hitfx	data/sounds/no-hit.wav
+	attack20	-1 -1 6 6 0 0 1 1 0 0
+	frame	data/chars/misc/empty.gif
+	@cmd	target 1 1 0 -20 1 1
+	@cmd	dash 0 0
+	frame	data/chars/misc/empty.gif
 		
 #|edited by openBor Stats v 0.67
 		

@@ -1,0 +1,27 @@
+name	       	Coliseum_torch3
+type    	none
+antigravity     100
+shadow		0
+setlayer	-4
+nomove	1
+nolife	1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_gravity 0
+offscreenkill   9999
+
+palette 	data/bgs/coliseum/decoration/candle3a.gif
+
+
+
+anim	idle
+	loop	1
+	delay	14
+	offset	6 25
+	frame	data/bgs/coliseum/decoration/candle3a.gif
+	frame	data/bgs/coliseum/decoration/candle3b.gif
+	frame	data/bgs/coliseum/decoration/candle3c.gif
+	frame	data/bgs/coliseum/decoration/candle3d.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,23 @@
+name  		Castlehall_wall3a
+type		none
+facing	  	1
+setlayer	1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/castlehall/wall/wall3a.gif
+
+
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	52 8
+	platform	0 4 -8 -8 113 113 10 9999
+	frame	data/bgs/castlehall/wall/wall3a.gif
+		
+#|edited by openBor Stats v 0.67
+		

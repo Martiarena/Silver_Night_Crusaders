@@ -1,5 +1,5 @@
 name      Segador
-health           14
+health           18
 speed            5
 type    	 enemy
 noquake  	 1
@@ -8,7 +8,7 @@ nodrop  	 2
 death            2
 score 400 -1
 bounce 0
-aggression	 -25
+aggression	 25
 offscreenkill	 500
 subject_to_gravity 1
 hostile  player npc
@@ -16,14 +16,16 @@ candamage player npc
 animationscript  data/scripts/lescript.c
 takedamagescript data/scripts/blink.c
 
+diesound        data/sounds/die2.wav
 icon 		data/chars/misc/bgmonster.gif
 
 defense normal3 2 0 0 0 0 0 0
 defense normal6 2 0 0 0 0 0 0
+defense normal16 2 0 0 0 0 0 0
+defense shock 4 0 0 0 0 0 0
 
 palette 	 data/chars/reaper/reaper_palette.gif
 alternatepal	 data/chars/reaper/reaper_palette_blink.gif
-
 
 
 
@@ -39,9 +41,12 @@ anim	attack1
 	frame	data/chars/reaper/attack1b.gif
 	delay	1
 	attack	0 0 0 0
+	sound	data/sounds/swipe.wav
 	frame	data/chars/reaper/attack1b.gif
 	delay	7
 	bbox	82 31 28 45
+	sound	data/sounds/die5.wav
+	hitfx	data/sounds/slash.wav
 	attack2	96 2 57 77 19 0 0 0 0 0
 	frame	data/chars/reaper/attack1c.gif
 	frame	data/chars/reaper/attack1d.gif

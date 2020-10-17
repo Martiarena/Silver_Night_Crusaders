@@ -7,7 +7,7 @@ cantgrab 	1
 nodrop	 	2
 death	 	1
 sleep           50
-score           100 -1
+score           150 -1
 aggression	-25
 offscreenkill	150
 aimove	 	chase
@@ -15,15 +15,16 @@ animationscript	data/scripts/escript.c
 takedamagescript data/scripts/blink.c
 hostile         player npc
 candamage 	player npc
-load    	WSPit
+load    	Blooda
 icon 		data/chars/misc/bgmonster.gif
 
 defense normal3 2 0 0 0 0 0 0
 defense normal6 2 0 0 0 0 0 0
-defense schock 2 0 0 0 0 0 0
+defense shock 2 0 0 0 0 0 0
 
 palette 	 data/chars/sahagin/sahagin.gif
 alternatepal	 data/chars/sahagin/sahagin_blink.gif
+
 
 
 
@@ -53,7 +54,7 @@ anim	attack1
 	offset	35 64
 	frame	data/chars/sahagin/attack1.gif
 	delay	8
-	custknife	WSPit
+	custknife	fb01_e
 	throwframe	3 30
 	frame	data/chars/sahagin/attack2.gif
 	delay	12
@@ -105,6 +106,7 @@ anim	attack2
 	delay	7
 	frame	data/chars/sahagin/attack2.gif
 	frame	data/chars/sahagin/attack3.gif
+	sound	data/sounds/throw_whip.wav
 	frame	data/chars/sahagin/attack4.gif
 	attack	30 22 107 20 9 0 0 0 0 0
 	frame	data/chars/sahagin/attack5.gif
@@ -190,6 +192,7 @@ anim	attack3
 	frame	data/chars/sahagin/jump1.gif
 	frame	data/chars/sahagin/jump1.gif
 	delay	1
+	sound	data/sounds/splash.wav
 	frame	data/chars/misc/empty.gif
 	@cmd	suicide
 	frame	data/chars/misc/empty.gif
@@ -235,6 +238,7 @@ anim	spawn
 	offset	35 59
 	landframe	20
 	jumpframe	0 6 0 0
+	sound	data/sounds/splash.wav
 	frame	data/chars/sahagin/jump1.gif
 	frame	data/chars/sahagin/jump1.gif
 	frame	data/chars/sahagin/jump1.gif

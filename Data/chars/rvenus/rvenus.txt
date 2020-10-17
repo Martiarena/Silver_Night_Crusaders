@@ -1,5 +1,5 @@
 name	R._de_Venus
-health          26
+health          24
 speed           0
 type    	enemy
 noquake  	1
@@ -20,10 +20,11 @@ load kdie
 load spore
 
 defense normal4 2 0 0 0 0 0 0
+defense normal15 3 0 0 0 0 0 0
 defense normal19 2 0 0 0 0 0 0
 defense burn 2 0 0 0 0 0 0
 
-diesound  data/sounds/chest.wav
+diesound  data/sounds/flame-dies.wav
 
 icon		data/chars/misc/bgmonster.gif
 
@@ -61,12 +62,10 @@ takedamagescript data/scripts/blink.c
 
 
 
-
 anim	death
 	loop	0
 	delay	7
 	offset	46 87
-	sound	data/sounds/flame-dies.wav
 	subentity	kdie
 	spawnframe	0 0 0 0 0
 	frame	data/chars/rvenus/death1.gif
@@ -86,7 +85,7 @@ anim	idle
 	offset	46 87
 	bbox	10 5 70 75
 	attack	10 5 70 75 6 0 1 0 0 0
-	delay	14
+	delay	18
 	@cmd	spawn01 "Spore" 19 47 1
 	frame	data/chars/rvenus/idle1a.gif
 	@cmd	spawn01 "Spore" 9 69 1
@@ -102,10 +101,13 @@ anim	idle
 anim	spawn
 	loop	0
 	offset	46 87
-	bbox	10 5 70 75
-	attack	10 5 70 75 6 0 1 0 0 0
-	delay	1
-	frame	data/chars/rvenus/idle1a.gif
+	delay	7
+	sound	data/sounds/pollen.wav
+	frame	data/chars/rvenus/spawn1a.gif
+	frame	data/chars/rvenus/spawn1b.gif
+	frame	data/chars/rvenus/spawn1c.gif
+	frame	data/chars/rvenus/spawn1d.gif
+	frame	data/chars/rvenus/spawn1e.gif
 		
 #|edited by openBor Stats v 0.67
 		

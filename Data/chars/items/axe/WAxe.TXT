@@ -1,4 +1,4 @@
-name     Hacha
+name     	Hacha
 type    	none
 facing          1
 antigravity	50
@@ -7,9 +7,10 @@ no_adjust_base  0
 subject_to_platform 1
 candamage  	player
 offscreenkill	100
-icon 		data/chars/misc/bgitem.gif
 
 animationscript	data/scripts/escript.c
+
+icon 		data/chars/misc/bgitem.gif
 
 palette		data/chars/items/weapons.gif
 
@@ -25,12 +26,13 @@ anim	follow1
     int iPI = getentityproperty(player,"playerindex");
 
     setglobalvar(iPI+"0", 2);
-
     killentity(self); //Suicide!
 	@end_script	
-	delay	500
+	delay	400
 	offset	12 23
 	frame	data/chars/misc/empty.gif
+	delay	1
+	@cmd 	suicide
 	frame	data/chars/misc/empty.gif
 		
 anim	idle

@@ -1,10 +1,12 @@
 music		data/music/castlewalls.ogg 305613
-bossmusic	data/music/boss.ogg 367353
+bossmusic	data/music/vitrifaction_fire.ogg 809656
 
 panel	        data/bgs/moon_bridge/bridge_castle_b.gif
 
 fglayer		data/bgs/moon_bridge/castle_walls_0.gif -11000 0.1 0.1 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/moon_bridge/castle_walls_2.gif -11500 0 0 0 0 0 0 -1 1 1 0 0 0 0 0 1
 fglayer		data/bgs/moon_bridge/castle_walls_1.gif -12000 0.3 0.3 0 0 0 0 -1 1 1 0 0 0 0 0 1
+
 fglayer		data/bgs/moon_bridge/back_bridge.gif -13000 0.8 0.8 0 0 0 0 -1 1 1 0 0 0 0 0 1
 fglayer		data/bgs/moon_bridge/sky_night_2.gif -14000 0.9 0.9 0 0 0 0 -1 1 1 0 0 0 0 0 1
 order           a
@@ -17,35 +19,53 @@ type		0 0 0
 cameratype 1
 noslow 1
 
-spawn  Moon
-coords  360  10
+
+spawn  Entplat2
+coords  175  216  100
 at  0
 
-spawn  Brazier1
-coords  320  216
-item	C._sagrada
+spawn  Entplat2
+coords  207  216  100
+at  0
+
+spawn  Entplat2
+coords  240  216  100
+at  0
+
+spawn  Platform_Circus
+coords  709  216  48
+at  0
+
+spawn  Candle1
+coords  210  216  60
+item  ___100
+at  0
+
+spawn  Jar1
+coords  210  216  117
+item  Gema_roja
+at  0
+
+spawn  Candle1
+coords  340  216  60
+item	C._Plateada
 map 1
-at  0
-
-spawn  Brazier1
-coords  180  216
-item  ___10
-at  0
+at  30
 
 spawn  Brazier1
 coords  340  216
 item  ___20
-at  120
+at  140
 
 spawn  Brazier1
 coords  340  216  0
 item  ___50
-at  280
+at  290
 
 spawn  Brazier1
 coords  340  216  0
 item  ___100
-at  440
+at  450
 
 Blockade  482
 at  482
@@ -55,19 +75,17 @@ coords  0 0 0
 flip 1
 at  562
 
-spawn	Boss6Spawner
+spawn	ClownSpawner
 coords  0 0 0
 2pspawn 1
 at  562
 
 spawn  Ficzko
-coords  340  216 120
+coords  320  216 120
 boss 1
-health	50
-alias	B._Maligno
 at  562
 
 spawn  Barril
-coords  340  216
+coords  340  216  0
 item	Pollo_frito
 at  590

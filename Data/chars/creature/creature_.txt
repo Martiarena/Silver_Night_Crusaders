@@ -12,17 +12,21 @@ hostile         player npc
 candamage 	player npc
 offscreenkill 	500
 score 5000 -1
-diesound     data/sounds/diem1.wav
+diesound     data/sounds/franken_dead.wav
 animationscript  data/scripts/escript.c
 takedamagescript data/scripts/blink.c
 defense normal 0.75 0 0 0 0 0 0
 defense normal2 0.75 0 0 0 0 0 0
+defense normal3 0.5 0 0 0 0 0 0
+defense normal4 0.5 0 0 0 0 0 0
+defense normal5 0.25 0 0 0 0 0 0
 defense normal7 0.75 0 0 0 0 0 0
 defense normal8 0.5 0 0 0 0 0 0
 defense normal19 0.75 0 0 0 0 0 0
 defense normal20 0.75 0 0 0 0 0 0
+defense normal21 0.75 0 0 0 0 0 0
 defense burn 0.75 0 0 0 0 0 0
-defense schock 0.75 0 0 0 0 0 0
+defense shock 0.75 0 0 0 0 0 0
 
 load          	CThunder
 load            CMissile
@@ -88,12 +92,14 @@ alternatepal	 data/chars/creature/blink.gif
 
 
 
+
 anim	attack1
 	range	25 65
 	rangea	0 105
 	delay	7
 	offset	35 130
 	bbox	15 40 40 90
+	sound	data/sounds/franken_atk2.wav
 	attack	15 40 40 90 19 0 0 0 0 0
 	frame	data/chars/creature/attack1.gif
 	frame	data/chars/creature/attack2.gif
@@ -175,6 +181,7 @@ anim	freespecial
 	attack	15 40 40 90 19 0 0 0 0 0
 	energycost	1
 	mponly	1
+	sound	data/sounds/franken_atk1.wav
 	frame	data/chars/creature/misile1.gif
 	frame	data/chars/creature/misile2.gif
 	sound	data/sounds/open_arm.wav
@@ -225,6 +232,7 @@ anim	freespecial2
 	offset	35 130
 	bbox	15 25 40 105
 	shock	15 25 40 105 19 0 0 0 0 0
+	sound	data/sounds/franken_atk1.wav
 	frame	data/chars/creature/special1.gif
 	frame	data/chars/creature/special2.gif
 	sound	data/sounds/sparks1.wav
@@ -297,6 +305,7 @@ anim	jumpattack
 	offset	35 130
 	bbox	20 50 40 75
 	attack	20 50 40 75 19 0 0 0 0 0
+	sound	data/sounds/franken_atk2.wav
 	frame	data/chars/creature/jump1.gif
 	delay	20
 	offset	35 130
@@ -328,6 +337,7 @@ anim	spawn
 	delay	1
 	offset	35 130
 	bbox	20 20 40 105
+	sound	data/sounds/franken_atk1.wav
 	frame	data/chars/creature/jump2.gif
 		
 anim	turn

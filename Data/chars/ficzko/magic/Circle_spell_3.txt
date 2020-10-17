@@ -10,6 +10,7 @@ palette		data/chars/ficzko/magic/sphere_palette.gif
 
 
 
+
 anim	death
 	loop	0
 	delay	4
@@ -44,6 +45,7 @@ anim	spawn
 	loop	0
 	delay	5
 	offset	13 14
+	sound	data/sounds/timeover.wav
 	frame	data/chars/ficzko/magic/clock1a.gif
 		
 #|edited by openBor Stats v 0.67

@@ -2,6 +2,10 @@
 #	animation	[path] [x] [y]		# GIF animation to play
 #	silence					# Stop music
 
-music		data/music/remix.bor 1
-animation	data/scenes/end.gif 0 0
-animation	data/scenes/thanks.gif 0 0
+music		data/music/pictures.ogg 0
+animation	data/scenes/credits/credits_1.gif 0 0
+animation	data/scenes/credits/credits_2.gif 0 0
+animation	data/scenes/credits/credits_3.gif 0 0
+animation	data/scenes/credits/credits_4.gif 0 0
+animation	data/scenes/credits/credits_5.gif 0 0
+silence 1

@@ -1,5 +1,5 @@
 name    	Cazadora
-health  	60
+health   42
 nomove  	1
 type		enemy
 cantgrab 	1
@@ -11,7 +11,14 @@ antigravity	100
 score		700 -1
 subject_to_platform 0
 setlayer        10
-offscreenkill	100
+offscreenkill	300
+candamage	player npc
+hostile		player npc
+
+defense normal6 4 0 0 0 0 0 0
+defense schock 4 0 0 0 0 0 0
+
+diesound  	data/sounds/cazadora_die.wav
 
 icon		data/chars/misc/bgmonster.gif
 
@@ -20,7 +27,6 @@ alternatepal	data/chars/cazadora/parblink.png
 
 animationscript  data/scripts/escript.c
 takedamagescript data/scripts/blink.c
-
 
 
 
@@ -57,6 +63,7 @@ anim	follow1
 	hitfx	data/sounds/slash.wav
 	attack2	17 14 87 92 19 1 1 0 0 0
 	frame	data/chars/cazadora/partis05.png
+	sound	data/sounds/swipe.wav
 	frame	data/chars/cazadora/partis06.png
 	frame	data/chars/cazadora/partis07.png
 	frame	data/chars/cazadora/partis08.png
@@ -75,7 +82,7 @@ anim	follow1
 	delay	40
 	@cmd	dash 0 0
 	bbox	7 56 106 12
-	attack2	7 56 106 12 25 1 1 0 0 0
+	attack2	7 56 106 12 19 1 1 0 0 0
 	frame	data/chars/cazadora/partis07.png
 	delay	20
 	@cmd	dasher 0 0 0 0
@@ -99,6 +106,7 @@ anim	follow2
 	hitfx	data/sounds/slash.wav
 	attack2	17 14 87 92 19 1 1 0 0
 	frame	data/chars/cazadora/partis05.png
+	sound	data/sounds/swipe.wav
 	frame	data/chars/cazadora/partis06.png
 	frame	data/chars/cazadora/partis07.png
 	frame	data/chars/cazadora/partis08.png
@@ -111,13 +119,14 @@ anim	follow2
 	@cmd	looper 1 4
 	bbox	54 9 14 104
 	attack2	54 9 14 104 19 1 1 0 0
+	sound	data/sounds/femaledemon_attack.wav
 	frame	data/chars/cazadora/partis05.png
 	delay	20
 	frame	data/chars/cazadora/partis05.png
 	delay	40
 	@cmd	dash 0 0
 	bbox	54 9 14 104
-	attack2	54 9 14 104 25 1 1 0 0
+	attack2	54 9 14 104 19 1 1 0 0
 	frame	data/chars/cazadora/partis05.png
 	delay	20
 	@cmd	dasher 0 0 0 0
@@ -138,8 +147,10 @@ anim	follow3
 	delay	5
 	offset	60 112
 	bbox	17 14 87 92
+	hitfx	data/sounds/slash.wav
 	attack	17 14 87 92 19 1 1 0 0
 	frame	data/chars/cazadora/partis05.png
+	sound	data/sounds/swipe.wav
 	frame	data/chars/cazadora/partis06.png
 	frame	data/chars/cazadora/partis07.png
 	frame	data/chars/cazadora/partis08.png
@@ -152,6 +163,7 @@ anim	follow3
 	@cmd	looper 1 4
 	bbox	52 7 9 107
 	attack	52 7 9 107 19 1 1 0 0
+	sound	data/sounds/femaledemon_attack.wav
 	frame	data/chars/cazadora/partis09.png
 	delay	20
 	frame	data/chars/cazadora/partis09.png
@@ -178,6 +190,7 @@ anim	follow3
 anim	follow4
 	delay	10
 	offset	60 112
+	sound	data/sounds/cazadora_laugh.wav
 	frame	data/chars/cazadora/partis01.png
 	frame	data/chars/cazadora/partis02.png
 	frame	data/chars/cazadora/partis03.png

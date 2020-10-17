@@ -19,14 +19,17 @@ gfxshadow	 0
 subject_to_wall  1
 subject_to_platform 1
 diesound     data/sounds/ethan_death.wav
-weapons         Ethan
+weapons         Ethan_skeleton Ethan
 weaploss        2
 weapnum         1
 candamage       enemy obstacle shot
+defense normal 0.75
+defense normal1 0.75
+defense normal2 0.75
+defense normal17 0.75
 defense normal20 0 1 999 0 0 0 0
 
 palette		data/chars/ethan/palette1.gif
-
 alternatepal	data/chars/ethan/palette2.gif
 alternatepal	data/chars/ethan/palette3.gif
 alternatepal	data/chars/ethan/palette4.gif
@@ -39,7 +42,7 @@ animationscript	 data/scripts/player.c
 keyscript	 data/chars/ethan/ethankey.c
 takedamagescript data/scripts/invis.c
 
-atchain		 1 2 1 2
+atchain		 1 2
 
 com	f f a	freespecial2
 com	u u a	freespecial3
@@ -167,12 +170,53 @@ com	a4	freespecial8
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 anim	attack1
 	loop	0
 	delay	1
 	offset	105 113
 	bbox	95 68 15 40
-	@cmd	limiter 9
+	@cmd	limiter 4
+	@cmd	keyint "ANI_FOLLOW2" 0 "U" 0
+	@script
+		void self = getlocalvar("self");
+
+		if(frame==38){
+			if(playerkeys(getentityproperty(self, "playerindex"), 0, "attack")){
+				performattack(self, openborconstant("ANI_ATTACK3"));
+			}
+		}
+	@end_script	
 	frame	data/chars/ethan/attack1b.gif
 	frame	data/chars/ethan/attack1c.gif
 	frame	data/chars/ethan/attack1b.gif
@@ -180,9 +224,9 @@ anim	attack1
 	frame	data/chars/ethan/attack1b.gif
 	frame	data/chars/ethan/attack1c.gif
 	frame	data/chars/ethan/attack1b.gif
-	@cmd	mpcost 10
+	@cmd	mpcost 5
 	hitfx	data/sounds/burnt.wav
-	burn	5 33 101 46 9 0 0 0 0 0
+	attack15	5 33 101 46 12 0 0 0 0 0
 	frame	data/chars/ethan/attack2c.gif
 	frame	data/chars/ethan/attack2b.gif
 	frame	data/chars/ethan/attack2c.gif
@@ -191,15 +235,15 @@ anim	attack1
 	frame	data/chars/ethan/attack2b.gif
 	frame	data/chars/ethan/attack2c.gif
 	delay	1
-	burn	100 28 73 55 9 0 0 0 0 0
+	attack15	100 28 73 55 12 0 0 0 0 0
 	sound	data/sounds/flame_whip.wav
 	frame	data/chars/ethan/attack3b.gif
-	burn	137 55 99 30 9 0 0 0 0 0
+	attack15	137 55 99 30 12 0 0 0 0 0
 	frame	data/chars/ethan/attack3ac.gif
 	frame	data/chars/ethan/attack0b.gif
 	frame	data/chars/ethan/attack3ac.gif
 	frame	data/chars/ethan/attack0b.gif
-	burn	136 55 95 30 9 0 0 0 0 0
+	attack15	136 55 95 30 12 0 0 0 0 0
 	frame	data/chars/ethan/attack4ac.gif
 	frame	data/chars/ethan/attack4b.gif
 	frame	data/chars/ethan/attack4ac.gif
@@ -220,7 +264,7 @@ anim	attack1
 	frame	data/chars/ethan/attack4b.gif
 	delay	1
 	offset	45 75
-	attack	0 0 0 0
+	attack15	0 0 0 0
 	bbox	35 30 15 40
 	frame	data/chars/ethan/attack6c.gif
 	delay	1
@@ -239,7 +283,17 @@ anim	attack2
 	loop	0
 	delay	1
 	offset	105 113
-	@cmd	limiter 9
+	@cmd	limiter 4
+	@cmd	keyint "ANI_FOLLOW2" 0 "U" 0
+	@script
+		void self = getlocalvar("self");
+
+		if(frame==38){
+			if(playerkeys(getentityproperty(self, "playerindex"), 0, "attack")){
+				performattack(self, openborconstant("ANI_ATTACK3"));
+			}
+		}
+	@end_script	
 	bbox	95 68 15 40
 	sound	data/sounds/ethan_attack1.wav
 	frame	data/chars/ethan/attack1b.gif
@@ -249,9 +303,9 @@ anim	attack2
 	frame	data/chars/ethan/attack1b.gif
 	frame	data/chars/ethan/attack1c.gif
 	frame	data/chars/ethan/attack1b.gif
-	@cmd	mpcost 10
+	@cmd	mpcost 5
 	hitfx	data/sounds/burnt.wav
-	burn	5 33 101 46 9 0 0 0 0 0
+	attack15	5 33 101 46 12 0 0 0 0 0
 	frame	data/chars/ethan/attack2c.gif
 	frame	data/chars/ethan/attack2b.gif
 	frame	data/chars/ethan/attack2c.gif
@@ -260,15 +314,15 @@ anim	attack2
 	frame	data/chars/ethan/attack2b.gif
 	frame	data/chars/ethan/attack2c.gif
 	delay	1
-	burn	100 28 73 55 9 0 0 0 0 0
+	attack15	100 0 75 86 12 0 0 0 0 0
 	sound	data/sounds/flame_whip.wav
 	frame	data/chars/ethan/attack3b.gif
-	burn	137 55 99 30 9 0 0 0 0 0
+	attack15	137 55 99 30 12 0 0 0 0 0
 	frame	data/chars/ethan/attack3ac.gif
 	frame	data/chars/ethan/attack0b.gif
 	frame	data/chars/ethan/attack3ac.gif
 	frame	data/chars/ethan/attack0b.gif
-	burn	136 55 95 30 9 0 0 0 0 0
+	attack15	136 55 95 30 12 0 0 0 0 0
 	frame	data/chars/ethan/attack4ac.gif
 	frame	data/chars/ethan/attack4b.gif
 	frame	data/chars/ethan/attack4ac.gif
@@ -289,7 +343,7 @@ anim	attack2
 	frame	data/chars/ethan/attack4b.gif
 	delay	1
 	offset	45 75
-	attack	0 0 0 0
+	attack15	0 0 0 0
 	bbox	35 30 15 40
 	frame	data/chars/ethan/attack6c.gif
 	delay	1
@@ -303,6 +357,315 @@ anim	attack2
 	frame	data/chars/ethan/attack6c.gif
 	frame	data/chars/ethan/attack6.gif
 	frame	data/chars/ethan/attack6c.gif
+		
+anim	attack3
+	loop	1 14 46
+	delay	1
+	offset	105 113
+	bbox	91 66 15 45
+	@cmd	stop
+	followcond	1
+	followanim	3
+	frame	data/chars/ethan/attack1b.gif
+	frame	data/chars/ethan/attack1c.gif
+	frame	data/chars/ethan/attack1b.gif
+	frame	data/chars/ethan/attack1c.gif
+	frame	data/chars/ethan/attack1b.gif
+	frame	data/chars/ethan/attack1c.gif
+	frame	data/chars/ethan/attack1b.gif
+	frame	data/chars/ethan/attack2b.gif
+	frame	data/chars/ethan/attack2c.gif
+	frame	data/chars/ethan/attack2b.gif
+	frame	data/chars/ethan/attack2c.gif
+	frame	data/chars/ethan/attack2b.gif
+	frame	data/chars/ethan/attack2c.gif
+	frame	data/chars/ethan/attack2b.gif
+	delay	1
+	offset	108 166
+	bbox	94 118 15 45
+	sound	data/sounds/flame_whip.wav
+	attack15	5 15 180 189 6 0 0 0 0 0
+	@script
+    void self = getlocalvar("self");
+    int MP = getentityproperty(self,"mp");
+
+    if(frame == 15){
+      if(MP < 1){
+        changeentityproperty(self, "velocity", 0, 0, 0);
+        performattack(self, openborconstant("ANI_FOLLOW5"));
+      } else {
+        changeentityproperty(self, "mp", MP-0.01);
+      }
+    }
+	@end_script	
+	@cmd	limiter 4
+	frame	data/chars/ethan/fire_spiral1a.gif
+	frame	data/chars/ethan/fire_spiral1b.gif
+	frame	data/chars/ethan/fire_spiral2a.gif
+	frame	data/chars/ethan/fire_spiral2b.gif
+	frame	data/chars/ethan/fire_spiral3a.gif
+	frame	data/chars/ethan/fire_spiral3b.gif
+	frame	data/chars/ethan/fire_spiral4a.gif
+	frame	data/chars/ethan/fire_spiral4b.gif
+	frame	data/chars/ethan/fire_spiral5a.gif
+	frame	data/chars/ethan/fire_spiral5b.gif
+	frame	data/chars/ethan/fire_spiral6a.gif
+	frame	data/chars/ethan/fire_spiral6b.gif
+	frame	data/chars/ethan/fire_spiral7a.gif
+	frame	data/chars/ethan/fire_spiral7b.gif
+	frame	data/chars/ethan/fire_spiral8a.gif
+	attack15	0 0 0 0 0 0 0
+	frame	data/chars/ethan/fire_spiral8b.gif
+	attack15	5 15 180 189 6 0 0 0 0 0
+	frame	data/chars/ethan/fire_spiral1a.gif
+	frame	data/chars/ethan/fire_spiral1b.gif
+	frame	data/chars/ethan/fire_spiral2a.gif
+	frame	data/chars/ethan/fire_spiral2b.gif
+	frame	data/chars/ethan/fire_spiral3a.gif
+	frame	data/chars/ethan/fire_spiral3b.gif
+	frame	data/chars/ethan/fire_spiral4a.gif
+	frame	data/chars/ethan/fire_spiral4b.gif
+	frame	data/chars/ethan/fire_spiral5a.gif
+	frame	data/chars/ethan/fire_spiral5b.gif
+	frame	data/chars/ethan/fire_spiral6a.gif
+	frame	data/chars/ethan/fire_spiral6b.gif
+	frame	data/chars/ethan/fire_spiral7a.gif
+	frame	data/chars/ethan/fire_spiral7b.gif
+	frame	data/chars/ethan/fire_spiral8a.gif
+	attack15	0 0 0 0 0 0 0
+	frame	data/chars/ethan/fire_spiral8b.gif
+		
+anim	attack4
+	loop	0
+	delay	7
+	offset	45 75
+	bbox	37 23 15 45
+	frame	data/chars/ethan/idle1.gif
+		
+anim	attack5
+	loop	0
+	delay	1
+	offset	105 113
+	bbox	95 68 15 40
+	sound	data/sounds/ethan_attack1.wav
+	frame	data/chars/ethan/attack1b.gif
+	frame	data/chars/ethan/attack1c.gif
+	frame	data/chars/ethan/attack1b.gif
+	frame	data/chars/ethan/attack1c.gif
+	frame	data/chars/ethan/attack1b.gif
+	frame	data/chars/ethan/attack1c.gif
+	frame	data/chars/ethan/attack1b.gif
+	@cmd	mpcost 5
+	hitfx	data/sounds/burnt.wav
+	burn	5 33 101 46 12 0 0 0 0 0
+	frame	data/chars/ethan/attack2c.gif
+	frame	data/chars/ethan/attack2b.gif
+	frame	data/chars/ethan/attack2c.gif
+	frame	data/chars/ethan/attack2b.gif
+	frame	data/chars/ethan/attack2c.gif
+	frame	data/chars/ethan/attack2b.gif
+	frame	data/chars/ethan/attack2c.gif
+	delay	1
+	burn	100 0 75 86 12 0 0 0 0 0
+	sound	data/sounds/flame_whip.wav
+	frame	data/chars/ethan/attack3b.gif
+	burn	137 55 99 30 12 0 0 0 0 0
+	frame	data/chars/ethan/attack3ac.gif
+	frame	data/chars/ethan/attack0b.gif
+	frame	data/chars/ethan/attack3ac.gif
+	frame	data/chars/ethan/attack0b.gif
+	burn	136 55 95 30 25 0 0 0 0 0
+	sound	data/sounds/explosion-fire.wav
+	@cmd	spawnbind "Explo_whip" 90 30 0
+	@cmd	spawn01 "Charge_whip" 120 35 0
+	frame	data/chars/ethan/attack4ac.gif
+	frame	data/chars/ethan/attack4b.gif
+	frame	data/chars/ethan/attack4ac.gif
+	frame	data/chars/ethan/attack4b.gif
+	frame	data/chars/ethan/attack4ac.gif
+	frame	data/chars/ethan/attack4b.gif
+	frame	data/chars/ethan/attack4ac.gif
+	frame	data/chars/ethan/attack4b.gif
+	frame	data/chars/ethan/attack4ac.gif
+	frame	data/chars/ethan/attack4b.gif
+	frame	data/chars/ethan/attack4ac.gif
+	frame	data/chars/ethan/attack4b.gif
+	frame	data/chars/ethan/attack4ac.gif
+	frame	data/chars/ethan/attack4b.gif
+	frame	data/chars/ethan/attack4ac.gif
+	frame	data/chars/ethan/attack4b.gif
+	frame	data/chars/ethan/attack4ac.gif
+	frame	data/chars/ethan/attack4b.gif
+	delay	1
+	offset	45 75
+	burn	0 0 0 0
+	bbox	35 30 15 40
+	frame	data/chars/ethan/attack6c.gif
+	delay	1
+	frame	data/chars/ethan/attack6.gif
+	frame	data/chars/ethan/attack6c.gif
+	frame	data/chars/ethan/attack6.gif
+	frame	data/chars/ethan/attack6c.gif
+	frame	data/chars/ethan/attack6.gif
+	frame	data/chars/ethan/attack6c.gif
+	frame	data/chars/ethan/attack6.gif
+	frame	data/chars/ethan/attack6c.gif
+	frame	data/chars/ethan/attack6.gif
+	frame	data/chars/ethan/attack6c.gif
+		
+anim	attack6
+	loop	1 14 46
+	delay	1
+	offset	105 113
+	bbox	95 83 15 25
+	@cmd	stop
+	followcond	1
+	followanim	6
+	frame	data/chars/ethan/duckattack1b.gif
+	frame	data/chars/ethan/duckattack1c.gif
+	frame	data/chars/ethan/duckattack1b.gif
+	frame	data/chars/ethan/duckattack1c.gif
+	frame	data/chars/ethan/duckattack1b.gif
+	frame	data/chars/ethan/duckattack1c.gif
+	frame	data/chars/ethan/duckattack1b.gif
+	frame	data/chars/ethan/duckattack2b.gif
+	frame	data/chars/ethan/duckattack2c.gif
+	frame	data/chars/ethan/duckattack2b.gif
+	frame	data/chars/ethan/duckattack2c.gif
+	frame	data/chars/ethan/duckattack2b.gif
+	frame	data/chars/ethan/duckattack2c.gif
+	frame	data/chars/ethan/duckattack2b.gif
+	offset	105 151
+	bbox	94 120 15 25
+	sound	data/sounds/flame_whip.wav
+	attack15	5 15 180 189 6 0 0 0 0 0
+	@script
+    void self = getlocalvar("self");
+    int MP = getentityproperty(self,"mp");
+
+    if(frame == 15){
+      if(MP < 1){
+        changeentityproperty(self, "velocity", 0, 0, 0);
+        performattack(self, openborconstant("ANI_FOLLOW6"));
+      } else {
+        changeentityproperty(self, "mp", MP-0.01);
+      }
+    }
+	@end_script	
+	@cmd	limiter 4
+	frame	data/chars/ethan/duck_fire_spiral1a.gif
+	frame	data/chars/ethan/duck_fire_spiral1b.gif
+	frame	data/chars/ethan/duck_fire_spiral2a.gif
+	frame	data/chars/ethan/duck_fire_spiral2b.gif
+	frame	data/chars/ethan/duck_fire_spiral3a.gif
+	frame	data/chars/ethan/duck_fire_spiral3b.gif
+	frame	data/chars/ethan/duck_fire_spiral4a.gif
+	frame	data/chars/ethan/duck_fire_spiral4b.gif
+	frame	data/chars/ethan/duck_fire_spiral5a.gif
+	frame	data/chars/ethan/duck_fire_spiral5b.gif
+	frame	data/chars/ethan/duck_fire_spiral6a.gif
+	frame	data/chars/ethan/duck_fire_spiral6b.gif
+	frame	data/chars/ethan/duck_fire_spiral7a.gif
+	frame	data/chars/ethan/duck_fire_spiral7b.gif
+	frame	data/chars/ethan/duck_fire_spiral8a.gif
+	attack15	0 0 0 0 0 0 0
+	frame	data/chars/ethan/duck_fire_spiral8b.gif
+	attack15	5 15 180 189 6 0 0 0 0 0
+	frame	data/chars/ethan/duck_fire_spiral1a.gif
+	frame	data/chars/ethan/duck_fire_spiral1b.gif
+	frame	data/chars/ethan/duck_fire_spiral2a.gif
+	frame	data/chars/ethan/duck_fire_spiral2b.gif
+	frame	data/chars/ethan/duck_fire_spiral3a.gif
+	frame	data/chars/ethan/duck_fire_spiral3b.gif
+	frame	data/chars/ethan/duck_fire_spiral4a.gif
+	frame	data/chars/ethan/duck_fire_spiral4b.gif
+	frame	data/chars/ethan/duck_fire_spiral5a.gif
+	frame	data/chars/ethan/duck_fire_spiral5b.gif
+	frame	data/chars/ethan/duck_fire_spiral6a.gif
+	frame	data/chars/ethan/duck_fire_spiral6b.gif
+	frame	data/chars/ethan/duck_fire_spiral7a.gif
+	frame	data/chars/ethan/duck_fire_spiral7b.gif
+	frame	data/chars/ethan/duck_fire_spiral8a.gif
+	attack15	0 0 0 0 0 0 0
+	frame	data/chars/ethan/duck_fire_spiral8b.gif
+		
+anim	attack7
+	loop	0
+	delay	1
+	offset	105 113
+	bbox	95 83 15 25
+	sound	data/sounds/ethan_attack1.wav
+	frame	data/chars/ethan/duckattack1b.gif
+	frame	data/chars/ethan/duckattack1c.gif
+	frame	data/chars/ethan/duckattack1b.gif
+	frame	data/chars/ethan/duckattack1c.gif
+	frame	data/chars/ethan/duckattack1b.gif
+	frame	data/chars/ethan/duckattack1c.gif
+	frame	data/chars/ethan/duckattack1b.gif
+	@cmd	mpcost 5
+	hitfx	data/sounds/burnt.wav
+	burn	5 45 101 46 12 0 0 0 0 0
+	frame	data/chars/ethan/duckattack2c.gif
+	frame	data/chars/ethan/duckattack2b.gif
+	frame	data/chars/ethan/duckattack2c.gif
+	frame	data/chars/ethan/duckattack2b.gif
+	frame	data/chars/ethan/duckattack2c.gif
+	frame	data/chars/ethan/duckattack2b.gif
+	frame	data/chars/ethan/duckattack2c.gif
+	delay	1
+	burn	100 10 75 86 12 0 0 0 0 0
+	sound	data/sounds/flame_whip.wav
+	frame	data/chars/ethan/duckattack3b.gif
+	burn	137 65 99 30 12 0 0 0 0 0
+	frame	data/chars/ethan/duckattack3ac.gif
+	frame	data/chars/ethan/duckattack0b.gif
+	frame	data/chars/ethan/duckattack3ac.gif
+	frame	data/chars/ethan/duckattack0b.gif
+	burn	136 65 95 30 25 0 0 0 0 0
+	sound	data/sounds/explosion-fire.wav
+	@cmd	spawnbind "Explo_whip" 90 30 0
+	@cmd	spawn01 "Charge_whip" 120 35 0
+	frame	data/chars/ethan/duckattack4ac.gif
+	frame	data/chars/ethan/duckattack4b.gif
+	frame	data/chars/ethan/duckattack4ac.gif
+	frame	data/chars/ethan/duckattack4b.gif
+	frame	data/chars/ethan/duckattack4ac.gif
+	frame	data/chars/ethan/duckattack4b.gif
+	frame	data/chars/ethan/duckattack4ac.gif
+	frame	data/chars/ethan/duckattack4b.gif
+	frame	data/chars/ethan/duckattack4ac.gif
+	frame	data/chars/ethan/duckattack4b.gif
+	frame	data/chars/ethan/duckattack4ac.gif
+	frame	data/chars/ethan/duckattack4b.gif
+	frame	data/chars/ethan/duckattack4ac.gif
+	frame	data/chars/ethan/duckattack4b.gif
+	frame	data/chars/ethan/duckattack4ac.gif
+	frame	data/chars/ethan/duckattack4b.gif
+	frame	data/chars/ethan/duckattack4ac.gif
+	frame	data/chars/ethan/duckattack4b.gif
+	delay	1
+	offset	45 75
+	burn	0 0 0 0 0 0 0 0 0 0
+	bbox	36 47 15 25
+	frame	data/chars/ethan/duckattack6c.gif
+	delay	1
+	frame	data/chars/ethan/duckattack6.gif
+	frame	data/chars/ethan/duckattack6c.gif
+	frame	data/chars/ethan/duckattack6.gif
+	frame	data/chars/ethan/duckattack6c.gif
+	frame	data/chars/ethan/duckattack6.gif
+	frame	data/chars/ethan/duckattack6c.gif
+	frame	data/chars/ethan/duckattack6.gif
+	frame	data/chars/ethan/duckattack6c.gif
+	frame	data/chars/ethan/duckattack6.gif
+	frame	data/chars/ethan/duckattack6c.gif
+		
+anim	attack8
+	loop	0
+	delay	7
+	offset	45 75
+	bbox	35 45 16 25
+	frame	data/chars/ethan/duck1.gif
 		
 anim	bpain
 	loop	0
@@ -364,8 +727,17 @@ anim	duckattack
 	loop	0
 	delay	1
 	offset	105 113
-	@cmd	limiter 9
+	@cmd	limiter 4
 	bbox	95 83 15 25
+	@script
+		void self = getlocalvar("self");
+
+		if(frame==36){
+			if(playerkeys(getentityproperty(self, "playerindex"), 0, "attack")){
+				performattack(self, openborconstant("ANI_ATTACK6"));
+			}
+		}
+	@end_script	
 	frame	data/chars/ethan/duckattack1b.gif
 	frame	data/chars/ethan/duckattack1c.gif
 	frame	data/chars/ethan/duckattack1b.gif
@@ -374,8 +746,8 @@ anim	duckattack
 	frame	data/chars/ethan/duckattack1c.gif
 	frame	data/chars/ethan/duckattack1b.gif
 	hitfx	data/sounds/burnt.wav
-	@cmd	mpcost 10
-	burn	0 44 101 47 9 0 0 0 0 0
+	@cmd	mpcost 5
+	attack15	0 44 101 47 12 0 0 0 0 0
 	frame	data/chars/ethan/duckattack2c.gif
 	frame	data/chars/ethan/duckattack2b.gif
 	frame	data/chars/ethan/duckattack2c.gif
@@ -385,18 +757,18 @@ anim	duckattack
 	frame	data/chars/ethan/duckattack2c.gif
 	delay	1
 	sound	data/sounds/flame_whip.wav
-	burn	97 41 73 53 9 0 0 0 0 0
+	attack15	97 41 73 53 12 0 0 0 0 0
 	frame	data/chars/ethan/duckattack3b.gif
 	frame	data/chars/ethan/duckattack3c.gif
 	frame	data/chars/ethan/duckattack3b.gif
 	frame	data/chars/ethan/duckattack3c.gif
 	delay	1
-	burn	134 63 99 33 9 0 0 0 0 0
+	attack15	134 63 99 33 12 0 0 0 0 0
 	frame	data/chars/ethan/duckattack3ab.gif
 	frame	data/chars/ethan/duckattack0c.gif
 	frame	data/chars/ethan/duckattack3ab.gif
 	frame	data/chars/ethan/duckattack0c.gif
-	burn	75 45 80 10 9 0 0 0 0 0
+	burn	75 45 80 10 12 0 0 0 0 0
 	frame	data/chars/ethan/duckattack4ab.gif
 	frame	data/chars/ethan/duckattack4c.gif
 	frame	data/chars/ethan/duckattack4ab.gif
@@ -414,7 +786,7 @@ anim	duckattack
 	delay	1
 	offset	45 75
 	bbox	35 45 15 25
-	burn	0 0 0 0 0 0 0 0 0 0
+	attack15	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/ethan/duckattack6.gif
 	delay	1
 	frame	data/chars/ethan/duckattack6c.gif
@@ -825,6 +1197,9 @@ anim	fall8
 	frame	data/chars/ethan/fall1c.gif
 		
 anim	follow1
+	cancel	0 24 0 u u a freespecial3
+	cancel	0 24 0 f f a freespecial2
+	cancel	0 24 0 a2 freespecial7
 	jumpframe	0 3 -1 0
 	delay	1
 	offset	45 75
@@ -843,26 +1218,92 @@ anim	follow1
 	frame	data/chars/ethan/jump2c.gif
 	frame	data/chars/ethan/jump2.gif
 	frame	data/chars/ethan/jump2c.gif
+	frame	data/chars/ethan/jump3.gif
+	frame	data/chars/ethan/jump3c.gif
+	frame	data/chars/ethan/jump3.gif
+	frame	data/chars/ethan/jump3c.gif
+	frame	data/chars/ethan/jump3.gif
+	frame	data/chars/ethan/jump3c.gif
+	frame	data/chars/ethan/jump3.gif
+	frame	data/chars/ethan/jump3c.gif
+	frame	data/chars/ethan/jump3.gif
+	frame	data/chars/ethan/jump3.gif
+		
+anim	follow2
+	loop	0
+	delay	7
+	offset	45 75
+	bbox	39 25 15 50
 	@cmd	platform 1
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
+	@cmd	limiterSub
+	@cmd	limiter 9
+	frame	data/chars/ethan/weapon1.gif
+	frame	data/chars/ethan/weapon2.gif
+	@cmd	mpcost 10
+	@cmd	SubWeapon 23 35
+	frame	data/chars/ethan/weapon3.gif
+	frame	data/chars/ethan/weapon4.gif
+		
+anim	follow3
+	loop	1
+	delay	1
+	offset	108 166
+	bbox	94 118 15 45
+	attack15	5 15 180 189 6 0 0 0 0 0
+	@script
+    void self = getlocalvar("self");
+    int MP = getentityproperty(self,"mp");
+
+    if(frame == 1){
+      if(MP < 1){
+        changeentityproperty(self, "velocity", 0, 0, 0);
+        performattack(self, openborconstant("ANI_FOLLOW5"));
+      } else {
+        changeentityproperty(self, "mp", MP-0.01);
+      }
+    }
+	@end_script	
+	frame	data/chars/ethan/shadow/fire_spiral1a.gif
+	frame	data/chars/ethan/fire_spiral1b.gif
+	frame	data/chars/ethan/shadow/fire_spiral2a.gif
+	frame	data/chars/ethan/fire_spiral2b.gif
+	frame	data/chars/ethan/shadow/fire_spiral3a.gif
+	frame	data/chars/ethan/fire_spiral3b.gif
+	frame	data/chars/ethan/shadow/fire_spiral4a.gif
+	frame	data/chars/ethan/fire_spiral4b.gif
+	frame	data/chars/ethan/shadow/fire_spiral5a.gif
+	frame	data/chars/ethan/fire_spiral5b.gif
+	frame	data/chars/ethan/shadow/fire_spiral6a.gif
+	frame	data/chars/ethan/fire_spiral6b.gif
+	frame	data/chars/ethan/shadow/fire_spiral7a.gif
+	frame	data/chars/ethan/fire_spiral7b.gif
+	frame	data/chars/ethan/shadow/fire_spiral8a.gif
+	attack15	0 0 0 0 0 0 0
+	frame	data/chars/ethan/fire_spiral8b.gif
+	sound	data/sounds/flame_whip.wav
+	attack15	5 15 180 189 6 0 0 0 0 0
+	frame	data/chars/ethan/shadow/fire_spiral1a.gif
+	frame	data/chars/ethan/fire_spiral1b.gif
+	frame	data/chars/ethan/shadow/fire_spiral2a.gif
+	frame	data/chars/ethan/fire_spiral2b.gif
+	frame	data/chars/ethan/shadow/fire_spiral3a.gif
+	frame	data/chars/ethan/fire_spiral3b.gif
+	frame	data/chars/ethan/shadow/fire_spiral4a.gif
+	frame	data/chars/ethan/fire_spiral4b.gif
+	frame	data/chars/ethan/shadow/fire_spiral5a.gif
+	frame	data/chars/ethan/fire_spiral5b.gif
+	frame	data/chars/ethan/shadow/fire_spiral6a.gif
+	frame	data/chars/ethan/fire_spiral6b.gif
+	frame	data/chars/ethan/shadow/fire_spiral7a.gif
+	frame	data/chars/ethan/fire_spiral7b.gif
+	frame	data/chars/ethan/shadow/fire_spiral8a.gif
+	attack15	0 0 0 0 0 0 0
+	frame	data/chars/ethan/fire_spiral8b.gif
 		
 anim	follow4
-	cancel	0 238 0 u u a freespecial3
-	cancel	0 238 0 f f a freespecial2
-	cancel	0 238 0 a2 freespecial7
+	cancel	0 16 0 u u a freespecial3
+	cancel	0 16 0 f f a freespecial2
+	cancel	0 16 0 a2 freespecial7
 	delay	1
 	offset	45 75
 	bbox	40 25 15 35
@@ -880,21 +1321,8 @@ anim	follow4
 	frame	data/chars/ethan/jump3c.gif
 	frame	data/chars/ethan/jump3.gif
 	frame	data/chars/ethan/jump3c.gif
-	@cmd	platform 1
 	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
 	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
 		
 anim	follow5
 	loop	0
@@ -905,16 +1333,319 @@ anim	follow5
 	frame	data/chars/ethan/idle1.gif
 	frame	data/chars/ethan/idle1.gif
 		
+anim	follow6
+	loop	1
+	delay	1
+	offset	105 151
+	bbox	94 120 15 25
+	sound	data/sounds/flame_whip.wav
+	attack15	5 15 180 189 6 0 0 0 0 0
+	@script
+    void self = getlocalvar("self");
+    int MP = getentityproperty(self,"mp");
+
+    if(frame == 15){
+      if(MP < 1){
+        changeentityproperty(self, "velocity", 0, 0, 0);
+        performattack(self, openborconstant("ANI_FOLLOW5"));
+      } else {
+        changeentityproperty(self, "mp", MP-0.01);
+      }
+    }
+	@end_script	
+	@cmd	limiter 4
+	frame	data/chars/ethan/shadow/duck_fire_spiral1a.gif
+	frame	data/chars/ethan/duck_fire_spiral1b.gif
+	frame	data/chars/ethan/shadow/duck_fire_spiral2a.gif
+	frame	data/chars/ethan/duck_fire_spiral2b.gif
+	frame	data/chars/ethan/shadow/duck_fire_spiral3a.gif
+	frame	data/chars/ethan/duck_fire_spiral3b.gif
+	frame	data/chars/ethan/shadow/duck_fire_spiral4a.gif
+	frame	data/chars/ethan/duck_fire_spiral4b.gif
+	frame	data/chars/ethan/shadow/duck_fire_spiral5a.gif
+	frame	data/chars/ethan/duck_fire_spiral5b.gif
+	frame	data/chars/ethan/shadow/duck_fire_spiral6a.gif
+	frame	data/chars/ethan/duck_fire_spiral6b.gif
+	frame	data/chars/ethan/shadow/duck_fire_spiral7a.gif
+	frame	data/chars/ethan/duck_fire_spiral7b.gif
+	frame	data/chars/ethan/shadow/duck_fire_spiral8a.gif
+	attack15	0 0 0 0 0 0 0
+	frame	data/chars/ethan/duck_fire_spiral8b.gif
+	attack15	5 15 180 189 6 0 0 0 0 0
+	frame	data/chars/ethan/shadow/duck_fire_spiral1a.gif
+	frame	data/chars/ethan/duck_fire_spiral1b.gif
+	frame	data/chars/ethan/shadow/duck_fire_spiral2a.gif
+	frame	data/chars/ethan/duck_fire_spiral2b.gif
+	frame	data/chars/ethan/shadow/duck_fire_spiral3a.gif
+	frame	data/chars/ethan/duck_fire_spiral3b.gif
+	frame	data/chars/ethan/shadow/duck_fire_spiral4a.gif
+	frame	data/chars/ethan/duck_fire_spiral4b.gif
+	frame	data/chars/ethan/shadow/duck_fire_spiral5a.gif
+	frame	data/chars/ethan/duck_fire_spiral5b.gif
+	frame	data/chars/ethan/shadow/duck_fire_spiral6a.gif
+	frame	data/chars/ethan/duck_fire_spiral6b.gif
+	frame	data/chars/ethan/shadow/duck_fire_spiral7a.gif
+	frame	data/chars/ethan/duck_fire_spiral7b.gif
+	frame	data/chars/ethan/shadow/duck_fire_spiral8a.gif
+	attack15	0 0 0 0 0 0 0
+	frame	data/chars/ethan/duck_fire_spiral8b.gif
+		
+anim	freespecial
+	loop	0
+	delay	1
+	offset	45 75
+	frame	data/chars/ethan/idle1.gif
+		
+anim	freespecial10
+	jumpframe	1 1.5 -2
+	mpcost	0
+	delay	1
+	offset	45 75
+	@cmd	limiter 9
+	frame	data/chars/ethan/land2.gif
+	frame	data/chars/ethan/land2c.gif
+	frame	data/chars/ethan/land2.gif
+	frame	data/chars/ethan/land2c.gif
+	frame	data/chars/ethan/land2.gif
+	frame	data/chars/ethan/land2c.gif
+	frame	data/chars/ethan/land2.gif
+	@cmd	mpcost 10
+	sound	data/sounds/ethan_attack3.wav
+	frame	data/chars/ethan/evasion0.gif
+	frame	data/chars/ethan/evasion0c.gif
+	frame	data/chars/ethan/evasion0.gif
+	frame	data/chars/ethan/evasion0c.gif
+	frame	data/chars/ethan/evasion0.gif
+	frame	data/chars/ethan/evasion0c.gif
+	frame	data/chars/ethan/evasion0.gif
+	frame	data/chars/ethan/evasion0c.gif
+	frame	data/chars/ethan/evasion0.gif
+	frame	data/chars/ethan/evasion0c.gif
+	offset	75 70
+	@cmd	spawn01 "evasion1_shadow" 2 -2 0
+	frame	data/chars/ethan/evasion1.gif
+	frame	data/chars/ethan/evasion1c.gif
+	frame	data/chars/ethan/evasion1.gif
+	frame	data/chars/ethan/evasion1c.gif
+	frame	data/chars/ethan/evasion1.gif
+	frame	data/chars/ethan/evasion1c.gif
+	frame	data/chars/ethan/evasion1.gif
+	frame	data/chars/ethan/evasion1c.gif
+	frame	data/chars/ethan/evasion1.gif
+	frame	data/chars/ethan/evasion1c.gif
+	@cmd	spawn01 "evasion1_shadow" 2 -2 0
+	frame	data/chars/ethan/evasion1a.gif
+	frame	data/chars/ethan/evasion1ac.gif
+	frame	data/chars/ethan/evasion1a.gif
+	frame	data/chars/ethan/evasion1ac.gif
+	frame	data/chars/ethan/evasion1a.gif
+	frame	data/chars/ethan/evasion1ac.gif
+	frame	data/chars/ethan/evasion1a.gif
+	frame	data/chars/ethan/evasion1ac.gif
+	frame	data/chars/ethan/evasion1a.gif
+	frame	data/chars/ethan/evasion1ac.gif
+	frame	data/chars/ethan/evasion1a.gif
+	frame	data/chars/ethan/evasion1ac.gif
+	frame	data/chars/ethan/evasion1a.gif
+	frame	data/chars/ethan/evasion1ac.gif
+	frame	data/chars/ethan/evasion1a.gif
+	frame	data/chars/ethan/evasion1ac.gif
+	frame	data/chars/ethan/evasion1a.gif
+	frame	data/chars/ethan/evasion1ac.gif
+	frame	data/chars/ethan/evasion1a.gif
+	frame	data/chars/ethan/evasion1ac.gif
+	delay	1
+	offset	70 70
+	@cmd	spawn01 "evasion2_shadow" 2 -2 0
+	frame	data/chars/ethan/evasion2.gif
+	frame	data/chars/ethan/evasion2c.gif
+	frame	data/chars/ethan/evasion2.gif
+	frame	data/chars/ethan/evasion2c.gif
+	offset	70 76
+	@cmd	spawn01 "evasion2_shadow" 2 -2 0
+	frame	data/chars/ethan/evasion2a.gif
+	frame	data/chars/ethan/evasion2ac.gif
+	frame	data/chars/ethan/evasion2a.gif
+	frame	data/chars/ethan/evasion2ac.gif
+	delay	1
+	offset	70 70
+	@cmd	spawn01 "evasion3_shadow" 2 -2 0
+	frame	data/chars/ethan/evasion3.gif
+	frame	data/chars/ethan/evasion3c.gif
+	frame	data/chars/ethan/evasion3.gif
+	frame	data/chars/ethan/evasion3c.gif
+	frame	data/chars/ethan/evasion3.gif
+	frame	data/chars/ethan/evasion3c.gif
+	frame	data/chars/ethan/evasion3.gif
+	frame	data/chars/ethan/evasion3c.gif
+	frame	data/chars/ethan/evasion3.gif
+	frame	data/chars/ethan/evasion3c.gif
+	delay	1
+	offset	60 70
+	@cmd	spawn01 "evasion4_shadow" 2 -2 0
+	frame	data/chars/ethan/evasion4.gif
+	frame	data/chars/ethan/evasion4c.gif
+	frame	data/chars/ethan/evasion4.gif
+	frame	data/chars/ethan/evasion4c.gif
+	frame	data/chars/ethan/evasion4.gif
+	frame	data/chars/ethan/evasion4c.gif
+	offset	45 75
+	cancel	72 83 0 u u a freespecial11
+	cancel	72 83 0 f f a freespecial13
+	frame	data/chars/ethan/duck1.gif
+	frame	data/chars/ethan/duck1c.gif
+	frame	data/chars/ethan/duck1.gif
+	frame	data/chars/ethan/duck2c.gif
+	frame	data/chars/ethan/duck2.gif
+	frame	data/chars/ethan/duck2c.gif
+	frame	data/chars/ethan/land1.gif
+	frame	data/chars/ethan/land1c.gif
+	frame	data/chars/ethan/land1.gif
+	frame	data/chars/ethan/land2c.gif
+	frame	data/chars/ethan/land2.gif
+	frame	data/chars/ethan/land2c.gif
+		
+anim	freespecial11
+	delay	1
+	offset	45 75
+	bbox	0 0 0 0
+	jumpframe	12 3.6 2
+	move	1
+	frame	data/chars/ethan/upper1c.gif
+	frame	data/chars/ethan/upper1.gif
+	frame	data/chars/ethan/upper1c.gif
+	frame	data/chars/ethan/upper1.gif
+	frame	data/chars/ethan/upper2c.gif
+	frame	data/chars/ethan/upper2.gif
+	frame	data/chars/ethan/upper2c.gif
+	frame	data/chars/ethan/upper2.gif
+	frame	data/chars/ethan/upper3c.gif
+	frame	data/chars/ethan/upper3.gif
+	frame	data/chars/ethan/upper3c.gif
+	frame	data/chars/ethan/upper3.gif
+	sound	data/sounds/ethan_attack2.wav
+	frame	data/chars/ethan/upper4c.gif
+	@cmd	spawn01 "upper5_shadow" 2 -2 0
+	frame	data/chars/ethan/upper4.gif
+	frame	data/chars/ethan/upper4c.gif
+	frame	data/chars/ethan/upper4.gif
+	move	0
+	frame	data/chars/ethan/upper5c.gif
+	frame	data/chars/ethan/upper5.gif
+	frame	data/chars/ethan/upper5c.gif
+	@cmd	spawn01 "upper5_shadow" 2 -2 0
+	frame	data/chars/ethan/upper5.gif
+	offset	45 80
+	@cmd	platform 1
+	attack15	40 0 30 60 25 19 1 0 10 0
+	dropv	4 2 0
+	frame	data/chars/ethan/upper7c.gif
+	frame	data/chars/ethan/upper7.gif
+	frame	data/chars/ethan/upper7c.gif
+	frame	data/chars/ethan/upper7.gif
+	@cmd	spawn01 "upper6_shadow" 2 -2 0
+	frame	data/chars/ethan/upper6c.gif
+	offset	45 80
+	frame	data/chars/ethan/shadow/upper8.gif
+	@cmd	spawnbind "flamepunch_effect" 2 -2 2
+	offset	45 75
+	frame	data/chars/ethan/upper6c.gif
+	offset	45 80
+	frame	data/chars/ethan/shadow/upper7.gif
+	offset	45 75
+	frame	data/chars/ethan/upper6c.gif
+	offset	45 80
+	frame	data/chars/ethan/shadow/upper8.gif
+	offset	45 75
+	frame	data/chars/ethan/upper6c.gif
+	offset	45 80
+	@cmd	spawn01 "upper6_shadow" 2 -2 0
+	frame	data/chars/ethan/shadow/upper7.gif
+	offset	45 75
+	frame	data/chars/ethan/upper6c.gif
+	offset	45 80
+	frame	data/chars/ethan/shadow/upper8.gif
+	offset	45 75
+	frame	data/chars/ethan/upper6c.gif
+	offset	45 80
+	frame	data/chars/ethan/shadow/upper7.gif
+	offset	45 75
+	frame	data/chars/ethan/upper6c.gif
+	offset	45 80
+	frame	data/chars/ethan/shadow/upper8.gif
+	@cmd	spawn01 "upper6_shadow" 2 -2 0
+	offset	45 75
+	frame	data/chars/ethan/upper6c.gif
+	offset	45 80
+	frame	data/chars/ethan/shadow/upper7.gif
+	offset	45 75
+	frame	data/chars/ethan/upper6c.gif
+	offset	45 80
+	frame	data/chars/ethan/shadow/upper8.gif
+	frame	data/chars/ethan/shadow/upper7c.gif
+	offset	45 75
+	frame	data/chars/ethan/upper6.gif
+	offset	45 80
+	frame	data/chars/ethan/shadow/upper8c.gif
+	@cmd	spawn01 "upper6_shadow" 2 -2 0
+	offset	45 75
+	frame	data/chars/ethan/upper6.gif
+	offset	45 80
+	frame	data/chars/ethan/shadow/upper7c.gif
+	offset	45 75
+	frame	data/chars/ethan/upper6.gif
+	offset	45 80
+	frame	data/chars/ethan/shadow/upper8c.gif
+	offset	45 75
+	frame	data/chars/ethan/upper6.gif
+	offset	45 80
+	frame	data/chars/ethan/shadow/upper7c.gif
+	offset	45 75
+	frame	data/chars/ethan/upper6.gif
+	offset	45 80
+	@cmd	spawn01 "upper6_shadow" 2 -2 0
+	frame	data/chars/ethan/shadow/upper8c.gif
+	offset	45 75
+	frame	data/chars/ethan/upper6.gif
+	offset	45 80
+	frame	data/chars/ethan/shadow/upper7c.gif
+	offset	45 75
+	frame	data/chars/ethan/upper6.gif
+	offset	45 80
+	frame	data/chars/ethan/shadow/upper8c.gif
+	cancel	58 71 0 a4 freespecial7
+	cancel	58 71 0 u a freespecial7
+	cancel	58 71 0 a2 freespecial10
+	cancel	58 71 0 f f a freespecial2
+	attack15	0 0 0 0 0 0 0 0 0 0
+	offset	45 75
+	@cmd	spawn01 "upper6_shadow" 2 -2 0
+	frame	data/chars/ethan/upper5.gif
+	frame	data/chars/ethan/upper5c.gif
+	frame	data/chars/ethan/upper5.gif
+	frame	data/chars/ethan/upper5c.gif
+	frame	data/chars/ethan/upper5.gif
+	frame	data/chars/ethan/upper5c.gif
+	@cmd	platform 1
+	frame	data/chars/ethan/jump2.gif
+	frame	data/chars/ethan/jump2c.gif
+	frame	data/chars/ethan/jump2.gif
+	frame	data/chars/ethan/jump2c.gif
+	frame	data/chars/ethan/jump2.gif
+	frame	data/chars/ethan/jump2c.gif
+	@cmd	spawn01 "jump3_shadow" 2 -2 0
+	frame	data/chars/ethan/jump3.gif
+	frame	data/chars/ethan/jump3.gif
+		
 anim	freespecial12
-	cancel	0 17 0 a2 freespecial7
-	cancel	0 17 0 u u a freespecial3
-	cancel	0 17 0 f f a freespecial2
+	cancel	0 46 0 a2 freespecial7
+	cancel	0 46 0 u u a freespecial3
+	cancel	0 46 0 f f a freespecial14
 	offset	45 75
 	bbox	36 28 20 30
 	delay	1
 	frame	data/chars/ethan/doublejump1.gif
 	frame	data/chars/ethan/doublejump1c.gif
-	@cmd	platform 1
 	frame	data/chars/ethan/doublejump2.gif
 	frame	data/chars/ethan/doublejump2c.gif
 	frame	data/chars/ethan/doublejump3.gif
@@ -960,83 +1691,279 @@ anim	freespecial12
 	frame	data/chars/ethan/jump3.gif
 	frame	data/chars/ethan/jump3c.gif
 	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
 	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
+		
+anim	freespecial13
+	loop	0
+	delay	1
+	offset	45 75
+	frame	data/chars/ethan/dash1.gif
+	move	12
+	frame	data/chars/ethan/dash1.gif
+	delay	1
+	frame	data/chars/ethan/dash2.gif
+	frame	data/chars/ethan/dash3.gif
+	frame	data/chars/ethan/dash2.gif
+	frame	data/chars/ethan/dash3.gif
+	delay	3
+	sound	data/sounds/ethan_attack4.wav
+	@cmd	spawn01 "dash5_shadow" 2 -2 0
+	@cmd	spawnbind "dash_effect" 2 -2 0
+	frame	data/chars/ethan/dash4.gif
+	@cmd	platform 1
+	attack16	19 27 55 45 12 25 0 0 0 0
+	dropv	3 2 0
+	sound	data/sounds/dash_special.wav
+	frame	data/chars/ethan/dash5.gif
+	@cmd	spawn01 "dash5_shadow" 2 -2 0
+	frame	data/chars/ethan/dash4.gif
+	frame	data/chars/ethan/dash5.gif
+	delay	3
+	@cmd	spawn01 "dash5_shadow" 2 -2 0
+	frame	data/chars/ethan/dash4.gif
+	frame	data/chars/ethan/dash5.gif
+	@cmd	spawn01 "dash5_shadow" 2 -2 0
+	frame	data/chars/ethan/dash4.gif
+	move	11
+	frame	data/chars/ethan/dash5.gif
+	@cmd	spawn01 "dash5_shadow" 2 -2 0
+	frame	data/chars/ethan/dash4.gif
+	frame	data/chars/ethan/dash5.gif
+	@cmd	spawn01 "dash5_shadow" 2 -2 0
+	frame	data/chars/ethan/dash4.gif
+	move	10
+	frame	data/chars/ethan/dash5.gif
+	@cmd	spawn01 "dash5_shadow" 2 -2 0
+	frame	data/chars/ethan/dash4.gif
+	frame	data/chars/ethan/dash5.gif
+	@cmd	spawn01 "dash5_shadow" 2 -2 0
+	frame	data/chars/ethan/dash4.gif
+	move	7
+	frame	data/chars/ethan/dash5.gif
+	@cmd	spawn01 "dash5_shadow" 2 -2 0
+	frame	data/chars/ethan/dash4.gif
+	frame	data/chars/ethan/dash5.gif
+	@cmd	spawn01 "dash5_shadow" 2 -2 0
+	frame	data/chars/ethan/dash4.gif
+	move	6
+	frame	data/chars/ethan/dash5.gif
+	@cmd	spawn01 "dash5_shadow" 2 -2 0
+	frame	data/chars/ethan/dash4.gif
+	frame	data/chars/ethan/dash5.gif
+	@cmd	spawn01 "dash6_shadow" 2 -2 0
+	frame	data/chars/ethan/dash4.gif
+	move	5
+	attack16	0 0 0 0 0
+	frame	data/chars/ethan/dash5.gif
+	@cmd	spawn01 "dash6_shadow" 2 -2 0
+	frame	data/chars/ethan/dash6.gif
+	frame	data/chars/ethan/dash2.gif
+	@cmd	spawn01 "dash6_shadow" 2 -2 0
+	frame	data/chars/ethan/dash3.gif
+	move	4
+	frame	data/chars/ethan/dash2.gif
+	frame	data/chars/ethan/dash3.gif
+	frame	data/chars/ethan/dash1.gif
+	frame	data/chars/ethan/dash1.gif
+	move	3
+	bbox	37 26 15 40
+	cancel	35 45 0 u u a freespecial3
+	frame	data/chars/ethan/dash1.gif
+	frame	data/chars/ethan/dash1.gif
+	frame	data/chars/ethan/land2.gif
+	frame	data/chars/ethan/land2.gif
+	move	2
+	frame	data/chars/ethan/land2.gif
+	frame	data/chars/ethan/land1.gif
+	frame	data/chars/ethan/land1.gif
+	frame	data/chars/ethan/land1.gif
+		
+anim	freespecial14
+	loop	0
+	delay	1
+	offset	45 75
+	cancel	24 41 0 u a freespecial3
+	cancel	24 41 0 f a freespecial15
+ 	@script
+             void self = getlocalvar("self");
+            int dir = getentityproperty(self,"direction");
+            int dirfix;
+
+	if(frame==1){
+           changeentityproperty(self, "direction", dir);
+           dirfix = dir;
+	}
+	if(frame>=2 && frame<=31){
+	     changeentityproperty(self, "velocity", 0);
+	     changeentityproperty(self, "direction", dirfix);
+	}
+	@end_script	
+	@cmd	limiter 9
+	@cmd	floater 95
+	frame	data/chars/ethan/dash1.gif
+	move	8
+	frame	data/chars/ethan/dash1.gif
+	delay	1
+	frame	data/chars/ethan/dash2.gif
+	frame	data/chars/ethan/dash3.gif
+	frame	data/chars/ethan/dash2.gif
+	frame	data/chars/ethan/dash3.gif
+	delay	3
+	sound	data/sounds/ethan_attack4.wav
+	frame	data/chars/ethan/dash4.gif
+	attack16	19 27 55 45 12 19 0 0 0 0
+	dropv	4.5 1.5 0
+	sound	data/sounds/dash_special.wav
+	frame	data/chars/ethan/dash5.gif
+	@cmd	stealth 300
+	frame	data/chars/ethan/dash4.gif
+	frame	data/chars/ethan/dash5.gif
+	delay	3
+	frame	data/chars/ethan/dash4.gif
+	@cmd	mpcost 10
+	frame	data/chars/ethan/dash5.gif
+	frame	data/chars/ethan/dash4.gif
+	move	6
+	frame	data/chars/ethan/dash5.gif
+	frame	data/chars/ethan/dash4.gif
+	frame	data/chars/ethan/dash5.gif
+	frame	data/chars/ethan/dash4.gif
+	move	5
+	attack16	19 27 55 45 12 19 0 0 0 0
+	dropv	4.5 1.5 0
+	frame	data/chars/ethan/dash5.gif
+	frame	data/chars/ethan/dash4.gif
+	frame	data/chars/ethan/dash5.gif
+	frame	data/chars/ethan/dash4.gif
+	move	4
+	frame	data/chars/ethan/dash5.gif
+	frame	data/chars/ethan/dash4.gif
+	frame	data/chars/ethan/dash5.gif
+	frame	data/chars/ethan/dash4.gif
+	move	3
+	attack16	19 27 55 45 12 19 0 0 0 0
+	dropv	4 0.5 0
+	frame	data/chars/ethan/dash5.gif
+	frame	data/chars/ethan/dash4.gif
+	frame	data/chars/ethan/dash5.gif
+	frame	data/chars/ethan/dash4.gif
+	move	2
+	attack16	0 0 0 0 0
+	frame	data/chars/ethan/dash5.gif
+	frame	data/chars/ethan/dash6.gif
+	frame	data/chars/ethan/dash2.gif
+	frame	data/chars/ethan/dash3.gif
+	move	1
+	frame	data/chars/ethan/dash2.gif
+	frame	data/chars/ethan/dash3.gif
+	frame	data/chars/ethan/dash1.gif
+	frame	data/chars/ethan/dash1.gif
+	move	0
+	@cmd	floater 0
+	@cmd	stealth 0
+	bbox	37 26 15 40
+	frame	data/chars/ethan/dash1.gif
+	frame	data/chars/ethan/dash1.gif
 	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
 	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
+		
+anim	freespecial15
+	loop	0
+	delay	1
+	offset	45 75
+	cancel	24 41 0 u a freespecial3
+	cancel	24 41 0 f a freespecial14
+ 	@script
+             void self = getlocalvar("self");
+            int dir = getentityproperty(self,"direction");
+            int dirfix;
+
+	if(frame==1){
+           changeentityproperty(self, "direction", dir);
+           dirfix = dir;
+	}
+	if(frame>=2 && frame<=31){
+	     changeentityproperty(self, "velocity", 0);
+	     changeentityproperty(self, "direction", dirfix);
+	}
+	@end_script	
+	@cmd	limiter 9
+	@cmd	floater 95
+	frame	data/chars/ethan/dash1.gif
+	move	10
+	frame	data/chars/ethan/dash1.gif
+	delay	1
+	frame	data/chars/ethan/dash2.gif
+	frame	data/chars/ethan/dash3.gif
+	frame	data/chars/ethan/dash2.gif
+	frame	data/chars/ethan/dash3.gif
+	delay	3
+	sound	data/sounds/ethan_attack4.wav
+	frame	data/chars/ethan/dash4.gif
+	@cmd	platform 1
+	attack16	19 27 55 45 12 19 0 0 0 0
+	dropv	4.5 2 0
+	sound	data/sounds/dash_special.wav
+	frame	data/chars/ethan/dash5.gif
+	@cmd	stealth 300
+	frame	data/chars/ethan/dash4.gif
+	frame	data/chars/ethan/dash5.gif
+	delay	3
+	frame	data/chars/ethan/dash4.gif
+	@cmd	mpcost 10
+	frame	data/chars/ethan/dash5.gif
+	frame	data/chars/ethan/dash4.gif
+	move	7
+	frame	data/chars/ethan/dash5.gif
+	frame	data/chars/ethan/dash4.gif
+	frame	data/chars/ethan/dash5.gif
+	frame	data/chars/ethan/dash4.gif
+	move	6
+	attack16	19 27 55 45 12 19 0 0 0 0
+	dropv	4 1.5 0
+	frame	data/chars/ethan/dash5.gif
+	frame	data/chars/ethan/dash4.gif
+	frame	data/chars/ethan/dash5.gif
+	frame	data/chars/ethan/dash4.gif
+	move	5
+	frame	data/chars/ethan/dash5.gif
+	frame	data/chars/ethan/dash4.gif
+	frame	data/chars/ethan/dash5.gif
+	frame	data/chars/ethan/dash4.gif
+	move	4
+	attack16	19 27 55 45 12 19 0 0 0 0
+	dropv	4 1 0
+	frame	data/chars/ethan/dash5.gif
+	frame	data/chars/ethan/dash4.gif
+	frame	data/chars/ethan/dash5.gif
+	frame	data/chars/ethan/dash4.gif
+	move	3
+	attack16	0 0 0 0 0
+	frame	data/chars/ethan/dash5.gif
+	frame	data/chars/ethan/dash6.gif
+	frame	data/chars/ethan/dash2.gif
+	frame	data/chars/ethan/dash3.gif
+	move	2
+	frame	data/chars/ethan/dash2.gif
+	frame	data/chars/ethan/dash3.gif
+	frame	data/chars/ethan/dash1.gif
+	frame	data/chars/ethan/dash1.gif
+	move	1
+	@cmd	floater 0
+	@cmd	stealth 0
+	bbox	37 26 15 40
+	frame	data/chars/ethan/dash1.gif
+	frame	data/chars/ethan/dash1.gif
+	move	0
 	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
 	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
 		
 anim	freespecial2
 	loop	0
 	delay	1
 	offset	45 75
 	@cmd	limiter 9
+	@cmd	stealth 0
 	frame	data/chars/ethan/dash1.gif
 	move	10
 	frame	data/chars/ethan/dash1c.gif
@@ -1053,7 +1980,7 @@ anim	freespecial2
 	frame	data/chars/ethan/dash4c.gif
 	frame	data/chars/ethan/dash4.gif
 	@cmd	platform 1
-	attack16	19 27 55 45 19 0 0 0 0 0
+	attack16	19 27 55 45 12 19 0 0 0 0
 	sound	data/sounds/dash_special.wav
 	move	10
 	frame	data/chars/ethan/dash5c.gif
@@ -1257,6 +2184,7 @@ anim	freespecial3
 	bbox	0 0 0 0
 	jumpframe	12 3.6 0.5
 	@cmd	limiter 9
+	@cmd	stealth 0
 	move	1
 	frame	data/chars/ethan/upper1c.gif
 	frame	data/chars/ethan/upper1.gif
@@ -1281,7 +2209,7 @@ anim	freespecial3
 	frame	data/chars/ethan/upper5c.gif
 	frame	data/chars/ethan/upper5.gif
 	@cmd	platform 1
-	attack15	40 0 30 60 19 0 0 0 0 0
+	attack15	40 0 30 60 19 19 1 0 10 0
 	dropv	4 1
 	frame	data/chars/ethan/upper7c.gif
 	frame	data/chars/ethan/upper7.gif
@@ -1321,10 +2249,11 @@ anim	freespecial3
 	frame	data/chars/ethan/upper7c.gif
 	frame	data/chars/ethan/upper6.gif
 	frame	data/chars/ethan/upper8c.gif
-	cancel	58 60 0 a4 freespecial7
-	cancel	58 60 0 u a freespecial7
-	cancel	58 60 0 a2 freespecial10
-	cancel	58 60 0 f f a freespecial2
+	cancel	64 71 0 a4 freespecial7
+	cancel	64 71 0 u a freespecial7
+	cancel	64 71 0 a2 freespecial10
+	cancel	64 71 0 u u a freespecial3
+	cancel	64 71 0 f a freespecial14
 	attack15	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/ethan/upper5.gif
 	frame	data/chars/ethan/upper5c.gif
@@ -1338,20 +2267,7 @@ anim	freespecial3
 	frame	data/chars/ethan/jump2c.gif
 	frame	data/chars/ethan/jump2.gif
 	frame	data/chars/ethan/jump2c.gif
-	frame	data/chars/ethan/jump2.gif
-	frame	data/chars/ethan/jump3c.gif
 	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
 	frame	data/chars/ethan/jump3.gif
 		
 anim	freespecial4
@@ -1446,6 +2362,8 @@ anim	freespecial7
 	delay	1
 	offset	45 75
 	bbox	36 20 15 40
+	cancel	22 30 0 f f a freespecial14
+	cancel	22 30 0 u u a freespecial3
 	frame	data/chars/ethan/jumpweapon1.gif
 	frame	data/chars/ethan/jumpweapon1c.gif
 	frame	data/chars/ethan/jumpweapon1.gif
@@ -1479,75 +2397,13 @@ anim	freespecial7
 	frame	data/chars/ethan/jumpweapon4c.gif
 	frame	data/chars/ethan/jumpweapon4.gif
 	frame	data/chars/ethan/jumpweapon4c.gif
-	delay	1
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
+	delay	7
 	frame	data/chars/ethan/jump3.gif
 		
 anim	freespecial8
 	delay	1
 	offset	45 75
-	weaponframe	1 1
+	weaponframe	1 2
 	frame	data/chars/ethan/idle1.gif
 	frame	data/chars/ethan/idle1.gif
 		
@@ -1629,11 +2485,12 @@ anim	idle
        	 void self = getlocalvar("self");
     	 int MP = getentityproperty(self,"mp");
 
-	 if(MP < 9){
-      	    changeentityproperty(self, "velocity", 0, 0, 0); // this is not necessary in IDLE
+	 if(MP < 4){
+      	    changeentityproperty(self, "velocity", 0, 0, 0);
 	    performattack(self, openborconstant("ANI_FOLLOW5"));
          }
 	@end_script	
+	@cmd	stealth 0
 	bbox	37 23 15 45
 	frame	data/chars/ethan/idle1.gif
 	frame	data/chars/ethan/idle1c.gif
@@ -1706,11 +2563,12 @@ anim	idle
 		
 anim	jump
 	cancel	0 243 0 a2 freespecial7
-	cancel	0 243 0 f f a freespecial2
+	cancel	0 243 0 u a freespecial7
+	cancel	0 243 0 f f a freespecial14
 	cancel	0 243 0 u u a freespecial3
 	delay	1
 	offset	45 75
-	bbox	40 23 15 45
+	bbox	40 23 15 40
 	frame	data/chars/ethan/jump1.gif
 	frame	data/chars/ethan/jump1c.gif
 	frame	data/chars/ethan/jump1.gif
@@ -1958,10 +2816,14 @@ anim	jump
 		
 anim	jumpattack
 	loop	0
+	cancel	30 38 0 a2 freespecial7
+	cancel	30 38 0 u u a freespecial3
+	cancel	30 38 0 f f a freespecial14
 	delay	1
 	offset	105 113
-	@cmd	limiter 9
-	bbox	95 58 15 45
+	@cmd	limiter 4
+	bbox	95 61 15 35
+	@cmd	stealth 0
 	sound	data/sounds/ethan_attack1.wav
 	frame	data/chars/ethan/jumpattack1b.gif
 	frame	data/chars/ethan/jumpattack1c.gif
@@ -1971,8 +2833,8 @@ anim	jumpattack
 	frame	data/chars/ethan/jumpattack1c.gif
 	frame	data/chars/ethan/jumpattack1b.gif
 	hitfx	data/sounds/burnt.wav
-	@cmd	mpcost 10
-	burn	0 24 100 48 9 0 0 0 0 0
+	@cmd	mpcost 5
+	attack15	0 24 100 48 12 0 0 0 0 0
 	sound	data/sounds/flame_whip.wav
 	frame	data/chars/ethan/jumpattack2c.gif
 	frame	data/chars/ethan/jumpattack2b.gif
@@ -1982,18 +2844,18 @@ anim	jumpattack
 	frame	data/chars/ethan/jumpattack2b.gif
 	frame	data/chars/ethan/jumpattack2c.gif
 	delay	1
-	burn	93 22 73 53 9 0 0 0 0 0
+	attack15	93 22 73 53 12 0 0 0 0 0
 	frame	data/chars/ethan/jumpattack3b.gif
 	frame	data/chars/ethan/jumpattack3c.gif
 	frame	data/chars/ethan/jumpattack3b.gif
 	frame	data/chars/ethan/jumpattack3c.gif
 	delay	1
-	burn	129 35 99 41 9 0 0 0 0 0
+	attack15	129 35 99 41 12 0 0 0 0 0
 	frame	data/chars/ethan/jumpattack3ab.gif
 	frame	data/chars/ethan/jumpattack0c.gif
 	frame	data/chars/ethan/jumpattack3ab.gif
 	frame	data/chars/ethan/jumpattack0c.gif
-	burn	129 35 96 42 9 0 0 0 0 0
+	attack15	129 35 96 42 12 0 0 0 0 0
 	frame	data/chars/ethan/jumpattack4ab.gif
 	frame	data/chars/ethan/jumpattack4c.gif
 	frame	data/chars/ethan/jumpattack4ab.gif
@@ -2004,7 +2866,7 @@ anim	jumpattack
 	delay	1
 	offset	45 75
 	bbox	37 20 18 45
-	burn	0 0 0 0 0 0 0 0 0 0
+	attack15	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/ethan/jump2c.gif
 	frame	data/chars/ethan/jump2.gif
 	frame	data/chars/ethan/jump2c.gif
@@ -2013,11 +2875,48 @@ anim	jumpattack
 	frame	data/chars/ethan/jump2.gif
 	frame	data/chars/ethan/jump2c.gif
 	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
 	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
-	frame	data/chars/ethan/jump3.gif
-	frame	data/chars/ethan/jump3c.gif
+		
+anim	jumpattack3
+	loop	0
+	delay	1
+	offset	45 75
+	bbox	37 23 15 40
+	@cmd	keyint "ANI_FREESPECIAL3" 0 "U A" 0
+	@cmd	keyint "ANI_FREESPECIAL14" 0 "F A" 0
+	@cmd	limiterSub
+	@cmd	limiter 9
+	frame	data/chars/ethan/jumpweapon1.gif
+	frame	data/chars/ethan/jumpweapon1c.gif
+	frame	data/chars/ethan/jumpweapon1.gif
+	frame	data/chars/ethan/jumpweapon1c.gif
+	frame	data/chars/ethan/jumpweapon1.gif
+	frame	data/chars/ethan/jumpweapon1c.gif
+	frame	data/chars/ethan/jumpweapon1.gif
+	frame	data/chars/ethan/jumpweapon2c.gif
+	frame	data/chars/ethan/jumpweapon2.gif
+	frame	data/chars/ethan/jumpweapon2c.gif
+	frame	data/chars/ethan/jumpweapon2.gif
+	frame	data/chars/ethan/jumpweapon2c.gif
+	frame	data/chars/ethan/jumpweapon2.gif
+	frame	data/chars/ethan/jumpweapon2c.gif
+	@cmd	mpcost 10
+	@cmd	SubWeapon 23 35
+	frame	data/chars/ethan/jumpweapon3.gif
+	frame	data/chars/ethan/jumpweapon3c.gif
+	frame	data/chars/ethan/jumpweapon3.gif
+	frame	data/chars/ethan/jumpweapon3c.gif
+	frame	data/chars/ethan/jumpweapon3.gif
+	frame	data/chars/ethan/jumpweapon3c.gif
+	frame	data/chars/ethan/jumpweapon3.gif
+	frame	data/chars/ethan/jumpweapon4c.gif
+	frame	data/chars/ethan/jumpweapon4.gif
+	frame	data/chars/ethan/jumpweapon4c.gif
+	frame	data/chars/ethan/jumpweapon4.gif
+	frame	data/chars/ethan/jumpweapon4c.gif
+	frame	data/chars/ethan/jumpweapon4.gif
+	frame	data/chars/ethan/jumpweapon4c.gif
+	delay	7
 	frame	data/chars/ethan/jump3.gif
 		
 anim	jumpland
@@ -2228,6 +3127,7 @@ anim	special
 	mpcost	0
 	delay	1
 	offset	45 75
+	@cmd	keyint "ANI_FREESPECIAL10" 0 "U" 0
 	frame	data/chars/ethan/land2.gif
 	frame	data/chars/ethan/land2c.gif
 	frame	data/chars/ethan/land2.gif
@@ -2332,7 +3232,7 @@ anim	walk
        	 void self = getlocalvar("self");
     	 int MP = getentityproperty(self,"mp");
 
-	 if(MP < 9){
+	 if(MP < 4){
       	    changeentityproperty(self, "velocity", 0, 0, 0); // this is not necessary in IDLE
 	    performattack(self, openborconstant("ANI_FOLLOW5"));
          }

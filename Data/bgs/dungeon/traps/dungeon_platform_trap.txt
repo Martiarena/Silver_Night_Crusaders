@@ -26,10 +26,13 @@ palette		data/bgs/dungeon/dungeon_misc.gif
 
 
 
+
+
 anim	follow1
 	loop	0
 	delay	20
 	offset	16 24
+	sound	data/sounds/switch_trap.wav
 	platform	0 24 -8 -8 41 41 10 9
 	frame	data/bgs/dungeon/traps/platform_trap1a.gif
 	delay	10

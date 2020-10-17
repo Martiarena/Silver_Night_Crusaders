@@ -7,6 +7,7 @@ shadow  0
 nolife	1
 subject_to_wall 1
 subject_to_obstacle 0
+diesound            data/sounds/breakpot.wav
 
 palette         data/chars/destructible/jar1/jar1.gif
 

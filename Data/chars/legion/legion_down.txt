@@ -34,7 +34,7 @@ load            Legion_part_corpse_3
 defense normal4 2 0 0 0 0 0 0
 defense normal7 2 0 0 0 0 0 0
 
-diesound  data/sounds/chest.wav
+diesound  data/sounds/legiondie.wav
 
 icon		data/chars/misc/bgmonster.gif
 
@@ -85,10 +85,13 @@ takedamagescript data/scripts/blink.c
 
 
 
+
+
 anim	death
 	loop	0
 	offset	165 168
 	delay	14
+	sound	data/sounds/explosion-fire.wav
 	@cmd	tosserM "Legion_fall_corpse" -20 -95 -0.4 1.6
 	@cmd	tosserM "Legion_fall_corpse_2" 30 -115 -0.4 1.8
 	@cmd	tosserM "Legion_fall_corpse_3" 35 -105 0.4 2
@@ -144,6 +147,7 @@ anim	follow2
 	bbox	109 240 93 70
 	attack	109 240 93 70 19 0 1 0 0 0
 	delay	14
+	sound	data/sounds/legion_scream2.wav
 	@cmd	tosserM "Legion_fall_corpse_3" -10 -98 -0.3 1
 	frame	data/chars/legion/legion_down1a.gif
 	frame	data/chars/legion/legion_down1b.gif
@@ -222,6 +226,7 @@ anim	follow5
 	bbox	109 240 93 70
 	attack	109 240 93 70 19 0 1 0 0 0
 	delay	14
+	sound	data/sounds/legion_scream1.wav
 	@cmd	tosserM "Legion_fall_corpse" -10 -98 0.3 1
 	frame	data/chars/legion/legion_down1a.gif
 	frame	data/chars/legion/legion_down1b.gif

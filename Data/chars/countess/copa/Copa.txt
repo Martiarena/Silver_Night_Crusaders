@@ -2,6 +2,7 @@ name    	Copa
 health          1
 type    	enemy
 lifespan        10
+stealth         300
 nomove		1
 nolife          1
 nopain 1
@@ -14,6 +15,8 @@ score 0
 candamage       player npc
 hostile		none
 animationscript data/scripts/prscript.c
+
+diesound        data/sounds/cupbreak.wav
 
 load		Copa_debris1a
 load		Copa_debris1b
@@ -49,6 +52,7 @@ anim	follow1
 	delay	1
 	offset	9 9
 	platform	1 1 -1 -1 1 1 1 1
+	sound	data/sounds/cupbreak.wav
 	frame	data/chars/misc/empty.gif
 	@cmd	tosserM "Copa_debris1a" 8 25 0.3 1.5
 	@cmd	tosserM "Copa_debris1c" -3 27 -0.3 1.5

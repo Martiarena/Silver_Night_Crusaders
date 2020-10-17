@@ -8,9 +8,12 @@ animationscript	data/scripts/lescript.c
 
 load	IceBal
 
-anim idle
+
+
+anim	idle
 	delay	8
 	offset	15 15
+	sound	data/sounds/dimen.wav
 	frame	data/chars/countess/magic/iceball1.gif
 	frame	data/chars/countess/magic/iceball2.gif
 	frame	data/chars/countess/magic/iceball3.gif
@@ -19,7 +22,8 @@ anim idle
 	frame	data/chars/countess/magic/iceball6.gif
 	frame	data/chars/countess/magic/iceball7.gif
 	delay	20
-        @cmd    shooter2 "IceBal" 0 -7 3 0
+	sound	data/sounds/throw_medium.wav
+	@cmd	shooter2 "IceBal" 0 -7 3 0
 	frame	data/chars/countess/magic/iceball5.gif
 	delay	8
 	frame	data/chars/countess/magic/iceball4.gif
@@ -27,3 +31,8 @@ anim idle
 	frame	data/chars/countess/magic/iceball2.gif
 	frame	data/chars/countess/magic/iceball1.gif
 	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

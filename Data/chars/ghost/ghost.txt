@@ -1,5 +1,5 @@
 name  Fantasma
-health		12
+health  9
 nomove  	1
 type		enemy
 cantgrab 	1
@@ -16,6 +16,7 @@ subject_to_platform 0
 
 defense normal3 2 0 0 0 0 0 0
 defense normal6 2 0 0 0 0 0 0
+defense normal15 2 0 0 0 0 0 0
 
 diesound  	data/sounds/ghostdie.wav
 icon 		data/chars/misc/bgmonster.gif
@@ -32,11 +33,10 @@ animationscript data/scripts/cscript.c
 
 
 
+
 anim	death
 	delay	7
 	offset	35 45
-	subentity	pdie
-	spawnframe	0 0 0 0 0
 	frame	data/chars/ghost/death1.gif
 	frame	data/chars/ghost/death2.gif
 	frame	data/chars/ghost/death3.gif
@@ -66,12 +66,12 @@ anim	idle
 	followani	1
 	attack6	15 20 35 20 6 0 1 1 0 0
 	frame	data/chars/ghost/idle1.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ghost/idle2.gif
 	frame	data/chars/ghost/idle3.gif
 	frame	data/chars/ghost/idle1.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ghost/idle2.gif
 	attack6	0

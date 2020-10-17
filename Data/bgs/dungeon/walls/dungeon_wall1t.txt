@@ -1,0 +1,22 @@
+name  		Dungeon_wall1t
+type		none
+facing	  	1
+setlayer	1
+antigravity	100
+offscreenkill   9999
+
+palette		data/bgs/dungeon/walls/dungeon_wall1t.gif
+
+
+
+
+
+
+
+
+anim	idle
+	delay	100
+	offset	75 9
+	platform	0 9 -8 -8 158 158 10 9999
+	frame	data/bgs/dungeon/walls/dungeon_wall1t.gif
+

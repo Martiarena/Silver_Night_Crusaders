@@ -1,0 +1,60 @@
+name	leon_statue
+type     trap
+antigravity     100
+shadow		0
+nomove	1 0
+setlayer -1
+nolife	1
+offscreenkill 9999
+aggresion 9999
+min_noatk_chance 0
+max_noatk_chance 0
+hostile player npc
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_gravity 0
+
+palette	data/bgs/castlehall/decoration/leon_statue1a.gif
+
+
+
+
+
+anim	attack
+	rangea	100 100
+	range	-100 200
+	loop	1
+	offset	24 33
+	delay	7
+	frame	data/bgs/castlehall/decoration/leon_statue1b.gif
+	frame	data/bgs/castlehall/decoration/leon_statue1c.gif
+	frame	data/bgs/castlehall/decoration/leon_statue1d.gif
+	frame	data/bgs/castlehall/decoration/leon_statue1e.gif
+		
+anim	follow1
+	loop	1 4 8
+	offset	24 33
+	delay	7
+	sound	data/sounds/torch.wav
+	frame	data/bgs/castlehall/decoration/leon_statue1b.gif
+	frame	data/bgs/castlehall/decoration/leon_statue1c.gif
+	frame	data/bgs/castlehall/decoration/leon_statue1d.gif
+	frame	data/bgs/castlehall/decoration/leon_statue1e.gif
+	frame	data/bgs/castlehall/decoration/leon_statue1b.gif
+	frame	data/bgs/castlehall/decoration/leon_statue1c.gif
+	frame	data/bgs/castlehall/decoration/leon_statue1d.gif
+	frame	data/bgs/castlehall/decoration/leon_statue1e.gif
+		
+anim	idle
+	loop	0
+	offset	24 33
+	delay	14
+	followcond	1
+	followanim	1
+	hitfx	data/sounds/no-sound.wav
+	noreflect	1
+	attack20	-29 -20 105 100 0 0 1 1 0 0
+	frame	data/bgs/castlehall/decoration/leon_statue1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

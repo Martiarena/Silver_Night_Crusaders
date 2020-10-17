@@ -1,5 +1,5 @@
 name    	Ninfa
-health          19
+health          18
 mp              10
 speed           8
 type    	enemy
@@ -15,6 +15,9 @@ hostile  player npc
 candamage player npc
 animationscript  data/scripts/escript.c
 takedamagescript data/scripts/blink.c
+
+defense shock 5 0 0 0 0 0 0
+defense normal16 2 0 0 0 0 0 0
 
 load		heart_n
 load            Blooda
@@ -55,12 +58,17 @@ alternatepal	data/chars/ninfa/ninfa_blink_palette.gif
 
 
 
+
+
+
+
 anim	attack1
 	range	0 100
 	rangea	0 0
 	delay	1
 	offset	62 53
 	bbox	47 5 13 46
+	hitfx	data/sounds/beat1.wav
 	attack	47 5 13 46 12 0 0 0 0 0
 	move	-1
 	frame	data/chars/ninfa/attack1a.gif
@@ -84,9 +92,11 @@ anim	attack1
 	frame	data/chars/ninfa/attack1c.gif
 	frame	data/chars/ninfa/attack1d.gif
 	attack	0 0 0 0 0
+	sound	data/sounds/ninfa_attack.wav
 	frame	data/chars/ninfa/attack1e.gif
 	move	3
 	delay	1
+	hitfx	data/sounds/slash.wav
 	attack2	55 5 60 26 19 0 0 0 0 0
 	frame	data/chars/ninfa/attack1f.gif
 	frame	data/chars/ninfa/attack1f.gif
@@ -124,6 +134,96 @@ anim	attack1
 	attack2	0 0 0 0
 	frame	data/chars/ninfa/attack1g.gif
 	move	2
+	hitfx	data/sounds/beat1.wav
+	attack	47 5 13 46 12 0 0 0 0 0
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1g.gif
+	move	1
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1a.gif
+	delay	7
+	move	0
+	attack	0 0 0 0
+	frame	data/chars/ninfa/attack1a.gif
+		
+anim	attack2
+	range	0 100
+	rangea	0 0
+	delay	1
+	offset	62 53
+	bbox	47 5 13 46
+	followcond	1
+	followanim	1
+	hitfx	data/sounds/beat1.wav
+	attack	47 5 13 46 12 0 0 0 0 0
+	move	-1
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1b.gif
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1b.gif
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1b.gif
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1b.gif
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1b.gif
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1b.gif
+	frame	data/chars/ninfa/attack1a.gif
+	frame	data/chars/ninfa/attack1b.gif
+	delay	7
+	move	0
+	frame	data/chars/ninfa/attack1c.gif
+	frame	data/chars/ninfa/attack1d.gif
+	attack	0 0 0 0 0
+	sound	data/sounds/ninfa_attack.wav
+	frame	data/chars/ninfa/attack1e.gif
+	move	3
+	delay	1
+	hitfx	data/sounds/slash.wav
+	attack2	55 5 60 26 19 0 0 0 0 0
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	frame	data/chars/ninfa/attack1g.gif
+	frame	data/chars/ninfa/attack1f.gif
+	attack2	0 0 0 0
+	frame	data/chars/ninfa/attack1g.gif
+	move	2
+	hitfx	data/sounds/beat1.wav
 	attack	47 5 13 46 12 0 0 0 0 0
 	frame	data/chars/ninfa/attack1g.gif
 	frame	data/chars/ninfa/attack1g.gif
@@ -184,6 +284,21 @@ anim	death
 	@cmd	suicide
 	frame	data/chars/misc/empty.gif
 		
+anim	follow
+	delay	7
+	offset	59 53
+	bbox	52 5 13 46
+	attack	52 5 13 46 12 0 0 0 0 0
+	sound	data/sounds/ninfa_laugh.wav
+	frame	data/chars/ninfa/idle1b.gif
+	frame	data/chars/ninfa/idle1c.gif
+	frame	data/chars/ninfa/idle1b.gif
+	frame	data/chars/ninfa/idle1c.gif
+	frame	data/chars/ninfa/idle1b.gif
+	frame	data/chars/ninfa/idle1c.gif
+	frame	data/chars/ninfa/idle1b.gif
+	frame	data/chars/ninfa/idle1c.gif
+		
 anim	freespecial
 	delay	14
 	offset	59 52
@@ -193,9 +308,10 @@ anim	freespecial
 	mpcost	5
 	mponly	1
 	attack	52 5 13 46 12 0 0 0 0 0
+	frame	data/chars/ninfa/spell1a.gif
+	sound	data/sounds/kiss.wav
 	custknife	heart_n
 	throwframe	3 44
-	frame	data/chars/ninfa/spell1a.gif
 	frame	data/chars/ninfa/spell1b.gif
 	delay	36
 	frame	data/chars/ninfa/spell1c.gif

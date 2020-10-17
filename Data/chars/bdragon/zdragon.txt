@@ -1,0 +1,220 @@
+name    	 D._Zombi
+health  	 120
+nomove   	 1 1
+type    	 enemy
+noquake  	 1
+nopain  	 1
+nodrop  	 2
+setlayer  	 100
+score   	 2000 -1
+death   	 1
+subject_to_platform 0
+hostile  	 player npc
+animationscript  data/scripts/escript.c
+takedamagescript data/scripts/blink.c
+load	         RibPis7
+
+diesound      	data/sounds/dragon_death.wav
+
+icon 		data/chars/misc/bgmonster.gif
+
+defense normal4 1.5 0 0 0 0 0 0
+defense normal6 4 0 0 0 0 0 0
+defense normal19 1.5 0 0 0 0 0 0
+defense shock 1.5 0 0 0 0 0 0
+
+palette	         data/chars/bdragon/zombidragon.gif
+alternatepal	 data/chars/bdragon/blink.gif
+
+
+
+
+
+
+anim	death
+	delay	7
+	offset	16 24
+	bouncefactor	2
+	frame	data/chars/bdragon/death1.gif
+	@cmd	stop
+	frame	data/chars/bdragon/death2.gif
+	@cmd	clearL
+	frame	data/chars/bdragon/death3.gif
+	delay	50
+	frame	data/chars/bdragon/death4.gif
+		
+anim	fall
+	offset	16 15
+	delay	10
+	@cmd	stop
+	frame	data/chars/bdragon/head1.gif
+	@cmd	beidle
+	frame	data/chars/bdragon/head1.gif
+		
+anim	follow1
+@script
+    if(frame == 0){
+      void self = getlocalvar("self");
+      int r = rand()%30;
+
+      if(r > 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      } else if(r < -10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      }
+    }
+	@end_script	
+	delay	1
+	offset	16 15
+	bbox	15 6 35 17
+	attack	15 6 35 17 19 1 0 0 0 0
+	frame	data/chars/bdragon/head1.gif
+	@cmd	targetT 100 0 0 1
+	frame	data/chars/bdragon/head1.gif
+	@cmd	clearL
+	frame	data/chars/bdragon/head1.gif
+	attack	0
+	@cmd	beidle
+	frame	data/chars/bdragon/head1.gif
+		
+anim	follow2
+	delay	1
+	offset	16 15
+	bbox	15 6 35 17
+	attack	15 6 35 17 19 1 0 0 0 0
+	frame	data/chars/bdragon/head1.gif
+	delay	55
+	@cmd	targetT 100 0 0 1
+	@cmd	leap 5
+	frame	data/chars/bdragon/head1.gif
+	@cmd	clearL
+	attack2	16 6 34 32 25 1 0 0 0 0
+	frame	data/chars/bdragon/head2.gif
+	@cmd	targetT 100 0 0 1
+	@cmd	leap 5
+	attack	15 6 35 17 19 1 0 0 0 0
+	frame	data/chars/bdragon/head1.gif
+	@cmd	clearL
+	attack2	16 6 34 32 25 1 0 0 0 0
+	frame	data/chars/bdragon/head2.gif
+	delay	1
+	attack2	0
+	@cmd	beidle
+	frame	data/chars/bdragon/head1.gif
+		
+anim	follow3
+	delay	1
+	offset	16 15
+	bbox	15 6 35 17
+	attack	15 6 35 17 19 1 0 0 0 0
+	frame	data/chars/bdragon/head1.gif
+	@cmd	targetT 100 0 0 1
+	frame	data/chars/bdragon/head1.gif
+	delay	42
+	@cmd	leaper 2 2 1
+	attack2	16 6 34 32 25 1 0 0 0 0
+	frame	data/chars/bdragon/head2.gif
+	@cmd	leaper 2 2 1
+	frame	data/chars/bdragon/head2.gif
+	@cmd	leaper 2 2 1
+	frame	data/chars/bdragon/head2.gif
+	delay	1
+	attack2	0
+	@cmd	clearL
+	frame	data/chars/bdragon/head1.gif
+	@cmd	beidle
+	frame	data/chars/bdragon/head1.gif
+		
+anim	idle
+@script
+    void self = getlocalvar("self");
+    int x = getentityproperty(self, "x");
+    int Sx = getentityproperty(self, "xdir");
+    int XPos = openborvariant("xpos");
+    int Screen = openborvariant("hResolution");
+
+    if(x < XPos+10 && Sx < 0){
+      changeentityproperty(self, "velocity", -Sx);
+      changeentityproperty(self, "direction", 1);
+    } else if(x > Screen+XPos-10 && Sx > 0){
+      changeentityproperty(self, "velocity", -Sx);
+      changeentityproperty(self, "direction", 0);
+    }
+	@end_script	
+	loop	1
+	delay	1
+	offset	16 15
+	@cmd	clearL
+	bbox	15 6 35 17
+	attack	15 6 35 17 19 1 0 0 0 0
+	frame	data/chars/bdragon/head1.gif
+	delay	40
+	@cmd	leaper 2 4 1
+	frame	data/chars/bdragon/head1.gif
+	delay	45
+	frame	data/chars/bdragon/head1.gif
+	delay	40
+	@cmd	leaper 2 4 1
+	frame	data/chars/bdragon/head1.gif
+	delay	45
+	frame	data/chars/bdragon/head1.gif
+	delay	40
+	@cmd	leaper 2 4 1
+	frame	data/chars/bdragon/head1.gif
+	delay	45
+	frame	data/chars/bdragon/head1.gif
+	delay	40
+	@cmd	leaper 1 4 1
+	frame	data/chars/bdragon/head1.gif
+	delay	44
+	frame	data/chars/bdragon/head1.gif
+	delay	1
+	@cmd	attack0 "ANI_FOLLOW1"
+	frame	data/chars/bdragon/head1.gif
+	attack	0
+	@cmd	flip
+	frame	data/chars/bdragon/head1.gif
+		
+anim	pain
+	delay	5
+	offset	16 15
+	attack	15 6 35 17 19 1 0 0 0 0
+	frame	data/chars/bdragon/head1.gif
+	attack	0
+	frame	data/chars/bdragon/head1.gif
+		
+anim	rise
+	delay	5
+	offset	16 15
+	frame	data/chars/bdragon/head1.gif
+		
+anim	spawn
+	delay	1
+	offset	16 15
+	bbox	5 6 25 22
+	attack	15 6 35 17 19 1 0 0 0 0
+	sound	data/sounds/dragon_spawn.wav
+	frame	data/chars/bdragon/head1.gif
+	@cmd	spawner "RibPis7" 0 0 0
+	frame	data/chars/bdragon/head1.gif
+	delay	50
+	@cmd	leaper 4 5 1
+	frame	data/chars/bdragon/head1.gif
+	delay	55
+	frame	data/chars/bdragon/head1.gif
+	delay	1
+	attack	0
+	frame	data/chars/bdragon/head1.gif
+		
+anim	walk
+	loop	1
+	delay	12
+	offset	16 15
+	bbox	15 6 35 17
+	attack	15 6 35 17 19 1 0 0 0 0
+	frame	data/chars/bdragon/head1.gif
+	attack	0
+	frame	data/chars/bdragon/head1.gif
+		
+#|edited by openBor Stats v 0.67
+		

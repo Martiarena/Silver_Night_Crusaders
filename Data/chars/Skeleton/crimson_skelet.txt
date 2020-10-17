@@ -1,5 +1,5 @@
 name    	E._Carmesi
-health  	9
+health          9
 speed	  	5
 aimove		chase
 type		enemy
@@ -10,6 +10,7 @@ score		0 -1
 offscreenkill 	100
 aggression	50
 defense		all 0
+defense         normal30  1
 animationscript  data/scripts/escript.c
 takedamagescript data/scripts/blink.c
 
@@ -20,51 +21,15 @@ alternatepal	 data/chars/skeleton/blink.gif
 
 
 
-anim	spawn
-	delay	200
-	offset  43 74
-	frame	data/chars/skeleton/rise1a.gif
-	delay	8
-	frame	data/chars/skeleton/rise1a.gif
-	frame	data/chars/skeleton/rise1b.gif
-	frame	data/chars/skeleton/rise1c.gif
-	frame	data/chars/skeleton/rise1d.gif
-	frame	data/chars/skeleton/rise1e.gif
-	frame	data/chars/skeleton/rise1f.gif
 
-anim 	idle
-	loop	1
-	delay	20
-	offset	43 74
-	bbox 	40 25 20 50
-	attack	40 25 20 50 12 0 0 0 0 0
-	frame	data/chars/skeleton/walk1.gif
-	delay	1
-	attack	0
-	frame	data/chars/skeleton/walk1.gif
 
-anim walk
-	loop	1
-	delay	20
-	offset  43 74
-	bbox	40 25 20 50
-	attack	40 25 20 50 12 0 0 0 0 0
-	frame	data/chars/skeleton/walk1.gif
-	frame	data/chars/skeleton/walk2.gif
-	frame	data/chars/skeleton/walk3.gif
-	delay	11
-	frame	data/chars/skeleton/walk4.gif
-	delay	1
-	attack	0 0 0 0 0 0 0 0
-	frame	data/chars/skeleton/walk4.gif
-
-anim attack1
+anim	attack1
 	ramge	0 80
 	delay	20
-	offset  43 74
-	jumpframe 0 0 0.5 0
+	offset	43 74
+	jumpframe	0 0 0.5 0
 	bbox	40 25 20 50
-	attack	40 25 20 50 12 0 0 0 0 0
+	attack	40 25 20 50 6 0 0 0 0 0
 	frame	data/chars/skeleton/walk1.gif
 	frame	data/chars/skeleton/walk2.gif
 	frame	data/chars/skeleton/walk3.gif
@@ -73,40 +38,133 @@ anim attack1
 	delay	1
 	attack	0 0 0 0 0 0 0 0
 	frame	data/chars/skeleton/walk4.gif
-
-
-
-anim pain
-	delay	8
-	offset  43 74
-	frame	data/chars/skeleton/rise1f.gif
-	frame	data/chars/skeleton/rise1e.gif
-	frame	data/chars/skeleton/rise1d.gif
-	frame	data/chars/skeleton/rise1c.gif
-	frame	data/chars/skeleton/rise1b.gif
-	frame	data/chars/skeleton/rise1a.gif
-	delay	200
-	frame	data/chars/skeleton/rise1a.gif
-	delay	8
-	frame	data/chars/skeleton/rise1a.gif
-	frame	data/chars/skeleton/rise1b.gif
-	frame	data/chars/skeleton/rise1c.gif
-	frame	data/chars/skeleton/rise1d.gif
-	frame	data/chars/skeleton/rise1e.gif
-	frame	data/chars/skeleton/rise1f.gif
-
-
+		
 anim	death
 	delay	5
 	offset	43 74
 	sound	data/sounds/skeletondie.wav
 	frame	data/chars/misc/empty.gif
-	@cmd	tosserM "BS" 8 34 0 2.5
-	@cmd	tosserM "BR" 5 26 0 1.5
-	@cmd	tosserM "BA" 8 25 0.3 1.5
-	@cmd	tosserM "BA" -3 27 -0.3 1.5
-	@cmd	tosserM "BL" 5 12 0.3 1
-	@cmd	tosserM "BL" -8 14 -0.3 1
+	@cmd	tosserM "BS_c" 8 34 0 2.5
+	@cmd	tosserM "BR_c" 5 26 0 1.5
+	@cmd	tosserM "BA_c" 8 25 0.3 1.5
+	@cmd	tosserM "BA_c" -3 27 -0.3 1.5
+	@cmd	tosserM "BL_c" 5 12 0.3 1
+	@cmd	tosserM "BL_c" -8 14 -0.3 1
 	frame	data/chars/misc/empty.gif
 	delay	200
 	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	20
+	offset	43 74
+	bbox	40 25 20 50
+	attack	40 25 20 50 6 0 0 0 0 0
+	frame	data/chars/skeleton/walk1.gif
+	delay	1
+	attack	0
+	frame	data/chars/skeleton/walk1.gif
+		
+anim	pain
+	delay	8
+	offset	43 74
+	sound	data/sounds/bones1.wav
+	frame	data/chars/skeleton/rise1f.gif
+	frame	data/chars/skeleton/rise1e.gif
+	frame	data/chars/skeleton/rise1d.gif
+	frame	data/chars/skeleton/rise1c.gif
+	frame	data/chars/skeleton/rise1b.gif
+	frame	data/chars/skeleton/rise1a.gif
+	delay	200
+	frame	data/chars/skeleton/rise1a.gif
+	delay	3
+	offset	42 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	44 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	42 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	44 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	42 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	44 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	42 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	44 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	42 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	44 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	42 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	44 74
+	sound	data/sounds/bones2.wav
+	frame	data/chars/skeleton/rise1a.gif
+	delay	8
+	offset	43 74
+	frame	data/chars/skeleton/rise1a.gif
+	frame	data/chars/skeleton/rise1b.gif
+	frame	data/chars/skeleton/rise1c.gif
+	frame	data/chars/skeleton/rise1d.gif
+	frame	data/chars/skeleton/rise1e.gif
+	frame	data/chars/skeleton/rise1f.gif
+		
+anim	spawn
+	delay	150
+	offset	43 74
+	frame	data/chars/skeleton/rise1a.gif
+	delay	3
+	offset	42 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	44 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	42 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	44 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	42 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	44 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	42 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	44 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	42 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	44 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	42 74
+	frame	data/chars/skeleton/rise1a.gif
+	offset	44 74
+	sound	data/sounds/bones2.wav
+	frame	data/chars/skeleton/rise1a.gif
+	delay	8
+	offset	43 74
+	frame	data/chars/skeleton/rise1a.gif
+	frame	data/chars/skeleton/rise1b.gif
+	frame	data/chars/skeleton/rise1c.gif
+	frame	data/chars/skeleton/rise1d.gif
+	frame	data/chars/skeleton/rise1e.gif
+	frame	data/chars/skeleton/rise1f.gif
+		
+anim	walk
+	loop	1
+	delay	20
+	offset	43 74
+	bbox	40 25 20 50
+	attack	40 25 20 50 6 0 0 0 0 0
+	frame	data/chars/skeleton/walk1.gif
+	frame	data/chars/skeleton/walk2.gif
+	frame	data/chars/skeleton/walk3.gif
+	delay	11
+	frame	data/chars/skeleton/walk4.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0
+	frame	data/chars/skeleton/walk4.gif
+		
+#|edited by openBor Stats v 0.67
+		

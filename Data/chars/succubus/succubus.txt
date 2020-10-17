@@ -1,7 +1,7 @@
 name    	Sucubo
 health          200
-mp              30
-speed           10
+mp              300
+speed           12
 type    	enemy
 noquake  	1
 nopain  	1
@@ -11,30 +11,39 @@ nodieblink	2
 hostile        	npc player
 candamage       npc player
 offscreenkill 	9999
+blockodds 1
+nopassiveblock 1
 score 10000 -1
 lifebarstatus 5 100 1 0 1 -300 -300 -300 -300
 lifeposition 309 15
 nameposition -500 -500
 iconposition -500 -500
-diesound     data/sounds/die2.wav
+blockflash	Empty
+diesound     data/sounds/succubus_die.wav
 animationscript  data/scripts/escript.c
 takedamagescript data/scripts/blink.c
 defense normal 0.75 0 0 0 0 0 0
 defense normal2 0.75 0 0 0 0 0 0
-defense normal4 0.75 0 0 0 0 0 0
+defense normal3 0.5 0 0 0 0 0 0
+defense normal4 0.5 0 0 0 0 0 0
+defense normal5 0.25 0 0 0 0 0 0
+defense normal6 0.5 0 0 0 0 0 0
 defense normal7 0.75 0 0 0 0 0 0
 defense normal8 0.25 0 0 0 0 0 0
+defense normal9 2 0 0 0 0 0 0
 defense normal19 0.75 0 0 0 0 0 0
 defense normal20 0 0 0 0 0 0 0
+defense normal21 0.75 0 0 0 0 0 0
 defense burn 0.75 0 0 0 0 0 0
-defense schock 0.75 0 0 0 0 0 0
+load	Empty
 load    EnchantSpell
+load    EnchantSpell2
 load    EHeart_MP
-load    RoseSpell
-load    RoseSpell1
 load    magicseal
+load  	sucubo_
 
-icon		data/chars/misc/bgmonster.gif
+icon 		data/chars/gargoyle/bggargola.gif
+
 
 palette 	data/chars/succubus/succubo_palette.gif
 alternatepal	data/chars/succubus/blink.gif
@@ -104,42 +113,55 @@ alternatepal	data/chars/succubus/blink.gif
 
 
 
-anim	attack1
-@script
-    void self = getlocalvar("self");
-    int MP = getentityproperty(self,"mp");
 
-    if(frame >= 1){
-     changeentityproperty(self, "mp", MP+1);
-    }
-	@end_script	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
 	range	25 117
 	rangea	0 60
-	delay	10
-	offset	52 88
+	delay	7
+	offset	52 87
 	bbox	45 30 15 55
-	attack	45 30 15 55 12 0 0 0 0 0
+	attack	45 30 15 55 9 0 0 0 0 0
 	frame	data/chars/succubus/attack1a.gif
 	frame	data/chars/succubus/attack1b.gif
 	frame	data/chars/succubus/attack1c.gif
-	delay	7
-	attack2	5 10 87 55 19 0 0 0 0 0
+	sound	data/sounds/throw_big.wav
+	attack2	5 10 87 55 12 0 0 0 0 0
 	frame	data/chars/succubus/attack1d.gif
-	attack2	50 20 95 65 19 0 0 0 0 0
+	attack2	50 20 95 65 12 0 0 0 0 0
 	frame	data/chars/succubus/attack1e.gif
-	delay	6
-	attack2	50 20 100 65 19 0 0 0 0 0
+	delay	3
+	attack2	50 20 100 65 12 0 0 0 0 0
 	frame	data/chars/succubus/attack1f.gif
 	delay	1
 	attack2	0 0 0 0 0 0
 	frame	data/chars/succubus/attack1f.gif
-	attack	143 65 50 25 9 0 0 0 0 0
+	attack	143 65 50 25 6 0 0 0 0 0
 	frame	data/chars/succubus/attack1g.gif
 	frame	data/chars/succubus/attack1h.gif
-	attack	45 30 15 55 12 0 0 0 0 0
+	attack	45 30 15 55 9 0 0 0 0 0
 	frame	data/chars/succubus/attack1i.gif
 	frame	data/chars/succubus/attack1j.gif
-	delay	10
+	delay	7
 	frame	data/chars/succubus/attack1j.gif
 	delay	1
 	attack	0 0 0 0 0 0 0
@@ -147,40 +169,105 @@ anim	attack1
 	frame	data/chars/succubus/attack1j.gif
 		
 anim	attack2
-@script
-    void self = getlocalvar("self");
-    int MP = getentityproperty(self,"mp");
-
-    if(frame >= 1){
-     changeentityproperty(self, "mp", MP+1);
-    }
-	@end_script	
+	followcond	1
+	followanim	1
+	range	25 117
+	rangea	0 60
+	delay	7
+	offset	52 87
+	bbox	45 30 15 55
+	attack	45 30 15 55 9 0 0 0 0 0
+	frame	data/chars/succubus/attack1a.gif
+	frame	data/chars/succubus/attack1b.gif
+	frame	data/chars/succubus/attack1c.gif
+	sound	data/sounds/throw_big.wav
+	attack2	5 10 87 55 12 0 0 0 0 0
+	frame	data/chars/succubus/attack1d.gif
+	attack2	50 20 95 65 12 0 0 0 0 0
+	frame	data/chars/succubus/attack1e.gif
+	delay	3
+	attack2	50 20 100 65 12 0 0 0 0 0
+	frame	data/chars/succubus/attack1f.gif
+	delay	1
+	attack2	0 0 0 0 0 0
+	frame	data/chars/succubus/attack1f.gif
+	attack	143 65 50 25 6 0 0 0 0 0
+	frame	data/chars/succubus/attack1g.gif
+	frame	data/chars/succubus/attack1h.gif
+	attack	45 30 15 55 9 0 0 0 0 0
+	frame	data/chars/succubus/attack1i.gif
+	frame	data/chars/succubus/attack1j.gif
+	delay	7
+	frame	data/chars/succubus/attack1j.gif
+	delay	1
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/succubus/attack1j.gif
+	frame	data/chars/succubus/attack1j.gif
+		
+anim	attack3
+	range	25 117
+	rangea	0 60
+	delay	7
+	offset	52 87
+	bbox	45 30 15 55
+	attack	45 30 15 55 9 0 0 0 0 0
+	frame	data/chars/succubus/attack1a.gif
+	frame	data/chars/succubus/attack1b.gif
+	frame	data/chars/succubus/attack1c.gif
+	sound	data/sounds/throw_big.wav
+	attack2	5 10 87 55 12 0 0 0 0 0
+	frame	data/chars/succubus/attack1d.gif
+	sound	data/sounds/succubus_whip.wav
+	attack2	50 20 95 65 12 0 0 0 0 0
+	frame	data/chars/succubus/attack1e.gif
+	delay	3
+	attack2	50 20 100 65 12 0 0 0 0 0
+	frame	data/chars/succubus/attack1f.gif
+	delay	1
+	attack2	0 0 0 0 0 0
+	frame	data/chars/succubus/attack1f.gif
+	attack	143 65 50 25 6 0 0 0 0 0
+	frame	data/chars/succubus/attack1g.gif
+	frame	data/chars/succubus/attack1h.gif
+	attack	45 30 15 55 9 0 0 0 0 0
+	frame	data/chars/succubus/attack1i.gif
+	frame	data/chars/succubus/attack1j.gif
+	delay	7
+	frame	data/chars/succubus/attack1j.gif
+	delay	1
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/succubus/attack1j.gif
+	frame	data/chars/succubus/attack1j.gif
+		
+anim	attack4
 	followcond	1
 	followanim	1
 	range	25 117
 	rangea	0 60
 	delay	10
-	offset	52 88
+	offset	52 87
 	bbox	45 30 15 55
-	attack	45 30 15 55 12 0 0 0 0 0
+	attack	45 30 15 55 9 0 0 0 0 0
 	frame	data/chars/succubus/attack1a.gif
 	frame	data/chars/succubus/attack1b.gif
 	frame	data/chars/succubus/attack1c.gif
 	delay	7
-	attack2	5 10 87 55 19 0 0 0 0 0
+	sound	data/sounds/throw_big.wav
+	attack2	5 10 87 55 12 0 0 0 0 0
 	frame	data/chars/succubus/attack1d.gif
-	attack2	50 20 95 65 19 0 0 0 0 0
+	sound	data/sounds/succubus_whip.wav
+	attack2	50 20 95 65 12 0 0 0 0 0
 	frame	data/chars/succubus/attack1e.gif
 	delay	6
-	attack2	50 20 100 65 19 0 0 0 0 0
+	attack2	50 20 100 65 12 0 0 0 0 0
 	frame	data/chars/succubus/attack1f.gif
 	delay	1
 	attack2	0 0 0 0 0 0
 	frame	data/chars/succubus/attack1f.gif
-	attack	143 65 50 25 9 0 0 0 0 0
+	attack	143 65 50 25 6 0 0 0 0 0
 	frame	data/chars/succubus/attack1g.gif
 	frame	data/chars/succubus/attack1h.gif
-	attack	45 30 15 55 12 0 0 0 0 0
+	attack	45 30 15 55 9 0 0 0 0 0
 	frame	data/chars/succubus/attack1i.gif
 	frame	data/chars/succubus/attack1j.gif
 	delay	10
@@ -193,24 +280,70 @@ anim	attack2
 anim	backwalk
 	loop	1
 	delay	12
-	offset	52 88
-	bbox	30 40 20 45
-	attack	30 40 20 45 12 0 0 0 0 0
+	offset	52 87
+	bbox	55 40 20 45
+	attack	55 40 20 45 9 0 0 0 0 0
+	frame	data/chars/succubus/walk2a.gif
+	delay	11
+	frame	data/chars/succubus/walk2b.gif
+	delay	1
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/succubus/walk2b.gif
+		
+anim	block
+	loop	0
+	delay	1
+	offset	52 87
+	blockflash	Empty
+	sound	data/sounds/jump_big.wav
+	move	-6
 	frame	data/chars/succubus/backwalk1a.gif
+	frame	data/chars/succubus/backwalk1a.gif
+	move	-5
+	frame	data/chars/succubus/backwalk1a.gif
+	frame	data/chars/succubus/backwalk1a.gif
+	frame	data/chars/succubus/backwalk1a.gif
+	move	-4
+	frame	data/chars/succubus/backwalk1a.gif
+	frame	data/chars/succubus/backwalk1a.gif
+	move	-3
 	frame	data/chars/succubus/backwalk1b.gif
+	frame	data/chars/succubus/backwalk1b.gif
+	frame	data/chars/succubus/backwalk1b.gif
+	move	-2
+	frame	data/chars/succubus/backwalk1b.gif
+	frame	data/chars/succubus/backwalk1b.gif
+	frame	data/chars/succubus/backwalk1b.gif
+	move	-1
+	frame	data/chars/succubus/backwalk1b.gif
+	frame	data/chars/succubus/backwalk1b.gif
+	frame	data/chars/succubus/backwalk1c.gif
+	delay	12
+	move	0
 	frame	data/chars/succubus/backwalk1c.gif
 	delay	11
 	frame	data/chars/succubus/backwalk1d.gif
 	delay	1
+	move	-0
 	attack	0 0 0 0 0 0 0
 	frame	data/chars/succubus/backwalk1d.gif
 		
 anim	death
 	delay	7
-	offset	52 88
+	offset	52 87
 	subentity	kdie
 	spawnframe	1 0 0 0 0
 	sound	data/sounds/flame-dies.wav
+	@script
+		if(frame==1){
+		void self = getlocalvar("self");
+	    	void Sucubo_I = getentityvar(self, 1);
+
+	    	if(Sucubo_I != NULL()){
+			damageentity(Sucubo_I, self, 1000, 1, openborconstant("ATK_NORMAL"));
+		}
+		}
+	@end_script	
 	frame	data/chars/succubus/death1a.gif
 	frame	data/chars/succubus/death1b.gif
 	frame	data/chars/succubus/death1c.gif
@@ -228,9 +361,9 @@ anim	death
 anim	follow1
 	loop	0
 	delay	14
-	offset	52 88
+	offset	52 87
 	bbox	45 30 15 55
-	attack	45 30 15 55 12 0 0 0 0 0
+	attack	45 30 15 55 9 0 0 0 0 0
 	sound	data/sounds/succubus_laugh.wav
 	frame	data/chars/succubus/laugh1a.gif
 	frame	data/chars/succubus/laugh1b.gif
@@ -247,21 +380,13 @@ anim	follow1
 	frame	data/chars/succubus/idle1c.gif
 		
 anim	freespecial
-@script
-    void self = getlocalvar("self");
-    int MP = getentityproperty(self,"mp");
-
-    if(frame >= 1){
-     changeentityproperty(self, "mp", MP+1);
-    }
-	@end_script	
-	range	100 160
-	rangea	0 100
+	rangea	0 60
+	range	0 240
 	delay	50
-	offset	52 88
+	offset	52 87
 	bbox	45 30 15 55
-	attack	45 30 15 55 12 0 0 0 0 0
-	subentity	fireseal
+	attack	45 30 15 55 9 0 0 0 0 0
+	subentity	magicseal
 	spawnframe	1 16 0 29 0
 	frame	data/chars/succubus/freespecial1a.gif
 	delay	12
@@ -276,21 +401,17 @@ anim	freespecial
 	frame	data/chars/succubus/freespecial1d.gif
 		
 anim	freespecial2
-	range	-140 280
-	rangea	-100 100
 	delay	50
-	offset	52 88
+	offset	52 87
 	bbox	45 30 15 55
-	attack	45 30 15 55 12 0 0 0 0 0
-	subentity	magicseal
-	spawnframe	1 16 0 29 0
-	energycost	5 1 0
+	attack	45 30 15 55 9 0 0 0 0 0
 	frame	data/chars/succubus/freespecial1a.gif
 	delay	12
 	frame	data/chars/succubus/freespecial1b.gif
 	frame	data/chars/succubus/freespecial1c.gif
 	delay	20
-	@cmd	target 1 1 0 0 0 0
+	sound	data/sounds/kiss.wav
+	@cmd	target 1 1 0 50 0 0
 	@cmd	shoot2 "EHeart_MP" 0 50
 	frame	data/chars/succubus/freespecial1d.gif
 	delay	1
@@ -298,103 +419,207 @@ anim	freespecial2
 	frame	data/chars/succubus/freespecial1d.gif
 		
 anim	freespecial3
-@script
-    void self = getlocalvar("self");
-    int r = rand()%30;
-
-    if( frame == 0){
-      if( r > 10){
-        changeentityproperty(self, "animation", openborconstant("ANI_FREESPECIAL4"));
-      } else if( r < -10){
-        changeentityproperty(self, "animation", openborconstant("ANI_FREESPECIAL5"));
-      }
-    }
-	@end_script	
 	range	-140 280
 	rangea	-100 100
-	delay	50
-	offset	52 88
-	bbox	45 30 15 55
-	attack	45 30 15 55 12 0 0 0 0 0
-	subentity	magicseal
-	spawnframe	1 16 0 29 0
-	energycost	10 1 0
-	frame	data/chars/succubus/freespecial1a.gif
-	delay	12
-	frame	data/chars/succubus/freespecial1b.gif
-	frame	data/chars/succubus/freespecial1c.gif
-	delay	20
-	frame	data/chars/succubus/freespecial1d.gif
-	@cmd	spawn02 "RoseSpell1" 80 0 0
+	delay	10
+	offset	52 87
+	energycost	300
+	mponly	1
+	@script
+		if(frame==6){
+     		void self = getlocalvar("self");
+     		void Sucubo_I = getentityvar(self, 1);
+    	}
+	@end_script	
+	sound	data/sounds/succubus_laugh.wav
+	frame	data/chars/succubus/spawn1k.gif
+	frame	data/chars/succubus/spawn1j.gif
+	frame	data/chars/succubus/spawn1i.gif
+	frame	data/chars/succubus/spawn1h.gif
+	frame	data/chars/succubus/spawn1g.gif
 	delay	1
-	attack	0 0 0 0
-	frame	data/chars/succubus/freespecial1d.gif
+	move	-1
+	@cmd	spawner4 "sucubo_" 40 0 0 1
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1f.gif
+	move	0
+	delay	10
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1e.gif
+	delay	60
+	frame	data/chars/succubus/spawn1f.gif
+	delay	10
+	frame	data/chars/succubus/spawn1g.gif
+	frame	data/chars/succubus/spawn1h.gif
+	frame	data/chars/succubus/spawn1i.gif
+	frame	data/chars/succubus/spawn1j.gif
+	frame	data/chars/succubus/spawn1k.gif
 		
 anim	freespecial4
-@script
-    void self = getlocalvar("self");
-    int r = rand()%30;
-
-    if( frame == 0){
-      if( r > 10){
-        changeentityproperty(self, "animation", openborconstant("ANI_FREESPECIAL3"));
-      } else if( r < -10){
-        changeentityproperty(self, "animation", openborconstant("ANI_FREESPECIAL5"));
-      }
-    }
-	@end_script	
 	range	-140 280
 	rangea	-100 100
-	delay	50
-	offset	52 88
-	bbox	45 30 15 55
-	attack	45 30 15 55 12 0 0 0 0 0
-	subentity	magicseal
-	spawnframe	1 16 0 29 0
-	energycost	10 1 0
-	frame	data/chars/succubus/freespecial1a.gif
-	delay	12
-	frame	data/chars/succubus/freespecial1b.gif
-	frame	data/chars/succubus/freespecial1c.gif
-	delay	20
-	frame	data/chars/succubus/freespecial1d.gif
-	@cmd	spawn02 "RoseSpell" 185 0 0
+	delay	10
+	offset	52 87
+	energycost	300
+	mponly	1
+	@script
+		if(frame==6){
+     		void self = getlocalvar("self");
+     		void Sucubo_I = getentityvar(self, 1);
+   		}
+	@end_script	
+	sound	data/sounds/succubus_laugh.wav
+	frame	data/chars/succubus/spawn1k.gif
+	frame	data/chars/succubus/spawn1j.gif
+	frame	data/chars/succubus/spawn1i.gif
+	frame	data/chars/succubus/spawn1h.gif
+	frame	data/chars/succubus/spawn1g.gif
 	delay	1
-	attack	0 0 0 0
-	frame	data/chars/succubus/freespecial1d.gif
+	move	1
+	@cmd	spawner4 "sucubo_" -40 0 0 1
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1f.gif
+	move	0
+	delay	10
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1e.gif
+	frame	data/chars/succubus/spawn1f.gif
+	frame	data/chars/succubus/spawn1c.gif
+	frame	data/chars/succubus/spawn1d.gif
+	frame	data/chars/succubus/spawn1e.gif
+	delay	60
+	frame	data/chars/succubus/spawn1f.gif
+	delay	10
+	frame	data/chars/succubus/spawn1g.gif
+	frame	data/chars/succubus/spawn1h.gif
+	frame	data/chars/succubus/spawn1i.gif
+	frame	data/chars/succubus/spawn1j.gif
+	frame	data/chars/succubus/spawn1k.gif
 		
 anim	freespecial5
-@script
-    void self = getlocalvar("self");
-    int r = rand()%30;
-
-    if( frame == 0){
-      if( r > 10){
-        changeentityproperty(self, "animation", openborconstant("ANI_FREESPECIAL3"));
-      } else if( r < -10){
-        changeentityproperty(self, "animation", openborconstant("ANI_FREESPECIAL4"));
-      }
-    }
-	@end_script	
-	range	-140 280
-	rangea	-100 100
-	delay	50
-	offset	52 88
+	delay	10
+	rangea	50 200
+	range	42 100
+	offset	52 87
 	bbox	45 30 15 55
-	attack	45 30 15 55 12 0 0 0 0 0
-	subentity	magicseal
-	spawnframe	1 16 0 29 0
-	energycost	10 1 0
-	frame	data/chars/succubus/freespecial1a.gif
-	delay	12
-	frame	data/chars/succubus/freespecial1b.gif
-	frame	data/chars/succubus/freespecial1c.gif
-	delay	20
-	frame	data/chars/succubus/freespecial1d.gif
-	@cmd	spawn02 "RoseSpell1" 110 0 0
+	frame	data/chars/succubus/attack1a.gif
+	frame	data/chars/succubus/attack1b.gif
+	frame	data/chars/succubus/attack1c.gif
+	delay	7
+	sound	data/sounds/throw_big.wav
+	attack2	5 10 87 55 9 0 0 0 0 0
+	frame	data/chars/succubus/attack1d.gif
+	sound	data/sounds/succubus_whip.wav
+	attack2	85 20 55 65 9 0 0 0 0 0
+	frame	data/chars/succubus/attack1e.gif
+	delay	6
+	attack2	70 20 75 65 9 0 0 0 0 0
+	@cmd	spawn01 "EnchantSpell2" 94 50 0
+	frame	data/chars/succubus/attack3f.gif
 	delay	1
-	attack	0 0 0 0
-	frame	data/chars/succubus/freespecial1d.gif
+	attack2	0 0 0 0 0 0
+	frame	data/chars/succubus/attack3f.gif
+	frame	data/chars/succubus/attack3g.gif
+	frame	data/chars/succubus/attack3h.gif
+	frame	data/chars/succubus/attack1i.gif
+	frame	data/chars/succubus/attack1j.gif
+	delay	10
+	frame	data/chars/succubus/attack1j.gif
+	delay	1
+	frame	data/chars/succubus/attack1j.gif
+	frame	data/chars/succubus/attack1j.gif
 		
 anim	idle
 @script
@@ -409,7 +634,7 @@ void self = getlocalvar("self");
 	@end_script	
 	loop	1
 	delay	20
-	offset	52 88
+	offset	52 87
 	bbox	45 30 15 55
 	attack	45 30 15 55 12 0 0 0 0 0
 	frame	data/chars/succubus/idle1a.gif
@@ -420,22 +645,15 @@ void self = getlocalvar("self");
 	frame	data/chars/succubus/idle1c.gif
 		
 anim	jumpattack
-@script
-    void self = getlocalvar("self");
-    int MP = getentityproperty(self,"mp");
-
-    if(frame >= 1){
-     changeentityproperty(self, "mp", MP+1);
-    }
-	@end_script	
 	loop	0
 	delay	10
-	offset	52 88
+	offset	52 87
 	bbox	50 40 18 45
-	attack	50 40 18 45 12 0 0 0 0 0
+	attack	50 40 18 45 9 0 0 0 0 0
+	sound	data/sounds/jump_big.wav
 	frame	data/chars/succubus/jump1.gif
 	bbox	55 40 20 45
-	attack	55 40 20 45 12 0 0 0 0 0
+	attack	55 40 20 45 9 0 0 0 0 0
 	frame	data/chars/succubus/walk1a.gif
 	frame	data/chars/succubus/walk1b.gif
 	frame	data/chars/succubus/walk1a.gif
@@ -448,15 +666,15 @@ anim	jumpattack
 anim	jumpland
 	loop	0
 	delay	10
-	offset	50 88
+	offset	50 87
 	bbox	40 40 18 45
-	attack	40 40 18 45 12 0 0 0 0 0
+	attack	40 40 18 45 9 0 0 0 0 0
 	frame	data/chars/succubus/eva1.gif
 		
 anim	spawn
 	loop	0
 	delay	10
-	offset	52 88
+	offset	52 87
 	frame	data/chars/succubus/spawn1a.gif
 	frame	data/chars/succubus/spawn1b.gif
 	frame	data/chars/succubus/spawn1c.gif
@@ -487,9 +705,9 @@ anim	spawn
 anim	walk
 	loop	1
 	delay	12
-	offset	52 88
+	offset	52 87
 	bbox	55 40 20 45
-	attack	55 40 20 45 12 0 0 0 0 0
+	attack	55 40 20 45 9 0 0 0 0 0
 	frame	data/chars/succubus/walk1a.gif
 	delay	11
 	frame	data/chars/succubus/walk1b.gif

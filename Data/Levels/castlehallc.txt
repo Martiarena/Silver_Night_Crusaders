@@ -1,0 +1,498 @@
+music		data/music/demongallery.ogg 186965
+
+panel	        data/bgs/castlehall/castlehall_3.gif
+
+fglayer		data/bgs/castlehall/castle_wall_hall_1.gif -10000 0.3 0.3 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/castlehall/castlehall_wall_1.gif -11000 0.5 0.5 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/castlehall/castlehall_trees.gif -12000 0.6 0.6 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/moon_bridge/back_bridge_red.gif -13000 0.8 0.8 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/castle_entrance/castle_sky_night_red.gif -14000 0.9 0.9 0 0 0 0 -1 1 1 0 0 0 0 0 1
+
+order           a
+settime	        0
+notime		1
+spawn1          80 0 240
+spawn2          40 0 240
+direction	leftright
+type		0 0 0
+cameratype 1
+Hole  232  330  0  0  122  122  30
+#Hole  -2584  330  0  0  122  122  30
+
+spawn  Castlehall_wall3a
+coords  323  302  99
+alias	Thick
+at  0
+
+spawn  Castlehall_wall7a
+coords  123  302  0
+alias	Thick
+at  0
+
+spawn  Castlehall_wall7b
+coords  115  302  17
+alias	Thick
+at  0
+
+spawn  Castlehall_wall7c
+coords  106  302  34
+alias	Thick
+at  0
+
+spawn  Castlehall_wall6a
+coords  44 302  0
+alias	Thick
+at  0
+
+spawn  Red_Moon
+coords  -80  302  300
+at  0
+
+spawn  Front_castlehall_1a
+coords  -147  302  68
+at  0
+
+spawn  Castlehall_wall8a
+coords  -334  302  0
+alias	Thick
+at  0
+
+spawn  Front_castlehall_4a
+coords  -515  302  68
+alias	Thick
+flip 1
+at  0
+
+spawn  Castlehall_wall10a
+coords  -715  302  0
+alias	Thick
+flip 1
+at  0
+
+spawn  Castlehall_wall9c
+coords  -778  302  34
+alias	Thick
+at  0
+
+spawn  Castlehall_wall9b
+coords  -787  302  17
+alias	Thick
+at  0
+
+spawn  Castlehall_wall9a
+coords  -795  302  0
+alias	Thick
+at  0
+
+spawn  Castlehall_platform1a
+coords  -854  302  139
+at  0
+
+spawn  Castlehall_platform1a
+coords  -936  302  139
+at  0
+
+spawn  Castlehall_wall7a
+coords  -1002  302  0
+alias	Thick
+at  0
+
+spawn  Castlehall_wall7b
+coords  -1010  302  17
+alias	Thick
+at  0
+
+spawn  Castlehall_wall7c
+coords  -1018  302  34
+alias	Thick
+at  0
+
+spawn  Castlehall_wall6a
+coords  -1081  302  0
+alias	Thick
+at  0
+
+spawn  Front_castlehall_2a
+coords  -1271  302  68
+at  0
+
+spawn  Castlehall_wall8a
+coords  -1460  302  0
+alias	Thick
+at  0
+
+spawn  Front_castlehall_4a
+coords  -1637  302  68
+flip 1
+at  0
+
+spawn  Castlehall_wall10a
+coords  -1840  302  0
+alias	Thick
+at  0
+
+spawn  Castlehall_wall9c
+coords  -1903  302  34
+alias	Thick
+flip 1
+at  0
+
+spawn  Castlehall_wall9b
+coords  -1912  302  17
+alias	Thick
+flip 1
+at  0
+
+spawn  Castlehall_wall9a
+coords  -1920  302  0
+alias	Thick
+flip 1
+at  0
+
+spawn  Castlehall_platform1a
+coords  -2325  302  90
+at  0
+
+spawn  Front_castlehall_1a
+coords  -2105  302  0
+at  0
+
+spawn  Front_castlehall_3a
+coords  -2483  302  0
+at  0
+
+spawn  Castlehall_wall3a
+coords  -2625  302  99
+alias	Thick
+flip 1
+at  0
+
+spawn  Brazier1
+coords  184  302  0
+item	___100
+at  0
+
+spawn  Brazier1
+coords  -39  302  70
+item	___100
+at  0
+
+spawn  E._Laser
+coords  -79  302  70
+flip 1
+at  0
+
+spawn  J._Anfauglir
+coords  -79  302  70
+flip 1
+at  50
+
+spawn  Brazier1
+coords  -39  302  70
+item  ___100
+at  100
+
+spawn  P._de_huesos
+coords  -226  302  70
+flip 1
+at  100
+
+spawn  P._de_huesos
+coords  -226  302  130
+flip 1
+at  100
+
+spawn  P._de_huesos_
+coords  -226  302  100
+flip 1
+at  100
+
+spawn  Brazier1
+coords  -39  302  70
+item  ___100
+at  200
+
+spawn  Xavier_
+coords  360  302  70
+flip 1
+at  298
+
+Blockade  298
+at  298
+
+spawn  Brazier1
+coords  -39  302  70
+item  ___100
+at  360
+
+spawn  Cazadora
+coords  -39  302  70
+flip 1
+at  415
+
+spawn  Brazier1
+coords  -39  302  70
+item  ___100
+at  470
+
+spawn  G._demonio
+coords  -39  302  70
+flip 1
+at  520
+
+spawn  Brazier1
+coords  -39  302  70
+item  ___100
+at  585
+
+Blockade  620
+at  620
+
+spawn  Candle1
+coords  -29  302  150
+item	___100
+flip 1
+at  668
+
+spawn  Candle1
+coords  -29  302  200
+item	___100
+flip 1
+at  748
+
+spawn  Chiroptera_
+coords  -39  302  95
+flip 1
+at  812
+
+spawn  Jar1
+coords  -39  302  160
+item	Pollo_frito
+flip 1
+at  815
+
+spawn  Chiroptera_
+coords  -39  302  95
+flip 1
+at  893
+
+spawn  Jar1
+coords  -39  302  160
+item	___700
+flip 1
+at  897
+
+spawn  Candle1
+coords  -29  302  130
+item	___100
+flip 1
+at  990
+
+spawn  Candle1
+coords  -29  302  200
+item	___100
+flip 1
+at  990
+
+Blockade  1060
+at  995
+
+spawn  Castlehall_wall3a
+coords  372  302 0
+at  1060
+
+Wait
+at  1060
+
+spawn  Bafomet
+coords  160  302
+flip 1
+at  1060
+
+spawn  Hidden_12
+coords  160  302 240
+flip 1
+at  1060
+
+spawn  Candle1
+coords  -29  302  150
+item	___100
+flip 1
+at  1072
+
+spawn  E._Laser
+coords  169  302  0
+flip 1
+at  1100
+
+spawn  G._demonio
+coords  -39  302  70
+flip 1
+at  1100
+
+spawn  Brazier1
+coords  -39  302  70
+item  ___100
+at  1120
+
+spawn  J._Anfauglir
+coords  -79  302  70
+flip 1
+at  1200
+
+spawn  Brazier1
+coords  -39  302  70
+item  ___100
+at  1235
+
+spawn  Brazier1
+coords  -39  302  70
+item  ___100
+at  1330
+
+Blockade  1410
+at  1410
+
+spawn  Soldado_raso
+coords  350  302  70
+flip 1
+at  1410
+
+spawn  P._de_huesos
+coords  -39  302  70
+flip 1
+at  1410
+
+spawn  P._de_huesos
+coords  -39  302  100
+flip 1
+at  1410
+
+spawn  P._de_huesos
+coords  -39  302  130
+flip 1
+at  1410
+
+spawn  Cazadora
+coords  -39  302  70
+flip 1
+at  1450
+
+spawn  Brazier1
+coords  -39  302  70
+item  ___100
+at  1480
+
+spawn  G._demonio
+coords  -79  302  70
+flip 1
+at  1500
+
+spawn  Soldado_raso
+coords  350  302  70
+flip 1
+at  1500
+
+spawn  E._Laser
+coords  269  302  70
+flip 1
+at  1500
+
+spawn  Brazier1
+coords  -39  302  70
+item  ___100
+at  1590
+
+spawn  E._Laser
+coords  179  302  70
+flip 1
+at  1600
+
+spawn  J._Anfauglir
+coords  -79  302  70
+flip 1
+at  1600
+
+spawn  Brazier1
+coords  -39  302  70
+item  ___100
+at  1720
+
+spawn  Soldado_raso
+coords  350  302  70
+flip 1
+at  1745
+
+Blockade  1745
+at  1745
+
+spawn  P._de_huesos
+coords  -39  302  100
+flip 1
+at  1790
+
+spawn  P._de_huesos
+coords  -39  302  70
+flip 1
+at  1790
+
+spawn  E._Laser
+coords  -79  302
+flip 1
+at  1900
+
+spawn  Brazier1
+coords  -39  302
+item  ___100
+at  1950
+
+spawn  G._demonio
+coords  370  302  70
+flip 1
+at  2000
+
+spawn  J._Anfauglir
+coords  -79  302  0
+flip 1
+at  2000
+
+spawn  Brazier1
+coords  -39  302
+item  ___100
+at  2050
+
+spawn  Soldado_raso
+coords  350  302  70
+flip 1
+at  2070
+
+spawn  Barril
+coords  -39  302
+item	Pollo_frito
+at  2120
+
+spawn  Brazier1
+coords  -39  302
+item  ___100
+at  2180
+
+spawn  Fake_enemy
+coords  1000  302  160
+at  2270
+
+Blockade  2270
+at  2270
+
+spawn  Cazadora
+coords  -39  302
+flip 1
+at  2450
+
+spawn  Brazier1
+coords  -39  302
+item  ___100
+at  2420
+
+spawn  ToDeathChamber
+coords  -39  302
+at  2550

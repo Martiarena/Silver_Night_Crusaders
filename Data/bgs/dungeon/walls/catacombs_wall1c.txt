@@ -5,7 +5,7 @@ setlayer	1
 antigravity	100
 offscreenkill   9999
 
-palette		data/bgs/dungeon/decoration/decoration_catacombs.gif
+palette		data/bgs/dungeon/walls/catacombs_wall1c.gif
 
 
 

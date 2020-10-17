@@ -1,0 +1,148 @@
+name	        Darvulia_image
+type	        none
+setlayer	400
+hostile		player npc
+candamage	player npc
+
+load		Llight
+
+animationscript  data/scripts/escript.c
+
+palette		data/chars/darvulia/attack1a.gif
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	1
+	offset	108 248
+	subentity	Llight
+	spawnframe	65 40 0 0 0
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	sound	data/sounds/lazrshot.wav
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/attack1f.gif
+	delay	1
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

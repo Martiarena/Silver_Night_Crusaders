@@ -403,7 +403,7 @@ coords  7266  216  88
 at  0
 
 spawn  Wall_garden2
-coords  7423  216  0
+coords  7453  216  0
 flip  1
 alias	Thick
 at  0
@@ -415,7 +415,7 @@ alias	Thick
 at  0
 
 spawn  ToShop
-coords  7400  216 50
+coords  7400  216 0
 flip 1
 at  0
 
@@ -497,6 +497,9 @@ coords  360  216  95
 item  ___20
 at  517
 
+Blockade  680
+at  680
+
 spawn  C._Demonio
 coords  360  216  64
 at  780
@@ -504,6 +507,10 @@ at  780
 spawn  Cuervo
 coords  350  216  135
 at  1013
+
+spawn	Sahagin
+coords  240  216  0
+at  1100
 
 spawn  Farol
 coords  360  216  95
@@ -539,9 +546,20 @@ spawn  BatSpawner
 coords  360  116
 at  1522
 
+Blockade  1820
+at  1820
+
+spawn	Sahagin
+coords  200  216  0
+at  1877
+
 spawn  C._Demonio
 coords  360  216  63
 at  1880
+
+spawn	Sahagin
+coords  100  216  0
+at  2180
 
 spawn  Farol
 coords  360  216  95
@@ -557,6 +575,9 @@ spawn  Farol
 coords  360  216  95
 item  ___10
 at  2410
+
+Blockade  2500
+at  2500
 
 spawn  Farol
 coords  360  216  95
@@ -618,10 +639,6 @@ spawn  BatSpawner
 coords  300  216
 at  3330
 
-spawn  Chiroptera_
-coords  360  216 29
-at  3350
-
 spawn  Platform_plaza4
 coords  360  216  72
 flip  1
@@ -638,13 +655,12 @@ item  Bumeran
 map 1
 at  3530
 
-spawn  Chiroptera_
-coords  360  216 70
-at  3340
-
 spawn  Esqueleto
 coords  360  216  132
 at  3580
+
+Blockade  3620
+at  3620
 
 spawn  Golem
 coords  360  216  130
@@ -653,7 +669,6 @@ at  3620
 spawn  Loda
 coords  360  216  0
 at  3700
-
 
 spawn  Candle2
 coords  360  216  55
@@ -666,13 +681,13 @@ at  3800
 
 spawn  Candle2
 coords  360  216  120
-item  C._sagrada
+item  C._Plateada
 map 1
 at  3820
 
 spawn  Candle2
 coords  360  216  55
-item  Agua_Santa
+item  Crucifijo
 at  3985
 
 spawn  Segador
@@ -683,13 +698,12 @@ spawn  Loda
 coords  160  216  74
 at  4020
 
-spawn  Chiroptera_
-coords  360  216 110
-at  4060
-
 spawn  Esqueleto
 coords  360  216  170
 at  4085
+
+Blockade  4100
+at  4100
 
 spawn  Muddy
 coords  360  216
@@ -703,9 +717,8 @@ spawn  Golem
 coords  360  216  87
 at  4275
 
-spawn  Chiroptera_
-coords  360  216 29
-at  4300
+Blockade  4400
+at  4400
 
 spawn  Golem
 coords  360  216
@@ -765,10 +778,6 @@ spawn  Loda
 coords  280  216  0
 at  5240
 
-spawn  Chiroptera_
-coords  360  216 12
-at  5290
-
 spawn  Farol
 coords  360  216  141
 item  ___20
@@ -816,6 +825,9 @@ spawn  H._espinosa
 coords  360  216
 at  6040
 
+Blockade  6100
+at  6100
+
 spawn  R._de_Venus
 coords  360  216  110
 flip 1
@@ -840,6 +852,9 @@ at  6305
 spawn  H._espinosa
 coords  360  216
 at  6365
+
+Blockade  6330
+at  6330
 
 spawn  R._de_Venus
 coords  360  216  100
@@ -867,14 +882,12 @@ spawn  H._espinosa
 coords  360  216
 at  6678
 
+Blockade  6770
+at  6770
+
 spawn  H._espinosa
 coords  360  216
 at  6738
-
-spawn  R._de_Venus
-coords  360  216  100
-flip 1
-at  6770
 
 Blockade  6798
 at  6998

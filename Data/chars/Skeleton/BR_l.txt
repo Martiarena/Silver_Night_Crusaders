@@ -1,0 +1,35 @@
+name	        BR_l
+type	        none
+subject_to_gravity 1
+subject_to_hole	1
+subject_to_platform 1
+subject_to_wall 1
+no_adjust_base	0
+lifespan        2
+noquake 	1
+
+palette 	 data/chars/skeleton/Skeleton_laser_palette.gif
+alternatepal	 data/chars/skeleton/blink.gif
+
+
+anim	idle
+	delay	25
+	offset	6 13
+	bouncefactor	2
+	frame	data/chars/skeleton/br_l.gif
+	delay	6
+	frame	data/chars/skeleton/br_l.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/skeleton/br_l.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/skeleton/br_l.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/skeleton/br_l.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/skeleton/br_l.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/skeleton/br_l.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

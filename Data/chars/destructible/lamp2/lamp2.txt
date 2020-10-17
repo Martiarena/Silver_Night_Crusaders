@@ -10,6 +10,7 @@ setlayer 1
 subject_to_wall 1
 subject_to_obstacle 0
 
+diesound            data/sounds/breakpot.wav
 
 palette 	data/chars/destructible/lamp2/lamp2-pallete.gif
 alternatepal	data/chars/destructible/lamp2/lamp2-pallete_alt.gif
@@ -28,7 +29,6 @@ anim	death
 	spawnframe	0 0 0 0 0
 	delay	8
 	offset	50 50
-	sound	data/sounds/breakpot.wav
 	frame	data/chars/misc/empty.gif
 	frame	data/chars/misc/empty.gif
 		

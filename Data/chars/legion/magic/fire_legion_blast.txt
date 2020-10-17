@@ -53,7 +53,7 @@ anim	idle
 	delay	1
 	offset	17 30
 	hitfx	data/sounds/burnt.wav
-	burn	2 9 27 13 19 11 0 0 0 0
+	burn	2 9 27 13 25 11 0 0 0 0
 	followanim	1
 	followcond	1
 	frame	data/chars/legion/magic/legion_fireblast1a.gif

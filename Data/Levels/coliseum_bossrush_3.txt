@@ -1,0 +1,174 @@
+music		data/music/legion.ogg 3276189
+panel	        data/bgs/coliseum/coliseum_bossrush_2.gif
+
+order           a
+settime	        0
+notime		1
+spawn1          100 0 240
+spawn2          60 0 240
+direction	both
+type		0 0 0
+cameratype 1
+noslow 1
+
+spawn	Coliseum_wall2
+coords  17  459  94
+at 0
+
+spawn	Coliseum_platform1
+coords  80  459  85
+at 0
+
+spawn	Coliseum_platform1
+coords  80  459  170
+at 0
+
+spawn	Coliseum_platform1
+coords  80  459  264
+at 0
+
+spawn	Coliseum_torch1
+coords  113  459  130
+flip	1
+at 0
+
+spawn	Coliseum_torch1
+coords  113  459  260
+flip	1
+at 0
+
+spawn	Coliseum_torch2
+coords  176  459  113
+flip	1
+at 0
+
+spawn	Coliseum_torch2
+coords  176  459  226
+flip	1
+at 0
+
+spawn	Coliseum_torch3
+coords  235  459  109
+flip	1
+at 0
+
+spawn	Coliseum_torch3
+coords  235  459  218
+flip	1
+at 0
+
+spawn	Coliseum_torch3
+coords  343  459  109
+at 0
+
+spawn	Coliseum_torch3
+coords  343  459  218
+at 0
+
+spawn	Coliseum_torch2
+coords  402  459  113
+at 0
+
+spawn	Coliseum_torch2
+coords  402  459  226
+at 0
+
+spawn	Coliseum_torch1
+coords  466  459  130
+at 0
+
+spawn	Coliseum_torch1
+coords  466  459  260
+at 0
+
+spawn	Coliseum_platform1
+coords  496  459  85
+at 0
+
+spawn	Coliseum_platform1
+coords  496  459  170
+at 0
+
+spawn	Coliseum_platform1
+coords  496  459  264
+at 0
+
+spawn	Coliseum_wall2
+coords  563  459  94
+flip	1
+at 0
+
+spawn	Round8
+coords  160 220 0
+flip	1
+at 0
+
+spawn boss_lifebar
+coords  0 1 0
+flip 1
+at  0
+
+spawn Boss7Spawner
+coords  0 459 0
+2pspawn 1
+flip 1
+at  0
+
+spawn  Legion_izqup
+coords  295  459  0
+alias Legion
+flip  1
+at  0
+
+spawn  Legion_core
+coords  290  459  0
+alias Legion
+item	Pollo_frito
+flip 1
+at  0
+
+spawn  Legion_izqup
+coords  280  459  0
+alias Legion
+at  0
+
+spawn dust_legion
+coords 288 459 0
+at  0
+
+spawn  Legion_up
+coords  280  459  0
+alias Legion
+at  0
+
+spawn  Legion_izqdown
+coords  280  459  0
+alias Legion
+at  0
+
+spawn  Legion_izqdown
+coords  295  459  0
+alias Legion
+flip  1
+at  0
+
+spawn  Legion_center
+coords  278  459  0
+alias Legion
+at  0
+
+spawn  Legion_down
+coords  280  459  0
+alias Legion
+at  0
+
+spawn  Legion_izq
+coords  280  459  0
+alias Legion
+at  0
+
+spawn  Legion_izq
+coords  298  459  0
+alias Legion
+flip  1
+at  0

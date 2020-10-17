@@ -1,11 +1,10 @@
 name 		Tomo_Magico
-health          13
+health          12
 nomove  	1
 type		enemy
 cantgrab 	1
 nodrop		2
 death		1
-nolife		1
 Score           300 -1
 hostile         player npc
 candamage       player npc
@@ -13,20 +12,27 @@ antigravity     100
 subject_to_wall 0
 subject_to_obstacle 0
 subject_to_platform 0
+offscreen_noatk_factor 1
 load            MBFBall
 load            edie
 
 defense normal3 2 0 0 0 0 0 0
 defense normal4 2 0 0 0 0 0 0
 defense normal6 3 0 0 0 0 0 0
+defense normal15 2 0 0 0 0 0 0
+defense normal16 2 0 0 0 0 0 0
 defense normal19 2 0 0 0 0 0 0
 defense burn 2 0 0 0 0 0 0
+defense shock 2 0 0 0 0 0 0
 
-icon 		data/chars/misc/bgmonster.gif
+#icon 		data/chars/misc/bgmonster.gif
+icon 		data/chars/magicbook/bgtomo.gif
 
 palette		data/chars/magicbook/magic_book_palette.gif
 
 animationscript data/scripts/cscript.c
+
+
 
 
 
@@ -61,19 +67,22 @@ anim	follow1
 	bbox	15 10 25 30
 	attack	15 10 25 30 6 0 1 1 0 0
 	frame	data/chars/magicbook/idle1a.gif
-	@cmd	target 0.6 0.6 0 -20 1 1
+	@cmd	target 0.6 0.6 0 -20 0 1
 	@cmd	dash 0 0
+	sound	data/sounds/spell.wav
 	frame	data/chars/magicbook/idle1b.gif
+	sound	data/sounds/wingflap.wav
 	frame	data/chars/magicbook/spell1c.gif
 	frame	data/chars/magicbook/spell1b.gif
 	frame	data/chars/magicbook/spell1a.gif
 	frame	data/chars/magicbook/spell1b.gif
 	@cmd	target 1 1 0 0 0 0
-	@cmd	shoot2 "MBFBall" 0 25
+	@cmd	shoot2 "MBFBall" 0 0
+	sound	data/sounds/wingflap.wav
 	frame	data/chars/magicbook/spell1c.gif
 	frame	data/chars/magicbook/idle1b.gif
 	delay	17
-	@cmd	target 0.6 0.6 0 -20 1 1
+	@cmd	target 0.6 0.6 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/magicbook/idle1a.gif
 	delay	1
@@ -98,17 +107,19 @@ anim	idle
 	bbox	15 10 25 30
 	attack	15 10 25 30 6 0 1 1 0 0
 	frame	data/chars/magicbook/idle1a.gif
-	@cmd	target 0.6 0.6 0 -20 1 1
+	@cmd	target 0.6 0.6 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/magicbook/idle1b.gif
+	sound	data/sounds/wingflap.wav
 	frame	data/chars/magicbook/idle1c.gif
 	frame	data/chars/magicbook/idle1b.gif
 	frame	data/chars/magicbook/idle1a.gif
 	frame	data/chars/magicbook/idle1b.gif
+	sound	data/sounds/wingflap.wav
 	frame	data/chars/magicbook/idle1c.gif
 	frame	data/chars/magicbook/idle1b.gif
 	delay	17
-	@cmd	target 0.6 0.6 0 -20 1 1
+	@cmd	target 0.6 0.6 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/magicbook/idle1a.gif
 	delay	1

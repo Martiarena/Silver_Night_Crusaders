@@ -9,15 +9,19 @@ cantgrab 	1
 nopain  	1
 nodrop  	2
 setlayer        150
-score   	2800 1
+score   	2800 -1
 subject_to_wall 0
 subject_to_obstacle 0
 subject_to_platform 0
 antigravity     100
 defense normal 0.75 0 0 0 0 0 0
 defense normal2 0.75 0 0 0 0 0 0
+defense normal6 4 0 0 0 0 0 0
 defense normal7 0.75 0 0 0 0 0 0
-defense schock 0.75 0 0 0 0 0 0
+defense normal15 2 0 0 0 0 0 0
+defense normal16 2 0 0 0 0 0 0
+defense normal21 0.75 0 0 0 0 0 0
+defense shock 4 0 0 0 0 0 0
 diesound  	data/sounds/ghostdie.wav
 
 palette          data/chars/meanlook/meanlook_palette.gif
@@ -30,6 +34,9 @@ icon		data/chars/misc/bgmonster.gif
 
 load      Windspell
 load		MagicSeal
+
+
+
 
 
 
@@ -94,6 +101,7 @@ anim	follow1
 	frame	data/chars/meanlook/idle1c.gif
 	@cmd	target 1.5 1.5 10 0 0 1
 	@cmd	shoot2 "Windspell" 28 5
+	sound	data/sounds/wingflap.wav
 	frame	data/chars/meanlook/idle1a.gif
 	frame	data/chars/meanlook/idle1b.gif
 	frame	data/chars/meanlook/idle1c.gif
@@ -103,6 +111,7 @@ anim	follow1
 	frame	data/chars/meanlook/idle1c.gif
 	@cmd	target 1.5 1.5 10 0 0 1
 	@cmd	shoot2 "Windspell" 28 5
+	sound	data/sounds/wingflap.wav
 	frame	data/chars/meanlook/idle1a.gif
 	frame	data/chars/meanlook/idle1b.gif
 	frame	data/chars/meanlook/idle1c.gif
@@ -120,6 +129,7 @@ anim	follow2
 	frame	data/chars/meanlook/idle1c.gif
 	@cmd	target 1.5 1.5 10 0 0 1
 	@cmd	shoot2 "Windspell" 28 5
+	sound	data/sounds/wingflap.wav
 	frame	data/chars/meanlook/idle1a.gif
 	frame	data/chars/meanlook/idle1b.gif
 	frame	data/chars/meanlook/idle1c.gif
@@ -127,6 +137,7 @@ anim	follow2
 	frame	data/chars/meanlook/idle1b.gif
 	frame	data/chars/meanlook/idle1c.gif
 	@cmd	beidle
+	sound	data/sounds/wingflap.wav
 	frame	data/chars/meanlook/idle1a.gif
 		
 anim	idle
@@ -201,6 +212,7 @@ anim	spawn
 	@cmd	dasher 0 -1 0 1
 	frame	data/chars/meanlook/idle1b.gif
 	frame	data/chars/meanlook/idle1c.gif
+	sound	data/sounds/wingflap.wav
 	frame	data/chars/meanlook/idle1a.gif
 	frame	data/chars/meanlook/idle1b.gif
 	frame	data/chars/meanlook/idle1c.gif
@@ -210,6 +222,7 @@ anim	spawn
 	frame	data/chars/meanlook/idle1a.gif
 	frame	data/chars/meanlook/idle1b.gif
 	frame	data/chars/meanlook/idle1c.gif
+	sound	data/sounds/wingflap.wav
 	frame	data/chars/meanlook/idle1a.gif
 	frame	data/chars/meanlook/idle1b.gif
 	frame	data/chars/meanlook/idle1c.gif
@@ -219,6 +232,7 @@ anim	spawn
 	frame	data/chars/meanlook/idle1a.gif
 	frame	data/chars/meanlook/idle1b.gif
 	frame	data/chars/meanlook/idle1c.gif
+	sound	data/sounds/wingflap.wav
 	frame	data/chars/meanlook/idle1a.gif
 	attack	0 0 0 0 0
 	frame	data/chars/meanlook/idle1b.gif

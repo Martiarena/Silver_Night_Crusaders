@@ -1,0 +1,38 @@
+name	       	Hidden_12
+type            obstacle
+health          1
+antigravity     100
+shadow		0
+offscreenkill	500
+nomove	1
+nolife	1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_gravity 0
+load            C._Arcoiris_
+
+animationscript  data/scripts/escript.c
+
+
+anim	death
+	delay	10
+	offset	2 2
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn02 "C._Arcoiris_" 160 0 0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	5
+	offset	2 2
+	noreflect	1
+	hitfx	data/sounds/no-hit.wav
+	bbox	-2 -2 10 10
+	platform	21 69 -10 -10 10 10 10 10
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

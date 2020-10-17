@@ -16,10 +16,12 @@ palette	data/bgs/castle_entrance/decoration/puerta_castillo1a.gif
 
 
 
+
 anim	idle
 	loop	0
 	offset	34 128
 	delay	14
+	sound	data/sounds/bigdoor.wav
 	frame	data/bgs/castle_entrance/decoration/puerta_castillo2a.gif
 	frame	data/bgs/castle_entrance/decoration/puerta_castillo3a.gif
 	frame	data/bgs/castle_entrance/decoration/puerta_castillo4a.gif

@@ -5,7 +5,7 @@ facing	  	1
 setlayer -1
 antigravity	100
 offscreenkill   9999
-load            Espada_Leg.
+load            Dukuro
 
 animationscript  data/scripts/escript.c
 
@@ -22,7 +22,7 @@ anim	follow1
 	delay	10
 	offset	56 16
 	frame	data/chars/misc/empty.gif
-	@cmd	spawn02 "Espada_Leg." 230 146 0
+	@cmd	spawn02 "Dukuro" 230 146 0
 	frame	data/chars/misc/empty.gif
 	frame	data/chars/misc/empty.gif
 	@cmd	suicide

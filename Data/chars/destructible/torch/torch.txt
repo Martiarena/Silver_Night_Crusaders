@@ -9,6 +9,8 @@ antigravity	100
 subject_to_wall 0
 subject_to_obstacle 0
 
+diesound            data/sounds/candlecut.wav
+
 palette 	 data/bgs/clock_tower/clock_palette_elements.gif
 
 

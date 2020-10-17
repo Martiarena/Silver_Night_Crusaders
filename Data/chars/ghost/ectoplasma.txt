@@ -6,7 +6,7 @@ cantgrab 	1
 nodrop		2
 death		1
 alpha		1
-Score           100 -1
+Score           200 -1
 hostile         player npc
 candamage       player npc
 antigravity     100
@@ -16,6 +16,7 @@ subject_to_platform 0
 
 defense normal3 2 0 0 0 0 0 0
 defense normal6 2 0 0 0 0 0 0
+defense normal15 2 0 0 0 0 0 0
 
 diesound  	data/sounds/ghostdie.wav
 icon 		data/chars/misc/bgmonster.gif
@@ -30,11 +31,10 @@ animationscript data/scripts/cscript.c
 
 
 
+
 anim	death
 	delay	7
 	offset	35 45
-	subentity	pdie
-	spawnframe	0 0 0 0 0
 	frame	data/chars/ghost/death1a.gif
 	delay	3
 	frame	data/chars/ghost/death2a.gif
@@ -69,12 +69,12 @@ anim	idle
 	attack6	15 20 35 20 12 0 1 1 0 0
 	DOT	1 1 3 20 1
 	frame	data/chars/ghost/idle1a.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ghost/idle2a.gif
 	frame	data/chars/ghost/idle3a.gif
 	frame	data/chars/ghost/idle1a.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ghost/idle2a.gif
 	attack6	0

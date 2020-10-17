@@ -12,7 +12,7 @@ palette  	data/bgs/dungeon/dungeon_prisoner.gif
 
 
 anim	idle
-	loop	0
+	loop	1
 	delay	14
 	offset	11 15
 	frame	data/bgs/dungeon/decoration/prisoner3a.gif

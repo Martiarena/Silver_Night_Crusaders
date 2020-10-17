@@ -18,6 +18,8 @@ subject_to_platform 0
 load            edie
 load    Legion_acid_explo
 
+diesound     data/sounds/legion_scream2.wav
+
 defense normal3 2 0 0 0 0 0 0
 defense normal4 2 0 0 0 0 0 0
 defense normal6 3 0 0 0 0 0 0
@@ -79,9 +81,9 @@ anim	idle
 	bbox	7 10 25 25
 	followcond	1
 	followanim	1
-	attack	7 10 25 25 19 0 1 0 0 0
+	attack	7 10 25 25 25 0 1 0 0 0
 	frame	data/chars/legion/minilegions/idle1a.gif
-	@cmd	target 0.9 0.9 0 -20 1 1
+	@cmd	target 0.9 0.9 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/legion/minilegions/idle1b.gif
 	frame	data/chars/legion/minilegions/idle1a.gif
@@ -91,7 +93,7 @@ anim	idle
 	frame	data/chars/legion/minilegions/idle1a.gif
 	frame	data/chars/legion/minilegions/idle1b.gif
 	delay	13
-	@cmd	target 0.9 0.9 0 -20 1 1
+	@cmd	target 0.9 0.9 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/legion/minilegions/idle1a.gif
 	delay	1

@@ -4,14 +4,13 @@ shadow  0
 noatflash 1
 nolife 1
 hostile player npc
-candamage  player enemy npc obstacle
+candamage  player npc obstacle
 
 load Dungeon_up_spike_chain_trap
 
 animationscript  data/scripts/escript.c
 
 palette	 data/bgs/dungeon/dungeon_misc.gif
-
 
 
 
@@ -35,9 +34,9 @@ anim	idle
 	delay	1
 	subentity	Dungeon_up_spike_chain_trap
 	spawnframe	4 0 0 0 0
-	frame	data/chars/misc/empty.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
 	@cmd	killentity getlocalvar("self")
-	frame	data/chars/misc/empty.gif
+	frame	data/bgs/dungeon/traps/spike_chain_trap.gif
 		
 anim	jumpland
 	loop	0

@@ -1,6 +1,7 @@
 name	        Rock3B
 health          1
 type         enemy
+stealth           300
 lifespan  	5
 nomove		1
 nolife          1

@@ -4,7 +4,7 @@ facing	  	1
 antigravity	100
 alpha		1
 setlayer	100
-offscreenkill   9999
+offscreenkill   3500
 
 animationscript  data/scripts/escript.c
 
@@ -12,12 +12,16 @@ palette  	data/bgs/dungeon/decoration/window_dungeon1a.gif
 
 
 
+
 anim	follow1
 	loop	0
 	offset	0 0
-	delay	300
+	delay	370
+	frame	data/chars/misc/empty.gif
+	delay	370
 	frame	data/chars/misc/empty.gif
 	delay	100
+	sound	data/sounds/thunder_clap.wav
 	frame	data/bgs/dungeon/decoration/window_dungeon1a.gif
 	delay	1
 	frame	data/chars/misc/empty.gif
@@ -35,14 +39,18 @@ anim	follow1
 	delay	1
 	@cmd	anichange "ANI_FOLLOW1"
 	frame	data/chars/misc/empty.gif
-
+		
 anim	follow2
 	loop	0
 	offset	0 0
 	delay	300
 	frame	data/chars/misc/empty.gif
+	delay	440
+	frame	data/chars/misc/empty.gif
 	delay	100
+	sound	data/sounds/thunder_clap.wav
 	frame	data/bgs/dungeon/decoration/window_dungeon1b.gif
+	sound	data/sounds/evillaugh.wav
 	delay	1
 	frame	data/chars/misc/empty.gif
 	frame	data/bgs/dungeon/decoration/window_dungeon1b.gif
@@ -59,14 +67,7 @@ anim	follow2
 	delay	1
 	@cmd	anichange "ANI_FOLLOW1"
 	frame	data/chars/misc/empty.gif
-
-
-anim	spawn
-	loop	0
-	offset	0 0
-	delay	1
-	frame	data/chars/misc/empty.gif
-
+		
 anim	idle
 	loop	1
 	offset	0 0
@@ -81,10 +82,13 @@ anim	idle
         changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
       }
     }
-	@end_script
-	delay	300
+	@end_script	
+	delay	640
+	frame	data/chars/misc/empty.gif
+	delay	200
 	frame	data/chars/misc/empty.gif
 	delay	100
+	sound	data/sounds/thunder_clap.wav
 	frame	data/bgs/dungeon/decoration/window_dungeon1a.gif
 	delay	1
 	frame	data/chars/misc/empty.gif
@@ -99,7 +103,12 @@ anim	idle
 	frame	data/bgs/dungeon/decoration/window_dungeon1a.gif
 	delay	600
 	frame	data/chars/misc/empty.gif
-
+		
+anim	spawn
+	loop	0
+	offset	0 0
+	delay	1
+	frame	data/chars/misc/empty.gif
 		
 #|edited by openBor Stats v 0.67
 		

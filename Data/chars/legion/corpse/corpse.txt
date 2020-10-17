@@ -23,6 +23,8 @@ defense normal6 2 0 0 0 0 0 0
 defense normal19 2 0 0 0 0 0 0
 defense burn 2 0 0 0 0 0 0
 
+diesound     data/sounds/legion_scream1.wav
+
 icon 		data/chars/misc/bgmonster.gif
 takedamagescript data/scripts/blink.c
 

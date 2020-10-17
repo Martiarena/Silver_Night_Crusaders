@@ -7,10 +7,12 @@ candamage       player npc
 
 animationscript  data/scripts/escript.c
 
+
 anim	idle
 	delay	5
 	offset	9 21
 	burn	3 18 13 9 12 0 0 0 0 0
+	sound	data/sounds/fire2.wav
 	hitfx	data/sounds/burnt.wav
 	frame	data/chars/misc/espells/fire01.gif
 	frame	data/chars/misc/espells/fire02.gif

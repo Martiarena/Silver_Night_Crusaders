@@ -8,6 +8,8 @@ candamage       player npc  shot
 palette		data/chars/misc/ESpells/ice_spell_palette.gif
 
 
+
+
 anim	idle
 	delay	5
 	offset	13 13

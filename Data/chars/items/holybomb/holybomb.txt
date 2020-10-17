@@ -1,4 +1,4 @@
-name    	Agua_Santa
+name     	Crucifijo
 type    	item
 facing          1
 antigravity	30
@@ -15,8 +15,8 @@ palette		data/chars/items/holybomb/purifier_palette.gif
 anim	idle
 	loop	1
 	delay	70
-	offset	9 22
-	itembox	0 0 15 14
+	offset	10 22
+	itembox	0 0 17 22
 	frame	data/chars/items/holybomb/idle1.gif
 	delay	2
 	frame	data/chars/items/holybomb/idle1a.gif
@@ -24,8 +24,8 @@ anim	idle
 anim	spawn
 	loop	0
 	delay	1
-	offset	9 22
-	itembox	0 0 15 14
+	offset	10 22
+	itembox	0 0 17 22
 	frame	data/chars/items/holybomb/idle1.gif
 	frame	data/chars/items/holybomb/idle1a.gif
 	frame	data/chars/items/holybomb/idle1.gif

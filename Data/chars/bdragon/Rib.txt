@@ -20,6 +20,7 @@ palette	         data/chars/bdragon/head1.gif
 alternatepal	 data/chars/bdragon/blink.gif
 
 
+
 anim	death
 	delay	5
 	offset	9 15
@@ -79,7 +80,7 @@ anim	walk
 	loop	1
 	delay	12
 	offset	9 5
-	attack	2 2 14 14 11 0 0 0 0 0
+	attack	2 2 14 14 12 0 0 0 0 0
 	frame	data/chars/bdragon/rib.gif
 	attack	0
 	frame	data/chars/bdragon/rib.gif

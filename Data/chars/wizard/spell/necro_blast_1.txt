@@ -10,69 +10,49 @@ animationscript data/scripts/cscript.c
 
 palette		data/chars/wizard/brujo_palette.gif
 
+
+
 anim	idle
 	delay	5
 	offset	12 12
-	attack	3 3 19 19 19 0 0 0 0 0
-	@cmd	target 0.8 0.8 0 -20 1 1
+	attack10	3 3 19 19 12 0 0 0 0 0
+	frame	data/chars/wizard/spell/spell1a.gif
+	frame	data/chars/wizard/spell/spell1b.gif
+	frame	data/chars/wizard/spell/spell1c.gif
+	frame	data/chars/wizard/spell/spell1d.gif
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/wizard/spell/spell1a.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/wizard/spell/spell1b.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/wizard/spell/spell1c.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/wizard/spell/spell1b.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/wizard/spell/spell1d.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/wizard/spell/spell1c.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/wizard/spell/spell1b.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
-	@cmd	dash 0 0
 	frame	data/chars/wizard/spell/spell1d.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
-	@cmd	dash 0 0
 	frame	data/chars/wizard/spell/spell1c.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
-	@cmd	dash 0 0
 	frame	data/chars/wizard/spell/spell1b.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
-	@cmd	dash 0 0
 	frame	data/chars/wizard/spell/spell1d.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
-	@cmd	dash 0 0
 	frame	data/chars/wizard/spell/spell1c.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
-	@cmd	dash 0 0
 	frame	data/chars/wizard/spell/spell1b.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
-	@cmd	dash 0 0
 	frame	data/chars/wizard/spell/spell1d.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
-	@cmd	dash 0 0
 	frame	data/chars/wizard/spell/spell1c.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
-	@cmd	dash 0 0
 	frame	data/chars/wizard/spell/spell1b.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
-	@cmd	dash 0 0
 	frame	data/chars/wizard/spell/spell1d.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
-	@cmd	dash 0 0
 	frame	data/chars/wizard/spell/spell1c.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
-	@cmd	dash 0 0
 	frame	data/chars/wizard/spell/spell1b.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
-	@cmd	dash 0 0
 	frame	data/chars/wizard/spell/spell1d.gif
 	frame	data/chars/wizard/spell/spell1c.gif
 	frame	data/chars/wizard/spell/spell1b.gif
@@ -129,14 +109,15 @@ anim	idle
 	frame	data/chars/misc/empty.gif
 	@cmd	groundkill
 	frame	data/chars/wizard/spell/spell1d.gif
-	attack	0
+	attack10	0
 	@cmd	suicide
 	frame	data/chars/misc/empty.gif
 		
 anim	spawn
 	delay	5
 	offset	12 12
-	attack	3 3 19 19 19 0 0 0 0 0
+	attack10	3 3 19 19 12 0 0 0 0 0
+	sound	data/sounds/magic_hit.wav
 	frame	data/chars/wizard/spell/spell1a.gif
 	frame	data/chars/wizard/spell/spell1b.gif
 	frame	data/chars/wizard/spell/spell1c.gif

@@ -1,5 +1,5 @@
 name	    	Nigromante
-health  	80
+health          78
 nomove   	1 1
 type		enemy
 death	 	1
@@ -13,6 +13,10 @@ subject_to_wall 0
 subject_to_obstacle 0
 subject_to_platform 0
 antigravity         100
+offscreen_noatk_factor 1
+
+defense normal6 3 0 0 0 0 0 0
+defense shock 3 0 0 0 0 0 0
 
 palette          data/chars/necromancer/necromancer_palette.gif
 alternatepal     data/chars/necromancer/necromancer_blink_palette.gif
@@ -21,16 +25,20 @@ animationscript  data/scripts/escript.c
 takedamagescript data/scripts/blink.c
 
 
-diesound         data/sounds/die4.wav
+diesound        data/sounds/die4.wav
 icon		data/chars/misc/bgmonster.gif
 
 load    	Fantasma
-load		Esqueleto
+load		Esqueleto_
 load		Zombi
 load		Necro_blast
 load    	Spiral_disapear
 load            MagicSeal
 load 		edie
+
+
+
+
 
 
 
@@ -98,33 +106,35 @@ anim	follow1
 	frame	data/chars/necromancer/spell1a.gif
 	frame	data/chars/necromancer/spell1b.gif
 	frame	data/chars/necromancer/spell1a.gif
+	sound	data/sounds/zombie_spawn.wav
 	@cmd	spawn02 "Zombi" 20 0 0
 	frame	data/chars/necromancer/spell1b.gif
-	@cmd	spawn02 "Esqueleto" 87 0 0
+	@cmd	spawn02 "Esqueleto_" 87 0 0
 	frame	data/chars/necromancer/spell1a.gif
 	@cmd	spawn02 "Zombi" 203 0 0
 	frame	data/chars/necromancer/spell1b.gif
 	frame	data/chars/necromancer/spell1a.gif
 	@cmd	spawn02 "Zombi" 285 0 0
 	frame	data/chars/necromancer/spell1b.gif
-	@cmd	spawn02 "Esqueleto" 310 0 0
+	@cmd	spawn02 "Esqueleto_" 310 0 0
 	frame	data/chars/necromancer/spell1a.gif
 	frame	data/chars/necromancer/spell1b.gif
 	@cmd	spawn02 "Zombi" 242 0 0
 	frame	data/chars/necromancer/spell1a.gif
 	frame	data/chars/necromancer/spell1b.gif
-	delay	30
+	delay	40
 	frame	data/chars/necromancer/idle.gif
-	delay	10
-	frame	data/chars/necromancer/idle.gif
-	subentity	Spiral_disapear
-	spawnframe	19 0 0 0 0
-	frame	data/chars/necromancer/spell1a.gif
-	frame	data/chars/necromancer/spell1b.gif
+	delay	7
 	bbox	0
 	attack	0
-	frame	data/chars/necromancer/idle.gif
-	delay	400
+	frame	data/chars/necromancer/spawn1e.gif
+	subentity	Spiral_disapear
+	spawnframe	19 0 0 0 0
+	frame	data/chars/necromancer/spawn1d.gif
+	frame	data/chars/necromancer/spawn1c.gif
+	frame	data/chars/necromancer/spawn1b.gif
+	frame	data/chars/necromancer/spawn1a.gif
+	delay	200
 	frame	data/chars/misc/empty.gif
 	attack	0
 	@cmd	anichange "ANI_FOLLOW4"
@@ -148,19 +158,19 @@ anim	follow2
 	@cmd	shoot2 "Necro_blast" 0 25
 	frame	data/chars/necromancer/spell1a.gif
 	frame	data/chars/necromancer/spell1b.gif
-	delay	30
+	delay	40
 	frame	data/chars/necromancer/idle.gif
-	delay	10
-	frame	data/chars/necromancer/idle.gif
-	subentity	Spiral_disapear
-	spawnframe	11 0 0 0 0
+	delay	7
 	bbox	0
 	attack	0
-	frame	data/chars/necromancer/spell1a.gif
-	frame	data/chars/necromancer/spell1b.gif
-	frame	data/chars/necromancer/spell1a.gif
-	frame	data/chars/necromancer/spell1b.gif
-	delay	50
+	frame	data/chars/necromancer/spawn1e.gif
+	subentity	Spiral_disapear
+	spawnframe	11 0 0 0 0
+	frame	data/chars/necromancer/spawn1d.gif
+	frame	data/chars/necromancer/spawn1c.gif
+	frame	data/chars/necromancer/spawn1b.gif
+	frame	data/chars/necromancer/spawn1a.gif
+	delay	200
 	frame	data/chars/misc/empty.gif
 	@cmd	anichange "ANI_FOLLOW4"
 	frame	data/chars/misc/empty.gif
@@ -179,6 +189,7 @@ anim	follow3
 	frame	data/chars/necromancer/spell1a.gif
 	frame	data/chars/necromancer/spell1b.gif
 	frame	data/chars/necromancer/spell1a.gif
+	sound	data/sounds/ghost_spawn.wav
 	@cmd	spawn01 "Fantasma" 25 30 0
 	frame	data/chars/necromancer/spell1b.gif
 	frame	data/chars/necromancer/spell1a.gif
@@ -200,19 +211,19 @@ anim	follow3
 	@cmd	spawn01 "Fantasma" 0 -20 0
 	frame	data/chars/necromancer/spell1a.gif
 	frame	data/chars/necromancer/spell1b.gif
-	delay	30
+	delay	40
 	frame	data/chars/necromancer/idle.gif
-	delay	10
-	frame	data/chars/necromancer/idle.gif
-	subentity	Spiral_disapear
-	spawnframe	26 0 0 0 0
+	delay	7
 	bbox	0
 	attack	0
-	frame	data/chars/necromancer/spell1a.gif
-	frame	data/chars/necromancer/spell1b.gif
-	frame	data/chars/necromancer/spell1a.gif
-	frame	data/chars/necromancer/spell1b.gif
-	delay	300
+	frame	data/chars/necromancer/spawn1e.gif
+	subentity	Spiral_disapear
+	spawnframe	25 0 0 0 0
+	frame	data/chars/necromancer/spawn1d.gif
+	frame	data/chars/necromancer/spawn1c.gif
+	frame	data/chars/necromancer/spawn1b.gif
+	frame	data/chars/necromancer/spawn1a.gif
+	delay	200
 	frame	data/chars/misc/empty.gif
 	@cmd	anichange "ANI_FOLLOW4"
 	frame	data/chars/misc/empty.gif
@@ -231,12 +242,16 @@ anim	follow4
 	delay	1
 	offset	40 102
 	frame	data/chars/misc/empty.gif
-	delay	10
-	frame	data/chars/misc/empty.gif
-	delay	10
+	delay	50
 	subentity	Spiral_disapear
 	spawnframe	3 0 0 0 0
 	frame	data/chars/misc/empty.gif
+	delay	7
+	frame	data/chars/necromancer/spawn1a.gif
+	frame	data/chars/necromancer/spawn1b.gif
+	frame	data/chars/necromancer/spawn1c.gif
+	frame	data/chars/necromancer/spawn1d.gif
+	frame	data/chars/necromancer/spawn1e.gif
 	delay	40
 	frame	data/chars/necromancer/idle.gif
 	delay	10
@@ -250,15 +265,19 @@ anim	follow5
 	delay	1
 	offset	40 102
 	frame	data/chars/misc/empty.gif
-	delay	10
 	@cmd	move 200 0 0
 	@cmd	flip
 	frame	data/chars/misc/empty.gif
+	delay	50
 	subentity	Spiral_disapear
 	spawnframe	3 0 0 0 0
 	frame	data/chars/misc/empty.gif
-	delay	40
-	frame	data/chars/necromancer/idle.gif
+	delay	7
+	frame	data/chars/necromancer/spawn1a.gif
+	frame	data/chars/necromancer/spawn1b.gif
+	frame	data/chars/necromancer/spawn1c.gif
+	frame	data/chars/necromancer/spawn1d.gif
+	frame	data/chars/necromancer/spawn1e.gif
 	delay	10
 	bbox	33 52 26 52
 	attack	33 52 26 52 9 0 0 0 0 0
@@ -281,11 +300,17 @@ anim	idle
 		
 anim	spawn
 	loop	0
-	delay	80
+	delay	100
 	offset	40 102
 	subentity	Spiral_disapear
 	spawnframe	1 0 0 0 0
 	frame	data/chars/misc/empty.gif
+	delay	7
+	frame	data/chars/necromancer/spawn1a.gif
+	frame	data/chars/necromancer/spawn1b.gif
+	frame	data/chars/necromancer/spawn1c.gif
+	frame	data/chars/necromancer/spawn1d.gif
+	frame	data/chars/necromancer/spawn1e.gif
 	bbox	33 52 26 52
 	attack	33 52 26 52 9 0 0 0 0 0
 	frame	data/chars/necromancer/idle.gif

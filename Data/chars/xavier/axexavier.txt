@@ -1,0 +1,63 @@
+name		axexavier
+lifespan  	2
+type     none
+hostile		enemy
+candamage       enemy obstacle
+noquake		1
+subject_to_hole	1
+no_adjust_base	0
+death		1
+subject_to_platform 0
+animationscript data/scripts/prscript.c
+palette 	data/chars/items/weapons.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	death
+	loop	0
+	delay	1
+	offset	14 30
+	frame	data/chars/items/axe/idle1.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	offset	14 30
+	hitfx	data/sounds/slash.wav
+	attack2	0 0 29 30 19 0 0 0 0 0
+	sound	data/chars/misc/weap/axe1.wav
+	frame	data/chars/items/axe/idle1.gif
+	@cmd	groundkill
+	hitfx	data/sounds/slash.wav
+	attack2	7 2 23 26 19 0 0 0 0 0
+	frame	data/chars/items/axe/idle2.gif
+	@cmd	groundkill
+	hitfx	data/sounds/slash.wav
+	attack2	2 7 26 23 19 0 0 0 0 0
+	frame	data/chars/items/axe/idle3.gif
+	@cmd	groundkill
+	hitfx	data/sounds/slash.wav
+	attack2	0 2 23 26 19 0 0 0 0 0
+	frame	data/chars/items/axe/idle4.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	14 30
+	sound	data/sounds/throw2.wav
+	frame	data/chars/items/axe/idle1.gif
+		
+#|edited by openBor Stats v 0.67
+		

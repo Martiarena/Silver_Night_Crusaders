@@ -1,0 +1,162 @@
+name	Bafo_shot
+type	none
+candamage player npc
+speedf	0.1
+remove  0
+antigravity      100
+offscreenkill	50
+
+
+
+
+anim	idle
+	delay	1
+	offset	43 43
+	move	1
+	hitfx	data/sounds/burnt.wav
+	frame	data/chars/bafomet/magic/bafo_shot1a.gif
+	delay	3
+	burn	3 3 80 80 25 10 0 0 0 0
+	frame	data/chars/bafomet/magic/bafo_shot1a.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/bafomet/magic/bafo_shot1b.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1b.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/bafomet/magic/bafo_shot1c.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1c.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	move	2
+	drawmethod	256 256 0 0 0 0 0 0 0
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	move	3
+	drawmethod	256 256 0 0 0 0 0 0 0
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	move	4
+	drawmethod	256 256 0 0 0 0 0 0 0
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	move	4
+	drawmethod	256 256 0 0 0 0 0 0 0
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	move	4
+	drawmethod	256 256 0 0 0 0 0 0 0
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	move	4
+	drawmethod	256 256 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1d.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/misc/empty.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1c.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 180
+	burn	0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1b.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/misc/empty.gif
+	delay	3
+	frame	data/chars/bafomet/magic/bafo_shot1a.gif
+	delay	1
+	drawmethod	256 256 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

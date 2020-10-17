@@ -168,6 +168,9 @@ void dasherP( float Vx, float Vy, float Vz , int Flip)
     }
 }
 
+
+
+
 void attack0(void Ani)
 {// Attack interruption
     void self = getlocalvar("self");
@@ -211,6 +214,9 @@ void attack1(int RxMin, int RxMax, int RyMin, int RyMax, void Ani)
       }
     }
 }
+
+
+
 
 void attack2(int RMin, int RMax, void Ani, int Flip)
 {// Attack interruption with range check
@@ -273,6 +279,21 @@ void shooter3(void Shot, float dx, float dy, float Vx, float Vy, int Dir, int Ma
    changeentityproperty(vShot, "map", Map);
 }
 
+void shootB(void Shot, float dx, float dy, int Num)
+{ // Shooting targetted projectile with extra features
+   void self = getlocalvar("self");
+   float Vx = getlocalvar("x"+self);
+   float Vy = getlocalvar("y"+self);
+   void vShot;
+
+   if( Vx!=NULL() && Vy!=NULL() ){
+     vShot = shooter2(Shot, dx, dy, Vx, Vy);
+     setentityvar(self, Num, vShot); // Stores spawned projectile to be killed later
+     changeentityproperty(vShot, "parent", self); //Set caller as parent
+     changeentityproperty(vShot, "velocity", Vx, 0, 2*Vy); //Move projectile towards target!
+   }
+}
+
 void ulurT()
 {// Play ulur.wav if there's player
     void self = getlocalvar("self");
@@ -294,4 +315,26 @@ void spawnbind(void Name, float dx, float dy, float dz)
 
    Spawn = spawn01(Name, dx, dy, 0);
    bindentity(Spawn, self, dx, dz, dy, 0, 0);
+}
+
+void killP(int Num, int Flag)
+{ // Kill projectile based on number
+    void self = getlocalvar("self");
+    void Proj = getentityvar(self, Num);
+
+    if(Proj!=NULL()){
+      if(Flag==1){
+        damageentity(Proj, self, 1000, 0, openborconstant("ATK_NORMAL"));
+      } else {
+        killentity(Proj);
+      }
+    }
+}
+
+void floater( int Time )
+{// Floats in Time centiseconds
+    void self = getlocalvar("self");
+    int eTime = openborvariant("elapsed_time");
+
+    changeentityproperty(self, "tosstime", eTime + 2*Time);
 }

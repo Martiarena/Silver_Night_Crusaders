@@ -16,20 +16,62 @@ palette 	data/bgs/clock_tower/decoration/clock_palette.gif
 
 anim	idle
 	loop	0
-	delay	6000
+	delay	300
 	offset	97 97
 	frame	data/bgs/clock_tower/decoration/clock1a.gif
+	delay	6000
+	sound	data/sounds/clock-gear.wav
 	frame	data/bgs/clock_tower/decoration/clock1b.gif
+	delay	70
+	sound	data/sounds/clock-gear.wav
 	frame	data/bgs/clock_tower/decoration/clock1c.gif
+	delay	140
+	sound	data/sounds/clock-time.wav
+	frame	data/bgs/clock_tower/decoration/clock1c.gif
+	sound	data/sounds/clock-time.wav
+	frame	data/bgs/clock_tower/decoration/clock1c.gif
+	sound	data/sounds/clock-time.wav
+	frame	data/bgs/clock_tower/decoration/clock1c.gif
+	sound	data/sounds/clock-time.wav
+	frame	data/bgs/clock_tower/decoration/clock1c.gif
+	sound	data/sounds/clock-time.wav
+	frame	data/bgs/clock_tower/decoration/clock1c.gif
+	sound	data/sounds/clock-time.wav
+	frame	data/bgs/clock_tower/decoration/clock1c.gif
+	sound	data/sounds/clock-time.wav
+	frame	data/bgs/clock_tower/decoration/clock1c.gif
+	sound	data/sounds/clock-time.wav
+	frame	data/bgs/clock_tower/decoration/clock1c.gif
+	sound	data/sounds/clock-time.wav
+	frame	data/bgs/clock_tower/decoration/clock1c.gif
+	sound	data/sounds/clock-time.wav
+	frame	data/bgs/clock_tower/decoration/clock1c.gif
+	sound	data/sounds/clock-time.wav
+	frame	data/bgs/clock_tower/decoration/clock1c.gif
+	delay	4390
+	frame	data/bgs/clock_tower/decoration/clock1c.gif
+	delay	6000
+	sound	data/sounds/clock-gear.wav
 	frame	data/bgs/clock_tower/decoration/clock1d.gif
+	sound	data/sounds/clock-gear.wav
 	frame	data/bgs/clock_tower/decoration/clock1e.gif
+	sound	data/sounds/clock-gear.wav
 	frame	data/bgs/clock_tower/decoration/clock1f.gif
+	sound	data/sounds/clock-gear.wav
 	frame	data/bgs/clock_tower/decoration/clock1g.gif
+	sound	data/sounds/clock-gear.wav
 	frame	data/bgs/clock_tower/decoration/clock1h.gif
+	sound	data/sounds/clock-gear.wav
 	frame	data/bgs/clock_tower/decoration/clock1i.gif
+	sound	data/sounds/clock-gear.wav
 	frame	data/bgs/clock_tower/decoration/clock1j.gif
+	sound	data/sounds/clock-gear.wav
 	frame	data/bgs/clock_tower/decoration/clock1k.gif
+	sound	data/sounds/clock-gear.wav
 	frame	data/bgs/clock_tower/decoration/clock1l.gif
+	sound	data/sounds/clock-gear.wav
 	frame	data/bgs/clock_tower/decoration/clock1m.gif
+	sound	data/sounds/clock-gear.wav
 	frame	data/bgs/clock_tower/decoration/clock1n.gif
+	sound	data/sounds/clock-gear.wav
 	frame	data/bgs/clock_tower/decoration/clock1o.gif

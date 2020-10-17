@@ -1,0 +1,623 @@
+music		data/music/prisonpurgatory.ogg 637951
+
+panel	        data/bgs/dungeon/dungeon_b.gif
+
+fglayer		data/bgs/dungeon/back_dungeon.gif -10000 0.3 0.3 0 0 0 0 -1 1 1 0 0 0 0 0 1
+#fglayer		data/bgs/castle_entrance/castle_trees.gif -11000 0.5 0.5 0 0 0 0 -1 1 1 0 0 0 0 0 1
+#fglayer		data/bgs/castle_entrance/castle_wall_1.gif -12000 0.6 0.6 0 0 0 0 -1 1 1 0 0 0 0 0 1
+#fglayer		data/bgs/castle_entrance/castle_towers.gif -13000 0.8 0.8 0 0 0 0 -1 1 1 0 0 0 0 0 1
+#fglayer		data/bgs/castle_entrance/castle_sky.gif -14000 0.9 0.9 0 0 0 0 -1 1 1 0 0 0 0 0 1
+order           a
+settime	        0
+notime		1
+spawn1          80 0 240
+spawn2          40 0 240
+direction	both
+type		0 0 0
+cameratype 1
+Hole  1926  248  0  0  60  60  35
+Hole  1990  248  0  0  113  113  35
+Hole  2107  248  0  0  63  63  35
+
+
+spawn  Dungeon_wall1u
+coords  7  216  0
+at  0
+
+spawn  Dead
+coords  70  216  168
+at  0
+
+spawn  Stairs_1
+coords  79  216  0
+at  0
+
+spawn	window_dungeon_2
+coords  131  216  185
+flip  1
+at  0
+
+spawn	window_dungeon_rain
+coords  131  216  185
+flip  1
+at  0
+
+spawn  Skull_dungeon
+coords  179  216  0
+flip  1
+at  0
+
+spawn  dungeon_platform1b
+coords  207  216  131
+flip  1
+at  0
+
+spawn  Dead
+coords  280  216  168
+at  0
+
+spawn  Prisoner_3
+coords  312  216
+at  0
+
+spawn  dungeon_platform1c
+coords  398  216  130
+flip  1
+at  0
+
+spawn  Sword_dungeon
+coords  450  216  0
+flip  1
+at  0
+
+spawn  Prisoner_2
+coords  499  216  0
+at  0
+
+spawn  Dungeon_wall1p
+coords  568  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Dungeon_wall1r
+coords  601  216  0
+alias	Thick
+at  0
+
+spawn  Dungeon_wall1p
+coords  632  216  0
+flip  1
+alias	Thick
+at  0
+
+spawn  Dungeon_wall1r
+coords  665  216  0
+alias	Thick
+at  0
+
+spawn  Dungeon_wall1p
+coords  696  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Dungeon_spike_trap5
+coords  708  216  170
+flip  1
+at  0
+
+spawn  Dungeon_wall1r
+coords  729  216  0
+alias	Thick
+at  0
+
+spawn  Skull_dungeon
+coords  730  216  15
+flip  1
+map 1
+at  0
+
+spawn  Dungeon_wall1p
+coords  760  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Dungeon_wall1r
+coords  793  216  0
+alias	Thick
+at  0
+
+spawn  Dungeon_wall1p
+coords  824  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Dead
+coords  890  216  168
+at  0
+
+spawn  dungeon_platform1c
+coords  957  216  90
+flip  1
+at  0
+
+spawn  Prisoner_1
+coords  985  216  0
+at  0
+
+spawn  dungeon_platform1c
+coords  1005  216  90
+flip  1
+at  0
+
+spawn  dungeon_platform1c
+coords  1053  216  90
+flip  1
+at  0
+
+spawn  Skull_dungeon
+coords  1074  216  0
+at  0
+
+spawn  dungeon_platform1c
+coords  1101  216  90
+flip  1
+at  0
+
+spawn  Prisoner_3
+coords  1145  216
+at  0
+
+spawn  Dungeon_wall1v
+coords  1181  216  0
+alias	Thick
+at  0
+
+spawn  Dungeon_spike_chain_trap
+coords  1182  216  169
+flip  1
+at  0
+
+spawn  Prisoner_2
+coords  1211  216  113
+at  0
+
+spawn  Prisoner_3
+coords  1259  216  112
+at  0
+
+spawn  Skull_dungeon
+coords  1260  216  0
+at  0
+
+spawn  Skull_dungeon
+coords  1350  216  0
+flip  1
+at  0
+
+spawn  dungeon_platform1c
+coords  1261  216  90
+flip  1
+at  0
+
+spawn  dungeon_platform1c
+coords  1309  216  90
+flip  1
+at  0
+
+spawn  Prisoner_1
+coords  1323  216  113
+at  0
+
+spawn  dungeon_platform1c
+coords  1357  216  90
+flip  1
+at  0
+
+spawn  Prisoner_1
+coords  1375  216  0
+at  0
+
+spawn  Prisoner_2
+coords  1447  216  113
+at  0
+
+spawn  Dungeon_wall1v
+coords  1484  216  0
+alias	Thick
+at  0
+
+spawn  Dungeon_spike_chain_trap
+coords  1485  216  168
+flip  1
+at  0
+
+spawn  Sword_dungeon
+coords  1504  216  32
+at  0
+
+spawn  Prisoner_2
+coords  1534  216  0
+at  0
+
+spawn  dungeon_platform1c
+coords  1565  216  90
+flip  1
+at  0
+
+spawn  dungeon_platform1c
+coords  1613  216  90
+flip  1
+at  0
+
+spawn  Skull_dungeon
+coords  1642  217  0
+flip  1
+at  0
+
+spawn  Prisoner_1
+coords  1644  216
+at  0
+
+spawn  Sword_dungeon
+coords  1660  216  110
+at  0
+
+spawn  dungeon_platform1c
+coords  1661  216  90
+flip  1
+at  0
+
+spawn  dungeon_platform1c
+coords  1709  216  90
+flip  1
+at  0
+
+spawn  Dead
+coords  1800  216  168
+at  0
+
+spawn  Skull_dungeon
+coords  1843  216  0
+at  0
+
+spawn  dungeon_platform1b
+coords  1894  216  75
+flip  1
+at  0
+
+spawn  dungeon_platform1a
+coords  1991  216  93
+flip  1
+at  0
+
+spawn  dungeon_platform1a
+coords  2106  216  25
+flip  1
+at  0
+
+spawn  Dungeon_wall1q
+coords  2241  216  91
+alias	Thick
+flip  1
+at  0
+
+spawn  Dungeon_wall1s
+coords  2777  216  89
+alias	Thick
+flip  1
+at  0
+
+spawn  Dungeon_wall1t
+coords  3555  216  87
+alias	Thick
+flip  1
+at  0
+
+spawn  Stairs_2
+coords  3612  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Barril
+coords  43  216  0
+item  Ectoplasma
+at  0
+
+spawn  Candle1
+coords  100  216  70
+item  ___10
+at  0
+
+spawn  Candle1
+coords  240  216  70
+item  ___20
+at  0
+
+spawn  E._Carmesi
+coords  300  216
+at  0
+
+spawn  E._Carmesi
+coords  240  216
+at  0
+
+spawn  dungeon_platform1c
+coords  1365  216  90
+flip  1
+at  40
+
+spawn  Candle1
+coords  350  216  70
+item  Biblia
+map 1
+at  44
+
+spawn  E._Electrico
+coords  360  216
+at  120
+
+spawn  Candle1
+coords  350  216  70
+item  ___50
+at  195
+
+spawn  Pike_trap_2
+coords  360  216  50
+flip  1
+at  233
+
+spawn  EctoSpawner
+coords  340  216
+at  250
+
+spawn  Pike_trap_2
+coords  360  216  50
+flip  1
+at  297
+
+spawn  Pike_trap_2
+coords  360  216  50
+flip  1
+#at  361
+at  361
+
+spawn  Hidden_11
+coords  360  216  10
+flip  1
+at  375
+
+spawn  Pike_trap_2
+coords  360  216  50
+flip  1
+at  425
+
+spawn  Pike_trap_2
+coords  360  216  50
+flip  1
+at  490
+
+spawn  Barril
+coords  350  216  0
+item  P._Podrido
+at  550
+
+spawn  Candle1
+coords  350  216  155
+item  ___20
+at  603
+
+spawn  Candle1
+coords  350  216  60
+item  ___20
+at  603
+
+spawn  Mimic
+coords  360  216 10
+at  660
+
+spawn  E._Electrico
+coords  350  216  110
+at  680
+
+spawn  Candle1
+coords  350  216  155
+item  Mimic
+at  754
+
+spawn  Candle1
+coords  340  216  60
+item  ___50
+at  765
+
+Blockade  870
+at  870
+
+spawn  Candle1
+coords  350  216  155
+item  ___250
+at  906
+
+spawn  Candle1
+coords  350  216  60
+item  ___100
+at  906
+
+spawn  E._Carmesi
+coords  360  216
+at  940
+
+spawn  E._Carmesi
+coords  350  216  110
+at  1000
+
+spawn  Candle1
+coords  350  216  155
+item  ___50
+at  1058
+
+spawn  Candle1
+coords  350  216  60
+item  Mimic
+at  1058
+
+Blockade  1130
+at  1130
+
+spawn  Candle1
+coords  350  216  155
+item  Mimic
+at  1210
+
+spawn  Candle1
+coords  350  216  60
+item  ___400
+at  1210
+
+spawn  E._Electrico
+coords  360  216
+at  1260
+
+spawn  E._Carmesi
+coords  360  216  110
+at  1300
+
+spawn  Candle1
+coords  350  216  155
+item  ___50
+at  1362
+
+spawn  Candle1
+coords  350  216  60
+item  ___100
+at  1363
+
+spawn  Barril
+coords  360  216  0
+item  P._Podrido
+at  1400
+
+Blockade  1460
+at  1460
+
+spawn  Brujo
+coords  360  216  50
+at  1460
+
+spawn  EctoSpawner
+coords  340  216
+at  1700
+
+spawn  Candle1
+coords  350  216  65
+item  ___100
+at  1950
+
+spawn  CorpseSpawners
+coords  360  216  0
+flip 1
+at  2075
+
+spawn  Back_dungeon
+coords  150  0  0
+flip 1
+at  2090
+
+spawn  Brujo
+coords  360  216  50
+at  2100
+
+Blockade  2170
+at  2170
+
+spawn  CorpseSpawners
+coords  360  216  0
+flip 1
+at  2220
+
+spawn  E._Electrico
+coords  -50  216
+at  2260
+
+spawn  Brujo
+coords  360  216  50
+at  2260
+
+spawn  Candle1
+coords  350  216  66
+item  ___100
+at  2365
+
+spawn  Glass_tube
+coords  360  216  18
+flip 1
+at  2525
+
+spawn  Candle1
+coords  350  216  75
+item  ___100
+at  2583
+
+spawn  Glass_tube
+coords  360  216  18
+flip 1
+at  2620
+
+spawn  Candle1
+coords  350  216  75
+item  ___250
+at  2680
+
+Blockade  2715
+at  2715
+
+spawn  Glass_tube
+coords  360  216  18
+flip 1
+at  2715
+
+spawn  Glass_tube
+coords  360  216  18
+flip 1
+at  2860
+
+spawn  Candle1
+coords  350  216  75
+item  Gema_roja
+at  2918
+
+
+spawn  Glass_tube
+coords  360  216  18
+flip 1
+at  2955
+
+spawn  Candle1
+coords  350  216  75
+item  ___50
+at  3015
+
+spawn  Glass_tube
+coords  360  216  18
+flip 1
+at  3050
+
+spawn  Candle1
+coords  360  216  60
+item  Bomba
+map 1
+at  3140
+
+spawn  CorpseSpawners
+coords  360  216  0
+flip 1
+at  3178
+
+spawn  ToEntrance
+coords  350  216  0
+flip  1
+at  3250

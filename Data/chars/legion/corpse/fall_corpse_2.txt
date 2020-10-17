@@ -3,6 +3,7 @@ health		1
 type    	enemy
 lifespan  	5
 nomove		1
+stealth  300
 nolife          1
 death		1
 antigravity	50

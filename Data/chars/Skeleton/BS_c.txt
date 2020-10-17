@@ -2,12 +2,13 @@ name	        BS_c
 type	        none
 subject_to_gravity 1
 subject_to_hole	1
+subject_to_platform 1
+subject_to_wall 1
 no_adjust_base	0
 lifespan        2
 noquake 	1
 
-palette 	 data/chars/skeleton/skeleton_golden.gif
-alternatepal	 data/chars/skeleton/blink.gif
+palette 	 data/chars/skeleton/skeleton_red.gif
 
 anim	idle
 	delay	25
@@ -27,6 +28,7 @@ anim	idle
 	frame	data/chars/misc/empty.gif
 	frame	data/chars/skeleton/bs.gif
 	frame	data/chars/misc/empty.gif
+		
 		
 #|edited by openBor Stats v 0.67
 		

@@ -1,0 +1,26 @@
+name	        Tail_impact
+type	        none
+nolife          1
+setlayer	40
+
+animationscript  data/scripts/escript.c
+
+palette          data/chars/countess/finalform/tail_hit1b.gif
+
+anim	idle
+	loop	0
+	delay	7
+	offset	56 50
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	loop	0
+	delay	7
+	offset	56 50
+	frame	data/chars/countess/finalform/tail_hit1b.gif
+	frame	data/chars/countess/finalform/tail_hit1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,176 @@
+name  		Firehell1a
+nomove  	1
+type  none
+cantgrab 	1
+nodrop		2
+death		1
+nodieblink      1
+falldie		1
+nolife		1
+hostile         player npc
+candamage       player npc
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+
+diesound  	data/sounds/ghostdie.wav
+
+palette  	data/chars/countess/magic/firehell1a.gif
+
+animationscript data/scripts/cscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	1
+	offset	10 80
+	frame	data/chars/countess/magic/firehell1g.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1g.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1g.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1g.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1h.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1h.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1h.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1i.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1i.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1i.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1i.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1j.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1j.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1j.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1k.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1k.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1k.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1k.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1l.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1l.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1l.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1m.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1m.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1m.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1m.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1a.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	10 80
+	frame	data/chars/countess/magic/firehell1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1b.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1d.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1e.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1f.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/countess/magic/firehell1f.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

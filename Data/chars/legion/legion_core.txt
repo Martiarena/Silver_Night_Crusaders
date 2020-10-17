@@ -21,20 +21,24 @@ lifebarstatus 5 101 1 0 1 -300 -300 -300 -300
 lifeposition 309 15
 nameposition -500 -500
 iconposition -500 -500
+defense normal 0.75 0 0 0 0 0 0
+defense normal2 0.75 0 0 0 0 0 0
+defense normal3 0.5 0 0 0 0 0 0
+defense normal4 0.5 0 0 0 0 0 0
+defense normal5 0.25 0 0 0 0 0 0
 defense normal6 0.5 0 0 0 0 0 0
-defense normal7 1.25 0 0 0 0 0 0
 defense normal8 0.25 0 0 0 0 0 0
 defense normal9 2 0 0 0 0 0 0
 defense normal19 0.25 0 0 0 0 0 0
 defense normal20 0 0 0 0 0 0 0
-defense burn 0.25 0 0 0 0 0 0
-defense schock 0.75 0 0 0 0 0 0
+defense normal21 0.75 0 0 0 0 0 0
+defense burn 0.75 0 0 0 0 0 0
 load    ShadeFire
 load    Legion_bomb
 load	legion_die
 load Fire_Legion_blast
 
-diesound  data/sounds/chest.wav
+diesound  data/sounds/legiondie.wav
 
 icon		data/chars/misc/bgmonster.gif
 
@@ -42,6 +46,8 @@ palette          data/chars/legion/legion_core_palette.gif
 alternatepal     data/chars/legion/legion_core_blink_palette.gif
 animationscript  data/scripts/escript.c
 takedamagescript data/scripts/blink.c
+
+
 
 
 
@@ -263,6 +269,7 @@ anim	follow2
 	delay	2
 	frame	data/chars/legion/legion_core5e.gif
 	delay	4
+	sound	data/sounds/throw1.wav
 	@cmd	targetB 120 32 -20 1
 	@cmd	toss2 "Legion_bomb" -81 75 3
 	frame	data/chars/legion/legion_core5f.gif
@@ -277,6 +284,7 @@ anim	follow2
 	frame	data/chars/legion/legion_core5f.gif
 	delay	4
 	frame	data/chars/legion/legion_core5f.gif
+	sound	data/sounds/throw1.wav
 	@cmd	targetB 120 32 -20 1
 	@cmd	toss2 "Legion_bomb" -81 75 3
 	frame	data/chars/legion/legion_core5f.gif
@@ -331,6 +339,7 @@ anim	follow3
 	frame	data/chars/legion/legion_core4b.gif
 	offset	155 168
 	frame	data/chars/legion/legion_core4a.gif
+	sound	data/sounds/explosion-fire.wav
 	frame	data/chars/legion/legion_core4a.gif
 	delay	1
 	@cmd	anichange "ANI_FOLLOW4"
@@ -399,6 +408,7 @@ anim	follow5
 	frame	data/chars/legion/legion_core6d.gif
 	frame	data/chars/legion/legion_core6d.gif
 	offset	155 164
+	sound	data/sounds/explosion-fire.wav
 	@cmd	spawn01 "Fire_Legion_blast" 0 -120 0
 	frame	data/chars/legion/legion_core6e.gif
 	frame	data/chars/legion/legion_core6f.gif
@@ -431,6 +441,7 @@ anim	spawn
 	offset	155 168
 	movea	1
 	delay	50
+	sound	data/sounds/burnt.wav
 	frame	data/chars/legion/legion_core1a.gif
 	frame	data/chars/legion/legion_core1a.gif
 	delay	1

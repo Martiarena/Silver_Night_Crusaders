@@ -1,6 +1,7 @@
 name		axev
 lifespan  	2
 health          3
+stealth         300
 type            enemy
 candamage       player npc
 noquake		1

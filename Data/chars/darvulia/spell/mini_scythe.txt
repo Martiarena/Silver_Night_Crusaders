@@ -1,0 +1,109 @@
+name	        Mini_Scythe
+type         enemy
+health		1
+nolife          1
+stealth         300
+lifespan        5
+nodieblink	2
+death 		1
+falldie		1
+nopain          1
+nomove          1 0
+antigravity     100
+candamage       player npc
+hostile         player npc
+subject_to_wall 0
+subject_to_platform 0
+subject_to_gravity  0
+
+animationscript data/scripts/prscript.c
+
+load	explo
+
+palette		data/chars/darvulia/spell/scythe_idle1a.gif
+
+
+anim	death
+	delay	7
+	offset	10 10
+	subentity	explo
+	spawnframe	1 0 0 0 0
+	frame	data/chars/darvulia/spell/scythe_spawn1d.gif
+	frame	data/chars/darvulia/spell/scythe_spawn1c.gif
+	frame	data/chars/darvulia/spell/scythe_spawn1b.gif
+	frame	data/chars/darvulia/spell/scythe_spawn1a.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1 7 12
+	delay	1
+	offset	10 10
+	hitfx	data/sounds/slash.wav
+	bbox	0 0 21 21
+	attack2	0 0 21 21 12 0 0 0 0 0
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/darvulia/spell/scythe_idle1a.gif
+	@cmd	target 0.8 0.8 0 -20 0 1
+	@cmd	dash 0 0
+	@cmd	groundkill
+	frame	data/chars/darvulia/spell/scythe_idle1a.gif
+	@cmd	target 0.8 0.8 0 -20 0 1
+	@cmd	dash 0 0
+	@cmd	groundkill
+	frame	data/chars/darvulia/spell/scythe_idle1a.gif
+	@cmd	target 0.8 0.8 0 -20 0 1
+	@cmd	dash 0 0
+	@cmd	groundkill
+	frame	data/chars/darvulia/spell/scythe_idle1a.gif
+	@cmd	target 0.8 0.8 0 -20 0 1
+	@cmd	dash 0 0
+	@cmd	groundkill
+	frame	data/chars/darvulia/spell/scythe_idle1a.gif
+	@cmd	target 0.8 0.8 0 -20 0 1
+	@cmd	dash 0 0
+	@cmd	groundkill
+	frame	data/chars/darvulia/spell/scythe_idle1a.gif
+	@cmd	target 0.8 0.8 0 -20 0 1
+	@cmd	dash 0 0
+	@cmd	groundkill
+	frame	data/chars/darvulia/spell/scythe_idle1a.gif
+	delay	7
+	@cmd	groundkill
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/darvulia/spell/scythe_idle1a.gif
+	@cmd	groundkill
+	drawmethod	256 256 0 0 0 0 0 0 360
+	frame	data/chars/darvulia/spell/scythe_idle1a.gif
+	@cmd	groundkill
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/chars/darvulia/spell/scythe_idle1a.gif
+	delay	6
+	@cmd	groundkill
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/darvulia/spell/scythe_idle1a.gif
+	delay	1
+	@cmd	groundkill
+	attack2	0 0 0 0 0 0 0 0
+	frame	data/chars/darvulia/spell/scythe_idle1a.gif
+		
+anim	spawn
+	loop	0
+	delay	7
+	offset	10 10
+	frame	data/chars/darvulia/spell/scythe_spawn1a.gif
+	frame	data/chars/darvulia/spell/scythe_spawn1b.gif
+	frame	data/chars/darvulia/spell/scythe_spawn1a.gif
+	frame	data/chars/darvulia/spell/scythe_spawn1b.gif
+	frame	data/chars/darvulia/spell/scythe_spawn1a.gif
+	frame	data/chars/darvulia/spell/scythe_spawn1b.gif
+	frame	data/chars/darvulia/spell/scythe_spawn1c.gif
+	frame	data/chars/darvulia/spell/scythe_spawn1d.gif
+	delay	1
+	@cmd	target 0.8 0.8 0 -20 0 1
+	@cmd	dash 0 0
+	frame	data/chars/darvulia/spell/scythe_idle1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

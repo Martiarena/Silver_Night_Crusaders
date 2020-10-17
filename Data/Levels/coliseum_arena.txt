@@ -1,0 +1,1646 @@
+music		data/music/battle_arena.ogg 1570419
+panel	        data/bgs/coliseum/coliseum_arena.gif
+
+order           a
+settime	        0
+notime		1
+spawn1          260 0 240
+spawn2          200 0 240
+direction	both
+type		0 0 0
+cameratype 1
+noslow 1
+
+
+
+spawn	Coliseum_wall2
+coords  17  216  94
+at 0
+
+spawn	Coliseum_torch1
+coords  65  216  130
+flip	1
+at 0
+
+spawn	Coliseum_platform1
+coords  100  216  90
+at 0
+
+spawn	Coliseum_torch2
+coords  126  216  113
+flip	1
+at 0
+
+spawn	Coliseum_torch3
+coords  185  216  109
+flip	1
+at 0
+
+spawn	Coliseum_torch3
+coords  297  216  109
+at 0
+
+spawn	Coliseum_torch2
+coords  356  216  113
+at 0
+
+spawn	Coliseum_platform1
+coords  380  216  90
+at 0
+
+spawn	Coliseum_torch1
+coords  417  216  130
+at 0
+
+spawn	Coliseum_wall2
+coords  466  216  94
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round1
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 2 2
+at 0
+
+spawn  C._Demonio
+coords  360  216  0
+at 0
+
+spawn  Gargola
+coords  80  216  260
+at 0
+
+spawn  Gargola
+coords  240  216  260
+at 0
+
+spawn  C._Demonio
+coords  -40  216  0
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round2
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 3 3
+at 0
+
+spawn  Flamataura
+coords  360  216  0
+at 0
+
+spawn  Fantasma
+coords  40  216  190
+at 0
+
+spawn  Fantasma
+coords  220  216  220
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 3 3
+at 0
+
+spawn  Flamataura
+coords  -40  216  0
+at 0
+
+spawn  Fantasma
+coords  240  216  170
+at 0
+
+spawn  Fantasma
+coords  80  216  140
+at 0
+
+spawn  Fantasma
+coords  260  216  150
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 3 3
+at 0
+
+spawn  Flamataura
+coords  -40  216  0
+at 0
+
+spawn  Fantasma
+coords  100  216  140
+at 0
+
+spawn  Fantasma
+coords  50  216  190
+at 0
+
+spawn  Fantasma
+coords  90  216  200
+at 0
+
+spawn  Flamataura
+coords  360  216  0
+at 0
+
+spawn  Fantasma
+coords  240  216  220
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round3
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 3 3
+at 0
+
+spawn  G._demonio
+coords  360  216  0
+at 0
+
+spawn  Arana_
+coords  50  216  220
+at 0
+
+spawn  Arana_
+coords  260  216  220
+at 0
+
+spawn  Arana_
+coords  140  216  220
+at 0
+
+spawn  C._Demonio
+coords  -40  216  0
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 4 4
+at 0
+
+spawn  G._demonio
+coords  -40  216  0
+at 0
+
+spawn  C._Demonio
+coords  360  216  0
+at 0
+
+spawn  Arana_
+coords  170  216  220
+at 0
+
+spawn  Arana_
+coords  80  216  220
+at 0
+
+spawn  Arana_
+coords  200  216  220
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round4
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 17 17
+at 0
+
+spawn  T._de_huesos
+coords  80  216  220
+at 0
+
+spawn  P._de_huesos
+coords  80  216  250
+at 0
+
+spawn  T._de_huesos_
+coords  80  216  280
+at 0
+
+spawn  P._de_huesos
+coords  80  216  310
+at 0
+
+spawn	Cuervo
+coords  100  216  97
+flip 1
+at 0
+
+spawn	Cuervo
+coords  220  216  78
+at 0
+
+spawn  P._de_huesos
+coords  230  216  220
+at 0
+
+spawn  T._de_huesos
+coords  230  216  250
+at 0
+
+spawn  P._de_huesos_
+coords  230  216  280
+at 0
+
+spawn  T._de_huesos
+coords  40  216  260
+at 0
+
+spawn  P._de_huesos
+coords  40  216  290
+at 0
+
+spawn  T._de_huesos_
+coords  40  216  320
+at 0
+
+spawn  Cuervo
+coords  20  216  0
+at 0
+
+spawn  P._de_huesos
+coords  270  216  220
+at 0
+
+spawn  T._de_huesos
+coords  270  216  250
+at 0
+
+spawn  P._de_huesos_
+coords  270  216  280
+at 0
+
+spawn  Cuervo
+coords  300  216  0
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round5
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 3 3
+at 0
+
+spawn  Zombi
+coords  20  216  0
+at 0
+
+spawn  Zombi
+coords  280  216  0
+at 0
+
+spawn  ___250
+coords  100  216  240
+at 0
+
+spawn  Zombi
+coords  120  216  0
+at 0
+
+spawn  Zombi
+coords  40  216  0
+at 0
+
+spawn  Zombi
+coords  200  216  0
+at 0
+
+spawn  ___250
+coords  220  216  240
+at 0
+
+spawn  Zombi
+coords  160  216  0
+at 0
+
+spawn  ___250
+coords  50  216  240
+at 0
+
+spawn  Zombi
+coords  240  216  0
+at 0
+
+spawn  ___250
+coords  270  216  240
+at 0
+
+spawn  Zombi
+coords  120  216  0
+at 0
+
+spawn  Zombi
+coords  40  216  0
+2pitem Pollo_frito
+at 0
+
+spawn  ___250
+coords  170  216  240
+at 0
+
+spawn  Zombi
+coords  200  216  0
+item 	Pollo_frito
+at 0
+
+spawn  Zombi
+coords  80  216  0
+at 0
+
+spawn  Zombi
+coords  280  216  0
+item	Gema_azul
+at 0
+
+spawn  Zombi
+coords  160  216  0
+at 0
+
+spawn  ___400
+coords  120  216  240
+at 0
+
+spawn  Zombi
+coords  240  216  0
+2pitem Gema_azul
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round6
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 4 4
+at 0
+
+spawn  Segador
+coords  -40  216  0
+at 0
+
+spawn  Segador
+coords  360  216  0
+at 0
+
+spawn  Esqueleto_
+coords  40  216  0
+at 0
+
+spawn  Esqueleto_
+coords  280  216  0
+at 0
+
+spawn  Esqueleto_
+coords  120  216  0
+at 0
+
+spawn  E._electrico
+coords  80  216  0
+at 0
+
+spawn  Esqueleto_
+coords  240  216  0
+at 0
+
+spawn  E._electrico
+coords  160  216  0
+at 0
+
+spawn  Segador
+coords  -40  216  0
+at 0
+
+spawn  Segador
+coords  360  216  0
+at 0
+
+spawn  E._laser
+coords  280  216  0
+at 0
+
+spawn  E._laser
+coords  40  216  0
+at 0
+
+spawn  Esqueleto_
+coords  80  216  0
+at 0
+
+spawn  Esqueleto_
+coords  200  216  0
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round7
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 2 2
+at 0
+
+spawn  J._Anfauglir
+coords  360  216  0
+at 0
+
+spawn  Tomo_magico
+coords  50  216  250
+at 0
+
+group 3 3
+at 0
+
+spawn  Tomo_magico
+coords  260  216  250
+at 0
+
+spawn  J._Anfauglir
+coords  -40  216  0
+at 0
+
+spawn  Tomo_magico
+coords  140  216  250
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 3 3
+at 0
+
+spawn  J._Anfauglir
+coords  360  216  0
+at 0
+
+spawn  J._Anfauglir
+coords  -40  216  0
+at 0
+
+spawn  Tomo_magico
+coords  170  216  250
+at 0
+
+group 2 2
+at 0
+
+spawn  Tomo_magico
+coords  80  216  250
+at 0
+
+spawn  J._Anfauglir
+coords  -40  216  0
+at 0
+
+spawn  Tomo_magico
+coords  110  216  250
+at 0
+
+spawn  Tomo_magico
+coords  200  216  250
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round8
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 3 3
+at 0
+
+spawn  Ninfa
+coords  360  216  0
+at 0
+
+spawn  Ectoplasma
+coords  80  216  180
+at 0
+
+spawn  Ectoplasma
+coords  200  216  210
+at 0
+
+spawn  Ninfa
+coords  -40  216  0
+at 0
+
+spawn  Ectoplasma
+coords  240  216  200
+at 0
+
+spawn  Ectoplasma
+coords  80  216  200
+at 0
+
+spawn  Ectoplasma
+coords  120  216  170
+at 0
+
+spawn  Ninfa
+coords  -40  216  0
+at 0
+
+spawn  Ectoplasma
+coords  240  216  160
+at 0
+
+spawn  Ectoplasma
+coords  80  216  140
+at 0
+
+spawn  Ectoplasma
+coords 260  216  200
+at 0
+
+spawn  Ninfa
+coords  360  216  0
+at 0
+
+spawn  Ectoplasma
+coords  240  216  190
+at 0
+
+spawn  Ectoplasma
+coords  40  216  170
+at 0
+
+spawn  Ectoplasma
+coords  100  216  180
+at 0
+
+spawn  Ectoplasma
+coords  200  216  140
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round9
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 3 3
+at 0
+
+spawn	Cuervo
+coords  100  216  78
+flip 1
+at 0
+
+spawn	Cuervo
+coords  220  216  78
+flip 1
+at 0
+
+spawn  Dragon_wall
+coords  0  216  280
+flip 1
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 3 3
+at 0
+
+spawn  Dragon_wall
+coords  320  216  280
+at 0
+
+spawn	Cuervo
+coords  220  216  78
+flip 1
+at 0
+
+spawn	Cuervo
+coords  100  216  78
+flip 1
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round10
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 3 3
+at 0
+
+spawn  Loda
+coords  80  216  0
+at 0
+
+spawn  Loda
+coords  280  216  0
+at 0
+
+spawn  ___250
+coords  100  216  240
+at 0
+
+spawn  Loda
+coords  160  216  0
+at 0
+
+spawn  Loda
+coords  120  216  0
+at 0
+
+spawn  Loda
+coords  280  216  0
+at 0
+
+spawn  ___400
+coords  220  216  240
+at 0
+
+spawn  Loda
+coords  160  216  0
+at 0
+
+spawn  ___250
+coords  50  216  240
+at 0
+
+spawn  Loda
+coords  240  216  0
+at 0
+
+spawn  ___400
+coords  270  216  240
+at 0
+
+spawn  Loda
+coords  120  216  0
+item	Gema_roja
+at 0
+
+spawn  Loda
+coords  40  216  0
+item 	Pollo_frito
+at 0
+
+spawn  ___400
+coords  170  216  240
+at 0
+
+spawn	Loda
+coords  200  216  0
+at 0
+
+spawn  Loda
+coords  200  216  0
+at 0
+
+spawn  Loda
+coords  20  216  0
+2pitem Pollo_frito
+at 0
+
+spawn  Loda
+coords  240  216  0
+at 0
+
+spawn  ___700
+coords  120  216  240
+at 0
+
+spawn  Loda
+coords  40  216  0
+2pitem Gema_roja
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round11
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 2 2
+at 0
+
+spawn  Nigromante
+coords  60  216  0
+flip	1
+at 0
+
+spawn  Nigromante
+coords  280  216  0
+at 0
+
+spawn  Ente_helado
+coords  50  216  90
+at 0
+
+spawn  Ente_helado
+coords  160  216  120
+at 0
+
+spawn  Ente_helado
+coords  260  216  100
+at 0
+
+spawn  Ente_helado
+coords  120  216  130
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round12
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 3 3
+at 0
+
+spawn  Golem
+coords  60  216  280
+at 0
+
+spawn  Golem
+coords  280  216  280
+at 0
+
+spawn  Arana_
+coords  50  216  220
+at 0
+
+spawn  Arana_
+coords  260  216  220
+at 0
+
+spawn  Arana_
+coords  140  216  220
+at 0
+
+spawn  Arana_
+coords  110  216  220
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 3 3
+at 0
+
+spawn  Golem
+coords  120  216  280
+at 0
+
+spawn  Arana_
+coords  200  216  220
+at 0
+
+spawn  Arana_
+coords  140  216  220
+at 0
+
+spawn  Arana_
+coords  80  216  220
+at 0
+
+spawn  Golem
+coords  220  216  280
+at 0
+
+spawn  Arana_
+coords  60  216  220
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round13
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 3 3
+at 0
+
+spawn  Brujo
+coords  100  216  60
+at 0
+
+spawn  P._Asesino
+coords  360  216  0
+at 0
+
+spawn  P._Asesino
+coords  -40  216  0
+at 0
+
+spawn  Brujo
+coords  220  216  60
+at 0
+
+spawn  P._Asesino
+coords  360  216  0
+at 0
+
+spawn  P._Asesino
+coords  -40  216  0
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 3 3
+at 0
+
+spawn  Brujo
+coords  140  216  60
+at 0
+
+spawn  P._Asesino
+coords  360  216  0
+at 0
+
+spawn  P._Asesino
+coords  -40  216  0
+at 0
+
+spawn  Brujo
+coords  200  216  60
+at 0
+
+spawn  P._Asesino
+coords  360  216  0
+at 0
+
+spawn  P._Asesino
+coords  -40  216  0
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round14
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 10 10
+at 0
+
+spawn  Cazadora
+coords  80  216  0
+flip	1
+at 0
+
+spawn  Cazadora
+coords  230  216  0
+at 0
+
+spawn  T._de_huesos
+coords  40  216  260
+at 0
+
+spawn  P._de_huesos
+coords  40  216  290
+at 0
+
+spawn  T._de_huesos_
+coords  40  216  320
+at 0
+
+spawn  P._de_huesos
+coords  40  216  350
+at 0
+
+spawn  P._de_huesos
+coords  270  216  220
+at 0
+
+spawn  T._de_huesos
+coords  270  216  250
+at 0
+
+spawn  P._de_huesos_
+coords  270  216  280
+at 0
+
+spawn  T._de_huesos
+coords  270  216  320
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round15
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 4 4
+at 0
+
+spawn  Sahagin_
+coords  80  216  260
+at 0
+
+spawn  Sahagin_
+coords  -40  216  0
+at 0
+
+spawn  ___400
+coords  100  216  240
+at 0
+
+spawn  Sahagin_
+coords  240  216  260
+at 0
+
+spawn  Sahagin_
+coords  340  216  0
+at 0
+
+spawn  Sahagin_
+coords  50  216  260
+at 0
+
+spawn  ___250
+coords  220  216  240
+at 0
+
+spawn  Sahagin_
+coords  -30  216  0
+at 0
+
+spawn  ___700
+coords  50  216  240
+at 0
+
+spawn  Sahagin_
+coords  340  216  0
+at 0
+
+spawn  ___400
+coords  270  216  240
+at 0
+
+spawn  Sahagin_
+coords  120  216  260
+item	Gema_roja
+at 0
+
+spawn 	Sahagin_
+coords  -30  216  0
+at 0
+
+spawn  ___700
+coords  170  216  240
+at 0
+
+spawn  Sahagin_
+coords  200  216  260
+item 	Pollo_frito
+at 0
+
+spawn  Sahagin_
+coords  340  216  0
+at 0
+
+spawn  Sahagin_
+coords  -30  216  0
+2pitem Pollo_frito
+at 0
+
+spawn  Sahagin_
+coords  90  216  260
+at 0
+
+spawn  ___700
+coords  120  216  240
+at 0
+
+spawn  Sahagin_
+coords  50  216  260
+2pitem	Gema_roja
+at 0
+
+spawn  Sahagin_
+coords  -30  216  0
+at 0
+
+spawn  Sahagin_
+coords  340  216  0
+at 0
+
+spawn  Sahagin_
+coords  70  216  260
+2pitem	C._Arcoiris
+at 0
+
+spawn  Sahagin_
+coords  290  216  0
+item	C._Arcoiris
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round16
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 6 6
+at 0
+
+spawn  H._espinosa
+coords  40  216  0
+at 0
+
+spawn  Driade_
+coords  100  216  0
+at 0
+
+spawn  Driade_
+coords  220  216  0
+at 0
+
+spawn  H._espinosa
+coords  280  216  0
+at 0
+
+spawn  R._de_venus
+coords  50  216  130
+at 0
+
+spawn  R._de_venus
+coords  270  216  130
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 5 5
+at 0
+
+spawn  R._de_venus
+coords  110  216  130
+at 0
+
+spawn  R._de_venus
+coords  210  216  130
+at 0
+
+spawn  H._espinosa
+coords  120  216  0
+at 0
+
+spawn  Driade_
+coords  160  216  0
+at 0
+
+spawn  H._espinosa
+coords  200  216  0
+at 0
+
+group 3 3
+at 0
+
+spawn  Gargola
+coords  50  216  250
+at 0
+
+spawn  Gargola
+coords  140  216  250
+at 0
+
+spawn  Gargola
+coords  110  216  250
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round17
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 3 3
+at 0
+
+spawn  Charmandra
+coords  -40  216  0
+at 0
+
+spawn  Charmandra
+coords  360  216  0
+at 0
+
+spawn  M._Maligna
+coords  80  216  320
+at 0
+
+spawn  Charmandra
+coords  -40  216  0
+at 0
+
+spawn  Charmandra
+coords  360  216  0
+at 0
+
+spawn  M._Maligna
+coords  240  216  320
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round18
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 2 2
+at 0
+
+spawn  La_criatura_
+coords  80  216  280
+flip 1
+at 0
+
+spawn  La_criatura_
+coords  240  216  280
+at 0
+
+group 2 2
+at 0
+
+spawn  La_criatura_
+coords  240  216  280
+at 0
+
+group 3 3
+at 0
+
+spawn  C._demonio
+coords  -40  216  0
+at 0
+
+spawn  C._demonio
+coords  360  216  0
+at 0
+
+spawn  C._demonio
+coords  -40  216  0
+at 0
+
+spawn  C._demonio
+coords  360  216  0
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round19
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 3 3
+at 0
+
+spawn  E._Carmesi
+coords  50  216  280
+at 0
+
+spawn  E._Carmesi
+coords  270  216  280
+at 0
+
+spawn	D._Zombi
+coords  -40  216  0
+flip	1
+at 0
+
+group 5 5
+at 0
+
+spawn  E._Carmesi
+coords  50  216  280
+at 0
+
+spawn  E._Carmesi
+coords  270  216  280
+at 0
+
+spawn	D._Zombi_
+coords  360  216  0
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round20
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 4 4
+at 0
+
+spawn  ___250
+coords  50  216  260
+at 0
+
+spawn  Chiroptera
+coords  340  216  0
+at 0
+
+spawn  Chiroptera
+coords  -20  216  90
+flip 1
+at 0
+
+spawn  Mimic
+coords  270  216  260
+at 0
+
+spawn  Chiroptera
+coords  340  216  60
+at 0
+
+spawn  Chiroptera
+coords  -20  216  40
+flip 1
+at 0
+
+spawn  ___400
+coords  220  216  260
+at 0
+
+spawn  Chiroptera
+coords  340  216  40
+item	pollo_frito
+at 0
+
+spawn  Chiroptera
+coords  -20  216  20
+flip 1
+at 0
+
+spawn  ___700
+coords  150  216  260
+at 0
+
+spawn  Mimic
+coords  100  216  260
+map 2
+at 0
+
+spawn  Chiroptera
+coords  340  216  80
+at 0
+
+
+spawn  ___700
+coords  170  216  260
+at 0
+
+spawn  Chiroptera
+coords  -20  216  70
+item	gema_roja
+flip 1
+at 0
+
+spawn  Chiroptera
+coords  340  216  20
+at 0
+
+spawn  Mimic
+coords  250  216  260
+map 3
+at 0
+
+spawn  Chiroptera
+coords  -20  216  60
+flip 1
+at 0
+
+spawn  ___700
+coords  120  216  260
+at 0
+
+spawn  Chiroptera
+coords  340  216  100
+at 0
+
+spawn  Mimic
+coords  300  216  260
+map 3
+at 0
+
+spawn  Chiroptera
+coords  -20  216  0
+flip 1
+item	C._Arcoiris
+at 0
+
+spawn  ___700
+coords  60  216  260
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn	Round21
+coords  160  240  0
+flip	1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+group 2 2
+at 0
+
+spawn  Bafomet
+coords  80  216  0
+flip	1
+at 0
+
+spawn  Bafomet
+coords  240  216  0
+at 0
+
+group 3 3
+at 0
+
+spawn  Bafomet
+coords  160  216  0
+at 0
+
+spawn  E._Laser
+coords  80  216  0
+at 0
+
+spawn  E._Laser
+coords  280  216  0
+at 0
+
+spawn  E._Laser
+coords  160  216  0
+at 0
+
+spawn  E._Laser
+coords  120  216  0
+at 0
+
+spawn  Gargola
+coords  50  216  250
+at 0
+
+spawn  Gargola
+coords  230  216  250
+at 0
+
+group 1 1
+at 0
+
+spawn	Fake_enemy_2
+coords  0  216  240
+at 0
+
+spawn  orbe_lunar
+coords  160  216  150
+at 0

@@ -1,5 +1,5 @@
-bossmusic	data/music/boss.ogg 367353
-#music		data/music/castlewalls.ogg
+bossmusic	data/music/legion.ogg 3276189
+music		data/music/prisonpurgatory.ogg 637951
 
 
 fglayer		data/bgs/dungeon/dungeon_catacombs_back_1.gif -10000 0.15 0.2 0 0 0 0 -1 1 1 0 0 0 0 0 1
@@ -8,10 +8,7 @@ fglayer		data/bgs/dungeon/dungeon_catacombs_back_3.gif -12000 0.21 0.3 0 0 0 0 -
 fglayer		data/bgs/dungeon/dungeon_catacombs_back_4.gif -13000 0.24 0.35 0 0 0 0 -1 1 1 0 0 0 0 0 1
 fglayer		data/bgs/dungeon/dungeon_catacombs_back_5.gif -14000 0.28 0.4 0 0 0 0 -1 1 1 0 0 0 0 0 1
 
-
-#panel	        data/bgs/debbug/recorder_gif.gif
-#panel	        data/bgs/dungeon/dungeon_debbug.gif
-panel	        data/bgs/dungeon/dungeon_catacombs_1.gif
+panel	        data/bgs/dungeon/dungeon_catacombs.gif
 
 musicfade	200
 order           a
@@ -19,98 +16,217 @@ settime	        0
 notime		1
 spawn1          80 0 240
 spawn2          40 0 240
-direction	both
+direction	leftright
 type		0 0 0
 cameratype 1
 noslow 1
 
 spawn  Catacombs_wall1b
-coords  8  464  0
+coords  314  464  0
+flip 1
+at  0
+
+spawn  Platform_plaza3
+coords  268  464  360
+flip 1
+at  0
+
+spawn  Platform_plaza3
+coords  267  464  205
+flip 1
+at  0
+
+spawn  Platform_plaza0
+coords  174  464  307
+flip 1
+at  0
+
+spawn  Platform_plaza0
+coords  169  464  98
+flip 1
+at  0
+
+spawn  Platform_plaza3
+coords  71  464  205
+flip 1
+at  0
+
+spawn  Platform_plaza3
+coords  82  464  360
+flip 1
 at  0
 
 spawn  Catacombs_wall1a
-coords  312  464  89
+coords  14  464  88
+flip 1
 at  0
 
 spawn  dungeon_platform1c
-coords  392  464  85
+coords  -67  464  85
+flip 1
 at  0
 
 spawn  dungeon_platform1c
-coords  392  464  170
+coords  -67  464  170
+flip 1
 at  0
 
 spawn  dungeon_platform1c
-coords  392  464  264
+coords  -67  464  264
+flip 1
 at  0
 
 spawn  skull_catacombs
-coords  603  464  0
+coords  -283  464  0
+flip 1
 at  0
 
 spawn  dungeon_platform1c
-coords  808  464  75
+coords  -486  464  75
+flip 1
 at  0
 
 spawn  dungeon_platform1c
-coords  808  464  155
+coords  -486  464  155
+flip 1
 at  0
 
 spawn  dungeon_platform1c
-coords  808  464  265
+coords  -486  464  265
+flip 1
 at  0
 
 spawn  Catacombs_wall1c
-coords  862  464  89
+coords  -540  464  89
+flip 1
 at  0
 
 spawn  Stairs_1
-coords  60  464  0
+coords  260  464  0
+flip 1
+at  0
+
+spawn Darvulia_witch_1
+coords  20  464  0
+flip 1
 at  0
 
 spawn  Barril
-coords  70  464  0
+coords  160  464  0
 item  Pollo_frito
+flip 1
 at  0
 
 spawn  Barril
 coords  120  464  0
 item  ___700
+flip 1
+at  0
+
+spawn  Mimic
+coords  268  464  380
+map 3
+flip 1
 at  0
 
 spawn  Candle1
-coords  89  464  75
+coords  265  464  165
+item  ___100
+flip 1
+at  0
+
+spawn  Candle1
+coords  265  464  320
+item  ___100
+flip 1
+at  0
+
+spawn  Candle1
+coords  169  464  165
 item  Gema_roja
+flip 1
+at  0
+
+spawn  Candle1
+coords  169  464  270
+item  ___100
+flip 1
+at  0
+
+spawn  ___700
+coords  82  464  380
+flip 1
+at  0
+
+spawn  Candle1
+coords  73  464  165
+item  ___100
+flip 1
+at  0
+
+spawn  Candle1
+coords  80  464  320
+item  ___100
+flip 1
+at  0
+
+spawn  Candle1
+coords  119  464  75
+item  Bomba
+map 1
+flip 1
 at  0
 
 spawn  Candle1
 coords  217  464  75
-item  Bomba
-map 1
+item  ___50
+flip 1
+at  0
+
+spawn  Corpse_
+coords  70  464  0
+at  0
+
+spawn  Corpse_
+coords  40  464  0
+at  0
+
+spawn  Corpse_
+coords  20  464  0
 at  0
 
 spawn  Candle1
-coords  360  464  55
-item  ___50
-at  31
-
-spawn  Candle1
-coords  360  464  140
+coords  -36  464  55
 item  ___100
-at  31
+flip 1
+at  30
 
 spawn  Candle1
-coords  360  464  230
+coords  -36  464  140
+item  ___100
+flip 1
+at  30
+
+spawn  Candle1
+coords  -36  464  230
 item  Gema_azul
-at  31
+flip 1
+at  30
 
 spawn  Candle1
-coords  360  464  325
+coords  -36  464  325
 item  Hacha
 map 1
-at  31
+flip 1
+at  30
 
 Blockade  345
+at  145
+
+spawn Boss7Spawner
+coords  0 244 0
+2pspawn 1
+flip 1
 at  145
 
 spawn boss_lifebar
@@ -119,86 +235,91 @@ flip 1
 at  145
 
 spawn dust_legion
-coords 458 496 0
+coords -138 496 0
 flip 1
 at  145
 
 spawn  Legion_core
-coords  460  464  0
+coords  -140  464  0
 alias Legion
+flip 1
 boss 1
 at  145
 
 spawn  Legion_izqup
-coords  450  464  0
-alias Legion
-at  145
-
-spawn  Legion_izqup
-coords  465  464  0
+coords  -130  464  0
 flip 1
 alias Legion
 at  145
 
+spawn  Legion_izqup
+coords  -145  464  0
+alias Legion
+at  145
+
 spawn  Legion_up
-coords  450  464  0
+coords  -130  464  0
 alias Legion
+flip 1
 at  145
 
 spawn  Legion_izqdown
-coords  450  464  0
+coords  -130  464  0
 alias Legion
+flip 1
 at  145
 
 spawn  Legion_izqdown
-coords  465  464  0
-flip  1
+coords  -145  464  0
 alias Legion
 at  145
 
 spawn  Legion_izq
-coords  450  464  0
+coords  -130  464  0
 alias Legion
+flip 1
 at  145
 
 spawn  Legion_izq
-coords  465  464  0
-flip  1
+coords  -145  464  0
 alias Legion
 at  145
 
 spawn  Legion_down
-coords  450  464  0
+coords  -130  464  0
+flip 1
 alias Legion
 at  145
 
 spawn  Legion_center
-coords  448  464  0
+coords  -128  464  0
+flip 1
 alias Legion
 at  145
 
-spawn	Boss7Spawner
-coords  0 0 0
-2pspawn 1
-at  145
-
 spawn  Candle1
-coords  360  464  55
-item  Gema_roja
+coords  -38  464  55
+flip 1
+item  ___100
 at  450
 
 spawn  Candle1
-coords  360  464  140
-item  Bumeran
+coords  -38  464  140
+item  Gema_roja
+flip 1
 map 1
 at  450
 
 spawn  Barril
-coords  360  464  175
-item  P._Invisible
+coords  -38  464  175
+item  Pollo_frito
+flip 1
 at  450
 
-spawn  Barril
-coords  360  464  285
-item  Pollo_frito
+spawn  Candle1
+coords  -38  464  325
+item  Bumeran
+flip 1
+map 1
 at  450
+

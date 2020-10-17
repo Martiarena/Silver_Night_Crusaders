@@ -1,0 +1,48 @@
+name	        Breakglass1g
+type	        none
+subject_to_gravity 1
+subject_to_hole	1
+no_adjust_base	0
+lifespan        2
+noquake 	1
+
+palette 	data/bgs/dungeon/decoration/glasstube/breakglass1g.gif
+
+animationscript data/scripts/fscript.c
+
+
+
+
+anim	idle
+	delay	6
+	offset	12 12
+	bouncefactor	2
+	drawmethod	256 256 0 0 0 0 0 0 0
+	frame	data/bgs/dungeon/decoration/glasstube/breakglass1g.gif
+	drawmethod	256 256 0 0 0 0 0 0 45
+	frame	data/bgs/dungeon/decoration/glasstube/breakglass1g.gif
+	drawmethod	256 256 0 0 0 0 0 0 90
+	frame	data/bgs/dungeon/decoration/glasstube/breakglass1g.gif
+	drawmethod	256 256 0 0 0 0 0 0 135
+	frame	data/bgs/dungeon/decoration/glasstube/breakglass1g.gif
+	delay	3
+	drawmethod	256 256 0 0 0 0 0 0 180
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/dungeon/decoration/glasstube/breakglass1g.gif
+	drawmethod	256 256 0 0 0 0 0 0 225
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/dungeon/decoration/glasstube/breakglass1g.gif
+	drawmethod	256 256 0 0 0 0 0 0 270
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/dungeon/decoration/glasstube/breakglass1g.gif
+	drawmethod	256 256 0 0 0 0 0 0 315
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/dungeon/decoration/glasstube/breakglass1g.gif
+	drawmethod	256 256 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	frame	data/bgs/dungeon/decoration/glasstube/breakglass1g.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

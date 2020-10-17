@@ -54,7 +54,6 @@ anim	idle
 	followanim	1
 	followcond	1
 	attack8	0 10 25 5 12 0 0 0 0 0
-	DOT	1 100 4 1 20
 	bbox	0 7 25 10
 	hitfx	data/sounds/slash.wav
 	frame	data/chars/driade/rose.gif

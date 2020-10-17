@@ -1,0 +1,82 @@
+name	Iceberg
+type	none
+candamage enemy shot
+speed 6
+subject_to_platform 1
+offscreenkill	100
+animationscript data/scripts/cscript.c
+
+palette		data/chars/xavier/magic/iceberg1a.gif
+
+
+
+
+
+
+
+anim	death
+	loop	0
+	delay	4
+	offset	134 118
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	0
+	offset	23 83
+	delay	5
+	hitfx	data/sounds/icebreak.wav
+	attack7	9 39 25 43 9 0 0 0 0 0
+	frame	data/chars/xavier/magic/iceberg1a.gif
+	delay	10
+	hitfx	data/sounds/icebreak.wav
+	attack7	13 15 28 68 9 0 0 0 0 0
+	frame	data/chars/xavier/magic/iceberg1b.gif
+	delay	5
+	hitfx	data/sounds/icebreak.wav
+	attack7	16 15 25 68 9 0 0 0 0 0
+	frame	data/chars/xavier/magic/iceberg1c.gif
+	hitfx	data/sounds/icebreak.wav
+	attack7	18 40 18 40 6 0 0 0 0 0
+	frame	data/chars/xavier/magic/iceberg1d.gif
+	attack7	0
+	frame	data/chars/misc/empty.gif
+	move	8
+	delay	5
+	hitfx	data/sounds/icebreak.wav
+	attack7	9 39 25 43 9 0 0 0 0 0
+	frame	data/chars/xavier/magic/iceberg1a.gif
+	delay	10
+	hitfx	data/sounds/icebreak.wav
+	attack7	13 15 28 68 9 0 0 0 0 0
+	frame	data/chars/xavier/magic/iceberg1b.gif
+	delay	5
+	hitfx	data/sounds/icebreak.wav
+	attack7	16 15 25 68 9 0 0 0 0 0
+	frame	data/chars/xavier/magic/iceberg1c.gif
+	hitfx	data/sounds/icebreak.wav
+	attack7	18 40 18 40 6 0 0 0 0 0
+	frame	data/chars/xavier/magic/iceberg1d.gif
+	attack7	0
+	frame	data/chars/misc/empty.gif
+	move	8
+	delay	5
+	hitfx	data/sounds/icebreak.wav
+	attack7	9 39 25 43 9 0 0 0 0 0
+	frame	data/chars/xavier/magic/iceberg1a.gif
+	delay	10
+	hitfx	data/sounds/icebreak.wav
+	attack7	13 15 28 68 9 0 0 0 0 0
+	frame	data/chars/xavier/magic/iceberg1b.gif
+	delay	5
+	hitfx	data/sounds/icebreak.wav
+	attack7	16 15 25 68 9 0 0 0 0 0
+	frame	data/chars/xavier/magic/iceberg1c.gif
+	hitfx	data/sounds/icebreak.wav
+	attack7	18 40 18 40 6 0 0 0 0 0
+	frame	data/chars/xavier/magic/iceberg1d.gif
+	attack7	0
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

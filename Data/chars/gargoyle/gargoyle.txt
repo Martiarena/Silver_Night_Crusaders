@@ -17,16 +17,22 @@ candamage 	player npc
 
 defense normal4 3 0 0 0 0 0 0
 defense normal6 2 0 0 0 0 0 0
+defense normal15 2 0 0 0 0 0 0
+defense normal16 2 0 0 0 0 0 0
 defense normal19 0.5 0 0 0 0 0 0
 defense burn 0.5 0 0 0 0 0 0
 
-icon 		data/chars/misc/bggargola.gif
+icon 		data/chars/gargoyle/bggargola.gif
 
 palette         data/chars/gargoyle/gargoyle_palette.gif
 alternatepal    data/chars/gargoyle/gargoyle_blink.gif
 
 animationscript data/scripts/cscript.c
 takedamagescript data/scripts/blink.c
+
+
+
+
 
 
 
@@ -133,6 +139,7 @@ anim	follow1
 	attack	8 40 53 23 9 0 0 0 0 0
 	frame	data/chars/gargoyle/attack1c.gif
 	frame	data/chars/gargoyle/attack1d.gif
+	sound	data/sounds/wingflap.wav
 	frame	data/chars/gargoyle/attack1e.gif
 	@cmd	target 3 3 0 0 1 1
 	@cmd	dash 0 0
@@ -141,6 +148,7 @@ anim	follow1
 	frame	data/chars/gargoyle/attack1c.gif
 	frame	data/chars/gargoyle/attack1d.gif
 	attack	0
+	sound	data/sounds/wingflap.wav
 	frame	data/chars/gargoyle/attack1e.gif
 		
 anim	idle
@@ -158,6 +166,7 @@ anim	pain
 	delay	10
 	offset	30 87
 	frame	data/chars/gargoyle/idle1.gif
+	sound	data/sounds/wingflap.wav
 	@cmd	dasher -3 0 0 1
 	frame	data/chars/gargoyle/idle2.gif
 	frame	data/chars/gargoyle/idle3.gif
@@ -180,10 +189,12 @@ anim	spawn
 	frame	data/chars/gargoyle/idle2.gif
 	frame	data/chars/gargoyle/idle1.gif
 	frame	data/chars/gargoyle/idle2.gif
+	sound	data/sounds/wingflap.wav
 	frame	data/chars/gargoyle/idle3.gif
 	frame	data/chars/gargoyle/idle2.gif
 	frame	data/chars/gargoyle/idle1.gif
 	frame	data/chars/gargoyle/idle2.gif
+	sound	data/sounds/wingflap.wav
 	frame	data/chars/gargoyle/idle3.gif
 	frame	data/chars/gargoyle/idle1.gif
 		

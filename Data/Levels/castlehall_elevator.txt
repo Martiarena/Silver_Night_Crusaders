@@ -1,0 +1,97 @@
+music		data/music/hard_fight.ogg 19200
+
+background	data/bgs/castlehall/back_elevator_1.gif
+
+panel	        data/bgs/castlehall/castlehall_2.gif
+
+order           a
+settime	        0
+notime		1
+spawn1          159 -365 240
+spawn2          158 -365 240
+direction	up
+type		0 0 0
+cameratype 1
+
+Hole  -10  240  0  0  40 40 45
+Hole  211  240  85  85  160  160  45
+
+spawn  Castlehall_platform1a
+coords  160  216  70
+flip  1
+at  0
+
+spawn  Xavier
+coords  210  216
+at  0
+
+spawn	Ani_chain_up
+coords	20 216 100
+flip 1
+at 0
+
+spawn	Ani_chain_down
+coords	305 216 100
+flip 1
+at 0
+
+spawn Candle1
+coords  45  216  70
+item ___100
+flip 1
+at  0
+
+spawn Candle1
+coords  45  216  140
+item ___100
+flip 1
+at  0
+
+spawn Candle1
+coords  275  216  70
+item ___100
+flip 1
+at  0
+
+spawn Candle1
+coords  275  216  140
+item ___100
+flip 1
+at  0
+
+spawn Candle1
+coords  160  216  120
+item Crucifijo
+flip 1
+at  0
+
+spawn  Cazadora
+coords  65  216
+flip 1
+at  0
+
+spawn  Cazadora
+coords  260  216
+at  0
+
+group	2 2
+at	0
+
+spawn  E._Laser
+coords  80  216
+at  0
+
+spawn  E._Laser
+coords  135  216
+at  0
+
+spawn  E._Laser
+coords  185  216
+at  0
+
+spawn  E._Laser
+coords  270  216
+at  0
+
+
+

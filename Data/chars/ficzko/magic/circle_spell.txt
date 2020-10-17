@@ -45,63 +45,64 @@ anim	idle
 	followanim	1
 	@cmd	target 0.8 0.8 0 -20 1 1
 	@cmd	dash 0 0
+	hitfx	data/sounds/burnt.wav
 	burn	5 6 16 16 19 0 0 0 0 0
 	frame	data/chars/ficzko/magic/spawn3i.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ficzko/magic/spawn3i.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ficzko/magic/spawn3i.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ficzko/magic/spawn3i.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ficzko/magic/spawn3i.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ficzko/magic/spawn3i.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ficzko/magic/spawn3i.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ficzko/magic/spawn3i.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ficzko/magic/spawn3i.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ficzko/magic/spawn3i.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ficzko/magic/spawn3i.gif
-	@cmd	target 0.8 0.8 0 -20 1 1
+	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ficzko/magic/spawn3i.gif
-	@cmd	target 0.9 0.9 0 -20 1 1
+	@cmd	target 0.9 0.9 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ficzko/magic/spawn3i.gif
-	@cmd	target 0.9 0.9 0 -20 1 1
+	@cmd	target 0.9 0.9 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ficzko/magic/spawn3i.gif
-	@cmd	target 0.9 0.9 0 -20 1 1
+	@cmd	target 0.9 0.9 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ficzko/magic/spawn3i.gif
-	@cmd	target 0.9 0.9 0 -20 1 1
+	@cmd	target 0.9 0.9 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ficzko/magic/spawn3i.gif
-	@cmd	target 1 1 0 -20 1 1
+	@cmd	target 1 1 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ficzko/magic/spawn3i.gif
-	@cmd	target 1 1 0 -20 1 1
+	@cmd	target 1 1 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ficzko/magic/spawn3i.gif
-	@cmd	target 1 1 0 -20 1 1
+	@cmd	target 1 1 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ficzko/magic/spawn3i.gif
-	@cmd	target 1 1 0 -20 1 1
+	@cmd	target 1 1 0 -20 0 1
 	@cmd	dash 0 0
 	frame	data/chars/ficzko/magic/spawn3i.gif
 	delay	1

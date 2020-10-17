@@ -1,0 +1,26 @@
+name    	ToBossRush
+type            endlevel
+facing          1
+nolife	1
+subject_to_hole 1
+no_adjust_base  0
+subject_to_platform 1
+branch		ToBossRush
+antigravity	100
+offscreenkill    99999
+
+palette		data/chars/misc/endlevel/boss_rush-arrow1a.gif
+
+
+
+
+anim	idle
+	loop	1
+	delay	7
+	offset	30 94
+	bbox	25 19 11 75
+	frame	data/chars/misc/endlevel/boss_rush-arrow1a.gif
+	frame	data/chars/misc/endlevel/boss_rush-arrow1b.gif
+		
+#|edited by openBor Stats v 0.67
+		

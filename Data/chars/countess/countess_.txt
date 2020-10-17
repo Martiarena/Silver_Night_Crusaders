@@ -1,0 +1,652 @@
+name	    	 Bathory_
+health  	 200
+nomove   	 1 1
+type		 enemy
+death	 	 1
+falldie          1
+nodieblink       1
+cantgrab 	 1
+nopain  	 1
+nodrop  	 2
+score   	 0 1
+aggression       9999
+
+subject_to_wall  0
+subject_to_obstacle 0
+subject_to_platform 0
+antigravity      100
+
+lifebarstatus 5 100 1 0 1 -300 -300 -300 -300
+lifeposition 309 15
+nameposition -500 -500
+iconposition -500 -500
+
+
+palette          data/chars/countess/bathory_palette.gif
+alternatepal     data/chars/countess/bathory_blink.gif
+
+animationscript  data/chars/countess/countessS.c
+takedamagescript data/scripts/blink.c
+
+load	Copa
+load    MagicSeal
+load    fb01_e
+load  	Copa_debris1a
+load    Copa_debris1b
+load	Copa_debris1c
+load	Copa_debris1d
+load	Circle_transform
+load    fireseal
+load	Firehell1a
+load	Firehell2a
+load    lightningseal
+load	Electricball
+load	Electricball_spawn_right
+load    Electricball_spawn_left
+load    GPillar
+load    IceBal
+load	IceHole
+load	iceseal
+load	Spawn_MulaBat
+load	MulanaBat
+load	Bright_summon
+
+icon 		data/chars/misc/bgmonster.gif
+
+
+defense normal 0.75 0 0 0 0 0 0
+defense normal2 0.75 0 0 0 0 0 0
+defense normal3 0.5 0 0 0 0 0 0
+defense normal4 0.25 0 0 0 0 0 0
+defense normal5 0.25 0 0 0 0 0 0
+defense normal6 0.5 0 0 0 0 0 0
+defense normal7 0.75 0 0 0 0 0 0
+defense normal8 0.25 0 0 0 0 0 0
+defense normal9 2 0 0 0 0 0 0
+defense normal18 0.5 0 0 0 0 0 0
+defense normal19 0.75 0 0 0 0 0 0
+defense normal20 0 0 0 0 0 0 0
+defense normal21 0.75 0 0 0 0 0 0
+defense burn 0.75 0 0 0 0 0 0
+defense schock 0.75 0 0 0 0 0 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	death
+	delay	100
+	offset	62 77
+	@script
+if(frame==116){
+      void vEntity;
+      int  iEntity;
+      char iType;
+      char iName;
+      int  iMax      = openborvariant("count_entities");
+
+      for(iEntity=0; iEntity<iMax; iEntity++){
+        vEntity = getentity(iEntity);
+        iType   = getentityproperty(vEntity, "type");
+	iName   = getentityproperty(vEntity, "name");
+
+        if(iType == openborconstant("TYPE_NONE")){
+
+	  if (iName == "BeamSkeletonSpawner") {
+		killentity(vEntity);
+          } else {
+
+	  }
+	}
+      }
+}
+if(frame==117){
+      void vEntity;
+      int  iEntity;
+      char iType;
+      int  iMax      = openborvariant("count_entities");
+
+      for(iEntity=0; iEntity<iMax; iEntity++){
+        vEntity = getentity(iEntity);
+        iType   = getentityproperty(vEntity, "type");
+
+        if(iType == openborconstant("TYPE_OBSTACLE")){
+          killentity(vEntity);
+        }
+      }
+    }
+if(frame==118){
+      void vEntity;                                      
+      int  iEntity;                                       
+      char iType;                                         
+      int  iMax      = openborvariant("count_entities");
+
+      //Enumerate and loop through entity collection.
+      for(iEntity=0; iEntity<iMax; iEntity++){
+        vEntity = getentity(iEntity);                 
+        iType   = getentityproperty(vEntity, "type");
+
+        if(iType == openborconstant("TYPE_ENEMY")){
+          killentity(vEntity);
+        }
+      }
+    }
+
+	@end_script	
+	sound	data/sounds/bathory_death.wav
+	frame	data/chars/countess/idle.gif
+	delay	7
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/attack1a.gif
+	frame	data/chars/countess/attack1b.gif
+	frame	data/chars/countess/attack1c.gif
+	frame	data/chars/countess/attack1d.gif
+	delay	1
+	movea	1
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1a.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1b.gif
+	delay	14
+	movea	0
+	@cmd	spawn01 "Circle_transform" 0 42 0
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1c.gif
+	frame	data/chars/countess/death1d.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1c.gif
+	frame	data/chars/countess/death1d.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1c.gif
+	frame	data/chars/countess/death1d.gif
+	sound	data/sounds/blackmage.wav
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1c.gif
+	frame	data/chars/countess/death1d.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1c.gif
+	frame	data/chars/countess/death1d.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1c.gif
+	frame	data/chars/countess/death1d.gif
+	@cmd	spawn01 "Bright_summon" 0 42 0
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1c.gif
+	frame	data/chars/countess/death1d.gif
+	frame	data/chars/countess/death1b.gif
+	sound	data/sounds/bathory_transform.wav
+	frame	data/chars/countess/death1c.gif
+	frame	data/chars/countess/death1d.gif
+	frame	data/chars/countess/death1b.gif
+	frame	data/chars/countess/death1c.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+@script
+    void self = getlocalvar("self");
+
+    int r = rand()%15;
+
+    if( frame == 0){
+      if( r > 0){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW5"));
+      }
+    }
+	@end_script	
+	delay	1
+	offset	62 77
+	frame	data/chars/misc/empty.gif
+	delay	50
+	@cmd	spawn01 "GPillar" 0 -20 0
+	frame	data/chars/misc/empty.gif
+	delay	8
+	bbox	55 16 16 62
+	attack	55 16 16 62 12 0 0 0 0 0
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/attack1a.gif
+	frame	data/chars/countess/attack1b.gif
+	sound	data/sounds/bathory_attack.wav
+	frame	data/chars/countess/attack1c.gif
+	frame	data/chars/countess/attack1d.gif
+	frame	data/chars/countess/attack1e.gif
+	frame	data/chars/countess/attack1f.gif
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	subentity	fireseal
+	spawnframe	15 20 0 30 0
+	frame	data/chars/countess/attack1g.gif
+	@cmd	shoot "fb01_e" 20 50 0
+	@cmd	shoot "fb01_e" 20 30 0
+	@cmd	shoot "fb01_e" 20 10 0
+	sound	data/sounds/explosion-fire.wav
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1e.gif
+	frame	data/chars/countess/attack1d.gif
+	frame	data/chars/countess/attack1c.gif
+	frame	data/chars/countess/attack1b.gif
+	frame	data/chars/countess/attack1a.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	@cmd	spawn01 "GPillar" 0 -20 0
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	delay	200
+	bbox	0
+	attack	0
+	@cmd	randomtele 100 0
+	@cmd	flip
+	frame	data/chars/misc/empty.gif
+	delay	10
+	@cmd	anichange "ANI_FOLLOW2"
+	frame	data/chars/misc/empty.gif
+		
+anim	follow2
+@script
+    void self = getlocalvar("self");
+
+    int r = rand()%15;
+
+    if( frame == 0){
+      if( r > 0){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      }
+    }
+	@end_script	
+	delay	1
+	offset	62 77
+	frame	data/chars/misc/empty.gif
+	delay	50
+	@cmd	spawn01 "GPillar" 0 -20 0
+	frame	data/chars/misc/empty.gif
+	delay	8
+	bbox	55 16 16 62
+	attack	55 16 16 62 12 0 0 0 0 0
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/attack1a.gif
+	frame	data/chars/countess/attack1b.gif
+	frame	data/chars/countess/attack1c.gif
+	frame	data/chars/countess/attack1d.gif
+	sound	data/sounds/bathory_laugh.wav
+	frame	data/chars/countess/attack1e.gif
+	frame	data/chars/countess/attack1f.gif
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	subentity	MagicSeal
+	spawnframe	15 20 0 30 0
+	frame	data/chars/countess/attack1g.gif
+	@cmd	spawn01 "Spawn_MulaBat" 30 90 0
+	@cmd	spawn01 "Spawn_MulaBat" -50 90 0
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1e.gif
+	frame	data/chars/countess/attack1d.gif
+	frame	data/chars/countess/attack1c.gif
+	frame	data/chars/countess/attack1b.gif
+	sound	data/sounds/batsfly.wav
+	frame	data/chars/countess/attack1a.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	@cmd	spawn01 "GPillar" 0 -40 0
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	delay	200
+	bbox	0
+	attack	0
+	@cmd	randomtele 100 0
+	@cmd	flip
+	frame	data/chars/misc/empty.gif
+	delay	10
+	@cmd	anichange "ANI_FOLLOW4"
+	frame	data/chars/misc/empty.gif
+		
+anim	follow3
+	delay	1
+	offset	62 77
+	frame	data/chars/misc/empty.gif
+	delay	50
+	@cmd	spawn01 "GPillar" 0 -20 0
+	frame	data/chars/misc/empty.gif
+	delay	8
+	bbox	55 16 16 62
+	attack	55 16 16 62 12 0 0 0 0 0
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/attack1a.gif
+	frame	data/chars/countess/attack1b.gif
+	frame	data/chars/countess/attack1c.gif
+	frame	data/chars/countess/attack1d.gif
+	sound	data/sounds/bathory_attack.wav
+	frame	data/chars/countess/attack1e.gif
+	frame	data/chars/countess/attack1f.gif
+	frame	data/chars/countess/attack1g.gif
+	subentity	iceseal
+	spawnframe	15 20 0 30 0
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	@cmd	spawnT2 "IceHole" 20 20 1
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	@cmd	spawnT2 "IceHole" 20 20 1
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	@cmd	spawnT2 "IceHole" 20 20 1
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	@cmd	spawnT2 "IceHole" 20 20 1
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	@cmd	spawnT2 "IceHole" 20 20 1
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	@cmd	spawnT2 "IceHole" 20 20 1
+	frame	data/chars/countess/attack1e.gif
+	frame	data/chars/countess/attack1d.gif
+	frame	data/chars/countess/attack1c.gif
+	frame	data/chars/countess/attack1b.gif
+	frame	data/chars/countess/attack1a.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	@cmd	spawn01 "GPillar" 0 -20 0
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	delay	200
+	bbox	0
+	attack	0
+	@cmd	randomtele 100 0
+	@cmd	flip
+	frame	data/chars/misc/empty.gif
+	delay	10
+	@cmd	anichange "ANI_FOLLOW4"
+	frame	data/chars/misc/empty.gif
+		
+anim	follow4
+	loop	0
+	delay	1
+	offset	62 77
+	frame	data/chars/misc/empty.gif
+	delay	50
+	@cmd	spawn01 "GPillar" 0 -40 0
+	frame	data/chars/misc/empty.gif
+	delay	8
+	bbox	55 16 16 62
+	attack	55 16 16 62 12 0 0 0 0 0
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/attack1a.gif
+	frame	data/chars/countess/attack1b.gif
+	frame	data/chars/countess/attack1c.gif
+	sound	data/sounds/bathory_laugh.wav
+	frame	data/chars/countess/attack1d.gif
+	frame	data/chars/countess/attack1e.gif
+	frame	data/chars/countess/attack1f.gif
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	subentity	lightningseal
+	spawnframe	15 20 0 30 0
+	frame	data/chars/countess/attack1g.gif
+	sound	data/sounds/thunder1.wav
+	@cmd	spawn01 "Electricball_spawn_right" 30 0 0
+	@cmd	spawn01 "Electricball_spawn_left" -50 0 0
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1e.gif
+	frame	data/chars/countess/attack1d.gif
+	frame	data/chars/countess/attack1c.gif
+	frame	data/chars/countess/attack1b.gif
+	frame	data/chars/countess/attack1a.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	sound	data/sounds/thunder.wav
+	frame	data/chars/countess/idle.gif
+	@cmd	spawn01 "GPillar" 0 -40 0
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	delay	200
+	bbox	0
+	attack	0
+	@cmd	randomtele 100 0
+	@cmd	flip
+	frame	data/chars/misc/empty.gif
+	delay	10
+	@cmd	anichange "ANI_FOLLOW1"
+	frame	data/chars/misc/empty.gif
+		
+anim	follow5
+	delay	1
+	offset	62 77
+	frame	data/chars/misc/empty.gif
+	delay	50
+	@cmd	spawn01 "GPillar" 0 -20 0
+	frame	data/chars/misc/empty.gif
+	delay	8
+	bbox	55 16 16 62
+	attack	55 16 16 62 12 0 0 0 0 0
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/attack1a.gif
+	frame	data/chars/countess/attack1b.gif
+	frame	data/chars/countess/attack1c.gif
+	frame	data/chars/countess/attack1d.gif
+	sound	data/sounds/bathory_laugh.wav
+	frame	data/chars/countess/attack1e.gif
+	frame	data/chars/countess/attack1f.gif
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	subentity	fireseal
+	spawnframe	15 20 0 30 0
+	sound	data/sounds/flame.wav
+	frame	data/chars/countess/attack1g.gif
+	@cmd	spawn01 "Firehell1a" -100 0 0
+	@cmd	spawn01 "firehell2a" -100 50 0
+	@cmd	spawn01 "Firehell1a" -50 0 0
+	@cmd	spawn01 "firehell2a" -50 90 0
+	@cmd	spawn01 "Firehell1a" 50 0 0
+	@cmd	spawn01 "firehell2a" 50 90 0
+	@cmd	spawn01 "Firehell1a" 100 0 0
+	@cmd	spawn01 "firehell2a" 100 50 0
+	frame	data/chars/countess/attack1g.gif
+	frame	data/chars/countess/attack1g.gif
+	sound	data/sounds/flame.wav
+	frame	data/chars/countess/attack1e.gif
+	frame	data/chars/countess/attack1d.gif
+	frame	data/chars/countess/attack1c.gif
+	frame	data/chars/countess/attack1b.gif
+	frame	data/chars/countess/attack1a.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	@cmd	spawn01 "GPillar" 0 -20 0
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	delay	200
+	bbox	0
+	attack	0
+	@cmd	randomtele 100 0
+	@cmd	flip
+	frame	data/chars/misc/empty.gif
+	delay	10
+	@cmd	anichange "ANI_FOLLOW2"
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	10
+	offset	62 77
+	bbox	55 16 16 62
+	attack	55 16 16 62 12 0 0 0 0 0
+	frame	data/chars/countess/idle.gif
+	@cmd	spawn01 "GPillar" 0 -20 0
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	frame	data/chars/countess/idle.gif
+	delay	100
+	bbox	0
+	attack	0
+	@cmd	randomtele 100 0
+	@cmd	targetB 120 32 -20 1
+	frame	data/chars/misc/empty.gif
+	delay	10
+	@cmd	attack0 "ANI_FOLLOW5"
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	delay	160
+	offset	62 77
+	frame	data/chars/countess/spawn1a.gif
+	delay	14
+	frame	data/chars/countess/spawn1b.gif
+	frame	data/chars/countess/spawn1c.gif
+	frame	data/chars/countess/spawn1d.gif
+	frame	data/chars/countess/spawn1e.gif
+	delay	80
+	frame	data/chars/countess/spawn1f.gif
+	delay	14
+	frame	data/chars/countess/spawn1g.gif
+	frame	data/chars/countess/spawn1h.gif
+	sound	data/sounds/throw_small.wav
+	@cmd	tosserM "Copa" 20 63 0.7 2
+	frame	data/chars/countess/spawn1i.gif
+	delay	60
+	frame	data/chars/countess/spawn1i.gif
+		
+#|edited by openBor Stats v 0.67
+		

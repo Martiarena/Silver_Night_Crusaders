@@ -1,0 +1,67 @@
+name	Fake_enemy_3
+health	1
+score   0 -1
+nomove 	1 1
+stealth 10 10
+type		enemy
+cantgrab 	1
+nodrop 	2
+falldie 	1
+nodieblink 	2
+nopain 	1
+nodrop 	2
+stealth 300
+antigravity	100
+setlayer 10
+lifespan 5
+
+takedamagescript data/scripts/blink.c
+animationscript  data/scripts/escript.c
+
+
+
+
+anim	idle
+	loop	0
+	offset	10 10
+	delay	120
+	frame	data/chars/misc/empty.gif
+	delay	1
+	@script
+if(frame==1){
+	void self = getlocalvar("self");
+      void vEntity;
+      int  iEntity;
+      char iType;
+      char iName;
+      int  iMax      = openborvariant("count_entities");
+
+      for(iEntity=0; iEntity<iMax; iEntity++){
+        vEntity = getentity(iEntity);
+        iType   = getentityproperty(vEntity, "type");
+	iName   = getentityproperty(vEntity, "name");
+
+        if(iType == openborconstant("TYPE_TRAP")){
+
+	  if (iName == "Fake_enemy_3") {
+
+          } else {
+			damageentity(vEntity, self, 1000, 1, openborconstant("ATK_NORMAL"));
+	  }
+	}
+      }
+}
+	@end_script	
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	loop	0
+	offset	10 10
+	bbox	10 10 10 10
+	delay	10
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

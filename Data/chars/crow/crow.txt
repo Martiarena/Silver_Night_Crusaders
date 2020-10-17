@@ -12,10 +12,16 @@ candamage	player npc
 subject_to_wall 0
 subject_to_obstacle 0
 subject_to_platform 0
+
+
+diesound            data/sounds/crowdie.wav
+defense schock 2 0 0 0 0 0 0
 animationscript data/scripts/escript.c
 icon 		data/chars/misc/bgmonster.gif
 
 palette          data/chars/crow/crow_palette.gif
+
+
 
 
 
@@ -109,33 +115,15 @@ anim	idle
 	frame	data/chars/crow/idle2.gif
 		
 anim	spawn
-	loop	1
-	delay	25
+	loop	0
+	delay	7
 	offset	15 29
 	bbox	8 17 15 13
 	attack	8 17 15 13 3 0 1 0 0 0
-	frame	data/chars/crow/idle1.gif
-	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
-	frame	data/chars/crow/idle1.gif
-	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
-	frame	data/chars/crow/idle1.gif
-	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
-	frame	data/chars/crow/idle1.gif
-	delay	10
-	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
-	frame	data/chars/crow/idle2.gif
-	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
-	frame	data/chars/crow/idle3.gif
-	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
-	frame	data/chars/crow/idle2.gif
-	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
-	frame	data/chars/crow/idle3.gif
-	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
-	frame	data/chars/crow/idle2.gif
-	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
-	frame	data/chars/crow/idle3.gif
-	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
-	frame	data/chars/crow/idle2.gif
+	frame	data/chars/crow/spawn1a.gif
+	frame	data/chars/crow/spawn1b.gif
+	frame	data/chars/crow/spawn1c.gif
+	frame	data/chars/crow/spawn1d.gif
 		
 #|edited by openBor Stats v 0.67
 		

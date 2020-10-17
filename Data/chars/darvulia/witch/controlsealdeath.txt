@@ -1,0 +1,53 @@
+name	        Controlsealdeath
+type	        none
+antigravity     100
+
+animationscript  data/scripts/escript.c
+
+palette	data/chars/darvulia/witch/spell_circle1a.gif
+
+
+
+anim	idle
+	delay	1
+	offset	29 29
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	delay	1
+	offset	29 29
+	sound	data/sounds/spell.wav
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/darvulia/witch/spell_circle1a.gif
+		
+#|edited by openBor Stats v 0.67
+		

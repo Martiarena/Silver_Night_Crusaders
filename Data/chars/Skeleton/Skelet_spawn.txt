@@ -43,6 +43,7 @@ alternatepal	 data/chars/skeleton/skeleton_golden.gif
 
 
 
+
 anim	attack1
 	range	25 100
 	rangea	-180 180
@@ -56,6 +57,7 @@ anim	attack1
 	frame	data/chars/skeleton/throw1.gif
 	frame	data/chars/skeleton/throw2.gif
 	delay	14
+	sound	data/sounds/throwbone.wav
 	@cmd	toss2 "Bone" 16 42 3
 	frame	data/chars/skeleton/throw2.gif
 		
@@ -92,6 +94,7 @@ anim	freespecial
 	frame	data/chars/skeleton/throw1a.gif
 	@cmd	targetB 120 16 -20 1
 	frame	data/chars/skeleton/throw1a.gif
+	sound	data/sounds/throwbone.wav
 	@cmd	toss2 "Bone1" 16 42 3
 	frame	data/chars/skeleton/throw2a.gif
 	delay	13

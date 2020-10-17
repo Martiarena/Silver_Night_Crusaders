@@ -13,11 +13,12 @@ palette		data/chars/misc/spells/icecross_palette.gif
 
 
 
+
 anim	idle
 	delay	1
 	offset	79 77
 	move	1
-	hitfx	data/sounds/burnt.wav
+	hitfx	data/sounds/icebreak.wav
 	attack	0 0 0 0 0 0 0 0 0
 	frame	data/chars/misc/spells/idle1a.gif
 	delay	3

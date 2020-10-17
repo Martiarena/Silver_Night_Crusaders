@@ -1,5 +1,5 @@
 name	    	Loda
-health          20
+health          24
 speedf		0.2
 type		enemy
 death		1
@@ -14,10 +14,15 @@ score	 	200 -1
 hostile         player npc
 candamage 	player npc
 
+defense normal2 2 0 0 0 0 0 0
 defense normal4 2 0 0 0 0 0 0
 defense normal5 2 0 0 0 0 0 0
 defense normal7 1.25 0 0 0 0 0 0
-defense schock 0.75 0 0 0 0 0 0
+defense normal15 2 0 0 0 0 0 0
+defense normal16 2 0 0 0 0 0 0
+defense normal21 2 0 0 0 0 0 0
+defense burn 0.5 0 0 0 0 0 0
+defense shock 3 0 0 0 0 0 0
 
 takedamagescript data/scripts/blink.c
 
@@ -25,6 +30,8 @@ palette		data/chars/mudwoman/idle1a.gif
 alternatepal 	data/chars/mudwoman/blink.gif
 
 icon		data/chars/misc/bgmonster.gif
+
+
 
 
 
@@ -42,6 +49,7 @@ anim	attack1
 	frame	data/chars/mudwoman/idle1d.gif
 	delay	4
 	attack	0 0 0 0 0
+	sound	data/sounds/loda1.wav
 	frame	data/chars/mudwoman/attack1a.gif
 	frame	data/chars/mudwoman/attack1b.gif
 	frame	data/chars/mudwoman/attack1c.gif
@@ -49,8 +57,9 @@ anim	attack1
 	frame	data/chars/mudwoman/attack1e.gif
 	frame	data/chars/mudwoman/attack1f.gif
 	delay	50
+	sound	data/sounds/swipe.wav
 	hitfx	data/sounds/slash.wav
-	attack2	10 10 76 12 9 0 1 0 0 0
+	attack2	10 10 76 12 19 0 1 0 0 0
 	frame	data/chars/mudwoman/attack1g.gif
 	delay	4
 	frame	data/chars/mudwoman/attack1f.gif
@@ -66,6 +75,7 @@ anim	death
 	spawnframe	0 0 -30 0 0
 	delay	6
 	offset	17 56
+	sound	data/sounds/loda2.wav
 	frame	data/chars/mudwoman/spawn5.gif
 	frame	data/chars/mudwoman/spawn4.gif
 	frame	data/chars/mudwoman/spawn3.gif

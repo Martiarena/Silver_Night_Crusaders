@@ -1,6 +1,6 @@
 name    	Gema_Roja
 type    	item
-mp		40
+mp		60
 facing          1
 antigravity	30
 icon 		data/chars/misc/bgitem.gif

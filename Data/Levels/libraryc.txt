@@ -61,10 +61,19 @@ coords  -350  216
 flip 1
 at  0
 
+spawn	bodyi
+coords	-415 216 0
+at 0
+
 spawn  Platform_church_1
 coords  -420  216  120
 flip 1
 at  0
+
+spawn	bodyi
+coords	-425 216 125
+flip 1
+at 0
 
 spawn  Wall_church_1
 coords  -452  216  90
@@ -133,7 +142,7 @@ at  324
 group	2  2
 at	324
 
-spawn	Boss4Spawner
+spawn	GhostSpawner_2
 coords  0 0 0
 2pspawn 1
 at  324

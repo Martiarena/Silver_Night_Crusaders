@@ -16,9 +16,12 @@ hostile         player npc
 icon 		data/chars/misc/bgmonster.gif
 
 defense normal4 1.5 0 0 0 0 0 0
-defense normal6 2 0 0 0 0 0 0
+defense normal6 4 0 0 0 0 0 0
+defense normal15 2 0 0 0 0 0 0
 defense normal19 1.5 0 0 0 0 0 0
-defense burn 1.5 0 0 0 0 0 0
+defense shock 1.5 0 0 0 0 0 0
+
+diesound      	data/sounds/dragon_death.wav
 
 animationscript  data/scripts/bscript.c
 takedamagescript data/scripts/blink.c
@@ -43,19 +46,50 @@ alternatepal	 data/chars/bdragon/blink.gif
 
 
 
+
+
 anim	death
 	delay	3
 	offset	15 27
 	bouncefactor	2
 	subentity	edie
 	spawnframe	0 30 0 15 0
+	@script
+if(frame==6){
+      void vEntity;
+      int  iEntity;
+      char iType;
+      char iName;
+      int  iMax      = openborvariant("count_entities");
+
+      for(iEntity=0; iEntity<iMax; iEntity++){
+        vEntity = getentity(iEntity);
+        iType   = getentityproperty(vEntity, "type");
+	iName   = getentityproperty(vEntity, "name");
+
+        if(iType == openborconstant("TYPE_ENEMY")){
+
+	  if (iName == "D._Negro" || iName == "Rib") {
+
+          } else {
+		killentity(vEntity);
+	  }
+	}
+      }
+}
+	@end_script
+	sound	data/sounds/explosion-fire.wav
 	frame	data/chars/bdragon/death1.gif
 	@cmd	stop
 	@cmd	degravity 0
 	frame	data/chars/bdragon/death2.gif
 	@cmd	clearL
 	frame	data/chars/bdragon/death3.gif
-	delay	50
+	delay	100
+	frame	data/chars/bdragon/death4.gif
+	delay	1
+	frame	data/chars/bdragon/death4.gif
+	frame	data/chars/bdragon/death4.gif
 	frame	data/chars/bdragon/death4.gif
 		
 anim	fall
@@ -91,11 +125,15 @@ anim	follow1
 	delay	100
 	@cmd	stop
 	frame	data/chars/bdragon/head3.gif
+	delay	1
+	sound	data/sounds/dragon_attack.wav
+	frame	data/chars/bdragon/head3.gif
 	delay	40
 	hitfx	data/sounds/slash.wav
 	attack2	13 7 44 34 25 11 0 0 0 0
 	@cmd	targetT 40 0 -10 0
 	@cmd	dash 0 0
+	sound	data/sounds/dragon_attack.wav
 	frame	data/chars/bdragon/head3.gif
 	delay	100
 	@cmd	stop
@@ -129,6 +167,7 @@ anim	follow2
 	frame	data/chars/bdragon/head5.gif
 	delay	15
 	frame	data/chars/bdragon/head5.gif
+	sound	data/sounds/dragon_attack.wav
 	frame	data/chars/bdragon/head4.gif
 	frame	data/chars/bdragon/head4.gif
 	frame	data/chars/bdragon/head3.gif
@@ -225,6 +264,7 @@ anim	spawn
 	attack	13 7 44 21 19 0 0 0 0 0
 	frame	data/chars/bdragon/head5.gif
 	bbox	13 7 44 15
+	sound	data/sounds/dragon_spawn.wav
 	@cmd	spawnChainPoint "RBase" 0 0 0 0
 	frame	data/chars/bdragon/head5.gif
 	@cmd	spawnChainLink "Rib" 0 0.5 0 0 0

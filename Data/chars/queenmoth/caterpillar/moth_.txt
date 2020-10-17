@@ -21,6 +21,7 @@ candamage 	player npc
 palette         data/chars/queenmoth/spawn1.gif
 
 defense normal4 3 0 0 0 0 0 0
+defense normal15 3 0 0 0 0 0 0
 defense normal11 4 0 0 0 0 0 0
 defense burn 3 0 0 0 0 0 0
 
@@ -63,13 +64,13 @@ anim	idle
 	delay	7
 	offset	13 13
 	attack2	3 7 20 16 19 0 0 0 0 0
-	@cmd	target 0.5 0.5 0 -15 1 1
+	@cmd	target 0.5 0.5 0 -15 0 1
 	@cmd	dash 0 0
 	frame	data/chars/queenmoth/caterpillar/moth1a.gif
-	@cmd	target 0.5 0.5 0 -15 1 1
+	@cmd	target 0.5 0.5 0 -15 0 1
 	@cmd	dash 0 0
 	frame	data/chars/queenmoth/caterpillar/moth1b.gif
-	@cmd	target 0.5 0.5 0 -15 1 1
+	@cmd	target 0.5 0.5 0 -15 0 1
 	@cmd	dash 0 0
 	attack2	0 0 0 0 0
 	frame	data/chars/queenmoth/caterpillar/moth1a.gif

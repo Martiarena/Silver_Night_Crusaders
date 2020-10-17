@@ -12,11 +12,12 @@ subject_to_obstacle 0
 subject_to_platform 0
 antigravity     100
 offscreenkill  160
+offscreen_noatk_factor 1
 hostile         player npc
 candamage 	player npc
 
-
-icon 		data/chars/misc/bgmonster.gif
+diesound	data/sounds/spiderdie.wav
+icon 		data/chars/spider/bgspider.gif
 
 palette          data/chars/spider/spider_palette.gif
 alternatepal     data/chars/spider/spider_blink_palette.gif
@@ -25,6 +26,8 @@ animationscript  data/scripts/escript.c
 takedamagescript data/scripts/blink.c
 load    	 BFBall
 load             edie
+
+
 
 
 
@@ -119,9 +122,52 @@ anim	follow2
 	frame	data/chars/spider/idle1a.gif
 	frame	data/chars/spider/idle1b.gif
 	frame	data/chars/spider/idle1a.gif
-	@cmd	dasher 0 1 0 0
+	@cmd	dasher 0 0 0 0
+	delay	1
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle2a.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle2a.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle2a.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle2a.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle2a.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle2a.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle2a.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle2a.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle2a.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle2a.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle2a.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle2a.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle2a.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle2a.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle2a.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle2a.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle2a.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle2a.gif
+	frame	data/chars/spider/idle1a.gif
+	frame	data/chars/spider/idle2a.gif
+	frame	data/chars/spider/idle1a.gif
+	sound	data/sounds/spiderattack.wav
+	frame	data/chars/spider/idle2a.gif
 	@cmd	target 1 1 0 0 0 0
 	@cmd	shoot2 "BFBall" 0 25
+	@cmd	dasher 0 1 0 0
 	frame	data/chars/spider/idle1b.gif
 	frame	data/chars/spider/idle1a.gif
 	frame	data/chars/spider/idle1b.gif
@@ -153,8 +199,52 @@ anim	follow3
 	@cmd	dasher 0 -1 0 0
 	frame	data/chars/spider/idle1b.gif
 	frame	data/chars/spider/idle1a.gif
+	@cmd	dasher 0 0 0 0
+	delay	1
+	frame	data/chars/spider/idle2b.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle2b.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle2b.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle2b.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle2b.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle2b.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle2b.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle2b.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle2b.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle2b.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle2b.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle2b.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle2b.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle2b.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle2b.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle2b.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle2b.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle2b.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle2b.gif
+	frame	data/chars/spider/idle1b.gif
+	frame	data/chars/spider/idle2b.gif
+	sound	data/sounds/spiderattack.wav
+	frame	data/chars/spider/idle1b.gif
 	@cmd	target 1 1 0 0 0 0
 	@cmd	shoot2 "BFBall" 0 25
+	@cmd	dasher 0 -1 0 0
 	frame	data/chars/spider/idle1b.gif
 	frame	data/chars/spider/idle1a.gif
 	frame	data/chars/spider/idle1b.gif

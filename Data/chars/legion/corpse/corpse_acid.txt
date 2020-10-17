@@ -17,6 +17,8 @@ candamage 	player npc
 score   0 -1
 load    Legion_acid_explo
 
+diesound     data/sounds/legion_scream2.wav
+
 defense normal3 2 0 0 0 0 0 0
 defense normal4 2 0 0 0 0 0 0
 defense normal5 2 0 0 0 0 0 0
@@ -53,7 +55,7 @@ anim	attack1
 	followcond	1
 	offset	17 57
 	bbox	5 5 20 50
-	attack	5 5 20 50 19 0 0 1 0 0
+	attack	5 5 20 50 25 0 0 1 0 0
 	frame	data/chars/legion/corpse/walk1a.gif
 	frame	data/chars/legion/corpse/walk1b.gif
 	frame	data/chars/legion/corpse/walk1c.gif
@@ -114,7 +116,7 @@ anim	idle
 	bbox	5 5 20 50
 	followcond	1
 	followanim	1
-	attack	5 5 20 50 19 0 1 0 0 0
+	attack	5 5 20 50 25 0 1 0 0 0
 	frame	data/chars/legion/corpse/walk1a.gif
 	frame	data/chars/legion/corpse/walk1b.gif
 	frame	data/chars/legion/corpse/walk1c.gif

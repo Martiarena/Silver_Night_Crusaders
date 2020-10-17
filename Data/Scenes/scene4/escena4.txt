@@ -1,0 +1,3 @@
+music		data/Scenes/scene4/scene4.ogg 0
+animation	data/Scenes/scene4/escena4a.gif 0 0 0 0
+silence 1

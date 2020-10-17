@@ -8,6 +8,7 @@ cantgrab	 1
 noquake		 1
 bounce		 0
 weaploss         1
+weapnum 1
 death		 1
 nodieblink	 2
 icon		 data/chars/fran/icon.gif
@@ -96,6 +97,12 @@ com	a3	freespecial3
 
 
 
+
+
+
+
+
+
 anim	attack1
 		
 anim	attack2
@@ -104,7 +111,7 @@ anim	bpain
 	loop	0
 	delay	9
 	offset	55 63
-	jumpframe	0 1.5 -1
+	weaponframe	1 1
 	bbox	47 18 15 45
 	sound	data/sounds/fran_pain.wav
 	frame	data/chars/fran/painf1.gif
@@ -265,6 +272,20 @@ anim	freespecial6
 anim	freespecial7
 		
 anim	freespecial8
+	loop	0
+	delay	1
+	offset	55 63
+	@cmd	limiter 9
+	sound	data/sounds/transform.wav
+	frame	data/chars/fran/idle1.gif
+	frame	data/chars/fran/battransform1.gif
+	frame	data/chars/fran/battransform2.gif
+	frame	data/chars/fran/battransform3.gif
+	frame	data/chars/fran/battransform4.gif
+	delay	1
+	weaponframe	5 1
+	frame	data/chars/fran/batwalk1.gif
+	frame	data/chars/fran/batwalk1.gif
 		
 anim	freespecial9
 	loop	0
@@ -320,24 +341,13 @@ anim	jumpattack3
 		
 anim	jumpland
 		
-anim	pain8
-	loop	0
-	delay	9
-	offset	55 63
-	jumpframe	0 1.5 -1
-	@cmd	spawnbind "prose" 4 32 1
-	@cmd	spawnbind "blooda" 0 36 1
-	bbox	47 18 15 45
-	sound	data/sounds/fran_pain.wav
-	frame	data/chars/fran/pain1.gif
-	frame	data/chars/fran/pain2.gif
-	frame	data/chars/fran/pain3.gif
+anim	jumpspecial
 		
 anim	pain
 	loop	0
 	delay	9
 	offset	55 63
-	jumpframe	0 1.5 -1
+	weaponframe	1 1
 	bbox	47 18 15 45
 	sound	data/sounds/fran_pain.wav
 	frame	data/chars/fran/pain1.gif
@@ -348,7 +358,7 @@ anim	pain17
 	loop	0
 	delay	9
 	offset	55 63
-	jumpframe	0 1.5 -1
+	weaponframe	1 1
 	@cmd	spawnbind "blooda" 0 36 1
 	bbox	47 18 15 45
 	sound	data/sounds/fran_pain.wav
@@ -360,7 +370,7 @@ anim	pain2
 	loop	0
 	delay	9
 	offset	55 63
-	jumpframe	0 1.5 -1
+	weaponframe	1 1
 	@cmd	spawnbind "blooda" 0 36 1
 	bbox	47 18 15 45
 	sound	data/sounds/fran_pain.wav
@@ -372,14 +382,31 @@ anim	pain7
 	loop	0
 	delay	9
 	offset	55 63
-	jumpframe	0 1.5 -1
+	weaponframe	1 1
 	bbox	47 18 15 45
 	sound	data/sounds/fran_pain.wav
 	frame	data/chars/fran/paini1.gif
 	frame	data/chars/fran/paini2.gif
 	frame	data/chars/fran/paini3.gif
 		
+anim	pain8
+	loop	0
+	delay	9
+	offset	55 63
+	weaponframe	1 1
+	@cmd	spawnbind "prose" 4 32 1
+	@cmd	spawnbind "blooda" 0 36 1
+	bbox	47 18 15 45
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/pain1.gif
+	frame	data/chars/fran/pain2.gif
+	frame	data/chars/fran/pain3.gif
+		
 anim	rise
+		
+anim	run
+		
+anim	runattack
 		
 anim	shock
 	delay	5
@@ -399,7 +426,7 @@ anim	spain
 	loop	0
 	delay	9
 	offset	55 63
-	jumpframe	0 1.5 -1
+	weaponframe	1 1
 	bbox	47 18 15 45
 	sound	data/sounds/fran_pain.wav
 	frame	data/chars/fran/paint1.gif

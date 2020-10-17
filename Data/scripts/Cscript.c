@@ -5,6 +5,7 @@
 #include "data/scripts/library/target.h"
 #include "data/scripts/library/basic.h"
 
+
 void groundchange(void Ani)
 {// Check altitude. If projectile is on ground, change animation!
     void self = getlocalvar("self");
@@ -282,4 +283,11 @@ void groundkill()
     if(y <= 3 && H != 1){ // On ground but not on hole?
       killentity(self); //Suicide!
     }
+}
+
+void suicide()
+{ // Suicide!!
+    void self = getlocalvar("self");
+
+    killentity(self); //Suicide!
 }

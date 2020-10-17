@@ -1,20 +1,55 @@
-name    	Orbe
-type            endlevel
+name    	Orbe_Lunar
+health	1
+type            enemy
 facing          1
-nolife	1
+death	1
+falldie	1
+stealth 300
+nopain 1
 subject_to_hole 1
-no_adjust_base  0
+no_adjust_base  1
 subject_to_platform 1
-antigravity	30
+antigravity	100
+candamage	player
+flash Empty
+noatflash 1
+defense all 0 4000 0 4000 4000 0 0
+
+animationscript	data/scripts/escript.c
+
+icon 		data/chars/misc/bgitem.gif
 
 palette		data/chars/items/orb/idle1.gif
 
 
+anim	death
+	loop	0
+	delay	7
+	offset	8 16
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
+anim	follow1
+	loop	0
+	delay	7
+	offset	8 16
+	frame	data/chars/misc/empty.gif
+	@cmd	suicide
+	frame	data/chars/misc/empty.gif
+		
 anim	idle
 	loop	1
 	delay	7
 	offset	8 16
+	followanim	1
+	followcond	1
+	@cmd	degravity	0
+	hitfx	data/sounds/no-hit.wav
 	bbox	0 0 16 16
+	hitflash	Empty
+	attack20	0 0 16 16 0 0 1 1 0 0
+	noreflect	1
 	frame	data/chars/items/orb/idle1.gif
 	frame	data/chars/items/orb/idle2.gif
 	frame	data/chars/items/orb/idle3.gif
@@ -22,11 +57,53 @@ anim	idle
 	frame	data/chars/items/orb/idle5.gif
 	frame	data/chars/items/orb/idle6.gif
 		
+anim	spawn
+	loop	0
+	delay	3
+	offset	8 16
+	frame	data/chars/items/orb/spawn1.gif
+	frame	data/chars/items/orb/spawn2.gif
+	frame	data/chars/items/orb/spawn3.gif
+	frame	data/chars/items/orb/spawn4.gif
+	frame	data/chars/items/orb/spawn5.gif
+	frame	data/chars/items/orb/spawn6.gif
+	frame	data/chars/items/orb/spawn7.gif
+	frame	data/chars/items/orb/spawn8.gif
+	frame	data/chars/items/orb/spawn9.gif
+	frame	data/chars/items/orb/spawn10.gif
+	frame	data/chars/items/orb/spawn11.gif
+	frame	data/chars/items/orb/spawn12.gif
+	frame	data/chars/items/orb/spawn13.gif
+	frame	data/chars/items/orb/spawn14.gif
+	frame	data/chars/items/orb/spawn15.gif
+	frame	data/chars/items/orb/spawn16.gif
+	frame	data/chars/items/orb/spawn17.gif
+	frame	data/chars/items/orb/spawn18.gif
+	frame	data/chars/items/orb/spawn19.gif
+	frame	data/chars/items/orb/spawn20.gif
+	frame	data/chars/items/orb/spawn21.gif
+	frame	data/chars/items/orb/spawn22.gif
+	frame	data/chars/items/orb/spawn23.gif
+	frame	data/chars/items/orb/spawn24.gif
+	frame	data/chars/items/orb/spawn25.gif
+	frame	data/chars/items/orb/spawn26.gif
+	frame	data/chars/items/orb/spawn27.gif
+	frame	data/chars/items/orb/spawn28.gif
+	frame	data/chars/items/orb/spawn29.gif
+	frame	data/chars/items/orb/spawn30.gif
+		
 anim	walkoff
 	loop	1
 	delay	7
 	offset	8 16
-	bbox	0 0 16 16
+	followanim	1
+	followcond	1
+	@cmd	degravity	0
+	hitflash	Empty
+	hitfx	data/sounds/BEEP.WAV
+	bbox	0 -16 16 16
+	attack20	0 0 16 16 0 0 1 1 0 0
+	noreflect	1
 	frame	data/chars/items/orb/idle1.gif
 	frame	data/chars/items/orb/idle2.gif
 	frame	data/chars/items/orb/idle3.gif

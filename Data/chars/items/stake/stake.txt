@@ -1,0 +1,54 @@
+name		Estaca
+credit 		1
+type            item
+facing          1
+subject_to_hole 1
+no_adjust_base  0
+subject_to_platform 1
+antigravity	30
+candamage	player
+icon 		data/chars/misc/bgitem.gif
+
+palette		data/chars/items/stake/idle1.gif
+
+
+
+
+anim	idle
+	loop	1
+	delay	70
+	offset	8 15
+	itembox	0 0 15 15
+	frame	data/chars/items/stake/idle1.gif
+	delay	2
+	frame	data/chars/items/stake/idle2.gif
+		
+anim	spawn
+	loop	0
+	delay	7
+	offset	8 15
+	sound	data/sounds/secret.wav
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/items/stake/spawn1a.gif
+	frame	data/chars/items/stake/spawn1b.gif
+	frame	data/chars/items/stake/spawn1c.gif
+	frame	data/chars/items/stake/spawn1d.gif
+	frame	data/chars/items/stake/spawn1e.gif
+	frame	data/chars/items/stake/spawn1f.gif
+	frame	data/chars/items/stake/spawn1g.gif
+	frame	data/chars/items/stake/spawn1h.gif
+	frame	data/chars/items/stake/spawn1i.gif
+	frame	data/chars/items/stake/spawn1j.gif
+	frame	data/chars/items/stake/spawn1k.gif
+	frame	data/chars/items/stake/spawn1l.gif
+	frame	data/chars/items/stake/spawn1m.gif
+	delay	2
+	frame	data/chars/items/stake/spawn2n.gif
+	delay	3
+	frame	data/chars/items/stake/spawn1n.gif
+	delay	7
+	itembox	0 0 15 15
+	frame	data/chars/items/stake/idle1.gif
+		
+#|edited by openBor Stats v 0.67
+		

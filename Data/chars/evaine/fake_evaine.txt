@@ -64,6 +64,7 @@ takedamagescript data/scripts/blink.c
 
 
 
+
 anim	attack
 	loop	0
 	range	8 35
@@ -76,8 +77,9 @@ anim	attack
 	@cmd	spawn01 "Scythe" 0 0 0
 	frame	data/chars/evaine/idle1a.gif
 	delay	1000
+	noreflect	1
 	hitfx	data/sounds/no-hit.wav
-	attack20	55 0 35 55 0 0 1 1 0 0
+	attack20	55 20 35 35 0 0 1 1 0 0
 	frame	data/chars/evaine/idle1a.gif
 	frame	data/chars/evaine/idle1a.gif
 		

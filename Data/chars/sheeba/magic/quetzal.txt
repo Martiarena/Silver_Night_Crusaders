@@ -17,6 +17,7 @@ anim	idle
 anim	spawn
 	delay	3
 	offset	57 78
+	sound	data/sounds/quetzal.wav
 	frame	data/chars/sheeba/magic/quetzal.gif
 		
 #|edited by openBor Stats v 0.67

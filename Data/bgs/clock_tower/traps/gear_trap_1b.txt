@@ -56,6 +56,7 @@ anim	follow1
 	subentity	Gear_trap_fallb
 	spawnframe	10 0 0 0 0
 	platform	-999 -999 -5 -5 5 5 10 10
+	sound	data/sounds/gear.wav
 	frame	data/bgs/clock_tower/traps/gears_trap1a.gif
 	offset	17 32
 	frame	data/bgs/clock_tower/traps/gears_trap1a.gif

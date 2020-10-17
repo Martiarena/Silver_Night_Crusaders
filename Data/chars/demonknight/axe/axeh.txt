@@ -32,6 +32,7 @@ palette 	data/chars/demonknight/demonknight_palette.gif
 
 
 
+
 anim	death
 	loop	0
 	delay	1
@@ -54,6 +55,7 @@ changeentityproperty(self, "speed", Vx-0.250);
 	delay	6
 	offset	15 15
 	bbox	0 0 29 30
+	sound	data/chars/misc/weap/axe1.wav
 	hitfx	data/sounds/slash.wav
 	attack2	0 0 29 30 19 0 0 0 0 0
 	frame	data/chars/demonknight/axe/axe1.gif

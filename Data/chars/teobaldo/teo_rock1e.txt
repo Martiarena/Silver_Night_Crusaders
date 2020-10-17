@@ -1,5 +1,5 @@
 name	       		Teo_rock1e
-type          enemy
+type          none
 health  1
 nomove		1
 nolife          1
@@ -11,6 +11,9 @@ no_adjust_base		0
 candamage	player npc shot
 lifespan         3
 noquake 		1
+subject_to_wall	1
+subject_to_platform	1
+subject_to_hole	1
 animationscript data/scripts/prscript.c
 
 palette 		data/chars/misc/rocks/white_rock_palete.gif

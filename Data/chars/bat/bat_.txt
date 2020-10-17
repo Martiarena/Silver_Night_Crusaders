@@ -1,5 +1,5 @@
 name      	Chiroptera_
-health  	3
+health          3
 nomove	 	1 1
 type		enemy
 aimove 		chase

@@ -1,0 +1,918 @@
+music		data/music/interiorgarden.ogg 1525860
+
+panel	        data/bgs/garden/garden.gif
+
+fglayer		data/bgs/garden/back_garden.gif -10000 0.5 0.5 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/garden/castle_wall_1.gif -12000 0.6 0.6 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/garden/castle_towers.gif -13000 0.8 0.8 0 0 0 0 -1 1 1 0 0 0 0 0 1
+fglayer		data/bgs/castle_entrance/castle_sky_night.gif -14000 0.9 0.9 0 0 0 0 -1 1 1 0 0 0 0 0 1
+
+order           a
+settime	        0
+notime		1
+spawn1          80 0 240
+spawn2          40 0 240
+direction	both
+type		0 0 0
+cameratype 1
+Hole  2025  240  0  0  190  190  25
+Hole  2272  240  0  0  168  168  25
+Hole  1100  240  0  0  220  220  25
+
+spawn	Stage3
+coords  160 240  0
+flip    1
+at      0
+
+spawn  Moon
+coords  460  10
+at  0
+
+spawn  Platform_bridge13
+coords  990  216
+flip  1
+alias	Thick
+at  0
+
+spawn  Front_bridge1
+coords  991  216  15
+flip  1
+at  0
+
+spawn  Platform_bridge14
+coords  1022  216  0
+flip  1
+alias	Thick
+at  0
+
+spawn  Platform_bridge15
+coords  1038  216  0
+flip  1
+alias	Thick
+at  0
+
+spawn  Platform_bridge16
+coords  1073  216  0
+flip  1
+alias	Thick
+at  0
+
+spawn  Front_bridge3
+coords  1128  216  63
+flip  1
+at  0
+
+spawn  Platform_bridge19
+coords  1146  216  42
+flip  1
+alias	Thick
+at  0
+
+spawn  Garden_water1
+coords  1211  248  0
+flip  1
+at  0
+
+spawn  Platform_bridge18
+coords  1294  216  42
+flip  1
+alias	Thick
+at  0
+
+spawn  Front_bridge4
+coords  1324  216  63
+flip  1
+at  0
+
+spawn  Platform_bridge17
+coords  1353  216  0
+flip  1
+alias	Thick
+at  0
+
+spawn  Platform_bridge15
+coords  1395  216  0
+flip  1
+alias	Thick
+at  0
+
+spawn  Platform_bridge14
+coords  1411  216  0
+flip  1
+alias	Thick
+at  0
+
+spawn  Platform_bridge13
+coords  1443  216  0
+flip  1
+alias	Thick
+at  0
+
+spawn  Front_bridge1
+coords  1443  216  15
+at  0
+
+spawn  Front_bridge1
+coords  1915  216  15
+flip  1
+at  0
+
+spawn  Platform_bridge13
+coords  1916  216
+flip  1
+alias	Thick
+at  0
+
+spawn  Platform_bridge14
+coords  1948  216  0
+flip  1
+alias	Thick
+at  0
+
+spawn  Platform_bridge15
+coords  1964  216  0
+flip  1
+alias	Thick
+at  0
+
+spawn  Platform_bridge16
+coords  1999  216  0
+flip  1
+alias	Thick
+at  0
+
+spawn  Platform_bridge19
+coords  2072  216  42
+flip  1
+alias	Thick
+at  0
+
+spawn  Garden_water2
+coords  2122  248  0
+flip  1
+at  0
+
+spawn  Garden_water3
+coords  2357  248  0
+flip  1
+at  0
+
+spawn  Platform_bridge18
+coords  2414  216  42
+flip  1
+alias	Thick
+at  0
+
+spawn  Platform_bridge21
+coords  2245  227  0
+flip  1
+alias	Thick
+at  0
+
+spawn  Platform_bridge20
+coords  2252  216  42
+flip  1
+alias	Thick
+at  0
+
+spawn  Front_bridge3
+coords  2052  216  63
+flip  1
+at  0
+
+spawn  Front_bridge5
+coords  2254  216  63
+flip  1
+at  0
+
+spawn  Front_bridge4
+coords  2444  216  63
+flip  1
+at  0
+
+spawn  Platform_bridge17
+coords  2476  216  0
+flip  1
+alias	Thick
+at  0
+
+spawn  Platform_bridge15
+coords  2515  216  0
+flip  1
+alias	Thick
+at  0
+
+spawn  Platform_bridge14
+coords  2531  216  0
+flip  1
+alias	Thick
+at  0
+
+spawn  Platform_bridge13
+coords  2563  216  0
+flip  1
+alias	Thick
+at  0
+
+spawn  Front_bridge1
+coords  2563  216  15
+at  0
+
+spawn  Platform_grass2
+coords  3281  216  0
+flip  1
+alias	Thick
+at  0
+
+spawn  Platform_plaza3
+coords  3443  216  90
+flip  1
+at  0
+
+spawn  Torch_garden
+coords  3541  216  120
+at  0
+
+spawn  Torch_garden
+coords  3655  216  120
+at  0
+
+spawn  Platform_plaza3
+coords  3710  216  72
+flip  1
+at  0
+
+spawn  Platform_plaza3
+coords  3774  216  72
+flip  1
+at  0
+
+spawn  Platform_plaza3
+coords  3790  216  114
+flip  1
+at  0
+
+spawn  Platform_plaza0
+coords  3917  216  114
+flip  1
+at  0
+
+spawn  Platform_plaza0
+coords  3981  216  114
+flip  1
+at  0
+
+spawn  Platform_plaza0
+coords  4045  216  114
+flip  1
+at  0
+
+spawn  Platform_mud
+coords  4181  216  58
+flip  1
+at  0
+
+spawn  Torch_garden
+coords  4204  216  168
+at  0
+
+spawn  Torch_garden
+coords  4279  216  152
+at  0
+
+spawn  Torch_garden
+coords  4364  216  177
+at  0
+
+spawn  Platform_mud
+coords  4346  216  80
+flip  1
+at  0
+
+spawn  Platform_plaza0
+coords  4442  216  153
+flip  1
+at  0
+
+spawn  Platform_plaza3
+coords  4525  216  0
+flip  1
+at  0
+
+spawn  Platform_plaza3
+coords  4557  216  71
+flip  1
+at  0
+
+spawn  Platform_plaza0
+coords  4653  216  71
+flip  1
+at  0
+
+spawn  Torch_garden
+coords  4868  216  152
+at  0
+
+spawn  Platform_mud
+coords  4877  216  64
+flip  1
+at  0
+
+spawn  Platform_plaza0
+coords  5016  216  114
+flip  1
+at  0
+
+spawn  Platform_plaza0
+coords  5096  216  69
+flip  1
+at  0
+
+spawn  Platform_plaza3
+coords  5144  216  69
+flip  1
+at  0
+
+spawn  Platform_mud
+coords  5345  216  50
+flip  1
+at  0
+
+spawn  Torch_garden
+coords  5350  216  176
+at  0
+
+spawn  Platform_mud
+coords  5418  216  130
+flip  1
+at  0
+
+spawn  Torch_garden
+coords  5495  216  80
+at  0
+
+spawn  Torch_garden
+coords  5623  216  152
+at  0
+
+spawn  Platform_mud
+coords  5635  216  53
+flip  1
+at  0
+
+spawn  Platform_grass1
+coords  5833  216  0
+alias	Thick
+flip  1
+at  0
+
+spawn  Wall_garden1
+coords  5964  216  0
+flip  1
+alias	Thick
+at  0
+
+spawn  Wall_garden3
+coords  5964  216  127
+flip  1
+alias	Thick
+at  0
+
+spawn  Torch_garden
+coords  6123  216  88
+at  0
+
+spawn  Torch_garden
+coords  6366  216  88
+at  0
+
+spawn  Torch_garden
+coords  6578  216  88
+at  0
+
+spawn  Torch_garden
+coords  6820  216  88
+at  0
+
+spawn  Torch_garden
+coords  7024  216  88
+at  0
+
+spawn  Torch_garden
+coords  7266  216  88
+at  0
+
+spawn  Wall_garden2
+coords  7423  216  0
+flip  1
+alias	Thick
+at  0
+
+spawn  Wall_garden4
+coords  7430  216  176
+flip  1
+alias	Thick
+at  0
+
+spawn  ToShop
+coords  7400  216 50
+flip 1
+at  0
+
+spawn  Farol
+coords  125  216  95
+item	Cuchillo
+map 1
+at  0
+
+spawn  H._espinosa
+coords  200  216
+at  0
+
+spawn  Farol
+coords  219  216  95
+item	___10
+at  0
+
+spawn  Farol
+coords  313  216  95
+item	___10
+at  0
+
+spawn  H._espinosa
+coords  340  216
+at  0
+
+spawn  Farol
+coords  360  216  95
+item	___10
+at  47
+
+spawn  Cuervo
+coords  340  216 115
+at  107
+
+spawn  H._espinosa
+coords  340  216
+at  140
+
+spawn  Farol
+coords  360  216  95
+item	___20
+at  141
+
+spawn  Farol
+coords  360  216  95
+item  ___10
+at  235
+
+spawn  H._espinosa
+coords  340  216
+at  320
+
+spawn  BatSpawner
+coords  360  216
+at  320
+
+spawn  Farol
+coords  360  216  95
+item	___10
+at  329
+
+spawn  Cuervo
+coords  340  216  115
+at  408
+
+spawn  Farol
+coords  360  216  95
+item	___10
+at  424
+
+spawn  Segador
+coords  360  216
+at  480
+
+spawn  Farol
+coords  360  216  95
+item  ___20
+at  517
+
+Blockade  680
+at  680
+
+spawn  C._Demonio
+coords  360  216  64
+at  780
+
+spawn  Cuervo
+coords  350  216  135
+at  1013
+
+spawn	Sahagin
+coords  240  216  0
+at  1100
+
+spawn  Farol
+coords  360  216  95
+item  ___20
+at  1197
+
+spawn  Cuervo
+coords  350  216  115
+at  1227
+
+spawn  Farol
+coords  360  216  95
+item  Bomba
+map 1
+at  1441
+
+Blockade  1520
+at  1350
+
+spawn  Driade
+coords  235  216
+item  ___250
+at  1450
+
+Wait
+at  1520
+
+spawn  H._espinosa
+coords  340  216
+at  1521
+
+spawn  BatSpawner
+coords  360  116
+at  1522
+
+Blockade  1820
+at  1820
+
+spawn	Sahagin
+coords  200  216  0
+at  1877
+
+spawn  C._Demonio
+coords  360  216  63
+at  1880
+
+spawn	Sahagin
+coords  100  216  0
+at  2180
+
+spawn  Farol
+coords  360  216  95
+item  A._Bendita
+map 1
+at  2316
+
+spawn  H._espinosa
+coords  350  216
+at  2370
+
+spawn  Farol
+coords  360  216  95
+item  ___10
+at  2410
+
+Blockade  2500
+at  2500
+
+spawn  Farol
+coords  360  216  95
+item  ___10
+at  2504
+
+spawn  H._espinosa
+coords  350  216
+at  2560
+
+spawn  Farol
+coords  360  216  95
+item  ___10
+at  2598
+
+spawn  Farol
+coords  360  216  95
+item  ___10
+at  2692
+
+spawn  Segador
+coords  -180  216  18
+at  2740
+
+spawn  Segador
+coords  340  216
+at  2740
+
+spawn  C._Demonio
+coords  360  216
+at  2800
+
+spawn  Farol
+coords  360  216  127
+item  ___20
+at  2884
+
+spawn  Loda
+coords  390  216  0
+at  3081
+
+spawn  Loda
+coords  360  216  0
+at  3081
+
+spawn  Candle2
+coords  360  216  55
+item  ___10
+at  3232
+
+Blockade
+at  3330
+
+spawn  Muddy
+coords  360  216
+at  3330
+
+spawn  BatSpawner
+coords  300  216
+at  3330
+
+spawn  Chiroptera_
+coords  360  216 29
+at  3350
+
+spawn  Platform_plaza4
+coords  360  216  72
+flip  1
+item	Pollo_frito
+at  3382
+
+spawn  Esqueleto
+coords  360  216  90
+at  3400
+
+spawn  Candle2
+coords  360  216  55
+item  Bumeran
+map 1
+at  3530
+
+spawn  Esqueleto
+coords  360  216  132
+at  3580
+
+Blockade  3620
+at  3620
+
+spawn  Golem
+coords  360  216  130
+at  3620
+
+spawn  Loda
+coords  360  216  0
+at  3700
+
+spawn  Candle2
+coords  360  216  55
+item  ___10
+at  3730
+
+spawn  Loda
+coords  390  216  0
+at  3800
+
+spawn  Candle2
+coords  360  216  120
+item  C._Plateada
+map 1
+at  3820
+
+spawn  Candle2
+coords  360  216  55
+item  Crucifijo
+at  3985
+
+spawn  Segador
+coords  -50  216  132
+at  4000
+
+spawn  Loda
+coords  160  216  74
+at  4020
+
+spawn  Chiroptera_
+coords  360  216 110
+at  4060
+
+spawn  Esqueleto
+coords  360  216  170
+at  4085
+
+Blockade  4100
+at  4100
+
+spawn  Muddy
+coords  360  216
+at  4100
+
+spawn  Loda
+coords  160  216  96
+at  4185
+
+spawn  Golem
+coords  360  216  87
+at  4275
+
+spawn  Chiroptera_
+coords  360  216 29
+at  4300
+
+Blockade  4400
+at  4400
+
+spawn  Golem
+coords  360  216
+at  4420
+
+spawn  Candle2
+coords  360  216  40
+item  ___10
+at  4510
+
+spawn  Platform_plaza4
+coords  360  216  114
+item	C._Arcoiris
+flip  1
+at  4704
+
+spawn  Loda
+coords  165  216  81
+at  4710
+
+spawn  Esqueleto
+coords  360  216  86
+at  4760
+
+spawn  Loda
+coords  280  216  0
+at  4800
+
+spawn  Cuervo
+coords  360  216  150
+at  4920
+
+spawn  Candle2
+coords  360  216  115
+item  ___20
+at  4985
+
+spawn  Candle2
+coords  360  216  55
+item  ___10
+at  5065
+
+spawn  Candle2
+coords  360  216  190
+item  ___100
+at  5135
+
+spawn  Loda
+coords  150  216  67
+at  5195
+
+spawn  Loda
+coords  225  216  148
+at  5195
+
+spawn  Loda
+coords  280  216  0
+at  5240
+
+spawn  Chiroptera_
+coords  360  216 12
+at  5290
+
+spawn  Farol
+coords  360  216  141
+item  ___20
+at  5468
+
+spawn  Golem
+coords  360  216  47
+at  5515
+
+spawn  Platform_wall_des1
+coords  360  216  47
+flip	1
+alias	Thick
+at  5604
+
+Blockade  5750
+at  5750
+
+spawn  H._espinosa
+coords  360  216
+at  5800
+
+spawn  R._de_Venus
+coords  360  216  100
+flip 1
+at  5860
+
+spawn  H._espinosa
+coords  360  216
+at  5860
+
+spawn  H._espinosa
+coords  360  216
+at  5920
+
+spawn  H._espinosa
+coords  360  216
+at  5980
+
+spawn  Segador
+coords  360  216  0
+at  6000
+
+spawn  H._espinosa
+coords  360  216
+at  6040
+
+Blockade  6100
+at  6100
+
+spawn  R._de_Venus
+coords  360  216  110
+flip 1
+at  6100
+
+spawn  C._Demonio
+coords  360  216
+at  6110
+
+spawn  H._espinosa
+coords  360  216
+at  6185
+
+spawn  H._espinosa
+coords  360  216
+at  6245
+
+spawn  H._espinosa
+coords  360  216
+at  6305
+
+spawn  H._espinosa
+coords  360  216
+at  6365
+
+Blockade  6330
+at  6330
+
+spawn  R._de_Venus
+coords  360  216  100
+flip 1
+at  6330
+
+spawn  H._espinosa
+coords  360  216
+at  6425
+
+spawn  H._espinosa
+coords  360  216
+at  6485
+
+spawn  R._de_Venus
+coords  360  216  110
+flip 1
+at  6550
+
+spawn  Golem
+coords  360  216
+at  6560
+
+spawn  H._espinosa
+coords  360  216
+at  6678
+
+Blockade  6770
+at  6770
+
+spawn  H._espinosa
+coords  360  216
+at  6738
+
+Blockade  6798
+at  6998
+
+spawn  Driade
+coords  160  216
+item  ___250
+at  6998
+
+Wait
+at  6998
+

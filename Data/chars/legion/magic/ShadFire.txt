@@ -15,6 +15,7 @@ load		ShFireS
 
 
 
+
 anim	death
 	delay	4
 	offset	9 10
