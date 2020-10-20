@@ -36,6 +36,7 @@ palette		data/chars/countess/copa/copa1a.gif
 
 
 
+
 anim	death
 	delay	1
 	offset	9 9
@@ -69,7 +70,7 @@ anim	idle
 	followcond	1
 	offset	7 10
 	bbox	5 2 3 10
-	attack	5 2 3 10 3 0 1 0 0 0
+	attack	5 2 3 10 3 0 0 0 0 0
 	platform	1 1 -1 -1 1 1 1 1
 	frame	data/chars/countess/copa/copa1a.gif
 	@cmd	groundchange "ANI_FOLLOW1"

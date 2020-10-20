@@ -5,6 +5,7 @@ candamage       player npc shot
 noquake		1
 subject_to_hole	1
 no_adjust_base	0
+stealth         300
 death		1
 subject_to_platform 0
 animationscript data/scripts/prscript.c

@@ -38,6 +38,7 @@ alternatepal	data/chars/zombie/zombi_blink.gif
 
 
 
+
 anim	attack1
 	range	0 400
 	loop	1

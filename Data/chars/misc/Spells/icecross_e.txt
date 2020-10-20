@@ -3,6 +3,7 @@ type		none
 candamage	player npc shot
 nolife	1
 speedf	0.1
+stealth    300
 antigravity     100
 remove  0
 offscreenkill	50

@@ -127,6 +127,7 @@ alternatepal 	data/chars/darvulia/blink.gif
 
 
 
+
 anim	attack
 	loop	0
 	range	140 170
@@ -192,43 +193,43 @@ anim	attack2
 	frame	data/chars/darvulia/attack1a.gif
 	delay	1
 	hitfx	data/sounds/slash.wav
-	attack2	92 5 45 195 19 0 0 0 0 0
+	attack2	92 5 45 195 19 0 1 0 0 0
 	frame	data/chars/darvulia/attack1b.gif
 	hitfx	data/sounds/beat1.wav
 	attack	92 98 18 45 12 0 0 0 0 0
 	frame	data/chars/darvulia/attack1c.gif
 	hitfx	data/sounds/slash.wav
-	attack2	92 5 45 195 19 0 0 0 0 0
+	attack2	92 5 45 195 19 0 1 0 0 0
 	frame	data/chars/darvulia/attack1b.gif
 	hitfx	data/sounds/beat1.wav
 	attack	92 98 18 45 12 0 0 0 0 0
 	frame	data/chars/darvulia/attack1c.gif
 	hitfx	data/sounds/slash.wav
-	attack2	92 5 45 195 19 0 0 0 0 0
+	attack2	92 5 45 195 19 0 1 0 0 0
 	frame	data/chars/darvulia/attack1b.gif
 	hitfx	data/sounds/beat1.wav
 	attack	92 98 18 45 12 0 0 0 0 0
 	frame	data/chars/darvulia/attack1c.gif
 	hitfx	data/sounds/slash.wav
-	attack2	92 5 45 195 19 0 0 0 0 0
+	attack2	92 5 45 195 19 0 1 0 0 0
 	frame	data/chars/darvulia/attack1b.gif
 	hitfx	data/sounds/beat1.wav
 	attack	92 98 18 45 12 0 0 0 0 0
 	frame	data/chars/darvulia/attack1e.gif
 	hitfx	data/sounds/slash.wav
-	attack2	92 130 38 70 19 0 0 0 0 0
+	attack2	92 130 38 70 19 0 1 0 0 0
 	frame	data/chars/darvulia/attack1d.gif
 	hitfx	data/sounds/beat1.wav
 	attack	92 98 18 45 12 0 0 0 0 0
 	frame	data/chars/darvulia/attack1e.gif
 	hitfx	data/sounds/slash.wav
-	attack2	92 130 38 70 19 0 0 0 0 0
+	attack2	92 130 38 70 19 0 1 0 0 0
 	frame	data/chars/darvulia/attack1d.gif
 	hitfx	data/sounds/beat1.wav
 	attack	92 98 18 45 12 0 0 0 0 0
 	frame	data/chars/darvulia/attack1e.gif
 	hitfx	data/sounds/slash.wav
-	attack2	92 130 38 70 19 0 0 0 0 0
+	attack2	92 130 38 70 19 0 1 0 0 0
 	frame	data/chars/darvulia/attack1d.gif
 	hitfx	data/sounds/beat1.wav
 	attack	92 98 18 45 12 0 0 0 0 0
@@ -237,25 +238,25 @@ anim	attack2
 	attack	92 98 18 45 12 0 0 0 0 0
 	frame	data/chars/darvulia/attack1f.gif
 	hitfx	data/sounds/slash.wav
-	attack2	93 130 20 70 19 0 0 0 0 0
+	attack2	93 130 20 70 19 0 1 0 0 0
 	frame	data/chars/darvulia/attack1f.gif
 	hitfx	data/sounds/beat1.wav
 	attack	92 98 18 45 12 0 0 0 0 0
 	frame	data/chars/darvulia/attack1f.gif
 	hitfx	data/sounds/slash.wav
-	attack2	93 130 20 70 19 0 0 0 0 0
+	attack2	93 130 20 70 19 0 1 0 0 0
 	frame	data/chars/darvulia/attack1f.gif
 	hitfx	data/sounds/beat1.wav
 	attack	92 98 18 45 12 0 0 0 0 0
 	frame	data/chars/darvulia/attack1f.gif
 	hitfx	data/sounds/slash.wav
-	attack2	93 130 20 70 19 0 0 0 0 0
+	attack2	93 130 20 70 19 0 1 0 0 0
 	frame	data/chars/darvulia/attack1f.gif
 	hitfx	data/sounds/beat1.wav
 	attack	92 98 18 45 12 0 0 0 0 0
 	frame	data/chars/darvulia/attack1f.gif
 	hitfx	data/sounds/slash.wav
-	attack2	93 130 20 70 19 0 0 0 0 0
+	attack2	93 130 20 70 19 0 1 0 0 0
 	frame	data/chars/darvulia/attack1f.gif
 	delay	20
 	attack	92 98 18 45 12 0 0 0 0 0
@@ -372,12 +373,12 @@ if(frame==0){
 	  if (iName == "ScytheSpawner") {
 		killentity(vEntity);
           } else {
-		
+
 	  }
 	}
       }
 }
-	@end_script
+	@end_script	
 	delay	7
 	frame	data/chars/darvulia/death1d.gif
 	@cmd	tosser2 "Darvulia_Death_Scythe" 0 120 0 8.7

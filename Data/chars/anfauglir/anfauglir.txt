@@ -51,6 +51,7 @@ alternatepal	 data/chars/anfauglir/blink.gif
 
 
 
+
 anim	attack1
 	range	25 100
 	rangea	0 0

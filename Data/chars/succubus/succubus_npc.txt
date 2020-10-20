@@ -31,6 +31,9 @@ defense normal7 0.75
 defense normal10 0.75
 defense normal17 0.75
 defense normal20 0 1 999 0 0 0 0
+defense normal22 0.75
+defense normal23 0.75
+defense normal24 0.75
 defense burn 0.75
 
 icon		data/chars/misc/bgmonster.gif

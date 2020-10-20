@@ -1,6 +1,6 @@
 Total Ram: 2147483647 Bytes
  Free Ram: 2147483647 Bytes
- Used Ram: 6254592 Bytes
+ Used Ram: 6307840 Bytes
 
 debug:nativeWidth, nativeHeight, bpp, Hz  1366, 768, 24, 60
 OpenBoR v3.0 Build , Compile Date: Oct 12 2016
@@ -17,7 +17,7 @@ Loading fonts................	1 2 3 4 5 6 Done!
 Timer init...................	Done!
 Initialize Sound..............	
 Loading sprites..............	Done!
-Loading level order..........	Command 'pauseoffset' not understood in level order!Command 'nomaxrushreset' not understood in level order!Command 'nomaxrushreset' not understood in level order!Done!
+Loading level order..........	Command 'pauseoffset' not understood in level order!Command 'nomaxrushreset' not understood in level order!Command 'nomaxrushreset' not understood in level order!Command 'nomaxrushreset' not understood in level order!Command 'nomaxrushreset' not understood in level order!Command 'nomaxrushreset' not understood in level order!Done!
 Loading model constants......	Done!
 Loading script settings......	Done!
 Loading scripts..............	Done!
@@ -29,18 +29,50 @@ Cacheing 'Hshock' from data/chars/misc/hits/shock.txt
 Cacheing 'Blooda' from data/chars/misc/blood/blooda.txt
 Cacheing 'Bloode' from data/chars/misc/blood/bloode.txt
 Cacheing 'PRose' from data/chars/driade/prose.txt
+Cacheing 'StoneC' from data/chars/misc/spells/StoneC.txt
+Cacheing 'Stone1' from data/chars/misc/spells/Stone1.txt
+Cacheing 'Stone2' from data/chars/misc/spells/Stone2.txt
+Cacheing 'Stone3' from data/chars/misc/spells/Stone3.txt
+Cacheing 'Stone4' from data/chars/misc/spells/Stone4.txt
+Cacheing 'Soul_steal' from data/chars/fran/magic/soul_steal.txt
+Cacheing 'dash_effect' from data/chars/ethan/shadow/dash_effect.txt
+Cacheing 'Explo_whip' from data/chars/ethan/shadow/explo_whip.txt
+Cacheing 'Charge_whip' from data/chars/ethan/shadow/charge_whip.txt
 Cacheing 'Sheeba' from data/chars/sheeba/sheeba.txt
 Cacheing 'Sheeba_Volaticus' from data/chars/sheeba/magic/sheeba_volaticus.txt
+Cacheing 'BPetir' from data/chars/sheeba/magic/bpetir.txt
 Cacheing 'Ethan' from data/chars/ethan/ethan.txt
+Cacheing 'jump3_shadow' from data/chars/ethan/shadow/jump3_shadow.txt
+Cacheing 'dash6_shadow' from data/chars/ethan/shadow/dash6_shadow.txt
+Cacheing 'dash5_shadow' from data/chars/ethan/shadow/dash5_shadow.txt
+Cacheing 'upper6_shadow' from data/chars/ethan/shadow/upper6_shadow.txt
+Cacheing 'upper5_shadow' from data/chars/ethan/shadow/upper5_shadow.txt
+Cacheing 'evasion1_shadow' from data/chars/ethan/shadow/evasion1_shadow.txt
+Cacheing 'evasion2_shadow' from data/chars/ethan/shadow/evasion2_shadow.txt
+Cacheing 'evasion3_shadow' from data/chars/ethan/shadow/evasion3_shadow.txt
+Cacheing 'evasion4_shadow' from data/chars/ethan/shadow/evasion4_shadow.txt
+Cacheing 'evasion1_shadow_teo' from data/chars/teobaldo/shadow/evasion1_shadow_teo.txt
+Cacheing 'evasion2_shadow_teo' from data/chars/teobaldo/shadow/evasion2_shadow_teo.txt
+Cacheing 'evasion3_shadow_teo' from data/chars/teobaldo/shadow/evasion3_shadow_teo.txt
+Cacheing 'evasion4_shadow_teo' from data/chars/teobaldo/shadow/evasion4_shadow_teo.txt
+Cacheing 'rising1_shadow' from data/chars/teobaldo/shadow/rising1_shadow.txt
+Cacheing 'rising2_shadow' from data/chars/teobaldo/shadow/rising2_shadow.txt
+Cacheing 'jump1_shadow' from data/chars/teobaldo/shadow/jump1_shadow.txt
 Cacheing 'Ethan_fire' from data/chars/ethan/ethan_spell.txt
+Cacheing 'Ethan_skeleton' from data/chars/ethan/ethan_spell2.txt
+Cacheing 'flamepunch_effect' from data/chars/ethan/shadow/flamepunch_effect.txt
 Cacheing 'Fran' from data/chars/fran/fran.txt
+Cacheing 'Fran_1' from data/chars/fran/fran_1.txt
+Cacheing 'Fran_sword' from data/chars/fran/magic/fran_sword.txt
 Cacheing 'Soul_Bat' from data/chars/fran/soul_bat.txt
+Cacheing 'Soul_Wolf' from data/chars/fran/soul_wolf.txt
+Cacheing 'Soul_Cloud' from data/chars/fran/soul_cloud.txt
 Cacheing 'Teobaldo' from data/chars/teobaldo/teobaldo.txt
 Cacheing 'Teo_rock1' from data/chars/teobaldo/teo_rock1.txt
 Cacheing 'Teo_rock2' from data/chars/teobaldo/teo_rock2.txt
 Cacheing 'Teo_rock3' from data/chars/teobaldo/teo_rock3.txt
-Cacheing 'Blitz' from data/chars/blitz/blitz.txt
-Cacheing 'NOwl' from data/chars/owl/NOwl.txt
+Cacheing 'Sucubo__' from data/chars/succubus/succubus_p.txt
+Cacheing 'Sucubo_npc' from data/chars/succubus/succubus_npc.txt
 Cacheing 'Chiroptera' from data/chars/bat/bat.txt
 Cacheing 'Chiroptera_' from data/chars/bat/bat_.txt
 Cacheing 'Fantasma' from data/chars/ghost/ghost.txt
@@ -55,14 +87,14 @@ Cacheing 'Armor6a' from data/chars/anfauglir/armor/armor6a.txt
 Cacheing 'Armor7a' from data/chars/anfauglir/armor/armor7a.txt
 Cacheing 'Esqueleto' from data/chars/skeleton/skelet.txt
 Cacheing 'Esqueleto_' from data/chars/skeleton/skelet_spawn.txt
-Cacheing 'Esqueleto_c' from data/chars/skeleton/skelet_c.txt
 Cacheing 'Bone' from data/chars/skeleton/bone.txt
-Cacheing 'Bone_c' from data/chars/skeleton/bone_c.txt
+Cacheing 'Bone_ethan' from data/chars/ethan/shadow/bone_e.txt
 Cacheing 'Skelet_headless' from data/chars/skeleton/skelet_headless.txt
 Cacheing 'Bone1' from data/chars/skeleton/bone1.txt
-Cacheing 'Bone1_c' from data/chars/skeleton/bone1_c.txt
 Cacheing 'Zombi' from data/chars/zombie/zombie.txt
 Cacheing 'D._Negro' from data/chars/bdragon/bdragon.txt
+Cacheing 'D._Negro_' from data/chars/bdragon/bdragon_.txt
+Cacheing 'Dragon_wall' from data/chars/bdragon/dragon_wall.txt
 Cacheing 'RBase' from data/chars/bdragon/rbase.txt
 Cacheing 'Rib' from data/chars/bdragon/rib.txt
 Cacheing 'C._Demonio' from data/chars/demonknight/demonknight.txt
@@ -70,15 +102,17 @@ Cacheing 'axev' from data/chars/demonknight/axe/axev.txt
 Cacheing 'axeh' from data/chars/demonknight/axe/axeh.txt
 Cacheing 'axed' from data/chars/demonknight/axe/axed.txt
 Cacheing 'Sahagin' from data/chars/sahagin/sahagin.txt
-Cacheing 'WSpit' from data/chars/sahagin/wspit/wspit.txt
+Cacheing 'Sahagin_' from data/chars/sahagin/sahagin_.txt
 Cacheing 'Flamataura' from data/chars/flametaur/flametaur.txt
-Cacheing 'Flamataura_' from data/chars/flametaur/flametaur_.txt
+Cacheing 'Flamatau' from data/chars/flametaur/flametaur_p.txt
 Cacheing 'Flame_t' from data/chars/flametaur/flame/flame_t.txt
+Cacheing 'Flame_p' from data/chars/flametaur/flame/flame_p.txt
 Cacheing 'Gargola' from data/chars/gargoyle/gargoyle.txt
 Cacheing 'Gargola_rock' from data/chars/gargoyle/gargoyle_rock.txt
 Cacheing 'Gargola_c' from data/chars/gargoyle/gargoyle_c.txt
 Cacheing 'H._espinosa' from data/chars/une/une.txt
 Cacheing 'Driade' from data/chars/driade/driade.txt
+Cacheing 'Driade_' from data/chars/driade/driade_.txt
 Cacheing 'DHiedra' from data/chars/driade/hiedra.txt
 Cacheing 'DRose' from data/chars/driade/rose.txt
 Cacheing 'Segador' from data/chars/reaper/reaper.txt
@@ -92,10 +126,12 @@ Cacheing 'Tomo_Magico' from data/chars/magicbook/magibook.txt
 Cacheing 'Nigromante' from data/chars/necromancer/necromancer.txt
 Cacheing 'Nigromante_' from data/chars/necromancer/necromancer_.txt
 Cacheing 'Arana' from data/chars/spider/spider.txt
+Cacheing 'Arana_' from data/chars/spider/spider_.txt
 Cacheing 'T._de_huesos' from data/chars/bonetower/bonet.txt
 Cacheing 'T._de_huesos_' from data/chars/bonetower/boneth.txt
 Cacheing 'bpflame' from data/chars/bonetower/bpflame.txt
 Cacheing 'P._Asesino' from data/chars/killerclown/killerclown.txt
+Cacheing 'P._Asesino_' from data/chars/killerclown/killerclown_.txt
 Cacheing 'Confeti_1' from data/chars/killerclown/confeti1.txt
 Cacheing 'Confeti_2' from data/chars/killerclown/confeti2.txt
 Cacheing 'Confeti_3' from data/chars/killerclown/confeti3.txt
@@ -105,9 +141,9 @@ Cacheing 'Card_clown' from data/chars/killerclown/card/card_clown.txt
 Cacheing 'Card_hit' from data/chars/killerclown/card/card_hit.txt
 Cacheing 'Ente_Helado' from data/chars/iceshade/iceshade.txt
 Cacheing 'Charmandra' from data/chars/charmandra/charmandra.txt
-Cacheing 'Charmandra_' from data/chars/charmandra/charmandra_.txt
 Cacheing 'M._Maligna' from data/chars/meanlook/meanlook.txt
 Cacheing 'G._demonio' from data/chars/demonguardian/demonguardian.txt
+Cacheing 'G._demonio_' from data/chars/demonguardian/demonguardian_.txt
 Cacheing 'Slashg' from data/chars/demonguardian/slash/slashg.txt
 Cacheing 'Brujo' from data/chars/wizard/wizard.txt
 Cacheing 'LightColumn_ghoul' from data/chars/misc/espells/lightcolumn_ghoul.txt
@@ -118,7 +154,31 @@ Cacheing 'E._Carmesi' from data/chars/skeleton/crimson_skelet.txt
 Cacheing 'Mimic' from data/chars/mimic/mimic.txt
 Cacheing 'Ectoplasma' from data/chars/ghost/ectoplasma.txt
 Cacheing 'E._Laser' from data/chars/skeleton/skelet_beam.txt
+Cacheing 'E._Laser_' from data/chars/skeleton/Skelet_beam_f.txt
+Cacheing 'P._de_huesos' from data/chars/bonetower/bonep.txt
+Cacheing 'P._de_huesos_' from data/chars/bonetower/boneph.txt
+Cacheing 'Bafo_shot' from data/chars/bafomet/magic/bafo_shot.txt
+Cacheing 'Bafo_shot_p' from data/chars/bafomet/magic/bafo_shot_p.txt
+Cacheing 'Bafo_shot_2' from data/chars/bafomet/magic/bafo_shot_2.txt
+Cacheing 'Bafo_shot_2_p' from data/chars/bafomet/magic/bafo_shot_2_p.txt
+Cacheing 'Bafo_seal' from data/chars/bafomet/magic/bafo_seal.txt
+Cacheing 'Bafo_shot_3' from data/chars/bafomet/magic/bafo_shot_3.txt
+Cacheing 'Bafo_shot_3_p' from data/chars/bafomet/magic/bafo_shot_3_p.txt
+Cacheing 'Fake_enemy' from data/chars/misc/fake_enemy.txt
+Cacheing 'Fake_enemy_2' from data/chars/misc/fake_enemy_2.txt
+Cacheing 'Fake_enemy_3' from data/chars/misc/fake_enemy_3.txt
+Cacheing 'Bafomet' from data/chars/bafomet/bafomet.txt
+Cacheing 'Bafomet_' from data/chars/bafomet/bafomet_p.txt
 Cacheing 'Cazadora' from data/chars/cazadora/cazadora.txt
+Cacheing 'D._Zombi' from data/chars/bdragon/zdragon.txt
+Cacheing 'D._Zombi_' from data/chars/bdragon/zdragon_.txt
+Cacheing 'RibPis7' from data/chars/bdragon/ribpis7.txt
+Cacheing 'RibPis6' from data/chars/bdragon/ribpis6.txt
+Cacheing 'RibPis5' from data/chars/bdragon/ribpis5.txt
+Cacheing 'RibPis4' from data/chars/bdragon/ribpis4.txt
+Cacheing 'RibPis3' from data/chars/bdragon/ribpis3.txt
+Cacheing 'RibPis2' from data/chars/bdragon/ribpis2.txt
+Cacheing 'RibPis1' from data/chars/bdragon/ribpis1.txt
 Cacheing 'La_criatura' from data/chars/creature/creature.txt
 Cacheing 'La_criatura_' from data/chars/creature/creature_.txt
 Cacheing 'CThunder' from data/chars/creature/tech/thunder.txt
@@ -127,20 +187,27 @@ Cacheing 'Shockwave' from data/chars/creature/wave/wave.txt
 Cacheing 'Fire_wolf' from data/chars/werewolf/firewolf/fire_wolf.txt
 Cacheing 'Shockwave1' from data/chars/werewolf/firewolf/wave1.txt
 Cacheing 'Gevaudan' from data/chars/werewolf/werewolf.txt
+Cacheing 'Gevaudan_' from data/chars/werewolf/werewolf_.txt
 Cacheing 'Cloth1a' from data/chars/werewolf/cloth1a.txt
 Cacheing 'Cloth1b' from data/chars/werewolf/cloth1b.txt
 Cacheing 'Cloth1c' from data/chars/werewolf/cloth1c.txt
 Cacheing 'Cerbero' from data/chars/cerberus/cerberus.txt
+Cacheing 'Cerbero_' from data/chars/cerberus/cerberus_.txt
 Cacheing 'Firewave_c' from data/chars/cerberus/firewave_c.txt
 Cacheing 'R._Polilla' from data/chars/queenmoth/queenmoth.txt
+Cacheing 'R._Polilla_' from data/chars/queenmoth/queenmoth_.txt
 Cacheing 'Polilla' from data/chars/queenmoth/caterpillar/moth.txt
 Cacheing 'Polilla_' from data/chars/queenmoth/caterpillar/moth_.txt
 Cacheing 'Caterpillar' from data/chars/queenmoth/caterpillar/caterpillar.txt
 Cacheing 'Fake_Evaine' from data/chars/evaine/fake_evaine.txt
 Cacheing 'Scythe' from data/chars/evaine/scythe/scythe.txt
 Cacheing 'Sucubo' from data/chars/succubus/succubus.txt
-Cacheing 'Inquisidor' from data/chars/teobaldo/teobaldo_boss.txt
+Cacheing 'Sucubo_' from data/chars/succubus/succubus_.txt
+Cacheing 'Paladin' from data/chars/teobaldo/teobaldo_boss.txt
+Cacheing 'Paladin_p' from data/chars/teobaldo/teobaldo_boss_p.txt
+Cacheing 'Dopelganger' from data/chars/teobaldo/doppleganger.txt
 Cacheing 'axeteo' from data/chars/teobaldo/axeteo.txt
+Cacheing 'axexavier' from data/chars/xavier/axexavier.txt
 Cacheing 'Teo_rock1e' from data/chars/teobaldo/teo_rock1e.txt
 Cacheing 'Teo_rock2e' from data/chars/teobaldo/teo_rock2e.txt
 Cacheing 'Teo_rock3e' from data/chars/teobaldo/teo_rock3e.txt
@@ -181,7 +248,20 @@ Cacheing 'legion_die' from data/chars/legion/ldie/legion_die.txt
 Cacheing 'fire_legion_blast' from data/chars/legion/magic/fire_legion_blast.txt
 Cacheing 'fire_legion1a' from data/chars/legion/magic/fire_legion1a.txt
 Cacheing 'fire_legion1b' from data/chars/legion/magic/fire_legion1b.txt
+Cacheing 'Firehell1a' from data/chars/countess/magic/firehell1a.txt
+Cacheing 'Firehell2a' from data/chars/countess/magic/firehell2a.txt
+Cacheing 'Circle_transform' from data/chars/countess/magic/circle-transform.txt
 Cacheing 'Bathory' from data/chars/countess/countess.txt
+Cacheing 'Bathory_' from data/chars/countess/countess_.txt
+Cacheing 'Bright_summon' from data/chars/countess/magic/bright_summon.txt
+Cacheing 'Shockwave_thunder' from data/chars/countess/magic/shockwave_thunder.txt
+Cacheing 'Shockwave_thunder_2' from data/chars/countess/magic/shockwave_thunder_2.txt
+Cacheing 'Sparks_serpent' from data/chars/countess/magic/sparks_serpent.txt
+Cacheing 'Tail_impact' from data/chars/countess/finalform/tail_impact.txt
+Cacheing 'Tail_serpent_1' from data/chars/countess/finalform/tail_serpent_1.txt
+Cacheing 'Serpent_body' from data/chars/countess/finalform/serpent_body.txt
+Cacheing 'Final_form' from data/chars/countess/finalform/final_form.txt
+Cacheing 'Final_form_' from data/chars/countess/finalform/final_form_.txt
 Cacheing 'Copa' from data/chars/countess/copa/copa.txt
 Cacheing 'Copa_debris1a' from data/chars/countess/copa/copa_debris1a.txt
 Cacheing 'Copa_debris1b' from data/chars/countess/copa/copa_debris1b.txt
@@ -190,29 +270,52 @@ Cacheing 'Copa_debris1d' from data/chars/countess/copa/copa_debris1d.txt
 Cacheing 'GPillar' from data/chars/countess/GPillar.txt
 Cacheing 'IceHole' from data/chars/countess/magic/IceHole.txt
 Cacheing 'IceBal' from data/chars/countess/magic/IceBal.txt
-Cacheing 'Electball' from data/chars/countess/magic/electball.txt
 Cacheing 'Spellexplo' from data/chars/countess/magic/spellexplo.txt
 Cacheing 'Electricball' from data/chars/countess/magic/electricball.txt
+Cacheing 'Electricball_3' from data/chars/countess/magic/electricball_3.txt
 Cacheing 'Electricball_spawn_right' from data/chars/countess/magic/electricball_spawn_right.txt
 Cacheing 'Electricball_spawn_left' from data/chars/countess/magic/electricball_spawn_left.txt
 Cacheing 'Spawn_MulaBat' from data/chars/countess/magic/spawn_mulabat.txt
 Cacheing 'MulanaBat' from data/chars/countess/magic/MulaBat.txt
+Cacheing 'Cazadora' from data/chars/cazadora/cazadora.txt
+Cacheing 'Darvulia_Scythe' from data/chars/darvulia/spell/darvulia_scythe.txt
+Cacheing 'Darvulia_ghost' from data/chars/darvulia/spell/darvulia_ghost.txt
+Cacheing 'Darvulia_sparks' from data/chars/darvulia/spell/darvulia_sparks.txt
+Cacheing 'Darvulia_image' from data/chars/darvulia/spell/darvulia_image.txt
+Cacheing 'Darvulia_laser' from data/chars/darvulia/spell/darvulia_laser.txt
+Cacheing 'Darvulia_Head' from data/chars/darvulia/spell/darvulia_head.txt
+Cacheing 'Controlseal' from data/chars/darvulia/witch/controlseal.txt
+Cacheing 'Controlsealdeath' from data/chars/darvulia/witch/controlsealdeath.txt
+Cacheing 'Darvulia_witch' from data/chars/darvulia/witch/darvulia_witch.txt
+Cacheing 'Darvulia_witch_1' from data/chars/darvulia/witch/darvulia_witch_1.txt
+Cacheing 'Llight' from data/chars/darvulia/spell/Llight.txt
+Cacheing 'Mini_scythe' from data/chars/darvulia/spell/mini_scythe.txt
+Cacheing 'GfireBall' from data/chars/darvulia/spell/gfireball.txt
+Cacheing 'Faketarget' from data/chars/darvulia/faketarget.txt
+Cacheing 'Darvulia_death_scythe' from data/chars/darvulia/spell/darvulia_death_scythe.txt
+Cacheing 'Darvulia' from data/chars/darvulia/darvulia.txt
+Cacheing 'Sparkles_health' from data/chars/countess/finalform/sparkles_health.txt
 Cacheing 'ZombSpawner' from data/chars/misc/spawners/zombspwn.txt
 Cacheing 'BatSpawner' from data/chars/misc/spawners/batspwn.txt
 Cacheing 'SahaginSpawner' from data/chars/misc/spawners/sahaspwn.txt
 Cacheing 'Muddy' from data/chars/misc/spawners/muddy.txt
 Cacheing 'GhostSpawner' from data/chars/misc/spawners/ghostspwn.txt
+Cacheing 'GhostSpawner_2' from data/chars/misc/spawners/ghostspwn_2.txt
 Cacheing 'EctoSpawner' from data/chars/misc/spawners/ectospwn.txt
+Cacheing 'ScytheSpawner' from data/chars/misc/spawners/ScytheSpwn.txt
 Cacheing 'Boss0Spawner' from data/chars/misc/spawners/Boss0Spwn.txt
-Cacheing 'Boss1Spawner' from data/chars/misc/spawners/Boss1Spwn.txt
-Cacheing 'Boss2Spawner' from data/chars/misc/spawners/Boss2Spwn.txt
-Cacheing 'Boss3Spawner' from data/chars/misc/spawners/Boss3Spwn.txt
-Cacheing 'Boss4Spawner' from data/chars/misc/spawners/Boss4Spwn.txt
-Cacheing 'Boss5Spawner' from data/chars/misc/spawners/Boss5Spwn.txt
-Cacheing 'Boss6Spawner' from data/chars/misc/spawners/Boss6Spwn.txt
+Cacheing 'SkeletonSpawner' from data/chars/misc/spawners/SkeletonSpwn.txt
+Cacheing 'SkeletonSpawner_2' from data/chars/misc/spawners/SkeletonSpwn_2.txt
+Cacheing 'MuddySpawner' from data/chars/misc/spawners/MuddySpwn.txt
+Cacheing 'SoldierSpawner' from data/chars/misc/spawners/SoldierSpwn.txt
+Cacheing 'ClownSpawner' from data/chars/misc/spawners/ClownSpwn.txt
 Cacheing 'Boss7Spawner' from data/chars/misc/spawners/Boss7Spwn.txt
-Cacheing 'Boss8Spawner' from data/chars/misc/spawners/Boss8Spwn.txt
-Cacheing 'Boss9Spawner' from data/chars/misc/spawners/Boss9Spwn.txt
+Cacheing 'DKnightSpawner' from data/chars/misc/spawners/DKnightSpwn.txt
+Cacheing 'GDemonSpawner' from data/chars/misc/spawners/GDemonSpwn.txt
+Cacheing 'GDemonSpawner_' from data/chars/misc/spawners/GDemonSpwn_.txt
+Cacheing 'ESkeletonSpawner' from data/chars/misc/spawners/ESkeletonSpwn.txt
+Cacheing 'BeamSkeletonSpawner' from data/chars/misc/spawners/BSkeletonSpwn.txt
+Cacheing 'EctoSpawner_2' from data/chars/misc/spawners/ectospwn_2.txt
 Cacheing 'Fb01' from data/chars/misc/spells/Fb01.txt
 Cacheing 'Fb01_e' from data/chars/misc/espells/Fb01_e.txt
 Cacheing 'Fb02' from data/chars/misc/spells/Fb02.txt
@@ -233,18 +336,14 @@ Cacheing 'lightningseal' from data/chars/misc/spells/lightningseal.txt
 Cacheing 'forb_fireseal' from data/chars/misc/spells/forbfireseal.txt
 Cacheing 'BFBall' from data/chars/queenmoth/caterpillar/bfball.txt
 Cacheing 'MBFBall' from data/chars/magicbook/spells/mbfball.txt
-Cacheing 'BPetir' from data/chars/blitz/bpetir.txt
 Cacheing 'Quetzal' from data/chars/sheeba/magic/quetzal.txt
-Cacheing 'RoseSpell' from data/chars/succubus/spells/rosespell.txt
-Cacheing 'RoseSpell1' from data/chars/succubus/spells/rosespell1.txt
 Cacheing 'EHeart_MP' from data/chars/succubus/spells/eheart_mp.txt
+Cacheing 'EHeart_MP_' from data/chars/succubus/spells/eheart_mp_.txt
+Cacheing 'EHeart_MP_npc' from data/chars/succubus/spells/eheart_mp_npc.txt
+Cacheing 'EHeart_MP_p' from data/chars/succubus/spells/eheart_mp_p.txt
 Cacheing 'Fire' from data/chars/misc/espells/fire.txt
-Cacheing 'rain' from data/chars/misc/rain.txt
-Cacheing 'Leosp' from data/chars/leon/leosp.txt
 Cacheing 'Clown_bomb' from data/chars/ficzko/magic/clown_bomb.txt
 Cacheing 'Shockwave2' from data/chars/ficzko/magic/wave2.txt
-Cacheing 'BPetir' from data/chars/blitz/bpetir.txt
-Cacheing 'Dirk' from data/chars/kreiger/dirk.txt
 Cacheing 'Windspell' from data/chars/misc/ESpells/windspell/wind.txt
 Cacheing 'GrBlast' from data/chars/misc/espells/grblast.txt
 Cacheing 'GrBlasto' from data/chars/misc/espells/grblasto.txt
@@ -255,6 +354,13 @@ Cacheing 'ShIceS' from data/chars/misc/espells/shiceS.txt
 Cacheing 'Ice' from data/chars/misc/espells/ice.txt
 Cacheing 'SpiritHeart' from data/chars/succubus/spells/spiritheart.txt
 Cacheing 'EnchantSpell' from data/chars/succubus/spells/enchantspell.txt
+Cacheing 'EnchantSpell2' from data/chars/succubus/spells/enchantspell2.txt
+Cacheing 'EnchantSpell_' from data/chars/succubus/spells/enchantspell_.txt
+Cacheing 'EnchantSpell2_' from data/chars/succubus/spells/enchantspell2_.txt
+Cacheing 'EnchantSpell_npc' from data/chars/succubus/spells/enchantspell_npc.txt
+Cacheing 'EnchantSpell2_npc' from data/chars/succubus/spells/enchantspell2_npc.txt
+Cacheing 'EnchantSpell_p' from data/chars/succubus/spells/enchantspell_p.txt
+Cacheing 'EnchantSpell2_p' from data/chars/succubus/spells/enchantspell2_p.txt
 Cacheing 'HeartSpell' from data/chars/succubus/spells/heartspell.txt
 Cacheing 'Heart_n' from data/chars/ninfa/spells/heart_n.txt
 Cacheing 'Heartm' from data/chars/ninfa/spells/heartm.txt
@@ -262,13 +368,17 @@ Cacheing 'Necro_blast' from data/chars/necromancer/spell/necro_blast.txt
 Cacheing 'Spiral_disapear' from data/chars/necromancer/spell/spiral_disapear.txt
 Cacheing 'Spiral_disapear_b' from data/chars/wizard/spell/spiral_disapear_b.txt
 Cacheing 'Necro_blast_1' from data/chars/wizard/spell/necro_blast_1.txt
+Cacheing 'Iceberg' from data/chars/xavier/magic/iceberg.txt
+Cacheing 'IceSpear' from data/chars/xavier/magic/icespear.txt
+Cacheing 'ShotRiffle' from data/chars/xavier/magic/shotriffle.txt
 Cacheing 'Pollo_frito' from data/chars/items/chicken/pollo.txt
 Cacheing 'P._Podrido' from data/chars/items/chicken/pollo_podrido.txt
-Cacheing 'P._Invisible' from data/chars/items/potion/potion.txt
+Cacheing 'Ajo' from data/chars/items/garlic/garlic.txt
 Cacheing 'Gema_azul' from data/chars/items/blue_gem/blue_gem.txt
 Cacheing 'Gema_roja' from data/chars/items/red_gem/red_gem.txt
-Cacheing 'Agua_Santa' from data/chars/items/holybomb/holybomb.txt
+Cacheing 'Crucifijo' from data/chars/items/holybomb/holybomb.txt
 Cacheing 'C._Arcoiris' from data/chars/items/1up/1up.txt
+Cacheing 'C._Arcoiris_' from data/chars/items/1up/1up_hidden.txt
 Cacheing '___10' from data/chars/items/coin/coin.txt
 Cacheing '___20' from data/chars/items/coin/coin_20.txt
 Cacheing '___50' from data/chars/items/coin/coin_50.txt
@@ -278,16 +388,16 @@ Cacheing '___400' from data/chars/items/money/money400.txt
 Cacheing '___700' from data/chars/items/money/money700.txt
 Cacheing 'D._Klopman' from data/chars/items/klopman/klopman.txt
 Cacheing 'Dr._Negishi' from data/chars/items/drnegishi/drnegishi.txt
-Cacheing 'Espada_Leg.' from data/chars/items/legendarysword/legendarysword.txt
+Cacheing 'Dukuro' from data/chars/items/dukuro/dukuro.txt
 Cacheing 'Cherro' from data/chars/items/cherro/cherro.txt
-Cacheing 'Orbe_intro' from data/chars/items/orb/orb_intro.txt
-Cacheing 'Orbe' from data/chars/items/orb/orb.txt
+Cacheing 'Estaca' from data/chars/items/stake/stake.txt
+Cacheing 'Orbe_Lunar' from data/chars/items/orb/orb.txt
 Cacheing 'PKnife' from data/chars/items/knife/PKnife.txt
 Cacheing 'Cuchillo' from data/chars/items/knife/wknife.txt
 Cacheing 'PAxe' from data/chars/items/axe/PAxe.txt
 Cacheing 'Hacha' from data/chars/items/axe/WAxe.txt
 Cacheing 'PCross' from data/chars/items/cross/PCross.txt
-Cacheing 'C._Sagrada' from data/chars/items/cross/wcross.txt
+Cacheing 'C._Plateada' from data/chars/items/cross/wcross.txt
 Cacheing 'A._Bendita' from data/chars/items/hwater/Wholywater.txt
 Cacheing 'Pholywater' from data/chars/items/hwater/pholywater.txt
 Cacheing 'Bomba' from data/chars/items/bomb/Wbomb.txt
@@ -302,12 +412,15 @@ Cacheing 'Lampara' from data/chars/destructible/lamp/lamp.txt
 Cacheing 'Farol' from data/chars/destructible/farol/farol.txt
 Cacheing 'Jar1' from data/chars/destructible/jar1/jar1.txt
 Cacheing 'Jar2' from data/chars/destructible/jar2/jar2.txt
+Cacheing 'Jar2_floating' from data/chars/destructible/jar2/jar2_floating.txt
 Cacheing 'Bulb' from data/chars/destructible/bulb/bulb.txt
 Cacheing 'Lampara_libreria' from data/chars/destructible/lamp2/lamp2.txt
 Cacheing 'Brazier1' from data/chars/destructible/brazier1/brazier1.txt
 Cacheing 'Brazier2' from data/chars/destructible/brazier2/brazier2.txt
 Cacheing 'Candle1' from data/chars/destructible/candle1/candle1.txt
 Cacheing 'Candle2' from data/chars/destructible/candle2/candle2.txt
+Cacheing 'Torch2' from data/chars/destructible/torch2/torch2.txt
+Cacheing 'Estatua' from Data/chars/destructible/statue/statue.txt
 Cacheing 'peoplea' from data/chars/npc/peoplea/peoplea.txt
 Cacheing 'peopleb' from data/chars/npc/peopleb/peopleb.txt
 Cacheing 'peoplec' from data/chars/npc/peoplec/peoplec.txt
@@ -317,9 +430,13 @@ Cacheing 'peoplef' from data/chars/npc/peoplef/peoplef.txt
 Cacheing 'peopleg' from data/chars/npc/peopleg/peopleg.txt
 Cacheing 'peopleh' from data/chars/npc/peopleh/peopleh.txt
 Cacheing 'peoplei' from data/chars/npc/peoplei/peoplei.txt
-Cacheing 'knight' from data/chars/npc/knight/knight.txt
-Cacheing 'guard' from data/chars/npc/guard/guard.txt
-Cacheing 'Soldado_inquisidor' from data/chars/npc/inquisitor/inquisitor_soldier.txt
+Cacheing 'horses' from data/chars/npc/peopled/horses.txt
+Cacheing 'Guard' from data/chars/npc/guard/guard.txt
+Cacheing 'Soldado_' from data/chars/npc/footman/footman_e.txt
+Cacheing 'Soldado_raso' from data/chars/npc/footman/footman.txt
+Cacheing 'Xavier' from data/chars/xavier/xavier.txt
+Cacheing 'Xavier_' from data/chars/xavier/xavier_.txt
+Cacheing 'NOwl' from data/chars/owl/NOwl.txt
 Cacheing 'bodya' from data/chars/misc/bodies/bodya.txt
 Cacheing 'bodyb' from data/chars/misc/bodies/bodyb.txt
 Cacheing 'bodyc' from data/chars/misc/bodies/bodyc.txt
@@ -328,7 +445,8 @@ Cacheing 'bodye' from data/chars/misc/bodies/bodye.txt
 Cacheing 'bodyf' from data/chars/misc/bodies/bodyf.txt
 Cacheing 'bodyg' from data/chars/misc/bodies/bodyg.txt
 Cacheing 'bodyh' from data/chars/misc/bodies/bodyh.txt
-Cacheing 'Esqueleto_npc' from data/chars/skeleton/skelet_npc.txt
+Cacheing 'bodyi' from data/chars/misc/bodies/bodyi.txt
+Cacheing 'bodyj' from data/chars/misc/bodies/bodyj.txt
 Cacheing 'Townfloor' from data/bgs/cachtice/platforms/townfloor.txt
 Cacheing 'townplat0' from data/bgs/cachtice/platforms/townplat0.txt
 Cacheing 'townplat1' from data/bgs/cachtice/platforms/townplat1.txt
@@ -607,7 +725,10 @@ Cacheing 'Clocktower_wall6' from data/bgs/clock_tower/walls/clocktower_wall6.txt
 Cacheing 'Clocktower_wall7' from data/bgs/clock_tower/walls/clocktower_wall7.txt
 Cacheing 'Clocktower_front1' from data/bgs/clock_tower/decoration/clocktower_front1.txt
 Cacheing 'Pike_trap' from data/bgs/clock_tower/traps/pike_trap.txt
+Cacheing 'Pike_trap_2' from data/bgs/clock_tower/traps/pike_trap_2.txt
 Cacheing 'Clock' from data/bgs/clock_tower/decoration/clock.txt
+Cacheing 'hidden_9' from data/bgs/clock_tower/decoration/hidden_9.txt
+Cacheing 'hidden_10' from data/bgs/clock_tower/decoration/hidden_10.txt
 Cacheing 'banister_1' from data/bgs/moon_bridge/decoration/banister_1.txt
 Cacheing 'banister_2' from data/bgs/moon_bridge/decoration/banister_2.txt
 Cacheing 'banister_3' from data/bgs/moon_bridge/decoration/banister_3.txt
@@ -638,6 +759,7 @@ Cacheing 'Bridge_platform_24' from data/bgs/moon_bridge/platforms/bridge_platfor
 Cacheing 'Bridge_platform_25' from data/bgs/moon_bridge/platforms/bridge_platform_25.txt
 Cacheing 'Bridge_platform_26' from data/bgs/moon_bridge/platforms/bridge_platform_26.txt
 Cacheing 'Bridge_platform_27' from data/bgs/moon_bridge/platforms/bridge_platform_27.txt
+Cacheing 'Platform_Circus' from data/bgs/moon_bridge/platforms/platform_circus.txt
 Cacheing 'Bridge_platform_break' from data/bgs/moon_bridge/platforms/bridge_platform_break.txt
 Cacheing 'Fall_bridge' from data/bgs/moon_bridge/traps/fall_bridge/fall_bridge.txt
 Cacheing 'Fall_bridge_b' from data/bgs/moon_bridge/traps/fall_bridge/fall_bridge_b.txt
@@ -649,10 +771,13 @@ Cacheing 'dead' from data/bgs/dungeon/decoration/dead.txt
 Cacheing 'skull_dungeon' from data/bgs/dungeon/decoration/skull_dungeon.txt
 Cacheing 'sword_dungeon' from data/bgs/dungeon/decoration/sword_dungeon.txt
 Cacheing 'window_dungeon_1' from data/bgs/dungeon/decoration/window_dungeon1.txt
+Cacheing 'window_dungeon_2' from data/bgs/dungeon/decoration/window_dungeon2.txt
+Cacheing 'window_dungeon_rain' from data/bgs/dungeon/decoration/window_dungeon_rain.txt
 Cacheing 'Dungeon_spike_trap1' from data/bgs/dungeon/traps/dungeon_spike_trap1.txt
 Cacheing 'Dungeon_spike_trap2' from data/bgs/dungeon/traps/dungeon_spike_trap2.txt
 Cacheing 'Dungeon_spike_trap3' from data/bgs/dungeon/traps/dungeon_spike_trap3.txt
 Cacheing 'Dungeon_spike_trap4' from data/bgs/dungeon/traps/dungeon_spike_trap4.txt
+Cacheing 'Dungeon_spike_trap5' from data/bgs/dungeon/traps/dungeon_spike_trap5.txt
 Cacheing 'Dungeon_spikewheel' from data/bgs/dungeon/traps/dungeon_spikewheel.txt
 Cacheing 'Dungeon_platform_trap' from data/bgs/dungeon/traps/dungeon_platform_trap.txt
 Cacheing 'Prisoner_1' from data/bgs/dungeon/decoration/prisoner_1.txt
@@ -672,6 +797,13 @@ Cacheing 'dungeon_wall1j' from data/bgs/dungeon/walls/dungeon_wall1j.txt
 Cacheing 'dungeon_wall1k' from data/bgs/dungeon/walls/dungeon_wall1k.txt
 Cacheing 'dungeon_wall1l' from data/bgs/dungeon/walls/dungeon_wall1l.txt
 Cacheing 'dungeon_wall1o' from data/bgs/dungeon/walls/dungeon_wall1o.txt
+Cacheing 'dungeon_wall1p' from data/bgs/dungeon/walls/dungeon_wall1p.txt
+Cacheing 'dungeon_wall1q' from data/bgs/dungeon/walls/dungeon_wall1q.txt
+Cacheing 'dungeon_wall1r' from data/bgs/dungeon/walls/dungeon_wall1r.txt
+Cacheing 'dungeon_wall1s' from data/bgs/dungeon/walls/dungeon_wall1s.txt
+Cacheing 'dungeon_wall1t' from data/bgs/dungeon/walls/dungeon_wall1t.txt
+Cacheing 'dungeon_wall1u' from data/bgs/dungeon/walls/dungeon_wall1u.txt
+Cacheing 'Dungeon_wall1v' from data/bgs/dungeon/walls/dungeon_wall1v.txt
 Cacheing 'dungeon_platform1a' from data/bgs/dungeon/platforms/dungeon_platform1a.txt
 Cacheing 'dungeon_platform1b' from data/bgs/dungeon/platforms/dungeon_platform1b.txt
 Cacheing 'dungeon_platform1c' from data/bgs/dungeon/platforms/dungeon_platform1c.txt
@@ -680,10 +812,59 @@ Cacheing 'Dungeon_falling_spike_chain_trap' from data/bgs/dungeon/traps/dungeon_
 Cacheing 'Dungeon_up_spike_chain_trap' from data/bgs/dungeon/traps/dungeon_up_spike_chain_trap.txt
 Cacheing 'Skull_catacombs' from data/bgs/dungeon/decoration/skull_catacombs.txt
 Cacheing 'Stairs_1' from data/bgs/dungeon/decoration/stairs_1.txt
+Cacheing 'Stairs_2' from data/bgs/dungeon/decoration/stairs_2.txt
 Cacheing 'Catacombs_wall1a' from data/bgs/dungeon/walls/catacombs_wall1a.txt
 Cacheing 'Catacombs_wall1b' from data/bgs/dungeon/walls/catacombs_wall1b.txt
 Cacheing 'Catacombs_wall1c' from data/bgs/dungeon/walls/catacombs_wall1c.txt
-Cacheing 'Back_throne' from data/bgs/bathory_keep/decoration/back_throne.txt
+Cacheing 'Back_dungeon' from data/bgs/dungeon/decoration/back_dungeon.txt
+Cacheing 'CorpseSpawners' from data/chars/misc/spawners/corpsespawners.txt
+Cacheing 'Corpse' from data/bgs/dungeon/decoration/corpse.txt
+Cacheing 'Corpse_' from data/bgs/dungeon/decoration/corpse_.txt
+Cacheing 'Glass_tube' from data/bgs/dungeon/decoration/glasstube/glass_tube.txt
+Cacheing 'Breakglass1a' from data/bgs/dungeon/decoration/glasstube/breakglass1a.txt
+Cacheing 'Breakglass1b' from data/bgs/dungeon/decoration/glasstube/breakglass1b.txt
+Cacheing 'Breakglass1c' from data/bgs/dungeon/decoration/glasstube/breakglass1c.txt
+Cacheing 'Breakglass1d' from data/bgs/dungeon/decoration/glasstube/breakglass1d.txt
+Cacheing 'Breakglass1e' from data/bgs/dungeon/decoration/glasstube/breakglass1e.txt
+Cacheing 'Breakglass1f' from data/bgs/dungeon/decoration/glasstube/breakglass1f.txt
+Cacheing 'Breakglass1g' from data/bgs/dungeon/decoration/glasstube/breakglass1g.txt
+Cacheing 'Breakglass1h' from data/bgs/dungeon/decoration/glasstube/breakglass1h.txt
+Cacheing 'Breakglass1i' from data/bgs/dungeon/decoration/glasstube/breakglass1i.txt
+Cacheing 'Smoke1' from data/bgs/dungeon/decoration/glasstube/smoke1.txt
+Cacheing 'Hidden_11' from data/bgs/dungeon/decoration/hidden_11.txt
+Cacheing 'Castlehall_wall1a' from data/bgs/castlehall/wall/Castlehall_wall1a.txt
+Cacheing 'Castlehall_wall2a' from data/bgs/castlehall/wall/Castlehall_wall2a.txt
+Cacheing 'Castlehall_wall3a' from data/bgs/castlehall/wall/Castlehall_wall3a.txt
+Cacheing 'Castlehall_wall4a' from data/bgs/castlehall/wall/Castlehall_wall4a.txt
+Cacheing 'Castlehall_wall5a' from data/bgs/castlehall/wall/Castlehall_wall5a.txt
+Cacheing 'Castlehall_platform1a' from data/bgs/castlehall/platform/Castlehall_platform1a.txt
+Cacheing 'Castlehall_platform2a' from data/bgs/castlehall/platform/Castlehall_platform2a.txt
+Cacheing 'Castlehall_platform3a' from data/bgs/castlehall/platform/Castlehall_platform3a.txt
+Cacheing 'Castlehall_platform4a' from data/bgs/castlehall/platform/Castlehall_platform4a.txt
+Cacheing 'Castlehall_platform5a' from data/bgs/castlehall/platform/Castlehall_platform5a.txt
+Cacheing 'Castlehall_platform6a' from data/bgs/castlehall/platform/Castlehall_platform6a.txt
+Cacheing 'Castlehall_platform7a' from data/bgs/castlehall/platform/Castlehall_platform7a.txt
+Cacheing 'Leon_statue' from data/bgs/castlehall/decoration/leon_statue.txt
+Cacheing 'Fuente_agua' from data/bgs/castlehall/decoration/fuente_agua.txt
+Cacheing 'Red_Moon' from data/bgs/castlehall/decoration/red_moon.txt
+Cacheing 'Reflect_bathory' from Data/bgs/bathory_keep/decoration/reflect_bathory.txt
+Cacheing 'Back_castle_hall' from data/bgs/castlehall/decoration/back_castle_hall.txt
+Cacheing 'front_castlehall_1a' from data/bgs/castlehall/decoration/front_castlehall_1a.txt
+Cacheing 'front_castlehall_2a' from data/bgs/castlehall/decoration/front_castlehall_2a.txt
+Cacheing 'front_castlehall_3a' from data/bgs/castlehall/decoration/front_castlehall_3a.txt
+Cacheing 'front_castlehall_4a' from data/bgs/castlehall/decoration/front_castlehall_4a.txt
+Cacheing 'Castlehall_wall6a' from data/bgs/castlehall/wall/castlehall_wall6a.txt
+Cacheing 'Castlehall_wall7a' from data/bgs/castlehall/wall/castlehall_wall7a.txt
+Cacheing 'Castlehall_wall7b' from data/bgs/castlehall/wall/castlehall_wall7b.txt
+Cacheing 'Castlehall_wall7c' from data/bgs/castlehall/wall/castlehall_wall7c.txt
+Cacheing 'Castlehall_wall8a' from data/bgs/castlehall/wall/castlehall_wall8a.txt
+Cacheing 'Castlehall_wall9a' from data/bgs/castlehall/wall/castlehall_wall9a.txt
+Cacheing 'Castlehall_wall9b' from data/bgs/castlehall/wall/castlehall_wall9b.txt
+Cacheing 'Castlehall_wall9c' from data/bgs/castlehall/wall/castlehall_wall9c.txt
+Cacheing 'Castlehall_wall10a' from data/bgs/castlehall/wall/castlehall_wall10a.txt
+Cacheing 'Castlehall_wall11a' from data/bgs/castlehall/wall/castlehall_wall11a.txt
+Cacheing 'Hidden_12' from data/bgs/castlehall/decoration/hidden_12.txt
+Cacheing 'Hidden_13' from data/bgs/castlehall/decoration/hidden_13.txt
 Cacheing 'Keep_roof_1' from data/bgs/bathory_keep/decoration/keep_roof_1.txt
 Cacheing 'Keep_wall_1' from data/bgs/bathory_keep/wall/keep_wall_1.txt
 Cacheing 'Throne' from data/bgs/bathory_keep/decoration/throne.txt
@@ -691,7 +872,18 @@ Cacheing 'Dark_artifact' from data/bgs/bathory_keep/decoration/dark_artifact.txt
 Cacheing 'Back_final' from data/bgs/bathory_keep/decoration/back_final.txt
 Cacheing 'Keep_castle_shade' from data/bgs/bathory_keep/decoration/keep_castle_shade.txt
 Cacheing 'Keep_root' from data/bgs/bathory_keep/decoration/keep_root.txt
+Cacheing 'Platform_final_1' from data/bgs/bathory_keep/platform/platform_final_1.txt
+Cacheing 'Final_Cloud' from data/bgs/bathory_keep/decoration/final_cloud.txt
+Cacheing 'Final_Cloud_1' from data/bgs/bathory_keep/decoration/final_cloud_1.txt
+Cacheing 'Final_Cloud_clear' from data/bgs/bathory_keep/decoration/final_cloud_clear.txt
 Cacheing 'Broke_window' from data/bgs/bathory_keep/decoration/broke_window.txt
+Cacheing 'Coliseum_wall1' from data/bgs/coliseum/walls/coliseum_wall1.txt
+Cacheing 'Coliseum_wall2' from data/bgs/coliseum/walls/coliseum_wall2.txt
+Cacheing 'Coliseum_wall3' from data/bgs/coliseum/walls/coliseum_wall3.txt
+Cacheing 'Coliseum_platform1' from data/bgs/coliseum/platform/coliseum_platform1.txt
+Cacheing 'Coliseum_torch1' from data/bgs/coliseum/decoration/coliseum_torch1.txt
+Cacheing 'Coliseum_torch2' from data/bgs/coliseum/decoration/coliseum_torch2.txt
+Cacheing 'Coliseum_torch3' from data/bgs/coliseum/decoration/coliseum_torch3.txt
 Cacheing 'Sdie' from data/chars/misc/die/sdie.txt
 Cacheing 'Bdie' from data/chars/misc/die/bdie.txt
 Cacheing 'Clowndie' from data/chars/misc/die/clowndie/clowndie.txt
@@ -704,17 +896,29 @@ Cacheing 'Firedeathbig' from data/chars/misc/die/firedeathbig.txt
 Cacheing 'Explo' from data/chars/misc/die/explo.txt
 Cacheing 'Icedie' from data/chars/misc/die/icedie/icedie.txt
 Cacheing 'boss_lifebar' from data/chars/misc/boss_lifebar.txt
+Cacheing 'boss_lifebar_2' from data/chars/misc/boss_lifebar_2.txt
 Cacheing 'ToShop' from data/chars/misc/endlevel/toshop.txt
 Cacheing 'ToSewer' from data/chars/misc/endlevel/tosewer.txt
 Cacheing 'ToEntrance' from data/chars/misc/endlevel/toentrance.txt
 Cacheing 'ToWaterfall' from data/chars/misc/endlevel/towaterfall.txt
 Cacheing 'ToLibraryOld' from data/chars/misc/endlevel/tolibraryold.txt
 Cacheing 'Nextlevel' from data/chars/misc/endlevel/nextlevel.txt
+Cacheing 'ToDeathChamber' from data/chars/misc/endlevel/todeathchamber.txt
+Cacheing 'ToBossRush' from data/chars/misc/endlevel/tobossrush.txt
+Cacheing 'ToArena' from data/chars/misc/endlevel/toarena.txt
 Cacheing 'Iceshard' from data/chars/misc/die/icedie/iceshard.txt
 Cacheing 'BR' from data/chars/skeleton/BR.txt
 Cacheing 'BA' from data/chars/skeleton/BA.txt
 Cacheing 'BS' from data/chars/skeleton/BS.txt
 Cacheing 'BL' from data/chars/skeleton/BL.txt
+Cacheing 'BR_l' from data/chars/skeleton/BR_l.txt
+Cacheing 'BA_l' from data/chars/skeleton/BA_l.txt
+Cacheing 'BS_l' from data/chars/skeleton/BS_l.txt
+Cacheing 'BL_l' from data/chars/skeleton/BL_l.txt
+Cacheing 'BR_e' from data/chars/skeleton/BR_e.txt
+Cacheing 'BA_e' from data/chars/skeleton/BA_e.txt
+Cacheing 'BS_e' from data/chars/skeleton/BS_e.txt
+Cacheing 'BL_e' from data/chars/skeleton/BL_e.txt
 Cacheing 'BR_c' from data/chars/skeleton/BR_c.txt
 Cacheing 'BA_c' from data/chars/skeleton/BA_c.txt
 Cacheing 'BS_c' from data/chars/skeleton/BS_c.txt
@@ -725,6 +929,9 @@ Cacheing 'Rock3' from data/chars/misc/rocks/rock3.txt
 Cacheing 'Rock1B' from data/chars/misc/rocks/rock1b.txt
 Cacheing 'Rock2B' from data/chars/misc/rocks/rock2b.txt
 Cacheing 'Rock3B' from data/chars/misc/rocks/rock3b.txt
+Cacheing 'Rock1B_coliseum' from data/chars/misc/rocks/rock1b_coliseum.txt
+Cacheing 'Rock2B_coliseum' from data/chars/misc/rocks/rock2b_coliseum.txt
+Cacheing 'Rock3B_coliseum' from data/chars/misc/rocks/rock3b_coliseum.txt
 Cacheing 'btw_rock1' from data/chars/misc/rocks/btw_rock1.txt
 Cacheing 'btw_rock2' from data/chars/misc/rocks/btw_rock2.txt
 Cacheing 'btw_rock3' from data/chars/misc/rocks/btw_rock3.txt
@@ -761,7 +968,6 @@ Cacheing 'Wood10' from data/bgs/cachtice/decoration/wood10.txt
 Cacheing 'Wood11' from data/bgs/cachtice/decoration/wood11.txt
 Cacheing 'Wood12' from data/bgs/cachtice/decoration/wood12.txt
 Cacheing 'Wood13' from data/bgs/cachtice/decoration/wood13.txt
-Cacheing 'Prologue_I' from data/sprites/stagetext/prologue_i.txt
 Cacheing 'Prologue' from data/sprites/stagetext/prologue.txt
 Cacheing 'Stage1' from data/sprites/stagetext/stage1.txt
 Cacheing 'Stage2' from data/sprites/stagetext/stage2.txt
@@ -769,27 +975,38 @@ Cacheing 'Stage3' from data/sprites/stagetext/stage3.txt
 Cacheing 'Stage4' from data/sprites/stagetext/stage4.txt
 Cacheing 'Stage5' from data/sprites/stagetext/stage5.txt
 Cacheing 'Stage6' from data/sprites/stagetext/stage6.txt
+Cacheing 'Stage7' from data/sprites/stagetext/stage7.txt
+Cacheing 'Stage8' from data/sprites/stagetext/stage8.txt
+Cacheing 'Epilogue' from data/sprites/stagetext/epilogue.txt
+Cacheing 'StageEx' from data/sprites/stagetext/stageex.txt
+Cacheing 'Round1' from data/sprites/roundtext/round1.txt
+Cacheing 'Round2' from data/sprites/roundtext/round2.txt
+Cacheing 'Round3' from data/sprites/roundtext/round3.txt
+Cacheing 'Round4' from data/sprites/roundtext/round4.txt
+Cacheing 'Round5' from data/sprites/roundtext/round5.txt
+Cacheing 'Round6' from data/sprites/roundtext/round6.txt
+Cacheing 'Round7' from data/sprites/roundtext/round7.txt
+Cacheing 'Round8' from data/sprites/roundtext/round8.txt
+Cacheing 'Round9' from data/sprites/roundtext/round9.txt
+Cacheing 'Round10' from data/sprites/roundtext/round10.txt
+Cacheing 'Round11' from data/sprites/roundtext/round11.txt
+Cacheing 'Round12' from data/sprites/roundtext/round12.txt
+Cacheing 'Round13' from data/sprites/roundtext/round13.txt
+Cacheing 'Round14' from data/sprites/roundtext/round14.txt
+Cacheing 'Round15' from data/sprites/roundtext/round15.txt
+Cacheing 'Round16' from data/sprites/roundtext/round16.txt
+Cacheing 'Round17' from data/sprites/roundtext/round17.txt
+Cacheing 'Round18' from data/sprites/roundtext/round18.txt
+Cacheing 'Round19' from data/sprites/roundtext/round19.txt
+Cacheing 'Round20' from data/sprites/roundtext/round20.txt
+Cacheing 'Round21' from data/sprites/roundtext/round21.txt
 Cacheing '1spawn' from data/chars/misc/1spawn.txt
 Cacheing '2spawn' from data/chars/misc/2spawn.txt
 Cacheing 'Cameraoffset' from data/chars/misc/camoff.txt
-Cacheing 'delay' from data/chars/misc/delay.txt
 Cacheing 'Empty' from data/chars/misc/empty.txt
-Cacheing 'Spotlight1' from data/chars/misc/spotlit1.txt
-Cacheing 'Spotlight2' from data/chars/misc/spotlit2.txt
-Cacheing 'Gelap' from data/chars/misc/gelap.txt
 Cacheing 'dust' from data/chars/misc/dust/dust.txt
 Cacheing 'dustb' from data/chars/misc/dust/dustb.txt
 Cacheing 'dust_legion' from data/chars/legion/debris/smoke.txt
-Cacheing 'BloodSkel' from data/chars/blodskel/blodskel.txt
-Cacheing 'BoneSnake' from data/chars/wdragon/bonesnak.txt
-Cacheing 'Rib2' from data/chars/wdragon/rib2.txt
-Cacheing 'RibPis1' from data/chars/wdragon/ribpis1.txt
-Cacheing 'RibPis2' from data/chars/wdragon/ribpis2.txt
-Cacheing 'RibPis3' from data/chars/wdragon/ribpis3.txt
-Cacheing 'RibPis4' from data/chars/wdragon/ribpis4.txt
-Cacheing 'RibPis5' from data/chars/wdragon/ribpis5.txt
-Cacheing 'RibPis6' from data/chars/wdragon/ribpis6.txt
-Cacheing 'RibPis7' from data/chars/wdragon/ribpis7.txt
 
 Loading 'Flash' from data/chars/misc/flash/flash.txt
 Loading 'Hflame' from data/chars/misc/hits/flame.txt
@@ -797,6 +1014,15 @@ Loading 'Hshock' from data/chars/misc/hits/shock.txt
 Loading 'Blooda' from data/chars/misc/blood/blooda.txt
 Loading 'Bloode' from data/chars/misc/blood/bloode.txt
 Loading 'PRose' from data/chars/driade/prose.txt
+Loading 'StoneC' from data/chars/misc/spells/StoneC.txt
+Loading 'Stone1' from data/chars/misc/spells/Stone1.txt
+Loading 'Stone2' from data/chars/misc/spells/Stone2.txt
+Loading 'Stone3' from data/chars/misc/spells/Stone3.txt
+Loading 'Stone4' from data/chars/misc/spells/Stone4.txt
+Loading 'Soul_steal' from data/chars/fran/magic/soul_steal.txt
+Loading 'dash_effect' from data/chars/ethan/shadow/dash_effect.txt
+Loading 'explo_whip' from data/chars/ethan/shadow/explo_whip.txt
+Loading 'Charge_whip' from data/chars/ethan/shadow/charge_whip.txt
 Loading 'Fire_sh' from data/chars/sheeba/magic/fire_sh.txt
 Loading 'Thunder_sh' from data/chars/sheeba/magic/thunder_sh.txt
 sound_load_sample can't load sample from file 'data/sounds/sheeba_attack3.wav'!
@@ -804,14 +1030,36 @@ sound_load_sample can't load sample from file 'data/sounds/sheeba_special2.wav'!
 sound_load_sample can't load sample from file 'data/sounds/sheeba_attack3.wav'!
 sound_load_sample can't load sample from file 'data/sounds/sheeba_attack3.wav'!
 sound_load_sample can't load sample from file 'data/sounds/sheeba_attack3.wav'!
+sound_load_sample can't load sample from file 'data/sounds/sheeba_attack3.wav'!
 Loading 'Sheeba' from data/chars/sheeba/sheeba.txt
-sound_load_sample can't load sample from file 'data/sounds/sheeba_attack3.wav'!
-sound_load_sample can't load sample from file 'data/sounds/sheeba_attack3.wav'!
 Loading 'Sheeba_Volaticus' from data/chars/sheeba/magic/sheeba_volaticus.txt
+Loading 'BPetir' from data/chars/sheeba/magic/bpetir.txt
 Loading 'Ethan' from data/chars/ethan/ethan.txt
+Loading 'jump3_shadow' from data/chars/ethan/shadow/jump3_shadow.txt
+Loading 'dash6_shadow' from data/chars/ethan/shadow/dash6_shadow.txt
+Loading 'dash5_shadow' from data/chars/ethan/shadow/dash5_shadow.txt
+Loading 'upper6_shadow' from data/chars/ethan/shadow/upper6_shadow.txt
+Loading 'upper5_shadow' from data/chars/ethan/shadow/upper5_shadow.txt
+Loading 'evasion1_shadow' from data/chars/ethan/shadow/evasion1_shadow.txt
+Loading 'evasion2_shadow' from data/chars/ethan/shadow/evasion2_shadow.txt
+Loading 'evasion3_shadow' from data/chars/ethan/shadow/evasion3_shadow.txt
+Loading 'evasion4_shadow' from data/chars/ethan/shadow/evasion4_shadow.txt
+Loading 'evasion1_shadow_teo' from data/chars/teobaldo/shadow/evasion1_shadow_teo.txt
+Loading 'evasion2_shadow_teo' from data/chars/teobaldo/shadow/evasion2_shadow_teo.txt
+Loading 'evasion3_shadow_teo' from data/chars/teobaldo/shadow/evasion3_shadow_teo.txt
+Loading 'evasion4_shadow_teo' from data/chars/teobaldo/shadow/evasion4_shadow_teo.txt
+Loading 'rising1_shadow' from data/chars/teobaldo/shadow/rising1_shadow.txt
+Loading 'rising2_shadow' from data/chars/teobaldo/shadow/rising2_shadow.txt
+Loading 'jump1_shadow' from data/chars/teobaldo/shadow/jump1_shadow.txt
 Loading 'Ethan_fire' from data/chars/ethan/ethan_spell.txt
+Loading 'Ethan_skeleton' from data/chars/ethan/ethan_spell2.txt
+Loading 'flamepunch_effect' from data/chars/ethan/shadow/flamepunch_effect.txt
 Loading 'Fran' from data/chars/fran/fran.txt
+Loading 'Fran_1' from data/chars/fran/fran_1.txt
+Loading 'Fran_sword' from data/chars/fran/magic/fran_sword.txt
 Loading 'Soul_Bat' from data/chars/fran/soul_bat.txt
+Loading 'Soul_wolf' from data/chars/fran/soul_wolf.txt
+Loading 'Soul_Cloud' from data/chars/fran/soul_cloud.txt
 Loading 'ice_sh1' from data/chars/misc/espells/ice_sh1.txt
 Loading 'ice_sh' from data/chars/misc/espells/ice_sh.txt
 Loading 'Icecross' from data/chars/misc/spells/icecross.txt
@@ -820,23 +1068,28 @@ Loading 'pdie' from data/chars/misc/die/pdie.txt
 Loading 'Teo_rock1' from data/chars/teobaldo/teo_rock1.txt
 Loading 'Teo_rock2' from data/chars/teobaldo/teo_rock2.txt
 Loading 'Teo_rock3' from data/chars/teobaldo/teo_rock3.txt
-sound_load_sample can't load sample from file 'data/sounds/teobaldo_pain.wav'!
-sound_load_sample can't load sample from file 'data/sounds/teobaldo_pain.wav'!
-sound_load_sample can't load sample from file 'data/sounds/teobaldo_pain.wav'!
-sound_load_sample can't load sample from file 'data/sounds/teobaldo_pain.wav'!
-sound_load_sample can't load sample from file 'data/sounds/teobaldo_pain.wav'!
-sound_load_sample can't load sample from file 'data/sounds/teobaldo_pain.wav'!
-sound_load_sample can't load sample from file 'data/sounds/teobaldo_pain.wav'!
-sound_load_sample can't load sample from file 'data/sounds/teobaldo_pain.wav'!
-sound_load_sample can't load sample from file 'data/sounds/teobaldo_pain.wav'!
-sound_load_sample can't load sample from file 'data/sounds/teobaldo_pain.wav'!
 Loading 'Teobaldo' from data/chars/teobaldo/teobaldo.txt
-Loading 'NOwl' from data/chars/owl/NOwl.txt
+Loading 'Empty' from data/chars/misc/empty.txt
+Loading 'HeartSpell' from data/chars/succubus/spells/heartspell.txt
+Loading 'EnchantSpell_p' from data/chars/succubus/spells/enchantspell_p.txt
+Loading 'EnchantSpell2_p' from data/chars/succubus/spells/enchantspell2_p.txt
+Loading 'EHeart_MP_p' from data/chars/succubus/spells/eheart_mp_p.txt
+Loading 'MagicSeal' from data/chars/misc/spells/MagiSeal.txt
+Command 'aggresion' not understood in file 'data/chars/succubus/succubus_npc.txt'!
+Loading 'EnchantSpell_npc' from data/chars/succubus/spells/enchantspell_npc.txt
+Loading 'EHeart_MP_npc' from data/chars/succubus/spells/eheart_mp_npc.txt
+Loading 'Sucubo_npc' from data/chars/succubus/succubus_npc.txt
+Loading 'Sucubo__' from data/chars/succubus/succubus_p.txt
+Loading 'Bone_ethan' from data/chars/ethan/shadow/bone_e.txt
 Loading 'Bone' from data/chars/skeleton/bone.txt
 Loading 'Bone1' from data/chars/skeleton/bone1.txt
 Loading 'Skelet_headless' from data/chars/skeleton/skelet_headless.txt
+sound_load_sample can't load sample from file 'data/chars/misc/weap/axe1.wav'!
 Loading 'axev' from data/chars/demonknight/axe/axev.txt
 Loading 'axed' from data/chars/demonknight/axe/axed.txt
+Loading 'fireseal' from data/chars/misc/spells/fireseal.txt
+Loading 'Flamatau' from data/chars/flametaur/flametaur_p.txt
+Loading 'Flame_p' from data/chars/flametaur/flame/flame_p.txt
 Loading 'Confeti_1' from data/chars/killerclown/confeti1.txt
 Loading 'Confeti_2' from data/chars/killerclown/confeti2.txt
 Loading 'Confeti_3' from data/chars/killerclown/confeti3.txt
@@ -848,8 +1101,16 @@ Loading 'Esqueleto' from data/chars/skeleton/skelet.txt
 Loading 'Sparkdie' from data/chars/skeleton/bonespark/sparkdie.txt
 Loading 'BoneSpark' from data/chars/skeleton/bonespark/bonespark.txt
 Loading 'E._Electrico' from data/chars/skeleton/skelet_electric.txt
-Loading 'E._Laser' from data/chars/skeleton/skelet_beam.txt
+Loading 'Zombi' from data/chars/zombie/zombie.txt
 Loading 'LightColumn_ghoul' from data/chars/misc/espells/lightcolumn_ghoul.txt
+Loading 'Bafo_shot_p' from data/chars/bafomet/magic/bafo_shot_p.txt
+Loading 'Bafo_shot_2_p' from data/chars/bafomet/magic/bafo_shot_2_p.txt
+Loading 'Bafo_shot_3_p' from data/chars/bafomet/magic/bafo_shot_3_p.txt
+Command 'sleep' not understood in file 'data/chars/bafomet/bafomet_p.txt'!
+Command 'subject_to_basemap' not understood in file 'data/chars/bafomet/bafomet_p.txt'!
+Loading 'Circle_transform' from data/chars/countess/magic/circle-transform.txt
+Loading 'Bafo_seal' from data/chars/bafomet/magic/bafo_seal.txt
+Loading 'Bafomet_' from data/chars/bafomet/bafomet_p.txt
 Command 'subject_to_basemap' not understood in file 'data/chars/werewolf/firewolf/fire_wolf.txt'!
 Loading 'Shockwave1' from data/chars/werewolf/firewolf/wave1.txt
 Loading 'Fire_wolf' from data/chars/werewolf/firewolf/fire_wolf.txt
@@ -857,25 +1118,22 @@ Loading 'fb01' from data/chars/misc/spells/Fb01.txt
 Loading 'fb01_e' from data/chars/misc/espells/Fb01_e.txt
 Loading 'fb02' from data/chars/misc/spells/Fb02.txt
 Loading 'FireBlast' from data/chars/misc/spells/FireBlas.txt
-Loading 'MagicSeal' from data/chars/misc/spells/MagiSeal.txt
-Loading 'fireseal' from data/chars/misc/spells/fireseal.txt
 Loading 'lightningseal' from data/chars/misc/spells/lightningseal.txt
 Loading 'forb_fireseal' from data/chars/misc/spells/forbfireseal.txt
-Loading 'BPetir' from data/chars/blitz/bpetir.txt
 Loading 'Quetzal' from data/chars/sheeba/magic/quetzal.txt
-Loading 'Rain' from data/chars/misc/rain.txt
-Loading 'leosp' from data/chars/leon/leosp.txt
-Loading 'dirk' from data/chars/kreiger/dirk.txt
 Loading 'Windspell' from data/chars/misc/ESpells/windspell/wind.txt
 Loading 'GrBlast' from data/chars/misc/espells/grblast.txt
 Loading 'GrBlasto' from data/chars/misc/espells/grblasto.txt
+Loading 'EnchantSpell2_npc' from data/chars/succubus/spells/enchantspell2_npc.txt
 Loading 'PKnife' from data/chars/items/knife/PKnife.txt
 Loading 'Cuchillo' from data/chars/items/knife/wknife.txt
+sound_load_sample can't load sample from file 'data/chars/misc/weap/axe1.wav'!
 Loading 'PAxe' from data/chars/items/axe/PAxe.txt
 Loading 'Hacha' from data/chars/items/axe/WAxe.txt
 Loading 'PCross' from data/chars/items/cross/PCross.txt
-Loading 'C._Sagrada' from data/chars/items/cross/wcross.txt
+Loading 'C._Plateada' from data/chars/items/cross/wcross.txt
 Loading 'A._Bendita' from data/chars/items/hwater/Wholywater.txt
+Command 'subject_to_basemap' not understood in file 'data/chars/items/hwater/pholywater.txt'!
 Loading 'Pholywater' from data/chars/items/hwater/pholywater.txt
 Loading 'Bomba' from data/chars/items/bomb/Wbomb.txt
 Loading 'PBomb' from data/chars/items/bomb/Pbomb.txt
@@ -884,6 +1142,7 @@ Loading 'PBible' from data/chars/items/biblia/Pbible.txt
 Loading 'Sparkles' from data/chars/items/biblia/sparkles.txt
 Loading 'Bumeran' from data/chars/items/boomerang/WBoomerang.txt
 Loading 'PBomrade' from data/chars/items/boomerang/PBomrade.txt
+Loading 'NOwl' from data/chars/owl/NOwl.txt
 Loading 'sdie' from data/chars/misc/die/sdie.txt
 Loading 'bdie' from data/chars/misc/die/bdie.txt
 Loading 'Clowndie' from data/chars/misc/die/clowndie/clowndie.txt
@@ -898,6 +1157,14 @@ Loading 'BR' from data/chars/skeleton/BR.txt
 Loading 'BA' from data/chars/skeleton/BA.txt
 Loading 'BS' from data/chars/skeleton/BS.txt
 Loading 'BL' from data/chars/skeleton/BL.txt
+Loading 'BR_l' from data/chars/skeleton/BR_l.txt
+Loading 'BA_l' from data/chars/skeleton/BA_l.txt
+Loading 'BS_l' from data/chars/skeleton/BS_l.txt
+Loading 'BL_l' from data/chars/skeleton/BL_l.txt
+Loading 'BR_e' from data/chars/skeleton/BR_e.txt
+Loading 'BA_e' from data/chars/skeleton/BA_e.txt
+Loading 'BS_e' from data/chars/skeleton/BS_e.txt
+Loading 'BL_e' from data/chars/skeleton/BL_e.txt
 Loading 'BR_c' from data/chars/skeleton/BR_c.txt
 Loading 'BA_c' from data/chars/skeleton/BA_c.txt
 Loading 'BS_c' from data/chars/skeleton/BS_c.txt
@@ -908,6 +1175,9 @@ Loading 'Rock3' from data/chars/misc/rocks/rock3.txt
 Loading 'Rock1B' from data/chars/misc/rocks/rock1b.txt
 Loading 'Rock2B' from data/chars/misc/rocks/rock2b.txt
 Loading 'Rock3B' from data/chars/misc/rocks/rock3b.txt
+Loading 'Rock1B_coliseum' from data/chars/misc/rocks/rock1b_coliseum.txt
+Loading 'Rock2B_coliseum' from data/chars/misc/rocks/rock2b_coliseum.txt
+Loading 'Rock3B_coliseum' from data/chars/misc/rocks/rock3b_coliseum.txt
 Loading 'btw_rock1' from data/chars/misc/rocks/btw_rock1.txt
 Loading 'btw_rock2' from data/chars/misc/rocks/btw_rock2.txt
 Loading 'btw_rock3' from data/chars/misc/rocks/btw_rock3.txt
@@ -935,132 +1205,73 @@ Create blending tables.......	Done!
 Save settings so far........	Done!
 
 
-Level Loading:   'data/levels/dungeon.txt'
+Level Loading:   'data/levels/castlehalld.txt'
 Total Ram: 2147483647 Bytes
  Free Ram: 2147483647 Bytes
- Used Ram: 81145856 Bytes
+ Used Ram: 103600128 Bytes
 
-Loading 'Dungeon_wall1' from data/bgs/dungeon/walls/dungeon_wall1.txt
-Loading 'dungeon_platform1c' from data/bgs/dungeon/platforms/dungeon_platform1c.txt
-Loading 'window_dungeon_1' from data/bgs/dungeon/decoration/window_dungeon1.txt
-Loading 'Skull_dungeon' from data/bgs/dungeon/decoration/skull_dungeon.txt
-Loading 'Prisoner_3' from data/bgs/dungeon/decoration/prisoner_3.txt
-Loading 'Dungeon_wall1a' from data/bgs/dungeon/walls/dungeon_wall1a.txt
-Loading 'dungeon_platform1b' from data/bgs/dungeon/platforms/dungeon_platform1b.txt
-Loading 'dungeon_platform1a' from data/bgs/dungeon/platforms/dungeon_platform1a.txt
-Loading 'Dungeon_spike_trap1' from data/bgs/dungeon/traps/dungeon_spike_trap1.txt
-Loading 'Dead' from data/bgs/dungeon/decoration/dead.txt
-Loading 'Sword_dungeon' from data/bgs/dungeon/decoration/sword_dungeon.txt
-Loading 'Dungeon_wall1b' from data/bgs/dungeon/walls/dungeon_wall1b.txt
-Loading 'Dungeon_wall1c' from data/bgs/dungeon/walls/dungeon_wall1c.txt
-Loading 'Prisoner_1' from data/bgs/dungeon/decoration/prisoner_1.txt
-Loading 'Prisoner_2' from data/bgs/dungeon/decoration/prisoner_2.txt
-Loading 'Dungeon_spikewheel' from data/bgs/dungeon/traps/dungeon_spikewheel.txt
-Loading 'Dungeon_platform_trap' from data/bgs/dungeon/traps/dungeon_platform_trap.txt
-Loading 'Dungeon_wall1d' from data/bgs/dungeon/walls/dungeon_wall1d.txt
-Loading 'Dungeon_spike_trap2' from data/bgs/dungeon/traps/dungeon_spike_trap2.txt
-Loading 'Dungeon_spike_trap3' from data/bgs/dungeon/traps/dungeon_spike_trap3.txt
-Loading 'Dungeon_up_spike_chain_trap' from data/bgs/dungeon/traps/dungeon_up_spike_chain_trap.txt
-Loading 'Dungeon_falling_spike_chain_trap' from data/bgs/dungeon/traps/dungeon_falling_spike_chain_trap.txt
-Loading 'Dungeon_spike_chain_trap' from data/bgs/dungeon/traps/dungeon_spike_chain_trap.txt
-Loading 'Dungeon_wall1e' from data/bgs/dungeon/walls/dungeon_wall1e.txt
-Loading 'Dungeon_wall1f' from data/bgs/dungeon/walls/dungeon_wall1f.txt
-Loading 'Dungeon_wall1g' from data/bgs/dungeon/walls/dungeon_wall1g.txt
-Loading 'Dungeon_wall1h' from data/bgs/dungeon/walls/dungeon_wall1h.txt
-Loading 'Dungeon_wall1i' from data/bgs/dungeon/walls/dungeon_wall1i.txt
-Loading 'Dungeon_wall1j' from data/bgs/dungeon/walls/dungeon_wall1j.txt
-Loading 'Dungeon_wall1k' from data/bgs/dungeon/walls/dungeon_wall1k.txt
-Loading 'Dungeon_wall1l' from data/bgs/dungeon/walls/dungeon_wall1l.txt
-Loading 'Dungeon_spike_trap4' from data/bgs/dungeon/traps/dungeon_spike_trap4.txt
-Loading 'Dungeon_wall1o' from data/bgs/dungeon/walls/dungeon_wall1o.txt
-Loading 'Jar1' from data/chars/destructible/jar1/jar1.txt
-Loading 'C._Arcoiris' from data/chars/items/1up/1up.txt
-Loading '___400' from data/chars/items/money/money400.txt
+Command 'aggresion' not understood in file 'data/bgs/castlehall/decoration/leon_statue.txt'!
+Command 'min_noatk_chance' not understood in file 'data/bgs/castlehall/decoration/leon_statue.txt'!
+Command 'max_noatk_chance' not understood in file 'data/bgs/castlehall/decoration/leon_statue.txt'!
+sound_load_sample can't load sample from file 'data/sounds/no-sound.wav'!
+Loading 'leon_statue' from data/bgs/castlehall/decoration/leon_statue.txt
+Loading 'Castlehall_wall11a' from data/bgs/castlehall/wall/castlehall_wall11a.txt
+Loading 'Castlehall_platform1a' from data/bgs/castlehall/platform/Castlehall_platform1a.txt
+Loading 'Sealed_door' from data/bgs/library/decoration/sealed_door.txt
 Loading 'Candle1' from data/chars/destructible/candle1/candle1.txt
-Loading '___10' from data/chars/items/coin/coin.txt
-Command 'followani' not understood in file 'data/chars/ghost/ectoplasma.txt'!
-Loading 'Ectoplasma' from data/chars/ghost/ectoplasma.txt
-Loading 'EctoSpawner' from data/chars/misc/spawners/ectospwn.txt
-Loading '___100' from data/chars/items/coin/coin_100.txt
-Loading '___20' from data/chars/items/coin/coin_20.txt
-Command 'ramge' not understood in file 'data/chars/skeleton/crimson_skelet.txt'!
-Loading 'E._Carmesi' from data/chars/skeleton/crimson_skelet.txt
-Loading 'P._Invisible' from data/chars/items/potion/potion.txt
-Loading 'Spiral_disapear_b' from data/chars/wizard/spell/spiral_disapear_b.txt
-Loading 'Necro_blast_1' from data/chars/wizard/spell/necro_blast_1.txt
-Loading 'Ice' from data/chars/misc/espells/ice.txt
-Loading 'Brujo' from data/chars/wizard/wizard.txt
-Loading '___50' from data/chars/items/coin/coin_50.txt
-Loading 'Barril' from data/chars/destructible/barrel/barrel.txt
-Loading 'P._Podrido' from data/chars/items/chicken/pollo_podrido.txt
-Loading 'Agua_Santa' from data/chars/items/holybomb/holybomb.txt
 Loading 'Gema_Roja' from data/chars/items/red_gem/red_gem.txt
-Command 'subject_to_basemap' not understood in file 'data/chars/creature/tech/thunder.txt'!
-Loading 'CThunder' from data/chars/creature/tech/thunder.txt
-Loading 'CMissile' from data/chars/creature/tech/missile.txt
-Loading 'Shockwave' from data/chars/creature/wave/wave.txt
-Loading 'La_criatura_' from data/chars/creature/creature_.txt
-Loading 'Pollo_frito' from data/chars/items/chicken/pollo.txt
-Loading '___700' from data/chars/items/money/money700.txt
-Loading 'ToEntrance' from data/chars/misc/endlevel/toentrance.txt
-
-Level Loaded:    'data/levels/dungeon.txt'
-Total Ram: 2147483647 Bytes
- Free Ram: 2147483647 Bytes
- Used Ram: 88674304 Bytes
-Total sprites mapped: 1856
-
-Level Unloading: 'data/levels/dungeon.txt'
-Total Ram: 2147483647 Bytes
- Free Ram: 2147483647 Bytes
- Used Ram: 82591744 Bytes
-
-Done.
-Total Ram: 2147483647 Bytes
- Free Ram: 2147483647 Bytes
- Used Ram: 81747968 Bytes
-
-Level Loading:   'data/levels/bathory_keep.txt'
-Total Ram: 2147483647 Bytes
- Free Ram: 2147483647 Bytes
- Used Ram: 81747968 Bytes
-
-Loading 'Keep_wall_1' from data/bgs/bathory_keep/wall/keep_wall_1.txt
-Loading 'Keep_roof_1' from data/bgs/bathory_keep/decoration/keep_roof_1.txt
-Loading 'Dark_artifact' from data/bgs/bathory_keep/decoration/dark_artifact.txt
-Loading 'Throne' from data/bgs/bathory_keep/decoration/throne.txt
+Loading '___100' from data/chars/items/coin/coin_100.txt
+Loading 'Gema_Azul' from data/chars/items/blue_gem/blue_gem.txt
 Loading 'Brazier1' from data/chars/destructible/brazier1/brazier1.txt
-Loading 'Jar2' from data/chars/destructible/jar2/jar2.txt
-Loading '___250' from data/chars/items/money/money250.txt
-Loading 'Candle_f1' from data/bgs/castle_entrance/traps/candle/candle_f1.txt
-Loading 'Candle_f2' from data/bgs/castle_entrance/traps/candle/candle_f2.txt
-Loading 'Falling_candle' from data/bgs/castle_entrance/traps/candle/candle_fall.txt
-Loading 'Big_candle' from data/bgs/castle_entrance/traps/candle/candle.txt
-Loading 'Back_throne' from data/bgs/bathory_keep/decoration/back_throne.txt
-Loading 'Copa_debris1a' from data/chars/countess/copa/copa_debris1a.txt
-Loading 'Copa_debris1b' from data/chars/countess/copa/copa_debris1b.txt
-Loading 'Copa_debris1c' from data/chars/countess/copa/copa_debris1c.txt
-Loading 'Copa_debris1d' from data/chars/countess/copa/copa_debris1d.txt
-Loading 'Copa' from data/chars/countess/copa/copa.txt
-Loading 'Electricball' from data/chars/countess/magic/electricball.txt
-Loading 'Electricball_spawn_right' from data/chars/countess/magic/electricball_spawn_right.txt
-Loading 'Electricball_spawn_left' from data/chars/countess/magic/electricball_spawn_left.txt
-Loading 'GPillar' from data/chars/countess/GPillar.txt
+Loading 'Jar1' from data/chars/destructible/jar1/jar1.txt
+Loading 'Pollo_frito' from data/chars/items/chicken/pollo.txt
+Loading 'boss_lifebar' from data/chars/misc/boss_lifebar.txt
+Command 'min_noatk_chance' not understood in file 'data/chars/teobaldo/teobaldo_boss_p.txt'!
+Command 'max_noatk_chance' not understood in file 'data/chars/teobaldo/teobaldo_boss_p.txt'!
+Loading 'Controlseal' from data/chars/darvulia/witch/controlseal.txt
+Loading 'Controlsealdeath' from data/chars/darvulia/witch/controlsealdeath.txt
 Loading 'ice_sh1_e' from data/chars/misc/espells/ice_sh1_e.txt
-Loading 'IceBal' from data/chars/countess/magic/IceBal.txt
-Loading 'IceHole' from data/chars/countess/magic/IceHole.txt
-Loading 'MulanaBat' from data/chars/countess/magic/MulaBat.txt
-Loading 'Spawn_MulaBat' from data/chars/countess/magic/spawn_mulabat.txt
-Loading 'Bathory' from data/chars/countess/countess.txt
-Loading 'Back_final' from data/bgs/bathory_keep/decoration/back_final.txt
-Loading 'Keep_castle_shade' from data/bgs/bathory_keep/decoration/keep_castle_shade.txt
-Loading 'Keep_root' from data/bgs/bathory_keep/decoration/keep_root.txt
+Loading 'ice_sh_e' from data/chars/misc/espells/ice_sh_e.txt
+Loading 'Icecross_e' from data/chars/misc/spells/icecross_e.txt
+sound_load_sample can't load sample from file 'data/chars/misc/weap/axe1.wav'!
+Loading 'axeteo' from data/chars/teobaldo/axeteo.txt
+Loading 'Teo_rock1e' from data/chars/teobaldo/teo_rock1e.txt
+Loading 'Teo_rock2e' from data/chars/teobaldo/teo_rock2e.txt
+Loading 'Teo_rock3e' from data/chars/teobaldo/teo_rock3e.txt
+WARNING: data/chars/teobaldo/teobaldo_boss_p.txt tries to load a nonnumeric value at pshotframe, where a number is expected!
+erroneus string: icecross_e
+Loading 'Paladin_p' from data/chars/teobaldo/teobaldo_boss_p.txt
+Command 'min_noatk_chance' not understood in file 'data/chars/demonguardian/demonguardian_.txt'!
+Command 'max_noatk_chance' not understood in file 'data/chars/demonguardian/demonguardian_.txt'!
+Command 'offscreen_noatk_factor' not understood in file 'data/chars/demonguardian/demonguardian_.txt'!
+Loading 'G._demonio_' from data/chars/demonguardian/demonguardian_.txt
+Loading 'GDemonSpawner' from data/chars/misc/spawners/GDemonSpwn.txt
+Loading 'Darvulia_witch' from data/chars/darvulia/witch/darvulia_witch.txt
+Command 'typemp' not understood in file 'data/chars/darvulia/darvulia.txt'!
+Command 'min_noatk_chance' not understood in file 'data/chars/darvulia/darvulia.txt'!
+Command 'max_noatk_chance' not understood in file 'data/chars/darvulia/darvulia.txt'!
+Loading 'Faketarget' from data/chars/darvulia/faketarget.txt
+Command 'subject_to_basemap' not understood in file 'data/chars/darvulia/spell/gfireball.txt'!
+Loading 'GfireBall' from data/chars/darvulia/spell/gfireball.txt
+Loading 'Darvulia_Head' from data/chars/darvulia/spell/darvulia_head.txt
+Loading 'Darvulia_Scythe' from data/chars/darvulia/spell/darvulia_scythe.txt
+Loading 'Darvulia_Death_Scythe' from data/chars/darvulia/spell/darvulia_death_scythe.txt
+Loading 'Llight' from data/chars/darvulia/spell/Llight.txt
+Command 'flip' not understood in file 'data/chars/darvulia/spell/darvulia_ghost.txt'!
+Loading 'Darvulia_ghost' from data/chars/darvulia/spell/darvulia_ghost.txt
+Loading 'Darvulia_image' from data/chars/darvulia/spell/darvulia_image.txt
+Loading 'Darvulia_laser' from data/chars/darvulia/spell/darvulia_laser.txt
+Loading 'Darvulia_sparks' from data/chars/darvulia/spell/darvulia_sparks.txt
+Loading 'Mini_Scythe' from data/chars/darvulia/spell/mini_scythe.txt
+Loading 'ScytheSpawner' from data/chars/misc/spawners/ScytheSpwn.txt
+Loading 'Darvulia' from data/chars/darvulia/darvulia.txt
+Loading 'ESkeletonSpawner' from data/chars/misc/spawners/ESkeletonSpwn.txt
 
-Level Loaded:    'data/levels/bathory_keep.txt'
+Level Loaded:    'data/levels/castlehalld.txt'
 Total Ram: 2147483647 Bytes
  Free Ram: 2147483647 Bytes
- Used Ram: 88395776 Bytes
-Total sprites mapped: 1960
+ Used Ram: 116416512 Bytes
+Total sprites mapped: 2401
 
 
 ************ Shutting Down ************
@@ -1074,17 +1285,17 @@ Special thanks to SEGA and SNK.
 
 Total Ram: 2147483647 Bytes
  Free Ram: 2147483647 Bytes
- Used Ram: 88432640 Bytes
+ Used Ram: 116469760 Bytes
 
-Release level data...........Level Unloading: 'data/levels/bathory_keep.txt'
+Release level data...........Level Unloading: 'data/levels/castlehalld.txt'
 Total Ram: 2147483647 Bytes
  Free Ram: 2147483647 Bytes
- Used Ram: 88444928 Bytes
+ Used Ram: 116482048 Bytes
 
 Done.
 Total Ram: 2147483647 Bytes
  Free Ram: 2147483647 Bytes
- Used Ram: 88444928 Bytes
+ Used Ram: 116482048 Bytes
 
 	Done!
 Release graphics data........	Done!
@@ -1096,14 +1307,46 @@ Unload 'Hshock' ............done.
 Unload 'Blooda' ............done.
 Unload 'Bloode' ............done.
 Unload 'PRose' ............done.
+Unload 'StoneC' ............done.
+Unload 'Stone1' ............done.
+Unload 'Stone2' ............done.
+Unload 'Stone3' ............done.
+Unload 'Stone4' ............done.
+Unload 'Soul_steal' ............done.
+Unload 'dash_effect' ............done.
+Unload 'explo_whip' ............done.
+Unload 'Charge_whip' ............done.
 Unload 'Sheeba' ............done.
 Unload 'Fire_sh' ............done.
 Unload 'Thunder_sh' ............done.
 Unload 'Sheeba_Volaticus' ............done.
+Unload 'BPetir' ............done.
 Unload 'Ethan' ............done.
+Unload 'jump3_shadow' ............done.
+Unload 'dash6_shadow' ............done.
+Unload 'dash5_shadow' ............done.
+Unload 'upper6_shadow' ............done.
+Unload 'upper5_shadow' ............done.
+Unload 'evasion1_shadow' ............done.
+Unload 'evasion2_shadow' ............done.
+Unload 'evasion3_shadow' ............done.
+Unload 'evasion4_shadow' ............done.
+Unload 'evasion1_shadow_teo' ............done.
+Unload 'evasion2_shadow_teo' ............done.
+Unload 'evasion3_shadow_teo' ............done.
+Unload 'evasion4_shadow_teo' ............done.
+Unload 'rising1_shadow' ............done.
+Unload 'rising2_shadow' ............done.
+Unload 'jump1_shadow' ............done.
 Unload 'Ethan_fire' ............done.
+Unload 'Ethan_skeleton' ............done.
+Unload 'flamepunch_effect' ............done.
 Unload 'Fran' ............done.
+Unload 'Fran_1' ............done.
+Unload 'Fran_sword' ............done.
 Unload 'Soul_Bat' ............done.
+Unload 'Soul_wolf' ............done.
+Unload 'Soul_Cloud' ............done.
 Unload 'Teobaldo' ............done.
 Unload 'ice_sh' ............done.
 Unload 'ice_sh1' ............done.
@@ -1113,12 +1356,25 @@ Unload 'Teo_rock1' ............done.
 Unload 'pdie' ............done.
 Unload 'Teo_rock2' ............done.
 Unload 'Teo_rock3' ............done.
-Unload 'NOwl' ............done.
+Unload 'Sucubo__' ............done.
+Unload 'Empty' ............done.
+Unload 'EnchantSpell_p' ............done.
+Unload 'HeartSpell' ............done.
+Unload 'EnchantSpell2_p' ............done.
+Unload 'EHeart_MP_p' ............done.
+Unload 'MagicSeal' ............done.
+Unload 'Sucubo_npc' ............done.
+Unload 'EnchantSpell_npc' ............done.
+Unload 'EHeart_MP_npc' ............done.
+Unload 'Bone_ethan' ............done.
 Unload 'Skelet_headless' ............done.
 Unload 'Bone' ............done.
 Unload 'Bone1' ............done.
 Unload 'axev' ............done.
 Unload 'axed' ............done.
+Unload 'Flamatau' ............done.
+Unload 'fireseal' ............done.
+Unload 'Flame_p' ............done.
 Unload 'Confeti_1' ............done.
 Unload 'Confeti_2' ............done.
 Unload 'Confeti_3' ............done.
@@ -1131,31 +1387,32 @@ Unload 'Esqueleto' ............done.
 Unload 'E._Electrico' ............done.
 Unload 'BoneSpark' ............done.
 Unload 'Sparkdie' ............done.
-Unload 'E._Laser' ............done.
+Unload 'Zombi' ............done.
+Unload 'Bafo_shot_p' ............done.
+Unload 'Bafo_shot_2_p' ............done.
+Unload 'Bafo_shot_3_p' ............done.
+Unload 'Bafomet_' ............done.
+Unload 'Circle_transform' ............done.
+Unload 'Bafo_seal' ............done.
 Unload 'Fire_wolf' ............done.
 Unload 'Shockwave1' ............done.
 Unload 'fb01' ............done.
 Unload 'fb01_e' ............done.
 Unload 'fb02' ............done.
 Unload 'FireBlast' ............done.
-Unload 'MagicSeal' ............done.
-Unload 'fireseal' ............done.
 Unload 'lightningseal' ............done.
 Unload 'forb_fireseal' ............done.
-Unload 'BPetir' ............done.
 Unload 'Quetzal' ............done.
-Unload 'Rain' ............done.
-Unload 'leosp' ............done.
-Unload 'dirk' ............done.
 Unload 'Windspell' ............done.
 Unload 'GrBlast' ............done.
 Unload 'GrBlasto' ............done.
+Unload 'EnchantSpell2_npc' ............done.
 Unload 'PKnife' ............done.
 Unload 'Cuchillo' ............done.
 Unload 'PAxe' ............done.
 Unload 'Hacha' ............done.
 Unload 'PCross' ............done.
-Unload 'C._Sagrada' ............done.
+Unload 'C._Plateada' ............done.
 Unload 'A._Bendita' ............done.
 Unload 'Pholywater' ............done.
 Unload 'Bomba' ............done.
@@ -1165,6 +1422,7 @@ Unload 'PBible' ............done.
 Unload 'Sparkles' ............done.
 Unload 'Bumeran' ............done.
 Unload 'PBomrade' ............done.
+Unload 'NOwl' ............done.
 Unload 'sdie' ............done.
 Unload 'bdie' ............done.
 Unload 'Clowndie' ............done.
@@ -1179,6 +1437,14 @@ Unload 'BR' ............done.
 Unload 'BA' ............done.
 Unload 'BS' ............done.
 Unload 'BL' ............done.
+Unload 'BR_l' ............done.
+Unload 'BA_l' ............done.
+Unload 'BS_l' ............done.
+Unload 'BL_l' ............done.
+Unload 'BR_e' ............done.
+Unload 'BA_e' ............done.
+Unload 'BS_e' ............done.
+Unload 'BL_e' ............done.
 Unload 'BR_c' ............done.
 Unload 'BA_c' ............done.
 Unload 'BS_c' ............done.
@@ -1189,6 +1455,9 @@ Unload 'Rock3' ............done.
 Unload 'Rock1B' ............done.
 Unload 'Rock2B' ............done.
 Unload 'Rock3B' ............done.
+Unload 'Rock1B_coliseum' ............done.
+Unload 'Rock2B_coliseum' ............done.
+Unload 'Rock3B_coliseum' ............done.
 Unload 'btw_rock1' ............done.
 Unload 'btw_rock2' ............done.
 Unload 'btw_rock3' ............done.
@@ -1207,96 +1476,45 @@ Unload 'Underground_rock3' ............done.
 Unload 'Underground_rock4' ............done.
 Unload 'dust' ............done.
 Unload 'dustb' ............done.
-Unload 'Dungeon_wall1' ............done.
-Unload 'dungeon_platform1c' ............done.
-Unload 'window_dungeon_1' ............done.
-Unload 'Skull_dungeon' ............done.
-Unload 'Prisoner_3' ............done.
-Unload 'Dungeon_wall1a' ............done.
-Unload 'dungeon_platform1b' ............done.
-Unload 'dungeon_platform1a' ............done.
-Unload 'Dungeon_spike_trap1' ............done.
-Unload 'Dead' ............done.
-Unload 'Sword_dungeon' ............done.
-Unload 'Dungeon_wall1b' ............done.
-Unload 'Dungeon_wall1c' ............done.
-Unload 'Prisoner_1' ............done.
-Unload 'Prisoner_2' ............done.
-Unload 'Dungeon_spikewheel' ............done.
-Unload 'Dungeon_platform_trap' ............done.
-Unload 'Dungeon_wall1d' ............done.
-Unload 'Dungeon_spike_trap2' ............done.
-Unload 'Dungeon_spike_trap3' ............done.
-Unload 'Dungeon_spike_chain_trap' ............done.
-Unload 'Dungeon_falling_spike_chain_trap' ............done.
-Unload 'Dungeon_up_spike_chain_trap' ............done.
-Unload 'Dungeon_wall1e' ............done.
-Unload 'Dungeon_wall1f' ............done.
-Unload 'Dungeon_wall1g' ............done.
-Unload 'Dungeon_wall1h' ............done.
-Unload 'Dungeon_wall1i' ............done.
-Unload 'Dungeon_wall1j' ............done.
-Unload 'Dungeon_wall1k' ............done.
-Unload 'Dungeon_wall1l' ............done.
-Unload 'Dungeon_spike_trap4' ............done.
-Unload 'Dungeon_wall1o' ............done.
-Unload 'Jar1' ............done.
-Unload 'C._Arcoiris' ............done.
-Unload '___400' ............done.
+Unload 'leon_statue' ............done.
+Unload 'Castlehall_wall11a' ............done.
+Unload 'Castlehall_platform1a' ............done.
+Unload 'Sealed_door' ............done.
 Unload 'Candle1' ............done.
-Unload '___10' ............done.
-Unload 'EctoSpawner' ............done.
-Unload 'Ectoplasma' ............done.
-Unload '___100' ............done.
-Unload '___20' ............done.
-Unload 'E._Carmesi' ............done.
-Unload 'P._Invisible' ............done.
-Unload 'Brujo' ............done.
-Unload 'Spiral_disapear_b' ............done.
-Unload 'Necro_blast_1' ............done.
-Unload 'Ice' ............done.
-Unload '___50' ............done.
-Unload 'Barril' ............done.
-Unload 'P._Podrido' ............done.
-Unload 'Agua_Santa' ............done.
 Unload 'Gema_Roja' ............done.
-Unload 'La_criatura_' ............done.
-Unload 'CThunder' ............done.
-Unload 'CMissile' ............done.
-Unload 'Shockwave' ............done.
-Unload 'Pollo_frito' ............done.
-Unload '___700' ............done.
-Unload 'ToEntrance' ............done.
-Unload 'Keep_wall_1' ............done.
-Unload 'Keep_roof_1' ............done.
-Unload 'Dark_artifact' ............done.
-Unload 'Throne' ............done.
+Unload '___100' ............done.
+Unload 'Gema_Azul' ............done.
 Unload 'Brazier1' ............done.
-Unload 'Jar2' ............done.
-Unload '___250' ............done.
-Unload 'Big_candle' ............done.
-Unload 'Falling_candle' ............done.
-Unload 'Candle_f1' ............done.
-Unload 'Candle_f2' ............done.
-Unload 'Back_throne' ............done.
-Unload 'Bathory' ............done.
-Unload 'Copa' ............done.
-Unload 'Copa_debris1a' ............done.
-Unload 'Copa_debris1b' ............done.
-Unload 'Copa_debris1c' ............done.
-Unload 'Copa_debris1d' ............done.
-Unload 'Electricball' ............done.
-Unload 'Electricball_spawn_right' ............done.
-Unload 'Electricball_spawn_left' ............done.
-Unload 'GPillar' ............done.
-Unload 'IceBal' ............done.
+Unload 'Jar1' ............done.
+Unload 'Pollo_frito' ............done.
+Unload 'boss_lifebar' ............done.
+Unload 'Paladin_p' ............done.
+Unload 'Controlseal' ............done.
+Unload 'Controlsealdeath' ............done.
+Unload 'ice_sh_e' ............done.
 Unload 'ice_sh1_e' ............done.
-Unload 'IceHole' ............done.
-Unload 'Spawn_MulaBat' ............done.
-Unload 'MulanaBat' ............done.
-Unload 'Back_final' ............done.
-Unload 'Keep_castle_shade' ............done.
-Unload 'Keep_root' ............done.
+Unload 'Icecross_e' ............done.
+Unload 'axeteo' ............done.
+Unload 'Teo_rock1e' ............done.
+Unload 'Teo_rock2e' ............done.
+Unload 'Teo_rock3e' ............done.
+Unload 'GDemonSpawner' ............done.
+Unload 'G._demonio_' ............done.
+Unload 'Darvulia_witch' ............done.
+Unload 'Darvulia' ............done.
+Unload 'Faketarget' ............done.
+Unload 'GfireBall' ............done.
+Unload 'Darvulia_Head' ............done.
+Unload 'Darvulia_Scythe' ............done.
+Unload 'Darvulia_Death_Scythe' ............done.
+Unload 'Llight' ............done.
+Unload 'Darvulia_ghost' ............done.
+Unload 'Darvulia_image' ............done.
+Unload 'Darvulia_laser' ............done.
+Unload 'Darvulia_sparks' ............done.
+Unload 'ScytheSpawner' ............done.
+Unload 'Mini_Scythe' ............done.
+Unload 'ESkeletonSpawner' ............done.
 
 Release game data............	Done!
 Release timer................	Done!

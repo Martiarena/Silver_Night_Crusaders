@@ -901,6 +901,7 @@ know	Castlehall_wall9a	data/bgs/castlehall/wall/castlehall_wall9a.txt
 know	Castlehall_wall9b	data/bgs/castlehall/wall/castlehall_wall9b.txt
 know	Castlehall_wall9c	data/bgs/castlehall/wall/castlehall_wall9c.txt
 know	Castlehall_wall10a	data/bgs/castlehall/wall/castlehall_wall10a.txt
+know	Castlehall_wall11a	data/bgs/castlehall/wall/castlehall_wall11a.txt
 know	Hidden_12	data/bgs/castlehall/decoration/hidden_12.txt
 know	Hidden_13	data/bgs/castlehall/decoration/hidden_13.txt
 

@@ -64,6 +64,7 @@ load            kdie
 
 
 
+
 anim	death
 	delay	5
 	subentity	kdie
@@ -645,6 +646,7 @@ anim	idle
 	frame	data/chars/queenmoth/idle3.gif
 		
 anim	pain
+	loop	0
 	delay	10
 	offset	55 139
 	frame	data/chars/queenmoth/idle1.gif
@@ -655,6 +657,7 @@ anim	pain
 	frame	data/chars/queenmoth/idle3.gif
 		
 anim	spawn
+	loop	0
 	delay	10
 	offset	55 139
 	frame	data/chars/queenmoth/spawn1.gif

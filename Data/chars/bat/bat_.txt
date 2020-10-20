@@ -33,6 +33,7 @@ palette		data/chars/bat/bat_palette.gif
 
 
 
+
 anim	death
 @script
 	void self = getlocalvar("self"); //Get calling entity.

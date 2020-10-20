@@ -28,6 +28,9 @@ defense normal7 0.75
 defense normal10 0.75
 defense normal17 1.5
 defense normal20 0 1 999 0 0 0 0
+defense normal22 1.5
+defense normal23 0.50
+defense normal24 1.5
 defense burn 0.50
 defense shock 0.75
 parrow 		data/chars/misc/parrow1p.gif -8 -78
@@ -62,6 +65,7 @@ com	a3	freespecial2
 com	a4	freespecial3
 
 com f f a	freespecial13
+
 
 
 
@@ -428,6 +432,24 @@ anim	fall17
 	frame	data/chars/sheeba/fall9.gif
 		
 anim	fall2
+	delay	5
+	offset	80 124
+	@cmd	spawnbind "blooda" 0 42 1
+	sound	data/sounds/sheeba_pain.wav
+	frame	data/chars/sheeba/fall1.gif
+	frame	data/chars/sheeba/fall2.gif
+	delay	10
+	frame	data/chars/sheeba/fall3.gif
+	frame	data/chars/sheeba/fall4.gif
+	frame	data/chars/sheeba/fall5.gif
+	frame	data/chars/sheeba/fall6.gif
+	frame	data/chars/sheeba/fall7.gif
+	@cmd	platform 1
+	delay	15
+	frame	data/chars/sheeba/fall8.gif
+	frame	data/chars/sheeba/fall9.gif
+		
+anim	fall22
 	delay	5
 	offset	80 124
 	@cmd	spawnbind "blooda" 0 42 1
@@ -1245,6 +1267,35 @@ anim	jumpspecial
 	frame	data/chars/sheeba/gigaspell12.gif
 	frame	data/chars/sheeba/gigaspell12.gif
 		
+anim	fall23
+	delay	5
+	offset	80 124
+	sound	data/sounds/sheeba_pain.wav
+	@cmd	spawnbind "Hflame" -10 35 1
+	frame	data/chars/sheeba/fallf1.gif
+	frame	data/chars/sheeba/fallf2.gif
+	delay	10
+	frame	data/chars/sheeba/fallf3.gif
+	frame	data/chars/sheeba/fallf4.gif
+	frame	data/chars/sheeba/fallf5.gif
+	frame	data/chars/sheeba/fallf6.gif
+	frame	data/chars/sheeba/fallf7.gif
+	@cmd	platform 1
+	delay	15
+	frame	data/chars/sheeba/fallf8.gif
+	frame	data/chars/sheeba/fallf9.gif
+		
+anim	pain23
+	loop	0
+	delay	9
+	offset	80 124
+	jumpframe	0 1.5 -1
+	bbox	70 75 20 45
+	sound	data/sounds/sheeba_pain.wav
+	frame	data/chars/sheeba/painf1.gif
+	frame	data/chars/sheeba/painf2.gif
+	frame	data/chars/sheeba/painf1.gif
+		
 anim	pain
 	loop	0
 	delay	9
@@ -1269,6 +1320,18 @@ anim	pain17
 	frame	data/chars/sheeba/pain1.gif
 		
 anim	pain2
+	loop	0
+	delay	9
+	offset	80 124
+	@cmd	spawnbind "blooda" 0 42 1
+	jumpframe	0 1.5 -1
+	bbox	70 75 20 45
+	sound	data/sounds/sheeba_pain.wav
+	frame	data/chars/sheeba/pain1.gif
+	frame	data/chars/sheeba/pain2.gif
+	frame	data/chars/sheeba/pain1.gif
+		
+anim	pain22
 	loop	0
 	delay	9
 	offset	80 124

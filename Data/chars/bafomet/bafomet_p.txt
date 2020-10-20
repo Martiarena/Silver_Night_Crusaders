@@ -34,6 +34,8 @@ defense normal17 0.75
 defense normal19 0.75
 defense normal20 0 1 999 0 0 0 0
 defense normal21 0.75 0 0 0 0 0 0
+defense normal22 0.75 0 0 0 0 0 0
+defense normal23 0.75 0 1 0 0 0 0
 defense burn 0.75 0 1 0 0 0 0
 defense schock 2 0 0 0 0 0 0
 
@@ -61,6 +63,7 @@ load	Empty
 load    Blooda
 load	Circle_transform
 load 	bafo_seal
+
 
 
 
@@ -303,6 +306,17 @@ anim	fall17
 	frame	data/chars/bafomet/magic1c.gif
 		
 anim	fall2
+	loop	0
+	delay	14
+	offset	50 143
+	landframe	2
+	@cmd	spawnbind "blooda" 40 102 1
+	sound	data/sounds/bafomet_spell2.wav
+	@cmd	mpcost -30
+	frame	data/chars/bafomet/magic1b.gif
+	frame	data/chars/bafomet/magic1c.gif
+		
+anim	fall22
 	loop	0
 	delay	14
 	offset	50 143
@@ -580,6 +594,18 @@ anim	pain17
 	frame	data/chars/bafomet/magic1b.gif
 		
 anim	pain2
+	loop	0
+	delay	27
+	offset	50 143
+	bbox	30 55 40 88
+	@cmd	platform 1
+	jumpframe	0 1.5 -1
+	@cmd	spawnbind "blooda" 40 82 1
+	@cmd	mpcost -20
+	sound	data/sounds/bafomet_spell2.wav
+	frame	data/chars/bafomet/magic1b.gif
+		
+anim	pain22
 	loop	0
 	delay	27
 	offset	50 143

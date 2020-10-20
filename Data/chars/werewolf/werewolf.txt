@@ -42,11 +42,12 @@ defense normal21 0.75 0 0 0 0 0 0
 defense burn 0.75 0 0 0 0 0 0
 defense schock 0.75 0 0 0 0 0 0
 
-#icon		data/chars/misc/bgmonster.gif
+
 icon 		data/chars/gargoyle/bggargola.gif
 
 palette   data/chars/werewolf/werewolf_palette.gif
 alternatepal  data/chars/werewolf/werewolf_blink.gif
+
 
 
 
@@ -125,7 +126,7 @@ anim	attack1
 	delay	1
 	move	1
 	hitfx	data/sounds/slash.wav
-	attack2	170 100 60 48 19 0 0 0 0 0
+	attack22	170 100 60 48 19 0 0 0 0 0
 	sound	data/sounds/throw_big_0.wav
 	frame	data/chars/werewolf/attack1g.gif
 	frame	data/chars/werewolf/attack1g.gif
@@ -156,7 +157,7 @@ anim	attack1
 	frame	data/chars/werewolf/attack1i.gif
 	frame	data/chars/werewolf/attack1i.gif
 	move	0
-	attack2	0 0 0
+	attack22	0 0 0
 	frame	data/chars/werewolf/attack1j.gif
 	frame	data/chars/werewolf/attack1k.gif
 	frame	data/chars/werewolf/attack1l.gif
@@ -246,7 +247,7 @@ anim	attack3
 	frame	data/chars/werewolf/upper1e.gif
 	hitfx	data/sounds/slash.wav
 	dropv	3 5 0
-	attack2	171 5 45 95 25 11 0 0 0 0
+	attack22	171 5 45 95 25 11 0 0 0 0
 	dropv	3 2.5 0
 	frame	data/chars/werewolf/upper1d.gif
 	frame	data/chars/werewolf/upper1e.gif
@@ -265,7 +266,7 @@ anim	attack3
 	frame	data/chars/werewolf/upper1d.gif
 	frame	data/chars/werewolf/upper1e.gif
 	frame	data/chars/werewolf/upper1d.gif
-	attack2	0 0 0 0 0 0 0
+	attack22	0 0 0 0 0 0 0
 	frame	data/chars/werewolf/upper1e.gif
 	hitfx	data/sounds/beat1.wav
 	delay	1000
@@ -732,7 +733,7 @@ anim	upper
 	sound	data/sounds/throw2.wav
 	frame	data/chars/werewolf/upper1e.gif
 	hitfx	data/sounds/slash.wav
-	attack2	171 5 45 95 25 11 0 0 0 0
+	attack22	171 5 45 95 25 11 0 0 0 0
 	dropv	3 2 0
 	frame	data/chars/werewolf/upper1d.gif
 	frame	data/chars/werewolf/upper1e.gif
@@ -751,7 +752,7 @@ anim	upper
 	frame	data/chars/werewolf/upper1d.gif
 	frame	data/chars/werewolf/upper1e.gif
 	frame	data/chars/werewolf/upper1d.gif
-	attack2	0 0 0 0 0 0 0
+	attack22	0 0 0 0 0 0 0
 	frame	data/chars/werewolf/upper1e.gif
 	attack	0 0 0 0
 	delay	1000

@@ -50,6 +50,7 @@ alternatepal	 data/chars/bdragon/blink.gif
 
 
 
+
 anim	death
 	delay	3
 	offset	15 27

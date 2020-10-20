@@ -25,12 +25,13 @@ defense normal19 2 0 0 0 0 0 0
 defense burn 2 0 0 0 0 0 0
 defense shock 2 0 0 0 0 0 0
 
-#icon 		data/chars/misc/bgmonster.gif
+
 icon 		data/chars/magicbook/bgtomo.gif
 
 palette		data/chars/magicbook/magic_book_palette.gif
 
 animationscript data/scripts/cscript.c
+
 
 
 
@@ -65,7 +66,7 @@ anim	follow1
 	delay	18
 	offset	25 23
 	bbox	15 10 25 30
-	attack	15 10 25 30 6 0 1 1 0 0
+	attack	15 10 25 30 6 0 0 1 0 0
 	frame	data/chars/magicbook/idle1a.gif
 	@cmd	target 0.6 0.6 0 -20 0 1
 	@cmd	dash 0 0
@@ -105,7 +106,7 @@ anim	idle
 	delay	18
 	offset	25 23
 	bbox	15 10 25 30
-	attack	15 10 25 30 6 0 1 1 0 0
+	attack	15 10 25 30 6 0 0 1 0 0
 	frame	data/chars/magicbook/idle1a.gif
 	@cmd	target 0.6 0.6 0 -20 0 1
 	@cmd	dash 0 0

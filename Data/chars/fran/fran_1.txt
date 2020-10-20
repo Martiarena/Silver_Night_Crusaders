@@ -8,10 +8,13 @@ cantgrab	 1
 jumpmove  	 1
 knockdowncount   9999
 jumpheight	 1
+jumpmove         3
 noquake		 1
 stealth 	 0
 bounce   0
 death		 1
+holdblock 	1
+blockpain 	1
 nodieblink	 2
 icon		 data/chars/fran/icon.gif
 antigravity	 -20
@@ -22,11 +25,20 @@ subject_to_platform 1
 weapons         Fran
 weaploss 2 1
 diesound	data/sounds/fran_death.wav
-defense normal 0.75
-defense normal1 0.75
-defense normal2 0.75
-defense normal17 0.75 0 0.5
-defense normal20 0 1 999 0 0 0 0
+defense normal 0.50
+defense normal1 0.50
+defense normal2 0.50
+defense normal7 0.75 10
+defense normal8 0.75 999
+defense normal10 1 10
+defense normal17 2 999 0.5
+defense normal20 0 999 999
+defense normal22 1.5
+defense normal23 1.5
+defense normal24 1.5
+defense burn 0.50 10
+defense shock 2 10
+
 parrow 		data/chars/misc/parrow1p.gif -5 -71
 parrow2 	data/chars/misc/parrow2p.gif -5 -71
 
@@ -40,9 +52,7 @@ takedamagescript data/scripts/invis.c
 
 atchain		 1 2
 
-com	a2	freespecial4
-com	a3	freespecial3
-com	a4	freespecial2
+com	f f a	freespecial
 
 com	u d a	freespecial15
 com	d u a	freespecial15
@@ -158,18 +168,25 @@ com	d u a	freespecial15
 
 
 
+
+
+
+
+
 anim	attack1
 	loop	0
 	delay	1
-	offset	36 103
+	offset	36 102
 	bbox	20 35 30 68
 	frame	data/chars/demonknight/walk1.gif
-	delay	7
+	delay	3
 	frame	data/chars/demonknight/attack1a.gif
 	frame	data/chars/demonknight/attack1b.gif
 	frame	data/chars/demonknight/attack1c.gif
 	delay	1
+	sound	data/sounds/fran_attack1.wav
 	frame	data/chars/demonknight/attack1c.gif
+	sound	data/sounds/throw2.wav
 	hitfx	data/sounds/hit-cut.wav
 	attack2	14 30 70 70 12 0 0 0 0 0
 	frame	data/chars/demonknight/attack1d.gif
@@ -186,15 +203,17 @@ anim	attack1
 anim	attack2
 	loop	0
 	delay	1
-	offset	36 103
+	offset	36 102
 	bbox	20 35 30 68
 	frame	data/chars/demonknight/walk1.gif
-	delay	7
+	delay	3
 	frame	data/chars/demonknight/attack1a.gif
 	frame	data/chars/demonknight/attack1b.gif
 	frame	data/chars/demonknight/attack1c.gif
 	delay	1
+	sound	data/sounds/fran_attack1.wav
 	frame	data/chars/demonknight/attack1c.gif
+	sound	data/sounds/throw2.wav
 	hitfx	data/sounds/hit-cut.wav
 	attack2	14 30 70 70 12 0 0 0 0 0
 	frame	data/chars/demonknight/attack1d.gif
@@ -211,7 +230,7 @@ anim	attack2
 anim	bpain
 	loop	0
 	delay	27
-	offset	36 103
+	offset	36 102
 	jumpframe	0 0.75 -1
 	bbox	23 36 20 58
 	sound	data/sounds/fran_pain.wav
@@ -221,7 +240,7 @@ anim	bpain
 anim	burn
 	loop	0
 	delay	5
-	offset	36 103
+	offset	36 102
 	sound	data/sounds/fran_pain.wav
 	@cmd	spawnbind "Hflame" -10 30 1
 	frame	data/chars/fran/magic/pain1a.gif
@@ -252,8 +271,8 @@ anim	duckattack
 		
 anim	fall
 	loop	0
-	delay	5
-	offset	36 103
+	delay	7
+	offset	36 102
 	sound	data/sounds/fran_pain.wav
 	frame	data/chars/fran/magic/pain1a.gif
 	@cmd	platform 1
@@ -261,8 +280,8 @@ anim	fall
 		
 anim	fall17
 	loop	0
-	delay	5
-	offset	36 103
+	delay	7
+	offset	36 102
 	@cmd	spawnbind "blooda" 0 36 1
 	sound	data/sounds/fran_pain.wav
 	frame	data/chars/fran/magic/pain1a.gif
@@ -271,18 +290,38 @@ anim	fall17
 		
 anim	fall2
 	loop	0
-	delay	5
-	offset	36 103
+	delay	7
+	offset	36 102
 	@cmd	spawnbind "blooda" 0 36 1
 	sound	data/sounds/fran_pain.wav
 	frame	data/chars/fran/magic/pain1a.gif
 	@cmd	platform 1
 	frame	data/chars/fran/magic/pain1a.gif
 		
-anim	fall7
+anim	fall22
+	loop	0
+	delay	7
+	offset	36 102
+	@cmd	spawnbind "blooda" 0 36 1
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/magic/pain1a.gif
+	@cmd	platform 1
+	frame	data/chars/fran/magic/pain1a.gif
+		
+anim	fall23
 	loop	0
 	delay	5
-	offset	36 103
+	offset	36 102
+	sound	data/sounds/fran_pain.wav
+	@cmd	spawnbind "Hflame" -10 30 1
+	frame	data/chars/fran/magic/pain1a.gif
+	@cmd	platform 1
+	frame	data/chars/fran/magic/pain1a.gif
+		
+anim	fall7
+	loop	0
+	delay	7
+	offset	36 102
 	sound	data/sounds/fran_pain.wav
 	frame	data/chars/fran/magic/pain1a.gif
 	@cmd	platform 1
@@ -290,8 +329,8 @@ anim	fall7
 		
 anim	fall8
 	loop	0
-	delay	5
-	offset	36 103
+	delay	7
+	offset	36 102
 	@cmd	spawnbind "prose" 4 32 1
 	@cmd	spawnbind "blooda" 0 36 1
 	sound	data/sounds/fran_pain.wav
@@ -303,7 +342,7 @@ anim	follow1
 	loop	0
 	delay	7
 	jumpframe	0 1 -1 0
-	offset	36 103
+	offset	36 102
 	bbox	20 35 30 68
 	hitfx	data/sounds/hit-cut.wav
 	attack2	47 30 19 46 3 0 0 0 0 0
@@ -314,8 +353,9 @@ anim	follow2
 anim	follow3
 		
 anim	follow4
+	loop	0
 	delay	7
-	offset	36 103
+	offset	36 102
 	bbox	20 35 30 68
 	hitfx	data/sounds/hit-cut.wav
 	attack2	47 30 19 46 3 0 0 0 0 0
@@ -324,6 +364,66 @@ anim	follow4
 	frame	data/chars/demonknight/walk1.gif
 		
 anim	follow5
+	loop	0
+	delay	7
+	offset	55 76
+	frame	data/chars/fran/magic/transform1n.gif
+	frame	data/chars/fran/magic/transform1m.gif
+	frame	data/chars/fran/magic/transform1l.gif
+	frame	data/chars/fran/magic/transform1k.gif
+	frame	data/chars/fran/magic/transform1j.gif
+	frame	data/chars/fran/magic/transform1i.gif
+	frame	data/chars/fran/magic/transform1h.gif
+	frame	data/chars/fran/magic/transform1g.gif
+	delay	1
+	weaponframe	8 5
+	frame	data/chars/fran/magic/transform1g.gif
+		
+anim	freespecial
+	loop	0
+	delay	1
+	offset	36 102
+	bbox	20 35 30 68
+	frame	data/chars/demonknight/walk1.gif
+	delay	24
+	frame	data/chars/demonknight/attack1a.gif
+	delay	1
+	move	3
+	sound	data/sounds/throw1.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack2	14 30 59 70 12 18 0 0 0 0
+	dropv	3 2 0
+	frame	data/chars/demonknight/attack1b.gif
+	frame	data/chars/demonknight/attack1b.gif
+	frame	data/chars/demonknight/attack1b.gif
+	frame	data/chars/demonknight/attack1b.gif
+	frame	data/chars/demonknight/attack1c.gif
+	frame	data/chars/demonknight/attack1c.gif
+	frame	data/chars/demonknight/attack1c.gif
+	frame	data/chars/demonknight/attack1c.gif
+	delay	1
+	frame	data/chars/demonknight/attack1d.gif
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1d.gif
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1d.gif
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1d.gif
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1d.gif
+	frame	data/chars/demonknight/attack1e.gif
+	move	2
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1e.gif
+	move	1
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1e.gif
+	delay	14
+	move	0
+	attack2	0 0 0 0 0 0 0
+	frame	data/chars/demonknight/attack1e.gif
 		
 anim	freespecial10
 		
@@ -332,7 +432,7 @@ anim	freespecial11
 anim	freespecial12
 	loop	0
 	delay	7
-	offset	36 103
+	offset	36 102
 	bbox	20 35 30 68
 	hitfx	data/sounds/hit-cut.wav
 	attack2	47 30 19 46 12 0 0 0 0 0
@@ -347,17 +447,19 @@ anim	freespecial14
 anim	freespecial15
 	loop	0
 	delay	1
-	offset	55 63
+	offset	36 76
 	sound	data/sounds/transform.wav
-	frame	data/chars/fran/idle1.gif
-	frame	data/chars/fran/battransform1.gif
-	frame	data/chars/fran/battransform2.gif
-	frame	data/chars/fran/battransform3.gif
-	frame	data/chars/fran/battransform4.gif
+	frame	data/chars/fran/magic/transform1n.gif
+	frame	data/chars/fran/magic/transform1m.gif
+	frame	data/chars/fran/magic/transform1l.gif
+	frame	data/chars/fran/magic/transform1k.gif
+	frame	data/chars/fran/magic/transform1j.gif
+	frame	data/chars/fran/magic/transform1i.gif
+	frame	data/chars/fran/magic/transform1h.gif
 	delay	1
-	weaponframe	5 1
-	frame	data/chars/fran/batwalk1.gif
-	frame	data/chars/fran/batwalk1.gif
+	weaponframe	5 5
+	frame	data/chars/fran/magic/transform1g.gif
+	frame	data/chars/fran/magic/transform1g.gif
 		
 anim	freespecial2
 		
@@ -378,7 +480,7 @@ anim	freespecial9
 anim	idle
 	loop	1
 	delay	7
-	offset	36 103
+	offset	36 102
 	bbox	20 35 30 68
 	hitfx	data/sounds/hit-cut.wav
 	attack2	47 31 19 46 3 0 0 0 0 0
@@ -390,7 +492,7 @@ anim	idle
 anim	jump
 	loop	0
 	delay	7
-	offset	36 103
+	offset	36 102
 	bbox	20 35 30 68
 	hitfx	data/sounds/hit-cut.wav
 	attack2	47 30 19 46 3 0 0 0 0 0
@@ -399,13 +501,38 @@ anim	jump
 	frame	data/chars/demonknight/walk1.gif
 		
 anim	jumpattack
+	loop	0
+	delay	1
+	offset	36 102
+	bbox	20 35 30 68
+	frame	data/chars/demonknight/walk1.gif
+	delay	7
+	frame	data/chars/demonknight/attack1a.gif
+	frame	data/chars/demonknight/attack1b.gif
+	frame	data/chars/demonknight/attack1c.gif
+	delay	1
+	sound	data/sounds/fran_attack4.wav
+	frame	data/chars/demonknight/attack1c.gif
+	sound	data/sounds/throw2.wav
+	hitfx	data/sounds/hit-cut.wav
+	attack2	14 30 70 70 12 0 0 0 0 0
+	frame	data/chars/demonknight/attack1d.gif
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1d.gif
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1d.gif
+	frame	data/chars/demonknight/attack1e.gif
+	frame	data/chars/demonknight/attack1d.gif
+	delay	14
+	attack2	0 0 0 0 0 0 0
+	frame	data/chars/demonknight/attack1e.gif
 		
 anim	jumpattack3
 		
 anim	jumpland
 	loop	0
 	delay	3
-	offset	36 103
+	offset	36 102
 	bbox	20 35 30 68
 	sound	data/sounds/land.wav
 	attack2	47 31 19 46 3 0 0 0 0 0
@@ -416,16 +543,16 @@ anim	jumpspecial
 anim	pain
 	loop	0
 	delay	27
-	jumpframe	0 0.75 -1
-	offset	36 103
+	offset	36 102
 	bbox	20 35 30 68
+	jumpframe	0 0.75 -1
 	sound	data/sounds/fran_pain.wav
 	frame	data/chars/fran/magic/pain1a.gif
 		
 anim	pain17
 	loop	0
 	delay	27
-	offset	36 103
+	offset	36 102
 	bbox	20 35 30 68
 	jumpframe	0 0.75 -1
 	sound	data/sounds/fran_pain.wav
@@ -434,17 +561,37 @@ anim	pain17
 anim	pain2
 	loop	0
 	delay	27
+	offset	36 102
+	bbox	20 35 30 68
 	jumpframe	0 0.75 -1
 	@cmd	spawnbind "blooda" 0 36 1
-	offset	36 103
-	bbox	20 35 30 68
 	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/magic/pain1a.gif
+		
+anim	pain22
+	loop	0
+	delay	27
+	offset	36 102
+	bbox	20 35 30 68
+	jumpframe	0 0.75 -1
+	@cmd	spawnbind "blooda" 0 36 1
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/magic/pain1a.gif
+		
+anim	pain23
+	loop	0
+	delay	27
+	offset	36 102
+	jumpframe	0 0.75 -1
+	bbox	23 36 20 58
+	sound	data/sounds/fran_pain.wav
+	@cmd	spawnbind "Hflame" 0 10 1
 	frame	data/chars/fran/magic/pain1a.gif
 		
 anim	pain7
 	loop	0
 	delay	27
-	offset	36 103
+	offset	36 102
 	bbox	20 35 30 68
 	jumpframe	0 0.75 -1
 	sound	data/sounds/fran_pain.wav
@@ -453,7 +600,7 @@ anim	pain7
 anim	pain8
 	loop	0
 	delay	27
-	offset	36 103
+	offset	36 102
 	bbox	20 35 30 68
 	jumpframe	0 0.75 -1
 	@cmd	spawnbind "blooda" 0 36 1
@@ -464,7 +611,7 @@ anim	pain8
 anim	rise
 	loop	0
 	delay	7
-	offset	36 103
+	offset	36 102
 	bbox	20 35 30 68
 	hitfx	data/sounds/hit-cut.wav
 	attack2	47 31 19 46 3 0 0 0 0 0
@@ -479,7 +626,7 @@ anim	select
 anim	shock
 	loop	0
 	delay	20
-	offset	36 103
+	offset	36 102
 	sound	data/sounds/fran_pain.wav
 	@cmd	spawnbind "Hshock" -10 23 1
 	frame	data/chars/fran/magic/pain1a.gif
@@ -516,14 +663,17 @@ anim	slide
 	@end_script	
 	loop	0
 	delay	7
-	offset	36 103
+	offset	36 102
 	bbox	20 35 30 68
+	frame	data/chars/demonknight/walk1.gif
+	frame	data/chars/demonknight/walk1.gif
+	frame	data/chars/demonknight/walk1.gif
 	frame	data/chars/demonknight/walk1.gif
 		
 anim	spain
 	loop	0
 	delay	27
-	offset	55 63
+	offset	36 102
 	jumpframe	0 0.75 -1
 	bbox	47 18 15 45
 	sound	data/sounds/fran_pain.wav
@@ -536,18 +686,20 @@ anim	waiting
 		
 anim	walk
 	loop	1
-	delay	12
-	offset	36 103
+	delay	7
+	offset	36 102
 	bbox	20 35 30 68
 	hitfx	data/sounds/hit-cut.wav
 	attack2	47 30 19 46 6 0 0 0 0 0
 	frame	data/chars/demonknight/walk1.gif
 	frame	data/chars/demonknight/walk2.gif
+	sound	data/sounds/land.wav
 	frame	data/chars/demonknight/walk3.gif
-	delay	11
+	delay	6
 	frame	data/chars/demonknight/walk4.gif
 	delay	1
 	attack2	0 0 0 0 0
+	sound	data/sounds/land.wav
 	frame	data/chars/demonknight/walk4.gif
 		
 #|edited by openBor Stats v 0.67

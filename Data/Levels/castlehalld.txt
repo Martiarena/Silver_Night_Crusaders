@@ -35,6 +35,11 @@ coords  -315  216  57
 flip 1
 at  0
 
+spawn  Castlehall_wall11a
+coords  -435  216  115
+flip 1
+at  0
+
 spawn  Castlehall_platform1a
 coords  -572  216  47
 flip  1
@@ -47,6 +52,11 @@ at  0
 
 spawn  Sealed_door
 coords  -934  216  0
+flip 1
+at  0
+
+spawn  Castlehall_wall11a
+coords  -931  216  94
 flip 1
 at  0
 

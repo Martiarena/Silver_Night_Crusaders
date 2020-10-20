@@ -17,6 +17,7 @@ palette 		data/chars/misc/rocks/white_rock_palete.gif
 load	pdie
 
 
+
 anim	death
 	delay	10
 	offset	2 2
@@ -24,16 +25,14 @@ anim	death
 	subentity	pdie
 	frame	data/chars/misc/empty.gif
 	frame	data/chars/misc/empty.gif
-
-
-
+		
 anim	idle
-	attack	0 0 14 14 3 0 1 0 0 0
 	loop	0
 	delay	50
 	offset	7 13
 	bouncefactor	2
 	bbox	0 0 14 14
+	attack	0 0 14 14 3 0 1 0 0 0
 	frame	data/chars/misc/rocks/white_rock2.gif
 	delay	6
 	bbox	0 0 0 0

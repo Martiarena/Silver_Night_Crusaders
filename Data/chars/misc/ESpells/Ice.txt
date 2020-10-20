@@ -3,6 +3,7 @@ type	        none
 nolife          1
 lifespan        1
 antigravity     100
+stealth         300
 candamage       player npc  shot
 
 palette		data/chars/misc/ESpells/ice_spell_palette.gif

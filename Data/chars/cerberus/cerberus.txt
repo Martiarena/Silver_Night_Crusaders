@@ -123,6 +123,8 @@ alternatepal  data/chars/cerberus/cerberus_blink.gif
 
 
 
+
+
 anim	attack1
 	range	0 120
 	rangea	0 70
@@ -131,28 +133,28 @@ anim	attack1
 	offset	105 192
 	bbox	0 40 140 150
 	hitfx	data/sounds/slash.wav
-	burn	0 15 140 175 19 0 0 0 0 0
+	attack23	0 15 140 175 19 0 0 0 0 0
 	frame	data/chars/cerberus/attack1a.gif
 	delay	42
 	frame	data/chars/cerberus/attack1b.gif
 	delay	7
 	sound	data/sounds/cerberus_spawn.wav
-	burn	0 120 220 65 25 11 0 0 0 0
+	attack23	0 120 220 65 25 11 0 0 0 0
 	dropv	3 2 0
 	frame	data/chars/cerberus/attack1c.gif
-	burn	0 120 190 65 25 11 0 0 0 0
+	attack23	0 120 190 65 25 11 0 0 0 0
 	dropv	3 2 0
 	sound	data/sounds/burnt.wav
 	frame	data/chars/cerberus/attack1d.gif
-	burn	0 120 150 65 25 11 0 0 0 0
+	attack23	0 120 150 65 25 11 0 0 0 0
 	dropv	3 2 0
 	frame	data/chars/cerberus/attack1e.gif
 	delay	21
-	burn	0 40 140 150 19 0 0 0 0 0
+	attack23	0 40 140 150 19 0 0 0 0 0
 	frame	data/chars/cerberus/attack1e.gif
 	delay	42
 	frame	data/chars/cerberus/attack1f.gif
-	burn	0 0 0 0 0 0 0
+	attack23	0 0 0 0 0 0 0
 	frame	data/chars/cerberus/attack1f.gif
 		
 anim	death
@@ -190,7 +192,7 @@ anim	freespecial
 	delay	35
 	offset	105 192
 	bbox	0 40 140 150
-	burn	0 15 140 175 19 0 0 0 0 0
+	attack23	0 15 140 175 19 0 0 0 0 0
 	subentity	fireseal
 	spawnframe	0 30 0 50 0
 	custbomb	Fire_wolf
@@ -206,7 +208,7 @@ anim	freespecial
 	frame	data/chars/cerberus/attack3b.gif
 	frame	data/chars/cerberus/attack3a.gif
 	delay	1
-	burn	0 0 0 0
+	attack23	0 0 0 0
 	frame	data/chars/cerberus/attack3a.gif
 		
 anim	freespecial2
@@ -217,7 +219,7 @@ anim	freespecial2
 	offset	105 192
 	bbox	0 40 140 150
 	sound	data/sounds/cerberus_blast.wav
-	burn	0 15 140 175 19 0 0 0 0 0
+	attack23	0 15 140 175 19 0 0 0 0 0
 	frame	data/chars/cerberus/attack3a.gif
 	frame	data/chars/cerberus/attack3b.gif
 	sound	data/sounds/cerberus_special1.wav
@@ -236,10 +238,10 @@ anim	freespecial2
 	frame	data/chars/cerberus/attack3d.gif
 	frame	data/chars/cerberus/attack3e.gif
 	delay	1
-	burn	0 0 0 0 0 0 0
+	attack23	0 0 0 0 0 0 0
 	frame	data/chars/cerberus/attack3e.gif
 	delay	7
-	burn	0 30 480 123 50 11 0 0 0 0
+	attack23	0 30 480 123 50 11 0 0 0 0
 	dropv	3 2.5 0
 	frame	data/chars/cerberus/attack3f.gif
 	frame	data/chars/cerberus/attack3g.gif
@@ -277,14 +279,14 @@ anim	freespecial2
 	frame	data/chars/cerberus/attack3h.gif
 	frame	data/chars/cerberus/attack3e.gif
 	delay	21
-	burn	0 40 140 150 19 0 0 0 0 0
+	attack23	0 40 140 150 19 0 0 0 0 0
 	frame	data/chars/cerberus/attack3e.gif
 	delay	14
 	frame	data/chars/cerberus/attack3c.gif
 	frame	data/chars/cerberus/attack3b.gif
 	frame	data/chars/cerberus/attack3a.gif
 	delay	1
-	burn	0 0 0 0
+	attack23	0 0 0 0
 	frame	data/chars/cerberus/attack3a.gif
 		
 anim	freespecial3
@@ -294,7 +296,7 @@ anim	freespecial3
 	delay	35
 	offset	105 192
 	bbox	0 40 140 150
-	burn	0 15 140 175 19 0 0 0 0 0
+	attack23	0 15 140 175 19 0 0 0 0 0
 	subentity	Firewave_c
 	spawnframe	3 140 0 0 0
 	frame	data/chars/cerberus/attack2a.gif
@@ -305,7 +307,7 @@ anim	freespecial3
 	delay	42
 	frame	data/chars/cerberus/attack2e.gif
 	delay	1
-	burn	0 0 0 0
+	attack23	0 0 0 0
 	frame	data/chars/cerberus/attack2e.gif
 		
 anim	idle
@@ -315,11 +317,11 @@ anim	idle
 	rangea	70 135
 	offset	105 192
 	bbox	0 40 140 150
-	burn	0 15 140 175 19 0 0 0 0 0
+	attack23	0 15 140 175 19 0 0 0 0 0
 	frame	data/chars/cerberus/idle1.gif
 	frame	data/chars/cerberus/idle2.gif
 	delay	1
-	burn	0 0 0 0 0 0 0
+	attack23	0 0 0 0 0 0 0
 	frame	data/chars/cerberus/idle1.gif
 		
 anim	spawn
@@ -327,12 +329,12 @@ anim	spawn
 	delay	20
 	offset	105 192
 	bbox	0 40 140 150
-	burn	0 15 140 175 19 0 0 0 0 0
+	attack23	0 15 140 175 19 0 0 0 0 0
 	frame	data/chars/cerberus/attack1a.gif
 	frame	data/chars/cerberus/attack1b.gif
 	delay	1
 	move	6
-	burn	0 120 220 65 24 0 0 0 0 0
+	attack23	0 120 220 65 24 0 0 0 0 0
 	sound	data/sounds/cerberus_cry.wav
 	frame	data/chars/cerberus/attack1c.gif
 	frame	data/chars/cerberus/attack1c.gif
@@ -355,10 +357,10 @@ anim	spawn
 	frame	data/chars/cerberus/attack1c.gif
 	frame	data/chars/cerberus/attack1c.gif
 	frame	data/chars/cerberus/attack1c.gif
-	burn	0 0 0 0 0 0 0 0
+	attack23	0 0 0 0 0 0 0 0
 	frame	data/chars/cerberus/attack1c.gif
 	move	3
-	burn	0 120 190 65 24 0 0 0 0 0
+	attack23	0 120 190 65 24 0 0 0 0 0
 	frame	data/chars/cerberus/attack1d.gif
 	frame	data/chars/cerberus/attack1d.gif
 	frame	data/chars/cerberus/attack1d.gif
@@ -376,10 +378,10 @@ anim	spawn
 	frame	data/chars/cerberus/attack1d.gif
 	frame	data/chars/cerberus/attack1d.gif
 	frame	data/chars/cerberus/attack1d.gif
-	burn	0 0 0 0 0 0 0 0
+	attack23	0 0 0 0 0 0 0 0
 	frame	data/chars/cerberus/attack1d.gif
 	move	1
-	burn	0 120 150 65 24 0 0 0 0 0
+	attack23	0 120 150 65 24 0 0 0 0 0
 	frame	data/chars/cerberus/attack1e.gif
 	frame	data/chars/cerberus/attack1e.gif
 	frame	data/chars/cerberus/attack1e.gif
@@ -406,7 +408,7 @@ anim	spawn
 	delay	14
 	frame	data/chars/cerberus/attack1f.gif
 	delay	1
-	burn	0 0 0 0 0 0 0
+	attack23	0 0 0 0 0 0 0
 	frame	data/chars/cerberus/attack1f.gif
 		
 #|edited by openBor Stats v 0.67

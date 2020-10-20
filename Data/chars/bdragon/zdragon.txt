@@ -21,7 +21,7 @@ icon 		data/chars/misc/bgmonster.gif
 defense normal4 1.5 0 0 0 0 0 0
 defense normal6 4 0 0 0 0 0 0
 defense normal19 1.5 0 0 0 0 0 0
-defense shock 1.5 0 0 0 0 0 0
+defense burn 1.5 0 0 0 0 0 0
 
 palette	         data/chars/bdragon/zombidragon.gif
 alternatepal	 data/chars/bdragon/blink.gif

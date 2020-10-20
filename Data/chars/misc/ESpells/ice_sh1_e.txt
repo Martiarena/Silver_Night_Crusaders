@@ -4,6 +4,7 @@ speed	10
 offscreenkill 50
 lifespan      1
 nolife	1
+stealth 300
 remove 0
 candamage player npc  shot
 animationscript data/scripts/prscript.c

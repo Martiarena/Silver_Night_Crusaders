@@ -40,6 +40,7 @@ palette		data/chars/legion/corpse/legion_corpses.gif
 
 
 
+
 anim	attack1
 	range	0 400
 	loop	1

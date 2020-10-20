@@ -33,6 +33,7 @@ takedamagescript data/scripts/blink.c
 
 
 
+
 anim	death
 	loop	0
 	subentity	sdie
@@ -66,7 +67,7 @@ anim	follow1
 	delay	1
 	offset	20 31
 	bbox	14 6 25 20
-	attack	8 6 33 25 3 0 1 0 0 0
+	attack	8 6 33 25 3 0 0 0 0 0
 	platform	10 31 -8 0 32 25 10 28
 	frame	data/chars/bonetower/idle.gif
 	frame	data/chars/bonetower/idleb.gif
@@ -119,7 +120,7 @@ anim	idle
 	delay	175
 	offset	20 31
 	bbox	14 6 25 20
-	attack	8 6 33 25 3 0 1 0 0 0
+	attack	8 6 33 25 3 0 0 0 0 0
 	platform	10 31 -8 0 32 25 10 28
 	frame	data/chars/bonetower/idle.gif
 	delay	25
@@ -193,7 +194,7 @@ anim	spawn
 	delay	1
 	offset	20 31
 	bbox	14 6 25 20
-	attack	8 6 33 25 3 0 1 0 0 0
+	attack	8 6 33 25 3 0 0 0 0 0
 	platform	10 31 -8 0 32 25 10 28
 	frame	data/chars/bonetower/idle.gif
 		

@@ -60,12 +60,13 @@ takedamagescript data/scripts/blink.c
 
 
 
+
 anim	attack
 	range	0 118
 	loop	0
 	offset	60 104
 	bbox	44 30 30 75
-	attack	44 30 30 75 19 0 1 0 0 0
+	attack	44 30 30 75 19 0 0 0 0 0
 	delay	48
 	frame	data/chars/golem/attack1a.gif
 	delay	14
@@ -78,7 +79,7 @@ anim	attack
 	frame	data/chars/golem/attack1d.gif
 	delay	7
 	bbox	50 61 52 43
-	attack	73 43 65 62 19 11 1 0 0 0
+	attack	73 43 65 62 19 11 0 0 0 0
 	sound	data/sounds/rock_break2.wav
 	frame	data/chars/golem/attack1e.gif
 	@cmd	tosserM "Rock1B" 63 34 0 3
@@ -87,29 +88,29 @@ anim	attack
 	@cmd	tosserM "Rock1B" 52 27 -0.8 2
 	@cmd	tosserM "Rock1B" 60 12 0.8 1.5
 	@cmd	tosserM "Rock1B" 48 14 -0.8 1.5
-	burn	73 43 65 62 50 11 1 0 0 0
+	burn	73 43 65 62 50 11 0 0 0 0
 	frame	data/chars/golem/attack1f.gif
-	burn	74 40 75 65 25 11 1 0 0 0
+	burn	74 40 75 65 25 11 0 0 0 0
 	frame	data/chars/golem/attack1g.gif
-	burn	105 7 35 98 50 11 1 0 0 0
+	burn	105 7 35 98 50 11 0 0 0 0
 	frame	data/chars/golem/attack1j.gif
 	delay	6
-	burn	73 55 105 50 25 11 1 0 0 0
+	burn	73 55 105 50 25 11 0 0 0 0
 	frame	data/chars/golem/attack1l.gif
 	delay	1
 	burn	0 0 0 0
 	frame	data/chars/golem/attack1l.gif
-	attack	50 61 79 43 19 11 1 0 0 0
+	attack	50 61 79 43 19 11 0 0 0 0
 	frame	data/chars/golem/attack1m.gif
 	delay	1
 	burn	0 0 0 0
 	frame	data/chars/golem/attack1n.gif
 	delay	42
-	attack	50 61 52 44 19 0 1 0 0 0
+	attack	50 61 52 44 19 0 0 0 0 0
 	frame	data/chars/golem/attack1n.gif
 	delay	14
 	bbox	44 30 30 75
-	attack	44 30 30 75 19 0 1 0 0 0
+	attack	44 30 30 75 19 0 0 0 0 0
 	frame	data/chars/golem/attack1a.gif
 	delay	1
 	attack	0 0 0 0
@@ -151,7 +152,7 @@ anim	idle
 	loop	1
 	offset	60 104
 	bbox	44 30 30 75
-	attack	44 30 30 75 19 0 1 0 0 0
+	attack	44 30 30 75 19 0 0 0 0 0
 	delay	14
 	frame	data/chars/golem/idle1.gif
 	frame	data/chars/golem/idle1b.gif
@@ -161,21 +162,13 @@ anim	idle
 	attack	0 0 0 0
 	frame	data/chars/golem/idle1c.gif
 		
-anim	spawn
-	loop	0
-	offset	60 104
-	bbox	44 30 30 75
-	attack	44 30 30 75 19 0 1 0 0 0
-	delay	1
-	frame	data/chars/golem/idle1.gif
-
-anim	walkoff
+anim	jumpland
 	loop	0
 	delay	1000
 	landframe	1
 	offset	60 104
 	bbox	44 30 30 75
-	attack	44 30 30 75 25 0 1 0 0 0
+	attack	44 30 30 75 25 0 0 0 0 0
 	frame	data/chars/golem/idle1.gif
 	delay	7
 	subentity	Shockwave
@@ -183,14 +176,22 @@ anim	walkoff
 	sound	data/sounds/land_big_damage.wav
 	frame	data/chars/golem/idle1.gif
 	frame	data/chars/golem/idle1.gif
-
-anim	jumpland
+		
+anim	spawn
+	loop	0
+	offset	60 104
+	bbox	44 30 30 75
+	attack	44 30 30 75 19 0 0 0 0 0
+	delay	1
+	frame	data/chars/golem/idle1.gif
+		
+anim	walkoff
 	loop	0
 	delay	1000
 	landframe	1
 	offset	60 104
 	bbox	44 30 30 75
-	attack	44 30 30 75 25 0 1 0 0 0
+	attack	44 30 30 75 25 0 0 0 0 0
 	frame	data/chars/golem/idle1.gif
 	delay	7
 	subentity	Shockwave

@@ -100,6 +100,7 @@ takedamagescript data/scripts/blink.c
 
 
 
+
 anim	death
 	loop	0
 	offset	155 168
@@ -222,7 +223,7 @@ anim	follow1
 	delay	14
 	offset	155 168
 	bbox	129 148 55 65
-	attack	129 148 55 65 19 0 1 0 0 0
+	attack	129 148 55 65 19 0 0 0 0 0
 	frame	data/chars/legion/legion_core1a.gif
 	frame	data/chars/legion/legion_core1b.gif
 	offset	155 166
@@ -256,7 +257,7 @@ anim	follow2
 	delay	14
 	offset	155 168
 	bbox	129 148 55 65
-	attack	129 148 55 65 19 0 1 0 0 0
+	attack	129 148 55 65 19 0 0 0 0 0
 	frame	data/chars/legion/legion_core5a.gif
 	frame	data/chars/legion/legion_core5a.gif
 	offset	155 166
@@ -313,7 +314,7 @@ anim	follow3
 	delay	14
 	offset	155 168
 	bbox	129 148 55 65
-	attack	129 148 55 65 19 0 1 0 0 0
+	attack	129 148 55 65 19 0 0 0 0 0
 	frame	data/chars/legion/legion_core4a.gif
 	frame	data/chars/legion/legion_core4b.gif
 	offset	155 166
@@ -365,7 +366,7 @@ anim	follow4
 	delay	14
 	offset	155 168
 	bbox	129 148 55 65
-	attack	129 148 55 65 19 0 1 0 0 0
+	attack	129 148 55 65 19 0 0 0 0 0
 	frame	data/chars/legion/legion_core1a.gif
 	frame	data/chars/legion/legion_core1b.gif
 	offset	155 166
@@ -399,7 +400,7 @@ anim	follow5
 	delay	14
 	offset	155 168
 	bbox	129 148 55 65
-	attack	129 148 55 65 19 0 1 0 0 0
+	attack	129 148 55 65 19 0 0 0 0 0
 	frame	data/chars/legion/legion_core6a.gif
 	frame	data/chars/legion/legion_core6b.gif
 	offset	155 166

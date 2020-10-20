@@ -2,6 +2,7 @@ name	ice_sh_e
 type none
 speed	10
 offscreenkill 50
+stealth       300
 nolife          1
 health          1
 remove          0

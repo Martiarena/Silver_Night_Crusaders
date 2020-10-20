@@ -62,6 +62,7 @@ takedamagescript data/scripts/blink.c
 
 
 
+
 anim	death
 	loop	0
 	delay	7
@@ -84,7 +85,7 @@ anim	idle
 	loop	1
 	offset	46 87
 	bbox	10 5 70 75
-	attack	10 5 70 75 6 0 1 0 0 0
+	attack	10 5 70 75 6 0 0 0 0 0
 	delay	18
 	@cmd	spawn01 "Spore" 19 47 1
 	frame	data/chars/rvenus/idle1a.gif

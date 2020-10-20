@@ -97,6 +97,7 @@ alternatepal	 data/chars/creature/blink.gif
 
 
 
+
 anim	attack1
 	range	25 65
 	rangea	0 105

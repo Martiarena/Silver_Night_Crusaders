@@ -48,6 +48,7 @@ alternatepal	 data/chars/bdragon/blink.gif
 
 
 
+
 anim	death
 	delay	3
 	offset	15 27
@@ -77,7 +78,7 @@ if(frame==6){
 	}
       }
 }
-	@end_script
+	@end_script	
 	sound	data/sounds/explosion-fire.wav
 	frame	data/chars/bdragon/death1.gif
 	@cmd	stop

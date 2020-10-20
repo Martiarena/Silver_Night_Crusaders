@@ -276,6 +276,31 @@ anim	jumpland
 		
 anim	jumpspecial
 		
+anim	fall22
+	delay	5
+	offset	55 63
+	@cmd	spawnbind "blooda" 0 36 1
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/fall1.gif
+	frame	data/chars/fran/fall2.gif
+	frame	data/chars/fran/fall3.gif
+	frame	data/chars/fran/fall4.gif
+	@cmd	platform 1
+	frame	data/chars/fran/fall3.gif
+	frame	data/chars/fran/fall4.gif
+		
+anim	pain22
+	loop	0
+	delay	9
+	offset	55 63
+	jumpframe	0 1.5 -1
+	@cmd	spawnbind "blooda" 0 36 1
+	bbox	47 18 15 45
+	sound	data/sounds/fran_pain.wav
+	frame	data/chars/fran/pain1.gif
+	frame	data/chars/fran/pain2.gif
+	frame	data/chars/fran/pain3.gif
+		
 anim	pain
 	loop	0
 	delay	9

@@ -22,6 +22,7 @@ load	pdie
 
 
 
+
 anim	death
 	delay	10
 	offset	2 2
@@ -31,12 +32,12 @@ anim	death
 	frame	data/chars/misc/empty.gif
 		
 anim	idle
-	attack	0 0 10 10 12 0 1 0 0 0
 	loop	0
 	delay	50
 	offset	4 10
 	bouncefactor	2
 	bbox	0 0 10 10
+	attack	0 0 10 10 12 0 1 0 0 0
 	frame	data/chars/misc/rocks/white_rock3.gif
 	delay	6
 	bbox	0 0 0 0

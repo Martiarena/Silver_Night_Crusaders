@@ -5,6 +5,7 @@ lifespan  	2
 nolife	1
 candamage	player npc
 antigravity	100
+stealth         300
 
 load	ice_sh1_e
 animationscript  data/scripts/escript.c

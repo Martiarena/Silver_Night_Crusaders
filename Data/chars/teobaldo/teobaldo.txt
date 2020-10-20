@@ -27,6 +27,9 @@ defense normal2 0.75
 defense normal10 0.75
 defense normal17 0.75
 defense normal20 0 1 999 0 0 0 0
+defense normal22 0.75
+defense normal23 0.75
+defense normal24 0.75
 defense burn 0.75
 defense shock 0.75
 candamage       enemy obstacle shot
@@ -467,6 +470,16 @@ anim	fall17
 	frame	data/chars/teobaldo/fall1a.gif
 		
 anim	fall2
+	loop	0
+	delay	7
+	offset	95 152
+	sound	data/sounds/teobaldo_pain.wav
+	@cmd	spawnbind "blooda" 15 24 1
+	frame	data/chars/teobaldo/fall1a.gif
+	@cmd	platform 1
+	frame	data/chars/teobaldo/fall1a.gif
+		
+anim	fall22
 	loop	0
 	delay	7
 	offset	95 152
@@ -1382,6 +1395,16 @@ anim	pain17
 	frame	data/chars/teobaldo/pain1b.gif
 		
 anim	pain2
+	loop	0
+	delay	9
+	offset	95 152
+	jumpframe	0 1.5 -1
+	sound	data/sounds/teobaldo_pain.wav
+	@cmd	spawnbind "blooda" 36 36 1
+	frame	data/chars/teobaldo/pain1a.gif
+	frame	data/chars/teobaldo/pain1b.gif
+		
+anim	pain22
 	loop	0
 	delay	9
 	offset	95 152

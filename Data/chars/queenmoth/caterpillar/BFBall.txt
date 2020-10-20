@@ -11,7 +11,7 @@ animationscript data/scripts/prscript.c
 anim	idle
 	delay	5
 	offset	8 8
-	attack2	2 2 12 12 12 0 0 0 0 0
+	attack10	2 2 12 12 12 0 0 0 0 0
 	frame	data/chars/queenmoth/caterpillar/poisonball1a.gif
 	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1b.gif
@@ -113,7 +113,7 @@ anim	idle
 	@cmd	groundkill
 	frame	data/chars/queenmoth/caterpillar/poisonball1c.gif
 	@cmd	suicide
-	attack2	0
+	attack10	0
 	frame	data/chars/misc/empty.gif
 		
 #|edited by openBor Stats v 0.67

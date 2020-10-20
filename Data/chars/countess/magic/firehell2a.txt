@@ -70,7 +70,7 @@ anim	idle
 	followanim	1
 	bbox	0 7 17 25
 	hitfx	data/sounds/burnt.wav
-	burn	0 7 17 25 25 0 1 1 0 0
+	attack23	0 7 17 25 25 0 0 1 0 0
 	frame	data/chars/countess/magic/firehell2a.gif
 	frame	data/chars/countess/magic/firehell2b.gif
 	@cmd	target 0.7 0.7 0 -20 1 1
@@ -82,7 +82,7 @@ anim	idle
 	frame	data/chars/countess/magic/firehell2a.gif
 	frame	data/chars/countess/magic/firehell2b.gif
 	delay	1
-	burn	0 0 0 0 0
+	attack23	0 0 0 0 0
 	frame	data/chars/countess/magic/firehell2a.gif
 		
 anim	spawn

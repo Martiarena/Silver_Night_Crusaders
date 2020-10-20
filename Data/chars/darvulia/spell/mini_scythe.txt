@@ -23,6 +23,7 @@ load	explo
 palette		data/chars/darvulia/spell/scythe_idle1a.gif
 
 
+
 anim	death
 	delay	7
 	offset	10 10

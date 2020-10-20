@@ -39,13 +39,14 @@ icon		data/chars/misc/bgmonster.gif
 
 
 
+
 anim	attack1
 	loop	0
 	delay	14
 	range	0 50
 	offset	17 56
 	bbox	10 0 15 55
-	attack	10 0 15 55 6 0 1 0 0 0
+	attack	10 0 15 55 6 0 0 0 0 0
 	frame	data/chars/mudwoman/idle1d.gif
 	delay	4
 	attack	0 0 0 0 0
@@ -59,7 +60,7 @@ anim	attack1
 	delay	50
 	sound	data/sounds/swipe.wav
 	hitfx	data/sounds/slash.wav
-	attack2	10 10 76 12 19 0 1 0 0 0
+	attack2	10 10 76 12 19 0 0 0 0 0
 	frame	data/chars/mudwoman/attack1g.gif
 	delay	4
 	frame	data/chars/mudwoman/attack1f.gif
@@ -88,7 +89,7 @@ anim	idle
 	delay	20
 	offset	17 56
 	bbox	10 0 15 55
-	attack	10 0 15 55 6 0 1 0 0 0
+	attack	10 0 15 55 6 0 0 0 0 0
 	frame	data/chars/mudwoman/idle1a.gif
 	frame	data/chars/mudwoman/idle1b.gif
 	frame	data/chars/mudwoman/idle1c.gif
@@ -114,7 +115,7 @@ anim	walk
 	delay	20
 	offset	17 56
 	bbox	10 0 15 55
-	attack	10 0 15 55 6 0 1 0 0 0
+	attack	10 0 15 55 6 0 0 0 0 0
 	frame	data/chars/mudwoman/idle1a.gif
 	frame	data/chars/mudwoman/idle1b.gif
 	frame	data/chars/mudwoman/idle1c.gif

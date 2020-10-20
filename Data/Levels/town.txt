@@ -41,12 +41,12 @@ flip  1
 at  0
 
 spawn  fire1
-coords  1040  163  0
+coords  1040  162  0
 flip  1
 at  0
 
 spawn  fire2
-coords  1288  163
+coords  1288  162
 flip  1
 at  0
 
@@ -61,7 +61,7 @@ flip 1
 at  0
 
 spawn  fire3
-coords  1531  163
+coords  1531  162
 flip  1
 at  0
 

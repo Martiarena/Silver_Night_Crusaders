@@ -65,6 +65,7 @@ takedamagescript data/scripts/blink.c
 
 
 
+
 anim	attack
 	loop	0
 	range	8 35

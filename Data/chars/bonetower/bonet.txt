@@ -36,13 +36,14 @@ animationscript  data/scripts/escript.c
 
 
 
+
 anim	attack1
 	rangea	0 62
 	range	0 60
 	delay	20
 	offset	20 31
 	bbox	14 6 25 20
-	attack	8 6 33 25 3 0 1 0 0 0
+	attack	8 6 33 25 3 0 0 0 0 0
 	platform	10 31 -8 0 32 25 10 28
 	frame	data/chars/bonetower/idle.gif
 	delay	1
@@ -92,7 +93,7 @@ anim	attack2
 	delay	20
 	offset	20 31
 	bbox	14 6 25 20
-	attack	8 6 33 25 3 0 1 0 0 0
+	attack	8 6 33 25 3 0 0 0 0 0
 	platform	10 31 -8 0 32 25 10 28
 	frame	data/chars/bonetower/idle.gif
 	delay	1
@@ -143,7 +144,7 @@ anim	attack3
 	delay	1
 	offset	20 31
 	bbox	14 6 25 20
-	attack	8 6 33 25 3 0 1 0 0 0
+	attack	8 6 33 25 3 0 0 0 0 0
 	platform	10 31 -8 0 32 25 10 28
 	frame	data/chars/bonetower/idle.gif
 	frame	data/chars/bonetower/idleb.gif
@@ -218,7 +219,7 @@ anim	idle
 	loop	1
 	offset	20 31
 	bbox	15 3 24 27
-	attack	8 6 33 25 3 0 1 0 0 0
+	attack	8 6 33 25 3 0 0 0 0 0
 	platform	10 31 -8 0 32 25 10 28
 	delay	10
 	frame	data/chars/bonetower/idle.gif
@@ -244,7 +245,7 @@ anim	spawn
 	loop	0
 	offset	20 31
 	bbox	15 3 24 27
-	attack	8 6 33 25 3 0 1 0 0 0
+	attack	8 6 33 25 3 0 0 0 0 0
 	platform	10 31 -8 0 32 25 10 28
 	delay	1
 	frame	data/chars/bonetower/idle.gif
@@ -253,7 +254,7 @@ anim	turn
 	loop	0
 	offset	20 31
 	bbox	15 3 24 27
-	attack	8 6 23 25 3 0 1 0 0 0
+	attack	8 6 23 25 3 0 0 0 0 0
 	platform	10 31 0 0 22 22 10 28
 	delay	10
 	frame	data/chars/bonetower/turn1.gif

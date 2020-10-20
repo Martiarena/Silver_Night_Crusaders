@@ -47,6 +47,7 @@ takedamagescript data/scripts/blink.c
 
 
 
+
 anim	death
 	delay	7
 	offset	30 87
@@ -75,7 +76,7 @@ anim	follow1
 	delay	10
 	offset	30 87
 	bbox	13 33 28 46
-	attack	13 33 28 46 9 0 1 1 0 0
+	attack	13 33 28 46 9 0 0 1 0 0
 	frame	data/chars/gargoyle/idle3.gif
 	@cmd	target 2 2 120 -60 1 1
 	@cmd	dash 0 0
@@ -88,7 +89,7 @@ anim	follow1
 	frame	data/chars/gargoyle/idle1.gif
 	@cmd	target 2 2 120 -60 1 1
 	@cmd	dash 0 0
-	attack	13 33 28 46 9 0 1 1 0 0
+	attack	13 33 28 46 9 0 0 1 0 0
 	frame	data/chars/gargoyle/idle2.gif
 	frame	data/chars/gargoyle/idle3.gif
 	frame	data/chars/gargoyle/idle2.gif
@@ -102,7 +103,7 @@ anim	follow1
 	frame	data/chars/gargoyle/idle2.gif
 	attack	0
 	frame	data/chars/gargoyle/idle1.gif
-	attack	13 33 28 46 9 0 1 1 0 0
+	attack	13 33 28 46 9 0 0 1 0 0
 	frame	data/chars/gargoyle/idle2.gif
 	@cmd	target 2 2 120 -60 1 1
 	@cmd	dash 0 0

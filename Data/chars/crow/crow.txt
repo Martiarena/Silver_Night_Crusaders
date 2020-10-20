@@ -26,6 +26,7 @@ palette          data/chars/crow/crow_palette.gif
 
 
 
+
 anim	death
 	delay	5
 	offset	15 29
@@ -40,7 +41,7 @@ anim	follow1
 	delay	10
 	offset	15 29
 	bbox	8 17 15 13
-	attack	8 17 15 13 3 0 1 0 0 0
+	attack	8 17 15 13 3 0 0 0 0 0
 	sound	data/sounds/crowcry.wav
 	frame	data/chars/crow/fly1.gif
 	@cmd	dasher -2 2 0 1
@@ -89,7 +90,7 @@ anim	idle
 	loop	1
 	delay	25
 	offset	15 29
-	attack	8 17 15 13 3 0 1 0 0 0
+	attack	8 17 15 13 3 0 0 0 0 0
 	bbox	8 17 15 13
 	frame	data/chars/crow/idle1.gif
 	@cmd	attack1 -100 100 -150 50 "ANI_FOLLOW1"
@@ -119,7 +120,7 @@ anim	spawn
 	delay	7
 	offset	15 29
 	bbox	8 17 15 13
-	attack	8 17 15 13 3 0 1 0 0 0
+	attack	8 17 15 13 3 00 0 0 0
 	frame	data/chars/crow/spawn1a.gif
 	frame	data/chars/crow/spawn1b.gif
 	frame	data/chars/crow/spawn1c.gif

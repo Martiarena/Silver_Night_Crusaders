@@ -28,6 +28,8 @@ defense normal1 0.75
 defense normal2 0.75
 defense normal17 0.75
 defense normal20 0 1 999 0 0 0 0
+defense normal22 0.75
+defense normal24 0.75
 
 palette		data/chars/ethan/palette1.gif
 alternatepal	data/chars/ethan/palette2.gif
@@ -49,6 +51,7 @@ com	u u a	freespecial3
 com	a2	freespecial4
 com 	a3      freespecial9
 com	a4	freespecial8
+
 
 
 
@@ -1002,6 +1005,99 @@ anim	fall17
 	frame	data/chars/ethan/fall1c.gif
 		
 anim	fall2
+	delay	1
+	offset	45 75
+	sound	data/sounds/ethan_pain.wav
+	@cmd	spawnbind "blooda" 15 24 1
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	@cmd	platform 1
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+	frame	data/chars/ethan/fall1.gif
+	frame	data/chars/ethan/fall1c.gif
+		
+anim	fall22
 	delay	1
 	offset	45 75
 	sound	data/sounds/ethan_pain.wav
@@ -2984,6 +3080,33 @@ anim	pain17
 	frame	data/chars/ethan/pain2c.gif
 		
 anim	pain2
+	loop	0
+	delay	1
+	offset	45 75
+	jumpframe	0 1.5 -1
+	bbox	35 23 15 45
+	sound	data/sounds/ethan_pain.wav
+	@cmd	spawnbind "blooda" 36 36 1
+	frame	data/chars/ethan/pain1.gif
+	frame	data/chars/ethan/pain1c.gif
+	frame	data/chars/ethan/pain1.gif
+	frame	data/chars/ethan/pain1c.gif
+	frame	data/chars/ethan/pain1.gif
+	frame	data/chars/ethan/pain1c.gif
+	frame	data/chars/ethan/pain1.gif
+	frame	data/chars/ethan/pain1c.gif
+	frame	data/chars/ethan/pain1.gif
+	frame	data/chars/ethan/pain2c.gif
+	frame	data/chars/ethan/pain2.gif
+	frame	data/chars/ethan/pain2c.gif
+	frame	data/chars/ethan/pain2.gif
+	frame	data/chars/ethan/pain2c.gif
+	frame	data/chars/ethan/pain2.gif
+	frame	data/chars/ethan/pain2c.gif
+	frame	data/chars/ethan/pain2.gif
+	frame	data/chars/ethan/pain2c.gif
+		
+anim	pain22
 	loop	0
 	delay	1
 	offset	45 75

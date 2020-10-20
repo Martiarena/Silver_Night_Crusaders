@@ -29,6 +29,9 @@ defense normal7 0.75
 defense normal10 0.75
 defense normal17 0.75
 defense normal20 0 1 999 0 0 0 0
+defense normal22 0.75
+defense normal23 0.75
+defense normal24 0.75
 defense burn 0.75
 parrow 		data/chars/misc/parrow1p.gif -8 -78
 parrow2 	data/chars/misc/parrow2p.gif -8 -78
@@ -369,6 +372,23 @@ anim	fall17
 	frame	data/chars/succubus/walk1b.gif
 		
 anim	fall2
+	loop	0
+	delay	35
+	offset	52 87
+	@cmd	spawnbind "blooda" 0 42 1
+	sound	data/sounds/succubus_pain.wav
+	frame	data/chars/succubus/eva1.gif
+	delay	7
+	frame	data/chars/succubus/backwalk1a.gif
+	frame	data/chars/succubus/backwalk1b.gif
+	frame	data/chars/succubus/backwalk1c.gif
+	frame	data/chars/succubus/backwalk1d.gif
+	@cmd	platform 1
+	delay	15
+	frame	data/chars/succubus/walk1a.gif
+	frame	data/chars/succubus/walk1b.gif
+		
+anim	fall22
 	loop	0
 	delay	35
 	offset	52 87
@@ -751,6 +771,16 @@ anim	pain17
 	frame	data/chars/succubus/eva1.gif
 		
 anim	pain2
+	loop	0
+	delay	27
+	offset	52 87
+	jumpframe	0 1.5 -1
+	bbox	45 30 15 55
+	@cmd	spawnbind "blooda" 0 42 1
+	sound	data/sounds/succubus_pain.wav
+	frame	data/chars/succubus/eva1.gif
+		
+anim	pain22
 	loop	0
 	delay	27
 	offset	52 87

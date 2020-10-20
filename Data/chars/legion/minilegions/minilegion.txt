@@ -42,6 +42,7 @@ animationscript data/scripts/cscript.c
 
 
 
+
 anim	death
 	delay	7
 	offset	20 20
@@ -61,7 +62,7 @@ anim	idle
 	delay	14
 	offset	20 20
 	bbox	7 10 25 25
-	attack	7 10 25 25 12 0 1 0 0 0
+	attack	7 10 25 25 12 0 0 0 0 0
 	frame	data/chars/legion/minilegions/idle1a.gif
 	@cmd	target 0.6 0.6 0 -20 0 1
 	@cmd	dash 0 0

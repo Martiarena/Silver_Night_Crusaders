@@ -45,7 +45,7 @@ anim	spawn
 	loop	0
 	delay	5
 	offset	13 14
-	sound	data/sounds/timeover.wav
+	sound	data/sounds/timeo.wav
 	frame	data/chars/ficzko/magic/clock1a.gif
 		
 #|edited by openBor Stats v 0.67

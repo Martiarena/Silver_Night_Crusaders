@@ -56,6 +56,7 @@ alternatepal	 data/chars/skeleton/skeleton_laser_blink_palette.gif
 
 
 
+
 anim	attack1
 	range	0 101
 	delay	1
@@ -124,75 +125,75 @@ anim	attack1
 	frame	data/chars/skeleton/attack3c.gif
 	frame	data/chars/skeleton/attack2c.gif
 	sound	data/sounds/novalazr.wav
-	attack	80 34 30 28 25 0 0 0 0 0
+	attack	80 34 30 28 25 0 1 0 0 0
 	frame	data/chars/skeleton/attack4c.gif
 	attack	40 25 20 50 12 0 0 0 0 0
 	frame	data/chars/skeleton/attack4c.gif
-	attack	80 34 30 28 25 0 0 0 0 0
+	attack	80 34 30 28 25 0 1 0 0 0
 	frame	data/chars/skeleton/attack4c.gif
 	attack	40 25 20 50 12 0 0 0 0 0
 	frame	data/chars/skeleton/attack4c.gif
-	attack	80 34 30 28 25 0 0 0 0 0
+	attack	80 34 30 28 25 0 1 0 0 0
 	frame	data/chars/skeleton/attack4c.gif
 	attack	40 25 20 50 12 0 0 0 0 0
 	frame	data/chars/skeleton/attack4c.gif
-	attack	80 34 30 28 25 0 0 0 0 0
+	attack	80 34 30 28 25 0 1 0 0 0
 	frame	data/chars/skeleton/attack4c.gif
-	attack	80 34 30 28 25 0 0 0 0 0
-	frame	data/chars/skeleton/attack4c.gif
-	attack	40 25 20 50 12 0 0 0 0 0
-	frame	data/chars/skeleton/attack4c.gif
-	attack	80 34 30 28 25 0 0 0 0 0
+	attack	80 34 30 28 25 0 1 0 0 0
 	frame	data/chars/skeleton/attack4c.gif
 	attack	40 25 20 50 12 0 0 0 0 0
 	frame	data/chars/skeleton/attack4c.gif
-	attack	80 34 30 28 25 0 0 0 0 0
+	attack	80 34 30 28 25 0 1 0 0 0
 	frame	data/chars/skeleton/attack4c.gif
 	attack	40 25 20 50 12 0 0 0 0 0
 	frame	data/chars/skeleton/attack4c.gif
-	attack	80 34 30 28 25 0 0 0 0 0
+	attack	80 34 30 28 25 0 1 0 0 0
 	frame	data/chars/skeleton/attack4c.gif
-	attack	80 33 112 30 19 0 0 0 0 0
+	attack	40 25 20 50 12 0 0 0 0 0
+	frame	data/chars/skeleton/attack4c.gif
+	attack	80 34 30 28 25 0 1 0 0 0
+	frame	data/chars/skeleton/attack4c.gif
+	attack	80 33 112 30 19 0 1 0 0 0
 	frame	data/chars/skeleton/attack5c.gif
 	attack	40 25 20 50 12 0 0 0 0 0
 	frame	data/chars/skeleton/attack5c.gif
-	attack	80 33 112 30 19 0 0 0 0 0
+	attack	80 33 112 30 19 0 1 0 0 0
 	frame	data/chars/skeleton/attack5c.gif
 	attack	40 25 20 50 12 0 0 0 0 0
 	frame	data/chars/skeleton/attack5c.gif
-	attack	80 33 112 30 19 0 0 0 0 0
+	attack	80 33 112 30 19 0 1 0 0 0
 	frame	data/chars/skeleton/attack5c.gif
 	attack	40 25 20 50 12 0 0 0 0 0
 	frame	data/chars/skeleton/attack5c.gif
-	attack	80 33 112 30 19 0 0 0 0 0
+	attack	80 33 112 30 19 0 1 0 0 0
 	frame	data/chars/skeleton/attack5c.gif
 	attack	40 25 20 50 12 0 0 0 0 0
 	frame	data/chars/skeleton/attack6c.gif
-	attack	40 25 20 50 19 0 0 0 0 0
+	attack	40 25 20 50 19 0 1 0 0 0
 	frame	data/chars/skeleton/attack6c.gif
 	attack	40 25 20 50 12 0 0 0 0 0
 	frame	data/chars/skeleton/attack6c.gif
-	attack	40 25 20 50 19 0 0 0 0 0
+	attack	40 25 20 50 19 0 1 0 0 0
 	frame	data/chars/skeleton/attack6c.gif
 	attack	40 25 20 50 12 0 0 0 0 0
 	frame	data/chars/skeleton/attack6c.gif
-	attack	40 25 20 50 19 0 0 0 0 0
+	attack	40 25 20 50 19 0 1 0 0 0
 	frame	data/chars/skeleton/attack6c.gif
 	attack	40 25 20 50 12 0 0 0 0 0
 	frame	data/chars/skeleton/attack6c.gif
-	attack	80 45 108 7 19 0 0 0 0 0
+	attack	80 45 108 7 19 0 1 0 0 0
 	frame	data/chars/skeleton/attack7c.gif
 	attack	40 25 20 50 12 0 0 0 0 0
 	frame	data/chars/skeleton/attack7c.gif
-	attack	80 45 108 7 19 0 0 0 0 0
+	attack	80 45 108 7 19 0 1 0 0 0
 	frame	data/chars/skeleton/attack7c.gif
 	attack	40 25 20 50 12 0 0 0 0 0
 	frame	data/chars/skeleton/attack7c.gif
-	attack	80 45 108 7 19 0 0 0 0 0
+	attack	80 45 108 7 19 0 1 0 0 0
 	frame	data/chars/skeleton/attack7c.gif
 	attack	40 25 20 50 12 0 0 0 0 0
 	frame	data/chars/skeleton/attack7c.gif
-	attack	80 45 108 7 19 0 0 0 0 0
+	attack	80 45 108 7 19 0 1 0 0 0
 	frame	data/chars/skeleton/attack7c.gif
 	delay	7
 	attack	40 25 20 50 12 0 0 0 0 0

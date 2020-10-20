@@ -145,15 +145,15 @@ anim	attack1
 	frame	data/chars/succubus/attack1b.gif
 	frame	data/chars/succubus/attack1c.gif
 	sound	data/sounds/throw_big.wav
-	attack2	5 10 87 55 12 0 0 0 0 0
+	attack22	5 10 87 55 12 0 0 0 0 0
 	frame	data/chars/succubus/attack1d.gif
-	attack2	50 20 95 65 12 0 0 0 0 0
+	attack22	50 20 95 65 12 0 0 0 0 0
 	frame	data/chars/succubus/attack1e.gif
 	delay	3
-	attack2	50 20 100 65 12 0 0 0 0 0
+	attack22	50 20 100 65 12 0 0 0 0 0
 	frame	data/chars/succubus/attack1f.gif
 	delay	1
-	attack2	0 0 0 0 0 0
+	attack22	0 0 0 0 0 0
 	frame	data/chars/succubus/attack1f.gif
 	attack	143 65 50 25 6 0 0 0 0 0
 	frame	data/chars/succubus/attack1g.gif
@@ -181,15 +181,15 @@ anim	attack2
 	frame	data/chars/succubus/attack1b.gif
 	frame	data/chars/succubus/attack1c.gif
 	sound	data/sounds/throw_big.wav
-	attack2	5 10 87 55 12 0 0 0 0 0
+	attack22	5 10 87 55 12 0 0 0 0 0
 	frame	data/chars/succubus/attack1d.gif
-	attack2	50 20 95 65 12 0 0 0 0 0
+	attack22	50 20 95 65 12 0 0 0 0 0
 	frame	data/chars/succubus/attack1e.gif
 	delay	3
-	attack2	50 20 100 65 12 0 0 0 0 0
+	attack22	50 20 100 65 12 0 0 0 0 0
 	frame	data/chars/succubus/attack1f.gif
 	delay	1
-	attack2	0 0 0 0 0 0
+	attack22	0 0 0 0 0 0
 	frame	data/chars/succubus/attack1f.gif
 	attack	143 65 50 25 6 0 0 0 0 0
 	frame	data/chars/succubus/attack1g.gif
@@ -215,16 +215,16 @@ anim	attack3
 	frame	data/chars/succubus/attack1b.gif
 	frame	data/chars/succubus/attack1c.gif
 	sound	data/sounds/throw_big.wav
-	attack2	5 10 87 55 12 0 0 0 0 0
+	attack22	5 10 87 55 12 0 0 0 0 0
 	frame	data/chars/succubus/attack1d.gif
 	sound	data/sounds/succubus_whip.wav
-	attack2	50 20 95 65 12 0 0 0 0 0
+	attack22	50 20 95 65 12 0 0 0 0 0
 	frame	data/chars/succubus/attack1e.gif
 	delay	3
-	attack2	50 20 100 65 12 0 0 0 0 0
+	attack22	50 20 100 65 12 0 0 0 0 0
 	frame	data/chars/succubus/attack1f.gif
 	delay	1
-	attack2	0 0 0 0 0 0
+	attack22	0 0 0 0 0 0
 	frame	data/chars/succubus/attack1f.gif
 	attack	143 65 50 25 6 0 0 0 0 0
 	frame	data/chars/succubus/attack1g.gif
@@ -253,16 +253,16 @@ anim	attack4
 	frame	data/chars/succubus/attack1c.gif
 	delay	7
 	sound	data/sounds/throw_big.wav
-	attack2	5 10 87 55 12 0 0 0 0 0
+	attack22	5 10 87 55 12 0 0 0 0 0
 	frame	data/chars/succubus/attack1d.gif
 	sound	data/sounds/succubus_whip.wav
-	attack2	50 20 95 65 12 0 0 0 0 0
+	attack22	50 20 95 65 12 0 0 0 0 0
 	frame	data/chars/succubus/attack1e.gif
 	delay	6
-	attack2	50 20 100 65 12 0 0 0 0 0
+	attack22	50 20 100 65 12 0 0 0 0 0
 	frame	data/chars/succubus/attack1f.gif
 	delay	1
-	attack2	0 0 0 0 0 0
+	attack22	0 0 0 0 0 0
 	frame	data/chars/succubus/attack1f.gif
 	attack	143 65 50 25 6 0 0 0 0 0
 	frame	data/chars/succubus/attack1g.gif
@@ -599,17 +599,17 @@ anim	freespecial5
 	frame	data/chars/succubus/attack1c.gif
 	delay	7
 	sound	data/sounds/throw_big.wav
-	attack2	5 10 87 55 9 0 0 0 0 0
+	attack22	5 10 87 55 9 0 0 0 0 0
 	frame	data/chars/succubus/attack1d.gif
 	sound	data/sounds/succubus_whip.wav
-	attack2	85 20 55 65 9 0 0 0 0 0
+	attack22	85 20 55 65 9 0 0 0 0 0
 	frame	data/chars/succubus/attack1e.gif
 	delay	6
-	attack2	70 20 75 65 9 0 0 0 0 0
+	attack22	70 20 75 65 9 0 0 0 0 0
 	@cmd	spawn01 "EnchantSpell2" 94 50 0
 	frame	data/chars/succubus/attack3f.gif
 	delay	1
-	attack2	0 0 0 0 0 0
+	attack22	0 0 0 0 0 0
 	frame	data/chars/succubus/attack3f.gif
 	frame	data/chars/succubus/attack3g.gif
 	frame	data/chars/succubus/attack3h.gif

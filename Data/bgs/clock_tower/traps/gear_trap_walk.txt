@@ -30,13 +30,14 @@ palette 		data/bgs/clock_tower/traps/gear_trap_palette.gif
 
 
 
+
 anim	attack1
 	loop	1
 	delay	10
 	offset	15 32
 	range	-320 640
 	bbox	0 0 30 32
-	attack	0 0 30 32 25 0 1 1 0 0
+	attack	0 0 30 32 25 0 0 1 0 0
 	jumpframe	0 0 0.15 0
 	frame	data/bgs/clock_tower/traps/gears_trap1a.gif
 	frame	data/bgs/clock_tower/traps/gears_trap1b.gif

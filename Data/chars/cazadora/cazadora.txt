@@ -33,6 +33,7 @@ takedamagescript data/scripts/blink.c
 
 
 
+
 anim	death
 	delay	1
 	offset	60 112
@@ -61,7 +62,7 @@ anim	follow1
 	offset	60 112
 	bbox	17 14 87 92
 	hitfx	data/sounds/slash.wav
-	attack2	17 14 87 92 19 1 1 0 0 0
+	attack2	17 14 87 92 19 1 0 0 0 0
 	frame	data/chars/cazadora/partis05.png
 	sound	data/sounds/swipe.wav
 	frame	data/chars/cazadora/partis06.png
@@ -75,19 +76,19 @@ anim	follow1
 	frame	data/chars/cazadora/partis05.png
 	loop	0
 	bbox	7 56 106 12
-	attack2	7 56 106 12 19 1 1 0 0 0
+	attack2	7 56 106 12 19 1 0 0 0 0
 	frame	data/chars/cazadora/partis07.png
 	delay	20
 	frame	data/chars/cazadora/partis07.png
 	delay	40
 	@cmd	dash 0 0
 	bbox	7 56 106 12
-	attack2	7 56 106 12 19 1 1 0 0 0
+	attack2	7 56 106 12 19 1 0 0 0 0
 	frame	data/chars/cazadora/partis07.png
 	delay	20
 	@cmd	dasher 0 0 0 0
 	bbox	7 56 106 12
-	attack2	7 56 106 12 19 1 1 0 0 0
+	attack2	7 56 106 12 19 1 0 0 0 0
 	frame	data/chars/cazadora/partis07.png
 	delay	40
 	@cmd	returner 40
@@ -96,6 +97,7 @@ anim	follow1
 	attack2	0
 	@cmd	dasher 0 0 0 0
 	frame	data/chars/cazadora/partis07.png
+	bbox	17 14 87 92
 	@cmd	beidle
 	frame	data/chars/cazadora/partis05.png
 		
@@ -104,7 +106,7 @@ anim	follow2
 	offset	60 112
 	bbox	17 14 87 92
 	hitfx	data/sounds/slash.wav
-	attack2	17 14 87 92 19 1 1 0 0
+	attack2	17 14 87 92 19 0 0 0 0 0
 	frame	data/chars/cazadora/partis05.png
 	sound	data/sounds/swipe.wav
 	frame	data/chars/cazadora/partis06.png
@@ -116,9 +118,9 @@ anim	follow2
 	frame	data/chars/cazadora/partis11.png
 	frame	data/chars/cazadora/partis12.png
 	frame	data/chars/cazadora/partis05.png
-	@cmd	looper 1 4
+	loop	0
 	bbox	54 9 14 104
-	attack2	54 9 14 104 19 1 1 0 0
+	attack2	54 9 14 104 19 0 0 0 0 0
 	sound	data/sounds/femaledemon_attack.wav
 	frame	data/chars/cazadora/partis05.png
 	delay	20
@@ -126,12 +128,12 @@ anim	follow2
 	delay	40
 	@cmd	dash 0 0
 	bbox	54 9 14 104
-	attack2	54 9 14 104 19 1 1 0 0
+	attack2	54 9 14 104 19 1 0 0 0 0
 	frame	data/chars/cazadora/partis05.png
 	delay	20
 	@cmd	dasher 0 0 0 0
 	bbox	54 9 14 104
-	attack2	54 9 14 104 19 1 1 0 0
+	attack2	54 9 14 104 19 1 0 0 0 0
 	frame	data/chars/cazadora/partis05.png
 	delay	40
 	@cmd	returner 40
@@ -148,7 +150,7 @@ anim	follow3
 	offset	60 112
 	bbox	17 14 87 92
 	hitfx	data/sounds/slash.wav
-	attack	17 14 87 92 19 1 1 0 0
+	attack	17 14 87 92 19 1 0 0 0 0
 	frame	data/chars/cazadora/partis05.png
 	sound	data/sounds/swipe.wav
 	frame	data/chars/cazadora/partis06.png
@@ -160,9 +162,9 @@ anim	follow3
 	frame	data/chars/cazadora/partis11.png
 	frame	data/chars/cazadora/partis12.png
 	frame	data/chars/cazadora/partis05.png
-	@cmd	looper 1 4
+	loop	0
 	bbox	52 7 9 107
-	attack	52 7 9 107 19 1 1 0 0
+	attack	52 7 9 107 19 1 0 0 0 0
 	sound	data/sounds/femaledemon_attack.wav
 	frame	data/chars/cazadora/partis09.png
 	delay	20
@@ -170,12 +172,12 @@ anim	follow3
 	delay	40
 	@cmd	dash 0 0
 	bbox	52 7 9 107
-	attack	52 7 9 107 19 1 1 0 0
+	attack	52 7 9 107 19 1 0 0 0 0
 	frame	data/chars/cazadora/partis09.png
 	delay	20
 	@cmd	dasher 0 0 0 0
 	bbox	52 7 9 107
-	attack	52 7 9 107 19 1 1 0 0
+	attack	52 7 9 107 19 1 0 0 0 0
 	frame	data/chars/cazadora/partis09.png
 	delay	40
 	@cmd	returner 40
@@ -204,7 +206,7 @@ anim	idle
 	delay	15
 	offset	60 112
 	bbox	54 9 14 104
-	attack	54 9 14 104 19 1 1 0 0 0
+	attack	54 9 14 104 19 1 0 0 0 0
 	frame	data/chars/cazadora/partis05.png
 	offset	60 122
 	@cmd	targetT 40 0 -10 1

@@ -57,6 +57,7 @@ animationscript  data/scripts/escript.c
 
 
 
+
 anim	death
 	loop	0
 	offset	57 110
@@ -77,7 +78,7 @@ anim	idle
 	delay	7
 	frame	data/chars/evaine/scythe/attack1e.gif
 	hitfx	data/sounds/slash.wav
-	attack2	35 8 70 102 25 0 1 0 0 0
+	attack2	35 8 70 102 25 0 0 0 0 0
 	frame	data/chars/evaine/scythe/attack1f.gif
 	frame	data/chars/evaine/scythe/attack1g.gif
 	frame	data/chars/evaine/scythe/attack1h.gif

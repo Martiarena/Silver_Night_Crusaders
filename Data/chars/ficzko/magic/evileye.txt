@@ -55,6 +55,7 @@ alternatepal	data/chars/ficzko/magic/ficzko_eye_blink.gif
 
 
 
+
 anim	attack1
 	rangea	0 180
 	range	-5 10
@@ -94,7 +95,7 @@ anim	attack1
 	frame	data/chars/ficzko/magic/attack1d.gif
 	frame	data/chars/ficzko/magic/attack1e.gif
 	frame	data/chars/ficzko/magic/attack1f.gif
-	attack2	19 34 11 186 19 0 0 0 0 0
+	attack2	19 34 11 186 19 0 1 0 0 0
 	frame	data/chars/ficzko/magic/attack1g.gif
 	frame	data/chars/ficzko/magic/attack1h.gif
 	delay	1

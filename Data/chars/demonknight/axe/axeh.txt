@@ -4,6 +4,7 @@ type            none
 candamage 	player npc
 noquake		1
 death		1
+stealth         300
 speed  15
 lifespan	10
 nolife 1

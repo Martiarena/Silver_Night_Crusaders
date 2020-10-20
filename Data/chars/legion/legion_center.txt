@@ -122,7 +122,7 @@ anim	follow1
 	loop	1
 	offset	165 168
 	bbox	115 127 85 100
-	attack	115 127 85 100 19 0 1 0 0 0
+	attack	115 127 85 100 19 0 0 0 0 0
 	delay	14
 	@cmd	spawn01 "Legion_corpse" 0 0 0
 	frame	data/chars/legion/legion_center1a.gif
@@ -145,7 +145,7 @@ anim	follow2
 	loop	1
 	offset	165 168
 	bbox	115 127 85 100
-	attack	115 127 85 100 19 0 1 0 0 0
+	attack	115 127 85 100 19 0 0 0 0 0
 	delay	14
 	sound	data/sounds/legion_scream1.wav
 	@cmd	tosserM "Legion_fall_corpse_2" 0 0 0.3 1
@@ -169,7 +169,7 @@ anim	follow3
 	loop	1
 	offset	165 168
 	bbox	115 127 85 100
-	attack	115 127 85 100 19 0 1 0 0 0
+	attack	115 127 85 100 19 0 0 0 0 0
 	delay	14
 	@cmd	spawn01 "Legion_Corpse_acid" 0 0 0
 	frame	data/chars/legion/legion_center1a.gif
@@ -202,7 +202,7 @@ anim	follow4
 	loop	1
 	offset	165 168
 	bbox	115 127 85 100
-	attack	115 127 85 100 19 0 1 0 0 0
+	attack	115 127 85 100 19 0 0 0 0 0
 	delay	14
 	frame	data/chars/legion/legion_center1a.gif
 	frame	data/chars/legion/legion_center1b.gif
@@ -224,7 +224,7 @@ anim	follow5
 	loop	1
 	offset	165 168
 	bbox	115 127 85 100
-	attack	115 127 85 100 19 0 1 0 0 0
+	attack	115 127 85 100 19 0 0 0 0 0
 	delay	14
 	sound	data/sounds/legion_scream2.wav
 	@cmd	tosserM "Legion_fall_corpse" 0 0 -0.3 1
@@ -249,7 +249,7 @@ anim	idle
 	delay	14
 	offset	165 168
 	bbox	45 60 70 70
-	attack	45 60 70 70 19 0 1 0 0 0
+	attack	45 60 70 70 19 0 0 0 0 0
 	frame	data/chars/legion/legion_center1a.gif
 	@cmd	attack0 "ANI_FOLLOW1"
 	frame	data/chars/legion/legion_center1a.gif
@@ -261,7 +261,7 @@ anim	spawn
 	loop	0
 	offset	165 166
 	bbox	115 127 85 100
-	attack	115 127 85 100 19 0 1 0 0 0
+	attack	115 127 85 100 19 0 0 0 0 0
 	movea	1
 	delay	50
 	sound	data/sounds/legion_scream1.wav

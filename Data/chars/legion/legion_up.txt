@@ -89,6 +89,7 @@ takedamagescript data/scripts/blink.c
 
 
 
+
 anim	death
 	loop	0
 	offset	165 166
@@ -124,7 +125,7 @@ anim	follow1
 	loop	0
 	offset	165 168
 	bbox	120 20 75 90
-	attack	120 20 75 90 19 0 1 0 0 0
+	attack	120 20 75 90 19 0 0 0 0 0
 	delay	14
 	@cmd	spawn01 "Spawn_Minilegion" 0 120 0
 	frame	data/chars/legion/legion_up1a.gif
@@ -147,7 +148,7 @@ anim	follow2
 	loop	0
 	offset	165 168
 	bbox	120 20 75 90
-	attack	120 20 75 90 19 0 1 0 0 0
+	attack	120 20 75 90 19 0 0 0 0 0
 	delay	14
 	sound	data/sounds/legion_scream2.wav
 	@cmd	tosserM "Legion_fall_corpse_2" 0 120 -0.3 1
@@ -171,7 +172,7 @@ anim	follow3
 	loop	0
 	offset	165 168
 	bbox	120 20 75 90
-	attack	120 20 75 90 19 0 1 0 0 0
+	attack	120 20 75 90 19 0 0 0 0 0
 	delay	14
 	@cmd	spawn01 "Spawn_Minilegion" -10 110 0
 	frame	data/chars/legion/legion_up1a.gif
@@ -204,7 +205,7 @@ anim	follow4
 	loop	0
 	offset	165 168
 	bbox	120 20 75 90
-	attack	120 20 75 90 19 0 1 0 0 0
+	attack	120 20 75 90 19 0 0 0 0 0
 	delay	14
 	frame	data/chars/legion/legion_up1a.gif
 	frame	data/chars/legion/legion_up1b.gif
@@ -226,7 +227,7 @@ anim	follow5
 	loop	0
 	offset	165 168
 	bbox	120 20 75 90
-	attack	120 20 75 90 19 0 1 0 0 0
+	attack	120 20 75 90 19 0 0 0 0 0
 	delay	14
 	sound	data/sounds/legion_scream2.wav
 	@cmd	tosserM "Legion_fall_corpse_3" 0 120 0.3 1

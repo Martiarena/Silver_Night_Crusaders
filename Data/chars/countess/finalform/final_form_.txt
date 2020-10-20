@@ -143,6 +143,7 @@ alternatepal  data/chars/countess/finalform/basilisk_palette_blink.gif
 
 
 
+
 anim	attack1
 	range	0 205
 	rangea	0 70
@@ -150,50 +151,50 @@ anim	attack1
 	delay	14
 	offset	119 206
 	bbox	10 55 145 130
-	attack	10 55 145 130 19 0 0 0 0 0
+	attack24	10 55 145 130 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/attack1a.gif
 	frame	data/chars/countess/finalform/attack2a.gif
 	delay	1
 	sound	data/sounds/throw_medium.wav
 	steal	138 156 185 14 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/attack2b.gif
-	attack	10 55 145 130 19 0 0 0 0 0
+	attack24	10 55 145 130 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/attack2b.gif
 	steal	138 156 185 14 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/attack2b.gif
-	attack	10 55 145 130 19 0 0 0 0 0
+	attack24	10 55 145 130 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/attack2b.gif
 	steal	138 156 185 14 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/attack2b.gif
-	attack	10 55 145 130 19 0 0 0 0 0
+	attack24	10 55 145 130 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/attack2b.gif
 	steal	138 156 185 14 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/attack2b.gif
-	attack	10 55 145 130 19 0 0 0 0 0
+	attack24	10 55 145 130 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/attack2b.gif
 	steal	138 156 185 14 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/attack2b.gif
-	attack	10 55 145 130 19 0 0 0 0 0
+	attack24	10 55 145 130 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/attack2b.gif
 	steal	138 156 185 14 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/attack2b.gif
-	attack	10 55 145 130 19 0 0 0 0 0
+	attack24	10 55 145 130 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/attack2b.gif
 	steal	138 156 185 14 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/attack2b.gif
-	attack	10 55 145 130 19 0 0 0 0 0
+	attack24	10 55 145 130 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/attack2b.gif
 	steal	138 156 185 14 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/attack2b.gif
-	attack	10 55 145 130 19 0 0 0 0 0
+	attack24	10 55 145 130 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/attack2b.gif
 	steal	138 156 185 14 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/attack2b.gif
-	attack	10 55 145 130 19 0 0 0 0 0
+	attack24	10 55 145 130 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/attack2b.gif
 	steal	138 156 185 14 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/attack2b.gif
-	attack	10 55 145 130 19 0 0 0 0 0
+	attack24	10 55 145 130 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/attack2b.gif
 	delay	14
 	frame	data/chars/countess/finalform/attack2c.gif
@@ -206,7 +207,7 @@ anim	attack2
 	delay	48
 	offset	119 206
 	bbox	10 55 145 130
-	attack	10 55 145 130 19 0 0 0 0 0
+	attack24	10 55 145 130 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/idle1b.gif
 	delay	1
 	frame	data/chars/countess/finalform/idle1a.gif
@@ -369,15 +370,13 @@ anim	attack2
 	frame	data/chars/countess/finalform/idle2b.gif
 	frame	data/chars/countess/finalform/idle1b.gif
 	delay	1
-	attack	0 0 0 0 0 0 0
+	attack24	0 0 0 0 0 0 0
 	frame	data/chars/countess/finalform/idle1b.gif
 		
 anim	death
 	loop	0
 	delay	14
 	offset	119 206
-	bbox	0 0 0 0
-	attack	0 0 0 0
 	frame	data/chars/countess/finalform/attack1a.gif
 	delay	50
 	frame	data/chars/countess/finalform/attack1b.gif
@@ -431,7 +430,7 @@ anim	freespecial
 	delay	28
 	offset	119 206
 	bbox	10 55 145 130
-	attack	10 55 145 130 19 0 0 0 0 0
+	attack24	10 55 145 130 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/idle1b.gif
 	@cmd	spawn01 "forb_fireseal" 50 55 0
 	delay	1
@@ -469,7 +468,7 @@ anim	freespecial
 	delay	17
 	frame	data/chars/countess/finalform/idle1b.gif
 	delay	1
-	attack	0 0 0 0 0 0 0
+	attack24	0 0 0 0 0 0 0
 	frame	data/chars/countess/finalform/idle1b.gif
 		
 anim	freespecial2
@@ -479,7 +478,7 @@ anim	freespecial2
 	delay	28
 	offset	119 206
 	bbox	10 55 145 130
-	attack	10 55 145 130 19 0 0 0 0 0
+	attack24	10 55 145 130 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/idle1b.gif
 	delay	1
 	@cmd	spawn01 "Sparks_serpent" 0 0 0
@@ -514,7 +513,7 @@ anim	freespecial2
 	delay	17
 	frame	data/chars/countess/finalform/idle1b.gif
 	delay	1
-	attack	0 0 0 0 0 0 0
+	attack24	0 0 0 0 0 0 0
 	frame	data/chars/countess/finalform/idle1b.gif
 		
 anim	freespecial3
@@ -524,7 +523,7 @@ anim	freespecial3
 	delay	28
 	offset	119 206
 	bbox	10 55 145 130
-	attack	10 55 145 130 19 0 0 0 0 0
+	attack24	10 55 145 130 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/idle1b.gif
 	delay	1
 	@cmd	spawn01 "forb_fireseal" 50 55 0
@@ -563,7 +562,7 @@ anim	freespecial3
 	delay	17
 	frame	data/chars/countess/finalform/idle1b.gif
 	delay	1
-	attack	0 0 0 0 0 0 0
+	attack24	0 0 0 0 0 0 0
 	frame	data/chars/countess/finalform/idle1b.gif
 		
 anim	freespecial4
@@ -573,7 +572,7 @@ anim	freespecial4
 	delay	28
 	offset	119 206
 	bbox	10 55 145 130
-	attack	10 55 145 130 19 0 0 0 0 0
+	attack24	10 55 145 130 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/idle1b.gif
 	delay	1
 	@cmd	spawn01 "forb_fireseal" 50 55 0
@@ -612,7 +611,7 @@ anim	freespecial4
 	delay	17
 	frame	data/chars/countess/finalform/idle1b.gif
 	delay	1
-	attack	0 0 0 0 0 0 0
+	attack24	0 0 0 0 0 0 0
 	frame	data/chars/countess/finalform/idle1b.gif
 		
 anim	idle
@@ -620,14 +619,14 @@ anim	idle
 	delay	18
 	offset	119 206
 	bbox	10 55 145 130
-	attack	10 55 145 130 19 0 0 0 0 0
+	attack24	10 55 145 130 19 0 0 0 0 0
 	frame	data/chars/countess/finalform/idle1b.gif
 	frame	data/chars/countess/finalform/idle1b.gif
 	frame	data/chars/countess/finalform/idle1b.gif
 	delay	17
 	frame	data/chars/countess/finalform/idle2b.gif
 	delay	1
-	attack	0 0 0 0 0 0 0
+	attack24	0 0 0 0 0 0 0
 	frame	data/chars/countess/finalform/idle2b.gif
 		
 anim	spawn

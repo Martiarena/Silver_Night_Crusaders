@@ -34,6 +34,7 @@ animationscript data/scripts/cscript.c
 
 
 
+
 anim	death
 	delay	7
 	offset	35 45
@@ -64,7 +65,7 @@ anim	idle
 	bbox	15 20 35 20
 	followcond	1
 	followani	1
-	attack6	15 20 35 20 6 0 1 1 0 0
+	attack6	15 20 35 20 6 0 0 1 0 0
 	frame	data/chars/ghost/idle1.gif
 	@cmd	target 0.8 0.8 0 -20 0 1
 	@cmd	dash 0 0

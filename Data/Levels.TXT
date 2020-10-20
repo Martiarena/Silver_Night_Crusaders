@@ -61,7 +61,9 @@ p2rush	-999	-999	-999	-999	-999	-999	-999	-999
 scbonuses 5000 1000 100 1
 
 z	216 216
-file 	data/levels/clock_tower.txt
+scene	data/Scenes/epilogue/epilogue_2.txt
+file	data/levels/castlehalld.txt
+file	data/levels/castlehalld_f.txt
 file 	data/levels/debbug.txt
 z	216 216
 file	data/levels/castlehalla.txt
@@ -160,6 +162,7 @@ next
 scene	data/Scenes/scene10/escena10.txt
 scene	data/Scenes/credits/credits.txt
 scene	data/Scenes/epilogue/epilogue.txt
+scene	data/Scenes/epilogue/epilogue_2.txt
 end
 z	216 216
 file	data/levels/town_h.txt
@@ -322,4 +325,36 @@ z	216 216
 file 	data/levels/coliseum_bossrush_4.txt
 next
 scene	data/Scenes/thanks/thanks_2.txt
+end
+
+
+set	Gameplays
+lives	3
+credits	3
+cansave	1
+typemp	1
+maxplayers  2
+noshare 0
+nosame	1 0
+continuescore 1
+ifcomplete 1
+noslowfx 1
+nomaxrushreset 1
+showrushbonus 1
+p1smenu	29 52 240 320
+p2smenu	29 150 240 320
+rush	1	1.5	_	3	3	_	1	1
+p1rush	-999	-999	-999	-999	-999	-999	-999	-999
+p2rush	-999	-999	-999	-999	-999	-999	-999	-999
+scbonuses 5000 1000 100 1
+
+z	216 216
+file	data/levels/undergroundc.txt
+file	data/levels/castlehalld.txt
+file	data/levels/castlehalld_f.txt
+file 	data/levels/debbug.txt
+z	216 216
+file	data/levels/castlehalla.txt
+z	302 302
+file	data/levels/castlehallc.txt
 end
